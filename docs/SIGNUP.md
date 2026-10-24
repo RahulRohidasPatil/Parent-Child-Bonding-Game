@@ -22,7 +22,7 @@ Parent registration calls `supabase.auth.signUp()` from the browser client with 
 password, display name, username, and `account_type: "parent"` metadata. Supabase email confirmation
 must remain enabled.
 
-Learners under 18 do not create an Auth user. Their submission calls `/api/registration/learner`,
+Learners under 16 do not create an Auth user. Their submission calls `/api/registration/learner`,
 which creates a pending request and sends the parent notification through the server-only email path.
 The learner account must be provisioned only after the server-side approval and authority checks.
 

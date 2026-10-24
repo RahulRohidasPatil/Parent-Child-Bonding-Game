@@ -28,7 +28,7 @@ export default function SignupPage() {
   const [error, setError] = useState("");
 
   const age = ageFromDate(dob);
-  const isMinor = age !== null && age < 18 && role === "student";
+  const isMinor = age !== null && age < 16 && role === "student";
   const mode = getSignupMode(age, role);
   const canContinue = formStep === 1
     ? Boolean(name.trim() && role && dob && ((mode === "adult" && email.trim()) || (mode === "minor" && parentEmail.trim())))
