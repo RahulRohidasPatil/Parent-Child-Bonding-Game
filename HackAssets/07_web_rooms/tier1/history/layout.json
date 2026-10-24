@@ -1,0 +1,539 @@
+{
+ "tier": 1,
+ "room": "history",
+ "name": "Museum",
+ "size": [
+  1252,
+  1026
+ ],
+ "items": [
+  {
+   "id": "timeline",
+   "name": "Timeline wall",
+   "slot": "wr",
+   "z": 0,
+   "levels": [
+    {
+     "level": 1,
+     "file": "timeline/lv01.webp",
+     "x": 826,
+     "y": 284,
+     "w": 125,
+     "h": 131
+    },
+    {
+     "level": 2,
+     "file": "timeline/lv02.webp",
+     "x": 826,
+     "y": 284,
+     "w": 125,
+     "h": 131
+    },
+    {
+     "level": 3,
+     "file": "timeline/lv03.webp",
+     "x": 826,
+     "y": 284,
+     "w": 142,
+     "h": 136
+    },
+    {
+     "level": 4,
+     "file": "timeline/lv04.webp",
+     "x": 788,
+     "y": 265,
+     "w": 218,
+     "h": 174
+    },
+    {
+     "level": 5,
+     "file": "timeline/lv05.webp",
+     "x": 748,
+     "y": 255,
+     "w": 258,
+     "h": 184
+    },
+    {
+     "level": 6,
+     "file": "timeline/lv06.webp",
+     "x": 748,
+     "y": 255,
+     "w": 258,
+     "h": 184
+    },
+    {
+     "level": 7,
+     "file": "timeline/lv07.webp",
+     "x": 710,
+     "y": 236,
+     "w": 335,
+     "h": 222
+    },
+    {
+     "level": 8,
+     "file": "timeline/lv08.webp",
+     "x": 710,
+     "y": 236,
+     "w": 335,
+     "h": 222
+    },
+    {
+     "level": 9,
+     "file": "timeline/lv09.webp",
+     "x": 710,
+     "y": 236,
+     "w": 335,
+     "h": 222
+    },
+    {
+     "level": 10,
+     "file": "timeline/lv10.webp",
+     "x": 690,
+     "y": 228,
+     "w": 373,
+     "h": 242
+    }
+   ]
+  },
+  {
+   "id": "pottery_shelf",
+   "name": "Pottery shelf",
+   "slot": "r1",
+   "z": 1,
+   "levels": [
+    {
+     "level": 1,
+     "file": "pottery_shelf/lv01.webp",
+     "x": 693,
+     "y": 429,
+     "w": 74,
+     "h": 88
+    },
+    {
+     "level": 2,
+     "file": "pottery_shelf/lv02.webp",
+     "x": 675,
+     "y": 429,
+     "w": 92,
+     "h": 88
+    },
+    {
+     "level": 3,
+     "file": "pottery_shelf/lv03.webp",
+     "x": 675,
+     "y": 407,
+     "w": 93,
+     "h": 110
+    },
+    {
+     "level": 4,
+     "file": "pottery_shelf/lv04.webp",
+     "x": 646,
+     "y": 362,
+     "w": 162,
+     "h": 173
+    },
+    {
+     "level": 5,
+     "file": "pottery_shelf/lv05.webp",
+     "x": 646,
+     "y": 362,
+     "w": 162,
+     "h": 173
+    },
+    {
+     "level": 6,
+     "file": "pottery_shelf/lv06.webp",
+     "x": 646,
+     "y": 362,
+     "w": 162,
+     "h": 173
+    },
+    {
+     "level": 7,
+     "file": "pottery_shelf/lv07.webp",
+     "x": 611,
+     "y": 330,
+     "w": 238,
+     "h": 219
+    },
+    {
+     "level": 8,
+     "file": "pottery_shelf/lv08.webp",
+     "x": 611,
+     "y": 330,
+     "w": 238,
+     "h": 219
+    },
+    {
+     "level": 9,
+     "file": "pottery_shelf/lv09.webp",
+     "x": 611,
+     "y": 330,
+     "w": 238,
+     "h": 219
+    },
+    {
+     "level": 10,
+     "file": "pottery_shelf/lv10.webp",
+     "x": 637,
+     "y": 304,
+     "w": 204,
+     "h": 246
+    }
+   ]
+  },
+  {
+   "id": "egypt_corner",
+   "name": "Egypt corner",
+   "slot": "l1",
+   "z": 1.5,
+   "levels": [
+    {
+     "level": 1,
+     "file": "egypt_corner/lv01.webp",
+     "x": 482,
+     "y": 442,
+     "w": 69,
+     "h": 81
+    },
+    {
+     "level": 2,
+     "file": "egypt_corner/lv02.webp",
+     "x": 482,
+     "y": 421,
+     "w": 108,
+     "h": 102
+    },
+    {
+     "level": 3,
+     "file": "egypt_corner/lv03.webp",
+     "x": 444,
+     "y": 421,
+     "w": 146,
+     "h": 125
+    },
+    {
+     "level": 4,
+     "file": "egypt_corner/lv04.webp",
+     "x": 447,
+     "y": 355,
+     "w": 146,
+     "h": 192
+    },
+    {
+     "level": 5,
+     "file": "egypt_corner/lv05.webp",
+     "x": 447,
+     "y": 355,
+     "w": 146,
+     "h": 192
+    },
+    {
+     "level": 6,
+     "file": "egypt_corner/lv06.webp",
+     "x": 447,
+     "y": 355,
+     "w": 146,
+     "h": 192
+    },
+    {
+     "level": 7,
+     "file": "egypt_corner/lv07.webp",
+     "x": 449,
+     "y": 332,
+     "w": 228,
+     "h": 216
+    },
+    {
+     "level": 8,
+     "file": "egypt_corner/lv08.webp",
+     "x": 449,
+     "y": 332,
+     "w": 228,
+     "h": 216
+    },
+    {
+     "level": 9,
+     "file": "egypt_corner/lv09.webp",
+     "x": 449,
+     "y": 332,
+     "w": 228,
+     "h": 216
+    },
+    {
+     "level": 10,
+     "file": "egypt_corner/lv10.webp",
+     "x": 429,
+     "y": 288,
+     "w": 277,
+     "h": 268
+    }
+   ]
+  },
+  {
+   "id": "treasure_chest",
+   "name": "Treasure chest",
+   "slot": "r2",
+   "z": 2,
+   "levels": [
+    {
+     "level": 1,
+     "file": "treasure_chest/lv01.webp",
+     "x": 918,
+     "y": 547,
+     "w": 98,
+     "h": 95
+    },
+    {
+     "level": 2,
+     "file": "treasure_chest/lv02.webp",
+     "x": 918,
+     "y": 547,
+     "w": 98,
+     "h": 95
+    },
+    {
+     "level": 3,
+     "file": "treasure_chest/lv03.webp",
+     "x": 918,
+     "y": 547,
+     "w": 117,
+     "h": 114
+    },
+    {
+     "level": 4,
+     "file": "treasure_chest/lv04.webp",
+     "x": 899,
+     "y": 538,
+     "w": 133,
+     "h": 128
+    },
+    {
+     "level": 5,
+     "file": "treasure_chest/lv05.webp",
+     "x": 883,
+     "y": 538,
+     "w": 149,
+     "h": 128
+    },
+    {
+     "level": 6,
+     "file": "treasure_chest/lv06.webp",
+     "x": 883,
+     "y": 538,
+     "w": 149,
+     "h": 128
+    },
+    {
+     "level": 7,
+     "file": "treasure_chest/lv07.webp",
+     "x": 875,
+     "y": 517,
+     "w": 179,
+     "h": 153
+    },
+    {
+     "level": 8,
+     "file": "treasure_chest/lv08.webp",
+     "x": 875,
+     "y": 517,
+     "w": 179,
+     "h": 153
+    },
+    {
+     "level": 9,
+     "file": "treasure_chest/lv09.webp",
+     "x": 875,
+     "y": 517,
+     "w": 179,
+     "h": 153
+    },
+    {
+     "level": 10,
+     "file": "treasure_chest/lv10.webp",
+     "x": 879,
+     "y": 533,
+     "w": 172,
+     "h": 134
+    }
+   ]
+  },
+  {
+   "id": "greek_statues",
+   "name": "Greek statues",
+   "slot": "l2",
+   "z": 2.5,
+   "levels": [
+    {
+     "level": 1,
+     "file": "greek_statues/lv01.webp",
+     "x": 220,
+     "y": 516,
+     "w": 137,
+     "h": 136
+    },
+    {
+     "level": 2,
+     "file": "greek_statues/lv02.webp",
+     "x": 220,
+     "y": 516,
+     "w": 158,
+     "h": 136
+    },
+    {
+     "level": 3,
+     "file": "greek_statues/lv03.webp",
+     "x": 220,
+     "y": 516,
+     "w": 158,
+     "h": 148
+    },
+    {
+     "level": 4,
+     "file": "greek_statues/lv04.webp",
+     "x": 231,
+     "y": 458,
+     "w": 136,
+     "h": 201
+    },
+    {
+     "level": 5,
+     "file": "greek_statues/lv05.webp",
+     "x": 231,
+     "y": 458,
+     "w": 136,
+     "h": 201
+    },
+    {
+     "level": 6,
+     "file": "greek_statues/lv06.webp",
+     "x": 231,
+     "y": 458,
+     "w": 136,
+     "h": 201
+    },
+    {
+     "level": 7,
+     "file": "greek_statues/lv07.webp",
+     "x": 170,
+     "y": 452,
+     "w": 211,
+     "h": 228
+    },
+    {
+     "level": 8,
+     "file": "greek_statues/lv08.webp",
+     "x": 170,
+     "y": 452,
+     "w": 211,
+     "h": 228
+    },
+    {
+     "level": 9,
+     "file": "greek_statues/lv09.webp",
+     "x": 170,
+     "y": 452,
+     "w": 211,
+     "h": 228
+    },
+    {
+     "level": 10,
+     "file": "greek_statues/lv10.webp",
+     "x": 127,
+     "y": 342,
+     "w": 331,
+     "h": 360
+    }
+   ]
+  },
+  {
+   "id": "roman_siege",
+   "name": "Roman siege model",
+   "slot": "c",
+   "z": 3,
+   "levels": [
+    {
+     "level": 1,
+     "file": "roman_siege/lv01.webp",
+     "x": 553,
+     "y": 643,
+     "w": 122,
+     "h": 83
+    },
+    {
+     "level": 2,
+     "file": "roman_siege/lv02.webp",
+     "x": 553,
+     "y": 643,
+     "w": 157,
+     "h": 111
+    },
+    {
+     "level": 3,
+     "file": "roman_siege/lv03.webp",
+     "x": 517,
+     "y": 643,
+     "w": 193,
+     "h": 113
+    },
+    {
+     "level": 4,
+     "file": "roman_siege/lv04.webp",
+     "x": 518,
+     "y": 611,
+     "w": 192,
+     "h": 166
+    },
+    {
+     "level": 5,
+     "file": "roman_siege/lv05.webp",
+     "x": 518,
+     "y": 611,
+     "w": 192,
+     "h": 166
+    },
+    {
+     "level": 6,
+     "file": "roman_siege/lv06.webp",
+     "x": 518,
+     "y": 611,
+     "w": 192,
+     "h": 166
+    },
+    {
+     "level": 7,
+     "file": "roman_siege/lv07.webp",
+     "x": 508,
+     "y": 548,
+     "w": 214,
+     "h": 245
+    },
+    {
+     "level": 8,
+     "file": "roman_siege/lv08.webp",
+     "x": 508,
+     "y": 548,
+     "w": 214,
+     "h": 245
+    },
+    {
+     "level": 9,
+     "file": "roman_siege/lv09.webp",
+     "x": 508,
+     "y": 548,
+     "w": 214,
+     "h": 245
+    },
+    {
+     "level": 10,
+     "file": "roman_siege/lv10.webp",
+     "x": 373,
+     "y": 476,
+     "w": 381,
+     "h": 330
+    }
+   ]
+  }
+ ]
+}

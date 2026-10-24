@@ -1,0 +1,539 @@
+{
+ "tier": 1,
+ "room": "english",
+ "name": "Reading nook",
+ "size": [
+  1252,
+  1026
+ ],
+ "items": [
+  {
+   "id": "story_wall",
+   "name": "Story wall",
+   "slot": "wl",
+   "z": 0,
+   "levels": [
+    {
+     "level": 1,
+     "file": "story_wall/lv01.webp",
+     "x": 327,
+     "y": 279,
+     "w": 88,
+     "h": 143
+    },
+    {
+     "level": 2,
+     "file": "story_wall/lv02.webp",
+     "x": 327,
+     "y": 279,
+     "w": 88,
+     "h": 143
+    },
+    {
+     "level": 3,
+     "file": "story_wall/lv03.webp",
+     "x": 327,
+     "y": 274,
+     "w": 92,
+     "h": 148
+    },
+    {
+     "level": 4,
+     "file": "story_wall/lv04.webp",
+     "x": 320,
+     "y": 264,
+     "w": 103,
+     "h": 173
+    },
+    {
+     "level": 5,
+     "file": "story_wall/lv05.webp",
+     "x": 320,
+     "y": 264,
+     "w": 103,
+     "h": 173
+    },
+    {
+     "level": 6,
+     "file": "story_wall/lv06.webp",
+     "x": 320,
+     "y": 264,
+     "w": 103,
+     "h": 173
+    },
+    {
+     "level": 7,
+     "file": "story_wall/lv07.webp",
+     "x": 314,
+     "y": 252,
+     "w": 114,
+     "h": 195
+    },
+    {
+     "level": 8,
+     "file": "story_wall/lv08.webp",
+     "x": 314,
+     "y": 252,
+     "w": 114,
+     "h": 195
+    },
+    {
+     "level": 9,
+     "file": "story_wall/lv09.webp",
+     "x": 314,
+     "y": 252,
+     "w": 114,
+     "h": 195
+    },
+    {
+     "level": 10,
+     "file": "story_wall/lv10.webp",
+     "x": 307,
+     "y": 241,
+     "w": 128,
+     "h": 218
+    }
+   ]
+  },
+  {
+   "id": "bookshelf",
+   "name": "Big bookshelf",
+   "slot": "r1",
+   "z": 1,
+   "levels": [
+    {
+     "level": 1,
+     "file": "bookshelf/lv01.webp",
+     "x": 644,
+     "y": 348,
+     "w": 173,
+     "h": 194
+    },
+    {
+     "level": 2,
+     "file": "bookshelf/lv02.webp",
+     "x": 644,
+     "y": 346,
+     "w": 173,
+     "h": 196
+    },
+    {
+     "level": 3,
+     "file": "bookshelf/lv03.webp",
+     "x": 644,
+     "y": 346,
+     "w": 173,
+     "h": 196
+    },
+    {
+     "level": 4,
+     "file": "bookshelf/lv04.webp",
+     "x": 641,
+     "y": 322,
+     "w": 179,
+     "h": 222
+    },
+    {
+     "level": 5,
+     "file": "bookshelf/lv05.webp",
+     "x": 641,
+     "y": 322,
+     "w": 179,
+     "h": 222
+    },
+    {
+     "level": 6,
+     "file": "bookshelf/lv06.webp",
+     "x": 641,
+     "y": 322,
+     "w": 179,
+     "h": 222
+    },
+    {
+     "level": 7,
+     "file": "bookshelf/lv07.webp",
+     "x": 647,
+     "y": 226,
+     "w": 168,
+     "h": 315
+    },
+    {
+     "level": 8,
+     "file": "bookshelf/lv08.webp",
+     "x": 647,
+     "y": 226,
+     "w": 168,
+     "h": 315
+    },
+    {
+     "level": 9,
+     "file": "bookshelf/lv09.webp",
+     "x": 647,
+     "y": 226,
+     "w": 168,
+     "h": 315
+    },
+    {
+     "level": 10,
+     "file": "bookshelf/lv10.webp",
+     "x": 647,
+     "y": 217,
+     "w": 250,
+     "h": 365
+    }
+   ]
+  },
+  {
+   "id": "story_cabinet",
+   "name": "Story cabinet",
+   "slot": "l1",
+   "z": 1.5,
+   "levels": [
+    {
+     "level": 1,
+     "file": "story_cabinet/lv01.webp",
+     "x": 445,
+     "y": 394,
+     "w": 150,
+     "h": 140
+    },
+    {
+     "level": 2,
+     "file": "story_cabinet/lv02.webp",
+     "x": 445,
+     "y": 394,
+     "w": 165,
+     "h": 158
+    },
+    {
+     "level": 3,
+     "file": "story_cabinet/lv03.webp",
+     "x": 445,
+     "y": 394,
+     "w": 165,
+     "h": 158
+    },
+    {
+     "level": 4,
+     "file": "story_cabinet/lv04.webp",
+     "x": 462,
+     "y": 376,
+     "w": 142,
+     "h": 173
+    },
+    {
+     "level": 5,
+     "file": "story_cabinet/lv05.webp",
+     "x": 461,
+     "y": 372,
+     "w": 143,
+     "h": 177
+    },
+    {
+     "level": 6,
+     "file": "story_cabinet/lv06.webp",
+     "x": 461,
+     "y": 372,
+     "w": 143,
+     "h": 177
+    },
+    {
+     "level": 7,
+     "file": "story_cabinet/lv07.webp",
+     "x": 443,
+     "y": 354,
+     "w": 159,
+     "h": 194
+    },
+    {
+     "level": 8,
+     "file": "story_cabinet/lv08.webp",
+     "x": 443,
+     "y": 354,
+     "w": 159,
+     "h": 194
+    },
+    {
+     "level": 9,
+     "file": "story_cabinet/lv09.webp",
+     "x": 443,
+     "y": 354,
+     "w": 159,
+     "h": 194
+    },
+    {
+     "level": 10,
+     "file": "story_cabinet/lv10.webp",
+     "x": 439,
+     "y": 348,
+     "w": 198,
+     "h": 201
+    }
+   ]
+  },
+  {
+   "id": "writing_desk",
+   "name": "Writing desk",
+   "slot": "r2",
+   "z": 2,
+   "levels": [
+    {
+     "level": 1,
+     "file": "writing_desk/lv01.webp",
+     "x": 887,
+     "y": 492,
+     "w": 162,
+     "h": 163
+    },
+    {
+     "level": 2,
+     "file": "writing_desk/lv02.webp",
+     "x": 887,
+     "y": 470,
+     "w": 162,
+     "h": 185
+    },
+    {
+     "level": 3,
+     "file": "writing_desk/lv03.webp",
+     "x": 887,
+     "y": 460,
+     "w": 162,
+     "h": 195
+    },
+    {
+     "level": 4,
+     "file": "writing_desk/lv04.webp",
+     "x": 813,
+     "y": 450,
+     "w": 299,
+     "h": 243
+    },
+    {
+     "level": 5,
+     "file": "writing_desk/lv05.webp",
+     "x": 813,
+     "y": 450,
+     "w": 299,
+     "h": 243
+    },
+    {
+     "level": 6,
+     "file": "writing_desk/lv06.webp",
+     "x": 813,
+     "y": 450,
+     "w": 299,
+     "h": 243
+    },
+    {
+     "level": 7,
+     "file": "writing_desk/lv07.webp",
+     "x": 843,
+     "y": 458,
+     "w": 248,
+     "h": 221
+    },
+    {
+     "level": 8,
+     "file": "writing_desk/lv08.webp",
+     "x": 843,
+     "y": 458,
+     "w": 248,
+     "h": 221
+    },
+    {
+     "level": 9,
+     "file": "writing_desk/lv09.webp",
+     "x": 843,
+     "y": 458,
+     "w": 248,
+     "h": 221
+    },
+    {
+     "level": 10,
+     "file": "writing_desk/lv10.webp",
+     "x": 836,
+     "y": 449,
+     "w": 260,
+     "h": 233
+    }
+   ]
+  },
+  {
+   "id": "cozy_sofa",
+   "name": "Cozy sofa",
+   "slot": "l2",
+   "z": 2.5,
+   "levels": [
+    {
+     "level": 1,
+     "file": "cozy_sofa/lv01.webp",
+     "x": 211,
+     "y": 514,
+     "w": 221,
+     "h": 140
+    },
+    {
+     "level": 2,
+     "file": "cozy_sofa/lv02.webp",
+     "x": 211,
+     "y": 514,
+     "w": 221,
+     "h": 140
+    },
+    {
+     "level": 3,
+     "file": "cozy_sofa/lv03.webp",
+     "x": 211,
+     "y": 514,
+     "w": 221,
+     "h": 140
+    },
+    {
+     "level": 4,
+     "file": "cozy_sofa/lv04.webp",
+     "x": 195,
+     "y": 511,
+     "w": 186,
+     "h": 155
+    },
+    {
+     "level": 5,
+     "file": "cozy_sofa/lv05.webp",
+     "x": 187,
+     "y": 511,
+     "w": 194,
+     "h": 157
+    },
+    {
+     "level": 6,
+     "file": "cozy_sofa/lv06.webp",
+     "x": 187,
+     "y": 511,
+     "w": 194,
+     "h": 157
+    },
+    {
+     "level": 7,
+     "file": "cozy_sofa/lv07.webp",
+     "x": 131,
+     "y": 465,
+     "w": 304,
+     "h": 229
+    },
+    {
+     "level": 8,
+     "file": "cozy_sofa/lv08.webp",
+     "x": 131,
+     "y": 465,
+     "w": 304,
+     "h": 229
+    },
+    {
+     "level": 9,
+     "file": "cozy_sofa/lv09.webp",
+     "x": 131,
+     "y": 465,
+     "w": 304,
+     "h": 229
+    },
+    {
+     "level": 10,
+     "file": "cozy_sofa/lv10.webp",
+     "x": 125,
+     "y": 363,
+     "w": 335,
+     "h": 345
+    }
+   ]
+  },
+  {
+   "id": "reading_chair",
+   "name": "Reading chair",
+   "slot": "c",
+   "z": 3,
+   "levels": [
+    {
+     "level": 1,
+     "file": "reading_chair/lv01.webp",
+     "x": 564,
+     "y": 571,
+     "w": 115,
+     "h": 161
+    },
+    {
+     "level": 2,
+     "file": "reading_chair/lv02.webp",
+     "x": 404,
+     "y": 571,
+     "w": 275,
+     "h": 161
+    },
+    {
+     "level": 3,
+     "file": "reading_chair/lv03.webp",
+     "x": 404,
+     "y": 571,
+     "w": 275,
+     "h": 191
+    },
+    {
+     "level": 4,
+     "file": "reading_chair/lv04.webp",
+     "x": 392,
+     "y": 562,
+     "w": 292,
+     "h": 206
+    },
+    {
+     "level": 5,
+     "file": "reading_chair/lv05.webp",
+     "x": 392,
+     "y": 562,
+     "w": 332,
+     "h": 209
+    },
+    {
+     "level": 6,
+     "file": "reading_chair/lv06.webp",
+     "x": 392,
+     "y": 562,
+     "w": 332,
+     "h": 209
+    },
+    {
+     "level": 7,
+     "file": "reading_chair/lv07.webp",
+     "x": 317,
+     "y": 560,
+     "w": 412,
+     "h": 248
+    },
+    {
+     "level": 8,
+     "file": "reading_chair/lv08.webp",
+     "x": 317,
+     "y": 560,
+     "w": 412,
+     "h": 248
+    },
+    {
+     "level": 9,
+     "file": "reading_chair/lv09.webp",
+     "x": 317,
+     "y": 560,
+     "w": 412,
+     "h": 248
+    },
+    {
+     "level": 10,
+     "file": "reading_chair/lv10.webp",
+     "x": 308,
+     "y": 501,
+     "w": 644,
+     "h": 312
+    }
+   ]
+  }
+ ]
+}

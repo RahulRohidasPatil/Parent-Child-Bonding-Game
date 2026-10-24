@@ -1,0 +1,539 @@
+{
+ "tier": 1,
+ "room": "geography",
+ "name": "Explorer's den",
+ "size": [
+  1252,
+  1026
+ ],
+ "items": [
+  {
+   "id": "world_map",
+   "name": "World map",
+   "slot": "wr",
+   "z": 0,
+   "levels": [
+    {
+     "level": 1,
+     "file": "world_map/lv01.webp",
+     "x": 845,
+     "y": 282,
+     "w": 87,
+     "h": 141
+    },
+    {
+     "level": 2,
+     "file": "world_map/lv02.webp",
+     "x": 845,
+     "y": 282,
+     "w": 87,
+     "h": 141
+    },
+    {
+     "level": 3,
+     "file": "world_map/lv03.webp",
+     "x": 843,
+     "y": 277,
+     "w": 89,
+     "h": 146
+    },
+    {
+     "level": 4,
+     "file": "world_map/lv04.webp",
+     "x": 838,
+     "y": 268,
+     "w": 100,
+     "h": 170
+    },
+    {
+     "level": 5,
+     "file": "world_map/lv05.webp",
+     "x": 838,
+     "y": 268,
+     "w": 100,
+     "h": 170
+    },
+    {
+     "level": 6,
+     "file": "world_map/lv06.webp",
+     "x": 838,
+     "y": 268,
+     "w": 100,
+     "h": 170
+    },
+    {
+     "level": 7,
+     "file": "world_map/lv07.webp",
+     "x": 832,
+     "y": 256,
+     "w": 113,
+     "h": 194
+    },
+    {
+     "level": 8,
+     "file": "world_map/lv08.webp",
+     "x": 832,
+     "y": 256,
+     "w": 113,
+     "h": 194
+    },
+    {
+     "level": 9,
+     "file": "world_map/lv09.webp",
+     "x": 832,
+     "y": 256,
+     "w": 113,
+     "h": 194
+    },
+    {
+     "level": 10,
+     "file": "world_map/lv10.webp",
+     "x": 825,
+     "y": 244,
+     "w": 127,
+     "h": 217
+    }
+   ]
+  },
+  {
+   "id": "explorer_camp",
+   "name": "Explorer camp",
+   "slot": "r1",
+   "z": 1,
+   "levels": [
+    {
+     "level": 1,
+     "file": "explorer_camp/lv01.webp",
+     "x": 670,
+     "y": 431,
+     "w": 115,
+     "h": 99
+    },
+    {
+     "level": 2,
+     "file": "explorer_camp/lv02.webp",
+     "x": 670,
+     "y": 431,
+     "w": 115,
+     "h": 127
+    },
+    {
+     "level": 3,
+     "file": "explorer_camp/lv03.webp",
+     "x": 643,
+     "y": 431,
+     "w": 142,
+     "h": 127
+    },
+    {
+     "level": 4,
+     "file": "explorer_camp/lv04.webp",
+     "x": 622,
+     "y": 360,
+     "w": 206,
+     "h": 208
+    },
+    {
+     "level": 5,
+     "file": "explorer_camp/lv05.webp",
+     "x": 622,
+     "y": 360,
+     "w": 206,
+     "h": 208
+    },
+    {
+     "level": 6,
+     "file": "explorer_camp/lv06.webp",
+     "x": 622,
+     "y": 360,
+     "w": 206,
+     "h": 208
+    },
+    {
+     "level": 7,
+     "file": "explorer_camp/lv07.webp",
+     "x": 613,
+     "y": 347,
+     "w": 366,
+     "h": 278
+    },
+    {
+     "level": 8,
+     "file": "explorer_camp/lv08.webp",
+     "x": 613,
+     "y": 347,
+     "w": 366,
+     "h": 278
+    },
+    {
+     "level": 9,
+     "file": "explorer_camp/lv09.webp",
+     "x": 613,
+     "y": 347,
+     "w": 366,
+     "h": 278
+    },
+    {
+     "level": 10,
+     "file": "explorer_camp/lv10.webp",
+     "x": 566,
+     "y": 320,
+     "w": 457,
+     "h": 328
+    }
+   ]
+  },
+  {
+   "id": "telescope",
+   "name": "Telescope",
+   "slot": "l1",
+   "z": 1.5,
+   "levels": [
+    {
+     "level": 1,
+     "file": "telescope/lv01.webp",
+     "x": 458,
+     "y": 394,
+     "w": 109,
+     "h": 125
+    },
+    {
+     "level": 2,
+     "file": "telescope/lv02.webp",
+     "x": 458,
+     "y": 394,
+     "w": 121,
+     "h": 125
+    },
+    {
+     "level": 3,
+     "file": "telescope/lv03.webp",
+     "x": 458,
+     "y": 394,
+     "w": 121,
+     "h": 155
+    },
+    {
+     "level": 4,
+     "file": "telescope/lv04.webp",
+     "x": 458,
+     "y": 392,
+     "w": 121,
+     "h": 157
+    },
+    {
+     "level": 5,
+     "file": "telescope/lv05.webp",
+     "x": 458,
+     "y": 392,
+     "w": 121,
+     "h": 157
+    },
+    {
+     "level": 6,
+     "file": "telescope/lv06.webp",
+     "x": 458,
+     "y": 392,
+     "w": 121,
+     "h": 157
+    },
+    {
+     "level": 7,
+     "file": "telescope/lv07.webp",
+     "x": 458,
+     "y": 390,
+     "w": 156,
+     "h": 159
+    },
+    {
+     "level": 8,
+     "file": "telescope/lv08.webp",
+     "x": 458,
+     "y": 390,
+     "w": 156,
+     "h": 159
+    },
+    {
+     "level": 9,
+     "file": "telescope/lv09.webp",
+     "x": 458,
+     "y": 390,
+     "w": 156,
+     "h": 159
+    },
+    {
+     "level": 10,
+     "file": "telescope/lv10.webp",
+     "x": 407,
+     "y": 388,
+     "w": 213,
+     "h": 169
+    }
+   ]
+  },
+  {
+   "id": "globe",
+   "name": "Globe",
+   "slot": "r2",
+   "z": 2,
+   "levels": [
+    {
+     "level": 1,
+     "file": "globe/lv01.webp",
+     "x": 896,
+     "y": 475,
+     "w": 150,
+     "h": 178
+    },
+    {
+     "level": 2,
+     "file": "globe/lv02.webp",
+     "x": 896,
+     "y": 475,
+     "w": 150,
+     "h": 178
+    },
+    {
+     "level": 3,
+     "file": "globe/lv03.webp",
+     "x": 885,
+     "y": 475,
+     "w": 161,
+     "h": 178
+    },
+    {
+     "level": 4,
+     "file": "globe/lv04.webp",
+     "x": 885,
+     "y": 461,
+     "w": 161,
+     "h": 192
+    },
+    {
+     "level": 5,
+     "file": "globe/lv05.webp",
+     "x": 885,
+     "y": 461,
+     "w": 161,
+     "h": 192
+    },
+    {
+     "level": 6,
+     "file": "globe/lv06.webp",
+     "x": 885,
+     "y": 461,
+     "w": 161,
+     "h": 192
+    },
+    {
+     "level": 7,
+     "file": "globe/lv07.webp",
+     "x": 869,
+     "y": 425,
+     "w": 180,
+     "h": 232
+    },
+    {
+     "level": 8,
+     "file": "globe/lv08.webp",
+     "x": 869,
+     "y": 425,
+     "w": 180,
+     "h": 232
+    },
+    {
+     "level": 9,
+     "file": "globe/lv09.webp",
+     "x": 869,
+     "y": 425,
+     "w": 180,
+     "h": 232
+    },
+    {
+     "level": 10,
+     "file": "globe/lv10.webp",
+     "x": 824,
+     "y": 390,
+     "w": 265,
+     "h": 289
+    }
+   ]
+  },
+  {
+   "id": "weather_station",
+   "name": "Weather station",
+   "slot": "l2",
+   "z": 2.5,
+   "levels": [
+    {
+     "level": 1,
+     "file": "weather_station/lv01.webp",
+     "x": 247,
+     "y": 491,
+     "w": 87,
+     "h": 151
+    },
+    {
+     "level": 2,
+     "file": "weather_station/lv02.webp",
+     "x": 247,
+     "y": 491,
+     "w": 92,
+     "h": 151
+    },
+    {
+     "level": 3,
+     "file": "weather_station/lv03.webp",
+     "x": 239,
+     "y": 491,
+     "w": 100,
+     "h": 168
+    },
+    {
+     "level": 4,
+     "file": "weather_station/lv04.webp",
+     "x": 241,
+     "y": 469,
+     "w": 100,
+     "h": 192
+    },
+    {
+     "level": 5,
+     "file": "weather_station/lv05.webp",
+     "x": 241,
+     "y": 469,
+     "w": 106,
+     "h": 192
+    },
+    {
+     "level": 6,
+     "file": "weather_station/lv06.webp",
+     "x": 241,
+     "y": 469,
+     "w": 106,
+     "h": 192
+    },
+    {
+     "level": 7,
+     "file": "weather_station/lv07.webp",
+     "x": 241,
+     "y": 453,
+     "w": 211,
+     "h": 208
+    },
+    {
+     "level": 8,
+     "file": "weather_station/lv08.webp",
+     "x": 241,
+     "y": 453,
+     "w": 211,
+     "h": 208
+    },
+    {
+     "level": 9,
+     "file": "weather_station/lv09.webp",
+     "x": 241,
+     "y": 453,
+     "w": 211,
+     "h": 208
+    },
+    {
+     "level": 10,
+     "file": "weather_station/lv10.webp",
+     "x": 226,
+     "y": 436,
+     "w": 240,
+     "h": 225
+    }
+   ]
+  },
+  {
+   "id": "landscape_table",
+   "name": "Landscape model",
+   "slot": "c",
+   "z": 3,
+   "levels": [
+    {
+     "level": 1,
+     "file": "landscape_table/lv01.webp",
+     "x": 547,
+     "y": 612,
+     "w": 141,
+     "h": 129
+    },
+    {
+     "level": 2,
+     "file": "landscape_table/lv02.webp",
+     "x": 547,
+     "y": 612,
+     "w": 142,
+     "h": 154
+    },
+    {
+     "level": 3,
+     "file": "landscape_table/lv03.webp",
+     "x": 547,
+     "y": 612,
+     "w": 142,
+     "h": 180
+    },
+    {
+     "level": 4,
+     "file": "landscape_table/lv04.webp",
+     "x": 472,
+     "y": 583,
+     "w": 297,
+     "h": 236
+    },
+    {
+     "level": 5,
+     "file": "landscape_table/lv05.webp",
+     "x": 472,
+     "y": 583,
+     "w": 297,
+     "h": 236
+    },
+    {
+     "level": 6,
+     "file": "landscape_table/lv06.webp",
+     "x": 472,
+     "y": 583,
+     "w": 297,
+     "h": 236
+    },
+    {
+     "level": 7,
+     "file": "landscape_table/lv07.webp",
+     "x": 446,
+     "y": 583,
+     "w": 349,
+     "h": 255
+    },
+    {
+     "level": 8,
+     "file": "landscape_table/lv08.webp",
+     "x": 446,
+     "y": 583,
+     "w": 349,
+     "h": 255
+    },
+    {
+     "level": 9,
+     "file": "landscape_table/lv09.webp",
+     "x": 446,
+     "y": 583,
+     "w": 349,
+     "h": 255
+    },
+    {
+     "level": 10,
+     "file": "landscape_table/lv10.webp",
+     "x": 422,
+     "y": 554,
+     "w": 397,
+     "h": 300
+    }
+   ]
+  }
+ ]
+}

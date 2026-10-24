@@ -1,0 +1,539 @@
+{
+ "tier": 1,
+ "room": "maths",
+ "name": "Maths workshop",
+ "size": [
+  1252,
+  1026
+ ],
+ "items": [
+  {
+   "id": "chalkboard",
+   "name": "Chalkboard",
+   "slot": "wr",
+   "z": 0,
+   "levels": [
+    {
+     "level": 1,
+     "file": "chalkboard/lv01.webp",
+     "x": 836,
+     "y": 289,
+     "w": 105,
+     "h": 128
+    },
+    {
+     "level": 2,
+     "file": "chalkboard/lv02.webp",
+     "x": 836,
+     "y": 289,
+     "w": 105,
+     "h": 128
+    },
+    {
+     "level": 3,
+     "file": "chalkboard/lv03.webp",
+     "x": 836,
+     "y": 280,
+     "w": 105,
+     "h": 137
+    },
+    {
+     "level": 4,
+     "file": "chalkboard/lv04.webp",
+     "x": 821,
+     "y": 269,
+     "w": 135,
+     "h": 167
+    },
+    {
+     "level": 5,
+     "file": "chalkboard/lv05.webp",
+     "x": 821,
+     "y": 269,
+     "w": 135,
+     "h": 167
+    },
+    {
+     "level": 6,
+     "file": "chalkboard/lv06.webp",
+     "x": 821,
+     "y": 269,
+     "w": 135,
+     "h": 167
+    },
+    {
+     "level": 7,
+     "file": "chalkboard/lv07.webp",
+     "x": 805,
+     "y": 253,
+     "w": 167,
+     "h": 203
+    },
+    {
+     "level": 8,
+     "file": "chalkboard/lv08.webp",
+     "x": 805,
+     "y": 253,
+     "w": 167,
+     "h": 203
+    },
+    {
+     "level": 9,
+     "file": "chalkboard/lv09.webp",
+     "x": 805,
+     "y": 253,
+     "w": 167,
+     "h": 203
+    },
+    {
+     "level": 10,
+     "file": "chalkboard/lv10.webp",
+     "x": 793,
+     "y": 242,
+     "w": 191,
+     "h": 226
+    }
+   ]
+  },
+  {
+   "id": "wall_clock",
+   "name": "Wall clock",
+   "slot": "wl",
+   "z": 0,
+   "levels": [
+    {
+     "level": 1,
+     "file": "wall_clock/lv01.webp",
+     "x": 334,
+     "y": 306,
+     "w": 76,
+     "h": 90
+    },
+    {
+     "level": 2,
+     "file": "wall_clock/lv02.webp",
+     "x": 334,
+     "y": 294,
+     "w": 76,
+     "h": 102
+    },
+    {
+     "level": 3,
+     "file": "wall_clock/lv03.webp",
+     "x": 334,
+     "y": 287,
+     "w": 83,
+     "h": 109
+    },
+    {
+     "level": 4,
+     "file": "wall_clock/lv04.webp",
+     "x": 328,
+     "y": 282,
+     "w": 93,
+     "h": 121
+    },
+    {
+     "level": 5,
+     "file": "wall_clock/lv05.webp",
+     "x": 328,
+     "y": 282,
+     "w": 93,
+     "h": 121
+    },
+    {
+     "level": 6,
+     "file": "wall_clock/lv06.webp",
+     "x": 328,
+     "y": 282,
+     "w": 93,
+     "h": 121
+    },
+    {
+     "level": 7,
+     "file": "wall_clock/lv07.webp",
+     "x": 325,
+     "y": 265,
+     "w": 108,
+     "h": 176
+    },
+    {
+     "level": 8,
+     "file": "wall_clock/lv08.webp",
+     "x": 325,
+     "y": 265,
+     "w": 108,
+     "h": 176
+    },
+    {
+     "level": 9,
+     "file": "wall_clock/lv09.webp",
+     "x": 325,
+     "y": 265,
+     "w": 108,
+     "h": 176
+    },
+    {
+     "level": 10,
+     "file": "wall_clock/lv10.webp",
+     "x": 321,
+     "y": 261,
+     "w": 114,
+     "h": 184
+    }
+   ]
+  },
+  {
+   "id": "maths_books",
+   "name": "Maths books",
+   "slot": "l1",
+   "z": 1.5,
+   "levels": [
+    {
+     "level": 1,
+     "file": "maths_books/lv01.webp",
+     "x": 432,
+     "y": 355,
+     "w": 183,
+     "h": 194
+    },
+    {
+     "level": 2,
+     "file": "maths_books/lv02.webp",
+     "x": 432,
+     "y": 350,
+     "w": 183,
+     "h": 199
+    },
+    {
+     "level": 3,
+     "file": "maths_books/lv03.webp",
+     "x": 432,
+     "y": 350,
+     "w": 183,
+     "h": 199
+    },
+    {
+     "level": 4,
+     "file": "maths_books/lv04.webp",
+     "x": 428,
+     "y": 330,
+     "w": 192,
+     "h": 221
+    },
+    {
+     "level": 5,
+     "file": "maths_books/lv05.webp",
+     "x": 428,
+     "y": 296,
+     "w": 207,
+     "h": 255
+    },
+    {
+     "level": 6,
+     "file": "maths_books/lv06.webp",
+     "x": 428,
+     "y": 296,
+     "w": 207,
+     "h": 255
+    },
+    {
+     "level": 7,
+     "file": "maths_books/lv07.webp",
+     "x": 434,
+     "y": 226,
+     "w": 201,
+     "h": 322
+    },
+    {
+     "level": 8,
+     "file": "maths_books/lv08.webp",
+     "x": 434,
+     "y": 226,
+     "w": 201,
+     "h": 322
+    },
+    {
+     "level": 9,
+     "file": "maths_books/lv09.webp",
+     "x": 434,
+     "y": 226,
+     "w": 201,
+     "h": 322
+    },
+    {
+     "level": 10,
+     "file": "maths_books/lv10.webp",
+     "x": 378,
+     "y": 198,
+     "w": 298,
+     "h": 378
+    }
+   ]
+  },
+  {
+   "id": "maths_desk",
+   "name": "Maths desk",
+   "slot": "r2",
+   "z": 2,
+   "levels": [
+    {
+     "level": 1,
+     "file": "maths_desk/lv01.webp",
+     "x": 854,
+     "y": 492,
+     "w": 195,
+     "h": 181
+    },
+    {
+     "level": 2,
+     "file": "maths_desk/lv02.webp",
+     "x": 854,
+     "y": 482,
+     "w": 195,
+     "h": 191
+    },
+    {
+     "level": 3,
+     "file": "maths_desk/lv03.webp",
+     "x": 854,
+     "y": 472,
+     "w": 195,
+     "h": 201
+    },
+    {
+     "level": 4,
+     "file": "maths_desk/lv04.webp",
+     "x": 813,
+     "y": 450,
+     "w": 299,
+     "h": 243
+    },
+    {
+     "level": 5,
+     "file": "maths_desk/lv05.webp",
+     "x": 813,
+     "y": 450,
+     "w": 299,
+     "h": 243
+    },
+    {
+     "level": 6,
+     "file": "maths_desk/lv06.webp",
+     "x": 813,
+     "y": 450,
+     "w": 299,
+     "h": 243
+    },
+    {
+     "level": 7,
+     "file": "maths_desk/lv07.webp",
+     "x": 843,
+     "y": 423,
+     "w": 248,
+     "h": 256
+    },
+    {
+     "level": 8,
+     "file": "maths_desk/lv08.webp",
+     "x": 843,
+     "y": 423,
+     "w": 248,
+     "h": 256
+    },
+    {
+     "level": 9,
+     "file": "maths_desk/lv09.webp",
+     "x": 843,
+     "y": 423,
+     "w": 248,
+     "h": 256
+    },
+    {
+     "level": 10,
+     "file": "maths_desk/lv10.webp",
+     "x": 836,
+     "y": 416,
+     "w": 260,
+     "h": 266
+    }
+   ]
+  },
+  {
+   "id": "trophy_shelf",
+   "name": "Trophy shelf",
+   "slot": "l2",
+   "z": 2.5,
+   "levels": [
+    {
+     "level": 1,
+     "file": "trophy_shelf/lv01.webp",
+     "x": 214,
+     "y": 510,
+     "w": 150,
+     "h": 147
+    },
+    {
+     "level": 2,
+     "file": "trophy_shelf/lv02.webp",
+     "x": 214,
+     "y": 510,
+     "w": 150,
+     "h": 147
+    },
+    {
+     "level": 3,
+     "file": "trophy_shelf/lv03.webp",
+     "x": 214,
+     "y": 493,
+     "w": 150,
+     "h": 164
+    },
+    {
+     "level": 4,
+     "file": "trophy_shelf/lv04.webp",
+     "x": 210,
+     "y": 486,
+     "w": 159,
+     "h": 173
+    },
+    {
+     "level": 5,
+     "file": "trophy_shelf/lv05.webp",
+     "x": 188,
+     "y": 486,
+     "w": 181,
+     "h": 181
+    },
+    {
+     "level": 6,
+     "file": "trophy_shelf/lv06.webp",
+     "x": 188,
+     "y": 486,
+     "w": 181,
+     "h": 181
+    },
+    {
+     "level": 7,
+     "file": "trophy_shelf/lv07.webp",
+     "x": 161,
+     "y": 466,
+     "w": 254,
+     "h": 214
+    },
+    {
+     "level": 8,
+     "file": "trophy_shelf/lv08.webp",
+     "x": 161,
+     "y": 466,
+     "w": 254,
+     "h": 214
+    },
+    {
+     "level": 9,
+     "file": "trophy_shelf/lv09.webp",
+     "x": 161,
+     "y": 466,
+     "w": 254,
+     "h": 214
+    },
+    {
+     "level": 10,
+     "file": "trophy_shelf/lv10.webp",
+     "x": 184,
+     "y": 431,
+     "w": 211,
+     "h": 238
+    }
+   ]
+  },
+  {
+   "id": "shape_blocks",
+   "name": "Shape blocks",
+   "slot": "c",
+   "z": 3,
+   "levels": [
+    {
+     "level": 1,
+     "file": "shape_blocks/lv01.webp",
+     "x": 579,
+     "y": 644,
+     "w": 74,
+     "h": 81
+    },
+    {
+     "level": 2,
+     "file": "shape_blocks/lv02.webp",
+     "x": 579,
+     "y": 644,
+     "w": 74,
+     "h": 96
+    },
+    {
+     "level": 3,
+     "file": "shape_blocks/lv03.webp",
+     "x": 579,
+     "y": 644,
+     "w": 109,
+     "h": 96
+    },
+    {
+     "level": 4,
+     "file": "shape_blocks/lv04.webp",
+     "x": 569,
+     "y": 622,
+     "w": 197,
+     "h": 127
+    },
+    {
+     "level": 5,
+     "file": "shape_blocks/lv05.webp",
+     "x": 521,
+     "y": 622,
+     "w": 245,
+     "h": 132
+    },
+    {
+     "level": 6,
+     "file": "shape_blocks/lv06.webp",
+     "x": 521,
+     "y": 622,
+     "w": 245,
+     "h": 132
+    },
+    {
+     "level": 7,
+     "file": "shape_blocks/lv07.webp",
+     "x": 519,
+     "y": 589,
+     "w": 201,
+     "h": 186
+    },
+    {
+     "level": 8,
+     "file": "shape_blocks/lv08.webp",
+     "x": 519,
+     "y": 589,
+     "w": 201,
+     "h": 186
+    },
+    {
+     "level": 9,
+     "file": "shape_blocks/lv09.webp",
+     "x": 519,
+     "y": 589,
+     "w": 201,
+     "h": 186
+    },
+    {
+     "level": 10,
+     "file": "shape_blocks/lv10.webp",
+     "x": 362,
+     "y": 567,
+     "w": 525,
+     "h": 235
+    }
+   ]
+  }
+ ]
+}

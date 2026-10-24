@@ -1,0 +1,547 @@
+{
+ "tier": 2,
+ "room": "geography",
+ "size": [
+  636,
+  508
+ ],
+ "tile": [
+  64,
+  32
+ ],
+ "room_tiles": 9,
+ "floor_origin": [
+  318.0,
+  180
+ ],
+ "items": [
+  {
+   "id": "grid_map",
+   "name": "Grid-reference map",
+   "slot": "wr",
+   "levels": [
+    {
+     "level": 1,
+     "file": "grid_map/lv01.png",
+     "x": 416,
+     "y": 104,
+     "w": 62,
+     "h": 104
+    },
+    {
+     "level": 2,
+     "file": "grid_map/lv02.png",
+     "x": 416,
+     "y": 104,
+     "w": 62,
+     "h": 104
+    },
+    {
+     "level": 3,
+     "file": "grid_map/lv03.png",
+     "x": 416,
+     "y": 104,
+     "w": 62,
+     "h": 104
+    },
+    {
+     "level": 4,
+     "file": "grid_map/lv04.png",
+     "x": 408,
+     "y": 91,
+     "w": 78,
+     "h": 132
+    },
+    {
+     "level": 5,
+     "file": "grid_map/lv05.png",
+     "x": 408,
+     "y": 91,
+     "w": 78,
+     "h": 132
+    },
+    {
+     "level": 6,
+     "file": "grid_map/lv06.png",
+     "x": 408,
+     "y": 91,
+     "w": 78,
+     "h": 132
+    },
+    {
+     "level": 7,
+     "file": "grid_map/lv07.png",
+     "x": 398,
+     "y": 78,
+     "w": 98,
+     "h": 156
+    },
+    {
+     "level": 8,
+     "file": "grid_map/lv08.png",
+     "x": 398,
+     "y": 78,
+     "w": 98,
+     "h": 156
+    },
+    {
+     "level": 9,
+     "file": "grid_map/lv09.png",
+     "x": 398,
+     "y": 78,
+     "w": 98,
+     "h": 156
+    },
+    {
+     "level": 10,
+     "file": "grid_map/lv10.png",
+     "x": 389,
+     "y": 69,
+     "w": 116,
+     "h": 174
+    }
+   ],
+   "z": -1
+  },
+  {
+   "id": "resource_map",
+   "name": "Resource map table",
+   "slot": "r1",
+   "levels": [
+    {
+     "level": 1,
+     "file": "resource_map/lv01.png",
+     "x": 324,
+     "y": 182,
+     "w": 62,
+     "h": 62
+    },
+    {
+     "level": 2,
+     "file": "resource_map/lv02.png",
+     "x": 324,
+     "y": 182,
+     "w": 62,
+     "h": 62
+    },
+    {
+     "level": 3,
+     "file": "resource_map/lv03.png",
+     "x": 324,
+     "y": 182,
+     "w": 62,
+     "h": 62
+    },
+    {
+     "level": 4,
+     "file": "resource_map/lv04.png",
+     "x": 324,
+     "y": 178,
+     "w": 62,
+     "h": 64
+    },
+    {
+     "level": 5,
+     "file": "resource_map/lv05.png",
+     "x": 324,
+     "y": 178,
+     "w": 78,
+     "h": 72
+    },
+    {
+     "level": 6,
+     "file": "resource_map/lv06.png",
+     "x": 324,
+     "y": 178,
+     "w": 78,
+     "h": 72
+    },
+    {
+     "level": 7,
+     "file": "resource_map/lv07.png",
+     "x": 321,
+     "y": 171,
+     "w": 82,
+     "h": 78
+    },
+    {
+     "level": 8,
+     "file": "resource_map/lv08.png",
+     "x": 321,
+     "y": 171,
+     "w": 82,
+     "h": 78
+    },
+    {
+     "level": 9,
+     "file": "resource_map/lv09.png",
+     "x": 321,
+     "y": 171,
+     "w": 82,
+     "h": 78
+    },
+    {
+     "level": 10,
+     "file": "resource_map/lv10.png",
+     "x": 318,
+     "y": 167,
+     "w": 86,
+     "h": 82
+    }
+   ],
+   "z": 3.9
+  },
+  {
+   "id": "rock_cabinet",
+   "name": "Rock & fossil cabinet",
+   "slot": "l1",
+   "levels": [
+    {
+     "level": 1,
+     "file": "rock_cabinet/lv01.png",
+     "x": 253,
+     "y": 225,
+     "w": 32,
+     "h": 24
+    },
+    {
+     "level": 2,
+     "file": "rock_cabinet/lv02.png",
+     "x": 238,
+     "y": 225,
+     "w": 48,
+     "h": 30
+    },
+    {
+     "level": 3,
+     "file": "rock_cabinet/lv03.png",
+     "x": 238,
+     "y": 225,
+     "w": 62,
+     "h": 30
+    },
+    {
+     "level": 4,
+     "file": "rock_cabinet/lv04.png",
+     "x": 233,
+     "y": 196,
+     "w": 72,
+     "h": 58
+    },
+    {
+     "level": 5,
+     "file": "rock_cabinet/lv05.png",
+     "x": 233,
+     "y": 196,
+     "w": 72,
+     "h": 58
+    },
+    {
+     "level": 6,
+     "file": "rock_cabinet/lv06.png",
+     "x": 233,
+     "y": 196,
+     "w": 72,
+     "h": 58
+    },
+    {
+     "level": 7,
+     "file": "rock_cabinet/lv07.png",
+     "x": 230,
+     "y": 185,
+     "w": 78,
+     "h": 70
+    },
+    {
+     "level": 8,
+     "file": "rock_cabinet/lv08.png",
+     "x": 230,
+     "y": 185,
+     "w": 78,
+     "h": 70
+    },
+    {
+     "level": 9,
+     "file": "rock_cabinet/lv09.png",
+     "x": 230,
+     "y": 185,
+     "w": 78,
+     "h": 70
+    },
+    {
+     "level": 10,
+     "file": "rock_cabinet/lv10.png",
+     "x": 206,
+     "y": 124,
+     "w": 124,
+     "h": 130
+    }
+   ],
+   "z": 4.24
+  },
+  {
+   "id": "atlas_stand",
+   "name": "Atlas & compass stand",
+   "slot": "r2",
+   "levels": [
+    {
+     "level": 1,
+     "file": "atlas_stand/lv01.png",
+     "x": 500,
+     "y": 276,
+     "w": 24,
+     "h": 44
+    },
+    {
+     "level": 2,
+     "file": "atlas_stand/lv02.png",
+     "x": 480,
+     "y": 276,
+     "w": 44,
+     "h": 50
+    },
+    {
+     "level": 3,
+     "file": "atlas_stand/lv03.png",
+     "x": 480,
+     "y": 276,
+     "w": 52,
+     "h": 50
+    },
+    {
+     "level": 4,
+     "file": "atlas_stand/lv04.png",
+     "x": 479,
+     "y": 273,
+     "w": 60,
+     "h": 52
+    },
+    {
+     "level": 5,
+     "file": "atlas_stand/lv05.png",
+     "x": 477,
+     "y": 273,
+     "w": 62,
+     "h": 52
+    },
+    {
+     "level": 6,
+     "file": "atlas_stand/lv06.png",
+     "x": 477,
+     "y": 273,
+     "w": 62,
+     "h": 52
+    },
+    {
+     "level": 7,
+     "file": "atlas_stand/lv07.png",
+     "x": 468,
+     "y": 271,
+     "w": 76,
+     "h": 54
+    },
+    {
+     "level": 8,
+     "file": "atlas_stand/lv08.png",
+     "x": 468,
+     "y": 271,
+     "w": 76,
+     "h": 54
+    },
+    {
+     "level": 9,
+     "file": "atlas_stand/lv09.png",
+     "x": 468,
+     "y": 271,
+     "w": 76,
+     "h": 54
+    },
+    {
+     "level": 10,
+     "file": "atlas_stand/lv10.png",
+     "x": 456,
+     "y": 268,
+     "w": 92,
+     "h": 58
+    }
+   ],
+   "z": 8.62
+  },
+  {
+   "id": "climate_garden",
+   "name": "Climate-zone garden",
+   "slot": "l2",
+   "levels": [
+    {
+     "level": 1,
+     "file": "climate_garden/lv01.png",
+     "x": 114,
+     "y": 287,
+     "w": 22,
+     "h": 34
+    },
+    {
+     "level": 2,
+     "file": "climate_garden/lv02.png",
+     "x": 108,
+     "y": 287,
+     "w": 28,
+     "h": 40
+    },
+    {
+     "level": 3,
+     "file": "climate_garden/lv03.png",
+     "x": 108,
+     "y": 287,
+     "w": 38,
+     "h": 40
+    },
+    {
+     "level": 4,
+     "file": "climate_garden/lv04.png",
+     "x": 108,
+     "y": 281,
+     "w": 44,
+     "h": 46
+    },
+    {
+     "level": 5,
+     "file": "climate_garden/lv05.png",
+     "x": 106,
+     "y": 281,
+     "w": 46,
+     "h": 46
+    },
+    {
+     "level": 6,
+     "file": "climate_garden/lv06.png",
+     "x": 106,
+     "y": 281,
+     "w": 46,
+     "h": 46
+    },
+    {
+     "level": 7,
+     "file": "climate_garden/lv07.png",
+     "x": 96,
+     "y": 257,
+     "w": 62,
+     "h": 70
+    },
+    {
+     "level": 8,
+     "file": "climate_garden/lv08.png",
+     "x": 96,
+     "y": 257,
+     "w": 62,
+     "h": 70
+    },
+    {
+     "level": 9,
+     "file": "climate_garden/lv09.png",
+     "x": 96,
+     "y": 257,
+     "w": 62,
+     "h": 70
+    },
+    {
+     "level": 10,
+     "file": "climate_garden/lv10.png",
+     "x": 87,
+     "y": 247,
+     "w": 78,
+     "h": 80
+    }
+   ],
+   "z": 8.74
+  },
+  {
+   "id": "volcano_model",
+   "name": "Volcano model",
+   "slot": "c",
+   "levels": [
+    {
+     "level": 1,
+     "file": "volcano_model/lv01.png",
+     "x": 288,
+     "y": 317,
+     "w": 44,
+     "h": 50
+    },
+    {
+     "level": 2,
+     "file": "volcano_model/lv02.png",
+     "x": 287,
+     "y": 317,
+     "w": 44,
+     "h": 50
+    },
+    {
+     "level": 3,
+     "file": "volcano_model/lv03.png",
+     "x": 287,
+     "y": 317,
+     "w": 52,
+     "h": 56
+    },
+    {
+     "level": 4,
+     "file": "volcano_model/lv04.png",
+     "x": 280,
+     "y": 298,
+     "w": 68,
+     "h": 74
+    },
+    {
+     "level": 5,
+     "file": "volcano_model/lv05.png",
+     "x": 267,
+     "y": 298,
+     "w": 82,
+     "h": 74
+    },
+    {
+     "level": 6,
+     "file": "volcano_model/lv06.png",
+     "x": 267,
+     "y": 298,
+     "w": 82,
+     "h": 74
+    },
+    {
+     "level": 7,
+     "file": "volcano_model/lv07.png",
+     "x": 266,
+     "y": 287,
+     "w": 84,
+     "h": 86
+    },
+    {
+     "level": 8,
+     "file": "volcano_model/lv08.png",
+     "x": 266,
+     "y": 287,
+     "w": 84,
+     "h": 86
+    },
+    {
+     "level": 9,
+     "file": "volcano_model/lv09.png",
+     "x": 266,
+     "y": 287,
+     "w": 84,
+     "h": 86
+    },
+    {
+     "level": 10,
+     "file": "volcano_model/lv10.png",
+     "x": 264,
+     "y": 278,
+     "w": 88,
+     "h": 94
+    }
+   ],
+   "z": 11.65
+  }
+ ]
+}

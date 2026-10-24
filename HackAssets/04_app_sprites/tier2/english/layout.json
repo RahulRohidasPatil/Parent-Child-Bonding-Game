@@ -1,0 +1,547 @@
+{
+ "tier": 2,
+ "room": "english",
+ "size": [
+  636,
+  508
+ ],
+ "tile": [
+  64,
+  32
+ ],
+ "room_tiles": 9,
+ "floor_origin": [
+  318.0,
+  180
+ ],
+ "items": [
+  {
+   "id": "metaphor_wall",
+   "name": "Simile & metaphor wall",
+   "slot": "wl",
+   "levels": [
+    {
+     "level": 1,
+     "file": "metaphor_wall/lv01.png",
+     "x": 161,
+     "y": 102,
+     "w": 62,
+     "h": 104
+    },
+    {
+     "level": 2,
+     "file": "metaphor_wall/lv02.png",
+     "x": 161,
+     "y": 102,
+     "w": 62,
+     "h": 104
+    },
+    {
+     "level": 3,
+     "file": "metaphor_wall/lv03.png",
+     "x": 161,
+     "y": 102,
+     "w": 62,
+     "h": 104
+    },
+    {
+     "level": 4,
+     "file": "metaphor_wall/lv04.png",
+     "x": 152,
+     "y": 89,
+     "w": 78,
+     "h": 132
+    },
+    {
+     "level": 5,
+     "file": "metaphor_wall/lv05.png",
+     "x": 152,
+     "y": 89,
+     "w": 78,
+     "h": 132
+    },
+    {
+     "level": 6,
+     "file": "metaphor_wall/lv06.png",
+     "x": 152,
+     "y": 89,
+     "w": 78,
+     "h": 132
+    },
+    {
+     "level": 7,
+     "file": "metaphor_wall/lv07.png",
+     "x": 142,
+     "y": 76,
+     "w": 98,
+     "h": 156
+    },
+    {
+     "level": 8,
+     "file": "metaphor_wall/lv08.png",
+     "x": 142,
+     "y": 76,
+     "w": 98,
+     "h": 156
+    },
+    {
+     "level": 9,
+     "file": "metaphor_wall/lv09.png",
+     "x": 142,
+     "y": 76,
+     "w": 98,
+     "h": 156
+    },
+    {
+     "level": 10,
+     "file": "metaphor_wall/lv10.png",
+     "x": 134,
+     "y": 67,
+     "w": 116,
+     "h": 174
+    }
+   ],
+   "z": -1
+  },
+  {
+   "id": "library_wall",
+   "name": "Library wall",
+   "slot": "r1",
+   "levels": [
+    {
+     "level": 1,
+     "file": "library_wall/lv01.png",
+     "x": 320,
+     "y": 132,
+     "w": 86,
+     "h": 112
+    },
+    {
+     "level": 2,
+     "file": "library_wall/lv02.png",
+     "x": 320,
+     "y": 114,
+     "w": 86,
+     "h": 128
+    },
+    {
+     "level": 3,
+     "file": "library_wall/lv03.png",
+     "x": 320,
+     "y": 114,
+     "w": 86,
+     "h": 128
+    },
+    {
+     "level": 4,
+     "file": "library_wall/lv04.png",
+     "x": 319,
+     "y": 112,
+     "w": 88,
+     "h": 132
+    },
+    {
+     "level": 5,
+     "file": "library_wall/lv05.png",
+     "x": 294,
+     "y": 112,
+     "w": 112,
+     "h": 138
+    },
+    {
+     "level": 6,
+     "file": "library_wall/lv06.png",
+     "x": 294,
+     "y": 112,
+     "w": 112,
+     "h": 138
+    },
+    {
+     "level": 7,
+     "file": "library_wall/lv07.png",
+     "x": 292,
+     "y": 109,
+     "w": 114,
+     "h": 140
+    },
+    {
+     "level": 8,
+     "file": "library_wall/lv08.png",
+     "x": 292,
+     "y": 109,
+     "w": 114,
+     "h": 140
+    },
+    {
+     "level": 9,
+     "file": "library_wall/lv09.png",
+     "x": 292,
+     "y": 109,
+     "w": 114,
+     "h": 140
+    },
+    {
+     "level": 10,
+     "file": "library_wall/lv10.png",
+     "x": 291,
+     "y": 107,
+     "w": 188,
+     "h": 142
+    }
+   ],
+   "z": 3.9
+  },
+  {
+   "id": "lounge_sofa",
+   "name": "Lounge sofa",
+   "slot": "l1",
+   "levels": [
+    {
+     "level": 1,
+     "file": "lounge_sofa/lv01.png",
+     "x": 241,
+     "y": 195,
+     "w": 54,
+     "h": 54
+    },
+    {
+     "level": 2,
+     "file": "lounge_sofa/lv02.png",
+     "x": 241,
+     "y": 195,
+     "w": 54,
+     "h": 54
+    },
+    {
+     "level": 3,
+     "file": "lounge_sofa/lv03.png",
+     "x": 232,
+     "y": 195,
+     "w": 64,
+     "h": 60
+    },
+    {
+     "level": 4,
+     "file": "lounge_sofa/lv04.png",
+     "x": 230,
+     "y": 190,
+     "w": 68,
+     "h": 64
+    },
+    {
+     "level": 5,
+     "file": "lounge_sofa/lv05.png",
+     "x": 230,
+     "y": 190,
+     "w": 80,
+     "h": 64
+    },
+    {
+     "level": 6,
+     "file": "lounge_sofa/lv06.png",
+     "x": 230,
+     "y": 190,
+     "w": 80,
+     "h": 64
+    },
+    {
+     "level": 7,
+     "file": "lounge_sofa/lv07.png",
+     "x": 225,
+     "y": 185,
+     "w": 92,
+     "h": 70
+    },
+    {
+     "level": 8,
+     "file": "lounge_sofa/lv08.png",
+     "x": 225,
+     "y": 185,
+     "w": 92,
+     "h": 70
+    },
+    {
+     "level": 9,
+     "file": "lounge_sofa/lv09.png",
+     "x": 225,
+     "y": 185,
+     "w": 92,
+     "h": 70
+    },
+    {
+     "level": 10,
+     "file": "lounge_sofa/lv10.png",
+     "x": 199,
+     "y": 175,
+     "w": 144,
+     "h": 80
+    }
+   ],
+   "z": 4.24
+  },
+  {
+   "id": "author_desk",
+   "name": "Author desk",
+   "slot": "r2",
+   "levels": [
+    {
+     "level": 1,
+     "file": "author_desk/lv01.png",
+     "x": 469,
+     "y": 243,
+     "w": 74,
+     "h": 76
+    },
+    {
+     "level": 2,
+     "file": "author_desk/lv02.png",
+     "x": 469,
+     "y": 243,
+     "w": 74,
+     "h": 76
+    },
+    {
+     "level": 3,
+     "file": "author_desk/lv03.png",
+     "x": 469,
+     "y": 243,
+     "w": 74,
+     "h": 76
+    },
+    {
+     "level": 4,
+     "file": "author_desk/lv04.png",
+     "x": 468,
+     "y": 241,
+     "w": 76,
+     "h": 78
+    },
+    {
+     "level": 5,
+     "file": "author_desk/lv05.png",
+     "x": 468,
+     "y": 241,
+     "w": 84,
+     "h": 84
+    },
+    {
+     "level": 6,
+     "file": "author_desk/lv06.png",
+     "x": 468,
+     "y": 241,
+     "w": 84,
+     "h": 84
+    },
+    {
+     "level": 7,
+     "file": "author_desk/lv07.png",
+     "x": 449,
+     "y": 233,
+     "w": 98,
+     "h": 92
+    },
+    {
+     "level": 8,
+     "file": "author_desk/lv08.png",
+     "x": 449,
+     "y": 233,
+     "w": 98,
+     "h": 92
+    },
+    {
+     "level": 9,
+     "file": "author_desk/lv09.png",
+     "x": 449,
+     "y": 233,
+     "w": 98,
+     "h": 92
+    },
+    {
+     "level": 10,
+     "file": "author_desk/lv10.png",
+     "x": 429,
+     "y": 208,
+     "w": 140,
+     "h": 118
+    }
+   ],
+   "z": 8.62
+  },
+  {
+   "id": "listening_corner",
+   "name": "Listening corner",
+   "slot": "l2",
+   "levels": [
+    {
+     "level": 1,
+     "file": "listening_corner/lv01.png",
+     "x": 113,
+     "y": 292,
+     "w": 24,
+     "h": 28
+    },
+    {
+     "level": 2,
+     "file": "listening_corner/lv02.png",
+     "x": 113,
+     "y": 285,
+     "w": 24,
+     "h": 36
+    },
+    {
+     "level": 3,
+     "file": "listening_corner/lv03.png",
+     "x": 106,
+     "y": 285,
+     "w": 32,
+     "h": 42
+    },
+    {
+     "level": 4,
+     "file": "listening_corner/lv04.png",
+     "x": 98,
+     "y": 269,
+     "w": 46,
+     "h": 58
+    },
+    {
+     "level": 5,
+     "file": "listening_corner/lv05.png",
+     "x": 98,
+     "y": 269,
+     "w": 58,
+     "h": 58
+    },
+    {
+     "level": 6,
+     "file": "listening_corner/lv06.png",
+     "x": 98,
+     "y": 269,
+     "w": 58,
+     "h": 58
+    },
+    {
+     "level": 7,
+     "file": "listening_corner/lv07.png",
+     "x": 91,
+     "y": 252,
+     "w": 72,
+     "h": 76
+    },
+    {
+     "level": 8,
+     "file": "listening_corner/lv08.png",
+     "x": 91,
+     "y": 252,
+     "w": 72,
+     "h": 76
+    },
+    {
+     "level": 9,
+     "file": "listening_corner/lv09.png",
+     "x": 91,
+     "y": 252,
+     "w": 72,
+     "h": 76
+    },
+    {
+     "level": 10,
+     "file": "listening_corner/lv10.png",
+     "x": 85,
+     "y": 242,
+     "w": 82,
+     "h": 84
+    }
+   ],
+   "z": 8.74
+  },
+  {
+   "id": "reading_table",
+   "name": "Reading table",
+   "slot": "c",
+   "levels": [
+    {
+     "level": 1,
+     "file": "reading_table/lv01.png",
+     "x": 286,
+     "y": 326,
+     "w": 54,
+     "h": 42
+    },
+    {
+     "level": 2,
+     "file": "reading_table/lv02.png",
+     "x": 271,
+     "y": 326,
+     "w": 68,
+     "h": 48
+    },
+    {
+     "level": 3,
+     "file": "reading_table/lv03.png",
+     "x": 271,
+     "y": 326,
+     "w": 78,
+     "h": 48
+    },
+    {
+     "level": 4,
+     "file": "reading_table/lv04.png",
+     "x": 269,
+     "y": 319,
+     "w": 82,
+     "h": 54
+    },
+    {
+     "level": 5,
+     "file": "reading_table/lv05.png",
+     "x": 267,
+     "y": 319,
+     "w": 84,
+     "h": 54
+    },
+    {
+     "level": 6,
+     "file": "reading_table/lv06.png",
+     "x": 267,
+     "y": 319,
+     "w": 84,
+     "h": 54
+    },
+    {
+     "level": 7,
+     "file": "reading_table/lv07.png",
+     "x": 263,
+     "y": 314,
+     "w": 92,
+     "h": 60
+    },
+    {
+     "level": 8,
+     "file": "reading_table/lv08.png",
+     "x": 263,
+     "y": 314,
+     "w": 92,
+     "h": 60
+    },
+    {
+     "level": 9,
+     "file": "reading_table/lv09.png",
+     "x": 263,
+     "y": 314,
+     "w": 92,
+     "h": 60
+    },
+    {
+     "level": 10,
+     "file": "reading_table/lv10.png",
+     "x": 260,
+     "y": 309,
+     "w": 108,
+     "h": 64
+    }
+   ],
+   "z": 11.65
+  }
+ ]
+}

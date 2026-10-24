@@ -1,0 +1,547 @@
+{
+ "tier": 2,
+ "room": "maths",
+ "size": [
+  636,
+  508
+ ],
+ "tile": [
+  64,
+  32
+ ],
+ "room_tiles": 9,
+ "floor_origin": [
+  318.0,
+  180
+ ],
+ "items": [
+  {
+   "id": "data_wall",
+   "name": "Data & graphs wall",
+   "slot": "wr",
+   "levels": [
+    {
+     "level": 1,
+     "file": "data_wall/lv01.png",
+     "x": 416,
+     "y": 104,
+     "w": 62,
+     "h": 104
+    },
+    {
+     "level": 2,
+     "file": "data_wall/lv02.png",
+     "x": 416,
+     "y": 104,
+     "w": 62,
+     "h": 104
+    },
+    {
+     "level": 3,
+     "file": "data_wall/lv03.png",
+     "x": 416,
+     "y": 104,
+     "w": 62,
+     "h": 104
+    },
+    {
+     "level": 4,
+     "file": "data_wall/lv04.png",
+     "x": 408,
+     "y": 91,
+     "w": 78,
+     "h": 132
+    },
+    {
+     "level": 5,
+     "file": "data_wall/lv05.png",
+     "x": 408,
+     "y": 91,
+     "w": 78,
+     "h": 132
+    },
+    {
+     "level": 6,
+     "file": "data_wall/lv06.png",
+     "x": 408,
+     "y": 91,
+     "w": 78,
+     "h": 132
+    },
+    {
+     "level": 7,
+     "file": "data_wall/lv07.png",
+     "x": 398,
+     "y": 78,
+     "w": 98,
+     "h": 156
+    },
+    {
+     "level": 8,
+     "file": "data_wall/lv08.png",
+     "x": 398,
+     "y": 78,
+     "w": 98,
+     "h": 156
+    },
+    {
+     "level": 9,
+     "file": "data_wall/lv09.png",
+     "x": 398,
+     "y": 78,
+     "w": 98,
+     "h": 156
+    },
+    {
+     "level": 10,
+     "file": "data_wall/lv10.png",
+     "x": 389,
+     "y": 69,
+     "w": 116,
+     "h": 174
+    }
+   ],
+   "z": -1
+  },
+  {
+   "id": "computer_station",
+   "name": "Computer station",
+   "slot": "r1",
+   "levels": [
+    {
+     "level": 1,
+     "file": "computer_station/lv01.png",
+     "x": 318,
+     "y": 167,
+     "w": 74,
+     "h": 76
+    },
+    {
+     "level": 2,
+     "file": "computer_station/lv02.png",
+     "x": 318,
+     "y": 167,
+     "w": 74,
+     "h": 76
+    },
+    {
+     "level": 3,
+     "file": "computer_station/lv03.png",
+     "x": 318,
+     "y": 167,
+     "w": 74,
+     "h": 76
+    },
+    {
+     "level": 4,
+     "file": "computer_station/lv04.png",
+     "x": 317,
+     "y": 160,
+     "w": 76,
+     "h": 84
+    },
+    {
+     "level": 5,
+     "file": "computer_station/lv05.png",
+     "x": 317,
+     "y": 160,
+     "w": 84,
+     "h": 90
+    },
+    {
+     "level": 6,
+     "file": "computer_station/lv06.png",
+     "x": 317,
+     "y": 160,
+     "w": 84,
+     "h": 90
+    },
+    {
+     "level": 7,
+     "file": "computer_station/lv07.png",
+     "x": 297,
+     "y": 151,
+     "w": 102,
+     "h": 98
+    },
+    {
+     "level": 8,
+     "file": "computer_station/lv08.png",
+     "x": 297,
+     "y": 151,
+     "w": 102,
+     "h": 98
+    },
+    {
+     "level": 9,
+     "file": "computer_station/lv09.png",
+     "x": 297,
+     "y": 151,
+     "w": 102,
+     "h": 98
+    },
+    {
+     "level": 10,
+     "file": "computer_station/lv10.png",
+     "x": 295,
+     "y": 150,
+     "w": 104,
+     "h": 100
+    }
+   ],
+   "z": 3.9
+  },
+  {
+   "id": "puzzle_cabinet",
+   "name": "Puzzle cabinet",
+   "slot": "l1",
+   "levels": [
+    {
+     "level": 1,
+     "file": "puzzle_cabinet/lv01.png",
+     "x": 249,
+     "y": 170,
+     "w": 40,
+     "h": 78
+    },
+    {
+     "level": 2,
+     "file": "puzzle_cabinet/lv02.png",
+     "x": 249,
+     "y": 162,
+     "w": 40,
+     "h": 86
+    },
+    {
+     "level": 3,
+     "file": "puzzle_cabinet/lv03.png",
+     "x": 249,
+     "y": 152,
+     "w": 40,
+     "h": 96
+    },
+    {
+     "level": 4,
+     "file": "puzzle_cabinet/lv04.png",
+     "x": 248,
+     "y": 150,
+     "w": 42,
+     "h": 98
+    },
+    {
+     "level": 5,
+     "file": "puzzle_cabinet/lv05.png",
+     "x": 248,
+     "y": 150,
+     "w": 42,
+     "h": 98
+    },
+    {
+     "level": 6,
+     "file": "puzzle_cabinet/lv06.png",
+     "x": 248,
+     "y": 150,
+     "w": 42,
+     "h": 98
+    },
+    {
+     "level": 7,
+     "file": "puzzle_cabinet/lv07.png",
+     "x": 240,
+     "y": 148,
+     "w": 58,
+     "h": 102
+    },
+    {
+     "level": 8,
+     "file": "puzzle_cabinet/lv08.png",
+     "x": 240,
+     "y": 148,
+     "w": 58,
+     "h": 102
+    },
+    {
+     "level": 9,
+     "file": "puzzle_cabinet/lv09.png",
+     "x": 240,
+     "y": 148,
+     "w": 58,
+     "h": 102
+    },
+    {
+     "level": 10,
+     "file": "puzzle_cabinet/lv10.png",
+     "x": 239,
+     "y": 143,
+     "w": 60,
+     "h": 106
+    }
+   ],
+   "z": 4.24
+  },
+  {
+   "id": "trophy_cabinet",
+   "name": "Trophy cabinet",
+   "slot": "r2",
+   "levels": [
+    {
+     "level": 1,
+     "file": "trophy_cabinet/lv01.png",
+     "x": 485,
+     "y": 268,
+     "w": 42,
+     "h": 52
+    },
+    {
+     "level": 2,
+     "file": "trophy_cabinet/lv02.png",
+     "x": 485,
+     "y": 256,
+     "w": 42,
+     "h": 62
+    },
+    {
+     "level": 3,
+     "file": "trophy_cabinet/lv03.png",
+     "x": 472,
+     "y": 256,
+     "w": 54,
+     "h": 68
+    },
+    {
+     "level": 4,
+     "file": "trophy_cabinet/lv04.png",
+     "x": 468,
+     "y": 242,
+     "w": 62,
+     "h": 84
+    },
+    {
+     "level": 5,
+     "file": "trophy_cabinet/lv05.png",
+     "x": 468,
+     "y": 242,
+     "w": 72,
+     "h": 84
+    },
+    {
+     "level": 6,
+     "file": "trophy_cabinet/lv06.png",
+     "x": 468,
+     "y": 242,
+     "w": 72,
+     "h": 84
+    },
+    {
+     "level": 7,
+     "file": "trophy_cabinet/lv07.png",
+     "x": 466,
+     "y": 197,
+     "w": 76,
+     "h": 128
+    },
+    {
+     "level": 8,
+     "file": "trophy_cabinet/lv08.png",
+     "x": 466,
+     "y": 197,
+     "w": 76,
+     "h": 128
+    },
+    {
+     "level": 9,
+     "file": "trophy_cabinet/lv09.png",
+     "x": 466,
+     "y": 197,
+     "w": 76,
+     "h": 128
+    },
+    {
+     "level": 10,
+     "file": "trophy_cabinet/lv10.png",
+     "x": 444,
+     "y": 192,
+     "w": 122,
+     "h": 132
+    }
+   ],
+   "z": 8.62
+  },
+  {
+   "id": "game_table",
+   "name": "Board game table",
+   "slot": "l2",
+   "levels": [
+    {
+     "level": 1,
+     "file": "game_table/lv01.png",
+     "x": 101,
+     "y": 277,
+     "w": 48,
+     "h": 44
+    },
+    {
+     "level": 2,
+     "file": "game_table/lv02.png",
+     "x": 101,
+     "y": 277,
+     "w": 48,
+     "h": 44
+    },
+    {
+     "level": 3,
+     "file": "game_table/lv03.png",
+     "x": 101,
+     "y": 277,
+     "w": 58,
+     "h": 50
+    },
+    {
+     "level": 4,
+     "file": "game_table/lv04.png",
+     "x": 93,
+     "y": 267,
+     "w": 74,
+     "h": 60
+    },
+    {
+     "level": 5,
+     "file": "game_table/lv05.png",
+     "x": 93,
+     "y": 265,
+     "w": 74,
+     "h": 62
+    },
+    {
+     "level": 6,
+     "file": "game_table/lv06.png",
+     "x": 93,
+     "y": 265,
+     "w": 74,
+     "h": 62
+    },
+    {
+     "level": 7,
+     "file": "game_table/lv07.png",
+     "x": 77,
+     "y": 263,
+     "w": 92,
+     "h": 64
+    },
+    {
+     "level": 8,
+     "file": "game_table/lv08.png",
+     "x": 77,
+     "y": 263,
+     "w": 92,
+     "h": 64
+    },
+    {
+     "level": 9,
+     "file": "game_table/lv09.png",
+     "x": 77,
+     "y": 263,
+     "w": 92,
+     "h": 64
+    },
+    {
+     "level": 10,
+     "file": "game_table/lv10.png",
+     "x": 77,
+     "y": 260,
+     "w": 94,
+     "h": 68
+    }
+   ],
+   "z": 8.74
+  },
+  {
+   "id": "shape_tower",
+   "name": "Geometry tower",
+   "slot": "c",
+   "levels": [
+    {
+     "level": 1,
+     "file": "shape_tower/lv01.png",
+     "x": 301,
+     "y": 321,
+     "w": 18,
+     "h": 46
+    },
+    {
+     "level": 2,
+     "file": "shape_tower/lv02.png",
+     "x": 290,
+     "y": 321,
+     "w": 28,
+     "h": 52
+    },
+    {
+     "level": 3,
+     "file": "shape_tower/lv03.png",
+     "x": 290,
+     "y": 321,
+     "w": 38,
+     "h": 52
+    },
+    {
+     "level": 4,
+     "file": "shape_tower/lv04.png",
+     "x": 290,
+     "y": 319,
+     "w": 58,
+     "h": 54
+    },
+    {
+     "level": 5,
+     "file": "shape_tower/lv05.png",
+     "x": 288,
+     "y": 319,
+     "w": 60,
+     "h": 54
+    },
+    {
+     "level": 6,
+     "file": "shape_tower/lv06.png",
+     "x": 288,
+     "y": 319,
+     "w": 60,
+     "h": 54
+    },
+    {
+     "level": 7,
+     "file": "shape_tower/lv07.png",
+     "x": 269,
+     "y": 320,
+     "w": 98,
+     "h": 54
+    },
+    {
+     "level": 8,
+     "file": "shape_tower/lv08.png",
+     "x": 269,
+     "y": 320,
+     "w": 98,
+     "h": 54
+    },
+    {
+     "level": 9,
+     "file": "shape_tower/lv09.png",
+     "x": 269,
+     "y": 320,
+     "w": 98,
+     "h": 54
+    },
+    {
+     "level": 10,
+     "file": "shape_tower/lv10.png",
+     "x": 262,
+     "y": 310,
+     "w": 114,
+     "h": 64
+    }
+   ],
+   "z": 11.65
+  }
+ ]
+}

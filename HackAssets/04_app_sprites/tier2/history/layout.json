@@ -1,0 +1,547 @@
+{
+ "tier": 2,
+ "room": "history",
+ "size": [
+  636,
+  508
+ ],
+ "tile": [
+  64,
+  32
+ ],
+ "room_tiles": 9,
+ "floor_origin": [
+  318.0,
+  180
+ ],
+ "items": [
+  {
+   "id": "banner_wall",
+   "name": "Banner wall",
+   "slot": "wr",
+   "levels": [
+    {
+     "level": 1,
+     "file": "banner_wall/lv01.png",
+     "x": 408,
+     "y": 105,
+     "w": 78,
+     "h": 94
+    },
+    {
+     "level": 2,
+     "file": "banner_wall/lv02.png",
+     "x": 408,
+     "y": 105,
+     "w": 78,
+     "h": 94
+    },
+    {
+     "level": 3,
+     "file": "banner_wall/lv03.png",
+     "x": 408,
+     "y": 105,
+     "w": 78,
+     "h": 94
+    },
+    {
+     "level": 4,
+     "file": "banner_wall/lv04.png",
+     "x": 392,
+     "y": 93,
+     "w": 110,
+     "h": 116
+    },
+    {
+     "level": 5,
+     "file": "banner_wall/lv05.png",
+     "x": 392,
+     "y": 93,
+     "w": 110,
+     "h": 116
+    },
+    {
+     "level": 6,
+     "file": "banner_wall/lv06.png",
+     "x": 392,
+     "y": 93,
+     "w": 110,
+     "h": 116
+    },
+    {
+     "level": 7,
+     "file": "banner_wall/lv07.png",
+     "x": 376,
+     "y": 82,
+     "w": 142,
+     "h": 140
+    },
+    {
+     "level": 8,
+     "file": "banner_wall/lv08.png",
+     "x": 376,
+     "y": 82,
+     "w": 142,
+     "h": 140
+    },
+    {
+     "level": 9,
+     "file": "banner_wall/lv09.png",
+     "x": 376,
+     "y": 82,
+     "w": 142,
+     "h": 140
+    },
+    {
+     "level": 10,
+     "file": "banner_wall/lv10.png",
+     "x": 360,
+     "y": 70,
+     "w": 174,
+     "h": 164
+    }
+   ],
+   "z": -1
+  },
+  {
+   "id": "steam_train",
+   "name": "Steam train",
+   "slot": "r1",
+   "levels": [
+    {
+     "level": 1,
+     "file": "steam_train/lv01.png",
+     "x": 340,
+     "y": 220,
+     "w": 30,
+     "h": 24
+    },
+    {
+     "level": 2,
+     "file": "steam_train/lv02.png",
+     "x": 334,
+     "y": 211,
+     "w": 34,
+     "h": 38
+    },
+    {
+     "level": 3,
+     "file": "steam_train/lv03.png",
+     "x": 334,
+     "y": 211,
+     "w": 48,
+     "h": 38
+    },
+    {
+     "level": 4,
+     "file": "steam_train/lv04.png",
+     "x": 332,
+     "y": 211,
+     "w": 52,
+     "h": 38
+    },
+    {
+     "level": 5,
+     "file": "steam_train/lv05.png",
+     "x": 330,
+     "y": 211,
+     "w": 56,
+     "h": 38
+    },
+    {
+     "level": 6,
+     "file": "steam_train/lv06.png",
+     "x": 330,
+     "y": 211,
+     "w": 56,
+     "h": 38
+    },
+    {
+     "level": 7,
+     "file": "steam_train/lv07.png",
+     "x": 325,
+     "y": 190,
+     "w": 64,
+     "h": 60
+    },
+    {
+     "level": 8,
+     "file": "steam_train/lv08.png",
+     "x": 325,
+     "y": 190,
+     "w": 64,
+     "h": 60
+    },
+    {
+     "level": 9,
+     "file": "steam_train/lv09.png",
+     "x": 325,
+     "y": 190,
+     "w": 64,
+     "h": 60
+    },
+    {
+     "level": 10,
+     "file": "steam_train/lv10.png",
+     "x": 317,
+     "y": 179,
+     "w": 90,
+     "h": 70
+    }
+   ],
+   "z": 3.9
+  },
+  {
+   "id": "explorer_ship",
+   "name": "Explorer ship",
+   "slot": "l1",
+   "levels": [
+    {
+     "level": 1,
+     "file": "explorer_ship/lv01.png",
+     "x": 248,
+     "y": 215,
+     "w": 42,
+     "h": 34
+    },
+    {
+     "level": 2,
+     "file": "explorer_ship/lv02.png",
+     "x": 242,
+     "y": 215,
+     "w": 48,
+     "h": 40
+    },
+    {
+     "level": 3,
+     "file": "explorer_ship/lv03.png",
+     "x": 242,
+     "y": 215,
+     "w": 72,
+     "h": 40
+    },
+    {
+     "level": 4,
+     "file": "explorer_ship/lv04.png",
+     "x": 242,
+     "y": 174,
+     "w": 72,
+     "h": 80
+    },
+    {
+     "level": 5,
+     "file": "explorer_ship/lv05.png",
+     "x": 242,
+     "y": 174,
+     "w": 72,
+     "h": 80
+    },
+    {
+     "level": 6,
+     "file": "explorer_ship/lv06.png",
+     "x": 242,
+     "y": 174,
+     "w": 72,
+     "h": 80
+    },
+    {
+     "level": 7,
+     "file": "explorer_ship/lv07.png",
+     "x": 239,
+     "y": 160,
+     "w": 78,
+     "h": 94
+    },
+    {
+     "level": 8,
+     "file": "explorer_ship/lv08.png",
+     "x": 239,
+     "y": 160,
+     "w": 78,
+     "h": 94
+    },
+    {
+     "level": 9,
+     "file": "explorer_ship/lv09.png",
+     "x": 239,
+     "y": 160,
+     "w": 78,
+     "h": 94
+    },
+    {
+     "level": 10,
+     "file": "explorer_ship/lv10.png",
+     "x": 236,
+     "y": 146,
+     "w": 84,
+     "h": 108
+    }
+   ],
+   "z": 4.24
+  },
+  {
+   "id": "museum_vault",
+   "name": "Museum vault",
+   "slot": "r2",
+   "levels": [
+    {
+     "level": 1,
+     "file": "museum_vault/lv01.png",
+     "x": 474,
+     "y": 243,
+     "w": 76,
+     "h": 76
+    },
+    {
+     "level": 2,
+     "file": "museum_vault/lv02.png",
+     "x": 474,
+     "y": 232,
+     "w": 76,
+     "h": 86
+    },
+    {
+     "level": 3,
+     "file": "museum_vault/lv03.png",
+     "x": 474,
+     "y": 232,
+     "w": 86,
+     "h": 92
+    },
+    {
+     "level": 4,
+     "file": "museum_vault/lv04.png",
+     "x": 473,
+     "y": 230,
+     "w": 88,
+     "h": 94
+    },
+    {
+     "level": 5,
+     "file": "museum_vault/lv05.png",
+     "x": 453,
+     "y": 230,
+     "w": 108,
+     "h": 94
+    },
+    {
+     "level": 6,
+     "file": "museum_vault/lv06.png",
+     "x": 453,
+     "y": 230,
+     "w": 108,
+     "h": 94
+    },
+    {
+     "level": 7,
+     "file": "museum_vault/lv07.png",
+     "x": 451,
+     "y": 228,
+     "w": 112,
+     "h": 98
+    },
+    {
+     "level": 8,
+     "file": "museum_vault/lv08.png",
+     "x": 451,
+     "y": 228,
+     "w": 112,
+     "h": 98
+    },
+    {
+     "level": 9,
+     "file": "museum_vault/lv09.png",
+     "x": 451,
+     "y": 228,
+     "w": 112,
+     "h": 98
+    },
+    {
+     "level": 10,
+     "file": "museum_vault/lv10.png",
+     "x": 448,
+     "y": 225,
+     "w": 128,
+     "h": 100
+    }
+   ],
+   "z": 8.62
+  },
+  {
+   "id": "knight_hall",
+   "name": "Knight hall",
+   "slot": "l2",
+   "levels": [
+    {
+     "level": 1,
+     "file": "knight_hall/lv01.png",
+     "x": 110,
+     "y": 285,
+     "w": 30,
+     "h": 36
+    },
+    {
+     "level": 2,
+     "file": "knight_hall/lv02.png",
+     "x": 98,
+     "y": 287,
+     "w": 40,
+     "h": 40
+    },
+    {
+     "level": 3,
+     "file": "knight_hall/lv03.png",
+     "x": 98,
+     "y": 287,
+     "w": 52,
+     "h": 40
+    },
+    {
+     "level": 4,
+     "file": "knight_hall/lv04.png",
+     "x": 92,
+     "y": 260,
+     "w": 64,
+     "h": 68
+    },
+    {
+     "level": 5,
+     "file": "knight_hall/lv05.png",
+     "x": 92,
+     "y": 260,
+     "w": 64,
+     "h": 68
+    },
+    {
+     "level": 6,
+     "file": "knight_hall/lv06.png",
+     "x": 92,
+     "y": 260,
+     "w": 64,
+     "h": 68
+    },
+    {
+     "level": 7,
+     "file": "knight_hall/lv07.png",
+     "x": 88,
+     "y": 257,
+     "w": 68,
+     "h": 70
+    },
+    {
+     "level": 8,
+     "file": "knight_hall/lv08.png",
+     "x": 88,
+     "y": 257,
+     "w": 68,
+     "h": 70
+    },
+    {
+     "level": 9,
+     "file": "knight_hall/lv09.png",
+     "x": 88,
+     "y": 257,
+     "w": 68,
+     "h": 70
+    },
+    {
+     "level": 10,
+     "file": "knight_hall/lv10.png",
+     "x": 73,
+     "y": 255,
+     "w": 104,
+     "h": 72
+    }
+   ],
+   "z": 8.74
+  },
+  {
+   "id": "castle_model",
+   "name": "Castle model",
+   "slot": "c",
+   "levels": [
+    {
+     "level": 1,
+     "file": "castle_model/lv01.png",
+     "x": 288,
+     "y": 312,
+     "w": 44,
+     "h": 54
+    },
+    {
+     "level": 2,
+     "file": "castle_model/lv02.png",
+     "x": 288,
+     "y": 312,
+     "w": 44,
+     "h": 54
+    },
+    {
+     "level": 3,
+     "file": "castle_model/lv03.png",
+     "x": 288,
+     "y": 312,
+     "w": 44,
+     "h": 54
+    },
+    {
+     "level": 4,
+     "file": "castle_model/lv04.png",
+     "x": 279,
+     "y": 293,
+     "w": 60,
+     "h": 74
+    },
+    {
+     "level": 5,
+     "file": "castle_model/lv05.png",
+     "x": 269,
+     "y": 293,
+     "w": 72,
+     "h": 80
+    },
+    {
+     "level": 6,
+     "file": "castle_model/lv06.png",
+     "x": 269,
+     "y": 293,
+     "w": 72,
+     "h": 80
+    },
+    {
+     "level": 7,
+     "file": "castle_model/lv07.png",
+     "x": 268,
+     "y": 292,
+     "w": 74,
+     "h": 82
+    },
+    {
+     "level": 8,
+     "file": "castle_model/lv08.png",
+     "x": 268,
+     "y": 292,
+     "w": 74,
+     "h": 82
+    },
+    {
+     "level": 9,
+     "file": "castle_model/lv09.png",
+     "x": 268,
+     "y": 292,
+     "w": 74,
+     "h": 82
+    },
+    {
+     "level": 10,
+     "file": "castle_model/lv10.png",
+     "x": 266,
+     "y": 288,
+     "w": 90,
+     "h": 84
+    }
+   ],
+   "z": 11.65
+  }
+ ]
+}

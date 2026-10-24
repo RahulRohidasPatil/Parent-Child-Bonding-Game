@@ -1,0 +1,547 @@
+{
+ "tier": 1,
+ "room": "maths",
+ "size": [
+  572,
+  476
+ ],
+ "tile": [
+  64,
+  32
+ ],
+ "room_tiles": 8,
+ "floor_origin": [
+  286.0,
+  180
+ ],
+ "items": [
+  {
+   "id": "chalkboard",
+   "name": "Chalkboard",
+   "slot": "wr",
+   "levels": [
+    {
+     "level": 1,
+     "file": "chalkboard/lv01.png",
+     "x": 355,
+     "y": 94,
+     "w": 92,
+     "h": 108
+    },
+    {
+     "level": 2,
+     "file": "chalkboard/lv02.png",
+     "x": 355,
+     "y": 94,
+     "w": 92,
+     "h": 108
+    },
+    {
+     "level": 3,
+     "file": "chalkboard/lv03.png",
+     "x": 355,
+     "y": 94,
+     "w": 92,
+     "h": 108
+    },
+    {
+     "level": 4,
+     "file": "chalkboard/lv04.png",
+     "x": 336,
+     "y": 77,
+     "w": 128,
+     "h": 144
+    },
+    {
+     "level": 5,
+     "file": "chalkboard/lv05.png",
+     "x": 336,
+     "y": 77,
+     "w": 128,
+     "h": 144
+    },
+    {
+     "level": 6,
+     "file": "chalkboard/lv06.png",
+     "x": 336,
+     "y": 77,
+     "w": 128,
+     "h": 144
+    },
+    {
+     "level": 7,
+     "file": "chalkboard/lv07.png",
+     "x": 318,
+     "y": 63,
+     "w": 166,
+     "h": 172
+    },
+    {
+     "level": 8,
+     "file": "chalkboard/lv08.png",
+     "x": 318,
+     "y": 63,
+     "w": 166,
+     "h": 172
+    },
+    {
+     "level": 9,
+     "file": "chalkboard/lv09.png",
+     "x": 318,
+     "y": 63,
+     "w": 166,
+     "h": 172
+    },
+    {
+     "level": 10,
+     "file": "chalkboard/lv10.png",
+     "x": 305,
+     "y": 52,
+     "w": 192,
+     "h": 194
+    }
+   ],
+   "z": -1
+  },
+  {
+   "id": "wall_clock",
+   "name": "Wall clock",
+   "slot": "wl",
+   "levels": [
+    {
+     "level": 1,
+     "file": "wall_clock/lv01.png",
+     "x": 148,
+     "y": 121,
+     "w": 50,
+     "h": 54
+    },
+    {
+     "level": 2,
+     "file": "wall_clock/lv02.png",
+     "x": 143,
+     "y": 120,
+     "w": 64,
+     "h": 56
+    },
+    {
+     "level": 3,
+     "file": "wall_clock/lv03.png",
+     "x": 137,
+     "y": 119,
+     "w": 74,
+     "h": 74
+    },
+    {
+     "level": 4,
+     "file": "wall_clock/lv04.png",
+     "x": 132,
+     "y": 113,
+     "w": 84,
+     "h": 88
+    },
+    {
+     "level": 5,
+     "file": "wall_clock/lv05.png",
+     "x": 132,
+     "y": 113,
+     "w": 84,
+     "h": 88
+    },
+    {
+     "level": 6,
+     "file": "wall_clock/lv06.png",
+     "x": 132,
+     "y": 113,
+     "w": 84,
+     "h": 88
+    },
+    {
+     "level": 7,
+     "file": "wall_clock/lv07.png",
+     "x": 127,
+     "y": 90,
+     "w": 94,
+     "h": 136
+    },
+    {
+     "level": 8,
+     "file": "wall_clock/lv08.png",
+     "x": 127,
+     "y": 90,
+     "w": 94,
+     "h": 136
+    },
+    {
+     "level": 9,
+     "file": "wall_clock/lv09.png",
+     "x": 127,
+     "y": 78,
+     "w": 94,
+     "h": 148
+    },
+    {
+     "level": 10,
+     "file": "wall_clock/lv10.png",
+     "x": 122,
+     "y": 68,
+     "w": 104,
+     "h": 168
+    }
+   ],
+   "z": -1
+  },
+  {
+   "id": "maths_books",
+   "name": "Maths books",
+   "slot": "l1",
+   "levels": [
+    {
+     "level": 1,
+     "file": "maths_books/lv01.png",
+     "x": 217,
+     "y": 173,
+     "w": 62,
+     "h": 74
+    },
+    {
+     "level": 2,
+     "file": "maths_books/lv02.png",
+     "x": 217,
+     "y": 162,
+     "w": 62,
+     "h": 84
+    },
+    {
+     "level": 3,
+     "file": "maths_books/lv03.png",
+     "x": 217,
+     "y": 150,
+     "w": 62,
+     "h": 96
+    },
+    {
+     "level": 4,
+     "file": "maths_books/lv04.png",
+     "x": 216,
+     "y": 147,
+     "w": 66,
+     "h": 98
+    },
+    {
+     "level": 5,
+     "file": "maths_books/lv05.png",
+     "x": 190,
+     "y": 147,
+     "w": 92,
+     "h": 104
+    },
+    {
+     "level": 6,
+     "file": "maths_books/lv06.png",
+     "x": 190,
+     "y": 147,
+     "w": 92,
+     "h": 104
+    },
+    {
+     "level": 7,
+     "file": "maths_books/lv07.png",
+     "x": 178,
+     "y": 108,
+     "w": 114,
+     "h": 144
+    },
+    {
+     "level": 8,
+     "file": "maths_books/lv08.png",
+     "x": 178,
+     "y": 108,
+     "w": 114,
+     "h": 144
+    },
+    {
+     "level": 9,
+     "file": "maths_books/lv09.png",
+     "x": 178,
+     "y": 108,
+     "w": 114,
+     "h": 144
+    },
+    {
+     "level": 10,
+     "file": "maths_books/lv10.png",
+     "x": 177,
+     "y": 103,
+     "w": 118,
+     "h": 150
+    }
+   ],
+   "z": 4.1
+  },
+  {
+   "id": "maths_desk",
+   "name": "Maths desk",
+   "slot": "r2",
+   "levels": [
+    {
+     "level": 1,
+     "file": "maths_desk/lv01.png",
+     "x": 404,
+     "y": 245,
+     "w": 84,
+     "h": 70
+    },
+    {
+     "level": 2,
+     "file": "maths_desk/lv02.png",
+     "x": 404,
+     "y": 245,
+     "w": 84,
+     "h": 70
+    },
+    {
+     "level": 3,
+     "file": "maths_desk/lv03.png",
+     "x": 404,
+     "y": 245,
+     "w": 84,
+     "h": 70
+    },
+    {
+     "level": 4,
+     "file": "maths_desk/lv04.png",
+     "x": 393,
+     "y": 231,
+     "w": 98,
+     "h": 84
+    },
+    {
+     "level": 5,
+     "file": "maths_desk/lv05.png",
+     "x": 393,
+     "y": 231,
+     "w": 108,
+     "h": 84
+    },
+    {
+     "level": 6,
+     "file": "maths_desk/lv06.png",
+     "x": 393,
+     "y": 231,
+     "w": 108,
+     "h": 84
+    },
+    {
+     "level": 7,
+     "file": "maths_desk/lv07.png",
+     "x": 391,
+     "y": 224,
+     "w": 112,
+     "h": 92
+    },
+    {
+     "level": 8,
+     "file": "maths_desk/lv08.png",
+     "x": 391,
+     "y": 224,
+     "w": 112,
+     "h": 92
+    },
+    {
+     "level": 9,
+     "file": "maths_desk/lv09.png",
+     "x": 391,
+     "y": 224,
+     "w": 112,
+     "h": 92
+    },
+    {
+     "level": 10,
+     "file": "maths_desk/lv10.png",
+     "x": 394,
+     "y": 216,
+     "w": 104,
+     "h": 100
+    }
+   ],
+   "z": 8.0
+  },
+  {
+   "id": "trophy_shelf",
+   "name": "Trophy shelf",
+   "slot": "l2",
+   "levels": [
+    {
+     "level": 1,
+     "file": "trophy_shelf/lv01.png",
+     "x": 91,
+     "y": 260,
+     "w": 42,
+     "h": 52
+    },
+    {
+     "level": 2,
+     "file": "trophy_shelf/lv02.png",
+     "x": 91,
+     "y": 260,
+     "w": 42,
+     "h": 52
+    },
+    {
+     "level": 3,
+     "file": "trophy_shelf/lv03.png",
+     "x": 91,
+     "y": 260,
+     "w": 42,
+     "h": 52
+    },
+    {
+     "level": 4,
+     "file": "trophy_shelf/lv04.png",
+     "x": 90,
+     "y": 255,
+     "w": 44,
+     "h": 56
+    },
+    {
+     "level": 5,
+     "file": "trophy_shelf/lv05.png",
+     "x": 77,
+     "y": 255,
+     "w": 58,
+     "h": 62
+    },
+    {
+     "level": 6,
+     "file": "trophy_shelf/lv06.png",
+     "x": 77,
+     "y": 255,
+     "w": 58,
+     "h": 62
+    },
+    {
+     "level": 7,
+     "file": "trophy_shelf/lv07.png",
+     "x": 73,
+     "y": 242,
+     "w": 64,
+     "h": 74
+    },
+    {
+     "level": 8,
+     "file": "trophy_shelf/lv08.png",
+     "x": 73,
+     "y": 242,
+     "w": 64,
+     "h": 74
+    },
+    {
+     "level": 9,
+     "file": "trophy_shelf/lv09.png",
+     "x": 73,
+     "y": 242,
+     "w": 64,
+     "h": 74
+    },
+    {
+     "level": 10,
+     "file": "trophy_shelf/lv10.png",
+     "x": 71,
+     "y": 237,
+     "w": 68,
+     "h": 80
+    }
+   ],
+   "z": 8.1
+  },
+  {
+   "id": "shape_blocks",
+   "name": "Shape blocks",
+   "slot": "c",
+   "levels": [
+    {
+     "level": 1,
+     "file": "shape_blocks/lv01.png",
+     "x": 263,
+     "y": 318,
+     "w": 32,
+     "h": 36
+    },
+    {
+     "level": 2,
+     "file": "shape_blocks/lv02.png",
+     "x": 252,
+     "y": 318,
+     "w": 42,
+     "h": 42
+    },
+    {
+     "level": 3,
+     "file": "shape_blocks/lv03.png",
+     "x": 252,
+     "y": 318,
+     "w": 52,
+     "h": 42
+    },
+    {
+     "level": 4,
+     "file": "shape_blocks/lv04.png",
+     "x": 251,
+     "y": 315,
+     "w": 62,
+     "h": 44
+    },
+    {
+     "level": 5,
+     "file": "shape_blocks/lv05.png",
+     "x": 251,
+     "y": 315,
+     "w": 62,
+     "h": 44
+    },
+    {
+     "level": 6,
+     "file": "shape_blocks/lv06.png",
+     "x": 251,
+     "y": 315,
+     "w": 62,
+     "h": 44
+    },
+    {
+     "level": 7,
+     "file": "shape_blocks/lv07.png",
+     "x": 246,
+     "y": 287,
+     "w": 68,
+     "h": 72
+    },
+    {
+     "level": 8,
+     "file": "shape_blocks/lv08.png",
+     "x": 246,
+     "y": 287,
+     "w": 68,
+     "h": 72
+    },
+    {
+     "level": 9,
+     "file": "shape_blocks/lv09.png",
+     "x": 246,
+     "y": 287,
+     "w": 68,
+     "h": 72
+    },
+    {
+     "level": 10,
+     "file": "shape_blocks/lv10.png",
+     "x": 238,
+     "y": 281,
+     "w": 88,
+     "h": 78
+    }
+   ],
+   "z": 10.8
+  }
+ ]
+}
