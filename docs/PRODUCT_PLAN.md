@@ -16,7 +16,7 @@ c. **Purpose:** Help families spend time together through learning, explaining c
 d. **Core journey:** Choose a subject → upload screenshots of schoolwork or learning material → create a study plan, flashcards, and quiz questions with AI assistance → complete modules and view progress → enter learning and party games;
 e. **Initial game formats:** Child versus parent, duo versus duo, flashcard practice, multiple-choice quizzes, and party games such as Forbidden clues. The wider party catalogue remains the product backlog;
 f. **Participation:** Parent–child bonding is the primary use case; the previously requested friends-only participation remains supported in the product concept;
-g. **Stack:** Figma for design, Next.js with React/TypeScript and shadcn for the interface, Python/FastAPI for custom API logic, and Supabase for authentication, storage, and its PostgreSQL database. PostgreSQL is part of Supabase, not an additional database service;
+g. **Frontend stack:** Figma for design and Next.js with React/TypeScript and shadcn for the interface. [Backend stack and requirements](https://github.com/Vl4dC/Parent-Child-Bonding-Game-Backend/blob/main/docs/PRODUCT_BACKEND_REQUIREMENTS.md) are maintained separately;
 h. **Account experience:** Login, registration, learner/parent progress, and school-subject context are product features. A school-management integration is not implied;
 i. **Pitch:** An AI-powered learning platform that turns schoolwork into interactive games, helping parents and children learn, compete, and bond together.
 
@@ -53,7 +53,7 @@ In the optional classroom format, participants shall know the shared subject for
 
 The project shall:
 
-a. Use **Supabase as its backend**;
+a. Integrate with the [separate backend API](https://github.com/Vl4dC/Parent-Child-Bonding-Game-Backend);
 b. Support parent–child teams;
 c. Present the weekly learning theme or subject;
 d. Support individual preparation on personal phones, with approximately 15 minutes of practice as an optional daily routine;
@@ -119,7 +119,7 @@ g. Keep accessibility features available without earning badges or spending the 
 
 a. Store each lesson as structured content: explanation text, scene descriptions, narration, captions, and questions;
 b. Present that shared content through accessible text, audio, and animation views;
-c. Keep learner display and playback preferences in Supabase when account-based persistence is needed;
+c. Present learner display and playback preferences consistently across the interface;
 d. For the hackathon, demonstrate one lesson and one quiz with captions, descriptive narration, and screen-reader support;
 e. Verify the complete flow using a screen reader, keyboard-only navigation, and muted audio. Seek feedback from users with relevant access needs before claiming broad accessibility support.
 
@@ -257,7 +257,7 @@ c. The recommended prototype uses pass-the-phone play on one device. Independent
 d. Show concise rules, a sample round, player/team setup, and optional or adjustable timers;
 e. End each round with an answer or learning debrief, then continue to the next game;
 f. Offer competitive scores and cooperative shared targets where appropriate;
-g. Apply daily and weekly quests across compatible game modes. Record completion, points, badge progress, earned item boxes, and avatar customisation. Named local players are not automatically authenticated accounts: define reward ownership before persisting individual or team rewards;
+g. Display daily and weekly quests, completion, points, badge progress, earned item boxes, and avatar customisation across compatible game modes;
 h. Design captioned, text-based, screen-reader-compatible, and non-timed paths for implemented features. Provide equivalent alternatives where a mechanic depends on sight, hearing, drawing, or movement, and validate the paths actually included in the demo;
 i. Offer solo practice against checked answers or AI assistance where meaningful. Social deduction and role-play modes require a group in the initial design;
 j. Keep the short learning feed as an entry into practice or a party round, alongside standalone learn mode.
@@ -266,7 +266,7 @@ j. Keep the short learning feed as an entry into practice or a party round, alon
 
 Each learning block shall contain reviewed terms, definitions, example/non-example pairs, clue restrictions, questions, accepted answers, explanations, source references, and difficulty tags. Enable a mode only when that block has the content it needs. Use deterministic answer checks where possible, and model answers or peer review for open explanations and drawings. AI assistance remains subject to the earlier source-grounding and review requirements.
 
-Use Supabase as the backend for the implemented subset of accounts, optional team links, reviewed content, sessions, quest progress, and reward inventory. Schema design, account ownership, access rules, and multiplayer synchronisation remain implementation decisions. Secret-role games must hide other players' cards during hand-off; future multi-device implementations must not expose other players' secrets.
+Backend persistence, identity, access rules, and synchronization requirements are maintained in the [backend repository](https://github.com/Vl4dC/Parent-Child-Bonding-Game-Backend/blob/main/docs/PRODUCT_BACKEND_REQUIREMENTS.md). Secret-role interfaces must hide other players' cards during hand-off.
 
 ### Hackathon Recommendation — Selection Still Open
 
@@ -276,8 +276,8 @@ a. One pre-reviewed learning block;
 b. Local pass-the-phone play with named players or teams;
 c. **Concept on your forehead**, **Forbidden clues**, and **Knowledge relay**;
 d. Rules, optional timers, checked explanations, and a shared results flow;
-e. One sample quest and an earned cosmetic-box flow, with reward ownership defined before persistent inventory is built;
-f. Supabase persistence for the selected flow, including protection against granting the same completion reward repeatedly.
+e. One sample quest and an earned cosmetic-box interface;
+f. Integrate the selected flow with the separately maintained backend when its contract is ready.
 
 For oral guessing and relay play, a designated player confirms answers against revealed reference content; typed answers can use deterministic checks. Peer confirmation supports casual play and is not evidence for a trusted global leaderboard. Add remote competition, AI opponents, generated animation, full personalisation, the feed, and remaining games only after the first playable flow works. Accessibility support for this flow must be explicitly scoped and checked.
 
@@ -292,7 +292,7 @@ d. The criteria for considering the demo complete.
 
 ---
 
-**Status:** Reviewed product plan. Supabase, flexible friends/family participation, the party-game catalogue, learning blocks, quests, and reward concepts are recorded. Demo selection, owners, deadlines, and reward parameters remain open. No application implementation or compliance is claimed.
+**Status:** Reviewed product plan. Flexible friends/family participation, the party-game catalogue, learning blocks, quests, and reward concepts are recorded. Demo selection, owners, deadlines, and reward parameters remain open. No application implementation or compliance is claimed.
 
 ## 12. Review Findings and Remaining Decisions
 
@@ -316,4 +316,4 @@ Before implementation, select the initial subject and difficulty within the conf
 
 ### Review Addendum — Latest Brief
 
-The target age is now confirmed as 10–18. The upload-to-study-plan workflow and Figma/Next.js/FastAPI/Supabase stack are recorded. Remaining product decisions include module-to-game unlock rules, whether both partners must finish, casual versus ranked matches, and the content review owner. These are additions to the unresolved delivery and reward decisions above.
+The target age is now confirmed as 10–18. The upload-to-study-plan workflow and Figma/Next.js frontend stack are recorded. Backend stack details are maintained in the separate backend repository. Remaining product decisions include module-to-game unlock rules, whether both partners must finish, casual versus ranked matches, and the content review owner. These are additions to the unresolved delivery and reward decisions above.

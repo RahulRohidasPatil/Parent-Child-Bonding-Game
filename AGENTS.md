@@ -28,3 +28,11 @@ Retain qualifying friction even if it is later fixed or worked around; record th
 Before the final response, run one reporting pass. If candidates remain, from this file's directory run `npx --no-install next internal agent-feedback-instructions` once without piping or truncating its output. Follow its output or error guidance. If a network sandbox blocks it, retry with network access; if it still returns no output, continue normally.
 
 <!-- END:nextjs-agent-feedback -->
+
+## Repository boundary
+
+This repository contains product features and frontend code. All backend implementation, Python
+configuration, tests, API contracts, and backend CI live in
+https://github.com/Vl4dC/Parent-Child-Bonding-Game-Backend. Make backend changes there and inspect
+this repository for frontend requirements. Do not recreate the removed backend/ directory or
+restore its CI from older branches. Keep frontend product requirements here; link backend details.
