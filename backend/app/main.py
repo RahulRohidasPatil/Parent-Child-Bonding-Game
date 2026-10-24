@@ -9,6 +9,7 @@ from fastapi.responses import JSONResponse
 from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
 
 from app.config import Settings
+from app.demo import DemoAuth
 from app.models import (
     Credentials,
     EmailRequest,
@@ -30,6 +31,10 @@ def create_app(settings: Settings | None = None, transport: httpx.AsyncBaseTrans
 
     @asynccontextmanager
     async def lifespan(app: FastAPI):
+        if settings.demo_mode:
+            app.state.demo_auth = DemoAuth()
+            yield
+            return
         # No shared user sessions: each call explicitly supplies its own bearer token.
         async with httpx.AsyncClient(
             base_url=f"{str(settings.supabase_url).rstrip('/')}/auth/v1/",
@@ -40,7 +45,11 @@ def create_app(settings: Settings | None = None, transport: httpx.AsyncBaseTrans
             app.state.auth = client
             yield
 
-    app = FastAPI(title="Family Learning API", version="0.1.0", lifespan=lifespan)
+    app = FastAPI(
+        title="Family Learning API (LOCAL DEMO)" if settings.demo_mode else "Family Learning API",
+        version="0.1.0",
+        lifespan=lifespan,
+    )
     app.add_middleware(
         CORSMiddleware,
         allow_origins=settings.cors_origins,
@@ -80,6 +89,10 @@ def create_app(settings: Settings | None = None, transport: httpx.AsyncBaseTrans
         token: str | None = None,
         params: dict | None = None,
     ) -> dict:
+        if settings.demo_mode:
+            raise HTTPException(
+                409, "This action is unavailable in demo mode. Use a seeded demo account."
+            )
         headers = {"Authorization": f"Bearer {token}"} if token else {}
         try:
             result = await request.app.state.auth.request(
@@ -130,13 +143,21 @@ def create_app(settings: Settings | None = None, transport: httpx.AsyncBaseTrans
     async def require_token(credentials: Bearer) -> str:
         if credentials is None or credentials.scheme.lower() != "bearer":
             raise HTTPException(401, "Sign in to continue.", headers={"WWW-Authenticate": "Bearer"})
+        if not settings.demo_mode and credentials.credentials.startswith("demo_"):
+            raise HTTPException(401, "Demo sessions are not accepted in Supabase mode.")
         return credentials.credentials
 
     Token = Annotated[str, Depends(require_token)]
 
     @app.get("/health")
     async def health():
-        return {"status": "ok"}
+        return {"status": "ok", "auth_mode": "demo" if settings.demo_mode else "supabase"}
+
+    if settings.demo_mode:
+
+        @app.get("/auth/demo-accounts", response_model=list[User])
+        async def demo_accounts(request: Request):
+            return request.app.state.demo_auth.accounts()
 
     @app.post("/auth/register", response_model=Message, status_code=202)
     async def register(data: Register, request: Request):
@@ -160,6 +181,10 @@ def create_app(settings: Settings | None = None, transport: httpx.AsyncBaseTrans
 
     @app.post("/auth/login", response_model=Session)
     async def login(data: Credentials, request: Request):
+        if settings.demo_mode:
+            return request.app.state.demo_auth.login(
+                str(data.email), data.password.get_secret_value()
+            )
         return await upstream(
             request,
             "POST",
@@ -173,6 +198,11 @@ def create_app(settings: Settings | None = None, transport: httpx.AsyncBaseTrans
 
     @app.post("/auth/refresh", response_model=Session)
     async def refresh(data: RefreshRequest, request: Request):
+        token = data.refresh_token.get_secret_value()
+        if settings.demo_mode:
+            return request.app.state.demo_auth.refresh(token)
+        if token.startswith("demo_"):
+            raise HTTPException(401, "Demo sessions are not accepted in Supabase mode.")
         return await upstream(
             request,
             "POST",
@@ -200,11 +230,17 @@ def create_app(settings: Settings | None = None, transport: httpx.AsyncBaseTrans
 
     @app.get("/auth/me", response_model=User)
     async def me(request: Request, token: Token):
+        if settings.demo_mode:
+            session = request.app.state.demo_auth.authenticate(token)
+            return request.app.state.demo_auth.user(session.email)
         # Verify with Supabase; never trust a locally decoded, unverified JWT.
         return await upstream(request, "GET", "user", token=token)
 
     @app.post("/auth/logout", status_code=204)
     async def logout(request: Request, token: Token):
+        if settings.demo_mode:
+            request.app.state.demo_auth.logout(token)
+            return Response(status_code=204)
         await upstream(request, "POST", "logout", token=token, params={"scope": "local"})
         return Response(status_code=204)
 

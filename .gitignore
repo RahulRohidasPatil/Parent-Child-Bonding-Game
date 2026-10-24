@@ -48,3 +48,4 @@ __pycache__/
 .ruff_cache/
 !.env.example
 !backend/.env.example
+!backend/.env.demo.example

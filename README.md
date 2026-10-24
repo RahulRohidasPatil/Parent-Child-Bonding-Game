@@ -2,8 +2,17 @@
 
 Learning and party games for friends, parents, and children.
 
+- **AI contributors: start with [AI handoff](docs/AI_HANDOFF.md) and [backend instructions](backend/AGENTS.md).**
+- [Backend API contract](backend/API.md)
 - [Product plan](docs/PRODUCT_PLAN.md)
 - [FastAPI authentication backend: setup, routes, testing, and email limitations](backend/README.md)
+
+## Implemented backend
+
+FastAPI/Supabase authentication plus isolated, offline parent/child demo sessions. See the
+[dated delivery snapshot](docs/AI_HANDOFF.md#delivery-snapshot--24-october-2026) for merge status.
+Uploads, AI learning content, games, progress, quests, rewards, and real family linking remain
+planned work. SMTP is deliberately deferred for the hackathon demo.
 
 ## Frontend
 
@@ -16,6 +25,18 @@ npm run dev
 ```
 
 ## Backend
+
+For the hackathon, run the offline parent/child demo without Supabase credentials or SMTP:
+
+```sh
+cd backend
+cp .env.demo.example .env
+uv sync --locked
+uv run uvicorn app.main:create_app --factory --host 127.0.0.1 --port 8000 --no-access-log
+```
+
+Demo credentials and the session flow are in the [backend guide](backend/README.md#offline-demo-mode--no-supabase-or-smtp-required).
+Frontend source is unchanged. For real Supabase authentication, use the following configuration instead:
 
 ```sh
 cd backend
