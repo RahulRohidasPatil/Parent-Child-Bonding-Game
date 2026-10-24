@@ -1,0 +1,39 @@
+[
+  {
+    "id": "eyes-blue-clean",
+    "refs": [
+      "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-refinement-v4/eyes-blue-master.png",
+      "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-refinement-v4/style-reference.png"
+    ],
+    "prompt": "Use case: precise-object-edit. Edit image 1 using image 2 as the eye-detail guide. Keep the eye pair silhouette, neutral lids, dark pupils and muted blue irises. Add one small WHITE inner corner to each eye, matching its existing outer white corner; preserve the dark pupil and a narrow blue iris. Preserve the deliberate large logical pixel blocks. Remove the entire baked checkerboard and output REAL alpha transparency around the eyes. Do not make the eye whites transparent. No brows, skin, nose, mouth, glow or new background. Both eyes should have complete readable whites, pupil and iris."
+  },
+  {
+    "id": "nose-detail",
+    "refs": [
+      "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-refinement-v4/style-reference.png"
+    ],
+    "prompt": "Use case: background-extraction. Extract the small pixel-art NOSE detail from this reference as its own isolated sprite: a subtle pale bridge highlight, warm central nose tip and the two dark nostril marks. Keep the existing style and proportions. No eyes, eyebrows, mouth, head outline or surrounding face skin. Enlarge the extracted tiny detail in the middle of a transparent RGBA canvas. No checkerboard, no glow."
+  },
+  {
+    "id": "mouth-detail",
+    "refs": [
+      "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-refinement-v4/style-reference.png"
+    ],
+    "prompt": "Use case: background-extraction. Extract the subtle closed mouth and the small lower-lip shadow directly beneath it from this pixel-art reference. Keep the warm muted lip color and the relative spacing of the two details as one mouth sprite. Do not add a smile, teeth, beard, chin outline, nose, cheeks or head. Enlarge this small isolated pixel sprite at the center of a real transparent RGBA PNG. No checkerboard, no background, no glow."
+  },
+  {
+    "id": "hoodie-black-neck",
+    "refs": [
+      "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-atelier/top-hoodie.png",
+      "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-refinement-v4/style-reference.png"
+    ],
+    "prompt": "Use case: precise-object-edit. Image 1 is the garment to edit, image 2 only guides the visible neck/collar relationship. Edit only the neck opening of the black pullover hoodie: make a clear U/V-shaped transparent throat opening, with the two folded hood sides meeting lower on the chest. Leave room for a short visible human neck. Keep the hood, pockets, cuffs, hem, shoulders and sleeve silhouette, artwork and position unchanged. No skin, head, person or mannequin. Preserve the full square canvas. Genuine PNG transparency outside the hoodie and inside the neck opening."
+  },
+  {
+    "id": "shoes-black-clean",
+    "refs": [
+      "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-atelier/shoe-black.png"
+    ],
+    "prompt": "Use case: precise-object-edit. Simplify these two black low sneakers into cleaner intentional pixel art while retaining the same pair, ankle openings, positions, directions and baseline. Use a clear charcoal upper, slightly lighter side plane, one crisp narrow sole band, a thin outline and very restrained lace detail. Avoid gray checker-like noise and overlarge toes. Real transparent PNG outside the shoes; no skin, feet, pants, text or logos."
+  }
+]

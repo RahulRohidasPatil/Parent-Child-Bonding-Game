@@ -1,0 +1,547 @@
+{
+ "tier": 1,
+ "room": "science",
+ "size": [
+  572,
+  476
+ ],
+ "tile": [
+  64,
+  32
+ ],
+ "room_tiles": 8,
+ "floor_origin": [
+  286.0,
+  180
+ ],
+ "items": [
+  {
+   "id": "atom_poster",
+   "name": "Atom poster",
+   "slot": "wl",
+   "levels": [
+    {
+     "level": 1,
+     "file": "atom_poster/lv01.png",
+     "x": 143,
+     "y": 95,
+     "w": 62,
+     "h": 104
+    },
+    {
+     "level": 2,
+     "file": "atom_poster/lv02.png",
+     "x": 143,
+     "y": 95,
+     "w": 62,
+     "h": 104
+    },
+    {
+     "level": 3,
+     "file": "atom_poster/lv03.png",
+     "x": 143,
+     "y": 95,
+     "w": 62,
+     "h": 104
+    },
+    {
+     "level": 4,
+     "file": "atom_poster/lv04.png",
+     "x": 134,
+     "y": 82,
+     "w": 78,
+     "h": 132
+    },
+    {
+     "level": 5,
+     "file": "atom_poster/lv05.png",
+     "x": 134,
+     "y": 82,
+     "w": 78,
+     "h": 132
+    },
+    {
+     "level": 6,
+     "file": "atom_poster/lv06.png",
+     "x": 134,
+     "y": 82,
+     "w": 78,
+     "h": 132
+    },
+    {
+     "level": 7,
+     "file": "atom_poster/lv07.png",
+     "x": 124,
+     "y": 69,
+     "w": 98,
+     "h": 156
+    },
+    {
+     "level": 8,
+     "file": "atom_poster/lv08.png",
+     "x": 124,
+     "y": 69,
+     "w": 98,
+     "h": 156
+    },
+    {
+     "level": 9,
+     "file": "atom_poster/lv09.png",
+     "x": 124,
+     "y": 69,
+     "w": 98,
+     "h": 156
+    },
+    {
+     "level": 10,
+     "file": "atom_poster/lv10.png",
+     "x": 116,
+     "y": 60,
+     "w": 116,
+     "h": 174
+    }
+   ],
+   "z": -1
+  },
+  {
+   "id": "lab_bench",
+   "name": "Lab bench",
+   "slot": "r1",
+   "levels": [
+    {
+     "level": 1,
+     "file": "lab_bench/lv01.png",
+     "x": 285,
+     "y": 173,
+     "w": 72,
+     "h": 68
+    },
+    {
+     "level": 2,
+     "file": "lab_bench/lv02.png",
+     "x": 285,
+     "y": 173,
+     "w": 72,
+     "h": 68
+    },
+    {
+     "level": 3,
+     "file": "lab_bench/lv03.png",
+     "x": 285,
+     "y": 172,
+     "w": 72,
+     "h": 70
+    },
+    {
+     "level": 4,
+     "file": "lab_bench/lv04.png",
+     "x": 281,
+     "y": 161,
+     "w": 78,
+     "h": 82
+    },
+    {
+     "level": 5,
+     "file": "lab_bench/lv05.png",
+     "x": 272,
+     "y": 161,
+     "w": 88,
+     "h": 88
+    },
+    {
+     "level": 6,
+     "file": "lab_bench/lv06.png",
+     "x": 272,
+     "y": 161,
+     "w": 88,
+     "h": 88
+    },
+    {
+     "level": 7,
+     "file": "lab_bench/lv07.png",
+     "x": 277,
+     "y": 161,
+     "w": 104,
+     "h": 88
+    },
+    {
+     "level": 8,
+     "file": "lab_bench/lv08.png",
+     "x": 277,
+     "y": 161,
+     "w": 104,
+     "h": 88
+    },
+    {
+     "level": 9,
+     "file": "lab_bench/lv09.png",
+     "x": 277,
+     "y": 161,
+     "w": 104,
+     "h": 88
+    },
+    {
+     "level": 10,
+     "file": "lab_bench/lv10.png",
+     "x": 276,
+     "y": 148,
+     "w": 108,
+     "h": 100
+    }
+   ],
+   "z": 3.8
+  },
+  {
+   "id": "space_corner",
+   "name": "Space corner",
+   "slot": "l1",
+   "levels": [
+    {
+     "level": 1,
+     "file": "space_corner/lv01.png",
+     "x": 218,
+     "y": 186,
+     "w": 44,
+     "h": 62
+    },
+    {
+     "level": 2,
+     "file": "space_corner/lv02.png",
+     "x": 206,
+     "y": 186,
+     "w": 56,
+     "h": 68
+    },
+    {
+     "level": 3,
+     "file": "space_corner/lv03.png",
+     "x": 206,
+     "y": 186,
+     "w": 64,
+     "h": 68
+    },
+    {
+     "level": 4,
+     "file": "space_corner/lv04.png",
+     "x": 206,
+     "y": 188,
+     "w": 80,
+     "h": 64
+    },
+    {
+     "level": 5,
+     "file": "space_corner/lv05.png",
+     "x": 203,
+     "y": 188,
+     "w": 82,
+     "h": 64
+    },
+    {
+     "level": 6,
+     "file": "space_corner/lv06.png",
+     "x": 203,
+     "y": 188,
+     "w": 82,
+     "h": 64
+    },
+    {
+     "level": 7,
+     "file": "space_corner/lv07.png",
+     "x": 200,
+     "y": 159,
+     "w": 92,
+     "h": 94
+    },
+    {
+     "level": 8,
+     "file": "space_corner/lv08.png",
+     "x": 200,
+     "y": 159,
+     "w": 92,
+     "h": 94
+    },
+    {
+     "level": 9,
+     "file": "space_corner/lv09.png",
+     "x": 200,
+     "y": 159,
+     "w": 92,
+     "h": 94
+    },
+    {
+     "level": 10,
+     "file": "space_corner/lv10.png",
+     "x": 196,
+     "y": 150,
+     "w": 114,
+     "h": 102
+    }
+   ],
+   "z": 4.1
+  },
+  {
+   "id": "plant_shelf",
+   "name": "Grow shelf",
+   "slot": "r2",
+   "levels": [
+    {
+     "level": 1,
+     "file": "plant_shelf/lv01.png",
+     "x": 441,
+     "y": 270,
+     "w": 28,
+     "h": 40
+    },
+    {
+     "level": 2,
+     "file": "plant_shelf/lv02.png",
+     "x": 430,
+     "y": 270,
+     "w": 38,
+     "h": 46
+    },
+    {
+     "level": 3,
+     "file": "plant_shelf/lv03.png",
+     "x": 430,
+     "y": 253,
+     "w": 38,
+     "h": 62
+    },
+    {
+     "level": 4,
+     "file": "plant_shelf/lv04.png",
+     "x": 421,
+     "y": 241,
+     "w": 56,
+     "h": 74
+    },
+    {
+     "level": 5,
+     "file": "plant_shelf/lv05.png",
+     "x": 421,
+     "y": 241,
+     "w": 64,
+     "h": 74
+    },
+    {
+     "level": 6,
+     "file": "plant_shelf/lv06.png",
+     "x": 421,
+     "y": 241,
+     "w": 64,
+     "h": 74
+    },
+    {
+     "level": 7,
+     "file": "plant_shelf/lv07.png",
+     "x": 418,
+     "y": 236,
+     "w": 72,
+     "h": 80
+    },
+    {
+     "level": 8,
+     "file": "plant_shelf/lv08.png",
+     "x": 418,
+     "y": 236,
+     "w": 72,
+     "h": 80
+    },
+    {
+     "level": 9,
+     "file": "plant_shelf/lv09.png",
+     "x": 418,
+     "y": 236,
+     "w": 72,
+     "h": 80
+    },
+    {
+     "level": 10,
+     "file": "plant_shelf/lv10.png",
+     "x": 416,
+     "y": 226,
+     "w": 88,
+     "h": 90
+    }
+   ],
+   "z": 8.0
+  },
+  {
+   "id": "robot_desk",
+   "name": "Robot desk",
+   "slot": "l2",
+   "levels": [
+    {
+     "level": 1,
+     "file": "robot_desk/lv01.png",
+     "x": 94,
+     "y": 265,
+     "w": 40,
+     "h": 46
+    },
+    {
+     "level": 2,
+     "file": "robot_desk/lv02.png",
+     "x": 94,
+     "y": 265,
+     "w": 40,
+     "h": 46
+    },
+    {
+     "level": 3,
+     "file": "robot_desk/lv03.png",
+     "x": 94,
+     "y": 252,
+     "w": 40,
+     "h": 58
+    },
+    {
+     "level": 4,
+     "file": "robot_desk/lv04.png",
+     "x": 77,
+     "y": 238,
+     "w": 72,
+     "h": 72
+    },
+    {
+     "level": 5,
+     "file": "robot_desk/lv05.png",
+     "x": 68,
+     "y": 238,
+     "w": 80,
+     "h": 78
+    },
+    {
+     "level": 6,
+     "file": "robot_desk/lv06.png",
+     "x": 68,
+     "y": 238,
+     "w": 80,
+     "h": 78
+    },
+    {
+     "level": 7,
+     "file": "robot_desk/lv07.png",
+     "x": 64,
+     "y": 223,
+     "w": 110,
+     "h": 94
+    },
+    {
+     "level": 8,
+     "file": "robot_desk/lv08.png",
+     "x": 64,
+     "y": 223,
+     "w": 110,
+     "h": 94
+    },
+    {
+     "level": 9,
+     "file": "robot_desk/lv09.png",
+     "x": 64,
+     "y": 223,
+     "w": 110,
+     "h": 94
+    },
+    {
+     "level": 10,
+     "file": "robot_desk/lv10.png",
+     "x": 47,
+     "y": 217,
+     "w": 132,
+     "h": 100
+    }
+   ],
+   "z": 8.1
+  },
+  {
+   "id": "rock_table",
+   "name": "Rock collection",
+   "slot": "c",
+   "levels": [
+    {
+     "level": 1,
+     "file": "rock_table/lv01.png",
+     "x": 265,
+     "y": 328,
+     "w": 28,
+     "h": 26
+    },
+    {
+     "level": 2,
+     "file": "rock_table/lv02.png",
+     "x": 247,
+     "y": 328,
+     "w": 44,
+     "h": 32
+    },
+    {
+     "level": 3,
+     "file": "rock_table/lv03.png",
+     "x": 247,
+     "y": 328,
+     "w": 58,
+     "h": 32
+    },
+    {
+     "level": 4,
+     "file": "rock_table/lv04.png",
+     "x": 236,
+     "y": 297,
+     "w": 80,
+     "h": 62
+    },
+    {
+     "level": 5,
+     "file": "rock_table/lv05.png",
+     "x": 236,
+     "y": 297,
+     "w": 80,
+     "h": 62
+    },
+    {
+     "level": 6,
+     "file": "rock_table/lv06.png",
+     "x": 236,
+     "y": 297,
+     "w": 80,
+     "h": 62
+    },
+    {
+     "level": 7,
+     "file": "rock_table/lv07.png",
+     "x": 237,
+     "y": 291,
+     "w": 78,
+     "h": 68
+    },
+    {
+     "level": 8,
+     "file": "rock_table/lv08.png",
+     "x": 237,
+     "y": 291,
+     "w": 78,
+     "h": 68
+    },
+    {
+     "level": 9,
+     "file": "rock_table/lv09.png",
+     "x": 237,
+     "y": 291,
+     "w": 78,
+     "h": 68
+    },
+    {
+     "level": 10,
+     "file": "rock_table/lv10.png",
+     "x": 234,
+     "y": 284,
+     "w": 92,
+     "h": 74
+    }
+   ],
+   "z": 10.8
+  }
+ ]
+}

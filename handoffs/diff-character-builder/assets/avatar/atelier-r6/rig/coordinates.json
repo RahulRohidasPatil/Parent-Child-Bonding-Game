@@ -1,0 +1,27 @@
+{
+  "rig": "front_reference_v1",
+  "size": 128,
+  "hairTop": 2,
+  "browLine": 18,
+  "eyeRows": [
+    20,
+    22
+  ],
+  "noseRows": [
+    23,
+    27
+  ],
+  "mouthRows": [
+    29,
+    31
+  ],
+  "chinLine": 33,
+  "neckRows": [
+    34,
+    37
+  ],
+  "shoulderLine": 40,
+  "waistLine": 73,
+  "ankleLine": 113,
+  "footBaseline": 122
+}

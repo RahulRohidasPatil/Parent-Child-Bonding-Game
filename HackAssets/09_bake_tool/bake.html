@@ -1,0 +1,21 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>html,body{margin:0;background:transparent}canvas{display:block}</style>
+<script type="importmap">{"imports":{"three":"/r3/node_modules/three/build/three.module.js","three/addons/":"/r3/node_modules/three/examples/jsm/"}}</script>
+</head><body>
+<script type="module">
+import * as B from './bake.js';
+
+window.run = async job => {
+  if (job.mode === 'gallery') { await B.gallery(job.keys, job.cols, job.cell); return {}; }
+  const { scene, cam, renderer, W, H } = B.setup(job.n);
+  if (job.mode !== 'item') {
+    B.shell(scene, job.n, job.room);
+    for (const d of job.room.decor || []) scene.add(await B.buildAbsolute(d, job.n));
+  } else B.shadowCatchers(scene, job.n);
+  for (const it of job.items || []) scene.add(await B.buildItem(it.parts, it.slot, job.n, it.stage));
+  renderer.render(scene, cam);
+  return { W, H };
+};
+document.title = 'ready';
+</script></body></html>

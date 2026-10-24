@@ -1,0 +1,210 @@
+[
+  {
+    "label": "White low sneakers Indigo straight jeans",
+    "config": {
+      "version": 5,
+      "rig": "front_reference_v1",
+      "pack": "atelier-r5",
+      "skin": "skin_02",
+      "equipment": {
+        "hair": "hair.textured",
+        "eyes": "eyes.reference_neutral",
+        "brows": "brows.reference_neutral",
+        "nose": "nose.reference_neutral",
+        "mouth": "mouth.reference_neutral",
+        "ears": "ears.small",
+        "top": "top.navy",
+        "jacket": null,
+        "bottom": "bottom.denim",
+        "shoes": "shoes.white",
+        "hat": null,
+        "glasses": null,
+        "earrings": null,
+        "head": "head.soft_oval"
+      },
+      "eyeColor": "eye.dark_brown"
+    }
+  },
+  {
+    "label": "White low sneakers Black straight trousers",
+    "config": {
+      "version": 5,
+      "rig": "front_reference_v1",
+      "pack": "atelier-r5",
+      "skin": "skin_02",
+      "equipment": {
+        "hair": "hair.textured",
+        "eyes": "eyes.reference_neutral",
+        "brows": "brows.reference_neutral",
+        "nose": "nose.reference_neutral",
+        "mouth": "mouth.reference_neutral",
+        "ears": "ears.small",
+        "top": "top.navy",
+        "jacket": null,
+        "bottom": "bottom.black",
+        "shoes": "shoes.white",
+        "hat": null,
+        "glasses": null,
+        "earrings": null,
+        "head": "head.soft_oval"
+      },
+      "eyeColor": "eye.dark_brown"
+    }
+  },
+  {
+    "label": "White low sneakers Olive cargos",
+    "config": {
+      "version": 5,
+      "rig": "front_reference_v1",
+      "pack": "atelier-r5",
+      "skin": "skin_02",
+      "equipment": {
+        "hair": "hair.textured",
+        "eyes": "eyes.reference_neutral",
+        "brows": "brows.reference_neutral",
+        "nose": "nose.reference_neutral",
+        "mouth": "mouth.reference_neutral",
+        "ears": "ears.small",
+        "top": "top.navy",
+        "jacket": null,
+        "bottom": "bottom.cargo",
+        "shoes": "shoes.white",
+        "hat": null,
+        "glasses": null,
+        "earrings": null,
+        "head": "head.soft_oval"
+      },
+      "eyeColor": "eye.dark_brown"
+    }
+  },
+  {
+    "label": "White low sneakers Graphite track pants",
+    "config": {
+      "version": 5,
+      "rig": "front_reference_v1",
+      "pack": "atelier-r5",
+      "skin": "skin_02",
+      "equipment": {
+        "hair": "hair.textured",
+        "eyes": "eyes.reference_neutral",
+        "brows": "brows.reference_neutral",
+        "nose": "nose.reference_neutral",
+        "mouth": "mouth.reference_neutral",
+        "ears": "ears.small",
+        "top": "top.navy",
+        "jacket": null,
+        "bottom": "bottom.track",
+        "shoes": "shoes.white",
+        "hat": null,
+        "glasses": null,
+        "earrings": null,
+        "head": "head.soft_oval"
+      },
+      "eyeColor": "eye.dark_brown"
+    }
+  },
+  {
+    "label": "Black low sneakers Indigo straight jeans",
+    "config": {
+      "version": 5,
+      "rig": "front_reference_v1",
+      "pack": "atelier-r5",
+      "skin": "skin_02",
+      "equipment": {
+        "hair": "hair.textured",
+        "eyes": "eyes.reference_neutral",
+        "brows": "brows.reference_neutral",
+        "nose": "nose.reference_neutral",
+        "mouth": "mouth.reference_neutral",
+        "ears": "ears.small",
+        "top": "top.navy",
+        "jacket": null,
+        "bottom": "bottom.denim",
+        "shoes": "shoes.black",
+        "hat": null,
+        "glasses": null,
+        "earrings": null,
+        "head": "head.soft_oval"
+      },
+      "eyeColor": "eye.dark_brown"
+    }
+  },
+  {
+    "label": "Black low sneakers Black straight trousers",
+    "config": {
+      "version": 5,
+      "rig": "front_reference_v1",
+      "pack": "atelier-r5",
+      "skin": "skin_02",
+      "equipment": {
+        "hair": "hair.textured",
+        "eyes": "eyes.reference_neutral",
+        "brows": "brows.reference_neutral",
+        "nose": "nose.reference_neutral",
+        "mouth": "mouth.reference_neutral",
+        "ears": "ears.small",
+        "top": "top.navy",
+        "jacket": null,
+        "bottom": "bottom.black",
+        "shoes": "shoes.black",
+        "hat": null,
+        "glasses": null,
+        "earrings": null,
+        "head": "head.soft_oval"
+      },
+      "eyeColor": "eye.dark_brown"
+    }
+  },
+  {
+    "label": "Black low sneakers Olive cargos",
+    "config": {
+      "version": 5,
+      "rig": "front_reference_v1",
+      "pack": "atelier-r5",
+      "skin": "skin_02",
+      "equipment": {
+        "hair": "hair.textured",
+        "eyes": "eyes.reference_neutral",
+        "brows": "brows.reference_neutral",
+        "nose": "nose.reference_neutral",
+        "mouth": "mouth.reference_neutral",
+        "ears": "ears.small",
+        "top": "top.navy",
+        "jacket": null,
+        "bottom": "bottom.cargo",
+        "shoes": "shoes.black",
+        "hat": null,
+        "glasses": null,
+        "earrings": null,
+        "head": "head.soft_oval"
+      },
+      "eyeColor": "eye.dark_brown"
+    }
+  },
+  {
+    "label": "Black low sneakers Graphite track pants",
+    "config": {
+      "version": 5,
+      "rig": "front_reference_v1",
+      "pack": "atelier-r5",
+      "skin": "skin_02",
+      "equipment": {
+        "hair": "hair.textured",
+        "eyes": "eyes.reference_neutral",
+        "brows": "brows.reference_neutral",
+        "nose": "nose.reference_neutral",
+        "mouth": "mouth.reference_neutral",
+        "ears": "ears.small",
+        "top": "top.navy",
+        "jacket": null,
+        "bottom": "bottom.track",
+        "shoes": "shoes.black",
+        "hat": null,
+        "glasses": null,
+        "earrings": null,
+        "head": "head.soft_oval"
+      },
+      "eyeColor": "eye.dark_brown"
+    }
+  }
+]

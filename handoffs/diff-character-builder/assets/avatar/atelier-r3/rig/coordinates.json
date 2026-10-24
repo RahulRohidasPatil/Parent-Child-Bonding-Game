@@ -1,0 +1,111 @@
+{
+  "rig": "front_idle_atelier_v1",
+  "size": 128,
+  "headTop": 8,
+  "headBottom": 27,
+  "neckTop": 28,
+  "browLine": 17,
+  "eyeLine": 19,
+  "noseLine": 23,
+  "mouthLine": 25,
+  "footBaseline": 120,
+  "sourceMatte": "Exterior-connected pale neutral source pixels only; original RGB retained",
+  "regions": {
+    "body": [
+      42,
+      28,
+      44,
+      94
+    ],
+    "ears": [
+      53,
+      17,
+      22,
+      7
+    ],
+    "eyes": [
+      56,
+      18,
+      16,
+      4
+    ],
+    "brows": [
+      56,
+      17,
+      16,
+      1
+    ],
+    "nose": [
+      61,
+      22,
+      6,
+      2
+    ],
+    "mouth": [
+      60,
+      24,
+      8,
+      3
+    ],
+    "hair_front": [
+      47,
+      0,
+      34,
+      59
+    ],
+    "hair_back": [
+      47,
+      0,
+      34,
+      59
+    ],
+    "top": [
+      41,
+      27,
+      46,
+      45
+    ],
+    "jacket": [
+      40,
+      26,
+      48,
+      47
+    ],
+    "bottom": [
+      49,
+      59,
+      30,
+      60
+    ],
+    "shoes": [
+      46,
+      110,
+      36,
+      13
+    ],
+    "headwear": [
+      49,
+      1,
+      30,
+      19
+    ],
+    "glasses": [
+      53,
+      18,
+      22,
+      8
+    ],
+    "earrings": [
+      52,
+      21,
+      24,
+      7
+    ],
+    "head": [
+      52,
+      7,
+      24,
+      21
+    ]
+  }
+}

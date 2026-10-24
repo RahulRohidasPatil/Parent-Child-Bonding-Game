@@ -1,0 +1,218 @@
+[
+  {
+    "id": "wear.original",
+    "name": "Original",
+    "color": "#577496",
+    "tones": [
+      "#182333",
+      "#344861",
+      "#577496",
+      "#8197AC",
+      "#BACAD5"
+    ]
+  },
+  {
+    "id": "wear.black",
+    "name": "Black",
+    "color": "#292C36",
+    "tones": [
+      "#101117",
+      "#191B23",
+      "#292C36",
+      "#424653",
+      "#636A76"
+    ]
+  },
+  {
+    "id": "wear.charcoal",
+    "name": "Charcoal",
+    "color": "#48515E",
+    "tones": [
+      "#151922",
+      "#2C323D",
+      "#48515E",
+      "#687482",
+      "#909BA8"
+    ]
+  },
+  {
+    "id": "wear.white",
+    "name": "White",
+    "color": "#D7DDE0",
+    "tones": [
+      "#626777",
+      "#9CA6B2",
+      "#D7DDE0",
+      "#ECF0ED",
+      "#FFFFFF"
+    ]
+  },
+  {
+    "id": "wear.cream",
+    "name": "Cream",
+    "color": "#CEC2A6",
+    "tones": [
+      "#645B52",
+      "#958B76",
+      "#CEC2A6",
+      "#EAE0C7",
+      "#FFF3DD"
+    ]
+  },
+  {
+    "id": "wear.tan",
+    "name": "Tan",
+    "color": "#B1865D",
+    "tones": [
+      "#40312B",
+      "#795741",
+      "#B1865D",
+      "#D0AA7F",
+      "#ECD1A9"
+    ]
+  },
+  {
+    "id": "wear.brown",
+    "name": "Brown",
+    "color": "#775442",
+    "tones": [
+      "#201A1C",
+      "#49322C",
+      "#775442",
+      "#A87C59",
+      "#CEA982"
+    ]
+  },
+  {
+    "id": "wear.navy",
+    "name": "Navy",
+    "color": "#283B61",
+    "tones": [
+      "#0B1020",
+      "#151F38",
+      "#283B61",
+      "#405B84",
+      "#7189A5"
+    ]
+  },
+  {
+    "id": "wear.blue",
+    "name": "Blue",
+    "color": "#345EAA",
+    "tones": [
+      "#101B35",
+      "#1E396C",
+      "#345EAA",
+      "#5A86CB",
+      "#94B5E4"
+    ]
+  },
+  {
+    "id": "wear.sky",
+    "name": "Sky",
+    "color": "#7FA9C7",
+    "tones": [
+      "#263C58",
+      "#4D7092",
+      "#7FA9C7",
+      "#AECBDD",
+      "#D6E7EC"
+    ]
+  },
+  {
+    "id": "wear.forest",
+    "name": "Forest",
+    "color": "#38634C",
+    "tones": [
+      "#101E1C",
+      "#203D32",
+      "#38634C",
+      "#61866A",
+      "#98B092"
+    ]
+  },
+  {
+    "id": "wear.olive",
+    "name": "Olive",
+    "color": "#747D4D",
+    "tones": [
+      "#22271C",
+      "#454D30",
+      "#747D4D",
+      "#9BA274",
+      "#C6C9A3"
+    ]
+  },
+  {
+    "id": "wear.burgundy",
+    "name": "Burgundy",
+    "color": "#813C50",
+    "tones": [
+      "#251620",
+      "#4F2639",
+      "#813C50",
+      "#AF6275",
+      "#D9979D"
+    ]
+  },
+  {
+    "id": "wear.red",
+    "name": "Red",
+    "color": "#B8424F",
+    "tones": [
+      "#381923",
+      "#772A3A",
+      "#B8424F",
+      "#DA6B6C",
+      "#F2A299"
+    ]
+  },
+  {
+    "id": "wear.lilac",
+    "name": "Lilac",
+    "color": "#A38AB9",
+    "tones": [
+      "#3C314F",
+      "#75618E",
+      "#A38AB9",
+      "#C8B2D7",
+      "#E7D8EB"
+    ]
+  },
+  {
+    "id": "wear.diff_green",
+    "name": "DIFF green",
+    "color": "#39C969",
+    "tones": [
+      "#123526",
+      "#1B7544",
+      "#39C969",
+      "#39FF7A",
+      "#A2FFB8"
+    ]
+  },
+  {
+    "id": "wear.silver",
+    "name": "Silver",
+    "color": "#A9B4BE",
+    "tones": [
+      "#303844",
+      "#667381",
+      "#A9B4BE",
+      "#D5DDE0",
+      "#F1F4F3"
+    ]
+  },
+  {
+    "id": "wear.gold",
+    "name": "Gold",
+    "color": "#C1A35E",
+    "tones": [
+      "#45311F",
+      "#89703D",
+      "#C1A35E",
+      "#E0C885",
+      "#FBE7B0"
+    ]
+  }
+]

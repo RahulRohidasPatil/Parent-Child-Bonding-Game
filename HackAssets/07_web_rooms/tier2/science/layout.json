@@ -1,0 +1,539 @@
+{
+ "tier": 2,
+ "room": "science",
+ "name": "Lab",
+ "size": [
+  1432,
+  1116
+ ],
+ "items": [
+  {
+   "id": "periodic_table",
+   "name": "Periodic table",
+   "slot": "wl",
+   "z": 0,
+   "levels": [
+    {
+     "level": 1,
+     "file": "periodic_table/lv01.webp",
+     "x": 374,
+     "y": 300,
+     "w": 89,
+     "h": 143
+    },
+    {
+     "level": 2,
+     "file": "periodic_table/lv02.webp",
+     "x": 374,
+     "y": 300,
+     "w": 89,
+     "h": 143
+    },
+    {
+     "level": 3,
+     "file": "periodic_table/lv03.webp",
+     "x": 374,
+     "y": 295,
+     "w": 92,
+     "h": 148
+    },
+    {
+     "level": 4,
+     "file": "periodic_table/lv04.webp",
+     "x": 368,
+     "y": 286,
+     "w": 102,
+     "h": 172
+    },
+    {
+     "level": 5,
+     "file": "periodic_table/lv05.webp",
+     "x": 368,
+     "y": 286,
+     "w": 102,
+     "h": 172
+    },
+    {
+     "level": 6,
+     "file": "periodic_table/lv06.webp",
+     "x": 368,
+     "y": 286,
+     "w": 102,
+     "h": 172
+    },
+    {
+     "level": 7,
+     "file": "periodic_table/lv07.webp",
+     "x": 361,
+     "y": 274,
+     "w": 115,
+     "h": 194
+    },
+    {
+     "level": 8,
+     "file": "periodic_table/lv08.webp",
+     "x": 361,
+     "y": 274,
+     "w": 115,
+     "h": 194
+    },
+    {
+     "level": 9,
+     "file": "periodic_table/lv09.webp",
+     "x": 361,
+     "y": 274,
+     "w": 115,
+     "h": 194
+    },
+    {
+     "level": 10,
+     "file": "periodic_table/lv10.webp",
+     "x": 354,
+     "y": 262,
+     "w": 129,
+     "h": 218
+    }
+   ]
+  },
+  {
+   "id": "fume_bench",
+   "name": "Fume-hood bench",
+   "slot": "r1",
+   "z": 1,
+   "levels": [
+    {
+     "level": 1,
+     "file": "fume_bench/lv01.webp",
+     "x": 656,
+     "y": 301,
+     "w": 372,
+     "h": 297
+    },
+    {
+     "level": 2,
+     "file": "fume_bench/lv02.webp",
+     "x": 656,
+     "y": 301,
+     "w": 372,
+     "h": 297
+    },
+    {
+     "level": 3,
+     "file": "fume_bench/lv03.webp",
+     "x": 656,
+     "y": 301,
+     "w": 372,
+     "h": 297
+    },
+    {
+     "level": 4,
+     "file": "fume_bench/lv04.webp",
+     "x": 749,
+     "y": 339,
+     "w": 196,
+     "h": 217
+    },
+    {
+     "level": 5,
+     "file": "fume_bench/lv05.webp",
+     "x": 749,
+     "y": 339,
+     "w": 196,
+     "h": 217
+    },
+    {
+     "level": 6,
+     "file": "fume_bench/lv06.webp",
+     "x": 749,
+     "y": 339,
+     "w": 196,
+     "h": 217
+    },
+    {
+     "level": 7,
+     "file": "fume_bench/lv07.webp",
+     "x": 732,
+     "y": 243,
+     "w": 390,
+     "h": 404
+    },
+    {
+     "level": 8,
+     "file": "fume_bench/lv08.webp",
+     "x": 732,
+     "y": 243,
+     "w": 390,
+     "h": 404
+    },
+    {
+     "level": 9,
+     "file": "fume_bench/lv09.webp",
+     "x": 732,
+     "y": 243,
+     "w": 390,
+     "h": 404
+    },
+    {
+     "level": 10,
+     "file": "fume_bench/lv10.webp",
+     "x": 732,
+     "y": 229,
+     "w": 314,
+     "h": 381
+    }
+   ]
+  },
+  {
+   "id": "rocket_pad",
+   "name": "Rocket launch pad",
+   "slot": "l1",
+   "z": 1.5,
+   "levels": [
+    {
+     "level": 1,
+     "file": "rocket_pad/lv01.webp",
+     "x": 503,
+     "y": 454,
+     "w": 147,
+     "h": 103
+    },
+    {
+     "level": 2,
+     "file": "rocket_pad/lv02.webp",
+     "x": 503,
+     "y": 454,
+     "w": 177,
+     "h": 103
+    },
+    {
+     "level": 3,
+     "file": "rocket_pad/lv03.webp",
+     "x": 503,
+     "y": 454,
+     "w": 177,
+     "h": 120
+    },
+    {
+     "level": 4,
+     "file": "rocket_pad/lv04.webp",
+     "x": 489,
+     "y": 444,
+     "w": 199,
+     "h": 135
+    },
+    {
+     "level": 5,
+     "file": "rocket_pad/lv05.webp",
+     "x": 489,
+     "y": 444,
+     "w": 218,
+     "h": 139
+    },
+    {
+     "level": 6,
+     "file": "rocket_pad/lv06.webp",
+     "x": 489,
+     "y": 444,
+     "w": 218,
+     "h": 139
+    },
+    {
+     "level": 7,
+     "file": "rocket_pad/lv07.webp",
+     "x": 467,
+     "y": 356,
+     "w": 308,
+     "h": 234
+    },
+    {
+     "level": 8,
+     "file": "rocket_pad/lv08.webp",
+     "x": 467,
+     "y": 356,
+     "w": 308,
+     "h": 234
+    },
+    {
+     "level": 9,
+     "file": "rocket_pad/lv09.webp",
+     "x": 467,
+     "y": 356,
+     "w": 308,
+     "h": 234
+    },
+    {
+     "level": 10,
+     "file": "rocket_pad/lv10.webp",
+     "x": 428,
+     "y": 307,
+     "w": 387,
+     "h": 287
+    }
+   ]
+  },
+  {
+   "id": "circuit_bench",
+   "name": "Circuit bench",
+   "slot": "r2",
+   "z": 2,
+   "levels": [
+    {
+     "level": 1,
+     "file": "circuit_bench/lv01.webp",
+     "x": 969,
+     "y": 480,
+     "w": 300,
+     "h": 247
+    },
+    {
+     "level": 2,
+     "file": "circuit_bench/lv02.webp",
+     "x": 969,
+     "y": 468,
+     "w": 300,
+     "h": 259
+    },
+    {
+     "level": 3,
+     "file": "circuit_bench/lv03.webp",
+     "x": 875,
+     "y": 468,
+     "w": 394,
+     "h": 259
+    },
+    {
+     "level": 4,
+     "file": "circuit_bench/lv04.webp",
+     "x": 893,
+     "y": 479,
+     "w": 352,
+     "h": 232
+    },
+    {
+     "level": 5,
+     "file": "circuit_bench/lv05.webp",
+     "x": 893,
+     "y": 479,
+     "w": 352,
+     "h": 232
+    },
+    {
+     "level": 6,
+     "file": "circuit_bench/lv06.webp",
+     "x": 893,
+     "y": 479,
+     "w": 352,
+     "h": 232
+    },
+    {
+     "level": 7,
+     "file": "circuit_bench/lv07.webp",
+     "x": 893,
+     "y": 464,
+     "w": 352,
+     "h": 247
+    },
+    {
+     "level": 8,
+     "file": "circuit_bench/lv08.webp",
+     "x": 893,
+     "y": 464,
+     "w": 352,
+     "h": 247
+    },
+    {
+     "level": 9,
+     "file": "circuit_bench/lv09.webp",
+     "x": 893,
+     "y": 464,
+     "w": 352,
+     "h": 247
+    },
+    {
+     "level": 10,
+     "file": "circuit_bench/lv10.webp",
+     "x": 889,
+     "y": 451,
+     "w": 362,
+     "h": 263
+    }
+   ]
+  },
+  {
+   "id": "body_model",
+   "name": "Human body model",
+   "slot": "l2",
+   "z": 2.5,
+   "levels": [
+    {
+     "level": 1,
+     "file": "body_model/lv01.webp",
+     "x": 271,
+     "y": 598,
+     "w": 76,
+     "h": 74
+    },
+    {
+     "level": 2,
+     "file": "body_model/lv02.webp",
+     "x": 271,
+     "y": 595,
+     "w": 111,
+     "h": 77
+    },
+    {
+     "level": 3,
+     "file": "body_model/lv03.webp",
+     "x": 253,
+     "y": 595,
+     "w": 129,
+     "h": 95
+    },
+    {
+     "level": 4,
+     "file": "body_model/lv04.webp",
+     "x": 239,
+     "y": 538,
+     "w": 156,
+     "h": 158
+    },
+    {
+     "level": 5,
+     "file": "body_model/lv05.webp",
+     "x": 239,
+     "y": 538,
+     "w": 156,
+     "h": 158
+    },
+    {
+     "level": 6,
+     "file": "body_model/lv06.webp",
+     "x": 239,
+     "y": 538,
+     "w": 156,
+     "h": 158
+    },
+    {
+     "level": 7,
+     "file": "body_model/lv07.webp",
+     "x": 244,
+     "y": 473,
+     "w": 150,
+     "h": 220
+    },
+    {
+     "level": 8,
+     "file": "body_model/lv08.webp",
+     "x": 244,
+     "y": 473,
+     "w": 150,
+     "h": 220
+    },
+    {
+     "level": 9,
+     "file": "body_model/lv09.webp",
+     "x": 244,
+     "y": 473,
+     "w": 150,
+     "h": 220
+    },
+    {
+     "level": 10,
+     "file": "body_model/lv10.webp",
+     "x": 211,
+     "y": 449,
+     "w": 337,
+     "h": 249
+    }
+   ]
+  },
+  {
+   "id": "solar_system",
+   "name": "Solar system model",
+   "slot": "c",
+   "z": 3,
+   "levels": [
+    {
+     "level": 1,
+     "file": "solar_system/lv01.webp",
+     "x": 647,
+     "y": 612,
+     "w": 123,
+     "h": 171
+    },
+    {
+     "level": 2,
+     "file": "solar_system/lv02.webp",
+     "x": 647,
+     "y": 612,
+     "w": 162,
+     "h": 224
+    },
+    {
+     "level": 3,
+     "file": "solar_system/lv03.webp",
+     "x": 590,
+     "y": 612,
+     "w": 219,
+     "h": 224
+    },
+    {
+     "level": 4,
+     "file": "solar_system/lv04.webp",
+     "x": 590,
+     "y": 606,
+     "w": 219,
+     "h": 230
+    },
+    {
+     "level": 5,
+     "file": "solar_system/lv05.webp",
+     "x": 561,
+     "y": 606,
+     "w": 248,
+     "h": 230
+    },
+    {
+     "level": 6,
+     "file": "solar_system/lv06.webp",
+     "x": 561,
+     "y": 606,
+     "w": 248,
+     "h": 230
+    },
+    {
+     "level": 7,
+     "file": "solar_system/lv07.webp",
+     "x": 471,
+     "y": 571,
+     "w": 343,
+     "h": 310
+    },
+    {
+     "level": 8,
+     "file": "solar_system/lv08.webp",
+     "x": 471,
+     "y": 571,
+     "w": 343,
+     "h": 310
+    },
+    {
+     "level": 9,
+     "file": "solar_system/lv09.webp",
+     "x": 471,
+     "y": 571,
+     "w": 343,
+     "h": 310
+    },
+    {
+     "level": 10,
+     "file": "solar_system/lv10.webp",
+     "x": 458,
+     "y": 521,
+     "w": 403,
+     "h": 366
+    }
+   ]
+  }
+ ]
+}

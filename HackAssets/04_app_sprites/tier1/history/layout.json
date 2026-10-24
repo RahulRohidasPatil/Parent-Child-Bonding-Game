@@ -1,0 +1,547 @@
+{
+ "tier": 1,
+ "room": "history",
+ "size": [
+  572,
+  476
+ ],
+ "tile": [
+  64,
+  32
+ ],
+ "room_tiles": 8,
+ "floor_origin": [
+  286.0,
+  180
+ ],
+ "items": [
+  {
+   "id": "timeline",
+   "name": "Timeline wall",
+   "slot": "wr",
+   "levels": [
+    {
+     "level": 1,
+     "file": "timeline/lv01.png",
+     "x": 357,
+     "y": 114,
+     "w": 88,
+     "h": 76
+    },
+    {
+     "level": 2,
+     "file": "timeline/lv02.png",
+     "x": 357,
+     "y": 114,
+     "w": 88,
+     "h": 76
+    },
+    {
+     "level": 3,
+     "file": "timeline/lv03.png",
+     "x": 357,
+     "y": 114,
+     "w": 88,
+     "h": 76
+    },
+    {
+     "level": 4,
+     "file": "timeline/lv04.png",
+     "x": 332,
+     "y": 98,
+     "w": 138,
+     "h": 110
+    },
+    {
+     "level": 5,
+     "file": "timeline/lv05.png",
+     "x": 332,
+     "y": 98,
+     "w": 138,
+     "h": 110
+    },
+    {
+     "level": 6,
+     "file": "timeline/lv06.png",
+     "x": 332,
+     "y": 98,
+     "w": 138,
+     "h": 110
+    },
+    {
+     "level": 7,
+     "file": "timeline/lv07.png",
+     "x": 307,
+     "y": 82,
+     "w": 188,
+     "h": 142
+    },
+    {
+     "level": 8,
+     "file": "timeline/lv08.png",
+     "x": 307,
+     "y": 82,
+     "w": 188,
+     "h": 142
+    },
+    {
+     "level": 9,
+     "file": "timeline/lv09.png",
+     "x": 307,
+     "y": 82,
+     "w": 188,
+     "h": 142
+    },
+    {
+     "level": 10,
+     "file": "timeline/lv10.png",
+     "x": 286,
+     "y": 66,
+     "w": 226,
+     "h": 170
+    }
+   ],
+   "z": -1
+  },
+  {
+   "id": "pottery_shelf",
+   "name": "Pottery shelf",
+   "slot": "r1",
+   "levels": [
+    {
+     "level": 1,
+     "file": "pottery_shelf/lv01.png",
+     "x": 310,
+     "y": 211,
+     "w": 22,
+     "h": 32
+    },
+    {
+     "level": 2,
+     "file": "pottery_shelf/lv02.png",
+     "x": 291,
+     "y": 211,
+     "w": 40,
+     "h": 38
+    },
+    {
+     "level": 3,
+     "file": "pottery_shelf/lv03.png",
+     "x": 291,
+     "y": 211,
+     "w": 50,
+     "h": 38
+    },
+    {
+     "level": 4,
+     "file": "pottery_shelf/lv04.png",
+     "x": 281,
+     "y": 189,
+     "w": 70,
+     "h": 58
+    },
+    {
+     "level": 5,
+     "file": "pottery_shelf/lv05.png",
+     "x": 281,
+     "y": 189,
+     "w": 70,
+     "h": 58
+    },
+    {
+     "level": 6,
+     "file": "pottery_shelf/lv06.png",
+     "x": 281,
+     "y": 189,
+     "w": 70,
+     "h": 58
+    },
+    {
+     "level": 7,
+     "file": "pottery_shelf/lv07.png",
+     "x": 277,
+     "y": 178,
+     "w": 78,
+     "h": 70
+    },
+    {
+     "level": 8,
+     "file": "pottery_shelf/lv08.png",
+     "x": 277,
+     "y": 178,
+     "w": 78,
+     "h": 70
+    },
+    {
+     "level": 9,
+     "file": "pottery_shelf/lv09.png",
+     "x": 277,
+     "y": 178,
+     "w": 78,
+     "h": 70
+    },
+    {
+     "level": 10,
+     "file": "pottery_shelf/lv10.png",
+     "x": 254,
+     "y": 120,
+     "w": 124,
+     "h": 128
+    }
+   ],
+   "z": 3.8
+  },
+  {
+   "id": "egypt_corner",
+   "name": "Egypt corner",
+   "slot": "l1",
+   "levels": [
+    {
+     "level": 1,
+     "file": "egypt_corner/lv01.png",
+     "x": 231,
+     "y": 218,
+     "w": 20,
+     "h": 28
+    },
+    {
+     "level": 2,
+     "file": "egypt_corner/lv02.png",
+     "x": 221,
+     "y": 218,
+     "w": 28,
+     "h": 34
+    },
+    {
+     "level": 3,
+     "file": "egypt_corner/lv03.png",
+     "x": 221,
+     "y": 218,
+     "w": 38,
+     "h": 34
+    },
+    {
+     "level": 4,
+     "file": "egypt_corner/lv04.png",
+     "x": 221,
+     "y": 188,
+     "w": 38,
+     "h": 64
+    },
+    {
+     "level": 5,
+     "file": "egypt_corner/lv05.png",
+     "x": 221,
+     "y": 188,
+     "w": 38,
+     "h": 64
+    },
+    {
+     "level": 6,
+     "file": "egypt_corner/lv06.png",
+     "x": 221,
+     "y": 188,
+     "w": 38,
+     "h": 64
+    },
+    {
+     "level": 7,
+     "file": "egypt_corner/lv07.png",
+     "x": 220,
+     "y": 183,
+     "w": 60,
+     "h": 70
+    },
+    {
+     "level": 8,
+     "file": "egypt_corner/lv08.png",
+     "x": 220,
+     "y": 183,
+     "w": 60,
+     "h": 70
+    },
+    {
+     "level": 9,
+     "file": "egypt_corner/lv09.png",
+     "x": 220,
+     "y": 183,
+     "w": 60,
+     "h": 70
+    },
+    {
+     "level": 10,
+     "file": "egypt_corner/lv10.png",
+     "x": 208,
+     "y": 173,
+     "w": 82,
+     "h": 80
+    }
+   ],
+   "z": 4.1
+  },
+  {
+   "id": "treasure_chest",
+   "name": "Treasure chest",
+   "slot": "r2",
+   "levels": [
+    {
+     "level": 1,
+     "file": "treasure_chest/lv01.png",
+     "x": 442,
+     "y": 271,
+     "w": 34,
+     "h": 38
+    },
+    {
+     "level": 2,
+     "file": "treasure_chest/lv02.png",
+     "x": 423,
+     "y": 271,
+     "w": 52,
+     "h": 44
+    },
+    {
+     "level": 3,
+     "file": "treasure_chest/lv03.png",
+     "x": 423,
+     "y": 271,
+     "w": 58,
+     "h": 44
+    },
+    {
+     "level": 4,
+     "file": "treasure_chest/lv04.png",
+     "x": 420,
+     "y": 268,
+     "w": 64,
+     "h": 48
+    },
+    {
+     "level": 5,
+     "file": "treasure_chest/lv05.png",
+     "x": 420,
+     "y": 268,
+     "w": 64,
+     "h": 48
+    },
+    {
+     "level": 6,
+     "file": "treasure_chest/lv06.png",
+     "x": 420,
+     "y": 268,
+     "w": 64,
+     "h": 48
+    },
+    {
+     "level": 7,
+     "file": "treasure_chest/lv07.png",
+     "x": 425,
+     "y": 263,
+     "w": 54,
+     "h": 52
+    },
+    {
+     "level": 8,
+     "file": "treasure_chest/lv08.png",
+     "x": 425,
+     "y": 263,
+     "w": 54,
+     "h": 52
+    },
+    {
+     "level": 9,
+     "file": "treasure_chest/lv09.png",
+     "x": 425,
+     "y": 263,
+     "w": 54,
+     "h": 52
+    },
+    {
+     "level": 10,
+     "file": "treasure_chest/lv10.png",
+     "x": 412,
+     "y": 258,
+     "w": 78,
+     "h": 58
+    }
+   ],
+   "z": 8.0
+  },
+  {
+   "id": "greek_statues",
+   "name": "Greek statues",
+   "slot": "l2",
+   "levels": [
+    {
+     "level": 1,
+     "file": "greek_statues/lv01.png",
+     "x": 95,
+     "y": 272,
+     "w": 34,
+     "h": 38
+    },
+    {
+     "level": 2,
+     "file": "greek_statues/lv02.png",
+     "x": 86,
+     "y": 272,
+     "w": 44,
+     "h": 44
+    },
+    {
+     "level": 3,
+     "file": "greek_statues/lv03.png",
+     "x": 86,
+     "y": 272,
+     "w": 54,
+     "h": 44
+    },
+    {
+     "level": 4,
+     "file": "greek_statues/lv04.png",
+     "x": 89,
+     "y": 250,
+     "w": 46,
+     "h": 68
+    },
+    {
+     "level": 5,
+     "file": "greek_statues/lv05.png",
+     "x": 89,
+     "y": 250,
+     "w": 46,
+     "h": 68
+    },
+    {
+     "level": 6,
+     "file": "greek_statues/lv06.png",
+     "x": 89,
+     "y": 250,
+     "w": 46,
+     "h": 68
+    },
+    {
+     "level": 7,
+     "file": "greek_statues/lv07.png",
+     "x": 69,
+     "y": 247,
+     "w": 78,
+     "h": 70
+    },
+    {
+     "level": 8,
+     "file": "greek_statues/lv08.png",
+     "x": 69,
+     "y": 247,
+     "w": 78,
+     "h": 70
+    },
+    {
+     "level": 9,
+     "file": "greek_statues/lv09.png",
+     "x": 69,
+     "y": 247,
+     "w": 78,
+     "h": 70
+    },
+    {
+     "level": 10,
+     "file": "greek_statues/lv10.png",
+     "x": 62,
+     "y": 232,
+     "w": 102,
+     "h": 84
+    }
+   ],
+   "z": 8.1
+  },
+  {
+   "id": "roman_siege",
+   "name": "Roman siege model",
+   "slot": "c",
+   "levels": [
+    {
+     "level": 1,
+     "file": "roman_siege/lv01.png",
+     "x": 254,
+     "y": 305,
+     "w": 50,
+     "h": 48
+    },
+    {
+     "level": 2,
+     "file": "roman_siege/lv02.png",
+     "x": 246,
+     "y": 305,
+     "w": 58,
+     "h": 54
+    },
+    {
+     "level": 3,
+     "file": "roman_siege/lv03.png",
+     "x": 246,
+     "y": 305,
+     "w": 64,
+     "h": 54
+    },
+    {
+     "level": 4,
+     "file": "roman_siege/lv04.png",
+     "x": 241,
+     "y": 300,
+     "w": 74,
+     "h": 60
+    },
+    {
+     "level": 5,
+     "file": "roman_siege/lv05.png",
+     "x": 241,
+     "y": 300,
+     "w": 80,
+     "h": 60
+    },
+    {
+     "level": 6,
+     "file": "roman_siege/lv06.png",
+     "x": 241,
+     "y": 300,
+     "w": 80,
+     "h": 60
+    },
+    {
+     "level": 7,
+     "file": "roman_siege/lv07.png",
+     "x": 235,
+     "y": 282,
+     "w": 94,
+     "h": 78
+    },
+    {
+     "level": 8,
+     "file": "roman_siege/lv08.png",
+     "x": 235,
+     "y": 282,
+     "w": 94,
+     "h": 78
+    },
+    {
+     "level": 9,
+     "file": "roman_siege/lv09.png",
+     "x": 235,
+     "y": 282,
+     "w": 94,
+     "h": 78
+    },
+    {
+     "level": 10,
+     "file": "roman_siege/lv10.png",
+     "x": 219,
+     "y": 252,
+     "w": 118,
+     "h": 108
+    }
+   ],
+   "z": 10.8
+  }
+ ]
+}

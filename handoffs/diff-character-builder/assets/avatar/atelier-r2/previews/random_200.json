@@ -1,0 +1,5002 @@
+[
+  {
+    "index": 0,
+    "label": "Seed 75001",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.fluffy",
+        "eyes": "eyes.soft",
+        "brows": "brows.thick",
+        "nose": "nose.subtle",
+        "mouth": "mouth.serious",
+        "ears": "ears.rounded",
+        "top": "top.navy",
+        "jacket": "jacket.denim",
+        "bottom": "bottom.cargo",
+        "shoes": "shoes.white",
+        "hat": null,
+        "glasses": null,
+        "earrings": "earrings.studs"
+      }
+    }
+  },
+  {
+    "index": 1,
+    "label": "Seed 75002",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.fluffy",
+        "eyes": "eyes.focused",
+        "brows": "brows.thick",
+        "nose": "nose.subtle",
+        "mouth": "mouth.smile",
+        "ears": "ears.rounded",
+        "top": "top.knit",
+        "jacket": null,
+        "bottom": "bottom.black",
+        "shoes": "shoes.white",
+        "hat": null,
+        "glasses": null,
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 2,
+    "label": "Seed 75003",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.crop",
+        "eyes": "eyes.bright",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.classic",
+        "top": "top.oxford",
+        "jacket": "jacket.bomber",
+        "bottom": "bottom.cargo",
+        "shoes": "shoes.black",
+        "hat": null,
+        "glasses": null,
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 3,
+    "label": "Seed 75004",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.crop",
+        "eyes": "eyes.soft",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.serious",
+        "ears": "ears.rounded",
+        "top": "top.oxford",
+        "jacket": null,
+        "bottom": "bottom.black",
+        "shoes": "shoes.white",
+        "hat": null,
+        "glasses": null,
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 4,
+    "label": "Seed 75005",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.curls",
+        "eyes": "eyes.focused",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.serious",
+        "ears": "ears.classic",
+        "top": "top.polo",
+        "jacket": "jacket.bomber",
+        "bottom": "bottom.black",
+        "shoes": "shoes.white",
+        "hat": null,
+        "glasses": "glasses.rect",
+        "earrings": "earrings.studs"
+      }
+    }
+  },
+  {
+    "index": 5,
+    "label": "Seed 75006",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.long",
+        "eyes": "eyes.neutral",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.smile",
+        "ears": "ears.rounded",
+        "top": "top.forest_hoodie",
+        "jacket": null,
+        "bottom": "bottom.cargo",
+        "shoes": "shoes.black",
+        "hat": "hat.cap",
+        "glasses": "glasses.rect",
+        "earrings": "earrings.studs"
+      }
+    }
+  },
+  {
+    "index": 6,
+    "label": "Seed 75007",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.long",
+        "eyes": "eyes.soft",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.classic",
+        "top": "top.forest_hoodie",
+        "jacket": "jacket.bomber",
+        "bottom": "bottom.black",
+        "shoes": "shoes.white",
+        "hat": null,
+        "glasses": "glasses.round",
+        "earrings": "earrings.studs"
+      }
+    }
+  },
+  {
+    "index": 7,
+    "label": "Seed 75008",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.bob",
+        "eyes": "eyes.focused",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.serious",
+        "ears": "ears.rounded",
+        "top": "top.hoodie",
+        "jacket": null,
+        "bottom": "bottom.cargo",
+        "shoes": "shoes.black",
+        "hat": null,
+        "glasses": null,
+        "earrings": "earrings.studs"
+      }
+    }
+  },
+  {
+    "index": 8,
+    "label": "Seed 75009",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.braids",
+        "eyes": "eyes.neutral",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.smile",
+        "ears": "ears.classic",
+        "top": "top.white_tee",
+        "jacket": "jacket.track",
+        "bottom": "bottom.black",
+        "shoes": "shoes.black",
+        "hat": "hat.beanie",
+        "glasses": "glasses.rect",
+        "earrings": "earrings.studs"
+      }
+    }
+  },
+  {
+    "index": 9,
+    "label": "Seed 75010",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.braids",
+        "eyes": "eyes.bright",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.smile",
+        "ears": "ears.classic",
+        "top": "top.white_tee",
+        "jacket": null,
+        "bottom": "bottom.track",
+        "shoes": "shoes.black",
+        "hat": "hat.beanie",
+        "glasses": "glasses.rect",
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 10,
+    "label": "Seed 75011",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.textured",
+        "eyes": "eyes.focused",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.rounded",
+        "top": "top.quarter",
+        "jacket": "jacket.track",
+        "bottom": "bottom.denim",
+        "shoes": "shoes.white",
+        "hat": "hat.beanie",
+        "glasses": null,
+        "earrings": "earrings.hoops"
+      }
+    }
+  },
+  {
+    "index": 11,
+    "label": "Seed 75012",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.fluffy",
+        "eyes": "eyes.neutral",
+        "brows": "brows.soft",
+        "nose": "nose.subtle",
+        "mouth": "mouth.serious",
+        "ears": "ears.classic",
+        "top": "top.navy",
+        "jacket": null,
+        "bottom": "bottom.track",
+        "shoes": "shoes.black",
+        "hat": "hat.beanie",
+        "glasses": "glasses.round",
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 12,
+    "label": "Seed 75013",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.fluffy",
+        "eyes": "eyes.bright",
+        "brows": "brows.soft",
+        "nose": "nose.subtle",
+        "mouth": "mouth.smile",
+        "ears": "ears.rounded",
+        "top": "top.navy",
+        "jacket": "jacket.track",
+        "bottom": "bottom.denim",
+        "shoes": "shoes.black",
+        "hat": "hat.beanie",
+        "glasses": "glasses.rect",
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 13,
+    "label": "Seed 75014",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.crop",
+        "eyes": "eyes.soft",
+        "brows": "brows.soft",
+        "nose": "nose.subtle",
+        "mouth": "mouth.smile",
+        "ears": "ears.classic",
+        "top": "top.knit",
+        "jacket": null,
+        "bottom": "bottom.denim",
+        "shoes": "shoes.black",
+        "hat": null,
+        "glasses": "glasses.rect",
+        "earrings": "earrings.studs"
+      }
+    }
+  },
+  {
+    "index": 14,
+    "label": "Seed 75015",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.crop",
+        "eyes": "eyes.neutral",
+        "brows": "brows.soft",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.rounded",
+        "top": "top.oxford",
+        "jacket": "jacket.denim",
+        "bottom": "bottom.denim",
+        "shoes": "shoes.black",
+        "hat": "hat.cap",
+        "glasses": "glasses.rect",
+        "earrings": "earrings.hoops"
+      }
+    }
+  },
+  {
+    "index": 15,
+    "label": "Seed 75016",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.curls",
+        "eyes": "eyes.bright",
+        "brows": "brows.soft",
+        "nose": "nose.subtle",
+        "mouth": "mouth.serious",
+        "ears": "ears.classic",
+        "top": "top.oxford",
+        "jacket": null,
+        "bottom": "bottom.denim",
+        "shoes": "shoes.white",
+        "hat": "hat.beanie",
+        "glasses": null,
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 16,
+    "label": "Seed 75017",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.long",
+        "eyes": "eyes.soft",
+        "brows": "brows.soft",
+        "nose": "nose.subtle",
+        "mouth": "mouth.smile",
+        "ears": "ears.classic",
+        "top": "top.polo",
+        "jacket": "jacket.denim",
+        "bottom": "bottom.track",
+        "shoes": "shoes.white",
+        "hat": "hat.cap",
+        "glasses": null,
+        "earrings": "earrings.hoops"
+      }
+    }
+  },
+  {
+    "index": 17,
+    "label": "Seed 75018",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.long",
+        "eyes": "eyes.focused",
+        "brows": "brows.soft",
+        "nose": "nose.subtle",
+        "mouth": "mouth.smile",
+        "ears": "ears.rounded",
+        "top": "top.forest_hoodie",
+        "jacket": null,
+        "bottom": "bottom.black",
+        "shoes": "shoes.white",
+        "hat": "hat.beanie",
+        "glasses": null,
+        "earrings": "earrings.studs"
+      }
+    }
+  },
+  {
+    "index": 18,
+    "label": "Seed 75019",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.bob",
+        "eyes": "eyes.bright",
+        "brows": "brows.soft",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.classic",
+        "top": "top.forest_hoodie",
+        "jacket": "jacket.denim",
+        "bottom": "bottom.track",
+        "shoes": "shoes.black",
+        "hat": "hat.cap",
+        "glasses": "glasses.rect",
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 19,
+    "label": "Seed 75020",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.braids",
+        "eyes": "eyes.soft",
+        "brows": "brows.soft",
+        "nose": "nose.subtle",
+        "mouth": "mouth.serious",
+        "ears": "ears.rounded",
+        "top": "top.hoodie",
+        "jacket": null,
+        "bottom": "bottom.black",
+        "shoes": "shoes.white",
+        "hat": null,
+        "glasses": "glasses.round",
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 20,
+    "label": "Seed 75021",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.braids",
+        "eyes": "eyes.focused",
+        "brows": "brows.thick",
+        "nose": "nose.subtle",
+        "mouth": "mouth.smile",
+        "ears": "ears.classic",
+        "top": "top.white_tee",
+        "jacket": "jacket.bomber",
+        "bottom": "bottom.cargo",
+        "shoes": "shoes.white",
+        "hat": "hat.cap",
+        "glasses": null,
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 21,
+    "label": "Seed 75022",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.textured",
+        "eyes": "eyes.neutral",
+        "brows": "brows.thick",
+        "nose": "nose.subtle",
+        "mouth": "mouth.smile",
+        "ears": "ears.rounded",
+        "top": "top.white_tee",
+        "jacket": null,
+        "bottom": "bottom.black",
+        "shoes": "shoes.white",
+        "hat": "hat.beanie",
+        "glasses": null,
+        "earrings": "earrings.hoops"
+      }
+    }
+  },
+  {
+    "index": 22,
+    "label": "Seed 75023",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.fluffy",
+        "eyes": "eyes.soft",
+        "brows": "brows.thick",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.classic",
+        "top": "top.quarter",
+        "jacket": "jacket.bomber",
+        "bottom": "bottom.cargo",
+        "shoes": "shoes.white",
+        "hat": "hat.cap",
+        "glasses": "glasses.round",
+        "earrings": "earrings.hoops"
+      }
+    }
+  },
+  {
+    "index": 23,
+    "label": "Seed 75024",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.fluffy",
+        "eyes": "eyes.focused",
+        "brows": "brows.thick",
+        "nose": "nose.subtle",
+        "mouth": "mouth.serious",
+        "ears": "ears.classic",
+        "top": "top.navy",
+        "jacket": null,
+        "bottom": "bottom.cargo",
+        "shoes": "shoes.white",
+        "hat": null,
+        "glasses": "glasses.round",
+        "earrings": "earrings.hoops"
+      }
+    }
+  },
+  {
+    "index": 24,
+    "label": "Seed 75025",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.crop",
+        "eyes": "eyes.neutral",
+        "brows": "brows.thick",
+        "nose": "nose.subtle",
+        "mouth": "mouth.smile",
+        "ears": "ears.rounded",
+        "top": "top.navy",
+        "jacket": "jacket.bomber",
+        "bottom": "bottom.cargo",
+        "shoes": "shoes.black",
+        "hat": "hat.cap",
+        "glasses": null,
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 25,
+    "label": "Seed 75026",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.crop",
+        "eyes": "eyes.soft",
+        "brows": "brows.thick",
+        "nose": "nose.subtle",
+        "mouth": "mouth.smile",
+        "ears": "ears.classic",
+        "top": "top.knit",
+        "jacket": null,
+        "bottom": "bottom.cargo",
+        "shoes": "shoes.white",
+        "hat": "hat.beanie",
+        "glasses": "glasses.round",
+        "earrings": "earrings.studs"
+      }
+    }
+  },
+  {
+    "index": 26,
+    "label": "Seed 75027",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.curls",
+        "eyes": "eyes.focused",
+        "brows": "brows.thick",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.rounded",
+        "top": "top.oxford",
+        "jacket": "jacket.track",
+        "bottom": "bottom.black",
+        "shoes": "shoes.white",
+        "hat": "hat.beanie",
+        "glasses": "glasses.round",
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 27,
+    "label": "Seed 75028",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.long",
+        "eyes": "eyes.neutral",
+        "brows": "brows.thick",
+        "nose": "nose.subtle",
+        "mouth": "mouth.serious",
+        "ears": "ears.classic",
+        "top": "top.oxford",
+        "jacket": null,
+        "bottom": "bottom.track",
+        "shoes": "shoes.black",
+        "hat": "hat.beanie",
+        "glasses": "glasses.rect",
+        "earrings": "earrings.hoops"
+      }
+    }
+  },
+  {
+    "index": 28,
+    "label": "Seed 75029",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.long",
+        "eyes": "eyes.bright",
+        "brows": "brows.thick",
+        "nose": "nose.subtle",
+        "mouth": "mouth.smile",
+        "ears": "ears.rounded",
+        "top": "top.polo",
+        "jacket": "jacket.track",
+        "bottom": "bottom.black",
+        "shoes": "shoes.black",
+        "hat": "hat.beanie",
+        "glasses": null,
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 29,
+    "label": "Seed 75030",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.bob",
+        "eyes": "eyes.focused",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.smile",
+        "ears": "ears.classic",
+        "top": "top.forest_hoodie",
+        "jacket": null,
+        "bottom": "bottom.track",
+        "shoes": "shoes.black",
+        "hat": null,
+        "glasses": "glasses.rect",
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 30,
+    "label": "Seed 75031",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.braids",
+        "eyes": "eyes.neutral",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.classic",
+        "top": "top.forest_hoodie",
+        "jacket": "jacket.track",
+        "bottom": "bottom.black",
+        "shoes": "shoes.black",
+        "hat": "hat.beanie",
+        "glasses": "glasses.round",
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 31,
+    "label": "Seed 75032",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.braids",
+        "eyes": "eyes.bright",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.serious",
+        "ears": "ears.rounded",
+        "top": "top.hoodie",
+        "jacket": null,
+        "bottom": "bottom.denim",
+        "shoes": "shoes.black",
+        "hat": "hat.cap",
+        "glasses": "glasses.rect",
+        "earrings": "earrings.studs"
+      }
+    }
+  },
+  {
+    "index": 32,
+    "label": "Seed 75033",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.textured",
+        "eyes": "eyes.soft",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.smile",
+        "ears": "ears.classic",
+        "top": "top.white_tee",
+        "jacket": "jacket.denim",
+        "bottom": "bottom.denim",
+        "shoes": "shoes.white",
+        "hat": null,
+        "glasses": "glasses.round",
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 33,
+    "label": "Seed 75034",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.fluffy",
+        "eyes": "eyes.neutral",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.smile",
+        "ears": "ears.rounded",
+        "top": "top.white_tee",
+        "jacket": null,
+        "bottom": "bottom.denim",
+        "shoes": "shoes.black",
+        "hat": "hat.cap",
+        "glasses": "glasses.round",
+        "earrings": "earrings.studs"
+      }
+    }
+  },
+  {
+    "index": 34,
+    "label": "Seed 75035",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.fluffy",
+        "eyes": "eyes.bright",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.classic",
+        "top": "top.quarter",
+        "jacket": "jacket.denim",
+        "bottom": "bottom.denim",
+        "shoes": "shoes.black",
+        "hat": null,
+        "glasses": "glasses.round",
+        "earrings": "earrings.hoops"
+      }
+    }
+  },
+  {
+    "index": 35,
+    "label": "Seed 75036",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.crop",
+        "eyes": "eyes.soft",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.serious",
+        "ears": "ears.rounded",
+        "top": "top.navy",
+        "jacket": "jacket.denim",
+        "bottom": "bottom.cargo",
+        "shoes": "shoes.white",
+        "hat": null,
+        "glasses": "glasses.rect",
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 36,
+    "label": "Seed 75037",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.crop",
+        "eyes": "eyes.focused",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.smile",
+        "ears": "ears.classic",
+        "top": "top.navy",
+        "jacket": "jacket.bomber",
+        "bottom": "bottom.denim",
+        "shoes": "shoes.black",
+        "hat": null,
+        "glasses": null,
+        "earrings": "earrings.hoops"
+      }
+    }
+  },
+  {
+    "index": 37,
+    "label": "Seed 75038",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.curls",
+        "eyes": "eyes.bright",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.smile",
+        "ears": "ears.rounded",
+        "top": "top.knit",
+        "jacket": "jacket.bomber",
+        "bottom": "bottom.black",
+        "shoes": "shoes.black",
+        "hat": null,
+        "glasses": null,
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 38,
+    "label": "Seed 75039",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.long",
+        "eyes": "eyes.soft",
+        "brows": "brows.soft",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.rounded",
+        "top": "top.oxford",
+        "jacket": "jacket.bomber",
+        "bottom": "bottom.track",
+        "shoes": "shoes.white",
+        "hat": null,
+        "glasses": null,
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 39,
+    "label": "Seed 75040",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.long",
+        "eyes": "eyes.focused",
+        "brows": "brows.soft",
+        "nose": "nose.subtle",
+        "mouth": "mouth.serious",
+        "ears": "ears.classic",
+        "top": "top.oxford",
+        "jacket": "jacket.bomber",
+        "bottom": "bottom.black",
+        "shoes": "shoes.white",
+        "hat": null,
+        "glasses": null,
+        "earrings": "earrings.studs"
+      }
+    }
+  },
+  {
+    "index": 40,
+    "label": "Seed 75041",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.bob",
+        "eyes": "eyes.neutral",
+        "brows": "brows.soft",
+        "nose": "nose.subtle",
+        "mouth": "mouth.smile",
+        "ears": "ears.rounded",
+        "top": "top.polo",
+        "jacket": null,
+        "bottom": "bottom.cargo",
+        "shoes": "shoes.black",
+        "hat": "hat.cap",
+        "glasses": null,
+        "earrings": "earrings.hoops"
+      }
+    }
+  },
+  {
+    "index": 41,
+    "label": "Seed 75042",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.braids",
+        "eyes": "eyes.soft",
+        "brows": "brows.soft",
+        "nose": "nose.subtle",
+        "mouth": "mouth.smile",
+        "ears": "ears.classic",
+        "top": "top.forest_hoodie",
+        "jacket": "jacket.bomber",
+        "bottom": "bottom.black",
+        "shoes": "shoes.white",
+        "hat": null,
+        "glasses": null,
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 42,
+    "label": "Seed 75043",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.braids",
+        "eyes": "eyes.focused",
+        "brows": "brows.soft",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.rounded",
+        "top": "top.forest_hoodie",
+        "jacket": null,
+        "bottom": "bottom.cargo",
+        "shoes": "shoes.black",
+        "hat": null,
+        "glasses": null,
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 43,
+    "label": "Seed 75044",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.textured",
+        "eyes": "eyes.neutral",
+        "brows": "brows.soft",
+        "nose": "nose.subtle",
+        "mouth": "mouth.serious",
+        "ears": "ears.classic",
+        "top": "top.hoodie",
+        "jacket": "jacket.track",
+        "bottom": "bottom.denim",
+        "shoes": "shoes.black",
+        "hat": null,
+        "glasses": null,
+        "earrings": "earrings.studs"
+      }
+    }
+  },
+  {
+    "index": 44,
+    "label": "Seed 75045",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.textured",
+        "eyes": "eyes.bright",
+        "brows": "brows.soft",
+        "nose": "nose.subtle",
+        "mouth": "mouth.smile",
+        "ears": "ears.rounded",
+        "top": "top.white_tee",
+        "jacket": null,
+        "bottom": "bottom.track",
+        "shoes": "shoes.black",
+        "hat": "hat.cap",
+        "glasses": null,
+        "earrings": "earrings.hoops"
+      }
+    }
+  },
+  {
+    "index": 45,
+    "label": "Seed 75046",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.fluffy",
+        "eyes": "eyes.focused",
+        "brows": "brows.soft",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.rounded",
+        "top": "top.white_tee",
+        "jacket": "jacket.track",
+        "bottom": "bottom.denim",
+        "shoes": "shoes.white",
+        "hat": null,
+        "glasses": "glasses.round",
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 46,
+    "label": "Seed 75047",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.crop",
+        "eyes": "eyes.neutral",
+        "brows": "brows.soft",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.classic",
+        "top": "top.quarter",
+        "jacket": null,
+        "bottom": "bottom.track",
+        "shoes": "shoes.black",
+        "hat": "hat.cap",
+        "glasses": "glasses.round",
+        "earrings": "earrings.studs"
+      }
+    }
+  },
+  {
+    "index": 47,
+    "label": "Seed 75048",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.crop",
+        "eyes": "eyes.bright",
+        "brows": "brows.thick",
+        "nose": "nose.subtle",
+        "mouth": "mouth.serious",
+        "ears": "ears.rounded",
+        "top": "top.navy",
+        "jacket": "jacket.track",
+        "bottom": "bottom.track",
+        "shoes": "shoes.black",
+        "hat": null,
+        "glasses": "glasses.round",
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 48,
+    "label": "Seed 75049",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.curls",
+        "eyes": "eyes.focused",
+        "brows": "brows.thick",
+        "nose": "nose.subtle",
+        "mouth": "mouth.smile",
+        "ears": "ears.classic",
+        "top": "top.navy",
+        "jacket": null,
+        "bottom": "bottom.denim",
+        "shoes": "shoes.white",
+        "hat": null,
+        "glasses": null,
+        "earrings": "earrings.hoops"
+      }
+    }
+  },
+  {
+    "index": 49,
+    "label": "Seed 75050",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.long",
+        "eyes": "eyes.neutral",
+        "brows": "brows.thick",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.rounded",
+        "top": "top.knit",
+        "jacket": "jacket.denim",
+        "bottom": "bottom.track",
+        "shoes": "shoes.black",
+        "hat": null,
+        "glasses": "glasses.rect",
+        "earrings": "earrings.hoops"
+      }
+    }
+  },
+  {
+    "index": 50,
+    "label": "Seed 75051",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.long",
+        "eyes": "eyes.bright",
+        "brows": "brows.thick",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.classic",
+        "top": "top.oxford",
+        "jacket": null,
+        "bottom": "bottom.denim",
+        "shoes": "shoes.white",
+        "hat": "hat.cap",
+        "glasses": "glasses.round",
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 51,
+    "label": "Seed 75052",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.bob",
+        "eyes": "eyes.soft",
+        "brows": "brows.thick",
+        "nose": "nose.subtle",
+        "mouth": "mouth.serious",
+        "ears": "ears.rounded",
+        "top": "top.oxford",
+        "jacket": "jacket.denim",
+        "bottom": "bottom.track",
+        "shoes": "shoes.white",
+        "hat": null,
+        "glasses": "glasses.round",
+        "earrings": "earrings.studs"
+      }
+    }
+  },
+  {
+    "index": 52,
+    "label": "Seed 75053",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.braids",
+        "eyes": "eyes.neutral",
+        "brows": "brows.thick",
+        "nose": "nose.subtle",
+        "mouth": "mouth.smile",
+        "ears": "ears.rounded",
+        "top": "top.polo",
+        "jacket": null,
+        "bottom": "bottom.black",
+        "shoes": "shoes.white",
+        "hat": "hat.beanie",
+        "glasses": "glasses.rect",
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 53,
+    "label": "Seed 75054",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.braids",
+        "eyes": "eyes.bright",
+        "brows": "brows.thick",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.classic",
+        "top": "top.forest_hoodie",
+        "jacket": "jacket.denim",
+        "bottom": "bottom.cargo",
+        "shoes": "shoes.black",
+        "hat": "hat.beanie",
+        "glasses": "glasses.rect",
+        "earrings": "earrings.studs"
+      }
+    }
+  },
+  {
+    "index": 54,
+    "label": "Seed 75055",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.textured",
+        "eyes": "eyes.soft",
+        "brows": "brows.thick",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.rounded",
+        "top": "top.forest_hoodie",
+        "jacket": null,
+        "bottom": "bottom.black",
+        "shoes": "shoes.white",
+        "hat": null,
+        "glasses": "glasses.rect",
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 55,
+    "label": "Seed 75056",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.textured",
+        "eyes": "eyes.focused",
+        "brows": "brows.thick",
+        "nose": "nose.subtle",
+        "mouth": "mouth.serious",
+        "ears": "ears.classic",
+        "top": "top.hoodie",
+        "jacket": "jacket.bomber",
+        "bottom": "bottom.cargo",
+        "shoes": "shoes.black",
+        "hat": "hat.beanie",
+        "glasses": null,
+        "earrings": "earrings.hoops"
+      }
+    }
+  },
+  {
+    "index": 56,
+    "label": "Seed 75057",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.fluffy",
+        "eyes": "eyes.bright",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.smile",
+        "ears": "ears.rounded",
+        "top": "top.white_tee",
+        "jacket": null,
+        "bottom": "bottom.black",
+        "shoes": "shoes.white",
+        "hat": "hat.beanie",
+        "glasses": "glasses.rect",
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 57,
+    "label": "Seed 75058",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.crop",
+        "eyes": "eyes.soft",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.classic",
+        "top": "top.quarter",
+        "jacket": "jacket.bomber",
+        "bottom": "bottom.cargo",
+        "shoes": "shoes.white",
+        "hat": "hat.cap",
+        "glasses": "glasses.rect",
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 58,
+    "label": "Seed 75059",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.crop",
+        "eyes": "eyes.focused",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.rounded",
+        "top": "top.quarter",
+        "jacket": null,
+        "bottom": "bottom.cargo",
+        "shoes": "shoes.black",
+        "hat": null,
+        "glasses": "glasses.round",
+        "earrings": "earrings.studs"
+      }
+    }
+  },
+  {
+    "index": 59,
+    "label": "Seed 75060",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.curls",
+        "eyes": "eyes.neutral",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.serious",
+        "ears": "ears.rounded",
+        "top": "top.navy",
+        "jacket": "jacket.bomber",
+        "bottom": "bottom.black",
+        "shoes": "shoes.black",
+        "hat": "hat.cap",
+        "glasses": null,
+        "earrings": "earrings.studs"
+      }
+    }
+  },
+  {
+    "index": 60,
+    "label": "Seed 75061",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.long",
+        "eyes": "eyes.soft",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.smile",
+        "ears": "ears.classic",
+        "top": "top.knit",
+        "jacket": null,
+        "bottom": "bottom.cargo",
+        "shoes": "shoes.black",
+        "hat": null,
+        "glasses": "glasses.round",
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 61,
+    "label": "Seed 75062",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.long",
+        "eyes": "eyes.focused",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.rounded",
+        "top": "top.knit",
+        "jacket": "jacket.track",
+        "bottom": "bottom.black",
+        "shoes": "shoes.white",
+        "hat": "hat.cap",
+        "glasses": "glasses.rect",
+        "earrings": "earrings.studs"
+      }
+    }
+  },
+  {
+    "index": 62,
+    "label": "Seed 75063",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.bob",
+        "eyes": "eyes.neutral",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.classic",
+        "top": "top.oxford",
+        "jacket": null,
+        "bottom": "bottom.track",
+        "shoes": "shoes.black",
+        "hat": "hat.beanie",
+        "glasses": null,
+        "earrings": "earrings.studs"
+      }
+    }
+  },
+  {
+    "index": 63,
+    "label": "Seed 75064",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.braids",
+        "eyes": "eyes.bright",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.serious",
+        "ears": "ears.rounded",
+        "top": "top.polo",
+        "jacket": "jacket.track",
+        "bottom": "bottom.black",
+        "shoes": "shoes.white",
+        "hat": "hat.cap",
+        "glasses": null,
+        "earrings": "earrings.studs"
+      }
+    }
+  },
+  {
+    "index": 64,
+    "label": "Seed 75065",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.braids",
+        "eyes": "eyes.focused",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.smile",
+        "ears": "ears.classic",
+        "top": "top.polo",
+        "jacket": null,
+        "bottom": "bottom.track",
+        "shoes": "shoes.black",
+        "hat": null,
+        "glasses": "glasses.round",
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 65,
+    "label": "Seed 75066",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.textured",
+        "eyes": "eyes.neutral",
+        "brows": "brows.soft",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.rounded",
+        "top": "top.forest_hoodie",
+        "jacket": "jacket.denim",
+        "bottom": "bottom.denim",
+        "shoes": "shoes.black",
+        "hat": "hat.cap",
+        "glasses": "glasses.round",
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 66,
+    "label": "Seed 75067",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.textured",
+        "eyes": "eyes.bright",
+        "brows": "brows.soft",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.classic",
+        "top": "top.hoodie",
+        "jacket": null,
+        "bottom": "bottom.denim",
+        "shoes": "shoes.black",
+        "hat": "hat.beanie",
+        "glasses": "glasses.rect",
+        "earrings": "earrings.hoops"
+      }
+    }
+  },
+  {
+    "index": 67,
+    "label": "Seed 75068",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.fluffy",
+        "eyes": "eyes.soft",
+        "brows": "brows.soft",
+        "nose": "nose.subtle",
+        "mouth": "mouth.serious",
+        "ears": "ears.classic",
+        "top": "top.hoodie",
+        "jacket": "jacket.denim",
+        "bottom": "bottom.denim",
+        "shoes": "shoes.white",
+        "hat": "hat.beanie",
+        "glasses": null,
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 68,
+    "label": "Seed 75069",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.crop",
+        "eyes": "eyes.neutral",
+        "brows": "brows.soft",
+        "nose": "nose.subtle",
+        "mouth": "mouth.smile",
+        "ears": "ears.rounded",
+        "top": "top.white_tee",
+        "jacket": null,
+        "bottom": "bottom.denim",
+        "shoes": "shoes.black",
+        "hat": "hat.beanie",
+        "glasses": "glasses.round",
+        "earrings": "earrings.hoops"
+      }
+    }
+  },
+  {
+    "index": 69,
+    "label": "Seed 75070",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.crop",
+        "eyes": "eyes.bright",
+        "brows": "brows.soft",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.classic",
+        "top": "top.quarter",
+        "jacket": "jacket.denim",
+        "bottom": "bottom.track",
+        "shoes": "shoes.black",
+        "hat": "hat.beanie",
+        "glasses": "glasses.round",
+        "earrings": "earrings.studs"
+      }
+    }
+  },
+  {
+    "index": 70,
+    "label": "Seed 75071",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.curls",
+        "eyes": "eyes.soft",
+        "brows": "brows.soft",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.rounded",
+        "top": "top.quarter",
+        "jacket": null,
+        "bottom": "bottom.black",
+        "shoes": "shoes.white",
+        "hat": null,
+        "glasses": "glasses.rect",
+        "earrings": "earrings.hoops"
+      }
+    }
+  },
+  {
+    "index": 71,
+    "label": "Seed 75072",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.long",
+        "eyes": "eyes.neutral",
+        "brows": "brows.soft",
+        "nose": "nose.subtle",
+        "mouth": "mouth.serious",
+        "ears": "ears.classic",
+        "top": "top.navy",
+        "jacket": "jacket.bomber",
+        "bottom": "bottom.track",
+        "shoes": "shoes.black",
+        "hat": "hat.beanie",
+        "glasses": "glasses.round",
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 72,
+    "label": "Seed 75073",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.long",
+        "eyes": "eyes.bright",
+        "brows": "brows.soft",
+        "nose": "nose.subtle",
+        "mouth": "mouth.smile",
+        "ears": "ears.rounded",
+        "top": "top.knit",
+        "jacket": null,
+        "bottom": "bottom.black",
+        "shoes": "shoes.white",
+        "hat": "hat.beanie",
+        "glasses": "glasses.round",
+        "earrings": "earrings.studs"
+      }
+    }
+  },
+  {
+    "index": 73,
+    "label": "Seed 75074",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.bob",
+        "eyes": "eyes.soft",
+        "brows": "brows.soft",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.classic",
+        "top": "top.knit",
+        "jacket": "jacket.bomber",
+        "bottom": "bottom.track",
+        "shoes": "shoes.white",
+        "hat": "hat.beanie",
+        "glasses": null,
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 74,
+    "label": "Seed 75075",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.braids",
+        "eyes": "eyes.focused",
+        "brows": "brows.thick",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.classic",
+        "top": "top.oxford",
+        "jacket": null,
+        "bottom": "bottom.cargo",
+        "shoes": "shoes.white",
+        "hat": null,
+        "glasses": "glasses.rect",
+        "earrings": "earrings.hoops"
+      }
+    }
+  },
+  {
+    "index": 75,
+    "label": "Seed 75076",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.braids",
+        "eyes": "eyes.bright",
+        "brows": "brows.thick",
+        "nose": "nose.subtle",
+        "mouth": "mouth.serious",
+        "ears": "ears.rounded",
+        "top": "top.polo",
+        "jacket": "jacket.bomber",
+        "bottom": "bottom.cargo",
+        "shoes": "shoes.black",
+        "hat": null,
+        "glasses": "glasses.rect",
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 76,
+    "label": "Seed 75077",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.textured",
+        "eyes": "eyes.soft",
+        "brows": "brows.thick",
+        "nose": "nose.subtle",
+        "mouth": "mouth.smile",
+        "ears": "ears.classic",
+        "top": "top.polo",
+        "jacket": null,
+        "bottom": "bottom.cargo",
+        "shoes": "shoes.white",
+        "hat": null,
+        "glasses": null,
+        "earrings": "earrings.studs"
+      }
+    }
+  },
+  {
+    "index": 77,
+    "label": "Seed 75078",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.textured",
+        "eyes": "eyes.focused",
+        "brows": "brows.thick",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.rounded",
+        "top": "top.forest_hoodie",
+        "jacket": "jacket.track",
+        "bottom": "bottom.cargo",
+        "shoes": "shoes.white",
+        "hat": null,
+        "glasses": null,
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 78,
+    "label": "Seed 75079",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.fluffy",
+        "eyes": "eyes.neutral",
+        "brows": "brows.thick",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.classic",
+        "top": "top.hoodie",
+        "jacket": null,
+        "bottom": "bottom.track",
+        "shoes": "shoes.white",
+        "hat": "hat.cap",
+        "glasses": null,
+        "earrings": "earrings.studs"
+      }
+    }
+  },
+  {
+    "index": 79,
+    "label": "Seed 75080",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.crop",
+        "eyes": "eyes.soft",
+        "brows": "brows.thick",
+        "nose": "nose.subtle",
+        "mouth": "mouth.serious",
+        "ears": "ears.rounded",
+        "top": "top.hoodie",
+        "jacket": "jacket.track",
+        "bottom": "bottom.cargo",
+        "shoes": "shoes.white",
+        "hat": null,
+        "glasses": null,
+        "earrings": "earrings.hoops"
+      }
+    }
+  },
+  {
+    "index": 80,
+    "label": "Seed 75081",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.crop",
+        "eyes": "eyes.focused",
+        "brows": "brows.thick",
+        "nose": "nose.subtle",
+        "mouth": "mouth.smile",
+        "ears": "ears.classic",
+        "top": "top.white_tee",
+        "jacket": null,
+        "bottom": "bottom.track",
+        "shoes": "shoes.black",
+        "hat": null,
+        "glasses": null,
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 81,
+    "label": "Seed 75082",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.curls",
+        "eyes": "eyes.neutral",
+        "brows": "brows.thick",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.classic",
+        "top": "top.quarter",
+        "jacket": "jacket.track",
+        "bottom": "bottom.black",
+        "shoes": "shoes.black",
+        "hat": null,
+        "glasses": null,
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 82,
+    "label": "Seed 75083",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.long",
+        "eyes": "eyes.bright",
+        "brows": "brows.thick",
+        "nose": "nose.subtle",
+        "mouth": "mouth.serious",
+        "ears": "ears.rounded",
+        "top": "top.quarter",
+        "jacket": null,
+        "bottom": "bottom.track",
+        "shoes": "shoes.black",
+        "hat": "hat.cap",
+        "glasses": null,
+        "earrings": "earrings.studs"
+      }
+    }
+  },
+  {
+    "index": 83,
+    "label": "Seed 75084",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.long",
+        "eyes": "eyes.focused",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.serious",
+        "ears": "ears.classic",
+        "top": "top.navy",
+        "jacket": "jacket.denim",
+        "bottom": "bottom.black",
+        "shoes": "shoes.white",
+        "hat": null,
+        "glasses": null,
+        "earrings": "earrings.hoops"
+      }
+    }
+  },
+  {
+    "index": 84,
+    "label": "Seed 75085",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.bob",
+        "eyes": "eyes.neutral",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.smile",
+        "ears": "ears.rounded",
+        "top": "top.knit",
+        "jacket": null,
+        "bottom": "bottom.denim",
+        "shoes": "shoes.black",
+        "hat": "hat.cap",
+        "glasses": null,
+        "earrings": "earrings.studs"
+      }
+    }
+  },
+  {
+    "index": 85,
+    "label": "Seed 75086",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.braids",
+        "eyes": "eyes.bright",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.classic",
+        "top": "top.knit",
+        "jacket": "jacket.denim",
+        "bottom": "bottom.denim",
+        "shoes": "shoes.black",
+        "hat": null,
+        "glasses": null,
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 86,
+    "label": "Seed 75087",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.braids",
+        "eyes": "eyes.soft",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.serious",
+        "ears": "ears.rounded",
+        "top": "top.oxford",
+        "jacket": null,
+        "bottom": "bottom.denim",
+        "shoes": "shoes.black",
+        "hat": null,
+        "glasses": null,
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 87,
+    "label": "Seed 75088",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.textured",
+        "eyes": "eyes.neutral",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.serious",
+        "ears": "ears.classic",
+        "top": "top.polo",
+        "jacket": "jacket.denim",
+        "bottom": "bottom.denim",
+        "shoes": "shoes.black",
+        "hat": null,
+        "glasses": "glasses.rect",
+        "earrings": "earrings.hoops"
+      }
+    }
+  },
+  {
+    "index": 88,
+    "label": "Seed 75089",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.textured",
+        "eyes": "eyes.bright",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.smile",
+        "ears": "ears.classic",
+        "top": "top.polo",
+        "jacket": null,
+        "bottom": "bottom.black",
+        "shoes": "shoes.black",
+        "hat": "hat.cap",
+        "glasses": "glasses.rect",
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 89,
+    "label": "Seed 75090",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.fluffy",
+        "eyes": "eyes.soft",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.rounded",
+        "top": "top.forest_hoodie",
+        "jacket": "jacket.bomber",
+        "bottom": "bottom.denim",
+        "shoes": "shoes.white",
+        "hat": null,
+        "glasses": "glasses.round",
+        "earrings": "earrings.studs"
+      }
+    }
+  },
+  {
+    "index": 90,
+    "label": "Seed 75091",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.crop",
+        "eyes": "eyes.neutral",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.serious",
+        "ears": "ears.classic",
+        "top": "top.hoodie",
+        "jacket": null,
+        "bottom": "bottom.black",
+        "shoes": "shoes.black",
+        "hat": "hat.cap",
+        "glasses": "glasses.round",
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 91,
+    "label": "Seed 75092",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.crop",
+        "eyes": "eyes.bright",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.serious",
+        "ears": "ears.rounded",
+        "top": "top.hoodie",
+        "jacket": "jacket.bomber",
+        "bottom": "bottom.track",
+        "shoes": "shoes.black",
+        "hat": null,
+        "glasses": "glasses.rect",
+        "earrings": "earrings.studs"
+      }
+    }
+  },
+  {
+    "index": 92,
+    "label": "Seed 75093",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.curls",
+        "eyes": "eyes.soft",
+        "brows": "brows.soft",
+        "nose": "nose.subtle",
+        "mouth": "mouth.smile",
+        "ears": "ears.classic",
+        "top": "top.white_tee",
+        "jacket": "jacket.bomber",
+        "bottom": "bottom.black",
+        "shoes": "shoes.white",
+        "hat": null,
+        "glasses": "glasses.rect",
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 93,
+    "label": "Seed 75094",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.long",
+        "eyes": "eyes.focused",
+        "brows": "brows.soft",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.rounded",
+        "top": "top.quarter",
+        "jacket": "jacket.bomber",
+        "bottom": "bottom.track",
+        "shoes": "shoes.white",
+        "hat": null,
+        "glasses": "glasses.rect",
+        "earrings": "earrings.hoops"
+      }
+    }
+  },
+  {
+    "index": 94,
+    "label": "Seed 75095",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.long",
+        "eyes": "eyes.bright",
+        "brows": "brows.soft",
+        "nose": "nose.subtle",
+        "mouth": "mouth.serious",
+        "ears": "ears.classic",
+        "top": "top.quarter",
+        "jacket": "jacket.track",
+        "bottom": "bottom.black",
+        "shoes": "shoes.black",
+        "hat": null,
+        "glasses": "glasses.round",
+        "earrings": "earrings.hoops"
+      }
+    }
+  },
+  {
+    "index": 95,
+    "label": "Seed 75096",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.bob",
+        "eyes": "eyes.soft",
+        "brows": "brows.soft",
+        "nose": "nose.subtle",
+        "mouth": "mouth.serious",
+        "ears": "ears.rounded",
+        "top": "top.navy",
+        "jacket": "jacket.track",
+        "bottom": "bottom.track",
+        "shoes": "shoes.white",
+        "hat": "hat.beanie",
+        "glasses": null,
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 96,
+    "label": "Seed 75097",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.braids",
+        "eyes": "eyes.focused",
+        "brows": "brows.soft",
+        "nose": "nose.subtle",
+        "mouth": "mouth.smile",
+        "ears": "ears.rounded",
+        "top": "top.knit",
+        "jacket": "jacket.track",
+        "bottom": "bottom.denim",
+        "shoes": "shoes.white",
+        "hat": "hat.beanie",
+        "glasses": "glasses.rect",
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 97,
+    "label": "Seed 75098",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.braids",
+        "eyes": "eyes.neutral",
+        "brows": "brows.soft",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.classic",
+        "top": "top.knit",
+        "jacket": "jacket.track",
+        "bottom": "bottom.cargo",
+        "shoes": "shoes.black",
+        "hat": "hat.cap",
+        "glasses": "glasses.round",
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 98,
+    "label": "Seed 75099",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.textured",
+        "eyes": "eyes.soft",
+        "brows": "brows.soft",
+        "nose": "nose.subtle",
+        "mouth": "mouth.serious",
+        "ears": "ears.rounded",
+        "top": "top.oxford",
+        "jacket": "jacket.track",
+        "bottom": "bottom.denim",
+        "shoes": "shoes.white",
+        "hat": "hat.cap",
+        "glasses": null,
+        "earrings": "earrings.studs"
+      }
+    }
+  },
+  {
+    "index": 99,
+    "label": "Seed 75100",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.textured",
+        "eyes": "eyes.focused",
+        "brows": "brows.soft",
+        "nose": "nose.subtle",
+        "mouth": "mouth.serious",
+        "ears": "ears.classic",
+        "top": "top.polo",
+        "jacket": null,
+        "bottom": "bottom.track",
+        "shoes": "shoes.black",
+        "hat": null,
+        "glasses": "glasses.round",
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 100,
+    "label": "Seed 75101",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.fluffy",
+        "eyes": "eyes.neutral",
+        "brows": "brows.soft",
+        "nose": "nose.subtle",
+        "mouth": "mouth.smile",
+        "ears": "ears.rounded",
+        "top": "top.polo",
+        "jacket": "jacket.denim",
+        "bottom": "bottom.denim",
+        "shoes": "shoes.black",
+        "hat": "hat.cap",
+        "glasses": "glasses.rect",
+        "earrings": "earrings.hoops"
+      }
+    }
+  },
+  {
+    "index": 101,
+    "label": "Seed 75102",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.crop",
+        "eyes": "eyes.bright",
+        "brows": "brows.thick",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.classic",
+        "top": "top.forest_hoodie",
+        "jacket": null,
+        "bottom": "bottom.denim",
+        "shoes": "shoes.black",
+        "hat": "hat.beanie",
+        "glasses": null,
+        "earrings": "earrings.studs"
+      }
+    }
+  },
+  {
+    "index": 102,
+    "label": "Seed 75103",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.crop",
+        "eyes": "eyes.focused",
+        "brows": "brows.thick",
+        "nose": "nose.subtle",
+        "mouth": "mouth.serious",
+        "ears": "ears.rounded",
+        "top": "top.hoodie",
+        "jacket": "jacket.denim",
+        "bottom": "bottom.track",
+        "shoes": "shoes.white",
+        "hat": "hat.cap",
+        "glasses": null,
+        "earrings": "earrings.studs"
+      }
+    }
+  },
+  {
+    "index": 103,
+    "label": "Seed 75104",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.curls",
+        "eyes": "eyes.neutral",
+        "brows": "brows.thick",
+        "nose": "nose.subtle",
+        "mouth": "mouth.serious",
+        "ears": "ears.rounded",
+        "top": "top.hoodie",
+        "jacket": null,
+        "bottom": "bottom.denim",
+        "shoes": "shoes.white",
+        "hat": "hat.beanie",
+        "glasses": null,
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 104,
+    "label": "Seed 75105",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.long",
+        "eyes": "eyes.bright",
+        "brows": "brows.thick",
+        "nose": "nose.subtle",
+        "mouth": "mouth.smile",
+        "ears": "ears.classic",
+        "top": "top.white_tee",
+        "jacket": "jacket.denim",
+        "bottom": "bottom.track",
+        "shoes": "shoes.black",
+        "hat": "hat.cap",
+        "glasses": "glasses.rect",
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 105,
+    "label": "Seed 75106",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.long",
+        "eyes": "eyes.soft",
+        "brows": "brows.thick",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.rounded",
+        "top": "top.quarter",
+        "jacket": null,
+        "bottom": "bottom.black",
+        "shoes": "shoes.white",
+        "hat": null,
+        "glasses": "glasses.round",
+        "earrings": "earrings.studs"
+      }
+    }
+  },
+  {
+    "index": 106,
+    "label": "Seed 75107",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.bob",
+        "eyes": "eyes.neutral",
+        "brows": "brows.thick",
+        "nose": "nose.subtle",
+        "mouth": "mouth.serious",
+        "ears": "ears.classic",
+        "top": "top.quarter",
+        "jacket": "jacket.bomber",
+        "bottom": "bottom.track",
+        "shoes": "shoes.black",
+        "hat": "hat.cap",
+        "glasses": "glasses.rect",
+        "earrings": "earrings.hoops"
+      }
+    }
+  },
+  {
+    "index": 107,
+    "label": "Seed 75108",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.bob",
+        "eyes": "eyes.bright",
+        "brows": "brows.thick",
+        "nose": "nose.subtle",
+        "mouth": "mouth.serious",
+        "ears": "ears.rounded",
+        "top": "top.navy",
+        "jacket": null,
+        "bottom": "bottom.black",
+        "shoes": "shoes.white",
+        "hat": "hat.beanie",
+        "glasses": null,
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 108,
+    "label": "Seed 75109",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.braids",
+        "eyes": "eyes.soft",
+        "brows": "brows.thick",
+        "nose": "nose.subtle",
+        "mouth": "mouth.smile",
+        "ears": "ears.classic",
+        "top": "top.knit",
+        "jacket": "jacket.bomber",
+        "bottom": "bottom.cargo",
+        "shoes": "shoes.white",
+        "hat": "hat.beanie",
+        "glasses": null,
+        "earrings": "earrings.hoops"
+      }
+    }
+  },
+  {
+    "index": 109,
+    "label": "Seed 75110",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.textured",
+        "eyes": "eyes.focused",
+        "brows": "brows.thick",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.rounded",
+        "top": "top.knit",
+        "jacket": null,
+        "bottom": "bottom.cargo",
+        "shoes": "shoes.white",
+        "hat": "hat.beanie",
+        "glasses": "glasses.rect",
+        "earrings": "earrings.studs"
+      }
+    }
+  },
+  {
+    "index": 110,
+    "label": "Seed 75111",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.textured",
+        "eyes": "eyes.bright",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.serious",
+        "ears": "ears.rounded",
+        "top": "top.oxford",
+        "jacket": "jacket.bomber",
+        "bottom": "bottom.cargo",
+        "shoes": "shoes.black",
+        "hat": "hat.beanie",
+        "glasses": "glasses.round",
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 111,
+    "label": "Seed 75112",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.fluffy",
+        "eyes": "eyes.soft",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.serious",
+        "ears": "ears.classic",
+        "top": "top.polo",
+        "jacket": null,
+        "bottom": "bottom.cargo",
+        "shoes": "shoes.white",
+        "hat": null,
+        "glasses": "glasses.rect",
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 112,
+    "label": "Seed 75113",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.crop",
+        "eyes": "eyes.focused",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.smile",
+        "ears": "ears.rounded",
+        "top": "top.polo",
+        "jacket": "jacket.track",
+        "bottom": "bottom.black",
+        "shoes": "shoes.white",
+        "hat": "hat.beanie",
+        "glasses": null,
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 113,
+    "label": "Seed 75114",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.crop",
+        "eyes": "eyes.bright",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.classic",
+        "top": "top.forest_hoodie",
+        "jacket": null,
+        "bottom": "bottom.track",
+        "shoes": "shoes.black",
+        "hat": "hat.beanie",
+        "glasses": "glasses.rect",
+        "earrings": "earrings.hoops"
+      }
+    }
+  },
+  {
+    "index": 114,
+    "label": "Seed 75115",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.curls",
+        "eyes": "eyes.soft",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.serious",
+        "ears": "ears.rounded",
+        "top": "top.hoodie",
+        "jacket": "jacket.track",
+        "bottom": "bottom.black",
+        "shoes": "shoes.white",
+        "hat": "hat.beanie",
+        "glasses": "glasses.round",
+        "earrings": "earrings.studs"
+      }
+    }
+  },
+  {
+    "index": 115,
+    "label": "Seed 75116",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.long",
+        "eyes": "eyes.focused",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.serious",
+        "ears": "ears.classic",
+        "top": "top.hoodie",
+        "jacket": null,
+        "bottom": "bottom.track",
+        "shoes": "shoes.black",
+        "hat": null,
+        "glasses": "glasses.rect",
+        "earrings": "earrings.hoops"
+      }
+    }
+  },
+  {
+    "index": 116,
+    "label": "Seed 75117",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.long",
+        "eyes": "eyes.neutral",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.smile",
+        "ears": "ears.rounded",
+        "top": "top.white_tee",
+        "jacket": "jacket.track",
+        "bottom": "bottom.black",
+        "shoes": "shoes.black",
+        "hat": "hat.beanie",
+        "glasses": null,
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 117,
+    "label": "Seed 75118",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.bob",
+        "eyes": "eyes.soft",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.rounded",
+        "top": "top.quarter",
+        "jacket": null,
+        "bottom": "bottom.track",
+        "shoes": "shoes.black",
+        "hat": "hat.cap",
+        "glasses": "glasses.round",
+        "earrings": "earrings.studs"
+      }
+    }
+  },
+  {
+    "index": 118,
+    "label": "Seed 75119",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.bob",
+        "eyes": "eyes.focused",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.serious",
+        "ears": "ears.classic",
+        "top": "top.quarter",
+        "jacket": "jacket.denim",
+        "bottom": "bottom.denim",
+        "shoes": "shoes.white",
+        "hat": "hat.cap",
+        "glasses": "glasses.round",
+        "earrings": "earrings.studs"
+      }
+    }
+  },
+  {
+    "index": 119,
+    "label": "Seed 75120",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.braids",
+        "eyes": "eyes.neutral",
+        "brows": "brows.soft",
+        "nose": "nose.subtle",
+        "mouth": "mouth.smile",
+        "ears": "ears.rounded",
+        "top": "top.navy",
+        "jacket": null,
+        "bottom": "bottom.denim",
+        "shoes": "shoes.black",
+        "hat": "hat.cap",
+        "glasses": null,
+        "earrings": "earrings.hoops"
+      }
+    }
+  },
+  {
+    "index": 120,
+    "label": "Seed 75121",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.textured",
+        "eyes": "eyes.bright",
+        "brows": "brows.soft",
+        "nose": "nose.subtle",
+        "mouth": "mouth.smile",
+        "ears": "ears.classic",
+        "top": "top.knit",
+        "jacket": "jacket.denim",
+        "bottom": "bottom.denim",
+        "shoes": "shoes.black",
+        "hat": null,
+        "glasses": null,
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 121,
+    "label": "Seed 75122",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.textured",
+        "eyes": "eyes.focused",
+        "brows": "brows.soft",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.rounded",
+        "top": "top.knit",
+        "jacket": null,
+        "bottom": "bottom.denim",
+        "shoes": "shoes.black",
+        "hat": null,
+        "glasses": null,
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 122,
+    "label": "Seed 75123",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.fluffy",
+        "eyes": "eyes.neutral",
+        "brows": "brows.soft",
+        "nose": "nose.subtle",
+        "mouth": "mouth.serious",
+        "ears": "ears.classic",
+        "top": "top.oxford",
+        "jacket": "jacket.denim",
+        "bottom": "bottom.denim",
+        "shoes": "shoes.black",
+        "hat": null,
+        "glasses": null,
+        "earrings": "earrings.hoops"
+      }
+    }
+  },
+  {
+    "index": 123,
+    "label": "Seed 75124",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.crop",
+        "eyes": "eyes.bright",
+        "brows": "brows.soft",
+        "nose": "nose.subtle",
+        "mouth": "mouth.smile",
+        "ears": "ears.rounded",
+        "top": "top.polo",
+        "jacket": null,
+        "bottom": "bottom.black",
+        "shoes": "shoes.white",
+        "hat": "hat.cap",
+        "glasses": null,
+        "earrings": "earrings.studs"
+      }
+    }
+  },
+  {
+    "index": 124,
+    "label": "Seed 75125",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.crop",
+        "eyes": "eyes.soft",
+        "brows": "brows.soft",
+        "nose": "nose.subtle",
+        "mouth": "mouth.smile",
+        "ears": "ears.classic",
+        "top": "top.polo",
+        "jacket": "jacket.bomber",
+        "bottom": "bottom.track",
+        "shoes": "shoes.white",
+        "hat": null,
+        "glasses": null,
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 125,
+    "label": "Seed 75126",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.curls",
+        "eyes": "eyes.neutral",
+        "brows": "brows.soft",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.classic",
+        "top": "top.forest_hoodie",
+        "jacket": null,
+        "bottom": "bottom.black",
+        "shoes": "shoes.white",
+        "hat": "hat.cap",
+        "glasses": null,
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 126,
+    "label": "Seed 75127",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.long",
+        "eyes": "eyes.bright",
+        "brows": "brows.soft",
+        "nose": "nose.subtle",
+        "mouth": "mouth.serious",
+        "ears": "ears.rounded",
+        "top": "top.hoodie",
+        "jacket": "jacket.bomber",
+        "bottom": "bottom.track",
+        "shoes": "shoes.black",
+        "hat": null,
+        "glasses": null,
+        "earrings": "earrings.hoops"
+      }
+    }
+  },
+  {
+    "index": 127,
+    "label": "Seed 75128",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.long",
+        "eyes": "eyes.soft",
+        "brows": "brows.soft",
+        "nose": "nose.subtle",
+        "mouth": "mouth.smile",
+        "ears": "ears.classic",
+        "top": "top.hoodie",
+        "jacket": null,
+        "bottom": "bottom.cargo",
+        "shoes": "shoes.white",
+        "hat": null,
+        "glasses": null,
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 128,
+    "label": "Seed 75129",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.bob",
+        "eyes": "eyes.focused",
+        "brows": "brows.thick",
+        "nose": "nose.subtle",
+        "mouth": "mouth.smile",
+        "ears": "ears.rounded",
+        "top": "top.white_tee",
+        "jacket": "jacket.bomber",
+        "bottom": "bottom.track",
+        "shoes": "shoes.black",
+        "hat": null,
+        "glasses": "glasses.rect",
+        "earrings": "earrings.studs"
+      }
+    }
+  },
+  {
+    "index": 129,
+    "label": "Seed 75130",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.bob",
+        "eyes": "eyes.bright",
+        "brows": "brows.thick",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.classic",
+        "top": "top.quarter",
+        "jacket": null,
+        "bottom": "bottom.cargo",
+        "shoes": "shoes.white",
+        "hat": "hat.cap",
+        "glasses": "glasses.round",
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 130,
+    "label": "Seed 75131",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.braids",
+        "eyes": "eyes.soft",
+        "brows": "brows.thick",
+        "nose": "nose.subtle",
+        "mouth": "mouth.serious",
+        "ears": "ears.rounded",
+        "top": "top.quarter",
+        "jacket": "jacket.track",
+        "bottom": "bottom.cargo",
+        "shoes": "shoes.white",
+        "hat": null,
+        "glasses": "glasses.round",
+        "earrings": "earrings.studs"
+      }
+    }
+  },
+  {
+    "index": 131,
+    "label": "Seed 75132",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.textured",
+        "eyes": "eyes.focused",
+        "brows": "brows.thick",
+        "nose": "nose.subtle",
+        "mouth": "mouth.smile",
+        "ears": "ears.classic",
+        "top": "top.navy",
+        "jacket": null,
+        "bottom": "bottom.track",
+        "shoes": "shoes.white",
+        "hat": null,
+        "glasses": null,
+        "earrings": "earrings.hoops"
+      }
+    }
+  },
+  {
+    "index": 132,
+    "label": "Seed 75133",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.textured",
+        "eyes": "eyes.neutral",
+        "brows": "brows.thick",
+        "nose": "nose.subtle",
+        "mouth": "mouth.smile",
+        "ears": "ears.classic",
+        "top": "top.knit",
+        "jacket": "jacket.track",
+        "bottom": "bottom.cargo",
+        "shoes": "shoes.black",
+        "hat": null,
+        "glasses": "glasses.rect",
+        "earrings": "earrings.hoops"
+      }
+    }
+  },
+  {
+    "index": 133,
+    "label": "Seed 75134",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.fluffy",
+        "eyes": "eyes.soft",
+        "brows": "brows.thick",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.rounded",
+        "top": "top.knit",
+        "jacket": null,
+        "bottom": "bottom.track",
+        "shoes": "shoes.white",
+        "hat": null,
+        "glasses": null,
+        "earrings": "earrings.studs"
+      }
+    }
+  },
+  {
+    "index": 134,
+    "label": "Seed 75135",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.crop",
+        "eyes": "eyes.focused",
+        "brows": "brows.thick",
+        "nose": "nose.subtle",
+        "mouth": "mouth.serious",
+        "ears": "ears.classic",
+        "top": "top.oxford",
+        "jacket": "jacket.track",
+        "bottom": "bottom.black",
+        "shoes": "shoes.white",
+        "hat": null,
+        "glasses": "glasses.round",
+        "earrings": "earrings.hoops"
+      }
+    }
+  },
+  {
+    "index": 135,
+    "label": "Seed 75136",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.crop",
+        "eyes": "eyes.neutral",
+        "brows": "brows.thick",
+        "nose": "nose.subtle",
+        "mouth": "mouth.smile",
+        "ears": "ears.rounded",
+        "top": "top.polo",
+        "jacket": null,
+        "bottom": "bottom.denim",
+        "shoes": "shoes.black",
+        "hat": "hat.cap",
+        "glasses": "glasses.rect",
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 136,
+    "label": "Seed 75137",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.curls",
+        "eyes": "eyes.soft",
+        "brows": "brows.thick",
+        "nose": "nose.subtle",
+        "mouth": "mouth.smile",
+        "ears": "ears.classic",
+        "top": "top.polo",
+        "jacket": "jacket.denim",
+        "bottom": "bottom.black",
+        "shoes": "shoes.white",
+        "hat": null,
+        "glasses": "glasses.rect",
+        "earrings": "earrings.studs"
+      }
+    }
+  },
+  {
+    "index": 137,
+    "label": "Seed 75138",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.long",
+        "eyes": "eyes.focused",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.rounded",
+        "top": "top.forest_hoodie",
+        "jacket": null,
+        "bottom": "bottom.denim",
+        "shoes": "shoes.black",
+        "hat": null,
+        "glasses": null,
+        "earrings": "earrings.studs"
+      }
+    }
+  },
+  {
+    "index": 138,
+    "label": "Seed 75139",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.long",
+        "eyes": "eyes.neutral",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.serious",
+        "ears": "ears.classic",
+        "top": "top.hoodie",
+        "jacket": "jacket.denim",
+        "bottom": "bottom.black",
+        "shoes": "shoes.black",
+        "hat": "hat.beanie",
+        "glasses": null,
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 139,
+    "label": "Seed 75140",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.bob",
+        "eyes": "eyes.bright",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.smile",
+        "ears": "ears.classic",
+        "top": "top.white_tee",
+        "jacket": null,
+        "bottom": "bottom.black",
+        "shoes": "shoes.black",
+        "hat": "hat.beanie",
+        "glasses": "glasses.round",
+        "earrings": "earrings.hoops"
+      }
+    }
+  },
+  {
+    "index": 140,
+    "label": "Seed 75141",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.bob",
+        "eyes": "eyes.focused",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.smile",
+        "ears": "ears.rounded",
+        "top": "top.white_tee",
+        "jacket": "jacket.denim",
+        "bottom": "bottom.denim",
+        "shoes": "shoes.white",
+        "hat": "hat.cap",
+        "glasses": "glasses.round",
+        "earrings": "earrings.studs"
+      }
+    }
+  },
+  {
+    "index": 141,
+    "label": "Seed 75142",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.braids",
+        "eyes": "eyes.neutral",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.classic",
+        "top": "top.quarter",
+        "jacket": null,
+        "bottom": "bottom.black",
+        "shoes": "shoes.black",
+        "hat": "hat.beanie",
+        "glasses": null,
+        "earrings": "earrings.hoops"
+      }
+    }
+  },
+  {
+    "index": 142,
+    "label": "Seed 75143",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.textured",
+        "eyes": "eyes.bright",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.serious",
+        "ears": "ears.rounded",
+        "top": "top.navy",
+        "jacket": "jacket.bomber",
+        "bottom": "bottom.denim",
+        "shoes": "shoes.black",
+        "hat": "hat.cap",
+        "glasses": null,
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 143,
+    "label": "Seed 75144",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.textured",
+        "eyes": "eyes.soft",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.smile",
+        "ears": "ears.classic",
+        "top": "top.navy",
+        "jacket": null,
+        "bottom": "bottom.black",
+        "shoes": "shoes.black",
+        "hat": null,
+        "glasses": "glasses.round",
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 144,
+    "label": "Seed 75145",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.fluffy",
+        "eyes": "eyes.neutral",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.smile",
+        "ears": "ears.rounded",
+        "top": "top.knit",
+        "jacket": "jacket.bomber",
+        "bottom": "bottom.denim",
+        "shoes": "shoes.black",
+        "hat": "hat.cap",
+        "glasses": "glasses.round",
+        "earrings": "earrings.hoops"
+      }
+    }
+  },
+  {
+    "index": 145,
+    "label": "Seed 75146",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.crop",
+        "eyes": "eyes.bright",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.classic",
+        "top": "top.oxford",
+        "jacket": null,
+        "bottom": "bottom.cargo",
+        "shoes": "shoes.white",
+        "hat": "hat.beanie",
+        "glasses": null,
+        "earrings": "earrings.hoops"
+      }
+    }
+  },
+  {
+    "index": 146,
+    "label": "Seed 75147",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.crop",
+        "eyes": "eyes.soft",
+        "brows": "brows.soft",
+        "nose": "nose.subtle",
+        "mouth": "mouth.serious",
+        "ears": "ears.classic",
+        "top": "top.oxford",
+        "jacket": "jacket.bomber",
+        "bottom": "bottom.track",
+        "shoes": "shoes.white",
+        "hat": "hat.cap",
+        "glasses": null,
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 147,
+    "label": "Seed 75148",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.curls",
+        "eyes": "eyes.focused",
+        "brows": "brows.soft",
+        "nose": "nose.subtle",
+        "mouth": "mouth.smile",
+        "ears": "ears.rounded",
+        "top": "top.polo",
+        "jacket": null,
+        "bottom": "bottom.cargo",
+        "shoes": "shoes.white",
+        "hat": null,
+        "glasses": "glasses.round",
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 148,
+    "label": "Seed 75149",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.long",
+        "eyes": "eyes.bright",
+        "brows": "brows.soft",
+        "nose": "nose.subtle",
+        "mouth": "mouth.smile",
+        "ears": "ears.classic",
+        "top": "top.forest_hoodie",
+        "jacket": "jacket.track",
+        "bottom": "bottom.track",
+        "shoes": "shoes.black",
+        "hat": "hat.cap",
+        "glasses": "glasses.round",
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 149,
+    "label": "Seed 75150",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.long",
+        "eyes": "eyes.soft",
+        "brows": "brows.soft",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.rounded",
+        "top": "top.forest_hoodie",
+        "jacket": "jacket.track",
+        "bottom": "bottom.black",
+        "shoes": "shoes.white",
+        "hat": "hat.beanie",
+        "glasses": "glasses.rect",
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 150,
+    "label": "Seed 75151",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.bob",
+        "eyes": "eyes.focused",
+        "brows": "brows.soft",
+        "nose": "nose.subtle",
+        "mouth": "mouth.serious",
+        "ears": "ears.classic",
+        "top": "top.hoodie",
+        "jacket": "jacket.track",
+        "bottom": "bottom.cargo",
+        "shoes": "shoes.white",
+        "hat": "hat.beanie",
+        "glasses": "glasses.round",
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 151,
+    "label": "Seed 75152",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.bob",
+        "eyes": "eyes.neutral",
+        "brows": "brows.soft",
+        "nose": "nose.subtle",
+        "mouth": "mouth.smile",
+        "ears": "ears.rounded",
+        "top": "top.white_tee",
+        "jacket": "jacket.track",
+        "bottom": "bottom.denim",
+        "shoes": "shoes.black",
+        "hat": "hat.beanie",
+        "glasses": null,
+        "earrings": "earrings.hoops"
+      }
+    }
+  },
+  {
+    "index": 152,
+    "label": "Seed 75153",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.braids",
+        "eyes": "eyes.soft",
+        "brows": "brows.soft",
+        "nose": "nose.subtle",
+        "mouth": "mouth.smile",
+        "ears": "ears.classic",
+        "top": "top.white_tee",
+        "jacket": "jacket.denim",
+        "bottom": "bottom.cargo",
+        "shoes": "shoes.white",
+        "hat": "hat.beanie",
+        "glasses": null,
+        "earrings": "earrings.hoops"
+      }
+    }
+  },
+  {
+    "index": 153,
+    "label": "Seed 75154",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.textured",
+        "eyes": "eyes.focused",
+        "brows": "brows.soft",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.rounded",
+        "top": "top.quarter",
+        "jacket": "jacket.denim",
+        "bottom": "bottom.denim",
+        "shoes": "shoes.white",
+        "hat": "hat.beanie",
+        "glasses": "glasses.round",
+        "earrings": "earrings.hoops"
+      }
+    }
+  },
+  {
+    "index": 154,
+    "label": "Seed 75155",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.textured",
+        "eyes": "eyes.neutral",
+        "brows": "brows.soft",
+        "nose": "nose.subtle",
+        "mouth": "mouth.serious",
+        "ears": "ears.rounded",
+        "top": "top.navy",
+        "jacket": "jacket.denim",
+        "bottom": "bottom.cargo",
+        "shoes": "shoes.black",
+        "hat": "hat.beanie",
+        "glasses": "glasses.rect",
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 155,
+    "label": "Seed 75156",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.fluffy",
+        "eyes": "eyes.bright",
+        "brows": "brows.thick",
+        "nose": "nose.subtle",
+        "mouth": "mouth.smile",
+        "ears": "ears.classic",
+        "top": "top.navy",
+        "jacket": "jacket.denim",
+        "bottom": "bottom.denim",
+        "shoes": "shoes.white",
+        "hat": "hat.beanie",
+        "glasses": null,
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 156,
+    "label": "Seed 75157",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.crop",
+        "eyes": "eyes.focused",
+        "brows": "brows.thick",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.rounded",
+        "top": "top.knit",
+        "jacket": null,
+        "bottom": "bottom.denim",
+        "shoes": "shoes.white",
+        "hat": null,
+        "glasses": "glasses.rect",
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 157,
+    "label": "Seed 75158",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.crop",
+        "eyes": "eyes.neutral",
+        "brows": "brows.thick",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.classic",
+        "top": "top.oxford",
+        "jacket": "jacket.denim",
+        "bottom": "bottom.track",
+        "shoes": "shoes.black",
+        "hat": "hat.beanie",
+        "glasses": "glasses.round",
+        "earrings": "earrings.hoops"
+      }
+    }
+  },
+  {
+    "index": 158,
+    "label": "Seed 75159",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.curls",
+        "eyes": "eyes.bright",
+        "brows": "brows.thick",
+        "nose": "nose.subtle",
+        "mouth": "mouth.serious",
+        "ears": "ears.rounded",
+        "top": "top.oxford",
+        "jacket": null,
+        "bottom": "bottom.black",
+        "shoes": "shoes.white",
+        "hat": "hat.beanie",
+        "glasses": "glasses.rect",
+        "earrings": "earrings.hoops"
+      }
+    }
+  },
+  {
+    "index": 159,
+    "label": "Seed 75160",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.long",
+        "eyes": "eyes.focused",
+        "brows": "brows.thick",
+        "nose": "nose.subtle",
+        "mouth": "mouth.smile",
+        "ears": "ears.classic",
+        "top": "top.polo",
+        "jacket": "jacket.bomber",
+        "bottom": "bottom.track",
+        "shoes": "shoes.white",
+        "hat": "hat.cap",
+        "glasses": null,
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 160,
+    "label": "Seed 75161",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.long",
+        "eyes": "eyes.neutral",
+        "brows": "brows.thick",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.rounded",
+        "top": "top.forest_hoodie",
+        "jacket": null,
+        "bottom": "bottom.black",
+        "shoes": "shoes.white",
+        "hat": "hat.cap",
+        "glasses": null,
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 161,
+    "label": "Seed 75162",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.bob",
+        "eyes": "eyes.bright",
+        "brows": "brows.thick",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.rounded",
+        "top": "top.forest_hoodie",
+        "jacket": "jacket.bomber",
+        "bottom": "bottom.cargo",
+        "shoes": "shoes.black",
+        "hat": "hat.cap",
+        "glasses": "glasses.round",
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 162,
+    "label": "Seed 75163",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.bob",
+        "eyes": "eyes.soft",
+        "brows": "brows.thick",
+        "nose": "nose.subtle",
+        "mouth": "mouth.serious",
+        "ears": "ears.classic",
+        "top": "top.hoodie",
+        "jacket": null,
+        "bottom": "bottom.cargo",
+        "shoes": "shoes.white",
+        "hat": null,
+        "glasses": null,
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 163,
+    "label": "Seed 75164",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.braids",
+        "eyes": "eyes.neutral",
+        "brows": "brows.thick",
+        "nose": "nose.subtle",
+        "mouth": "mouth.smile",
+        "ears": "ears.rounded",
+        "top": "top.white_tee",
+        "jacket": "jacket.bomber",
+        "bottom": "bottom.cargo",
+        "shoes": "shoes.black",
+        "hat": null,
+        "glasses": null,
+        "earrings": "earrings.studs"
+      }
+    }
+  },
+  {
+    "index": 164,
+    "label": "Seed 75165",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.textured",
+        "eyes": "eyes.bright",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.classic",
+        "top": "top.white_tee",
+        "jacket": null,
+        "bottom": "bottom.cargo",
+        "shoes": "shoes.white",
+        "hat": "hat.cap",
+        "glasses": null,
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 165,
+    "label": "Seed 75166",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.textured",
+        "eyes": "eyes.soft",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.rounded",
+        "top": "top.quarter",
+        "jacket": "jacket.track",
+        "bottom": "bottom.cargo",
+        "shoes": "shoes.white",
+        "hat": null,
+        "glasses": null,
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 166,
+    "label": "Seed 75167",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.fluffy",
+        "eyes": "eyes.focused",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.serious",
+        "ears": "ears.classic",
+        "top": "top.navy",
+        "jacket": null,
+        "bottom": "bottom.track",
+        "shoes": "shoes.black",
+        "hat": null,
+        "glasses": null,
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 167,
+    "label": "Seed 75168",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.crop",
+        "eyes": "eyes.bright",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.smile",
+        "ears": "ears.rounded",
+        "top": "top.navy",
+        "jacket": "jacket.track",
+        "bottom": "bottom.black",
+        "shoes": "shoes.black",
+        "hat": null,
+        "glasses": null,
+        "earrings": "earrings.hoops"
+      }
+    }
+  },
+  {
+    "index": 168,
+    "label": "Seed 75169",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.crop",
+        "eyes": "eyes.soft",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.rounded",
+        "top": "top.knit",
+        "jacket": null,
+        "bottom": "bottom.track",
+        "shoes": "shoes.black",
+        "hat": null,
+        "glasses": null,
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 169,
+    "label": "Seed 75170",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.curls",
+        "eyes": "eyes.focused",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.classic",
+        "top": "top.oxford",
+        "jacket": "jacket.track",
+        "bottom": "bottom.black",
+        "shoes": "shoes.white",
+        "hat": null,
+        "glasses": null,
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 170,
+    "label": "Seed 75171",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.curls",
+        "eyes": "eyes.neutral",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.serious",
+        "ears": "ears.rounded",
+        "top": "top.oxford",
+        "jacket": null,
+        "bottom": "bottom.denim",
+        "shoes": "shoes.black",
+        "hat": "hat.cap",
+        "glasses": "glasses.rect",
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 171,
+    "label": "Seed 75172",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.long",
+        "eyes": "eyes.soft",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.smile",
+        "ears": "ears.classic",
+        "top": "top.polo",
+        "jacket": "jacket.denim",
+        "bottom": "bottom.black",
+        "shoes": "shoes.white",
+        "hat": null,
+        "glasses": "glasses.rect",
+        "earrings": "earrings.hoops"
+      }
+    }
+  },
+  {
+    "index": 172,
+    "label": "Seed 75173",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.bob",
+        "eyes": "eyes.focused",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.rounded",
+        "top": "top.forest_hoodie",
+        "jacket": null,
+        "bottom": "bottom.denim",
+        "shoes": "shoes.black",
+        "hat": null,
+        "glasses": null,
+        "earrings": "earrings.studs"
+      }
+    }
+  },
+  {
+    "index": 173,
+    "label": "Seed 75174",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.bob",
+        "eyes": "eyes.neutral",
+        "brows": "brows.soft",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.classic",
+        "top": "top.forest_hoodie",
+        "jacket": "jacket.denim",
+        "bottom": "bottom.denim",
+        "shoes": "shoes.black",
+        "hat": null,
+        "glasses": "glasses.round",
+        "earrings": "earrings.hoops"
+      }
+    }
+  },
+  {
+    "index": 174,
+    "label": "Seed 75175",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.braids",
+        "eyes": "eyes.bright",
+        "brows": "brows.soft",
+        "nose": "nose.subtle",
+        "mouth": "mouth.serious",
+        "ears": "ears.rounded",
+        "top": "top.hoodie",
+        "jacket": null,
+        "bottom": "bottom.black",
+        "shoes": "shoes.black",
+        "hat": "hat.cap",
+        "glasses": "glasses.round",
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 175,
+    "label": "Seed 75176",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.textured",
+        "eyes": "eyes.focused",
+        "brows": "brows.soft",
+        "nose": "nose.subtle",
+        "mouth": "mouth.smile",
+        "ears": "ears.rounded",
+        "top": "top.white_tee",
+        "jacket": "jacket.denim",
+        "bottom": "bottom.denim",
+        "shoes": "shoes.white",
+        "hat": null,
+        "glasses": "glasses.rect",
+        "earrings": "earrings.studs"
+      }
+    }
+  },
+  {
+    "index": 176,
+    "label": "Seed 75177",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.textured",
+        "eyes": "eyes.neutral",
+        "brows": "brows.soft",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.classic",
+        "top": "top.white_tee",
+        "jacket": null,
+        "bottom": "bottom.black",
+        "shoes": "shoes.black",
+        "hat": "hat.cap",
+        "glasses": "glasses.rect",
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 177,
+    "label": "Seed 75178",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.fluffy",
+        "eyes": "eyes.bright",
+        "brows": "brows.soft",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.rounded",
+        "top": "top.quarter",
+        "jacket": "jacket.bomber",
+        "bottom": "bottom.track",
+        "shoes": "shoes.black",
+        "hat": null,
+        "glasses": "glasses.round",
+        "earrings": "earrings.hoops"
+      }
+    }
+  },
+  {
+    "index": 178,
+    "label": "Seed 75179",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.crop",
+        "eyes": "eyes.soft",
+        "brows": "brows.soft",
+        "nose": "nose.subtle",
+        "mouth": "mouth.serious",
+        "ears": "ears.classic",
+        "top": "top.navy",
+        "jacket": null,
+        "bottom": "bottom.cargo",
+        "shoes": "shoes.white",
+        "hat": null,
+        "glasses": null,
+        "earrings": "earrings.studs"
+      }
+    }
+  },
+  {
+    "index": 179,
+    "label": "Seed 75180",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.crop",
+        "eyes": "eyes.neutral",
+        "brows": "brows.soft",
+        "nose": "nose.subtle",
+        "mouth": "mouth.smile",
+        "ears": "ears.rounded",
+        "top": "top.navy",
+        "jacket": "jacket.bomber",
+        "bottom": "bottom.track",
+        "shoes": "shoes.black",
+        "hat": null,
+        "glasses": "glasses.rect",
+        "earrings": "earrings.hoops"
+      }
+    }
+  },
+  {
+    "index": 180,
+    "label": "Seed 75181",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.curls",
+        "eyes": "eyes.bright",
+        "brows": "brows.soft",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.classic",
+        "top": "top.knit",
+        "jacket": null,
+        "bottom": "bottom.cargo",
+        "shoes": "shoes.white",
+        "hat": "hat.cap",
+        "glasses": "glasses.rect",
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 181,
+    "label": "Seed 75182",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.curls",
+        "eyes": "eyes.soft",
+        "brows": "brows.soft",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.rounded",
+        "top": "top.oxford",
+        "jacket": "jacket.track",
+        "bottom": "bottom.track",
+        "shoes": "shoes.white",
+        "hat": "hat.cap",
+        "glasses": null,
+        "earrings": "earrings.studs"
+      }
+    }
+  },
+  {
+    "index": 182,
+    "label": "Seed 75183",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.long",
+        "eyes": "eyes.neutral",
+        "brows": "brows.thick",
+        "nose": "nose.subtle",
+        "mouth": "mouth.serious",
+        "ears": "ears.classic",
+        "top": "top.oxford",
+        "jacket": null,
+        "bottom": "bottom.cargo",
+        "shoes": "shoes.white",
+        "hat": "hat.beanie",
+        "glasses": null,
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 183,
+    "label": "Seed 75184",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.bob",
+        "eyes": "eyes.bright",
+        "brows": "brows.thick",
+        "nose": "nose.subtle",
+        "mouth": "mouth.smile",
+        "ears": "ears.classic",
+        "top": "top.polo",
+        "jacket": "jacket.track",
+        "bottom": "bottom.cargo",
+        "shoes": "shoes.black",
+        "hat": "hat.cap",
+        "glasses": "glasses.round",
+        "earrings": "earrings.studs"
+      }
+    }
+  },
+  {
+    "index": 184,
+    "label": "Seed 75185",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.bob",
+        "eyes": "eyes.soft",
+        "brows": "brows.thick",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.rounded",
+        "top": "top.forest_hoodie",
+        "jacket": null,
+        "bottom": "bottom.track",
+        "shoes": "shoes.white",
+        "hat": null,
+        "glasses": "glasses.round",
+        "earrings": "earrings.hoops"
+      }
+    }
+  },
+  {
+    "index": 185,
+    "label": "Seed 75186",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.braids",
+        "eyes": "eyes.focused",
+        "brows": "brows.thick",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.classic",
+        "top": "top.forest_hoodie",
+        "jacket": "jacket.track",
+        "bottom": "bottom.cargo",
+        "shoes": "shoes.white",
+        "hat": "hat.cap",
+        "glasses": "glasses.round",
+        "earrings": "earrings.studs"
+      }
+    }
+  },
+  {
+    "index": 186,
+    "label": "Seed 75187",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.textured",
+        "eyes": "eyes.bright",
+        "brows": "brows.thick",
+        "nose": "nose.subtle",
+        "mouth": "mouth.serious",
+        "ears": "ears.rounded",
+        "top": "top.hoodie",
+        "jacket": null,
+        "bottom": "bottom.track",
+        "shoes": "shoes.white",
+        "hat": "hat.beanie",
+        "glasses": null,
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 187,
+    "label": "Seed 75188",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.textured",
+        "eyes": "eyes.soft",
+        "brows": "brows.thick",
+        "nose": "nose.subtle",
+        "mouth": "mouth.smile",
+        "ears": "ears.classic",
+        "top": "top.white_tee",
+        "jacket": "jacket.denim",
+        "bottom": "bottom.cargo",
+        "shoes": "shoes.white",
+        "hat": "hat.cap",
+        "glasses": null,
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 188,
+    "label": "Seed 75189",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.fluffy",
+        "eyes": "eyes.focused",
+        "brows": "brows.thick",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.rounded",
+        "top": "top.white_tee",
+        "jacket": null,
+        "bottom": "bottom.denim",
+        "shoes": "shoes.black",
+        "hat": null,
+        "glasses": "glasses.round",
+        "earrings": "earrings.hoops"
+      }
+    }
+  },
+  {
+    "index": 189,
+    "label": "Seed 75190",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.crop",
+        "eyes": "eyes.neutral",
+        "brows": "brows.thick",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.classic",
+        "top": "top.quarter",
+        "jacket": "jacket.denim",
+        "bottom": "bottom.black",
+        "shoes": "shoes.black",
+        "hat": "hat.cap",
+        "glasses": "glasses.round",
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 190,
+    "label": "Seed 75191",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.crop",
+        "eyes": "eyes.soft",
+        "brows": "brows.thick",
+        "nose": "nose.subtle",
+        "mouth": "mouth.serious",
+        "ears": "ears.classic",
+        "top": "top.navy",
+        "jacket": null,
+        "bottom": "bottom.denim",
+        "shoes": "shoes.black",
+        "hat": null,
+        "glasses": "glasses.round",
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 191,
+    "label": "Seed 75192",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.curls",
+        "eyes": "eyes.focused",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.smile",
+        "ears": "ears.rounded",
+        "top": "top.navy",
+        "jacket": "jacket.denim",
+        "bottom": "bottom.black",
+        "shoes": "shoes.white",
+        "hat": "hat.beanie",
+        "glasses": null,
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 192,
+    "label": "Seed 75193",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.curls",
+        "eyes": "eyes.neutral",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.classic",
+        "top": "top.knit",
+        "jacket": null,
+        "bottom": "bottom.black",
+        "shoes": "shoes.black",
+        "hat": "hat.beanie",
+        "glasses": "glasses.rect",
+        "earrings": "earrings.hoops"
+      }
+    }
+  },
+  {
+    "index": 193,
+    "label": "Seed 75194",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.long",
+        "eyes": "eyes.bright",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.serious",
+        "ears": "ears.rounded",
+        "top": "top.oxford",
+        "jacket": "jacket.bomber",
+        "bottom": "bottom.denim",
+        "shoes": "shoes.black",
+        "hat": "hat.beanie",
+        "glasses": "glasses.round",
+        "earrings": "earrings.studs"
+      }
+    }
+  },
+  {
+    "index": 194,
+    "label": "Seed 75195",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.bob",
+        "eyes": "eyes.focused",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.serious",
+        "ears": "ears.classic",
+        "top": "top.oxford",
+        "jacket": null,
+        "bottom": "bottom.black",
+        "shoes": "shoes.black",
+        "hat": null,
+        "glasses": "glasses.rect",
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 195,
+    "label": "Seed 75196",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.bob",
+        "eyes": "eyes.neutral",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.smile",
+        "ears": "ears.rounded",
+        "top": "top.polo",
+        "jacket": "jacket.bomber",
+        "bottom": "bottom.denim",
+        "shoes": "shoes.black",
+        "hat": "hat.beanie",
+        "glasses": null,
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 196,
+    "label": "Seed 75197",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.braids",
+        "eyes": "eyes.bright",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.classic",
+        "top": "top.forest_hoodie",
+        "jacket": null,
+        "bottom": "bottom.cargo",
+        "shoes": "shoes.black",
+        "hat": "hat.beanie",
+        "glasses": "glasses.round",
+        "earrings": "earrings.studs"
+      }
+    }
+  },
+  {
+    "index": 197,
+    "label": "Seed 75198",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.textured",
+        "eyes": "eyes.soft",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.serious",
+        "ears": "ears.classic",
+        "top": "top.forest_hoodie",
+        "jacket": "jacket.bomber",
+        "bottom": "bottom.denim",
+        "shoes": "shoes.white",
+        "hat": "hat.beanie",
+        "glasses": "glasses.rect",
+        "earrings": "earrings.studs"
+      }
+    }
+  },
+  {
+    "index": 198,
+    "label": "Seed 75199",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.textured",
+        "eyes": "eyes.neutral",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.serious",
+        "ears": "ears.rounded",
+        "top": "top.hoodie",
+        "jacket": null,
+        "bottom": "bottom.cargo",
+        "shoes": "shoes.black",
+        "hat": "hat.beanie",
+        "glasses": "glasses.rect",
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 199,
+    "label": "Seed 75200",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.fluffy",
+        "eyes": "eyes.bright",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.smile",
+        "ears": "ears.classic",
+        "top": "top.white_tee",
+        "jacket": "jacket.track",
+        "bottom": "bottom.track",
+        "shoes": "shoes.black",
+        "hat": "hat.beanie",
+        "glasses": null,
+        "earrings": "earrings.hoops"
+      }
+    }
+  }
+]

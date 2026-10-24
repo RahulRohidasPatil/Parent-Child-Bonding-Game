@@ -1,0 +1,11 @@
+{
+  "id": "hair.half_up",
+  "source": "half_up_v2.png",
+  "refs": [
+    "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-hair-library/half_up.png",
+    "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+  ],
+  "prompt": "Use case: precise-object-edit. Image 1 is the hair sprite to correct. Image 2 is only the skull registration guide. Preserve the brown pixel-art style and half-up loose shoulder-length waves, but REMOVE THE TOP BUN completely. Use a smooth compact rounded crown with the upper side sections swept back and long loose waves below. Correct the head opening so it is centered under a full rounded crown, wide enough for the reference head. Make the upper crown continuous, without transparent holes or missing corners above the eyebrows. Only the face opening and background are transparent. The crown cap must follow the whole top of the skull, not sit to one side. Keep bangs above the eye line. Entire hair only, frontal upright, on a square transparent RGBA canvas with padding. No face, skin, ears, body, clothes, jewelry, text or painted checkerboard. Coarse deliberate square pixel clusters and 4 brown tones, dark brown outline, no smooth vectors or fine realistic strands.",
+  "origin": "/Users/vlad/.codex/generated_images/01a07a71-8c9e-7292-bd75-a2688e8698a6/exec-51d4ec7c-81ec-40ae-a7ac-3a7c58c7ebef.png",
+  "mode": "built-in image_gen"
+}

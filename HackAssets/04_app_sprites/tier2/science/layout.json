@@ -1,0 +1,547 @@
+{
+ "tier": 2,
+ "room": "science",
+ "size": [
+  636,
+  508
+ ],
+ "tile": [
+  64,
+  32
+ ],
+ "room_tiles": 9,
+ "floor_origin": [
+  318.0,
+  180
+ ],
+ "items": [
+  {
+   "id": "periodic_table",
+   "name": "Periodic table",
+   "slot": "wl",
+   "levels": [
+    {
+     "level": 1,
+     "file": "periodic_table/lv01.png",
+     "x": 161,
+     "y": 102,
+     "w": 62,
+     "h": 104
+    },
+    {
+     "level": 2,
+     "file": "periodic_table/lv02.png",
+     "x": 161,
+     "y": 102,
+     "w": 62,
+     "h": 104
+    },
+    {
+     "level": 3,
+     "file": "periodic_table/lv03.png",
+     "x": 161,
+     "y": 102,
+     "w": 62,
+     "h": 104
+    },
+    {
+     "level": 4,
+     "file": "periodic_table/lv04.png",
+     "x": 152,
+     "y": 89,
+     "w": 78,
+     "h": 132
+    },
+    {
+     "level": 5,
+     "file": "periodic_table/lv05.png",
+     "x": 152,
+     "y": 89,
+     "w": 78,
+     "h": 132
+    },
+    {
+     "level": 6,
+     "file": "periodic_table/lv06.png",
+     "x": 152,
+     "y": 89,
+     "w": 78,
+     "h": 132
+    },
+    {
+     "level": 7,
+     "file": "periodic_table/lv07.png",
+     "x": 142,
+     "y": 76,
+     "w": 98,
+     "h": 156
+    },
+    {
+     "level": 8,
+     "file": "periodic_table/lv08.png",
+     "x": 142,
+     "y": 76,
+     "w": 98,
+     "h": 156
+    },
+    {
+     "level": 9,
+     "file": "periodic_table/lv09.png",
+     "x": 142,
+     "y": 76,
+     "w": 98,
+     "h": 156
+    },
+    {
+     "level": 10,
+     "file": "periodic_table/lv10.png",
+     "x": 134,
+     "y": 67,
+     "w": 116,
+     "h": 174
+    }
+   ],
+   "z": -1
+  },
+  {
+   "id": "fume_bench",
+   "name": "Fume-hood bench",
+   "slot": "r1",
+   "levels": [
+    {
+     "level": 1,
+     "file": "fume_bench/lv01.png",
+     "x": 323,
+     "y": 167,
+     "w": 64,
+     "h": 76
+    },
+    {
+     "level": 2,
+     "file": "fume_bench/lv02.png",
+     "x": 323,
+     "y": 167,
+     "w": 64,
+     "h": 76
+    },
+    {
+     "level": 3,
+     "file": "fume_bench/lv03.png",
+     "x": 323,
+     "y": 167,
+     "w": 64,
+     "h": 76
+    },
+    {
+     "level": 4,
+     "file": "fume_bench/lv04.png",
+     "x": 322,
+     "y": 167,
+     "w": 66,
+     "h": 76
+    },
+    {
+     "level": 5,
+     "file": "fume_bench/lv05.png",
+     "x": 312,
+     "y": 167,
+     "w": 74,
+     "h": 82
+    },
+    {
+     "level": 6,
+     "file": "fume_bench/lv06.png",
+     "x": 312,
+     "y": 167,
+     "w": 74,
+     "h": 82
+    },
+    {
+     "level": 7,
+     "file": "fume_bench/lv07.png",
+     "x": 312,
+     "y": 122,
+     "w": 104,
+     "h": 128
+    },
+    {
+     "level": 8,
+     "file": "fume_bench/lv08.png",
+     "x": 312,
+     "y": 122,
+     "w": 104,
+     "h": 128
+    },
+    {
+     "level": 9,
+     "file": "fume_bench/lv09.png",
+     "x": 312,
+     "y": 122,
+     "w": 104,
+     "h": 128
+    },
+    {
+     "level": 10,
+     "file": "fume_bench/lv10.png",
+     "x": 311,
+     "y": 110,
+     "w": 108,
+     "h": 140
+    }
+   ],
+   "z": 3.9
+  },
+  {
+   "id": "rocket_pad",
+   "name": "Rocket launch pad",
+   "slot": "l1",
+   "levels": [
+    {
+     "level": 1,
+     "file": "rocket_pad/lv01.png",
+     "x": 256,
+     "y": 208,
+     "w": 26,
+     "h": 42
+    },
+    {
+     "level": 2,
+     "file": "rocket_pad/lv02.png",
+     "x": 249,
+     "y": 208,
+     "w": 32,
+     "h": 48
+    },
+    {
+     "level": 3,
+     "file": "rocket_pad/lv03.png",
+     "x": 249,
+     "y": 208,
+     "w": 42,
+     "h": 48
+    },
+    {
+     "level": 4,
+     "file": "rocket_pad/lv04.png",
+     "x": 240,
+     "y": 185,
+     "w": 58,
+     "h": 70
+    },
+    {
+     "level": 5,
+     "file": "rocket_pad/lv05.png",
+     "x": 240,
+     "y": 185,
+     "w": 58,
+     "h": 70
+    },
+    {
+     "level": 6,
+     "file": "rocket_pad/lv06.png",
+     "x": 240,
+     "y": 185,
+     "w": 58,
+     "h": 70
+    },
+    {
+     "level": 7,
+     "file": "rocket_pad/lv07.png",
+     "x": 237,
+     "y": 171,
+     "w": 64,
+     "h": 84
+    },
+    {
+     "level": 8,
+     "file": "rocket_pad/lv08.png",
+     "x": 237,
+     "y": 171,
+     "w": 64,
+     "h": 84
+    },
+    {
+     "level": 9,
+     "file": "rocket_pad/lv09.png",
+     "x": 237,
+     "y": 171,
+     "w": 64,
+     "h": 84
+    },
+    {
+     "level": 10,
+     "file": "rocket_pad/lv10.png",
+     "x": 227,
+     "y": 154,
+     "w": 96,
+     "h": 100
+    }
+   ],
+   "z": 4.24
+  },
+  {
+   "id": "circuit_bench",
+   "name": "Circuit bench",
+   "slot": "r2",
+   "levels": [
+    {
+     "level": 1,
+     "file": "circuit_bench/lv01.png",
+     "x": 474,
+     "y": 255,
+     "w": 64,
+     "h": 64
+    },
+    {
+     "level": 2,
+     "file": "circuit_bench/lv02.png",
+     "x": 474,
+     "y": 255,
+     "w": 64,
+     "h": 64
+    },
+    {
+     "level": 3,
+     "file": "circuit_bench/lv03.png",
+     "x": 474,
+     "y": 255,
+     "w": 64,
+     "h": 64
+    },
+    {
+     "level": 4,
+     "file": "circuit_bench/lv04.png",
+     "x": 469,
+     "y": 242,
+     "w": 74,
+     "h": 76
+    },
+    {
+     "level": 5,
+     "file": "circuit_bench/lv05.png",
+     "x": 461,
+     "y": 242,
+     "w": 82,
+     "h": 82
+    },
+    {
+     "level": 6,
+     "file": "circuit_bench/lv06.png",
+     "x": 461,
+     "y": 242,
+     "w": 82,
+     "h": 82
+    },
+    {
+     "level": 7,
+     "file": "circuit_bench/lv07.png",
+     "x": 460,
+     "y": 231,
+     "w": 84,
+     "h": 94
+    },
+    {
+     "level": 8,
+     "file": "circuit_bench/lv08.png",
+     "x": 460,
+     "y": 231,
+     "w": 84,
+     "h": 94
+    },
+    {
+     "level": 9,
+     "file": "circuit_bench/lv09.png",
+     "x": 460,
+     "y": 231,
+     "w": 84,
+     "h": 94
+    },
+    {
+     "level": 10,
+     "file": "circuit_bench/lv10.png",
+     "x": 463,
+     "y": 222,
+     "w": 88,
+     "h": 102
+    }
+   ],
+   "z": 8.62
+  },
+  {
+   "id": "body_model",
+   "name": "Human body model",
+   "slot": "l2",
+   "levels": [
+    {
+     "level": 1,
+     "file": "body_model/lv01.png",
+     "x": 110,
+     "y": 267,
+     "w": 30,
+     "h": 54
+    },
+    {
+     "level": 2,
+     "file": "body_model/lv02.png",
+     "x": 102,
+     "y": 267,
+     "w": 38,
+     "h": 60
+    },
+    {
+     "level": 3,
+     "file": "body_model/lv03.png",
+     "x": 102,
+     "y": 267,
+     "w": 46,
+     "h": 60
+    },
+    {
+     "level": 4,
+     "file": "body_model/lv04.png",
+     "x": 101,
+     "y": 260,
+     "w": 54,
+     "h": 68
+    },
+    {
+     "level": 5,
+     "file": "body_model/lv05.png",
+     "x": 101,
+     "y": 260,
+     "w": 54,
+     "h": 68
+    },
+    {
+     "level": 6,
+     "file": "body_model/lv06.png",
+     "x": 101,
+     "y": 260,
+     "w": 54,
+     "h": 68
+    },
+    {
+     "level": 7,
+     "file": "body_model/lv07.png",
+     "x": 78,
+     "y": 259,
+     "w": 76,
+     "h": 68
+    },
+    {
+     "level": 8,
+     "file": "body_model/lv08.png",
+     "x": 78,
+     "y": 259,
+     "w": 76,
+     "h": 68
+    },
+    {
+     "level": 9,
+     "file": "body_model/lv09.png",
+     "x": 78,
+     "y": 259,
+     "w": 76,
+     "h": 68
+    },
+    {
+     "level": 10,
+     "file": "body_model/lv10.png",
+     "x": 73,
+     "y": 254,
+     "w": 86,
+     "h": 74
+    }
+   ],
+   "z": 8.74
+  },
+  {
+   "id": "solar_system",
+   "name": "Solar system model",
+   "slot": "c",
+   "levels": [
+    {
+     "level": 1,
+     "file": "solar_system/lv01.png",
+     "x": 274,
+     "y": 259,
+     "w": 68,
+     "h": 108
+    },
+    {
+     "level": 2,
+     "file": "solar_system/lv02.png",
+     "x": 264,
+     "y": 259,
+     "w": 78,
+     "h": 114
+    },
+    {
+     "level": 3,
+     "file": "solar_system/lv03.png",
+     "x": 264,
+     "y": 259,
+     "w": 96,
+     "h": 114
+    },
+    {
+     "level": 4,
+     "file": "solar_system/lv04.png",
+     "x": 264,
+     "y": 239,
+     "w": 98,
+     "h": 134
+    },
+    {
+     "level": 5,
+     "file": "solar_system/lv05.png",
+     "x": 262,
+     "y": 239,
+     "w": 100,
+     "h": 134
+    },
+    {
+     "level": 6,
+     "file": "solar_system/lv06.png",
+     "x": 262,
+     "y": 239,
+     "w": 100,
+     "h": 134
+    },
+    {
+     "level": 7,
+     "file": "solar_system/lv07.png",
+     "x": 251,
+     "y": 224,
+     "w": 118,
+     "h": 148
+    },
+    {
+     "level": 8,
+     "file": "solar_system/lv08.png",
+     "x": 251,
+     "y": 224,
+     "w": 118,
+     "h": 148
+    },
+    {
+     "level": 9,
+     "file": "solar_system/lv09.png",
+     "x": 251,
+     "y": 224,
+     "w": 118,
+     "h": 148
+    },
+    {
+     "level": 10,
+     "file": "solar_system/lv10.png",
+     "x": 227,
+     "y": 205,
+     "w": 166,
+     "h": 168
+    }
+   ],
+   "z": 11.65
+  }
+ ]
+}

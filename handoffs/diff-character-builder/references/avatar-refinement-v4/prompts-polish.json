@@ -1,0 +1,20 @@
+{
+  "mode": "built-in image_gen",
+  "jobs": [
+    {
+      "id": "eyes-blue-highlight",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-refinement-v4/eyes-blue-clean.png",
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-refinement-v4/style-reference.png"
+      ],
+      "prompt": "Use case: precise-object-edit. Refine ONLY the eye-pair artwork in image 1 to match the eye structure in image 2. Keep the same neutral expression, canvas positions, scale, muted blue iris color and white corners. Introduce stepped outer corners and tapered lower corners so the eyes do not read as rectangles. Keep a dark pupil, a small TWO-DIMENSIONAL iris area around it, and ONE restrained pale gray highlight touching the upper iris in each eye. Preserve all existing white sclera corners. The dark pupil must remain separate from the blue iris; no huge solid rectangular pupils. Intentional pixel clusters, not soft shading, no glow. Actual transparent RGBA PNG outside the eyes; no checkerboard."
+    },
+    {
+      "id": "shoes-white-final",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-refinement-v4/shoes-white-clean.png"
+      ],
+      "prompt": "Use case: precise-object-edit. Keep the two shoes' exact size, position, shared baseline and directions. Simplify their WHITE uppers further: smooth connected white planes, at most TWO short gray lace bars per shoe, NO eyelets, perforation dots, stitching dots or scattered dark pixels. A single restrained light-gray side/heel plane, not a bulky block. One continuous thin sole band and a crisp dark outer contour. Keep modest low-sneaker proportions. Preserve the full square canvas and real transparent background. No logos, feet, pants or checkerboard."
+    }
+  ]
+}

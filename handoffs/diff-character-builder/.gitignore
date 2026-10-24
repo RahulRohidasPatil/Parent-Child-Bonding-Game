@@ -1,0 +1,8 @@
+node_modules/
+dist/
+artifacts/
+src/
+scripts/
+tests/
+.DS_Store
+.env*

@@ -1,0 +1,302 @@
+[
+  {
+    "index": 0,
+    "label": "skin_01",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_01",
+      "equipment": {
+        "hair": "hair.textured",
+        "eyes": "eyes.neutral",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.classic",
+        "top": "top.navy",
+        "jacket": null,
+        "bottom": "bottom.denim",
+        "shoes": "shoes.white",
+        "hat": null,
+        "glasses": null,
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 1,
+    "label": "skin_02",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_02",
+      "equipment": {
+        "hair": "hair.textured",
+        "eyes": "eyes.neutral",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.classic",
+        "top": "top.navy",
+        "jacket": null,
+        "bottom": "bottom.denim",
+        "shoes": "shoes.white",
+        "hat": null,
+        "glasses": null,
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 2,
+    "label": "skin_03",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_03",
+      "equipment": {
+        "hair": "hair.textured",
+        "eyes": "eyes.neutral",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.classic",
+        "top": "top.navy",
+        "jacket": null,
+        "bottom": "bottom.denim",
+        "shoes": "shoes.white",
+        "hat": null,
+        "glasses": null,
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 3,
+    "label": "skin_04",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_04",
+      "equipment": {
+        "hair": "hair.textured",
+        "eyes": "eyes.neutral",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.classic",
+        "top": "top.navy",
+        "jacket": null,
+        "bottom": "bottom.denim",
+        "shoes": "shoes.white",
+        "hat": null,
+        "glasses": null,
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 4,
+    "label": "skin_05",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_05",
+      "equipment": {
+        "hair": "hair.textured",
+        "eyes": "eyes.neutral",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.classic",
+        "top": "top.navy",
+        "jacket": null,
+        "bottom": "bottom.denim",
+        "shoes": "shoes.white",
+        "hat": null,
+        "glasses": null,
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 5,
+    "label": "skin_06",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_06",
+      "equipment": {
+        "hair": "hair.textured",
+        "eyes": "eyes.neutral",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.classic",
+        "top": "top.navy",
+        "jacket": null,
+        "bottom": "bottom.denim",
+        "shoes": "shoes.white",
+        "hat": null,
+        "glasses": null,
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 6,
+    "label": "skin_07",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_07",
+      "equipment": {
+        "hair": "hair.textured",
+        "eyes": "eyes.neutral",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.classic",
+        "top": "top.navy",
+        "jacket": null,
+        "bottom": "bottom.denim",
+        "shoes": "shoes.white",
+        "hat": null,
+        "glasses": null,
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 7,
+    "label": "skin_08",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_08",
+      "equipment": {
+        "hair": "hair.textured",
+        "eyes": "eyes.neutral",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.classic",
+        "top": "top.navy",
+        "jacket": null,
+        "bottom": "bottom.denim",
+        "shoes": "shoes.white",
+        "hat": null,
+        "glasses": null,
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 8,
+    "label": "skin_09",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_09",
+      "equipment": {
+        "hair": "hair.textured",
+        "eyes": "eyes.neutral",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.classic",
+        "top": "top.navy",
+        "jacket": null,
+        "bottom": "bottom.denim",
+        "shoes": "shoes.white",
+        "hat": null,
+        "glasses": null,
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 9,
+    "label": "skin_10",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_10",
+      "equipment": {
+        "hair": "hair.textured",
+        "eyes": "eyes.neutral",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.classic",
+        "top": "top.navy",
+        "jacket": null,
+        "bottom": "bottom.denim",
+        "shoes": "shoes.white",
+        "hat": null,
+        "glasses": null,
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 10,
+    "label": "skin_11",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_11",
+      "equipment": {
+        "hair": "hair.textured",
+        "eyes": "eyes.neutral",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.classic",
+        "top": "top.navy",
+        "jacket": null,
+        "bottom": "bottom.denim",
+        "shoes": "shoes.white",
+        "hat": null,
+        "glasses": null,
+        "earrings": null
+      }
+    }
+  },
+  {
+    "index": 11,
+    "label": "skin_12",
+    "config": {
+      "version": 2,
+      "rig": "front_idle_atelier_v1",
+      "pack": "atelier-r2",
+      "skin": "skin_12",
+      "equipment": {
+        "hair": "hair.textured",
+        "eyes": "eyes.neutral",
+        "brows": "brows.straight",
+        "nose": "nose.subtle",
+        "mouth": "mouth.neutral",
+        "ears": "ears.classic",
+        "top": "top.navy",
+        "jacket": null,
+        "bottom": "bottom.denim",
+        "shoes": "shoes.white",
+        "hat": null,
+        "glasses": null,
+        "earrings": null
+      }
+    }
+  }
+]

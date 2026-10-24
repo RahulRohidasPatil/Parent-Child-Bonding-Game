@@ -1,0 +1,41 @@
+{
+  "copied_files": 3250,
+  "copied_bytes": 429171018,
+  "active_pack": "atelier-r6",
+  "cosmetic_count": 270,
+  "skin_palette_count": 12,
+  "compiled_layer_count": 732,
+  "items_by_slot": {
+    "ageLines": 1,
+    "birthmark": 1,
+    "bottom": 24,
+    "brows": 7,
+    "earrings": 2,
+    "ears": 2,
+    "eyes": 9,
+    "facialHair": 6,
+    "freckles": 1,
+    "glasses": 2,
+    "hair": 100,
+    "hat": 2,
+    "head": 6,
+    "hearingAidLeft": 1,
+    "hearingAidRight": 1,
+    "jacket": 26,
+    "mouth": 7,
+    "nose": 7,
+    "scar": 1,
+    "shoes": 30,
+    "tie": 1,
+    "top": 33
+  },
+  "source_comparison": "DIFF and DIFF-next src/scripts/assets/avatar are byte-identical",
+  "omitted": [
+    "Unrelated DIFF social application and backend",
+    "Original .git and node_modules",
+    "Original build output dist",
+    "Personal/raw selfie photos and analysis reports under artifacts/selfie",
+    "Browser logs, sandbox directories, environment files, and desktop design-only handoff"
+  ],
+  "source_code_storage": "src, scripts, and tests are stored byte-for-byte in SOURCE_CODE.zip to avoid Next.js TypeScript scanning. Use unpack.py to restore an independent working directory."
+}

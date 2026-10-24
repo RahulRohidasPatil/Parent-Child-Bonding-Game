@@ -1,0 +1,737 @@
+{
+  "mode": "built-in image_gen",
+  "jobs": [
+    {
+      "id": "shoes.court_high",
+      "name": "Retro court high",
+      "collection": "Sneakers",
+      "description": "Jordan-inspired retro basketball high-top sneakers: padded ankle collar, layered leather panels, perforated toe, broad flat rubber sole; original unbranded design",
+      "kind": "shoes",
+      "height": 14,
+      "width": 36,
+      "color": "Slate blue",
+      "source": "shoes_court_high.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar matching pair of shoes layer. Reference image is the approved character style and exact pose. Create ONLY Jordan-inspired retro basketball high-top sneakers: padded ankle collar, layered leather panels, perforated toe, broad flat rubber sole; original unbranded design. Both shoes worn by a front-facing character, left toe points slightly left and right toe slightly right, mirrored pair at equal height, separated by a clear small central gap. Show BOTH entire shoes on the same horizontal sole baseline. No legs, feet, skin or socks. Use the same deliberately coarse modern pixel art as the character, clean stair-step silhouette, dark one-logical-pixel outline, broad clusters with 3–5 values per material, readable at small size. Main material is medium slate BLUE, highlights lighter blue and shadows dark navy. Secondary panels, rubber soles, laces, metal hardware and trim use neutral cream/gray so material roles can be isolated. No extra graphics, brand logos, text, watermarks or labels. Genuine transparent RGBA background including openings, NOT a painted checkerboard or solid backdrop. Center the entire item on a square canvas with generous clear margins. No display board, no additional items or characters. This is real source artwork for an aligned 128×128 avatar layer."
+    },
+    {
+      "id": "shoes.court_mid",
+      "name": "Court mid",
+      "collection": "Sneakers",
+      "description": "mid-top basketball sneakers with ankle strap, simple leather panels and flat cupsole",
+      "kind": "shoes",
+      "height": 13,
+      "width": 36,
+      "color": "Slate blue",
+      "source": "shoes_court_mid.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar matching pair of shoes layer. Reference image is the approved character style and exact pose. Create ONLY mid-top basketball sneakers with ankle strap, simple leather panels and flat cupsole. Both shoes worn by a front-facing character, left toe points slightly left and right toe slightly right, mirrored pair at equal height, separated by a clear small central gap. Show BOTH entire shoes on the same horizontal sole baseline. No legs, feet, skin or socks. Use the same deliberately coarse modern pixel art as the character, clean stair-step silhouette, dark one-logical-pixel outline, broad clusters with 3–5 values per material, readable at small size. Main material is medium slate BLUE, highlights lighter blue and shadows dark navy. Secondary panels, rubber soles, laces, metal hardware and trim use neutral cream/gray so material roles can be isolated. No extra graphics, brand logos, text, watermarks or labels. Genuine transparent RGBA background including openings, NOT a painted checkerboard or solid backdrop. Center the entire item on a square canvas with generous clear margins. No display board, no additional items or characters. This is real source artwork for an aligned 128×128 avatar layer."
+    },
+    {
+      "id": "shoes.court_low",
+      "name": "Court low",
+      "collection": "Sneakers",
+      "description": "low-cut retro basketball leather sneakers with perforated toe box and contrast heel counter",
+      "kind": "shoes",
+      "height": 10,
+      "width": 36,
+      "color": "Slate blue",
+      "source": "shoes_court_low.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar matching pair of shoes layer. Reference image is the approved character style and exact pose. Create ONLY low-cut retro basketball leather sneakers with perforated toe box and contrast heel counter. Both shoes worn by a front-facing character, left toe points slightly left and right toe slightly right, mirrored pair at equal height, separated by a clear small central gap. Show BOTH entire shoes on the same horizontal sole baseline. No legs, feet, skin or socks. Use the same deliberately coarse modern pixel art as the character, clean stair-step silhouette, dark one-logical-pixel outline, broad clusters with 3–5 values per material, readable at small size. Main material is medium slate BLUE, highlights lighter blue and shadows dark navy. Secondary panels, rubber soles, laces, metal hardware and trim use neutral cream/gray so material roles can be isolated. No extra graphics, brand logos, text, watermarks or labels. Genuine transparent RGBA background including openings, NOT a painted checkerboard or solid backdrop. Center the entire item on a square canvas with generous clear margins. No display board, no additional items or characters. This is real source artwork for an aligned 128×128 avatar layer."
+    },
+    {
+      "id": "shoes.skate_chunky",
+      "name": "Chunky skate",
+      "collection": "Sneakers",
+      "description": "wide padded skate shoes with fat tongue, thick laces and chunky gum sole",
+      "kind": "shoes",
+      "height": 11,
+      "width": 36,
+      "color": "Slate blue",
+      "source": "shoes_skate_chunky.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar matching pair of shoes layer. Reference image is the approved character style and exact pose. Create ONLY wide padded skate shoes with fat tongue, thick laces and chunky gum sole. Both shoes worn by a front-facing character, left toe points slightly left and right toe slightly right, mirrored pair at equal height, separated by a clear small central gap. Show BOTH entire shoes on the same horizontal sole baseline. No legs, feet, skin or socks. Use the same deliberately coarse modern pixel art as the character, clean stair-step silhouette, dark one-logical-pixel outline, broad clusters with 3–5 values per material, readable at small size. Main material is medium slate BLUE, highlights lighter blue and shadows dark navy. Secondary panels, rubber soles, laces, metal hardware and trim use neutral cream/gray so material roles can be isolated. No extra graphics, brand logos, text, watermarks or labels. Genuine transparent RGBA background including openings, NOT a painted checkerboard or solid backdrop. Center the entire item on a square canvas with generous clear margins. No display board, no additional items or characters. This is real source artwork for an aligned 128×128 avatar layer."
+    },
+    {
+      "id": "shoes.suede_terrace",
+      "name": "Suede terrace",
+      "collection": "Sneakers",
+      "description": "slim suede terrace sneakers, rounded T toe cap and low gum sole, no stripe logo",
+      "kind": "shoes",
+      "height": 9,
+      "width": 36,
+      "color": "Slate blue",
+      "source": "shoes_suede_terrace.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar matching pair of shoes layer. Reference image is the approved character style and exact pose. Create ONLY slim suede terrace sneakers, rounded T toe cap and low gum sole, no stripe logo. Both shoes worn by a front-facing character, left toe points slightly left and right toe slightly right, mirrored pair at equal height, separated by a clear small central gap. Show BOTH entire shoes on the same horizontal sole baseline. No legs, feet, skin or socks. Use the same deliberately coarse modern pixel art as the character, clean stair-step silhouette, dark one-logical-pixel outline, broad clusters with 3–5 values per material, readable at small size. Main material is medium slate BLUE, highlights lighter blue and shadows dark navy. Secondary panels, rubber soles, laces, metal hardware and trim use neutral cream/gray so material roles can be isolated. No extra graphics, brand logos, text, watermarks or labels. Genuine transparent RGBA background including openings, NOT a painted checkerboard or solid backdrop. Center the entire item on a square canvas with generous clear margins. No display board, no additional items or characters. This is real source artwork for an aligned 128×128 avatar layer."
+    },
+    {
+      "id": "shoes.canvas_high",
+      "name": "Canvas high",
+      "collection": "Sneakers",
+      "description": "high-top canvas sneakers with circular metal eyelets and contrasting rubber toe cap",
+      "kind": "shoes",
+      "height": 14,
+      "width": 36,
+      "color": "Slate blue",
+      "source": "shoes_canvas_high.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar matching pair of shoes layer. Reference image is the approved character style and exact pose. Create ONLY high-top canvas sneakers with circular metal eyelets and contrasting rubber toe cap. Both shoes worn by a front-facing character, left toe points slightly left and right toe slightly right, mirrored pair at equal height, separated by a clear small central gap. Show BOTH entire shoes on the same horizontal sole baseline. No legs, feet, skin or socks. Use the same deliberately coarse modern pixel art as the character, clean stair-step silhouette, dark one-logical-pixel outline, broad clusters with 3–5 values per material, readable at small size. Main material is medium slate BLUE, highlights lighter blue and shadows dark navy. Secondary panels, rubber soles, laces, metal hardware and trim use neutral cream/gray so material roles can be isolated. No extra graphics, brand logos, text, watermarks or labels. Genuine transparent RGBA background including openings, NOT a painted checkerboard or solid backdrop. Center the entire item on a square canvas with generous clear margins. No display board, no additional items or characters. This is real source artwork for an aligned 128×128 avatar layer."
+    },
+    {
+      "id": "shoes.canvas_low",
+      "name": "Canvas low",
+      "collection": "Sneakers",
+      "description": "low canvas lace-up sneakers with contrasting rubber toe cap",
+      "kind": "shoes",
+      "height": 9,
+      "width": 36,
+      "color": "Slate blue",
+      "source": "shoes_canvas_low.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar matching pair of shoes layer. Reference image is the approved character style and exact pose. Create ONLY low canvas lace-up sneakers with contrasting rubber toe cap. Both shoes worn by a front-facing character, left toe points slightly left and right toe slightly right, mirrored pair at equal height, separated by a clear small central gap. Show BOTH entire shoes on the same horizontal sole baseline. No legs, feet, skin or socks. Use the same deliberately coarse modern pixel art as the character, clean stair-step silhouette, dark one-logical-pixel outline, broad clusters with 3–5 values per material, readable at small size. Main material is medium slate BLUE, highlights lighter blue and shadows dark navy. Secondary panels, rubber soles, laces, metal hardware and trim use neutral cream/gray so material roles can be isolated. No extra graphics, brand logos, text, watermarks or labels. Genuine transparent RGBA background including openings, NOT a painted checkerboard or solid backdrop. Center the entire item on a square canvas with generous clear margins. No display board, no additional items or characters. This is real source artwork for an aligned 128×128 avatar layer."
+    },
+    {
+      "id": "shoes.slip_on",
+      "name": "Canvas slip-on",
+      "collection": "Sneakers",
+      "description": "canvas skate slip-on shoes with elastic gores and clean white rubber sole",
+      "kind": "shoes",
+      "height": 9,
+      "width": 36,
+      "color": "Slate blue",
+      "source": "shoes_slip_on.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar matching pair of shoes layer. Reference image is the approved character style and exact pose. Create ONLY canvas skate slip-on shoes with elastic gores and clean white rubber sole. Both shoes worn by a front-facing character, left toe points slightly left and right toe slightly right, mirrored pair at equal height, separated by a clear small central gap. Show BOTH entire shoes on the same horizontal sole baseline. No legs, feet, skin or socks. Use the same deliberately coarse modern pixel art as the character, clean stair-step silhouette, dark one-logical-pixel outline, broad clusters with 3–5 values per material, readable at small size. Main material is medium slate BLUE, highlights lighter blue and shadows dark navy. Secondary panels, rubber soles, laces, metal hardware and trim use neutral cream/gray so material roles can be isolated. No extra graphics, brand logos, text, watermarks or labels. Genuine transparent RGBA background including openings, NOT a painted checkerboard or solid backdrop. Center the entire item on a square canvas with generous clear margins. No display board, no additional items or characters. This is real source artwork for an aligned 128×128 avatar layer."
+    },
+    {
+      "id": "shoes.retro_mesh",
+      "name": "Retro mesh runner",
+      "collection": "Running",
+      "description": "retro mesh running sneakers with layered suede panels, wedge midsole and dark tread",
+      "kind": "shoes",
+      "height": 11,
+      "width": 36,
+      "color": "Slate blue",
+      "source": "shoes_retro_mesh.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar matching pair of shoes layer. Reference image is the approved character style and exact pose. Create ONLY retro mesh running sneakers with layered suede panels, wedge midsole and dark tread. Both shoes worn by a front-facing character, left toe points slightly left and right toe slightly right, mirrored pair at equal height, separated by a clear small central gap. Show BOTH entire shoes on the same horizontal sole baseline. No legs, feet, skin or socks. Use the same deliberately coarse modern pixel art as the character, clean stair-step silhouette, dark one-logical-pixel outline, broad clusters with 3–5 values per material, readable at small size. Main material is medium slate BLUE, highlights lighter blue and shadows dark navy. Secondary panels, rubber soles, laces, metal hardware and trim use neutral cream/gray so material roles can be isolated. No extra graphics, brand logos, text, watermarks or labels. Genuine transparent RGBA background including openings, NOT a painted checkerboard or solid backdrop. Center the entire item on a square canvas with generous clear margins. No display board, no additional items or characters. This is real source artwork for an aligned 128×128 avatar layer."
+    },
+    {
+      "id": "shoes.performance_runner",
+      "name": "Performance runner",
+      "collection": "Running",
+      "description": "modern running shoes with breathable mesh, curved rocker sole and small reflective panel",
+      "kind": "shoes",
+      "height": 12,
+      "width": 36,
+      "color": "Slate blue",
+      "source": "shoes_performance_runner.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar matching pair of shoes layer. Reference image is the approved character style and exact pose. Create ONLY modern running shoes with breathable mesh, curved rocker sole and small reflective panel. Both shoes worn by a front-facing character, left toe points slightly left and right toe slightly right, mirrored pair at equal height, separated by a clear small central gap. Show BOTH entire shoes on the same horizontal sole baseline. No legs, feet, skin or socks. Use the same deliberately coarse modern pixel art as the character, clean stair-step silhouette, dark one-logical-pixel outline, broad clusters with 3–5 values per material, readable at small size. Main material is medium slate BLUE, highlights lighter blue and shadows dark navy. Secondary panels, rubber soles, laces, metal hardware and trim use neutral cream/gray so material roles can be isolated. No extra graphics, brand logos, text, watermarks or labels. Genuine transparent RGBA background including openings, NOT a painted checkerboard or solid backdrop. Center the entire item on a square canvas with generous clear margins. No display board, no additional items or characters. This is real source artwork for an aligned 128×128 avatar layer."
+    },
+    {
+      "id": "shoes.trail_grip",
+      "name": "Trail grip",
+      "collection": "Running",
+      "description": "trail running shoes with rugged lugged outsole, reinforced toe and quicklace detail",
+      "kind": "shoes",
+      "height": 12,
+      "width": 36,
+      "color": "Slate blue",
+      "source": "shoes_trail_grip.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar matching pair of shoes layer. Reference image is the approved character style and exact pose. Create ONLY trail running shoes with rugged lugged outsole, reinforced toe and quicklace detail. Both shoes worn by a front-facing character, left toe points slightly left and right toe slightly right, mirrored pair at equal height, separated by a clear small central gap. Show BOTH entire shoes on the same horizontal sole baseline. No legs, feet, skin or socks. Use the same deliberately coarse modern pixel art as the character, clean stair-step silhouette, dark one-logical-pixel outline, broad clusters with 3–5 values per material, readable at small size. Main material is medium slate BLUE, highlights lighter blue and shadows dark navy. Secondary panels, rubber soles, laces, metal hardware and trim use neutral cream/gray so material roles can be isolated. No extra graphics, brand logos, text, watermarks or labels. Genuine transparent RGBA background including openings, NOT a painted checkerboard or solid backdrop. Center the entire item on a square canvas with generous clear margins. No display board, no additional items or characters. This is real source artwork for an aligned 128×128 avatar layer."
+    },
+    {
+      "id": "shoes.knit_runner",
+      "name": "Knit runner",
+      "collection": "Running",
+      "description": "sock-knit running sneakers with ribbed ankle opening and segmented cushioned sole",
+      "kind": "shoes",
+      "height": 12,
+      "width": 36,
+      "color": "Slate blue",
+      "source": "shoes_knit_runner.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar matching pair of shoes layer. Reference image is the approved character style and exact pose. Create ONLY sock-knit running sneakers with ribbed ankle opening and segmented cushioned sole. Both shoes worn by a front-facing character, left toe points slightly left and right toe slightly right, mirrored pair at equal height, separated by a clear small central gap. Show BOTH entire shoes on the same horizontal sole baseline. No legs, feet, skin or socks. Use the same deliberately coarse modern pixel art as the character, clean stair-step silhouette, dark one-logical-pixel outline, broad clusters with 3–5 values per material, readable at small size. Main material is medium slate BLUE, highlights lighter blue and shadows dark navy. Secondary panels, rubber soles, laces, metal hardware and trim use neutral cream/gray so material roles can be isolated. No extra graphics, brand logos, text, watermarks or labels. Genuine transparent RGBA background including openings, NOT a painted checkerboard or solid backdrop. Center the entire item on a square canvas with generous clear margins. No display board, no additional items or characters. This is real source artwork for an aligned 128×128 avatar layer."
+    },
+    {
+      "id": "shoes.platform_sneaker",
+      "name": "Platform sneaker",
+      "collection": "Sneakers",
+      "description": "minimal low sneakers with tall platform rubber sole and simple laces",
+      "kind": "shoes",
+      "height": 12,
+      "width": 36,
+      "color": "Slate blue",
+      "source": "shoes_platform_sneaker.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar matching pair of shoes layer. Reference image is the approved character style and exact pose. Create ONLY minimal low sneakers with tall platform rubber sole and simple laces. Both shoes worn by a front-facing character, left toe points slightly left and right toe slightly right, mirrored pair at equal height, separated by a clear small central gap. Show BOTH entire shoes on the same horizontal sole baseline. No legs, feet, skin or socks. Use the same deliberately coarse modern pixel art as the character, clean stair-step silhouette, dark one-logical-pixel outline, broad clusters with 3–5 values per material, readable at small size. Main material is medium slate BLUE, highlights lighter blue and shadows dark navy. Secondary panels, rubber soles, laces, metal hardware and trim use neutral cream/gray so material roles can be isolated. No extra graphics, brand logos, text, watermarks or labels. Genuine transparent RGBA background including openings, NOT a painted checkerboard or solid backdrop. Center the entire item on a square canvas with generous clear margins. No display board, no additional items or characters. This is real source artwork for an aligned 128×128 avatar layer."
+    },
+    {
+      "id": "shoes.tennis_court",
+      "name": "Tennis court",
+      "collection": "Sport",
+      "description": "classic tennis court shoes with low leather uppers, narrow lacing and flat herringbone sole",
+      "kind": "shoes",
+      "height": 10,
+      "width": 36,
+      "color": "Slate blue",
+      "source": "shoes_tennis_court.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar matching pair of shoes layer. Reference image is the approved character style and exact pose. Create ONLY classic tennis court shoes with low leather uppers, narrow lacing and flat herringbone sole. Both shoes worn by a front-facing character, left toe points slightly left and right toe slightly right, mirrored pair at equal height, separated by a clear small central gap. Show BOTH entire shoes on the same horizontal sole baseline. No legs, feet, skin or socks. Use the same deliberately coarse modern pixel art as the character, clean stair-step silhouette, dark one-logical-pixel outline, broad clusters with 3–5 values per material, readable at small size. Main material is medium slate BLUE, highlights lighter blue and shadows dark navy. Secondary panels, rubber soles, laces, metal hardware and trim use neutral cream/gray so material roles can be isolated. No extra graphics, brand logos, text, watermarks or labels. Genuine transparent RGBA background including openings, NOT a painted checkerboard or solid backdrop. Center the entire item on a square canvas with generous clear margins. No display board, no additional items or characters. This is real source artwork for an aligned 128×128 avatar layer."
+    },
+    {
+      "id": "shoes.hiking_lace",
+      "name": "Hiking boot",
+      "collection": "Boots",
+      "description": "ankle hiking boots with metal lace hooks, padded collar and rugged lug sole",
+      "kind": "shoes",
+      "height": 16,
+      "width": 36,
+      "color": "Slate blue",
+      "source": "shoes_hiking_lace.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar matching pair of shoes layer. Reference image is the approved character style and exact pose. Create ONLY ankle hiking boots with metal lace hooks, padded collar and rugged lug sole. Both shoes worn by a front-facing character, left toe points slightly left and right toe slightly right, mirrored pair at equal height, separated by a clear small central gap. Show BOTH entire shoes on the same horizontal sole baseline. No legs, feet, skin or socks. Use the same deliberately coarse modern pixel art as the character, clean stair-step silhouette, dark one-logical-pixel outline, broad clusters with 3–5 values per material, readable at small size. Main material is medium slate BLUE, highlights lighter blue and shadows dark navy. Secondary panels, rubber soles, laces, metal hardware and trim use neutral cream/gray so material roles can be isolated. No extra graphics, brand logos, text, watermarks or labels. Genuine transparent RGBA background including openings, NOT a painted checkerboard or solid backdrop. Center the entire item on a square canvas with generous clear margins. No display board, no additional items or characters. This is real source artwork for an aligned 128×128 avatar layer."
+    },
+    {
+      "id": "shoes.work_lace",
+      "name": "Work boot",
+      "collection": "Boots",
+      "description": "sturdy lace-up work boots with round reinforced toe, six eyelets and thick welted sole",
+      "kind": "shoes",
+      "height": 16,
+      "width": 36,
+      "color": "Slate blue",
+      "source": "shoes_work_lace.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar matching pair of shoes layer. Reference image is the approved character style and exact pose. Create ONLY sturdy lace-up work boots with round reinforced toe, six eyelets and thick welted sole. Both shoes worn by a front-facing character, left toe points slightly left and right toe slightly right, mirrored pair at equal height, separated by a clear small central gap. Show BOTH entire shoes on the same horizontal sole baseline. No legs, feet, skin or socks. Use the same deliberately coarse modern pixel art as the character, clean stair-step silhouette, dark one-logical-pixel outline, broad clusters with 3–5 values per material, readable at small size. Main material is medium slate BLUE, highlights lighter blue and shadows dark navy. Secondary panels, rubber soles, laces, metal hardware and trim use neutral cream/gray so material roles can be isolated. No extra graphics, brand logos, text, watermarks or labels. Genuine transparent RGBA background including openings, NOT a painted checkerboard or solid backdrop. Center the entire item on a square canvas with generous clear margins. No display board, no additional items or characters. This is real source artwork for an aligned 128×128 avatar layer."
+    },
+    {
+      "id": "shoes.chelsea",
+      "name": "Chelsea boot",
+      "collection": "Boots",
+      "description": "sleek ankle Chelsea boots with elastic side panels, pull tabs and low heel",
+      "kind": "shoes",
+      "height": 16,
+      "width": 36,
+      "color": "Slate blue",
+      "source": "shoes_chelsea.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar matching pair of shoes layer. Reference image is the approved character style and exact pose. Create ONLY sleek ankle Chelsea boots with elastic side panels, pull tabs and low heel. Both shoes worn by a front-facing character, left toe points slightly left and right toe slightly right, mirrored pair at equal height, separated by a clear small central gap. Show BOTH entire shoes on the same horizontal sole baseline. No legs, feet, skin or socks. Use the same deliberately coarse modern pixel art as the character, clean stair-step silhouette, dark one-logical-pixel outline, broad clusters with 3–5 values per material, readable at small size. Main material is medium slate BLUE, highlights lighter blue and shadows dark navy. Secondary panels, rubber soles, laces, metal hardware and trim use neutral cream/gray so material roles can be isolated. No extra graphics, brand logos, text, watermarks or labels. Genuine transparent RGBA background including openings, NOT a painted checkerboard or solid backdrop. Center the entire item on a square canvas with generous clear margins. No display board, no additional items or characters. This is real source artwork for an aligned 128×128 avatar layer."
+    },
+    {
+      "id": "shoes.combat_lace",
+      "name": "Lace-up combat boot",
+      "collection": "Boots",
+      "description": "tall lace-up boots with eight eyelets, rounded toe and heavy tread",
+      "kind": "shoes",
+      "height": 18,
+      "width": 36,
+      "color": "Slate blue",
+      "source": "shoes_combat_lace.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar matching pair of shoes layer. Reference image is the approved character style and exact pose. Create ONLY tall lace-up boots with eight eyelets, rounded toe and heavy tread. Both shoes worn by a front-facing character, left toe points slightly left and right toe slightly right, mirrored pair at equal height, separated by a clear small central gap. Show BOTH entire shoes on the same horizontal sole baseline. No legs, feet, skin or socks. Use the same deliberately coarse modern pixel art as the character, clean stair-step silhouette, dark one-logical-pixel outline, broad clusters with 3–5 values per material, readable at small size. Main material is medium slate BLUE, highlights lighter blue and shadows dark navy. Secondary panels, rubber soles, laces, metal hardware and trim use neutral cream/gray so material roles can be isolated. No extra graphics, brand logos, text, watermarks or labels. Genuine transparent RGBA background including openings, NOT a painted checkerboard or solid backdrop. Center the entire item on a square canvas with generous clear margins. No display board, no additional items or characters. This is real source artwork for an aligned 128×128 avatar layer."
+    },
+    {
+      "id": "shoes.desert_suede",
+      "name": "Desert boot",
+      "collection": "Boots",
+      "description": "soft suede desert chukka boots, two eyelet lacing and thin crepe sole",
+      "kind": "shoes",
+      "height": 14,
+      "width": 36,
+      "color": "Slate blue",
+      "source": "shoes_desert_suede.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar matching pair of shoes layer. Reference image is the approved character style and exact pose. Create ONLY soft suede desert chukka boots, two eyelet lacing and thin crepe sole. Both shoes worn by a front-facing character, left toe points slightly left and right toe slightly right, mirrored pair at equal height, separated by a clear small central gap. Show BOTH entire shoes on the same horizontal sole baseline. No legs, feet, skin or socks. Use the same deliberately coarse modern pixel art as the character, clean stair-step silhouette, dark one-logical-pixel outline, broad clusters with 3–5 values per material, readable at small size. Main material is medium slate BLUE, highlights lighter blue and shadows dark navy. Secondary panels, rubber soles, laces, metal hardware and trim use neutral cream/gray so material roles can be isolated. No extra graphics, brand logos, text, watermarks or labels. Genuine transparent RGBA background including openings, NOT a painted checkerboard or solid backdrop. Center the entire item on a square canvas with generous clear margins. No display board, no additional items or characters. This is real source artwork for an aligned 128×128 avatar layer."
+    },
+    {
+      "id": "shoes.winter_padded",
+      "name": "Winter boot",
+      "collection": "Boots",
+      "description": "padded winter boots with quilted shaft, drawcord and waterproof rubber lower",
+      "kind": "shoes",
+      "height": 18,
+      "width": 36,
+      "color": "Slate blue",
+      "source": "shoes_winter_padded.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar matching pair of shoes layer. Reference image is the approved character style and exact pose. Create ONLY padded winter boots with quilted shaft, drawcord and waterproof rubber lower. Both shoes worn by a front-facing character, left toe points slightly left and right toe slightly right, mirrored pair at equal height, separated by a clear small central gap. Show BOTH entire shoes on the same horizontal sole baseline. No legs, feet, skin or socks. Use the same deliberately coarse modern pixel art as the character, clean stair-step silhouette, dark one-logical-pixel outline, broad clusters with 3–5 values per material, readable at small size. Main material is medium slate BLUE, highlights lighter blue and shadows dark navy. Secondary panels, rubber soles, laces, metal hardware and trim use neutral cream/gray so material roles can be isolated. No extra graphics, brand logos, text, watermarks or labels. Genuine transparent RGBA background including openings, NOT a painted checkerboard or solid backdrop. Center the entire item on a square canvas with generous clear margins. No display board, no additional items or characters. This is real source artwork for an aligned 128×128 avatar layer."
+    },
+    {
+      "id": "shoes.penny_loafer",
+      "name": "Penny loafer",
+      "collection": "Smart",
+      "description": "classic leather penny loafers, visible apron seam, saddle strap with small slot and low heel",
+      "kind": "shoes",
+      "height": 9,
+      "width": 36,
+      "color": "Slate blue",
+      "source": "shoes_penny_loafer.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar matching pair of shoes layer. Reference image is the approved character style and exact pose. Create ONLY classic leather penny loafers, visible apron seam, saddle strap with small slot and low heel. Both shoes worn by a front-facing character, left toe points slightly left and right toe slightly right, mirrored pair at equal height, separated by a clear small central gap. Show BOTH entire shoes on the same horizontal sole baseline. No legs, feet, skin or socks. Use the same deliberately coarse modern pixel art as the character, clean stair-step silhouette, dark one-logical-pixel outline, broad clusters with 3–5 values per material, readable at small size. Main material is medium slate BLUE, highlights lighter blue and shadows dark navy. Secondary panels, rubber soles, laces, metal hardware and trim use neutral cream/gray so material roles can be isolated. No extra graphics, brand logos, text, watermarks or labels. Genuine transparent RGBA background including openings, NOT a painted checkerboard or solid backdrop. Center the entire item on a square canvas with generous clear margins. No display board, no additional items or characters. This is real source artwork for an aligned 128×128 avatar layer."
+    },
+    {
+      "id": "shoes.tassel_loafer",
+      "name": "Tassel loafer",
+      "collection": "Smart",
+      "description": "leather tassel loafers with two tiny tassels, apron stitching and stacked low heel",
+      "kind": "shoes",
+      "height": 9,
+      "width": 36,
+      "color": "Slate blue",
+      "source": "shoes_tassel_loafer.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar matching pair of shoes layer. Reference image is the approved character style and exact pose. Create ONLY leather tassel loafers with two tiny tassels, apron stitching and stacked low heel. Both shoes worn by a front-facing character, left toe points slightly left and right toe slightly right, mirrored pair at equal height, separated by a clear small central gap. Show BOTH entire shoes on the same horizontal sole baseline. No legs, feet, skin or socks. Use the same deliberately coarse modern pixel art as the character, clean stair-step silhouette, dark one-logical-pixel outline, broad clusters with 3–5 values per material, readable at small size. Main material is medium slate BLUE, highlights lighter blue and shadows dark navy. Secondary panels, rubber soles, laces, metal hardware and trim use neutral cream/gray so material roles can be isolated. No extra graphics, brand logos, text, watermarks or labels. Genuine transparent RGBA background including openings, NOT a painted checkerboard or solid backdrop. Center the entire item on a square canvas with generous clear margins. No display board, no additional items or characters. This is real source artwork for an aligned 128×128 avatar layer."
+    },
+    {
+      "id": "shoes.derby_lace",
+      "name": "Derby shoes",
+      "collection": "Smart",
+      "description": "polished leather derby shoes with open lacing, rounded toe and slim welted soles",
+      "kind": "shoes",
+      "height": 10,
+      "width": 36,
+      "color": "Slate blue",
+      "source": "shoes_derby_lace.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar matching pair of shoes layer. Reference image is the approved character style and exact pose. Create ONLY polished leather derby shoes with open lacing, rounded toe and slim welted soles. Both shoes worn by a front-facing character, left toe points slightly left and right toe slightly right, mirrored pair at equal height, separated by a clear small central gap. Show BOTH entire shoes on the same horizontal sole baseline. No legs, feet, skin or socks. Use the same deliberately coarse modern pixel art as the character, clean stair-step silhouette, dark one-logical-pixel outline, broad clusters with 3–5 values per material, readable at small size. Main material is medium slate BLUE, highlights lighter blue and shadows dark navy. Secondary panels, rubber soles, laces, metal hardware and trim use neutral cream/gray so material roles can be isolated. No extra graphics, brand logos, text, watermarks or labels. Genuine transparent RGBA background including openings, NOT a painted checkerboard or solid backdrop. Center the entire item on a square canvas with generous clear margins. No display board, no additional items or characters. This is real source artwork for an aligned 128×128 avatar layer."
+    },
+    {
+      "id": "shoes.mary_jane",
+      "name": "Mary Jane",
+      "collection": "Smart",
+      "description": "rounded Mary Jane shoes with one instep strap and small metal buckle, low block heel",
+      "kind": "shoes",
+      "height": 10,
+      "width": 36,
+      "color": "Slate blue",
+      "source": "shoes_mary_jane.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar matching pair of shoes layer. Reference image is the approved character style and exact pose. Create ONLY rounded Mary Jane shoes with one instep strap and small metal buckle, low block heel. Both shoes worn by a front-facing character, left toe points slightly left and right toe slightly right, mirrored pair at equal height, separated by a clear small central gap. Show BOTH entire shoes on the same horizontal sole baseline. No legs, feet, skin or socks. Use the same deliberately coarse modern pixel art as the character, clean stair-step silhouette, dark one-logical-pixel outline, broad clusters with 3–5 values per material, readable at small size. Main material is medium slate BLUE, highlights lighter blue and shadows dark navy. Secondary panels, rubber soles, laces, metal hardware and trim use neutral cream/gray so material roles can be isolated. No extra graphics, brand logos, text, watermarks or labels. Genuine transparent RGBA background including openings, NOT a painted checkerboard or solid backdrop. Center the entire item on a square canvas with generous clear margins. No display board, no additional items or characters. This is real source artwork for an aligned 128×128 avatar layer."
+    },
+    {
+      "id": "shoes.clog_cork",
+      "name": "Cork clog",
+      "collection": "Relaxed",
+      "description": "closed suede clogs with one side buckle and anatomically shaped cork sole; empty foot opening, no skin",
+      "kind": "shoes",
+      "height": 10,
+      "width": 36,
+      "color": "Slate blue",
+      "source": "shoes_clog_cork.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar matching pair of shoes layer. Reference image is the approved character style and exact pose. Create ONLY closed suede clogs with one side buckle and anatomically shaped cork sole; empty foot opening, no skin. Both shoes worn by a front-facing character, left toe points slightly left and right toe slightly right, mirrored pair at equal height, separated by a clear small central gap. Show BOTH entire shoes on the same horizontal sole baseline. No legs, feet, skin or socks. Use the same deliberately coarse modern pixel art as the character, clean stair-step silhouette, dark one-logical-pixel outline, broad clusters with 3–5 values per material, readable at small size. Main material is medium slate BLUE, highlights lighter blue and shadows dark navy. Secondary panels, rubber soles, laces, metal hardware and trim use neutral cream/gray so material roles can be isolated. No extra graphics, brand logos, text, watermarks or labels. Genuine transparent RGBA background including openings, NOT a painted checkerboard or solid backdrop. Center the entire item on a square canvas with generous clear margins. No display board, no additional items or characters. This is real source artwork for an aligned 128×128 avatar layer."
+    },
+    {
+      "id": "shoes.house_mule",
+      "name": "House mule",
+      "collection": "Relaxed",
+      "description": "cozy closed-toe felt house mules with soft rounded uppers and thin flat outsole; empty opening, no feet",
+      "kind": "shoes",
+      "height": 9,
+      "width": 36,
+      "color": "Slate blue",
+      "source": "shoes_house_mule.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar matching pair of shoes layer. Reference image is the approved character style and exact pose. Create ONLY cozy closed-toe felt house mules with soft rounded uppers and thin flat outsole; empty opening, no feet. Both shoes worn by a front-facing character, left toe points slightly left and right toe slightly right, mirrored pair at equal height, separated by a clear small central gap. Show BOTH entire shoes on the same horizontal sole baseline. No legs, feet, skin or socks. Use the same deliberately coarse modern pixel art as the character, clean stair-step silhouette, dark one-logical-pixel outline, broad clusters with 3–5 values per material, readable at small size. Main material is medium slate BLUE, highlights lighter blue and shadows dark navy. Secondary panels, rubber soles, laces, metal hardware and trim use neutral cream/gray so material roles can be isolated. No extra graphics, brand logos, text, watermarks or labels. Genuine transparent RGBA background including openings, NOT a painted checkerboard or solid backdrop. Center the entire item on a square canvas with generous clear margins. No display board, no additional items or characters. This is real source artwork for an aligned 128×128 avatar layer."
+    },
+    {
+      "id": "top.boxy_heavy_tee",
+      "name": "Boxy heavyweight tee",
+      "collection": "Everyday",
+      "description": "boxy heavyweight crew-neck T-shirt, short sleeves ending at upper elbow, dropped shoulders and ribbed neck",
+      "kind": "top",
+      "sleeve": "short",
+      "closed": true,
+      "color": "Slate blue",
+      "source": "top_boxy_heavy_tee.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar top layer. Reference image is the approved character style and exact pose. Create ONLY boxy heavyweight crew-neck T-shirt, short sleeves ending at upper elbow, dropped shoulders and ribbed neck. Front-facing empty garment with both sleeves relaxed downward following the reference arms, narrow gaps between sleeves and torso. Neck opening clear. No head, face, neck, skin, hands, body or pants. Sleeves and hem must fit the reference stance. Use the same deliberately coarse modern pixel art as the character, clean stair-step silhouette, dark one-logical-pixel outline, broad clusters with 3–5 values per material, readable at small size. Main material is medium slate BLUE, highlights lighter blue and shadows dark navy. Secondary panels, rubber soles, laces, metal hardware and trim use neutral cream/gray so material roles can be isolated. No extra graphics, brand logos, text, watermarks or labels. Genuine transparent RGBA background including openings, NOT a painted checkerboard or solid backdrop. Center the entire item on a square canvas with generous clear margins. No display board, no additional items or characters. This is real source artwork for an aligned 128×128 avatar layer."
+    },
+    {
+      "id": "top.rugby_collar",
+      "name": "Rugby shirt",
+      "collection": "Smart",
+      "description": "long-sleeve rugby shirt with contrasting cream collar, broad two-tone chest band and ribbed cuffs",
+      "kind": "top",
+      "sleeve": "long",
+      "closed": true,
+      "color": "Slate blue",
+      "source": "top_rugby_collar.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar top layer. Reference image is the approved character style and exact pose. Create ONLY long-sleeve rugby shirt with contrasting cream collar, broad two-tone chest band and ribbed cuffs. Front-facing empty garment with both sleeves relaxed downward following the reference arms, narrow gaps between sleeves and torso. Neck opening clear. No head, face, neck, skin, hands, body or pants. Sleeves and hem must fit the reference stance. Use the same deliberately coarse modern pixel art as the character, clean stair-step silhouette, dark one-logical-pixel outline, broad clusters with 3–5 values per material, readable at small size. Main material is medium slate BLUE, highlights lighter blue and shadows dark navy. Secondary panels, rubber soles, laces, metal hardware and trim use neutral cream/gray so material roles can be isolated. No extra graphics, brand logos, text, watermarks or labels. Genuine transparent RGBA background including openings, NOT a painted checkerboard or solid backdrop. Center the entire item on a square canvas with generous clear margins. No display board, no additional items or characters. This is real source artwork for an aligned 128×128 avatar layer."
+    },
+    {
+      "id": "top.knit_polo",
+      "name": "Knit polo",
+      "collection": "Smart",
+      "description": "short-sleeve knit polo with open three-button placket, ribbed hem and small collar",
+      "kind": "top",
+      "sleeve": "short",
+      "closed": true,
+      "color": "Slate blue",
+      "source": "top_knit_polo.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar top layer. Reference image is the approved character style and exact pose. Create ONLY short-sleeve knit polo with open three-button placket, ribbed hem and small collar. Front-facing empty garment with both sleeves relaxed downward following the reference arms, narrow gaps between sleeves and torso. Neck opening clear. No head, face, neck, skin, hands, body or pants. Sleeves and hem must fit the reference stance. Use the same deliberately coarse modern pixel art as the character, clean stair-step silhouette, dark one-logical-pixel outline, broad clusters with 3–5 values per material, readable at small size. Main material is medium slate BLUE, highlights lighter blue and shadows dark navy. Secondary panels, rubber soles, laces, metal hardware and trim use neutral cream/gray so material roles can be isolated. No extra graphics, brand logos, text, watermarks or labels. Genuine transparent RGBA background including openings, NOT a painted checkerboard or solid backdrop. Center the entire item on a square canvas with generous clear margins. No display board, no additional items or characters. This is real source artwork for an aligned 128×128 avatar layer."
+    },
+    {
+      "id": "top.waffle_henley",
+      "name": "Waffle henley",
+      "collection": "Everyday",
+      "description": "long-sleeve waffle henley, narrow three-button placket and subtle chunky waffle knit",
+      "kind": "top",
+      "sleeve": "long",
+      "closed": true,
+      "color": "Slate blue",
+      "source": "top_waffle_henley.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar top layer. Reference image is the approved character style and exact pose. Create ONLY long-sleeve waffle henley, narrow three-button placket and subtle chunky waffle knit. Front-facing empty garment with both sleeves relaxed downward following the reference arms, narrow gaps between sleeves and torso. Neck opening clear. No head, face, neck, skin, hands, body or pants. Sleeves and hem must fit the reference stance. Use the same deliberately coarse modern pixel art as the character, clean stair-step silhouette, dark one-logical-pixel outline, broad clusters with 3–5 values per material, readable at small size. Main material is medium slate BLUE, highlights lighter blue and shadows dark navy. Secondary panels, rubber soles, laces, metal hardware and trim use neutral cream/gray so material roles can be isolated. No extra graphics, brand logos, text, watermarks or labels. Genuine transparent RGBA background including openings, NOT a painted checkerboard or solid backdrop. Center the entire item on a square canvas with generous clear margins. No display board, no additional items or characters. This is real source artwork for an aligned 128×128 avatar layer."
+    },
+    {
+      "id": "top.mockneck_zip",
+      "name": "Mockneck half zip",
+      "collection": "Sport",
+      "description": "athletic half zip with low standing collar, center zip ending at chest, narrow shoulder piping",
+      "kind": "top",
+      "sleeve": "long",
+      "closed": true,
+      "color": "Slate blue",
+      "source": "top_mockneck_zip.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar top layer. Reference image is the approved character style and exact pose. Create ONLY athletic half zip with low standing collar, center zip ending at chest, narrow shoulder piping. Front-facing empty garment with both sleeves relaxed downward following the reference arms, narrow gaps between sleeves and torso. Neck opening clear. No head, face, neck, skin, hands, body or pants. Sleeves and hem must fit the reference stance. Use the same deliberately coarse modern pixel art as the character, clean stair-step silhouette, dark one-logical-pixel outline, broad clusters with 3–5 values per material, readable at small size. Main material is medium slate BLUE, highlights lighter blue and shadows dark navy. Secondary panels, rubber soles, laces, metal hardware and trim use neutral cream/gray so material roles can be isolated. No extra graphics, brand logos, text, watermarks or labels. Genuine transparent RGBA background including openings, NOT a painted checkerboard or solid backdrop. Center the entire item on a square canvas with generous clear margins. No display board, no additional items or characters. This is real source artwork for an aligned 128×128 avatar layer."
+    },
+    {
+      "id": "top.relaxed_cardigan",
+      "name": "Relaxed cardigan",
+      "collection": "Smart",
+      "description": "closed relaxed V-neck cardigan, five contrasting buttons, two patch pockets and ribbed cuffs",
+      "kind": "top",
+      "sleeve": "long",
+      "closed": true,
+      "color": "Slate blue",
+      "source": "top_relaxed_cardigan.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar top layer. Reference image is the approved character style and exact pose. Create ONLY closed relaxed V-neck cardigan, five contrasting buttons, two patch pockets and ribbed cuffs. Front-facing empty garment with both sleeves relaxed downward following the reference arms, narrow gaps between sleeves and torso. Neck opening clear. No head, face, neck, skin, hands, body or pants. Sleeves and hem must fit the reference stance. Use the same deliberately coarse modern pixel art as the character, clean stair-step silhouette, dark one-logical-pixel outline, broad clusters with 3–5 values per material, readable at small size. Main material is medium slate BLUE, highlights lighter blue and shadows dark navy. Secondary panels, rubber soles, laces, metal hardware and trim use neutral cream/gray so material roles can be isolated. No extra graphics, brand logos, text, watermarks or labels. Genuine transparent RGBA background including openings, NOT a painted checkerboard or solid backdrop. Center the entire item on a square canvas with generous clear margins. No display board, no additional items or characters. This is real source artwork for an aligned 128×128 avatar layer."
+    },
+    {
+      "id": "jacket.box_puffer",
+      "name": "Box puffer",
+      "collection": "Winter",
+      "description": "closed boxy puffer jacket with wide horizontal quilted baffles, low stand collar and center zipper",
+      "kind": "jacket",
+      "closed": true,
+      "color": "Slate blue",
+      "source": "jacket_box_puffer.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar jacket layer. Reference image is the approved character style and exact pose. Create ONLY closed boxy puffer jacket with wide horizontal quilted baffles, low stand collar and center zipper. Front-facing empty garment with both sleeves relaxed downward following the reference arms, narrow gaps between sleeves and torso. Neck opening clear. No head, face, neck, skin, hands, body or pants. Sleeves and hem must fit the reference stance. Use the same deliberately coarse modern pixel art as the character, clean stair-step silhouette, dark one-logical-pixel outline, broad clusters with 3–5 values per material, readable at small size. Main material is medium slate BLUE, highlights lighter blue and shadows dark navy. Secondary panels, rubber soles, laces, metal hardware and trim use neutral cream/gray so material roles can be isolated. No extra graphics, brand logos, text, watermarks or labels. Genuine transparent RGBA background including openings, NOT a painted checkerboard or solid backdrop. Center the entire item on a square canvas with generous clear margins. No display board, no additional items or characters. This is real source artwork for an aligned 128×128 avatar layer."
+    },
+    {
+      "id": "jacket.hooded_puffer",
+      "name": "Hooded puffer",
+      "collection": "Winter",
+      "description": "closed hooded winter puffer jacket, three broad quilted baffles, deep hood opening behind neck and zipper",
+      "kind": "jacket",
+      "closed": true,
+      "color": "Slate blue",
+      "source": "jacket_hooded_puffer.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar jacket layer. Reference image is the approved character style and exact pose. Create ONLY closed hooded winter puffer jacket, three broad quilted baffles, deep hood opening behind neck and zipper. Front-facing empty garment with both sleeves relaxed downward following the reference arms, narrow gaps between sleeves and torso. Neck opening clear. No head, face, neck, skin, hands, body or pants. Sleeves and hem must fit the reference stance. Use the same deliberately coarse modern pixel art as the character, clean stair-step silhouette, dark one-logical-pixel outline, broad clusters with 3–5 values per material, readable at small size. Main material is medium slate BLUE, highlights lighter blue and shadows dark navy. Secondary panels, rubber soles, laces, metal hardware and trim use neutral cream/gray so material roles can be isolated. No extra graphics, brand logos, text, watermarks or labels. Genuine transparent RGBA background including openings, NOT a painted checkerboard or solid backdrop. Center the entire item on a square canvas with generous clear margins. No display board, no additional items or characters. This is real source artwork for an aligned 128×128 avatar layer."
+    },
+    {
+      "id": "jacket.quilt_liner",
+      "name": "Quilted liner",
+      "collection": "Everyday",
+      "description": "open collarless quilted liner jacket with subtle large diamond quilting and snap edges",
+      "kind": "jacket",
+      "closed": false,
+      "color": "Slate blue",
+      "source": "jacket_quilt_liner.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar jacket layer. Reference image is the approved character style and exact pose. Create ONLY open collarless quilted liner jacket with subtle large diamond quilting and snap edges. Front-facing empty garment with both sleeves relaxed downward following the reference arms, narrow gaps between sleeves and torso. Neck opening clear. No head, face, neck, skin, hands, body or pants. Sleeves and hem must fit the reference stance. Use the same deliberately coarse modern pixel art as the character, clean stair-step silhouette, dark one-logical-pixel outline, broad clusters with 3–5 values per material, readable at small size. Main material is medium slate BLUE, highlights lighter blue and shadows dark navy. Secondary panels, rubber soles, laces, metal hardware and trim use neutral cream/gray so material roles can be isolated. No extra graphics, brand logos, text, watermarks or labels. Genuine transparent RGBA background including openings, NOT a painted checkerboard or solid backdrop. Center the entire item on a square canvas with generous clear margins. No display board, no additional items or characters. This is real source artwork for an aligned 128×128 avatar layer."
+    },
+    {
+      "id": "jacket.flight_bomber",
+      "name": "Flight bomber",
+      "collection": "Street",
+      "description": "open flight bomber with ribbed collar and cuffs, sleeve utility pocket and zipper",
+      "kind": "jacket",
+      "closed": false,
+      "color": "Slate blue",
+      "source": "jacket_flight_bomber.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar jacket layer. Reference image is the approved character style and exact pose. Create ONLY open flight bomber with ribbed collar and cuffs, sleeve utility pocket and zipper. Front-facing empty garment with both sleeves relaxed downward following the reference arms, narrow gaps between sleeves and torso. Neck opening clear. No head, face, neck, skin, hands, body or pants. Sleeves and hem must fit the reference stance. Use the same deliberately coarse modern pixel art as the character, clean stair-step silhouette, dark one-logical-pixel outline, broad clusters with 3–5 values per material, readable at small size. Main material is medium slate BLUE, highlights lighter blue and shadows dark navy. Secondary panels, rubber soles, laces, metal hardware and trim use neutral cream/gray so material roles can be isolated. No extra graphics, brand logos, text, watermarks or labels. Genuine transparent RGBA background including openings, NOT a painted checkerboard or solid backdrop. Center the entire item on a square canvas with generous clear margins. No display board, no additional items or characters. This is real source artwork for an aligned 128×128 avatar layer."
+    },
+    {
+      "id": "jacket.varsity_wool",
+      "name": "Wool varsity",
+      "collection": "Street",
+      "description": "open wool varsity jacket with cream sleeves, plain ribbed collar and snap buttons, no lettering",
+      "kind": "jacket",
+      "closed": false,
+      "color": "Slate blue",
+      "source": "jacket_varsity_wool.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar jacket layer. Reference image is the approved character style and exact pose. Create ONLY open wool varsity jacket with cream sleeves, plain ribbed collar and snap buttons, no lettering. Front-facing empty garment with both sleeves relaxed downward following the reference arms, narrow gaps between sleeves and torso. Neck opening clear. No head, face, neck, skin, hands, body or pants. Sleeves and hem must fit the reference stance. Use the same deliberately coarse modern pixel art as the character, clean stair-step silhouette, dark one-logical-pixel outline, broad clusters with 3–5 values per material, readable at small size. Main material is medium slate BLUE, highlights lighter blue and shadows dark navy. Secondary panels, rubber soles, laces, metal hardware and trim use neutral cream/gray so material roles can be isolated. No extra graphics, brand logos, text, watermarks or labels. Genuine transparent RGBA background including openings, NOT a painted checkerboard or solid backdrop. Center the entire item on a square canvas with generous clear margins. No display board, no additional items or characters. This is real source artwork for an aligned 128×128 avatar layer."
+    },
+    {
+      "id": "jacket.denim_trucker",
+      "name": "Denim trucker",
+      "collection": "Everyday",
+      "description": "open denim trucker jacket with pointed collar, two angled chest flap pockets and metal buttons",
+      "kind": "jacket",
+      "closed": false,
+      "color": "Slate blue",
+      "source": "jacket_denim_trucker.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar jacket layer. Reference image is the approved character style and exact pose. Create ONLY open denim trucker jacket with pointed collar, two angled chest flap pockets and metal buttons. Front-facing empty garment with both sleeves relaxed downward following the reference arms, narrow gaps between sleeves and torso. Neck opening clear. No head, face, neck, skin, hands, body or pants. Sleeves and hem must fit the reference stance. Use the same deliberately coarse modern pixel art as the character, clean stair-step silhouette, dark one-logical-pixel outline, broad clusters with 3–5 values per material, readable at small size. Main material is medium slate BLUE, highlights lighter blue and shadows dark navy. Secondary panels, rubber soles, laces, metal hardware and trim use neutral cream/gray so material roles can be isolated. No extra graphics, brand logos, text, watermarks or labels. Genuine transparent RGBA background including openings, NOT a painted checkerboard or solid backdrop. Center the entire item on a square canvas with generous clear margins. No display board, no additional items or characters. This is real source artwork for an aligned 128×128 avatar layer."
+    },
+    {
+      "id": "jacket.leather_biker",
+      "name": "Biker jacket",
+      "collection": "Street",
+      "description": "open leather-style biker jacket with broad asymmetric lapels, diagonal zip and restrained silver hardware",
+      "kind": "jacket",
+      "closed": false,
+      "color": "Slate blue",
+      "source": "jacket_leather_biker.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar jacket layer. Reference image is the approved character style and exact pose. Create ONLY open leather-style biker jacket with broad asymmetric lapels, diagonal zip and restrained silver hardware. Front-facing empty garment with both sleeves relaxed downward following the reference arms, narrow gaps between sleeves and torso. Neck opening clear. No head, face, neck, skin, hands, body or pants. Sleeves and hem must fit the reference stance. Use the same deliberately coarse modern pixel art as the character, clean stair-step silhouette, dark one-logical-pixel outline, broad clusters with 3–5 values per material, readable at small size. Main material is medium slate BLUE, highlights lighter blue and shadows dark navy. Secondary panels, rubber soles, laces, metal hardware and trim use neutral cream/gray so material roles can be isolated. No extra graphics, brand logos, text, watermarks or labels. Genuine transparent RGBA background including openings, NOT a painted checkerboard or solid backdrop. Center the entire item on a square canvas with generous clear margins. No display board, no additional items or characters. This is real source artwork for an aligned 128×128 avatar layer."
+    },
+    {
+      "id": "jacket.rain_parka",
+      "name": "Rain parka",
+      "collection": "Tech",
+      "description": "closed hip-length hooded rain parka with storm flap, drawcord and two large slant pockets",
+      "kind": "jacket",
+      "closed": true,
+      "color": "Slate blue",
+      "source": "jacket_rain_parka.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar jacket layer. Reference image is the approved character style and exact pose. Create ONLY closed hip-length hooded rain parka with storm flap, drawcord and two large slant pockets. Front-facing empty garment with both sleeves relaxed downward following the reference arms, narrow gaps between sleeves and torso. Neck opening clear. No head, face, neck, skin, hands, body or pants. Sleeves and hem must fit the reference stance. Use the same deliberately coarse modern pixel art as the character, clean stair-step silhouette, dark one-logical-pixel outline, broad clusters with 3–5 values per material, readable at small size. Main material is medium slate BLUE, highlights lighter blue and shadows dark navy. Secondary panels, rubber soles, laces, metal hardware and trim use neutral cream/gray so material roles can be isolated. No extra graphics, brand logos, text, watermarks or labels. Genuine transparent RGBA background including openings, NOT a painted checkerboard or solid backdrop. Center the entire item on a square canvas with generous clear margins. No display board, no additional items or characters. This is real source artwork for an aligned 128×128 avatar layer."
+    },
+    {
+      "id": "jacket.sherpa_fleece",
+      "name": "Sherpa fleece",
+      "collection": "Winter",
+      "description": "open sherpa fleece jacket, chunky fleece blocks, contrast chest pocket and low standing collar",
+      "kind": "jacket",
+      "closed": false,
+      "color": "Slate blue",
+      "source": "jacket_sherpa_fleece.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar jacket layer. Reference image is the approved character style and exact pose. Create ONLY open sherpa fleece jacket, chunky fleece blocks, contrast chest pocket and low standing collar. Front-facing empty garment with both sleeves relaxed downward following the reference arms, narrow gaps between sleeves and torso. Neck opening clear. No head, face, neck, skin, hands, body or pants. Sleeves and hem must fit the reference stance. Use the same deliberately coarse modern pixel art as the character, clean stair-step silhouette, dark one-logical-pixel outline, broad clusters with 3–5 values per material, readable at small size. Main material is medium slate BLUE, highlights lighter blue and shadows dark navy. Secondary panels, rubber soles, laces, metal hardware and trim use neutral cream/gray so material roles can be isolated. No extra graphics, brand logos, text, watermarks or labels. Genuine transparent RGBA background including openings, NOT a painted checkerboard or solid backdrop. Center the entire item on a square canvas with generous clear margins. No display board, no additional items or characters. This is real source artwork for an aligned 128×128 avatar layer."
+    },
+    {
+      "id": "jacket.track_piped",
+      "name": "Piped track jacket",
+      "collection": "Training",
+      "description": "closed track warmup jacket with tall collar, center zipper and one curved contrast piping line along each sleeve; no brand stripe patterns",
+      "kind": "jacket",
+      "closed": true,
+      "color": "Slate blue",
+      "source": "jacket_track_piped.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar jacket layer. Reference image is the approved character style and exact pose. Create ONLY closed track warmup jacket with tall collar, center zipper and one curved contrast piping line along each sleeve; no brand stripe patterns. Front-facing empty garment with both sleeves relaxed downward following the reference arms, narrow gaps between sleeves and torso. Neck opening clear. No head, face, neck, skin, hands, body or pants. Sleeves and hem must fit the reference stance. Use the same deliberately coarse modern pixel art as the character, clean stair-step silhouette, dark one-logical-pixel outline, broad clusters with 3–5 values per material, readable at small size. Main material is medium slate BLUE, highlights lighter blue and shadows dark navy. Secondary panels, rubber soles, laces, metal hardware and trim use neutral cream/gray so material roles can be isolated. No extra graphics, brand logos, text, watermarks or labels. Genuine transparent RGBA background including openings, NOT a painted checkerboard or solid backdrop. Center the entire item on a square canvas with generous clear margins. No display board, no additional items or characters. This is real source artwork for an aligned 128×128 avatar layer."
+    },
+    {
+      "id": "bottom.baggy_denim",
+      "name": "Baggy jeans",
+      "collection": "Denim",
+      "description": "very baggy straight-leg jeans, wide relaxed thighs and stacked hems, five-pocket construction",
+      "kind": "bottom",
+      "width": 30,
+      "color": "Slate blue",
+      "source": "bottom_baggy_denim.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar bottom layer. Reference image is the approved character style and exact pose. Create ONLY very baggy straight-leg jeans, wide relaxed thighs and stacked hems, five-pocket construction. Front-facing pants, upright, both legs straight and separated by a narrow clear gap, waistband level and hems on same line. Empty garment only: no torso, hands, legs, feet or shoes. Use the same deliberately coarse modern pixel art as the character, clean stair-step silhouette, dark one-logical-pixel outline, broad clusters with 3–5 values per material, readable at small size. Main material is medium slate BLUE, highlights lighter blue and shadows dark navy. Secondary panels, rubber soles, laces, metal hardware and trim use neutral cream/gray so material roles can be isolated. No extra graphics, brand logos, text, watermarks or labels. Genuine transparent RGBA background including openings, NOT a painted checkerboard or solid backdrop. Center the entire item on a square canvas with generous clear margins. No display board, no additional items or characters. This is real source artwork for an aligned 128×128 avatar layer."
+    },
+    {
+      "id": "bottom.wide_denim",
+      "name": "Wide-leg jeans",
+      "collection": "Denim",
+      "description": "wide-leg clean denim jeans with a generous continuous leg silhouette and broad hems",
+      "kind": "bottom",
+      "width": 30,
+      "color": "Slate blue",
+      "source": "bottom_wide_denim.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar bottom layer. Reference image is the approved character style and exact pose. Create ONLY wide-leg clean denim jeans with a generous continuous leg silhouette and broad hems. Front-facing pants, upright, both legs straight and separated by a narrow clear gap, waistband level and hems on same line. Empty garment only: no torso, hands, legs, feet or shoes. Use the same deliberately coarse modern pixel art as the character, clean stair-step silhouette, dark one-logical-pixel outline, broad clusters with 3–5 values per material, readable at small size. Main material is medium slate BLUE, highlights lighter blue and shadows dark navy. Secondary panels, rubber soles, laces, metal hardware and trim use neutral cream/gray so material roles can be isolated. No extra graphics, brand logos, text, watermarks or labels. Genuine transparent RGBA background including openings, NOT a painted checkerboard or solid backdrop. Center the entire item on a square canvas with generous clear margins. No display board, no additional items or characters. This is real source artwork for an aligned 128×128 avatar layer."
+    },
+    {
+      "id": "bottom.carpenter_denim",
+      "name": "Carpenter jeans",
+      "collection": "Denim",
+      "description": "relaxed carpenter jeans with double-knee panels, side utility pocket and hammer loop",
+      "kind": "bottom",
+      "width": 28,
+      "color": "Slate blue",
+      "source": "bottom_carpenter_denim.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar bottom layer. Reference image is the approved character style and exact pose. Create ONLY relaxed carpenter jeans with double-knee panels, side utility pocket and hammer loop. Front-facing pants, upright, both legs straight and separated by a narrow clear gap, waistband level and hems on same line. Empty garment only: no torso, hands, legs, feet or shoes. Use the same deliberately coarse modern pixel art as the character, clean stair-step silhouette, dark one-logical-pixel outline, broad clusters with 3–5 values per material, readable at small size. Main material is medium slate BLUE, highlights lighter blue and shadows dark navy. Secondary panels, rubber soles, laces, metal hardware and trim use neutral cream/gray so material roles can be isolated. No extra graphics, brand logos, text, watermarks or labels. Genuine transparent RGBA background including openings, NOT a painted checkerboard or solid backdrop. Center the entire item on a square canvas with generous clear margins. No display board, no additional items or characters. This is real source artwork for an aligned 128×128 avatar layer."
+    },
+    {
+      "id": "bottom.barrel_denim",
+      "name": "Barrel jeans",
+      "collection": "Denim",
+      "description": "barrel-cut jeans with rounded outer legs tapering subtly at ankle, curved seams",
+      "kind": "bottom",
+      "width": 30,
+      "color": "Slate blue",
+      "source": "bottom_barrel_denim.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar bottom layer. Reference image is the approved character style and exact pose. Create ONLY barrel-cut jeans with rounded outer legs tapering subtly at ankle, curved seams. Front-facing pants, upright, both legs straight and separated by a narrow clear gap, waistband level and hems on same line. Empty garment only: no torso, hands, legs, feet or shoes. Use the same deliberately coarse modern pixel art as the character, clean stair-step silhouette, dark one-logical-pixel outline, broad clusters with 3–5 values per material, readable at small size. Main material is medium slate BLUE, highlights lighter blue and shadows dark navy. Secondary panels, rubber soles, laces, metal hardware and trim use neutral cream/gray so material roles can be isolated. No extra graphics, brand logos, text, watermarks or labels. Genuine transparent RGBA background including openings, NOT a painted checkerboard or solid backdrop. Center the entire item on a square canvas with generous clear margins. No display board, no additional items or characters. This is real source artwork for an aligned 128×128 avatar layer."
+    },
+    {
+      "id": "bottom.parachute_cargo",
+      "name": "Parachute cargo",
+      "collection": "Street",
+      "description": "baggy nylon parachute cargo pants with large bellows thigh pockets and gathered ankle drawcords",
+      "kind": "bottom",
+      "width": 30,
+      "color": "Slate blue",
+      "source": "bottom_parachute_cargo.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar bottom layer. Reference image is the approved character style and exact pose. Create ONLY baggy nylon parachute cargo pants with large bellows thigh pockets and gathered ankle drawcords. Front-facing pants, upright, both legs straight and separated by a narrow clear gap, waistband level and hems on same line. Empty garment only: no torso, hands, legs, feet or shoes. Use the same deliberately coarse modern pixel art as the character, clean stair-step silhouette, dark one-logical-pixel outline, broad clusters with 3–5 values per material, readable at small size. Main material is medium slate BLUE, highlights lighter blue and shadows dark navy. Secondary panels, rubber soles, laces, metal hardware and trim use neutral cream/gray so material roles can be isolated. No extra graphics, brand logos, text, watermarks or labels. Genuine transparent RGBA background including openings, NOT a painted checkerboard or solid backdrop. Center the entire item on a square canvas with generous clear margins. No display board, no additional items or characters. This is real source artwork for an aligned 128×128 avatar layer."
+    },
+    {
+      "id": "bottom.pleated_wide",
+      "name": "Wide pleated trousers",
+      "collection": "Smart",
+      "description": "wide tailored trousers with double front pleats and clean pressed center creases",
+      "kind": "bottom",
+      "width": 28,
+      "color": "Slate blue",
+      "source": "bottom_pleated_wide.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar bottom layer. Reference image is the approved character style and exact pose. Create ONLY wide tailored trousers with double front pleats and clean pressed center creases. Front-facing pants, upright, both legs straight and separated by a narrow clear gap, waistband level and hems on same line. Empty garment only: no torso, hands, legs, feet or shoes. Use the same deliberately coarse modern pixel art as the character, clean stair-step silhouette, dark one-logical-pixel outline, broad clusters with 3–5 values per material, readable at small size. Main material is medium slate BLUE, highlights lighter blue and shadows dark navy. Secondary panels, rubber soles, laces, metal hardware and trim use neutral cream/gray so material roles can be isolated. No extra graphics, brand logos, text, watermarks or labels. Genuine transparent RGBA background including openings, NOT a painted checkerboard or solid backdrop. Center the entire item on a square canvas with generous clear margins. No display board, no additional items or characters. This is real source artwork for an aligned 128×128 avatar layer."
+    },
+    {
+      "id": "bottom.stacked_sweats",
+      "name": "Stacked sweatpants",
+      "collection": "Everyday",
+      "description": "relaxed straight sweatpants with drawstring waist, soft folds and stacked ribless hems",
+      "kind": "bottom",
+      "width": 29,
+      "color": "Slate blue",
+      "source": "bottom_stacked_sweats.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar bottom layer. Reference image is the approved character style and exact pose. Create ONLY relaxed straight sweatpants with drawstring waist, soft folds and stacked ribless hems. Front-facing pants, upright, both legs straight and separated by a narrow clear gap, waistband level and hems on same line. Empty garment only: no torso, hands, legs, feet or shoes. Use the same deliberately coarse modern pixel art as the character, clean stair-step silhouette, dark one-logical-pixel outline, broad clusters with 3–5 values per material, readable at small size. Main material is medium slate BLUE, highlights lighter blue and shadows dark navy. Secondary panels, rubber soles, laces, metal hardware and trim use neutral cream/gray so material roles can be isolated. No extra graphics, brand logos, text, watermarks or labels. Genuine transparent RGBA background including openings, NOT a painted checkerboard or solid backdrop. Center the entire item on a square canvas with generous clear margins. No display board, no additional items or characters. This is real source artwork for an aligned 128×128 avatar layer."
+    },
+    {
+      "id": "bottom.piped_warmup",
+      "name": "Piped warmup pants",
+      "collection": "Training",
+      "description": "loose track warmup pants with a single curved piping detail at side, subtly tapered ankle and drawcord waistband",
+      "kind": "bottom",
+      "width": 28,
+      "color": "Slate blue",
+      "source": "bottom_piped_warmup.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar bottom layer. Reference image is the approved character style and exact pose. Create ONLY loose track warmup pants with a single curved piping detail at side, subtly tapered ankle and drawcord waistband. Front-facing pants, upright, both legs straight and separated by a narrow clear gap, waistband level and hems on same line. Empty garment only: no torso, hands, legs, feet or shoes. Use the same deliberately coarse modern pixel art as the character, clean stair-step silhouette, dark one-logical-pixel outline, broad clusters with 3–5 values per material, readable at small size. Main material is medium slate BLUE, highlights lighter blue and shadows dark navy. Secondary panels, rubber soles, laces, metal hardware and trim use neutral cream/gray so material roles can be isolated. No extra graphics, brand logos, text, watermarks or labels. Genuine transparent RGBA background including openings, NOT a painted checkerboard or solid backdrop. Center the entire item on a square canvas with generous clear margins. No display board, no additional items or characters. This is real source artwork for an aligned 128×128 avatar layer."
+    }
+  ]
+}

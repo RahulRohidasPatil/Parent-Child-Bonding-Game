@@ -1,0 +1,547 @@
+{
+ "tier": 1,
+ "room": "english",
+ "size": [
+  572,
+  476
+ ],
+ "tile": [
+  64,
+  32
+ ],
+ "room_tiles": 8,
+ "floor_origin": [
+  286.0,
+  180
+ ],
+ "items": [
+  {
+   "id": "story_wall",
+   "name": "Story wall",
+   "slot": "wl",
+   "levels": [
+    {
+     "level": 1,
+     "file": "story_wall/lv01.png",
+     "x": 143,
+     "y": 95,
+     "w": 62,
+     "h": 104
+    },
+    {
+     "level": 2,
+     "file": "story_wall/lv02.png",
+     "x": 143,
+     "y": 95,
+     "w": 62,
+     "h": 104
+    },
+    {
+     "level": 3,
+     "file": "story_wall/lv03.png",
+     "x": 143,
+     "y": 95,
+     "w": 62,
+     "h": 104
+    },
+    {
+     "level": 4,
+     "file": "story_wall/lv04.png",
+     "x": 134,
+     "y": 82,
+     "w": 78,
+     "h": 132
+    },
+    {
+     "level": 5,
+     "file": "story_wall/lv05.png",
+     "x": 134,
+     "y": 82,
+     "w": 78,
+     "h": 132
+    },
+    {
+     "level": 6,
+     "file": "story_wall/lv06.png",
+     "x": 134,
+     "y": 82,
+     "w": 78,
+     "h": 132
+    },
+    {
+     "level": 7,
+     "file": "story_wall/lv07.png",
+     "x": 124,
+     "y": 69,
+     "w": 98,
+     "h": 156
+    },
+    {
+     "level": 8,
+     "file": "story_wall/lv08.png",
+     "x": 124,
+     "y": 69,
+     "w": 98,
+     "h": 156
+    },
+    {
+     "level": 9,
+     "file": "story_wall/lv09.png",
+     "x": 124,
+     "y": 69,
+     "w": 98,
+     "h": 156
+    },
+    {
+     "level": 10,
+     "file": "story_wall/lv10.png",
+     "x": 116,
+     "y": 60,
+     "w": 116,
+     "h": 174
+    }
+   ],
+   "z": -1
+  },
+  {
+   "id": "bookshelf",
+   "name": "Big bookshelf",
+   "slot": "r1",
+   "levels": [
+    {
+     "level": 1,
+     "file": "bookshelf/lv01.png",
+     "x": 290,
+     "y": 173,
+     "w": 72,
+     "h": 68
+    },
+    {
+     "level": 2,
+     "file": "bookshelf/lv02.png",
+     "x": 290,
+     "y": 154,
+     "w": 72,
+     "h": 86
+    },
+    {
+     "level": 3,
+     "file": "bookshelf/lv03.png",
+     "x": 290,
+     "y": 152,
+     "w": 72,
+     "h": 88
+    },
+    {
+     "level": 4,
+     "file": "bookshelf/lv04.png",
+     "x": 289,
+     "y": 150,
+     "w": 76,
+     "h": 92
+    },
+    {
+     "level": 5,
+     "file": "bookshelf/lv05.png",
+     "x": 289,
+     "y": 150,
+     "w": 76,
+     "h": 92
+    },
+    {
+     "level": 6,
+     "file": "bookshelf/lv06.png",
+     "x": 289,
+     "y": 150,
+     "w": 76,
+     "h": 92
+    },
+    {
+     "level": 7,
+     "file": "bookshelf/lv07.png",
+     "x": 283,
+     "y": 108,
+     "w": 90,
+     "h": 134
+    },
+    {
+     "level": 8,
+     "file": "bookshelf/lv08.png",
+     "x": 283,
+     "y": 108,
+     "w": 90,
+     "h": 134
+    },
+    {
+     "level": 9,
+     "file": "bookshelf/lv09.png",
+     "x": 273,
+     "y": 108,
+     "w": 100,
+     "h": 134
+    },
+    {
+     "level": 10,
+     "file": "bookshelf/lv10.png",
+     "x": 271,
+     "y": 103,
+     "w": 106,
+     "h": 138
+    }
+   ],
+   "z": 3.8
+  },
+  {
+   "id": "book_stand",
+   "name": "Book stand",
+   "slot": "l1",
+   "levels": [
+    {
+     "level": 1,
+     "file": "book_stand/lv01.png",
+     "x": 234,
+     "y": 201,
+     "w": 24,
+     "h": 46
+    },
+    {
+     "level": 2,
+     "file": "book_stand/lv02.png",
+     "x": 213,
+     "y": 201,
+     "w": 44,
+     "h": 52
+    },
+    {
+     "level": 3,
+     "file": "book_stand/lv03.png",
+     "x": 213,
+     "y": 201,
+     "w": 54,
+     "h": 52
+    },
+    {
+     "level": 4,
+     "file": "book_stand/lv04.png",
+     "x": 212,
+     "y": 198,
+     "w": 56,
+     "h": 54
+    },
+    {
+     "level": 5,
+     "file": "book_stand/lv05.png",
+     "x": 208,
+     "y": 198,
+     "w": 60,
+     "h": 54
+    },
+    {
+     "level": 6,
+     "file": "book_stand/lv06.png",
+     "x": 208,
+     "y": 198,
+     "w": 60,
+     "h": 54
+    },
+    {
+     "level": 7,
+     "file": "book_stand/lv07.png",
+     "x": 207,
+     "y": 194,
+     "w": 74,
+     "h": 58
+    },
+    {
+     "level": 8,
+     "file": "book_stand/lv08.png",
+     "x": 207,
+     "y": 194,
+     "w": 74,
+     "h": 58
+    },
+    {
+     "level": 9,
+     "file": "book_stand/lv09.png",
+     "x": 207,
+     "y": 194,
+     "w": 74,
+     "h": 58
+    },
+    {
+     "level": 10,
+     "file": "book_stand/lv10.png",
+     "x": 205,
+     "y": 187,
+     "w": 88,
+     "h": 66
+    }
+   ],
+   "z": 4.1
+  },
+  {
+   "id": "writing_desk",
+   "name": "Writing desk",
+   "slot": "r2",
+   "levels": [
+    {
+     "level": 1,
+     "file": "writing_desk/lv01.png",
+     "x": 422,
+     "y": 246,
+     "w": 64,
+     "h": 64
+    },
+    {
+     "level": 2,
+     "file": "writing_desk/lv02.png",
+     "x": 422,
+     "y": 242,
+     "w": 64,
+     "h": 66
+    },
+    {
+     "level": 3,
+     "file": "writing_desk/lv03.png",
+     "x": 422,
+     "y": 242,
+     "w": 64,
+     "h": 66
+    },
+    {
+     "level": 4,
+     "file": "writing_desk/lv04.png",
+     "x": 418,
+     "y": 233,
+     "w": 74,
+     "h": 76
+    },
+    {
+     "level": 5,
+     "file": "writing_desk/lv05.png",
+     "x": 418,
+     "y": 233,
+     "w": 74,
+     "h": 76
+    },
+    {
+     "level": 6,
+     "file": "writing_desk/lv06.png",
+     "x": 418,
+     "y": 233,
+     "w": 74,
+     "h": 76
+    },
+    {
+     "level": 7,
+     "file": "writing_desk/lv07.png",
+     "x": 417,
+     "y": 231,
+     "w": 76,
+     "h": 78
+    },
+    {
+     "level": 8,
+     "file": "writing_desk/lv08.png",
+     "x": 417,
+     "y": 231,
+     "w": 76,
+     "h": 78
+    },
+    {
+     "level": 9,
+     "file": "writing_desk/lv09.png",
+     "x": 417,
+     "y": 231,
+     "w": 76,
+     "h": 78
+    },
+    {
+     "level": 10,
+     "file": "writing_desk/lv10.png",
+     "x": 392,
+     "y": 228,
+     "w": 120,
+     "h": 88
+    }
+   ],
+   "z": 8.0
+  },
+  {
+   "id": "cozy_sofa",
+   "name": "Cozy sofa",
+   "slot": "l2",
+   "levels": [
+    {
+     "level": 1,
+     "file": "cozy_sofa/lv01.png",
+     "x": 104,
+     "y": 287,
+     "w": 30,
+     "h": 30
+    },
+    {
+     "level": 2,
+     "file": "cozy_sofa/lv02.png",
+     "x": 104,
+     "y": 280,
+     "w": 30,
+     "h": 36
+    },
+    {
+     "level": 3,
+     "file": "cozy_sofa/lv03.png",
+     "x": 94,
+     "y": 280,
+     "w": 40,
+     "h": 36
+    },
+    {
+     "level": 4,
+     "file": "cozy_sofa/lv04.png",
+     "x": 83,
+     "y": 270,
+     "w": 50,
+     "h": 48
+    },
+    {
+     "level": 5,
+     "file": "cozy_sofa/lv05.png",
+     "x": 83,
+     "y": 270,
+     "w": 60,
+     "h": 48
+    },
+    {
+     "level": 6,
+     "file": "cozy_sofa/lv06.png",
+     "x": 83,
+     "y": 270,
+     "w": 60,
+     "h": 48
+    },
+    {
+     "level": 7,
+     "file": "cozy_sofa/lv07.png",
+     "x": 74,
+     "y": 252,
+     "w": 78,
+     "h": 64
+    },
+    {
+     "level": 8,
+     "file": "cozy_sofa/lv08.png",
+     "x": 74,
+     "y": 252,
+     "w": 78,
+     "h": 64
+    },
+    {
+     "level": 9,
+     "file": "cozy_sofa/lv09.png",
+     "x": 74,
+     "y": 252,
+     "w": 78,
+     "h": 64
+    },
+    {
+     "level": 10,
+     "file": "cozy_sofa/lv10.png",
+     "x": 57,
+     "y": 242,
+     "w": 112,
+     "h": 74
+    }
+   ],
+   "z": 8.1
+  },
+  {
+   "id": "reading_chair",
+   "name": "Reading chair",
+   "slot": "c",
+   "levels": [
+    {
+     "level": 1,
+     "file": "reading_chair/lv01.png",
+     "x": 265,
+     "y": 305,
+     "w": 28,
+     "h": 50
+    },
+    {
+     "level": 2,
+     "file": "reading_chair/lv02.png",
+     "x": 257,
+     "y": 303,
+     "w": 36,
+     "h": 58
+    },
+    {
+     "level": 3,
+     "file": "reading_chair/lv03.png",
+     "x": 257,
+     "y": 303,
+     "w": 48,
+     "h": 58
+    },
+    {
+     "level": 4,
+     "file": "reading_chair/lv04.png",
+     "x": 256,
+     "y": 300,
+     "w": 50,
+     "h": 60
+    },
+    {
+     "level": 5,
+     "file": "reading_chair/lv05.png",
+     "x": 256,
+     "y": 300,
+     "w": 52,
+     "h": 60
+    },
+    {
+     "level": 6,
+     "file": "reading_chair/lv06.png",
+     "x": 256,
+     "y": 300,
+     "w": 52,
+     "h": 60
+    },
+    {
+     "level": 7,
+     "file": "reading_chair/lv07.png",
+     "x": 245,
+     "y": 293,
+     "w": 74,
+     "h": 68
+    },
+    {
+     "level": 8,
+     "file": "reading_chair/lv08.png",
+     "x": 245,
+     "y": 293,
+     "w": 74,
+     "h": 68
+    },
+    {
+     "level": 9,
+     "file": "reading_chair/lv09.png",
+     "x": 245,
+     "y": 293,
+     "w": 74,
+     "h": 68
+    },
+    {
+     "level": 10,
+     "file": "reading_chair/lv10.png",
+     "x": 241,
+     "y": 282,
+     "w": 78,
+     "h": 78
+    }
+   ],
+   "z": 10.8
+  }
+ ]
+}

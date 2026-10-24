@@ -1,0 +1,26 @@
+{
+  "mode": "built-in image_gen",
+  "jobs": [
+    {
+      "id": "top.waffle_henley",
+      "source": "references/avatar-wardrobe-expansion/top_waffle_henley.png",
+      "out": "henley_v2.png",
+      "detail": "Keep a few widely spaced waffle-knit blocks, not a dense grid.",
+      "prompt": "Use case: precise-object-edit. Edit only the supplied isolated pixel garment to reduce excessive texture. Preserve its exact overall silhouette, sleeve pose, cuffs, neckline, hem, pockets, garment type, original main colors and relative position on the canvas. Keep a few widely spaced waffle-knit blocks, not a dense grid. Replace fine noisy texture with broad deliberate pixel-art shadow shapes. Use at most four tones per material, crisp logical pixel edges, no dithering, gradients, microtexture or soft lighting. Keep white/cream trim distinct where present. Show only this garment; no face, skin, body, hands, labels or new graphics. True transparent RGBA background, including openings; not a checkerboard. Match the clean modern DIFF pixel character style."
+    },
+    {
+      "id": "jacket.sherpa_fleece",
+      "source": "references/avatar-wardrobe-expansion/jacket_sherpa_fleece.png",
+      "out": "sherpa_v2.png",
+      "detail": "Keep the contrast chest pocket and zipper. Suggest fleece with a few larger clusters rather than speckles.",
+      "prompt": "Use case: precise-object-edit. Edit only the supplied isolated pixel garment to reduce excessive texture. Preserve its exact overall silhouette, sleeve pose, cuffs, neckline, hem, pockets, garment type, original main colors and relative position on the canvas. Keep the contrast chest pocket and zipper. Suggest fleece with a few larger clusters rather than speckles. Replace fine noisy texture with broad deliberate pixel-art shadow shapes. Use at most four tones per material, crisp logical pixel edges, no dithering, gradients, microtexture or soft lighting. Keep white/cream trim distinct where present. Show only this garment; no face, skin, body, hands, labels or new graphics. True transparent RGBA background, including openings; not a checkerboard. Match the clean modern DIFF pixel character style."
+    },
+    {
+      "id": "top.cable_knit",
+      "source": "references/avatar-revision-v6/top-cable_knit.png",
+      "out": "cable_knit_v2.png",
+      "detail": "Keep the two cable-knit columns and ribbed trim, but simplify each cable to large readable stitches.",
+      "prompt": "Use case: precise-object-edit. Edit only the supplied isolated pixel garment to reduce excessive texture. Preserve its exact overall silhouette, sleeve pose, cuffs, neckline, hem, pockets, garment type, original main colors and relative position on the canvas. Keep the two cable-knit columns and ribbed trim, but simplify each cable to large readable stitches. Replace fine noisy texture with broad deliberate pixel-art shadow shapes. Use at most four tones per material, crisp logical pixel edges, no dithering, gradients, microtexture or soft lighting. Keep white/cream trim distinct where present. Show only this garment; no face, skin, body, hands, labels or new graphics. True transparent RGBA background, including openings; not a checkerboard. Match the clean modern DIFF pixel character style."
+    }
+  ]
+}

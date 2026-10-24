@@ -1,0 +1,1741 @@
+{
+  "version": 5,
+  "pack": "atelier-r5",
+  "rig": "front_reference_v1",
+  "size": 128,
+  "cosmetics": [
+    {
+      "id": "head.soft_oval",
+      "name": "Reference head",
+      "slot": "head",
+      "collection": "Head shape",
+      "color": "Skin matched",
+      "layers": [
+        {
+          "file": "layers/head_soft_oval_skin_02_v5.png",
+          "z": 21,
+          "region": "head",
+          "source": "references/avatar-exact-v5/body-reference.png",
+          "sha256": "52f45481b722efc8013e8bbc3df04bfdf42c146c962e0831390360b6bf75ba42",
+          "skinVariants": {
+            "skin_01": "layers/head_soft_oval_skin_01_v5.png",
+            "skin_02": "layers/head_soft_oval_skin_02_v5.png",
+            "skin_03": "layers/head_soft_oval_skin_03_v5.png",
+            "skin_04": "layers/head_soft_oval_skin_04_v5.png",
+            "skin_05": "layers/head_soft_oval_skin_05_v5.png",
+            "skin_06": "layers/head_soft_oval_skin_06_v5.png",
+            "skin_07": "layers/head_soft_oval_skin_07_v5.png",
+            "skin_08": "layers/head_soft_oval_skin_08_v5.png",
+            "skin_09": "layers/head_soft_oval_skin_09_v5.png",
+            "skin_10": "layers/head_soft_oval_skin_10_v5.png",
+            "skin_11": "layers/head_soft_oval_skin_11_v5.png",
+            "skin_12": "layers/head_soft_oval_skin_12_v5.png"
+          }
+        }
+      ]
+    },
+    {
+      "id": "head.round",
+      "name": "Round",
+      "slot": "head",
+      "collection": "Head shape",
+      "color": "Skin matched",
+      "layers": [
+        {
+          "file": "layers/head_round_skin_02_v5.png",
+          "z": 21,
+          "region": "head",
+          "source": "references/avatar-faces-v3/head-round.png",
+          "sha256": "7e63969bfabb8055b7a58240e83decdaf9b11e15ddc3208376ddbf8873428680",
+          "skinVariants": {
+            "skin_01": "layers/head_round_skin_01_v5.png",
+            "skin_02": "layers/head_round_skin_02_v5.png",
+            "skin_03": "layers/head_round_skin_03_v5.png",
+            "skin_04": "layers/head_round_skin_04_v5.png",
+            "skin_05": "layers/head_round_skin_05_v5.png",
+            "skin_06": "layers/head_round_skin_06_v5.png",
+            "skin_07": "layers/head_round_skin_07_v5.png",
+            "skin_08": "layers/head_round_skin_08_v5.png",
+            "skin_09": "layers/head_round_skin_09_v5.png",
+            "skin_10": "layers/head_round_skin_10_v5.png",
+            "skin_11": "layers/head_round_skin_11_v5.png",
+            "skin_12": "layers/head_round_skin_12_v5.png"
+          }
+        }
+      ]
+    },
+    {
+      "id": "head.soft_square",
+      "name": "Soft square",
+      "slot": "head",
+      "collection": "Head shape",
+      "color": "Skin matched",
+      "layers": [
+        {
+          "file": "layers/head_soft_square_skin_02_v5.png",
+          "z": 21,
+          "region": "head",
+          "source": "references/avatar-faces-v3/head-soft-square.png",
+          "sha256": "c1de3089dc93981054d6524daefd82e47a06338d994611400657d84cad7ec05c",
+          "skinVariants": {
+            "skin_01": "layers/head_soft_square_skin_01_v5.png",
+            "skin_02": "layers/head_soft_square_skin_02_v5.png",
+            "skin_03": "layers/head_soft_square_skin_03_v5.png",
+            "skin_04": "layers/head_soft_square_skin_04_v5.png",
+            "skin_05": "layers/head_soft_square_skin_05_v5.png",
+            "skin_06": "layers/head_soft_square_skin_06_v5.png",
+            "skin_07": "layers/head_soft_square_skin_07_v5.png",
+            "skin_08": "layers/head_soft_square_skin_08_v5.png",
+            "skin_09": "layers/head_soft_square_skin_09_v5.png",
+            "skin_10": "layers/head_soft_square_skin_10_v5.png",
+            "skin_11": "layers/head_soft_square_skin_11_v5.png",
+            "skin_12": "layers/head_soft_square_skin_12_v5.png"
+          }
+        }
+      ]
+    },
+    {
+      "id": "head.full_round",
+      "name": "Full round",
+      "slot": "head",
+      "collection": "Head shape",
+      "color": "Skin matched",
+      "layers": [
+        {
+          "file": "layers/head_full_round_skin_02_v5.png",
+          "z": 21,
+          "region": "head",
+          "source": "references/avatar-faces-v3/head-full-round.png",
+          "sha256": "413111af80fcc36ac73667af0460a8ad00260f758b23c495d5ace0c2ec615c0a",
+          "skinVariants": {
+            "skin_01": "layers/head_full_round_skin_01_v5.png",
+            "skin_02": "layers/head_full_round_skin_02_v5.png",
+            "skin_03": "layers/head_full_round_skin_03_v5.png",
+            "skin_04": "layers/head_full_round_skin_04_v5.png",
+            "skin_05": "layers/head_full_round_skin_05_v5.png",
+            "skin_06": "layers/head_full_round_skin_06_v5.png",
+            "skin_07": "layers/head_full_round_skin_07_v5.png",
+            "skin_08": "layers/head_full_round_skin_08_v5.png",
+            "skin_09": "layers/head_full_round_skin_09_v5.png",
+            "skin_10": "layers/head_full_round_skin_10_v5.png",
+            "skin_11": "layers/head_full_round_skin_11_v5.png",
+            "skin_12": "layers/head_full_round_skin_12_v5.png"
+          }
+        }
+      ]
+    },
+    {
+      "id": "head.narrow",
+      "name": "Narrow oval",
+      "slot": "head",
+      "collection": "Head shape",
+      "color": "Skin matched",
+      "layers": [
+        {
+          "file": "layers/head_narrow_skin_02_v5.png",
+          "z": 21,
+          "region": "head",
+          "source": "references/avatar-faces-v3/head-narrow.png",
+          "sha256": "0af3113d06099d4cfe55dac57b6808d328ba0de4e4306730e3924c2b57bd69e4",
+          "skinVariants": {
+            "skin_01": "layers/head_narrow_skin_01_v5.png",
+            "skin_02": "layers/head_narrow_skin_02_v5.png",
+            "skin_03": "layers/head_narrow_skin_03_v5.png",
+            "skin_04": "layers/head_narrow_skin_04_v5.png",
+            "skin_05": "layers/head_narrow_skin_05_v5.png",
+            "skin_06": "layers/head_narrow_skin_06_v5.png",
+            "skin_07": "layers/head_narrow_skin_07_v5.png",
+            "skin_08": "layers/head_narrow_skin_08_v5.png",
+            "skin_09": "layers/head_narrow_skin_09_v5.png",
+            "skin_10": "layers/head_narrow_skin_10_v5.png",
+            "skin_11": "layers/head_narrow_skin_11_v5.png",
+            "skin_12": "layers/head_narrow_skin_12_v5.png"
+          }
+        }
+      ]
+    },
+    {
+      "id": "head.angular",
+      "name": "Angular",
+      "slot": "head",
+      "collection": "Head shape",
+      "color": "Skin matched",
+      "layers": [
+        {
+          "file": "layers/head_angular_skin_02_v5.png",
+          "z": 21,
+          "region": "head",
+          "source": "references/avatar-atelier/body-source.png",
+          "sha256": "a207ddb8a61df42c2e54d33cdc77f8e0618dbb860cf0766eb2a3a698bfb4c500",
+          "skinVariants": {
+            "skin_01": "layers/head_angular_skin_01_v5.png",
+            "skin_02": "layers/head_angular_skin_02_v5.png",
+            "skin_03": "layers/head_angular_skin_03_v5.png",
+            "skin_04": "layers/head_angular_skin_04_v5.png",
+            "skin_05": "layers/head_angular_skin_05_v5.png",
+            "skin_06": "layers/head_angular_skin_06_v5.png",
+            "skin_07": "layers/head_angular_skin_07_v5.png",
+            "skin_08": "layers/head_angular_skin_08_v5.png",
+            "skin_09": "layers/head_angular_skin_09_v5.png",
+            "skin_10": "layers/head_angular_skin_10_v5.png",
+            "skin_11": "layers/head_angular_skin_11_v5.png",
+            "skin_12": "layers/head_angular_skin_12_v5.png"
+          }
+        }
+      ]
+    },
+    {
+      "id": "eyes.reference_neutral",
+      "name": "Neutral eyes",
+      "slot": "eyes",
+      "collection": "Expression",
+      "color": "Natural",
+      "layers": [
+        {
+          "file": "layers/eyes_reference_neutral_eye_dark_brown_v5.png",
+          "z": 50,
+          "region": "eyes",
+          "source": "references/avatar-exact-v5/body-reference.png",
+          "sha256": "039ae30f89af41af279ef5de63f0f63b611d83b184a96e68ff8c1e38c580df46",
+          "eyeVariants": {
+            "eye.dark_brown": "layers/eyes_reference_neutral_eye_dark_brown_v5.png",
+            "eye.brown": "layers/eyes_reference_neutral_eye_brown_v5.png",
+            "eye.hazel": "layers/eyes_reference_neutral_eye_hazel_v5.png",
+            "eye.green": "layers/eyes_reference_neutral_eye_green_v5.png",
+            "eye.blue": "layers/eyes_reference_neutral_eye_blue_v5.png",
+            "eye.gray": "layers/eyes_reference_neutral_eye_gray_v5.png"
+          }
+        }
+      ]
+    },
+    {
+      "id": "eyes.reference_friendly",
+      "name": "Friendly eyes",
+      "slot": "eyes",
+      "collection": "Expression",
+      "color": "Natural",
+      "layers": [
+        {
+          "file": "layers/eyes_reference_friendly_eye_dark_brown_v5.png",
+          "z": 50,
+          "region": "eyes",
+          "source": "references/avatar-exact-v5/body-reference.png",
+          "sha256": "b37f16fb2616388fd80b6b14e34721fdf350397129cf775a625886f1abe61668",
+          "eyeVariants": {
+            "eye.dark_brown": "layers/eyes_reference_friendly_eye_dark_brown_v5.png",
+            "eye.brown": "layers/eyes_reference_friendly_eye_brown_v5.png",
+            "eye.hazel": "layers/eyes_reference_friendly_eye_hazel_v5.png",
+            "eye.green": "layers/eyes_reference_friendly_eye_green_v5.png",
+            "eye.blue": "layers/eyes_reference_friendly_eye_blue_v5.png",
+            "eye.gray": "layers/eyes_reference_friendly_eye_gray_v5.png"
+          }
+        }
+      ]
+    },
+    {
+      "id": "eyes.reference_focused",
+      "name": "Focused eyes",
+      "slot": "eyes",
+      "collection": "Expression",
+      "color": "Natural",
+      "layers": [
+        {
+          "file": "layers/eyes_reference_focused_eye_dark_brown_v5.png",
+          "z": 50,
+          "region": "eyes",
+          "source": "references/avatar-exact-v5/body-reference.png",
+          "sha256": "2e58144c47c8c00438e5b3970cdd7dc98deddc7482606c78c9fdc6da44aaf0b9",
+          "eyeVariants": {
+            "eye.dark_brown": "layers/eyes_reference_focused_eye_dark_brown_v5.png",
+            "eye.brown": "layers/eyes_reference_focused_eye_brown_v5.png",
+            "eye.hazel": "layers/eyes_reference_focused_eye_hazel_v5.png",
+            "eye.green": "layers/eyes_reference_focused_eye_green_v5.png",
+            "eye.blue": "layers/eyes_reference_focused_eye_blue_v5.png",
+            "eye.gray": "layers/eyes_reference_focused_eye_gray_v5.png"
+          }
+        }
+      ]
+    },
+    {
+      "id": "brows.reference_neutral",
+      "name": "Neutral brows",
+      "slot": "brows",
+      "collection": "Expression",
+      "color": "Natural",
+      "layers": [
+        {
+          "file": "layers/brows_reference_neutral_v5.png",
+          "z": 52,
+          "region": "brows",
+          "source": "references/avatar-exact-v5/body-reference.png",
+          "sha256": "e1fcae034c7e27cd2e861699b26c4d3af244ce976c7444000a06e2a0f114a969"
+        }
+      ]
+    },
+    {
+      "id": "brows.reference_friendly",
+      "name": "Friendly brows",
+      "slot": "brows",
+      "collection": "Expression",
+      "color": "Natural",
+      "layers": [
+        {
+          "file": "layers/brows_reference_friendly_v5.png",
+          "z": 52,
+          "region": "brows",
+          "source": "references/avatar-exact-v5/body-reference.png",
+          "sha256": "985f7b8f68d6561a5841a082e2250960ab91f11aec1c1680d3694602543a966b"
+        }
+      ]
+    },
+    {
+      "id": "brows.reference_focused",
+      "name": "Focused brows",
+      "slot": "brows",
+      "collection": "Expression",
+      "color": "Natural",
+      "layers": [
+        {
+          "file": "layers/brows_reference_focused_v5.png",
+          "z": 52,
+          "region": "brows",
+          "source": "references/avatar-exact-v5/body-reference.png",
+          "sha256": "48f85904644f352cdbbbdc0aaca328ada05896f07bcdb1196decee5fd517385b"
+        }
+      ]
+    },
+    {
+      "id": "nose.reference_neutral",
+      "name": "Neutral nose",
+      "slot": "nose",
+      "collection": "Expression",
+      "color": "Natural",
+      "layers": [
+        {
+          "file": "layers/nose_reference_neutral_skin_02_v5.png",
+          "z": 53,
+          "region": "nose",
+          "source": "references/avatar-exact-v5/body-reference.png",
+          "sha256": "b4825af86fed17b33ab536bf1a0b20dbd192f6f2133d9b1eb5b019202858bef6",
+          "skinVariants": {
+            "skin_01": "layers/nose_reference_neutral_skin_01_v5.png",
+            "skin_02": "layers/nose_reference_neutral_skin_02_v5.png",
+            "skin_03": "layers/nose_reference_neutral_skin_03_v5.png",
+            "skin_04": "layers/nose_reference_neutral_skin_04_v5.png",
+            "skin_05": "layers/nose_reference_neutral_skin_05_v5.png",
+            "skin_06": "layers/nose_reference_neutral_skin_06_v5.png",
+            "skin_07": "layers/nose_reference_neutral_skin_07_v5.png",
+            "skin_08": "layers/nose_reference_neutral_skin_08_v5.png",
+            "skin_09": "layers/nose_reference_neutral_skin_09_v5.png",
+            "skin_10": "layers/nose_reference_neutral_skin_10_v5.png",
+            "skin_11": "layers/nose_reference_neutral_skin_11_v5.png",
+            "skin_12": "layers/nose_reference_neutral_skin_12_v5.png"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nose.reference_friendly",
+      "name": "Friendly nose",
+      "slot": "nose",
+      "collection": "Expression",
+      "color": "Natural",
+      "layers": [
+        {
+          "file": "layers/nose_reference_friendly_skin_02_v5.png",
+          "z": 53,
+          "region": "nose",
+          "source": "references/avatar-exact-v5/body-reference.png",
+          "sha256": "774f3169e31354da9b25f937bdbe056b5749f6d4a93cd9a6a9dca713d9169903",
+          "skinVariants": {
+            "skin_01": "layers/nose_reference_friendly_skin_01_v5.png",
+            "skin_02": "layers/nose_reference_friendly_skin_02_v5.png",
+            "skin_03": "layers/nose_reference_friendly_skin_03_v5.png",
+            "skin_04": "layers/nose_reference_friendly_skin_04_v5.png",
+            "skin_05": "layers/nose_reference_friendly_skin_05_v5.png",
+            "skin_06": "layers/nose_reference_friendly_skin_06_v5.png",
+            "skin_07": "layers/nose_reference_friendly_skin_07_v5.png",
+            "skin_08": "layers/nose_reference_friendly_skin_08_v5.png",
+            "skin_09": "layers/nose_reference_friendly_skin_09_v5.png",
+            "skin_10": "layers/nose_reference_friendly_skin_10_v5.png",
+            "skin_11": "layers/nose_reference_friendly_skin_11_v5.png",
+            "skin_12": "layers/nose_reference_friendly_skin_12_v5.png"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nose.reference_focused",
+      "name": "Focused nose",
+      "slot": "nose",
+      "collection": "Expression",
+      "color": "Natural",
+      "layers": [
+        {
+          "file": "layers/nose_reference_focused_skin_02_v5.png",
+          "z": 53,
+          "region": "nose",
+          "source": "references/avatar-exact-v5/body-reference.png",
+          "sha256": "a75dbb01ae75418daa80ab16593e691bc51f2c294dee1fcab637c4f3804f1af9",
+          "skinVariants": {
+            "skin_01": "layers/nose_reference_focused_skin_01_v5.png",
+            "skin_02": "layers/nose_reference_focused_skin_02_v5.png",
+            "skin_03": "layers/nose_reference_focused_skin_03_v5.png",
+            "skin_04": "layers/nose_reference_focused_skin_04_v5.png",
+            "skin_05": "layers/nose_reference_focused_skin_05_v5.png",
+            "skin_06": "layers/nose_reference_focused_skin_06_v5.png",
+            "skin_07": "layers/nose_reference_focused_skin_07_v5.png",
+            "skin_08": "layers/nose_reference_focused_skin_08_v5.png",
+            "skin_09": "layers/nose_reference_focused_skin_09_v5.png",
+            "skin_10": "layers/nose_reference_focused_skin_10_v5.png",
+            "skin_11": "layers/nose_reference_focused_skin_11_v5.png",
+            "skin_12": "layers/nose_reference_focused_skin_12_v5.png"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mouth.reference_neutral",
+      "name": "Neutral mouth",
+      "slot": "mouth",
+      "collection": "Expression",
+      "color": "Natural",
+      "layers": [
+        {
+          "file": "layers/mouth_reference_neutral_skin_02_v5.png",
+          "z": 54,
+          "region": "mouth",
+          "source": "references/avatar-exact-v5/body-reference.png",
+          "sha256": "b22d4a13b98d615569e6de307c7e0af186fa426c8044e9982a34b2bfeab1f32d",
+          "skinVariants": {
+            "skin_01": "layers/mouth_reference_neutral_skin_01_v5.png",
+            "skin_02": "layers/mouth_reference_neutral_skin_02_v5.png",
+            "skin_03": "layers/mouth_reference_neutral_skin_03_v5.png",
+            "skin_04": "layers/mouth_reference_neutral_skin_04_v5.png",
+            "skin_05": "layers/mouth_reference_neutral_skin_05_v5.png",
+            "skin_06": "layers/mouth_reference_neutral_skin_06_v5.png",
+            "skin_07": "layers/mouth_reference_neutral_skin_07_v5.png",
+            "skin_08": "layers/mouth_reference_neutral_skin_08_v5.png",
+            "skin_09": "layers/mouth_reference_neutral_skin_09_v5.png",
+            "skin_10": "layers/mouth_reference_neutral_skin_10_v5.png",
+            "skin_11": "layers/mouth_reference_neutral_skin_11_v5.png",
+            "skin_12": "layers/mouth_reference_neutral_skin_12_v5.png"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mouth.reference_friendly",
+      "name": "Friendly mouth",
+      "slot": "mouth",
+      "collection": "Expression",
+      "color": "Natural",
+      "layers": [
+        {
+          "file": "layers/mouth_reference_friendly_skin_02_v5.png",
+          "z": 54,
+          "region": "mouth",
+          "source": "references/avatar-exact-v5/body-reference.png",
+          "sha256": "aeca8b082dcb410ed0de7a7f2c5de9fc6eefda09dab188b2bd5436b6c9f24b5d",
+          "skinVariants": {
+            "skin_01": "layers/mouth_reference_friendly_skin_01_v5.png",
+            "skin_02": "layers/mouth_reference_friendly_skin_02_v5.png",
+            "skin_03": "layers/mouth_reference_friendly_skin_03_v5.png",
+            "skin_04": "layers/mouth_reference_friendly_skin_04_v5.png",
+            "skin_05": "layers/mouth_reference_friendly_skin_05_v5.png",
+            "skin_06": "layers/mouth_reference_friendly_skin_06_v5.png",
+            "skin_07": "layers/mouth_reference_friendly_skin_07_v5.png",
+            "skin_08": "layers/mouth_reference_friendly_skin_08_v5.png",
+            "skin_09": "layers/mouth_reference_friendly_skin_09_v5.png",
+            "skin_10": "layers/mouth_reference_friendly_skin_10_v5.png",
+            "skin_11": "layers/mouth_reference_friendly_skin_11_v5.png",
+            "skin_12": "layers/mouth_reference_friendly_skin_12_v5.png"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mouth.reference_focused",
+      "name": "Focused mouth",
+      "slot": "mouth",
+      "collection": "Expression",
+      "color": "Natural",
+      "layers": [
+        {
+          "file": "layers/mouth_reference_focused_skin_02_v5.png",
+          "z": 54,
+          "region": "mouth",
+          "source": "references/avatar-exact-v5/body-reference.png",
+          "sha256": "3efd9996e3b652afe850ce68f53fc67e78486193b432d105db15249b99737ebc",
+          "skinVariants": {
+            "skin_01": "layers/mouth_reference_focused_skin_01_v5.png",
+            "skin_02": "layers/mouth_reference_focused_skin_02_v5.png",
+            "skin_03": "layers/mouth_reference_focused_skin_03_v5.png",
+            "skin_04": "layers/mouth_reference_focused_skin_04_v5.png",
+            "skin_05": "layers/mouth_reference_focused_skin_05_v5.png",
+            "skin_06": "layers/mouth_reference_focused_skin_06_v5.png",
+            "skin_07": "layers/mouth_reference_focused_skin_07_v5.png",
+            "skin_08": "layers/mouth_reference_focused_skin_08_v5.png",
+            "skin_09": "layers/mouth_reference_focused_skin_09_v5.png",
+            "skin_10": "layers/mouth_reference_focused_skin_10_v5.png",
+            "skin_11": "layers/mouth_reference_focused_skin_11_v5.png",
+            "skin_12": "layers/mouth_reference_focused_skin_12_v5.png"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ears.small",
+      "name": "Small ears",
+      "slot": "ears",
+      "collection": "Ears",
+      "color": "Skin matched",
+      "layers": [
+        {
+          "file": "layers/ears_small_skin_02_v5.png",
+          "z": 22,
+          "region": "ears",
+          "source": "references/avatar-exact-v5/body-reference.png",
+          "sha256": "afb35d8b1264afa0890a9cf5e92a9ff5c6f17bc26e1fb8a345e5a0a7b75c2476",
+          "skinVariants": {
+            "skin_01": "layers/ears_small_skin_01_v5.png",
+            "skin_02": "layers/ears_small_skin_02_v5.png",
+            "skin_03": "layers/ears_small_skin_03_v5.png",
+            "skin_04": "layers/ears_small_skin_04_v5.png",
+            "skin_05": "layers/ears_small_skin_05_v5.png",
+            "skin_06": "layers/ears_small_skin_06_v5.png",
+            "skin_07": "layers/ears_small_skin_07_v5.png",
+            "skin_08": "layers/ears_small_skin_08_v5.png",
+            "skin_09": "layers/ears_small_skin_09_v5.png",
+            "skin_10": "layers/ears_small_skin_10_v5.png",
+            "skin_11": "layers/ears_small_skin_11_v5.png",
+            "skin_12": "layers/ears_small_skin_12_v5.png"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ears.rounded",
+      "name": "Rounded ears",
+      "slot": "ears",
+      "collection": "Ears",
+      "color": "Skin matched",
+      "layers": [
+        {
+          "file": "layers/ears_rounded_skin_02_v5.png",
+          "z": 22,
+          "region": "ears",
+          "source": "references/avatar-exact-v5/body-reference.png",
+          "sha256": "9230ae0fd112d670cbb1405916a5ccf45e2939cd0c059a6ca39094c372b65605",
+          "skinVariants": {
+            "skin_01": "layers/ears_rounded_skin_01_v5.png",
+            "skin_02": "layers/ears_rounded_skin_02_v5.png",
+            "skin_03": "layers/ears_rounded_skin_03_v5.png",
+            "skin_04": "layers/ears_rounded_skin_04_v5.png",
+            "skin_05": "layers/ears_rounded_skin_05_v5.png",
+            "skin_06": "layers/ears_rounded_skin_06_v5.png",
+            "skin_07": "layers/ears_rounded_skin_07_v5.png",
+            "skin_08": "layers/ears_rounded_skin_08_v5.png",
+            "skin_09": "layers/ears_rounded_skin_09_v5.png",
+            "skin_10": "layers/ears_rounded_skin_10_v5.png",
+            "skin_11": "layers/ears_rounded_skin_11_v5.png",
+            "skin_12": "layers/ears_rounded_skin_12_v5.png"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hair.textured",
+      "name": "Textured side part",
+      "slot": "hair",
+      "collection": "Short",
+      "color": "Brown",
+      "layers": [
+        {
+          "file": "layers/hair_textured_v5.png",
+          "z": 60,
+          "region": "hair_front",
+          "source": "references/avatar-exact-v5/body-reference.png",
+          "sha256": "bd36044de5c7d1a5de19c8887b0f5be396265125822bd6953287f303838c3b30"
+        }
+      ]
+    },
+    {
+      "id": "hair.fluffy",
+      "name": "Fluffy middle part",
+      "slot": "hair",
+      "collection": "Medium",
+      "color": "Dark brown",
+      "layers": [
+        {
+          "file": "layers/hair_fluffy_back_v5.png",
+          "z": 10,
+          "region": "hair_back",
+          "source": "references/avatar-atelier/hair-fluffy.png",
+          "sha256": "f3dc7b9ffd80ea13f1bb2fe6afa34601a8963305d0e1bbd8ca92b82d528b25b7"
+        },
+        {
+          "file": "layers/hair_fluffy_front_v5.png",
+          "z": 60,
+          "region": "hair_front",
+          "source": "references/avatar-atelier/hair-fluffy.png",
+          "sha256": "563b30079381c1df96f79293104099973ef8e0ac8ae8811f759759238e23e0d7"
+        }
+      ]
+    },
+    {
+      "id": "hair.crop",
+      "name": "Textured crop",
+      "slot": "hair",
+      "collection": "Short",
+      "color": "Soft black",
+      "layers": [
+        {
+          "file": "layers/hair_crop_back_v5.png",
+          "z": 10,
+          "region": "hair_back",
+          "source": "references/avatar-atelier/hair-crop.png",
+          "sha256": "a3d989b9db3f4731ce45aae9d74808985739b30c0da37b6ca5df55ab705dce04"
+        },
+        {
+          "file": "layers/hair_crop_front_v5.png",
+          "z": 60,
+          "region": "hair_front",
+          "source": "references/avatar-atelier/hair-crop.png",
+          "sha256": "58eab0272687f3edd9dbb4a4adcc429cb60edbb4bdd56485595fd14d764c20a1"
+        }
+      ]
+    },
+    {
+      "id": "hair.curls",
+      "name": "Short curls",
+      "slot": "hair",
+      "collection": "Short",
+      "color": "Espresso",
+      "layers": [
+        {
+          "file": "layers/hair_curls_back_v5.png",
+          "z": 10,
+          "region": "hair_back",
+          "source": "references/avatar-atelier/hair-curls.png",
+          "sha256": "4fbb063f8005e75738c65d756745ca154abb6259c168014c0ea8bc5f0da065ad"
+        },
+        {
+          "file": "layers/hair_curls_front_v5.png",
+          "z": 60,
+          "region": "hair_front",
+          "source": "references/avatar-atelier/hair-curls.png",
+          "sha256": "a06d75f425bb11f30a17e06c5d8b0d629cc3c93deeb0f3ec4ddf0397af3b409f"
+        }
+      ]
+    },
+    {
+      "id": "hair.long",
+      "name": "Long wavy",
+      "slot": "hair",
+      "collection": "Long",
+      "color": "Dark brown",
+      "layers": [
+        {
+          "file": "layers/hair_long_back_v5.png",
+          "z": 10,
+          "region": "hair_back",
+          "source": "references/avatar-atelier/hair-long.png",
+          "sha256": "a953758401442c6f1d34aff160b6e7a505928024b151f462f0ed431e9d9ce9e1"
+        },
+        {
+          "file": "layers/hair_long_front_v5.png",
+          "z": 60,
+          "region": "hair_front",
+          "source": "references/avatar-atelier/hair-long.png",
+          "sha256": "8b4c39cb844d17b39ee2b1f73dfc7034121bd311a90d63cdab14829838b6d56a"
+        }
+      ]
+    },
+    {
+      "id": "hair.bob",
+      "name": "Soft bob",
+      "slot": "hair",
+      "collection": "Medium",
+      "color": "Chestnut",
+      "layers": [
+        {
+          "file": "layers/hair_bob_back_v5.png",
+          "z": 10,
+          "region": "hair_back",
+          "source": "references/avatar-atelier/hair-bob.png",
+          "sha256": "470600aafbe570dbe7b94d182db283a5dd824d16f543dfcce6e5804c083a8bf9"
+        },
+        {
+          "file": "layers/hair_bob_front_v5.png",
+          "z": 60,
+          "region": "hair_front",
+          "source": "references/avatar-atelier/hair-bob.png",
+          "sha256": "b5684ab5d8149c361dd744eeabecea1d7f4954bcfd67398fc5c09b6cb08b94f6"
+        }
+      ]
+    },
+    {
+      "id": "hair.braids",
+      "name": "Long braids",
+      "slot": "hair",
+      "collection": "Long",
+      "color": "Black",
+      "layers": [
+        {
+          "file": "layers/hair_braids_back_v5.png",
+          "z": 10,
+          "region": "hair_back",
+          "source": "references/avatar-atelier/hair-braids.png",
+          "sha256": "ca7e7878b9561da27f5a9a9771917ebc1a41f913ea6ca21edb5b32352bd93fb9"
+        },
+        {
+          "file": "layers/hair_braids_front_v5.png",
+          "z": 60,
+          "region": "hair_front",
+          "source": "references/avatar-atelier/hair-braids.png",
+          "sha256": "f6467763ee0ba44f1d2b402b73ed69afc8421c77a0d7f0b0983140e990bf0241"
+        }
+      ]
+    },
+    {
+      "id": "top.navy",
+      "name": "Navy crewneck",
+      "slot": "top",
+      "collection": "Essentials",
+      "color": "Navy",
+      "layers": [
+        {
+          "file": "layers/top_navy_v5.png",
+          "z": 40,
+          "region": "top",
+          "source": "references/avatar-exact-v5/body-reference.png",
+          "sha256": "23be3a5a5f94567d561df79f7c222e3bdcb8280e4bb2700069d03b6bb8e83dd9"
+        }
+      ]
+    },
+    {
+      "id": "top.quarter",
+      "name": "Fleece quarter zip",
+      "slot": "top",
+      "collection": "Essentials",
+      "color": "Cream",
+      "layers": [
+        {
+          "file": "layers/top_quarter_v5.png",
+          "z": 40,
+          "region": "top",
+          "source": "references/avatar-atelier/top-quarter.png",
+          "sha256": "a759c68b44d1d26e3f4f53e959d99c9600ac61077d9457f5b047a8690f2b6c65"
+        }
+      ]
+    },
+    {
+      "id": "top.white_tee",
+      "name": "Heavyweight tee",
+      "slot": "top",
+      "collection": "Essentials",
+      "color": "Off-white",
+      "layers": [
+        {
+          "file": "layers/top_white_tee_v5.png",
+          "z": 40,
+          "region": "top",
+          "source": "references/avatar-atelier/top-white-tee.png",
+          "sha256": "0a838ef7fc742eba74e4c82f6620bc2cb8751fe30647108dccd39936f1cc6f0a"
+        }
+      ]
+    },
+    {
+      "id": "top.hoodie",
+      "name": "Black pullover hoodie",
+      "slot": "top",
+      "collection": "Off duty",
+      "color": "Black",
+      "layers": [
+        {
+          "file": "layers/top_hoodie_back_v5.png",
+          "z": 15,
+          "region": "top_back",
+          "source": "references/avatar-atelier/top-hoodie.png",
+          "sha256": "10f0fee0ebcc1043070d2d41ea74f4cb1f36b420850eac74c699c064afb7d664"
+        },
+        {
+          "file": "layers/top_hoodie_v5.png",
+          "z": 40,
+          "region": "top",
+          "source": "references/avatar-atelier/top-hoodie.png",
+          "sha256": "074f400256624563a487bfd4e2655bd84f299d063b3f27842266a492746e3c6c"
+        }
+      ]
+    },
+    {
+      "id": "top.forest_hoodie",
+      "name": "Forest zip hoodie",
+      "slot": "top",
+      "collection": "Off duty",
+      "color": "Forest",
+      "layers": [
+        {
+          "file": "layers/top_forest_hoodie_back_v5.png",
+          "z": 15,
+          "region": "top_back",
+          "source": "references/avatar-atelier/top-forest-hoodie.png",
+          "sha256": "ec782328711f5506d4c2613af7dd59eb479112a7760395399cf924ec2cc6fd49"
+        },
+        {
+          "file": "layers/top_forest_hoodie_v5.png",
+          "z": 40,
+          "region": "top",
+          "source": "references/avatar-exact-v5/forest-reference.png",
+          "sha256": "02a9e3af6976f3cd1a42605395cd28f796a48028b4300a71ad7f1e311a38228c"
+        }
+      ]
+    },
+    {
+      "id": "top.polo",
+      "name": "Knit polo",
+      "slot": "top",
+      "collection": "Smart casual",
+      "color": "Sand",
+      "layers": [
+        {
+          "file": "layers/top_polo_v5.png",
+          "z": 40,
+          "region": "top",
+          "source": "references/avatar-atelier/top-polo.png",
+          "sha256": "0a72ca5bbf46b98f93f04467e5a454b4dfbd25fd43bbcb28484a4156d98557de"
+        }
+      ]
+    },
+    {
+      "id": "top.oxford",
+      "name": "Oxford shirt",
+      "slot": "top",
+      "collection": "Smart casual",
+      "color": "Sky blue",
+      "layers": [
+        {
+          "file": "layers/top_oxford_v5.png",
+          "z": 40,
+          "region": "top",
+          "source": "references/avatar-atelier/top-oxford.png",
+          "sha256": "3f7fbbb83ceb13481942907f69ec902d2aeaded07d2359a99f574ebcc8b4e267"
+        }
+      ]
+    },
+    {
+      "id": "top.knit",
+      "name": "Ribbed knit",
+      "slot": "top",
+      "collection": "Smart casual",
+      "color": "Charcoal",
+      "layers": [
+        {
+          "file": "layers/top_knit_v5.png",
+          "z": 40,
+          "region": "top",
+          "source": "references/avatar-atelier/top-knit.png",
+          "sha256": "7b0b440b6aff0e3a286526af216c2e04ee242f459234aee8f1547054d357944c"
+        }
+      ]
+    },
+    {
+      "id": "jacket.denim",
+      "name": "Denim jacket",
+      "slot": "jacket",
+      "collection": "Layers",
+      "color": "Washed blue",
+      "layers": [
+        {
+          "file": "layers/jacket_denim_v5.png",
+          "z": 42,
+          "region": "jacket",
+          "source": "references/avatar-atelier/jacket-denim.png",
+          "sha256": "d55a8d858d80a937c71166e20d0d2e7794c38fc37ec16a47e74ded567098a65d",
+          "hide": [
+            "top:top_sleeves"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jacket.bomber",
+      "name": "Black bomber",
+      "slot": "jacket",
+      "collection": "Layers",
+      "color": "Black",
+      "layers": [
+        {
+          "file": "layers/jacket_bomber_v5.png",
+          "z": 42,
+          "region": "jacket",
+          "source": "references/avatar-atelier/jacket-bomber.png",
+          "sha256": "02b3a69d57a8936f7838a894e270a0c8c63d85115d23b8d3cc675b82b6a19a97",
+          "hide": [
+            "top:top_sleeves"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jacket.track",
+      "name": "Track jacket",
+      "slot": "jacket",
+      "collection": "Training",
+      "color": "Black + green",
+      "layers": [
+        {
+          "file": "layers/jacket_track_v5.png",
+          "z": 42,
+          "region": "jacket",
+          "source": "references/avatar-atelier/jacket-track.png",
+          "sha256": "b63eb782ce45d8f5f332a353faa1b488b71edde2725d1777c44178afa73a9a1f",
+          "hide": [
+            "top:top_sleeves"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bottom.denim",
+      "name": "Indigo straight jeans",
+      "slot": "bottom",
+      "collection": "Essentials",
+      "color": "Indigo",
+      "layers": [
+        {
+          "file": "layers/bottom_denim_v5.png",
+          "z": 32,
+          "region": "bottom",
+          "source": "references/avatar-exact-v5/body-reference.png",
+          "sha256": "e85538ee9378a54854f73f1c4826e2663039e51e8388d1044db4244a88b82182"
+        }
+      ]
+    },
+    {
+      "id": "bottom.black",
+      "name": "Black straight trousers",
+      "slot": "bottom",
+      "collection": "Essentials",
+      "color": "Black",
+      "layers": [
+        {
+          "file": "layers/bottom_black_v5.png",
+          "z": 32,
+          "region": "bottom",
+          "source": "references/avatar-atelier/bottom-black.png",
+          "sha256": "ebc1a45f87f6e6b5b0b5447daddd47ef22c9101a49f38a100825434f66ca7bc4"
+        }
+      ]
+    },
+    {
+      "id": "bottom.cargo",
+      "name": "Olive cargos",
+      "slot": "bottom",
+      "collection": "Off duty",
+      "color": "Olive",
+      "layers": [
+        {
+          "file": "layers/bottom_cargo_v5.png",
+          "z": 32,
+          "region": "bottom",
+          "source": "references/avatar-atelier/bottom-cargo.png",
+          "sha256": "d8c8ddd427f264302aa245ccd26e3d0797778662a61875a0e778311195cdc147"
+        }
+      ]
+    },
+    {
+      "id": "bottom.track",
+      "name": "Graphite track pants",
+      "slot": "bottom",
+      "collection": "Training",
+      "color": "Graphite + mint",
+      "layers": [
+        {
+          "file": "layers/bottom_track_v5.png",
+          "z": 32,
+          "region": "bottom",
+          "source": "references/avatar-atelier/bottom-track.png",
+          "sha256": "7a40308de348f392ba9628261887d1fb5902a1f0c344a12ff042acdd475b7f89"
+        }
+      ]
+    },
+    {
+      "id": "shoes.white",
+      "name": "White low sneakers",
+      "slot": "shoes",
+      "collection": "Essentials",
+      "color": "White",
+      "layers": [
+        {
+          "file": "layers/shoes_white_v5.png",
+          "z": 34,
+          "region": "shoes",
+          "source": "references/avatar-refinement-v4/shoes-white-final.png",
+          "sha256": "7d51f093bd48edf215e48f73edb46500718046d9f3fce25f04a3536fb6a78e4f"
+        }
+      ]
+    },
+    {
+      "id": "shoes.black",
+      "name": "Black low sneakers",
+      "slot": "shoes",
+      "collection": "Essentials",
+      "color": "Black",
+      "layers": [
+        {
+          "file": "layers/shoes_black_v5.png",
+          "z": 34,
+          "region": "shoes",
+          "source": "references/avatar-exact-v5/body-reference.png",
+          "sha256": "481a56b6a2782138597be68b9521f607069ec6eaba35a5dd6f218d1da156c82a"
+        }
+      ]
+    },
+    {
+      "id": "earrings.studs",
+      "name": "Silver studs",
+      "slot": "earrings",
+      "collection": "Details",
+      "color": "Silver",
+      "layers": [
+        {
+          "file": "layers/earrings_studs_v5.png",
+          "z": 70,
+          "region": "earrings",
+          "source": "references/avatar-atelier/earrings-studs.png",
+          "sha256": "ab9b5069d83be397b06649dca1ae062be4b1091055aa8b4cd1712f51af4303d7"
+        }
+      ]
+    },
+    {
+      "id": "earrings.hoops",
+      "name": "Gold hoops",
+      "slot": "earrings",
+      "collection": "Details",
+      "color": "Gold",
+      "layers": [
+        {
+          "file": "layers/earrings_hoops_v5.png",
+          "z": 70,
+          "region": "earrings",
+          "source": "references/avatar-atelier/earrings-hoops.png",
+          "sha256": "278452e3f86a119738b59f1a582116616a0db8ce84ea6ea0ac2a8cbf21c88a25"
+        }
+      ]
+    },
+    {
+      "id": "hat.cap",
+      "name": "Classic cap",
+      "slot": "hat",
+      "collection": "Off duty",
+      "color": "Black",
+      "layers": [
+        {
+          "file": "layers/hat_cap_v5.png",
+          "z": 80,
+          "region": "headwear",
+          "source": "references/avatar-atelier/hat-cap.png",
+          "sha256": "3300f476992833cb3fdef29802355aeee3998ab91ae6dcb798509d11e3c463a8",
+          "hide": [
+            "hair_front:hair_crown",
+            "hair_back:hair_crown"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hat.beanie",
+      "name": "Folded beanie",
+      "slot": "hat",
+      "collection": "Off duty",
+      "color": "Black",
+      "layers": [
+        {
+          "file": "layers/hat_beanie_v5.png",
+          "z": 80,
+          "region": "headwear",
+          "source": "references/avatar-atelier/hat-beanie.png",
+          "sha256": "8ca036c3a73a66f0ba1514ea45babc8135e249ca1da21d7b16d8a686fa76a15b",
+          "hide": [
+            "hair_front:hair_crown",
+            "hair_back:hair_crown"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "glasses.round",
+      "name": "Round graphite glasses",
+      "slot": "glasses",
+      "collection": "Details",
+      "color": "Graphite",
+      "layers": [
+        {
+          "file": "layers/glasses_round_v5.png",
+          "z": 72,
+          "region": "glasses",
+          "source": "references/avatar-atelier/glasses-round.png",
+          "sha256": "fc1b849fdaf1dc22d6383296df902a3bf3e61b99c67dc84feff601129ad28b49"
+        }
+      ]
+    },
+    {
+      "id": "glasses.rect",
+      "name": "Rectangular glasses",
+      "slot": "glasses",
+      "collection": "Details",
+      "color": "Black",
+      "layers": [
+        {
+          "file": "layers/glasses_rect_v5.png",
+          "z": 72,
+          "region": "glasses",
+          "source": "references/avatar-atelier/glasses-rect.png",
+          "sha256": "1587078385afd511e078feb59adb8c7eb64a89fcb484d1ebccf6d30b634fc659"
+        }
+      ]
+    }
+  ],
+  "skins": [
+    {
+      "id": "skin_01",
+      "color": "rgb(244,209,187)",
+      "layer": {
+        "file": "layers/body_skin_01_v5.png",
+        "z": 20,
+        "region": "body",
+        "source": "references/avatar-exact-v5/body-support.png",
+        "sha256": "76834c345f99be8294a25d2ce747ffb7566de1da0dfc6dcfc8b65940251a7b6d"
+      }
+    },
+    {
+      "id": "skin_02",
+      "color": "rgb(235,194,167)",
+      "layer": {
+        "file": "layers/body_skin_02_v5.png",
+        "z": 20,
+        "region": "body",
+        "source": "references/avatar-exact-v5/body-support.png",
+        "sha256": "cb99db7792cda221686e3251dc269cbe2121de8024f08c138a89fca64813be95"
+      }
+    },
+    {
+      "id": "skin_03",
+      "color": "rgb(220,174,142)",
+      "layer": {
+        "file": "layers/body_skin_03_v5.png",
+        "z": 20,
+        "region": "body",
+        "source": "references/avatar-exact-v5/body-support.png",
+        "sha256": "9d7b2c99d163caac4c81a84793629f3cc86d74bf43dc23c0041bae033d3fbc06"
+      }
+    },
+    {
+      "id": "skin_04",
+      "color": "rgb(201,149,114)",
+      "layer": {
+        "file": "layers/body_skin_04_v5.png",
+        "z": 20,
+        "region": "body",
+        "source": "references/avatar-exact-v5/body-support.png",
+        "sha256": "63be4e43cdc7b5d4913dcf7e97bbcf850192edaec75218ee513b0ce131861b90"
+      }
+    },
+    {
+      "id": "skin_05",
+      "color": "rgb(183,127,91)",
+      "layer": {
+        "file": "layers/body_skin_05_v5.png",
+        "z": 20,
+        "region": "body",
+        "source": "references/avatar-exact-v5/body-support.png",
+        "sha256": "ca56767a1f4496f3cb00bee0aa5cbc78c82d9a49efead31f7e162367fe88c86d"
+      }
+    },
+    {
+      "id": "skin_06",
+      "color": "rgb(165,105,73)",
+      "layer": {
+        "file": "layers/body_skin_06_v5.png",
+        "z": 20,
+        "region": "body",
+        "source": "references/avatar-exact-v5/body-support.png",
+        "sha256": "a12bf640591b00e8b29faf45832ba74864deae57d987a0175ccae1954c3030d4"
+      }
+    },
+    {
+      "id": "skin_07",
+      "color": "rgb(142,87,61)",
+      "layer": {
+        "file": "layers/body_skin_07_v5.png",
+        "z": 20,
+        "region": "body",
+        "source": "references/avatar-exact-v5/body-support.png",
+        "sha256": "fb4ebc1e780959da3b47c4f027ee506edd152b0763958b72598e772d28ac5b48"
+      }
+    },
+    {
+      "id": "skin_08",
+      "color": "rgb(119,70,48)",
+      "layer": {
+        "file": "layers/body_skin_08_v5.png",
+        "z": 20,
+        "region": "body",
+        "source": "references/avatar-exact-v5/body-support.png",
+        "sha256": "fd4bd75f59d4dd187e43a4945d671416a49f4561c7ea01e2cb1bfe9e53cd61a8"
+      }
+    },
+    {
+      "id": "skin_09",
+      "color": "rgb(96,55,41)",
+      "layer": {
+        "file": "layers/body_skin_09_v5.png",
+        "z": 20,
+        "region": "body",
+        "source": "references/avatar-exact-v5/body-support.png",
+        "sha256": "7935109fb5eda1838b58496a28b5f050151bdf7c3fb4c1886b6b9d3a6409d81e"
+      }
+    },
+    {
+      "id": "skin_10",
+      "color": "rgb(76,43,33)",
+      "layer": {
+        "file": "layers/body_skin_10_v5.png",
+        "z": 20,
+        "region": "body",
+        "source": "references/avatar-exact-v5/body-support.png",
+        "sha256": "e375bc3ca0f45495c7691fec32bc77bc07271ee8a5fa152f59a3c487e7a09d25"
+      }
+    },
+    {
+      "id": "skin_11",
+      "color": "rgb(58,34,26)",
+      "layer": {
+        "file": "layers/body_skin_11_v5.png",
+        "z": 20,
+        "region": "body",
+        "source": "references/avatar-exact-v5/body-support.png",
+        "sha256": "38162db2181ac680a0a8cb5fd621ba460181e9cbe1610621beb29004e4ff5714"
+      }
+    },
+    {
+      "id": "skin_12",
+      "color": "rgb(42,25,20)",
+      "layer": {
+        "file": "layers/body_skin_12_v5.png",
+        "z": 20,
+        "region": "body",
+        "source": "references/avatar-exact-v5/body-support.png",
+        "sha256": "e9e3432c9ad5ac6f97d73b01cef6ea90f7ce232b1f55c732438b72270c6664b8"
+      }
+    }
+  ],
+  "regions": {
+    "body": [
+      43,
+      33,
+      44,
+      91
+    ],
+    "head": [
+      47,
+      2,
+      36,
+      33
+    ],
+    "hair_front": [
+      43,
+      0,
+      43,
+      70
+    ],
+    "hair_back": [
+      43,
+      0,
+      43,
+      70
+    ],
+    "eyes": [
+      56,
+      19,
+      18,
+      5
+    ],
+    "brows": [
+      55,
+      17,
+      20,
+      3
+    ],
+    "nose": [
+      61,
+      22,
+      6,
+      7
+    ],
+    "mouth": [
+      61,
+      29,
+      7,
+      3
+    ],
+    "ears": [
+      48,
+      19,
+      35,
+      11
+    ],
+    "top": [
+      43,
+      33,
+      44,
+      43
+    ],
+    "top_back": [
+      48,
+      29,
+      34,
+      20
+    ],
+    "jacket": [
+      43,
+      33,
+      44,
+      45
+    ],
+    "jacket_back": [
+      48,
+      29,
+      34,
+      20
+    ],
+    "bottom": [
+      49,
+      72,
+      32,
+      44
+    ],
+    "shoes": [
+      43,
+      112,
+      43,
+      12
+    ],
+    "glasses": [
+      53,
+      19,
+      24,
+      7
+    ],
+    "headwear": [
+      47,
+      0,
+      35,
+      21
+    ],
+    "earrings": [
+      49,
+      23,
+      32,
+      8
+    ]
+  },
+  "masks": {
+    "hair_crown": "masks/hair_crown_v5.png",
+    "top_sleeves": "masks/top_sleeves_v5.png"
+  },
+  "sources": {
+    "body-reference": "references/avatar-exact-v5/body-reference.png",
+    "body-support": "references/avatar-exact-v5/body-support.png",
+    "blank-head-support": "references/avatar-exact-v5/blank-head-support.png",
+    "head-round": "references/avatar-faces-v3/head-round.png",
+    "head-soft-square": "references/avatar-faces-v3/head-soft-square.png",
+    "head-full-round": "references/avatar-faces-v3/head-full-round.png",
+    "head-narrow": "references/avatar-faces-v3/head-narrow.png",
+    "body-source": "references/avatar-atelier/body-source.png",
+    "eyes-dark-brown": "references/avatar-refinement-v4/eyes-dark-brown.png",
+    "eyes-brown": "references/avatar-refinement-v4/eyes-brown.png",
+    "eyes-hazel": "references/avatar-refinement-v4/eyes-hazel.png",
+    "eyes-green": "references/avatar-refinement-v4/eyes-green.png",
+    "eyes-blue-clean": "references/avatar-refinement-v4/eyes-blue-clean.png",
+    "eyes-gray": "references/avatar-refinement-v4/eyes-gray.png",
+    "face-friendly-raw": "references/avatar-faces-v3/face-friendly-raw.png",
+    "face-focused-raw": "references/avatar-faces-v3/face-focused-raw.png",
+    "ears-rounded": "references/avatar-atelier/ears-rounded.png",
+    "hair-fluffy": "references/avatar-atelier/hair-fluffy.png",
+    "hair-crop": "references/avatar-atelier/hair-crop.png",
+    "hair-curls": "references/avatar-atelier/hair-curls.png",
+    "hair-long": "references/avatar-atelier/hair-long.png",
+    "hair-bob": "references/avatar-atelier/hair-bob.png",
+    "hair-braids": "references/avatar-atelier/hair-braids.png",
+    "top-quarter": "references/avatar-atelier/top-quarter.png",
+    "top-white-tee": "references/avatar-atelier/top-white-tee.png",
+    "top-hoodie": "references/avatar-atelier/top-hoodie.png",
+    "top-forest-hoodie": "references/avatar-atelier/top-forest-hoodie.png",
+    "forest-reference": "references/avatar-exact-v5/forest-reference.png",
+    "top-polo": "references/avatar-atelier/top-polo.png",
+    "top-oxford": "references/avatar-atelier/top-oxford.png",
+    "top-knit": "references/avatar-atelier/top-knit.png",
+    "jacket-denim": "references/avatar-atelier/jacket-denim.png",
+    "jacket-bomber": "references/avatar-atelier/jacket-bomber.png",
+    "jacket-track": "references/avatar-atelier/jacket-track.png",
+    "bottom-black": "references/avatar-atelier/bottom-black.png",
+    "bottom-cargo": "references/avatar-atelier/bottom-cargo.png",
+    "bottom-track": "references/avatar-atelier/bottom-track.png",
+    "shoes-white-final": "references/avatar-refinement-v4/shoes-white-final.png",
+    "earrings-studs": "references/avatar-atelier/earrings-studs.png",
+    "earrings-hoops": "references/avatar-atelier/earrings-hoops.png",
+    "hat-cap": "references/avatar-atelier/hat-cap.png",
+    "hat-beanie": "references/avatar-atelier/hat-beanie.png",
+    "glasses-round": "references/avatar-atelier/glasses-round.png",
+    "glasses-rect": "references/avatar-atelier/glasses-rect.png"
+  },
+  "pictureHashes": {
+    "references/avatar-exact-v5/body-reference.png": "557f498cfd81468f59d2975b4c8eda4f5b21b2e5cd7d9c47658fab3c95303704",
+    "references/avatar-exact-v5/body-support.png": "a47599cc7ff5d254a7be68808db8d8f28946a6839ca671c2bbd57201cee11e4f",
+    "references/avatar-exact-v5/blank-head-support.png": "a7f8c8e1d42a36a2237c9e437e66f7667d8e26f5547c8c5e8d8f983d3f629601",
+    "references/avatar-faces-v3/head-round.png": "5c07782c2f24536373444eaad0351e7bbe698e9bb3c5dceaa75dbf09d12b89fe",
+    "references/avatar-faces-v3/head-soft-square.png": "7242585c7a599625847a8e4de61182803c312e4c6c37fe0beb20f99684274c97",
+    "references/avatar-faces-v3/head-full-round.png": "b359ab6a584a9ba636eafe364a8e6b3324b8febf63051fe60fc5275867821a44",
+    "references/avatar-faces-v3/head-narrow.png": "8f9962d4d732a6ffaf63944c255860d1901af8ec431fc7a9cf9024c0c6295fb8",
+    "references/avatar-atelier/body-source.png": "89a4c000d0495dea0e5da7d82b9eabd5e42ab9b2a3671936c33d06e07d341211",
+    "references/avatar-refinement-v4/eyes-dark-brown.png": "966e091aebbe2e4e5675ee880a69c20d7d996221a685e13db6972f2ae6bca8ca",
+    "references/avatar-refinement-v4/eyes-brown.png": "15ee2c640ee9b5b22f87bd04143580785c2f4a99e8c2a541e80b0b53ca01d2f2",
+    "references/avatar-refinement-v4/eyes-hazel.png": "7b133afdfdd22ce4b68d2d414c2f8aaea539d49f70e267c8dd5530f2cbdfadc8",
+    "references/avatar-refinement-v4/eyes-green.png": "1a9c3fc27c52d4e88167b40939268abd10ef2eef16c22c5aa278a181d49c3cc6",
+    "references/avatar-refinement-v4/eyes-blue-clean.png": "2b9bbc8bc6ada2a7885a4462bf386207f4e483408b6c7ba812644bb67dfb2d01",
+    "references/avatar-refinement-v4/eyes-gray.png": "5afd1370f97b0a3266ff28af8a97609ba15894b799e771df0cb8d8ca7a9a7821",
+    "references/avatar-faces-v3/face-friendly-raw.png": "c3233a79b76837b9dbf503e87a77262acd077829ca749acaa012e8a8d0e52b16",
+    "references/avatar-faces-v3/face-focused-raw.png": "483d1dc96248b82aafd57e778f5f5db909c729cc3164fa58353c39b4adc2ee00",
+    "references/avatar-atelier/ears-rounded.png": "624ed0c65d007b7937489375b9f991431d4bbb4be96faaf6b6da205233d455b4",
+    "references/avatar-atelier/hair-fluffy.png": "0dbc9841d8c0587539b6e347a30f02dd01416b61508b7422c63b33a76574f767",
+    "references/avatar-atelier/hair-crop.png": "41c43148a2e616a6cd73a1292cae18541ebd9818a3b0cb8a9d12ae0c6cf85229",
+    "references/avatar-atelier/hair-curls.png": "1af2452144eb42f5626aba0cd1f7a77b6b8bc5d8113127a5b115ecc89aed6011",
+    "references/avatar-atelier/hair-long.png": "81e2f0a1bff7dd5cbde136fb5037d1542a5a67d4e29ddd8b5211f2a4f92cf00c",
+    "references/avatar-atelier/hair-bob.png": "8d83ccc7b88f5bebc6f2e2e22420426c389b0aec3632580b08a5fe682c79a22d",
+    "references/avatar-atelier/hair-braids.png": "8daffb2adcc3cd91552d2aeb3e3e3a8f4d2fd1f5731bab81f16e72523b471598",
+    "references/avatar-atelier/top-quarter.png": "94051e8222c471fe56aa7c4708fda818373aa9bcc17183dddae27d81e1f4d363",
+    "references/avatar-atelier/top-white-tee.png": "f3a73452ca0efc13f7a135159777b968cabe427f9a06def0959f09406703085a",
+    "references/avatar-atelier/top-hoodie.png": "f2b1e597cf5ad3b9ce41d88ff210229bfce2992f2447267fb02f7b910834cfd3",
+    "references/avatar-atelier/top-forest-hoodie.png": "4a3140e0fa3ff6996637996b3e711c46469e7bce96f0d6574297bfc3974b6a79",
+    "references/avatar-exact-v5/forest-reference.png": "c82dd1ca7918f58914372277a6cf82f8a827699ad6c8ca300f6a78f27fd6dc50",
+    "references/avatar-atelier/top-polo.png": "8110cc9c45a466a6739a95183a7c216ff9e00b753425436cbd8c7816e3027b7d",
+    "references/avatar-atelier/top-oxford.png": "5f33c1359b97b93f53287fcfb38942d16bd8c019217f13d8b08448bd3e85f680",
+    "references/avatar-atelier/top-knit.png": "47ac5c0a40d996fd0b28e5ca499f5ef30a65de17f11cd9a55de0b689778c74c9",
+    "references/avatar-atelier/jacket-denim.png": "6853083c75579c472118a3e5a76fc27c02ed675d5d5d01bdec753e81dda6988a",
+    "references/avatar-atelier/jacket-bomber.png": "c4295aba29e366097819cf89331f76de0dbef739a4b29b756dfbb670a8d9f489",
+    "references/avatar-atelier/jacket-track.png": "599512be85509382a6a21061b463000b9b45f2add1bf895dc43f13d5320982ff",
+    "references/avatar-atelier/bottom-black.png": "dcd81e5437bc986cc0874b69cdbc76485edebd00e28a96c9874d7a9a8bd1448e",
+    "references/avatar-atelier/bottom-cargo.png": "dd384688beb127fe867bd9e17d5cdb8022e42a3c767d0d1577e152762132f32d",
+    "references/avatar-atelier/bottom-track.png": "d3637503013e75fba12dd477b70a2599d7ce60824eb65bd086de2e8695d9b025",
+    "references/avatar-refinement-v4/shoes-white-final.png": "13ab8ce3fd9503115b2549fb8c218675570b7f0630b9bd98863312521ffa8d60",
+    "references/avatar-atelier/earrings-studs.png": "82ef20e22a91d3db46913cbecb344fcd71f8f7dd12d659718b73614749271baf",
+    "references/avatar-atelier/earrings-hoops.png": "157c086b418939e7a2f80f87640765a1d57bb7c434c30a3daa259c026c8a2757",
+    "references/avatar-atelier/hat-cap.png": "bea76be91f763067762e71a8f14f7b0de88ba69822623ea577df54a4f52df2d8",
+    "references/avatar-atelier/hat-beanie.png": "418339c6c847bc8e27f84210d564844f97dc6c9e74be2b1b7fbc5fd6205aa9ba",
+    "references/avatar-atelier/glasses-round.png": "8da6928d2c9281e887923255ecbae214f52a216959e6325f503b80c6d55ed7d8",
+    "references/avatar-atelier/glasses-rect.png": "24142edb6fee936993b36f100b4f339843f619362f91a7c1d59dc0edb607e599"
+  },
+  "inherited": {},
+  "faceSources": {},
+  "eyeColorSources": {
+    "eye.dark_brown": "references/avatar-refinement-v4/eyes-dark-brown.png",
+    "eye.brown": "references/avatar-refinement-v4/eyes-brown.png",
+    "eye.hazel": "references/avatar-refinement-v4/eyes-hazel.png",
+    "eye.green": "references/avatar-refinement-v4/eyes-green.png",
+    "eye.blue": "references/avatar-refinement-v4/eyes-blue-clean.png",
+    "eye.gray": "references/avatar-refinement-v4/eyes-gray.png"
+  },
+  "normalization": {
+    "method": "Reference pixel recovery; shared geometry, no independent facial enlargement",
+    "grid": "artifacts/avatar-exact-v5/recovery/grid.json",
+    "irisPixels": [
+      [
+        60,
+        22
+      ],
+      [
+        69,
+        22
+      ]
+    ]
+  },
+  "master": "rig/reference_master.png",
+  "masterHash": "a1fd874e07dfbd703602756b14739d47f1a056e99066670eb1c10a0375aff96d",
+  "partitionMasks": {
+    "body": "masks/reference_body_v5.png",
+    "head": "masks/reference_head_v5.png",
+    "hair": "masks/reference_hair_v5.png",
+    "eyes": "masks/reference_eyes_v5.png",
+    "brows": "masks/reference_brows_v5.png",
+    "nose": "masks/reference_nose_v5.png",
+    "mouth": "masks/reference_mouth_v5.png",
+    "ears": "masks/reference_ears_v5.png",
+    "top": "masks/reference_top_v5.png",
+    "bottom": "masks/reference_bottom_v5.png",
+    "shoes": "masks/reference_shoes_v5.png"
+  },
+  "slotMasks": {
+    "body": "masks/slot_body_v5.png",
+    "head": "masks/slot_head_v5.png",
+    "hair_front": "masks/slot_hair_front_v5.png",
+    "hair_back": "masks/slot_hair_back_v5.png",
+    "eyes": "masks/slot_eyes_v5.png",
+    "brows": "masks/slot_brows_v5.png",
+    "nose": "masks/slot_nose_v5.png",
+    "mouth": "masks/slot_mouth_v5.png",
+    "ears": "masks/slot_ears_v5.png",
+    "top": "masks/slot_top_v5.png",
+    "top_back": "masks/slot_top_back_v5.png",
+    "jacket": "masks/slot_jacket_v5.png",
+    "jacket_back": "masks/slot_jacket_back_v5.png",
+    "bottom": "masks/slot_bottom_v5.png",
+    "shoes": "masks/slot_shoes_v5.png",
+    "glasses": "masks/slot_glasses_v5.png",
+    "headwear": "masks/slot_headwear_v5.png",
+    "earrings": "masks/slot_earrings_v5.png"
+  },
+  "compiledHashes": {
+    "layers/body_skin_01_v5.png": "76834c345f99be8294a25d2ce747ffb7566de1da0dfc6dcfc8b65940251a7b6d",
+    "layers/body_skin_02_v5.png": "cb99db7792cda221686e3251dc269cbe2121de8024f08c138a89fca64813be95",
+    "layers/body_skin_03_v5.png": "9d7b2c99d163caac4c81a84793629f3cc86d74bf43dc23c0041bae033d3fbc06",
+    "layers/body_skin_04_v5.png": "63be4e43cdc7b5d4913dcf7e97bbcf850192edaec75218ee513b0ce131861b90",
+    "layers/body_skin_05_v5.png": "ca56767a1f4496f3cb00bee0aa5cbc78c82d9a49efead31f7e162367fe88c86d",
+    "layers/body_skin_06_v5.png": "a12bf640591b00e8b29faf45832ba74864deae57d987a0175ccae1954c3030d4",
+    "layers/body_skin_07_v5.png": "fb4ebc1e780959da3b47c4f027ee506edd152b0763958b72598e772d28ac5b48",
+    "layers/body_skin_08_v5.png": "fd4bd75f59d4dd187e43a4945d671416a49f4561c7ea01e2cb1bfe9e53cd61a8",
+    "layers/body_skin_09_v5.png": "7935109fb5eda1838b58496a28b5f050151bdf7c3fb4c1886b6b9d3a6409d81e",
+    "layers/body_skin_10_v5.png": "e375bc3ca0f45495c7691fec32bc77bc07271ee8a5fa152f59a3c487e7a09d25",
+    "layers/body_skin_11_v5.png": "38162db2181ac680a0a8cb5fd621ba460181e9cbe1610621beb29004e4ff5714",
+    "layers/body_skin_12_v5.png": "e9e3432c9ad5ac6f97d73b01cef6ea90f7ce232b1f55c732438b72270c6664b8",
+    "layers/head_soft_oval_skin_02_v5.png": "52f45481b722efc8013e8bbc3df04bfdf42c146c962e0831390360b6bf75ba42",
+    "layers/head_soft_oval_skin_01_v5.png": "86eb63773ac57307e29fc1b0338acce03702ffdbd0a7cb5688a737ec9bad5af2",
+    "layers/head_soft_oval_skin_03_v5.png": "6f35ad03af30a818ffd0dbbb9f189961ca592778af06c56ddb865679bda03937",
+    "layers/head_soft_oval_skin_04_v5.png": "c810c1bd1995953726ee6ccfe14cc54d044998667526f4ff520f5784ca23814f",
+    "layers/head_soft_oval_skin_05_v5.png": "72b0d143e9b3de0a50d0e20edf4c1dad1bea9714c2d0666b79925e9cacb90a6c",
+    "layers/head_soft_oval_skin_06_v5.png": "4ce21ce11e5a7b0d58bcd2882a6d5e438932218e6be1355093d89bef4c59184e",
+    "layers/head_soft_oval_skin_07_v5.png": "bf5a005255bfc5ceeaa8f36206dd74fd3779887500c05d2557b37200a1f4bb23",
+    "layers/head_soft_oval_skin_08_v5.png": "3b4d535b159ef906e571ee13d26db50519beed88d3dc60510489f8a13bee5182",
+    "layers/head_soft_oval_skin_09_v5.png": "61c276d6d3ff045b6d612686f83840678e37ed378eb9d1c76b003381b252a8f6",
+    "layers/head_soft_oval_skin_10_v5.png": "473a5fb2f941c53cb59410f435e2efdcc6b16ef60fac39d53f105828374591ec",
+    "layers/head_soft_oval_skin_11_v5.png": "1482ebf946298635c7a8ec9285c6a8db34101300de4c9b73b4f172f617b04bd1",
+    "layers/head_soft_oval_skin_12_v5.png": "8c29da4c85f7d6571dcf170435c096a9137df66b45a1b51a064f5a9648259150",
+    "layers/head_round_skin_02_v5.png": "7e63969bfabb8055b7a58240e83decdaf9b11e15ddc3208376ddbf8873428680",
+    "layers/head_round_skin_01_v5.png": "88f676b261b88e037a2a9a99cf573bef0092197c61f3a435bfc22d29916c9341",
+    "layers/head_round_skin_03_v5.png": "dda986be8e54a37e4faef9e24f331229b72699913fd60475599fc6f1d2702fb0",
+    "layers/head_round_skin_04_v5.png": "87c9b7d0ba16506741f4e8ae2fdce422bf64869a4654d5f335aecf1a6bdc3c49",
+    "layers/head_round_skin_05_v5.png": "e285d9bad2c49118c851e09f4547077d339a652c79302ff04b9a715418254860",
+    "layers/head_round_skin_06_v5.png": "d92e52d0e538d3e39f6b42eebde25db026c6b034001178ab658380b67fe00674",
+    "layers/head_round_skin_07_v5.png": "767997120c21d78fb51a66e76996c6dbf6656c8635e941fcea2cf0991e22764a",
+    "layers/head_round_skin_08_v5.png": "3134fa2a2214a735500455bfbb941bedb624444f2fef3c916c8ea600429c49c1",
+    "layers/head_round_skin_09_v5.png": "b675e754df7302e031a5c426b719c2dc4e829a86359fb1dc8acada082dd4365a",
+    "layers/head_round_skin_10_v5.png": "0752b97d9cb286e08a16f8d5f2116f26cea13e866784d92fe013fd36943d151c",
+    "layers/head_round_skin_11_v5.png": "f6b2521cfd332e33c7bb8fec73af0fd7825530ffcb9ba1c5a28d1af5532e0887",
+    "layers/head_round_skin_12_v5.png": "33993fab2c3976c5e481988230869776eae81563b96520364f14b579c3f70dcc",
+    "layers/head_soft_square_skin_02_v5.png": "c1de3089dc93981054d6524daefd82e47a06338d994611400657d84cad7ec05c",
+    "layers/head_soft_square_skin_01_v5.png": "f13be794c665ceb2a511d62e0282aba31fb83da06cb2c10c9d0093f0e07f50d0",
+    "layers/head_soft_square_skin_03_v5.png": "6cc43876ebede651101ce6525c4dc9eba753b18efcb13486a628964e9b96d560",
+    "layers/head_soft_square_skin_04_v5.png": "878ecb92610899e3191d871c58345510485b2dccc215d0130e0b46ec424be54b",
+    "layers/head_soft_square_skin_05_v5.png": "58eccf076f23fd3ef54fffc0d6a94245949f24ea7667a82c38a5a891247cc747",
+    "layers/head_soft_square_skin_06_v5.png": "172bd8aa0a45d31a9093eee6e92ac4303329013ee91bb728cc2a99384e6af3ce",
+    "layers/head_soft_square_skin_07_v5.png": "13aabb99b2bee88fff1f2e07757553337638d1cb3e98f8c0680bd08bfdb7f1f9",
+    "layers/head_soft_square_skin_08_v5.png": "b9c4de72390a8e823bc11ffa483110e6e7d89b60702bade14ce04d683c6dac37",
+    "layers/head_soft_square_skin_09_v5.png": "17d76a1d24eb220501e0bfd6acad965eba91e2e3f3ee2563366371c23ae37249",
+    "layers/head_soft_square_skin_10_v5.png": "dec4c220b61713f64969057d93354928df7fbdf7839bfcd6a5578d41afb3e17d",
+    "layers/head_soft_square_skin_11_v5.png": "0a4ee447cef539415f3bd5859558a0b75d8e95ccbef9773d6760c469d48d4ee5",
+    "layers/head_soft_square_skin_12_v5.png": "204dc6f4e6036e34a84c04d312ebdbf5fdc864b5295b55b75211bc3156237f87",
+    "layers/head_full_round_skin_02_v5.png": "413111af80fcc36ac73667af0460a8ad00260f758b23c495d5ace0c2ec615c0a",
+    "layers/head_full_round_skin_01_v5.png": "dd6206ce18414ec5905b8a34fdd0fbd18d152deb0a9b49187085c0b34846b7f3",
+    "layers/head_full_round_skin_03_v5.png": "be26a057521fb01e9545901546716db3e8a0676b40a73a8954fcc31086aab4bd",
+    "layers/head_full_round_skin_04_v5.png": "970d3cd7bbd7164655737005444268d311ef4a3bc8444de50afb25f044ac4244",
+    "layers/head_full_round_skin_05_v5.png": "0339f56bb71df041dad99b6172fb00647cf939c5d44a6e8658f889be5944543e",
+    "layers/head_full_round_skin_06_v5.png": "afa48b312bcbd6b4857edbb1e24f7555da689453f61aec23a7c98f3d23e500e9",
+    "layers/head_full_round_skin_07_v5.png": "68745ecee00da3e07917cd422f2036dcf5d2252dd4a2bdb8eb2d7b64e3f2a361",
+    "layers/head_full_round_skin_08_v5.png": "7edae8d1b0a544030b7b3278832fe5fe66f17cd2a0db5b513a8623f4ce02b115",
+    "layers/head_full_round_skin_09_v5.png": "2faf15d41d72db517aed3eba97cab7c0f02ff98f3d5d008f7a3637b1db5f0032",
+    "layers/head_full_round_skin_10_v5.png": "b303eea44d361f1d4be6094f82c05ee2e172c65afce0b2fe102d7538766f4809",
+    "layers/head_full_round_skin_11_v5.png": "3f3b40b0c4ddee9a0fa57595d0fa78e3ea44e214fdbb69c98e5bd46d46cb7781",
+    "layers/head_full_round_skin_12_v5.png": "9a227edefe07db432350b530696a318e55800c77fcd62ec6af16dac70cb4add1",
+    "layers/head_narrow_skin_02_v5.png": "0af3113d06099d4cfe55dac57b6808d328ba0de4e4306730e3924c2b57bd69e4",
+    "layers/head_narrow_skin_01_v5.png": "52816c09f2b0fd3b305600e46831d8ff9d1f73dd85c108c7e5c472e39cc95f21",
+    "layers/head_narrow_skin_03_v5.png": "e2d50848ed7c33747820bbab8f109f02bd9d637ed6cef68abb4a7f407de8ab75",
+    "layers/head_narrow_skin_04_v5.png": "ec82fdd6ad92da935061d4d85e3a08771c63e5931e9adc8209b3ca4084ab0032",
+    "layers/head_narrow_skin_05_v5.png": "d2e8424dc07b1ff64308e62a5322d45439c37febb38d4d8550bdda683ba1618e",
+    "layers/head_narrow_skin_06_v5.png": "ac36473687960fbfdc0bb10bc2a9298ef9030edbbc502a257d5174b44b86345d",
+    "layers/head_narrow_skin_07_v5.png": "cd2b27333c8648c79d6634a4f6e77ad0218ed19905791d8978f4334b9a294600",
+    "layers/head_narrow_skin_08_v5.png": "5392e11a387dd4a9c6ef4226751799b094fc1aa57daccc59af2d62d0ac7711cb",
+    "layers/head_narrow_skin_09_v5.png": "ce9e27708ccacc9366cd9c48a1420749f728bac3910440819e4cac2d009f31cc",
+    "layers/head_narrow_skin_10_v5.png": "d9f830dfb14e0ba61c56a881f419fa1481974ff4aaf98da869b6a8ce870f6a80",
+    "layers/head_narrow_skin_11_v5.png": "a2e13b1579966fd8f926f8df3a39b3957ea96e94bff7b97f6d9a6152534a675b",
+    "layers/head_narrow_skin_12_v5.png": "9e25a299a3c8098edff476515a90bcc36f311e709ffe8a9b51fc5870835c7946",
+    "layers/head_angular_skin_02_v5.png": "a207ddb8a61df42c2e54d33cdc77f8e0618dbb860cf0766eb2a3a698bfb4c500",
+    "layers/head_angular_skin_01_v5.png": "c1f6238be496ade18a7caa649d4825b72bcd30348973e50420effff7b1828b7b",
+    "layers/head_angular_skin_03_v5.png": "9d7fd823b3459ecc515255b778c1fe1ec07ce33b35b5561528ae6de5463c6183",
+    "layers/head_angular_skin_04_v5.png": "0fb4d90331aaa3e352d4018d41a2cebe24924bb9c6f1b564199908fa748d5363",
+    "layers/head_angular_skin_05_v5.png": "ff5bec1d765dc249d1502caa0d1bd6d257e2739ec23b1bf2c8c6d922e17948c3",
+    "layers/head_angular_skin_06_v5.png": "fd6dc3a967e90bc355babdfcfbfb526dedcc1edd47f6f3d93f6385214f1dc9a5",
+    "layers/head_angular_skin_07_v5.png": "d884f170d51e55c6d3ed5d0aaf61728e5031a2f9cf911d7c29016bf9a6c6f733",
+    "layers/head_angular_skin_08_v5.png": "f0a9acdb0cdd385b71cc79afdaca84cffeb4da1d3ef9a5630ab59b57c8d7f4eb",
+    "layers/head_angular_skin_09_v5.png": "1d8eba7cc794840fd4e638f4affdab6e76298d64471c59797daf3a0cc0f7337a",
+    "layers/head_angular_skin_10_v5.png": "27a5edecd0e8d33e95a3605d836416a972e1dee2967abbd486780c93fd9ba760",
+    "layers/head_angular_skin_11_v5.png": "bc69e8779eb46f2961a97f64292cb47534eb7eb28288e1087458adced256ad5e",
+    "layers/head_angular_skin_12_v5.png": "2b25951b40be13fe37b7f12604537d37c53707bcb3b02b89decccb4f286970f9",
+    "layers/eyes_reference_neutral_eye_dark_brown_v5.png": "039ae30f89af41af279ef5de63f0f63b611d83b184a96e68ff8c1e38c580df46",
+    "layers/eyes_reference_neutral_eye_brown_v5.png": "49ff01bd5018b12bef083b3b46ab77ed9cdd0b3e189359af4edb6b29becf1e99",
+    "layers/eyes_reference_neutral_eye_hazel_v5.png": "9bb28e682196b30b18fe9672bffd79f580d376d41be769fb31cb4bf25a39b515",
+    "layers/eyes_reference_neutral_eye_green_v5.png": "51f343e5b970b906c7802c7ea2047c39bed7a8a6c8f8885b22c3d1828aa3b9b4",
+    "layers/eyes_reference_neutral_eye_blue_v5.png": "2994359605c9e2569ce7b25c3c6af6d8336ee7b806c427f6fd40a29e69db3aaa",
+    "layers/eyes_reference_neutral_eye_gray_v5.png": "6482218a019990ac3f7e1563b287c7c5b0e2127fa36ccfd84234f1ad67a27f1e",
+    "layers/eyes_reference_friendly_eye_dark_brown_v5.png": "b37f16fb2616388fd80b6b14e34721fdf350397129cf775a625886f1abe61668",
+    "layers/eyes_reference_friendly_eye_brown_v5.png": "76e36b1595e5784815b2630c92c5fc6cd49f5f36f7dc1ee4c4ca6777b98e7775",
+    "layers/eyes_reference_friendly_eye_hazel_v5.png": "ac695b25195bad10d0d03b2f3b85d187f8ce3ede36b1b44604eb1779b3a28a8e",
+    "layers/eyes_reference_friendly_eye_green_v5.png": "486f03b7cfb3ee265efa36bab0fdcfb7a0ba46c7fc42179ac48826b9a5949ac3",
+    "layers/eyes_reference_friendly_eye_blue_v5.png": "e5d17cc3230472ea1645fdab800d97f37a02c93f68e7068de9f22e338eb34c4e",
+    "layers/eyes_reference_friendly_eye_gray_v5.png": "edb013560e88e20430773a6db36f4e3ca0a3c1c5d12123d92628a7cf0f07ee30",
+    "layers/eyes_reference_focused_eye_dark_brown_v5.png": "2e58144c47c8c00438e5b3970cdd7dc98deddc7482606c78c9fdc6da44aaf0b9",
+    "layers/eyes_reference_focused_eye_brown_v5.png": "d32863801101a3871f8ba214a458187d460a24c339bf1cc94251e76d511e0bad",
+    "layers/eyes_reference_focused_eye_hazel_v5.png": "93767c439add4773b007b274141b9d99d243a8309054ee6a33b48cab0f812d06",
+    "layers/eyes_reference_focused_eye_green_v5.png": "1aec617c0eb4012dee8b621debbd665d04f55954b4d558d9fd74c44b45297a92",
+    "layers/eyes_reference_focused_eye_blue_v5.png": "972a336856a56f5ae565351ba3217967c8c96aee18724c7c05e3a7a1d5fe46c0",
+    "layers/eyes_reference_focused_eye_gray_v5.png": "ae0a52d50cb30a1164063323b45337cc95bd1fb119f3b443845b1187ba4818ff",
+    "layers/brows_reference_neutral_v5.png": "e1fcae034c7e27cd2e861699b26c4d3af244ce976c7444000a06e2a0f114a969",
+    "layers/brows_reference_friendly_v5.png": "985f7b8f68d6561a5841a082e2250960ab91f11aec1c1680d3694602543a966b",
+    "layers/brows_reference_focused_v5.png": "48f85904644f352cdbbbdc0aaca328ada05896f07bcdb1196decee5fd517385b",
+    "layers/nose_reference_neutral_skin_02_v5.png": "b4825af86fed17b33ab536bf1a0b20dbd192f6f2133d9b1eb5b019202858bef6",
+    "layers/nose_reference_neutral_skin_01_v5.png": "6bb9a833ecc86bea154e5ec49c22ff16c1107c5868088ec94b49451bf00bb4ce",
+    "layers/nose_reference_neutral_skin_03_v5.png": "c2c454f77a4cee3eba00847d054f5e765cd879a9ab121316e6f3a70c366ad083",
+    "layers/nose_reference_neutral_skin_04_v5.png": "70994dbd32e23d525e155ac0c2a4b0ccc0d1f26d178343ad004aa5ac9a762905",
+    "layers/nose_reference_neutral_skin_05_v5.png": "b278b143c8e093b13e52722e66df53fbc754d792d1fd01c381fc1c3552038029",
+    "layers/nose_reference_neutral_skin_06_v5.png": "1b9e6df828af72dab43e577a28fe78c1a0a253673f4e33fc3cf9cd81c5f6c383",
+    "layers/nose_reference_neutral_skin_07_v5.png": "6a450f5b1aa43446c325b7bbd15b9f68ea8c1d1eb38045d92ac717a713ee1fc1",
+    "layers/nose_reference_neutral_skin_08_v5.png": "fc41e4ffd65e1443d65646011d2fc620042724e8487eba70b7c6b3ab9b6cd5d5",
+    "layers/nose_reference_neutral_skin_09_v5.png": "57e17cc412ec6e0e6228dc8ee9895ac9b31c072212278240848988ede2ea7e19",
+    "layers/nose_reference_neutral_skin_10_v5.png": "07ebdaef7a52889b98e28711f8fc8208178ffaca9823d92960eff6db5afc5efc",
+    "layers/nose_reference_neutral_skin_11_v5.png": "6d401b0e6d8095d4748348bc541d93667fd71e5705a64b223aadf2d10309a166",
+    "layers/nose_reference_neutral_skin_12_v5.png": "f95f0135ecdff09442cb2455a46a6ca50058c7decdb423a436566ddd233e051f",
+    "layers/nose_reference_friendly_skin_02_v5.png": "774f3169e31354da9b25f937bdbe056b5749f6d4a93cd9a6a9dca713d9169903",
+    "layers/nose_reference_friendly_skin_01_v5.png": "fefc577edebadd2a8945616722cbf48d04d91653b35f28617b4b2449c28c31d6",
+    "layers/nose_reference_friendly_skin_03_v5.png": "1268af69d78f0631fa29546c472baba8b45c4c18ed04a0b1b33e27ab1dbe7591",
+    "layers/nose_reference_friendly_skin_04_v5.png": "b95ad5c076b884778f0ffbd6e637f2f66dc19898c870dbaed01c31caf47fa673",
+    "layers/nose_reference_friendly_skin_05_v5.png": "5c1561a7f01af0b292e4acf82ae086e4980d3f7889ffb57e3dfc337605b74a85",
+    "layers/nose_reference_friendly_skin_06_v5.png": "60bb7f138fdf8837cfa32f48b24605f2b9955acd0708e92cd90a2ae2acd52542",
+    "layers/nose_reference_friendly_skin_07_v5.png": "d6f15c4751772c34c9bca521ec43ffe8d3113a0f3c7139a4020d47cb6ef7686f",
+    "layers/nose_reference_friendly_skin_08_v5.png": "08f2a6514d3d944d1ebd6e2bd8c2c7b5a6afb0877e16025930b15b8c02fd7be1",
+    "layers/nose_reference_friendly_skin_09_v5.png": "d5bdc930d114e43f8e2dc19ad7fe278fed2a47640d19723edb6772466d83b36a",
+    "layers/nose_reference_friendly_skin_10_v5.png": "b60346fef2c1bbe95c4cb087016ad8dd2ddd7bf6847182ff5f45cfc11eb4da1b",
+    "layers/nose_reference_friendly_skin_11_v5.png": "b527a13e016c0d89f55b2d65c63a7501968f1da34271baf1eb4f2ef21b1a70bf",
+    "layers/nose_reference_friendly_skin_12_v5.png": "8b1e854f4c50d604ad80e0a6e40e5e59c074099ab82adca3dc02688185896401",
+    "layers/nose_reference_focused_skin_02_v5.png": "a75dbb01ae75418daa80ab16593e691bc51f2c294dee1fcab637c4f3804f1af9",
+    "layers/nose_reference_focused_skin_01_v5.png": "fefc577edebadd2a8945616722cbf48d04d91653b35f28617b4b2449c28c31d6",
+    "layers/nose_reference_focused_skin_03_v5.png": "1268af69d78f0631fa29546c472baba8b45c4c18ed04a0b1b33e27ab1dbe7591",
+    "layers/nose_reference_focused_skin_04_v5.png": "b95ad5c076b884778f0ffbd6e637f2f66dc19898c870dbaed01c31caf47fa673",
+    "layers/nose_reference_focused_skin_05_v5.png": "5c1561a7f01af0b292e4acf82ae086e4980d3f7889ffb57e3dfc337605b74a85",
+    "layers/nose_reference_focused_skin_06_v5.png": "60bb7f138fdf8837cfa32f48b24605f2b9955acd0708e92cd90a2ae2acd52542",
+    "layers/nose_reference_focused_skin_07_v5.png": "d6f15c4751772c34c9bca521ec43ffe8d3113a0f3c7139a4020d47cb6ef7686f",
+    "layers/nose_reference_focused_skin_08_v5.png": "08f2a6514d3d944d1ebd6e2bd8c2c7b5a6afb0877e16025930b15b8c02fd7be1",
+    "layers/nose_reference_focused_skin_09_v5.png": "d5bdc930d114e43f8e2dc19ad7fe278fed2a47640d19723edb6772466d83b36a",
+    "layers/nose_reference_focused_skin_10_v5.png": "b60346fef2c1bbe95c4cb087016ad8dd2ddd7bf6847182ff5f45cfc11eb4da1b",
+    "layers/nose_reference_focused_skin_11_v5.png": "b527a13e016c0d89f55b2d65c63a7501968f1da34271baf1eb4f2ef21b1a70bf",
+    "layers/nose_reference_focused_skin_12_v5.png": "8b1e854f4c50d604ad80e0a6e40e5e59c074099ab82adca3dc02688185896401",
+    "layers/mouth_reference_neutral_skin_02_v5.png": "b22d4a13b98d615569e6de307c7e0af186fa426c8044e9982a34b2bfeab1f32d",
+    "layers/mouth_reference_neutral_skin_01_v5.png": "d82502bebc60ddf362241300ff6704a8f6e4610db0ca9e804453a5af568a84f2",
+    "layers/mouth_reference_neutral_skin_03_v5.png": "d761d90543959b2c0849d5fcc59366b8a5e64bb22b912dfd7c0523f6a8ec1487",
+    "layers/mouth_reference_neutral_skin_04_v5.png": "9fbed8cd9db7c0ab80a1854547c6e33696f46a47f6c7695329830acf2908fc6d",
+    "layers/mouth_reference_neutral_skin_05_v5.png": "b390e2f3088c6adfa90ab7354cfa1a5b5144c46867b664bd35c6e644e36b8e71",
+    "layers/mouth_reference_neutral_skin_06_v5.png": "e7b2ceb4324627590afc17c0772bc35485e94b261254032e697ef105563b951c",
+    "layers/mouth_reference_neutral_skin_07_v5.png": "735804c5f2f705ebe86b476d4b48f08aa8b5011195cfe23a50cc859b7f8f87a6",
+    "layers/mouth_reference_neutral_skin_08_v5.png": "cc3035fdf08b95c66b493a6c48347071a6efaf7538e4e72edcaa6d47fc6a9d43",
+    "layers/mouth_reference_neutral_skin_09_v5.png": "1ed45619adbc102b030e585807a18a83ea1b12beb4381a2b5b305a44700bb190",
+    "layers/mouth_reference_neutral_skin_10_v5.png": "cc29ff8ce0ac215abb80f7ab7463d20b06d9a164d62b50023a8838c81f46e5d4",
+    "layers/mouth_reference_neutral_skin_11_v5.png": "22ef3390ada9cb59aeabb0fc63c4e82a06cd540ad82ace873ee77fd8ee04314b",
+    "layers/mouth_reference_neutral_skin_12_v5.png": "27f6a2c9ecea66476ac039389a5d45efec55b3a5e538a69555e1b1983ecea10a",
+    "layers/mouth_reference_friendly_skin_02_v5.png": "aeca8b082dcb410ed0de7a7f2c5de9fc6eefda09dab188b2bd5436b6c9f24b5d",
+    "layers/mouth_reference_friendly_skin_01_v5.png": "e478c0e646d1f572cd400aa46500085e97d6cd362aa8c6c7d94d1d542f3d2b64",
+    "layers/mouth_reference_friendly_skin_03_v5.png": "3232ea9db43f7f5c5593d7286dd4002debe39edfe2508f7a867c2e903f9b0f38",
+    "layers/mouth_reference_friendly_skin_04_v5.png": "74eaf24b47036d2e2deb0a12571d6efd09840a830b98af55d3c2c5be7f0ac538",
+    "layers/mouth_reference_friendly_skin_05_v5.png": "c7e8bf1ad6a5c1ea16cdf3d7ed69526f07180dd2544b5224734812cc898db434",
+    "layers/mouth_reference_friendly_skin_06_v5.png": "26603b3853df3998ed3dad6ae1c692436b370727699a0b31ed2c6a53df0b4994",
+    "layers/mouth_reference_friendly_skin_07_v5.png": "a583255afb8e3e2a2e5e4d13ca055f00ad42b0bc3024e6f5ddc25ffbb0f96853",
+    "layers/mouth_reference_friendly_skin_08_v5.png": "7cdeacae839bbe00153b57447b3942f134beb25384168d5c6594e419481c9f42",
+    "layers/mouth_reference_friendly_skin_09_v5.png": "ec094660dc42905ca3efb658b96b25cae93126e200bbe8850a1a987bc8c47450",
+    "layers/mouth_reference_friendly_skin_10_v5.png": "5e9131247297800e1533234044f4a7953c3cf54e5ddd93d9cf709ac5c24511aa",
+    "layers/mouth_reference_friendly_skin_11_v5.png": "fd09a73b257406faff2573b96bd02ed5fac69a20e1a1198835571323a842d8b3",
+    "layers/mouth_reference_friendly_skin_12_v5.png": "3da72ad7040fd532d2385f1e01b78773fd669c4666859c9cad3c46a10f76e7f6",
+    "layers/mouth_reference_focused_skin_02_v5.png": "3efd9996e3b652afe850ce68f53fc67e78486193b432d105db15249b99737ebc",
+    "layers/mouth_reference_focused_skin_01_v5.png": "e478c0e646d1f572cd400aa46500085e97d6cd362aa8c6c7d94d1d542f3d2b64",
+    "layers/mouth_reference_focused_skin_03_v5.png": "3232ea9db43f7f5c5593d7286dd4002debe39edfe2508f7a867c2e903f9b0f38",
+    "layers/mouth_reference_focused_skin_04_v5.png": "74eaf24b47036d2e2deb0a12571d6efd09840a830b98af55d3c2c5be7f0ac538",
+    "layers/mouth_reference_focused_skin_05_v5.png": "c7e8bf1ad6a5c1ea16cdf3d7ed69526f07180dd2544b5224734812cc898db434",
+    "layers/mouth_reference_focused_skin_06_v5.png": "26603b3853df3998ed3dad6ae1c692436b370727699a0b31ed2c6a53df0b4994",
+    "layers/mouth_reference_focused_skin_07_v5.png": "a583255afb8e3e2a2e5e4d13ca055f00ad42b0bc3024e6f5ddc25ffbb0f96853",
+    "layers/mouth_reference_focused_skin_08_v5.png": "7cdeacae839bbe00153b57447b3942f134beb25384168d5c6594e419481c9f42",
+    "layers/mouth_reference_focused_skin_09_v5.png": "ec094660dc42905ca3efb658b96b25cae93126e200bbe8850a1a987bc8c47450",
+    "layers/mouth_reference_focused_skin_10_v5.png": "5e9131247297800e1533234044f4a7953c3cf54e5ddd93d9cf709ac5c24511aa",
+    "layers/mouth_reference_focused_skin_11_v5.png": "fd09a73b257406faff2573b96bd02ed5fac69a20e1a1198835571323a842d8b3",
+    "layers/mouth_reference_focused_skin_12_v5.png": "3da72ad7040fd532d2385f1e01b78773fd669c4666859c9cad3c46a10f76e7f6",
+    "layers/ears_small_skin_02_v5.png": "afb35d8b1264afa0890a9cf5e92a9ff5c6f17bc26e1fb8a345e5a0a7b75c2476",
+    "layers/ears_small_skin_01_v5.png": "080018b0853b7ff8a101ca3488b53577727aa8758bfd7be91931d772fa26060d",
+    "layers/ears_small_skin_03_v5.png": "e9760b8c6ef5177b4fb50ac1d92135817dde87889ba1852482ddadafa0270af1",
+    "layers/ears_small_skin_04_v5.png": "2e368a093581c36167b4e6abaf30c945b400e40bc42767ba12343561b8df962c",
+    "layers/ears_small_skin_05_v5.png": "1b9960953517de5a64f4124ad35db97b596fc47c12c0a9287325165afb2197b6",
+    "layers/ears_small_skin_06_v5.png": "208e3956e106797c63f7675cf80b1edf1fe67de3303d24583aa5574212f1a59c",
+    "layers/ears_small_skin_07_v5.png": "216c8d57e8c932ecef8298814acf3da641b99290c49c037da9880e8b00ed61fd",
+    "layers/ears_small_skin_08_v5.png": "eacc7afc3f1ddd5ab9263a0f13faa7c40e4fa829f96460f4fd70045cb9da70dd",
+    "layers/ears_small_skin_09_v5.png": "4dd3730810ee5b4af8e4dfe20ca91a467c02e5a80f104f8a800e11c1a24dfbb0",
+    "layers/ears_small_skin_10_v5.png": "e5e94209fe887e9047f7e35102a1ca55b857fed3afd89fd93916a11202dc9cd2",
+    "layers/ears_small_skin_11_v5.png": "7e7d7555526854bbc486ddc7431085c42181e10c808d307f31bcb9ab685d8f6f",
+    "layers/ears_small_skin_12_v5.png": "60adf43a2cc32c92eeefd5937913b7c8e5a66f0af1be9ab2073c33245f386230",
+    "layers/ears_rounded_skin_02_v5.png": "9230ae0fd112d670cbb1405916a5ccf45e2939cd0c059a6ca39094c372b65605",
+    "layers/ears_rounded_skin_01_v5.png": "bf5d9e098b2a97e8be325a3e736f633b67c695e67bc92b35430ae9868e29314d",
+    "layers/ears_rounded_skin_03_v5.png": "ec625e13f59305c31bd9ddbca5248f96e7f362998135c9158e0e0cfff0cd1ad8",
+    "layers/ears_rounded_skin_04_v5.png": "045a4fadbdb6b56f816732b1c6f893abde6be9094efe9b99d21079917c9b0c6d",
+    "layers/ears_rounded_skin_05_v5.png": "0bb148874489f8a2b9de4a492be3c3df1b3c043ac67cf359ee20395edef73ba3",
+    "layers/ears_rounded_skin_06_v5.png": "c5b59745e2dac628a158bc428208f1a731cce4887456ace3d7f9132994d49126",
+    "layers/ears_rounded_skin_07_v5.png": "638631eb03294eba05bd78bd5f37321e620c5724434d3c65e31825e2f3525480",
+    "layers/ears_rounded_skin_08_v5.png": "0cef268d10ecbe46c1c9e8a52673890cd37a37223b079848908958cb08bc73c1",
+    "layers/ears_rounded_skin_09_v5.png": "1b4b51d10c7767b033e02cc5e194a1bbcc02fad3c7f63b41bfdeac418e0b8c90",
+    "layers/ears_rounded_skin_10_v5.png": "86e680b27e222fbee554c6aa0a692ac73e7edec9f6f776e74520277206a286bc",
+    "layers/ears_rounded_skin_11_v5.png": "507f40805a743cee414b03fd2e2fad85bb4c29bc8023b4802ab13d256d7a6e95",
+    "layers/ears_rounded_skin_12_v5.png": "327a1e361f215eda2fa72a40bb9c577c63a6c21a53f13f33cd122be9fbea1b8c",
+    "layers/hair_textured_v5.png": "bd36044de5c7d1a5de19c8887b0f5be396265125822bd6953287f303838c3b30",
+    "layers/hair_fluffy_back_v5.png": "f3dc7b9ffd80ea13f1bb2fe6afa34601a8963305d0e1bbd8ca92b82d528b25b7",
+    "layers/hair_fluffy_front_v5.png": "563b30079381c1df96f79293104099973ef8e0ac8ae8811f759759238e23e0d7",
+    "layers/hair_crop_back_v5.png": "a3d989b9db3f4731ce45aae9d74808985739b30c0da37b6ca5df55ab705dce04",
+    "layers/hair_crop_front_v5.png": "58eab0272687f3edd9dbb4a4adcc429cb60edbb4bdd56485595fd14d764c20a1",
+    "layers/hair_curls_back_v5.png": "4fbb063f8005e75738c65d756745ca154abb6259c168014c0ea8bc5f0da065ad",
+    "layers/hair_curls_front_v5.png": "a06d75f425bb11f30a17e06c5d8b0d629cc3c93deeb0f3ec4ddf0397af3b409f",
+    "layers/hair_long_back_v5.png": "a953758401442c6f1d34aff160b6e7a505928024b151f462f0ed431e9d9ce9e1",
+    "layers/hair_long_front_v5.png": "8b4c39cb844d17b39ee2b1f73dfc7034121bd311a90d63cdab14829838b6d56a",
+    "layers/hair_bob_back_v5.png": "470600aafbe570dbe7b94d182db283a5dd824d16f543dfcce6e5804c083a8bf9",
+    "layers/hair_bob_front_v5.png": "b5684ab5d8149c361dd744eeabecea1d7f4954bcfd67398fc5c09b6cb08b94f6",
+    "layers/hair_braids_back_v5.png": "ca7e7878b9561da27f5a9a9771917ebc1a41f913ea6ca21edb5b32352bd93fb9",
+    "layers/hair_braids_front_v5.png": "f6467763ee0ba44f1d2b402b73ed69afc8421c77a0d7f0b0983140e990bf0241",
+    "layers/top_navy_v5.png": "23be3a5a5f94567d561df79f7c222e3bdcb8280e4bb2700069d03b6bb8e83dd9",
+    "layers/top_quarter_v5.png": "a759c68b44d1d26e3f4f53e959d99c9600ac61077d9457f5b047a8690f2b6c65",
+    "layers/top_white_tee_v5.png": "0a838ef7fc742eba74e4c82f6620bc2cb8751fe30647108dccd39936f1cc6f0a",
+    "layers/top_hoodie_back_v5.png": "10f0fee0ebcc1043070d2d41ea74f4cb1f36b420850eac74c699c064afb7d664",
+    "layers/top_hoodie_v5.png": "074f400256624563a487bfd4e2655bd84f299d063b3f27842266a492746e3c6c",
+    "layers/top_forest_hoodie_back_v5.png": "ec782328711f5506d4c2613af7dd59eb479112a7760395399cf924ec2cc6fd49",
+    "layers/top_forest_hoodie_v5.png": "02a9e3af6976f3cd1a42605395cd28f796a48028b4300a71ad7f1e311a38228c",
+    "layers/top_polo_v5.png": "0a72ca5bbf46b98f93f04467e5a454b4dfbd25fd43bbcb28484a4156d98557de",
+    "layers/top_oxford_v5.png": "3f7fbbb83ceb13481942907f69ec902d2aeaded07d2359a99f574ebcc8b4e267",
+    "layers/top_knit_v5.png": "7b0b440b6aff0e3a286526af216c2e04ee242f459234aee8f1547054d357944c",
+    "layers/jacket_denim_v5.png": "d55a8d858d80a937c71166e20d0d2e7794c38fc37ec16a47e74ded567098a65d",
+    "layers/jacket_bomber_v5.png": "02b3a69d57a8936f7838a894e270a0c8c63d85115d23b8d3cc675b82b6a19a97",
+    "layers/jacket_track_v5.png": "b63eb782ce45d8f5f332a353faa1b488b71edde2725d1777c44178afa73a9a1f",
+    "layers/bottom_denim_v5.png": "e85538ee9378a54854f73f1c4826e2663039e51e8388d1044db4244a88b82182",
+    "layers/bottom_black_v5.png": "ebc1a45f87f6e6b5b0b5447daddd47ef22c9101a49f38a100825434f66ca7bc4",
+    "layers/bottom_cargo_v5.png": "d8c8ddd427f264302aa245ccd26e3d0797778662a61875a0e778311195cdc147",
+    "layers/bottom_track_v5.png": "7a40308de348f392ba9628261887d1fb5902a1f0c344a12ff042acdd475b7f89",
+    "layers/shoes_white_v5.png": "7d51f093bd48edf215e48f73edb46500718046d9f3fce25f04a3536fb6a78e4f",
+    "layers/shoes_black_v5.png": "481a56b6a2782138597be68b9521f607069ec6eaba35a5dd6f218d1da156c82a",
+    "layers/earrings_studs_v5.png": "ab9b5069d83be397b06649dca1ae062be4b1091055aa8b4cd1712f51af4303d7",
+    "layers/earrings_hoops_v5.png": "278452e3f86a119738b59f1a582116616a0db8ce84ea6ea0ac2a8cbf21c88a25",
+    "layers/hat_cap_v5.png": "3300f476992833cb3fdef29802355aeee3998ab91ae6dcb798509d11e3c463a8",
+    "layers/hat_beanie_v5.png": "8ca036c3a73a66f0ba1514ea45babc8135e249ca1da21d7b16d8a686fa76a15b",
+    "layers/glasses_round_v5.png": "fc1b849fdaf1dc22d6383296df902a3bf3e61b99c67dc84feff601129ad28b49",
+    "layers/glasses_rect_v5.png": "1587078385afd511e078feb59adb8c7eb64a89fcb484d1ebccf6d30b634fc659"
+  }
+}

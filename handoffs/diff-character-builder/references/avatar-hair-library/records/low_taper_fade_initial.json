@@ -1,0 +1,11 @@
+{
+  "id": "hair.low_taper_fade",
+  "prompt": "Use case: stylized-concept. Asset type: one modular DIFF pixel-avatar hairstyle, production source artwork. Reference 1 supplies the approved pixel-art style; reference 2 supplies the blank head proportions. Generate ONLY a neat low taper fade haircut: compact short textured top, closely tapered sides with a subtle low fade, no tall quiff, readable at tiny avatar size. One hairstyle only, front facing, upright. Medium neutral brown hair, dark brown contour, 3–5 restrained tonal values, deliberate coarse square pixel clusters matching the reference. No realistic strands or antialiasing. Show the entire crown and side sections centered on a square canvas with generous transparent padding. Face opening is genuinely transparent; no face, eyes, brows, nose, mouth, skin, ears, neck, body, clothing, labels or props. No painted checkerboard. True RGBA transparent background. Keep the compact head silhouette compatible with the supplied master; leave the eyebrows and eye line completely clear. This layer will be normalized onto the locked 128×128 rig, never positioned using runtime offsets.",
+  "refs": [
+    "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png",
+    "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+  ],
+  "source": "low_taper_fade.png",
+  "origin": "/Users/vlad/.codex/generated_images/01a07a71-8c9e-7292-bd75-a2688e8698a6/exec-7fb803d1-74df-469b-9465-9dda23cf3ebf.png",
+  "mode": "built-in image_gen"
+}

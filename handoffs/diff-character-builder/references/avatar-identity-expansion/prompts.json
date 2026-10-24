@@ -1,0 +1,543 @@
+{
+  "mode": "built-in image_gen",
+  "jobs": [
+    {
+      "id": "hair.receding_crop",
+      "name": "Receding crop",
+      "slot": "hair",
+      "group": "Short",
+      "guide": {
+        "width": 27,
+        "y": 3,
+        "height": 20
+      },
+      "description": "short cropped hair with a gently receding M-shaped hairline and natural temple recession",
+      "source": "hair_receding_crop.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/face-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar hair layer. The input is a STYLE REFERENCE for the small DIFF character, not a request to recreate a portrait. Create ONLY short cropped hair with a gently receding M-shaped hairline and natural temple recession. Hair is medium natural brown with dark brown outlines, follow the same compact head proportions, leave the face opening clear and do not include scalp, forehead, skin, face, neck or body. Deliberately coarse modern pixel art with crisp stair-step edges, broad readable clusters and 2\u20134 tonal values, matching the reference. No realistic texture, airbrush, gradients, exaggerated expression, outline box, labels or watermark. Center the complete isolated feature on a square transparent RGBA canvas with generous margin. True transparency in all empty areas; no painted checkerboard or backdrop. These source pixels will be isolated and normalized into a fixed 128\u00d7128 rig. One requested module only."
+    },
+    {
+      "id": "hair.receding_waves",
+      "name": "Receding waves",
+      "slot": "hair",
+      "group": "Short",
+      "guide": {
+        "width": 30,
+        "y": 2,
+        "height": 23
+      },
+      "description": "short soft waves with a mature receding temple hairline",
+      "source": "hair_receding_waves.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/face-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar hair layer. The input is a STYLE REFERENCE for the small DIFF character, not a request to recreate a portrait. Create ONLY short soft waves with a mature receding temple hairline. Hair is medium natural brown with dark brown outlines, follow the same compact head proportions, leave the face opening clear and do not include scalp, forehead, skin, face, neck or body. Deliberately coarse modern pixel art with crisp stair-step edges, broad readable clusters and 2\u20134 tonal values, matching the reference. No realistic texture, airbrush, gradients, exaggerated expression, outline box, labels or watermark. Center the complete isolated feature on a square transparent RGBA canvas with generous margin. True transparency in all empty areas; no painted checkerboard or backdrop. These source pixels will be isolated and normalized into a fixed 128\u00d7128 rig. One requested module only."
+    },
+    {
+      "id": "hair.balding_crown",
+      "name": "Balding crown",
+      "slot": "hair",
+      "group": "Short",
+      "guide": {
+        "width": 27,
+        "y": 4,
+        "height": 20
+      },
+      "description": "sparse horseshoe-shaped side hair and an entirely transparent broad bald crown, no scalp pixels",
+      "source": "hair_balding_crown.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/face-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar hair layer. The input is a STYLE REFERENCE for the small DIFF character, not a request to recreate a portrait. Create ONLY sparse horseshoe-shaped side hair and an entirely transparent broad bald crown, no scalp pixels. Hair is medium natural brown with dark brown outlines, follow the same compact head proportions, leave the face opening clear and do not include scalp, forehead, skin, face, neck or body. Deliberately coarse modern pixel art with crisp stair-step edges, broad readable clusters and 2\u20134 tonal values, matching the reference. No realistic texture, airbrush, gradients, exaggerated expression, outline box, labels or watermark. Center the complete isolated feature on a square transparent RGBA canvas with generous margin. True transparency in all empty areas; no painted checkerboard or backdrop. These source pixels will be isolated and normalized into a fixed 128\u00d7128 rig. One requested module only."
+    },
+    {
+      "id": "hair.flat_top",
+      "name": "Flat top",
+      "slot": "hair",
+      "group": "Short",
+      "guide": {
+        "width": 31,
+        "y": 1,
+        "height": 22
+      },
+      "description": "compact tightly coiled flat-top haircut with vertical sides and a level top",
+      "source": "hair_flat_top.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/face-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar hair layer. The input is a STYLE REFERENCE for the small DIFF character, not a request to recreate a portrait. Create ONLY compact tightly coiled flat-top haircut with vertical sides and a level top. Hair is medium natural brown with dark brown outlines, follow the same compact head proportions, leave the face opening clear and do not include scalp, forehead, skin, face, neck or body. Deliberately coarse modern pixel art with crisp stair-step edges, broad readable clusters and 2\u20134 tonal values, matching the reference. No realistic texture, airbrush, gradients, exaggerated expression, outline box, labels or watermark. Center the complete isolated feature on a square transparent RGBA canvas with generous margin. True transparency in all empty areas; no painted checkerboard or backdrop. These source pixels will be isolated and normalized into a fixed 128\u00d7128 rig. One requested module only."
+    },
+    {
+      "id": "hair.short_twists",
+      "name": "Short twists",
+      "slot": "hair",
+      "group": "Short",
+      "guide": {
+        "width": 33,
+        "y": 1,
+        "height": 24
+      },
+      "description": "short thick two-strand twists with distinct grouped pixel locks",
+      "source": "hair_short_twists.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/face-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar hair layer. The input is a STYLE REFERENCE for the small DIFF character, not a request to recreate a portrait. Create ONLY short thick two-strand twists with distinct grouped pixel locks. Hair is medium natural brown with dark brown outlines, follow the same compact head proportions, leave the face opening clear and do not include scalp, forehead, skin, face, neck or body. Deliberately coarse modern pixel art with crisp stair-step edges, broad readable clusters and 2\u20134 tonal values, matching the reference. No realistic texture, airbrush, gradients, exaggerated expression, outline box, labels or watermark. Center the complete isolated feature on a square transparent RGBA canvas with generous margin. True transparency in all empty areas; no painted checkerboard or backdrop. These source pixels will be isolated and normalized into a fixed 128\u00d7128 rig. One requested module only."
+    },
+    {
+      "id": "hair.cornrows",
+      "name": "Cornrows",
+      "slot": "hair",
+      "group": "Short",
+      "guide": {
+        "width": 28,
+        "y": 3,
+        "height": 22
+      },
+      "description": "close cornrow braids swept back from an exposed forehead, clearly separated braids, transparent gaps instead of scalp",
+      "source": "hair_cornrows.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/face-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar hair layer. The input is a STYLE REFERENCE for the small DIFF character, not a request to recreate a portrait. Create ONLY close cornrow braids swept back from an exposed forehead, clearly separated braids, transparent gaps instead of scalp. Hair is medium natural brown with dark brown outlines, follow the same compact head proportions, leave the face opening clear and do not include scalp, forehead, skin, face, neck or body. Deliberately coarse modern pixel art with crisp stair-step edges, broad readable clusters and 2\u20134 tonal values, matching the reference. No realistic texture, airbrush, gradients, exaggerated expression, outline box, labels or watermark. Center the complete isolated feature on a square transparent RGBA canvas with generous margin. True transparency in all empty areas; no painted checkerboard or backdrop. These source pixels will be isolated and normalized into a fixed 128\u00d7128 rig. One requested module only."
+    },
+    {
+      "id": "hair.afro_puffs",
+      "name": "Twin afro puffs",
+      "slot": "hair",
+      "group": "Tied",
+      "guide": {
+        "width": 38,
+        "y": 1,
+        "height": 28
+      },
+      "description": "two small rounded afro puffs high on either side with tightly coiled texture and an exposed forehead",
+      "source": "hair_afro_puffs.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/face-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar hair layer. The input is a STYLE REFERENCE for the small DIFF character, not a request to recreate a portrait. Create ONLY two small rounded afro puffs high on either side with tightly coiled texture and an exposed forehead. Hair is medium natural brown with dark brown outlines, follow the same compact head proportions, leave the face opening clear and do not include scalp, forehead, skin, face, neck or body. Deliberately coarse modern pixel art with crisp stair-step edges, broad readable clusters and 2\u20134 tonal values, matching the reference. No realistic texture, airbrush, gradients, exaggerated expression, outline box, labels or watermark. Center the complete isolated feature on a square transparent RGBA canvas with generous margin. True transparency in all empty areas; no painted checkerboard or backdrop. These source pixels will be isolated and normalized into a fixed 128\u00d7128 rig. One requested module only."
+    },
+    {
+      "id": "hair.side_bob",
+      "name": "Side-swept bob",
+      "slot": "hair",
+      "group": "Medium",
+      "guide": {
+        "width": 33,
+        "y": 2,
+        "height": 33
+      },
+      "description": "chin-length side-parted softly curved bob, an open face and one side tucked behind the ear",
+      "source": "hair_side_bob.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/face-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar hair layer. The input is a STYLE REFERENCE for the small DIFF character, not a request to recreate a portrait. Create ONLY chin-length side-parted softly curved bob, an open face and one side tucked behind the ear. Hair is medium natural brown with dark brown outlines, follow the same compact head proportions, leave the face opening clear and do not include scalp, forehead, skin, face, neck or body. Deliberately coarse modern pixel art with crisp stair-step edges, broad readable clusters and 2\u20134 tonal values, matching the reference. No realistic texture, airbrush, gradients, exaggerated expression, outline box, labels or watermark. Center the complete isolated feature on a square transparent RGBA canvas with generous margin. True transparency in all empty areas; no painted checkerboard or backdrop. These source pixels will be isolated and normalized into a fixed 128\u00d7128 rig. One requested module only."
+    },
+    {
+      "id": "eyes.almond",
+      "name": "Almond eyes",
+      "slot": "eyes",
+      "description": "a matched pair of relaxed almond-shaped eyes with small dark brown irises, tiny white sclera accents and restrained upper lids",
+      "width": 5,
+      "height": 3,
+      "source": "eyes_almond.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/face-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar eyes layer. The input is a STYLE REFERENCE for the small DIFF character, not a request to recreate a portrait. Create ONLY a matched pair of relaxed almond-shaped eyes with small dark brown irises, tiny white sclera accents and restrained upper lids. No head, face silhouette, hair, neck, clothing or unrelated facial features. If a pair is requested, show exactly two corresponding left/right features on one horizontal line. Deliberately coarse modern pixel art with crisp stair-step edges, broad readable clusters and 2\u20134 tonal values, matching the reference. No realistic texture, airbrush, gradients, exaggerated expression, outline box, labels or watermark. Center the complete isolated feature on a square transparent RGBA canvas with generous margin. True transparency in all empty areas; no painted checkerboard or backdrop. These source pixels will be isolated and normalized into a fixed 128\u00d7128 rig. One requested module only."
+    },
+    {
+      "id": "eyes.hooded",
+      "name": "Hooded eyes",
+      "slot": "eyes",
+      "description": "a matched pair of hooded eyes with heavier upper eyelids, small dark brown irises and subtle white sclera accents",
+      "width": 5,
+      "height": 2,
+      "source": "eyes_hooded.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/face-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar eyes layer. The input is a STYLE REFERENCE for the small DIFF character, not a request to recreate a portrait. Create ONLY a matched pair of hooded eyes with heavier upper eyelids, small dark brown irises and subtle white sclera accents. No head, face silhouette, hair, neck, clothing or unrelated facial features. If a pair is requested, show exactly two corresponding left/right features on one horizontal line. Deliberately coarse modern pixel art with crisp stair-step edges, broad readable clusters and 2\u20134 tonal values, matching the reference. No realistic texture, airbrush, gradients, exaggerated expression, outline box, labels or watermark. Center the complete isolated feature on a square transparent RGBA canvas with generous margin. True transparency in all empty areas; no painted checkerboard or backdrop. These source pixels will be isolated and normalized into a fixed 128\u00d7128 rig. One requested module only."
+    },
+    {
+      "id": "eyes.monolid",
+      "name": "Monolid eyes",
+      "slot": "eyes",
+      "description": "a matched pair of calm monolid eyes, smooth uninterrupted upper lid and narrow brown iris, subtle white sclera corners",
+      "width": 5,
+      "height": 2,
+      "source": "eyes_monolid.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/face-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar eyes layer. The input is a STYLE REFERENCE for the small DIFF character, not a request to recreate a portrait. Create ONLY a matched pair of calm monolid eyes, smooth uninterrupted upper lid and narrow brown iris, subtle white sclera corners. No head, face silhouette, hair, neck, clothing or unrelated facial features. If a pair is requested, show exactly two corresponding left/right features on one horizontal line. Deliberately coarse modern pixel art with crisp stair-step edges, broad readable clusters and 2\u20134 tonal values, matching the reference. No realistic texture, airbrush, gradients, exaggerated expression, outline box, labels or watermark. Center the complete isolated feature on a square transparent RGBA canvas with generous margin. True transparency in all empty areas; no painted checkerboard or backdrop. These source pixels will be isolated and normalized into a fixed 128\u00d7128 rig. One requested module only."
+    },
+    {
+      "id": "eyes.round_soft",
+      "name": "Soft round eyes",
+      "slot": "eyes",
+      "description": "a matched pair of softly rounded small eyes, dark brown irises and tiny white sclera corners, no exaggerated anime expression",
+      "width": 5,
+      "height": 3,
+      "source": "eyes_round_soft.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/face-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar eyes layer. The input is a STYLE REFERENCE for the small DIFF character, not a request to recreate a portrait. Create ONLY a matched pair of softly rounded small eyes, dark brown irises and tiny white sclera corners, no exaggerated anime expression. No head, face silhouette, hair, neck, clothing or unrelated facial features. If a pair is requested, show exactly two corresponding left/right features on one horizontal line. Deliberately coarse modern pixel art with crisp stair-step edges, broad readable clusters and 2\u20134 tonal values, matching the reference. No realistic texture, airbrush, gradients, exaggerated expression, outline box, labels or watermark. Center the complete isolated feature on a square transparent RGBA canvas with generous margin. True transparency in all empty areas; no painted checkerboard or backdrop. These source pixels will be isolated and normalized into a fixed 128\u00d7128 rig. One requested module only."
+    },
+    {
+      "id": "eyes.upturned",
+      "name": "Upturned eyes",
+      "slot": "eyes",
+      "description": "a matched pair of subtle upturned eyes, lifted outer corners, dark brown irises and tiny white sclera corners",
+      "width": 5,
+      "height": 3,
+      "source": "eyes_upturned.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/face-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar eyes layer. The input is a STYLE REFERENCE for the small DIFF character, not a request to recreate a portrait. Create ONLY a matched pair of subtle upturned eyes, lifted outer corners, dark brown irises and tiny white sclera corners. No head, face silhouette, hair, neck, clothing or unrelated facial features. If a pair is requested, show exactly two corresponding left/right features on one horizontal line. Deliberately coarse modern pixel art with crisp stair-step edges, broad readable clusters and 2\u20134 tonal values, matching the reference. No realistic texture, airbrush, gradients, exaggerated expression, outline box, labels or watermark. Center the complete isolated feature on a square transparent RGBA canvas with generous margin. True transparency in all empty areas; no painted checkerboard or backdrop. These source pixels will be isolated and normalized into a fixed 128\u00d7128 rig. One requested module only."
+    },
+    {
+      "id": "eyes.mature",
+      "name": "Mature eyes",
+      "slot": "eyes",
+      "description": "a matched pair of mature relaxed eyes, slightly drooping outer corners, dark brown irises and minimal white sclera",
+      "width": 5,
+      "height": 3,
+      "source": "eyes_mature.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/face-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar eyes layer. The input is a STYLE REFERENCE for the small DIFF character, not a request to recreate a portrait. Create ONLY a matched pair of mature relaxed eyes, slightly drooping outer corners, dark brown irises and minimal white sclera. No head, face silhouette, hair, neck, clothing or unrelated facial features. If a pair is requested, show exactly two corresponding left/right features on one horizontal line. Deliberately coarse modern pixel art with crisp stair-step edges, broad readable clusters and 2\u20134 tonal values, matching the reference. No realistic texture, airbrush, gradients, exaggerated expression, outline box, labels or watermark. Center the complete isolated feature on a square transparent RGBA canvas with generous margin. True transparency in all empty areas; no painted checkerboard or backdrop. These source pixels will be isolated and normalized into a fixed 128\u00d7128 rig. One requested module only."
+    },
+    {
+      "id": "brows.fine",
+      "name": "Fine brows",
+      "slot": "brows",
+      "description": "a matched pair of fine straight medium-brown eyebrows, simple calm horizontal silhouettes",
+      "width": 6,
+      "height": 1,
+      "source": "brows_fine.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/face-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar brows layer. The input is a STYLE REFERENCE for the small DIFF character, not a request to recreate a portrait. Create ONLY a matched pair of fine straight medium-brown eyebrows, simple calm horizontal silhouettes. No head, face silhouette, hair, neck, clothing or unrelated facial features. If a pair is requested, show exactly two corresponding left/right features on one horizontal line. Deliberately coarse modern pixel art with crisp stair-step edges, broad readable clusters and 2\u20134 tonal values, matching the reference. No realistic texture, airbrush, gradients, exaggerated expression, outline box, labels or watermark. Center the complete isolated feature on a square transparent RGBA canvas with generous margin. True transparency in all empty areas; no painted checkerboard or backdrop. These source pixels will be isolated and normalized into a fixed 128\u00d7128 rig. One requested module only."
+    },
+    {
+      "id": "brows.full",
+      "name": "Full brows",
+      "slot": "brows",
+      "description": "a matched pair of thick full medium-brown eyebrows with squared inner ends and slightly tapered outer ends",
+      "width": 6,
+      "height": 2,
+      "source": "brows_full.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/face-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar brows layer. The input is a STYLE REFERENCE for the small DIFF character, not a request to recreate a portrait. Create ONLY a matched pair of thick full medium-brown eyebrows with squared inner ends and slightly tapered outer ends. No head, face silhouette, hair, neck, clothing or unrelated facial features. If a pair is requested, show exactly two corresponding left/right features on one horizontal line. Deliberately coarse modern pixel art with crisp stair-step edges, broad readable clusters and 2\u20134 tonal values, matching the reference. No realistic texture, airbrush, gradients, exaggerated expression, outline box, labels or watermark. Center the complete isolated feature on a square transparent RGBA canvas with generous margin. True transparency in all empty areas; no painted checkerboard or backdrop. These source pixels will be isolated and normalized into a fixed 128\u00d7128 rig. One requested module only."
+    },
+    {
+      "id": "brows.arch",
+      "name": "Arched brows",
+      "slot": "brows",
+      "description": "a matched pair of gently arched medium-brown eyebrows with subtle raised centers",
+      "width": 6,
+      "height": 2,
+      "source": "brows_arch.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/face-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar brows layer. The input is a STYLE REFERENCE for the small DIFF character, not a request to recreate a portrait. Create ONLY a matched pair of gently arched medium-brown eyebrows with subtle raised centers. No head, face silhouette, hair, neck, clothing or unrelated facial features. If a pair is requested, show exactly two corresponding left/right features on one horizontal line. Deliberately coarse modern pixel art with crisp stair-step edges, broad readable clusters and 2\u20134 tonal values, matching the reference. No realistic texture, airbrush, gradients, exaggerated expression, outline box, labels or watermark. Center the complete isolated feature on a square transparent RGBA canvas with generous margin. True transparency in all empty areas; no painted checkerboard or backdrop. These source pixels will be isolated and normalized into a fixed 128\u00d7128 rig. One requested module only."
+    },
+    {
+      "id": "brows.bushy",
+      "name": "Bushy brows",
+      "slot": "brows",
+      "description": "a matched pair of bushy medium-brown eyebrows, deliberate tiny stepped texture and calm shape",
+      "width": 6,
+      "height": 2,
+      "source": "brows_bushy.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/face-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar brows layer. The input is a STYLE REFERENCE for the small DIFF character, not a request to recreate a portrait. Create ONLY a matched pair of bushy medium-brown eyebrows, deliberate tiny stepped texture and calm shape. No head, face silhouette, hair, neck, clothing or unrelated facial features. If a pair is requested, show exactly two corresponding left/right features on one horizontal line. Deliberately coarse modern pixel art with crisp stair-step edges, broad readable clusters and 2\u20134 tonal values, matching the reference. No realistic texture, airbrush, gradients, exaggerated expression, outline box, labels or watermark. Center the complete isolated feature on a square transparent RGBA canvas with generous margin. True transparency in all empty areas; no painted checkerboard or backdrop. These source pixels will be isolated and normalized into a fixed 128\u00d7128 rig. One requested module only."
+    },
+    {
+      "id": "nose.button",
+      "name": "Button nose",
+      "slot": "nose",
+      "description": "one small round button nose, warm terracotta-brown pixel shadows and a small peach highlight, no surrounding skin",
+      "width": 3,
+      "height": 2,
+      "source": "nose_button.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/face-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar nose layer. The input is a STYLE REFERENCE for the small DIFF character, not a request to recreate a portrait. Create ONLY one small round button nose, warm terracotta-brown pixel shadows and a small peach highlight, no surrounding skin. No head, face silhouette, hair, neck, clothing or unrelated facial features. If a pair is requested, show exactly two corresponding left/right features on one horizontal line. Deliberately coarse modern pixel art with crisp stair-step edges, broad readable clusters and 2\u20134 tonal values, matching the reference. No realistic texture, airbrush, gradients, exaggerated expression, outline box, labels or watermark. Center the complete isolated feature on a square transparent RGBA canvas with generous margin. True transparency in all empty areas; no painted checkerboard or backdrop. These source pixels will be isolated and normalized into a fixed 128\u00d7128 rig. One requested module only."
+    },
+    {
+      "id": "nose.broad",
+      "name": "Broad nose",
+      "slot": "nose",
+      "description": "one broad soft nose, rounded nostril wings, restrained terracotta-brown shading and a peach bridge highlight, no face",
+      "width": 5,
+      "height": 3,
+      "source": "nose_broad.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/face-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar nose layer. The input is a STYLE REFERENCE for the small DIFF character, not a request to recreate a portrait. Create ONLY one broad soft nose, rounded nostril wings, restrained terracotta-brown shading and a peach bridge highlight, no face. No head, face silhouette, hair, neck, clothing or unrelated facial features. If a pair is requested, show exactly two corresponding left/right features on one horizontal line. Deliberately coarse modern pixel art with crisp stair-step edges, broad readable clusters and 2\u20134 tonal values, matching the reference. No realistic texture, airbrush, gradients, exaggerated expression, outline box, labels or watermark. Center the complete isolated feature on a square transparent RGBA canvas with generous margin. True transparency in all empty areas; no painted checkerboard or backdrop. These source pixels will be isolated and normalized into a fixed 128\u00d7128 rig. One requested module only."
+    },
+    {
+      "id": "nose.straight",
+      "name": "Straight nose",
+      "slot": "nose",
+      "description": "one straight slender nose, vertical bridge highlight and two small terracotta nostril accents, no surrounding face",
+      "width": 3,
+      "height": 4,
+      "source": "nose_straight_portrait.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/face-reference.png"
+      ],
+      "prompt": "Use case: identity-preserve. Edit the supplied DIFF pixel avatar portrait: keep the hairstyle, eyes, expression, ears, jaw, sweater, pixel style and composition, and change only the nose to a small straight-bridge nose. It must remain understated, recognizable at tiny sprite scale. This is a friendly cartoon head-and-shoulders portrait, fully clothed in its navy sweater. Keep the plain dark background. No writing or layout. The nose will later be extracted as an independent tiny facial layer.\n",
+      "attemptPrompts": [
+        "Use case: stylized-concept. Asset type: ONE modular pixel-avatar nose layer. The input is a STYLE REFERENCE for the small DIFF character, not a request to recreate a portrait. Create ONLY one straight slender nose, vertical bridge highlight and two small terracotta nostril accents, no surrounding face. No head, face silhouette, hair, neck, clothing or unrelated facial features. If a pair is requested, show exactly two corresponding left/right features on one horizontal line. Deliberately coarse modern pixel art with crisp stair-step edges, broad readable clusters and 2\u20134 tonal values, matching the reference. No realistic texture, airbrush, gradients, exaggerated expression, outline box, labels or watermark. Center the complete isolated feature on a square transparent RGBA canvas with generous margin. True transparency in all empty areas; no painted checkerboard or backdrop. These source pixels will be isolated and normalized into a fixed 128\u00d7128 rig. One requested module only.",
+        "Use case: stylized-concept. Create one tiny, compact pixel-art NOSE ICON for the supplied cartoon character's face. Front-facing small triangular nose tip with a SHORT straight bridge, just a few warm peach and brown square pixels. A facial feature only, no other object or body part. Match the reference's understated facial anatomy and coarse pixel clusters. Transparent background, no text. The final nose occupies only 3 by 3 pixels within a 128x128 character, so keep it simple and squat, not elongated.\n"
+      ],
+      "sourceFrame": [
+        575,
+        729,
+        65,
+        106
+      ]
+    },
+    {
+      "id": "nose.curved",
+      "name": "Curved nose",
+      "slot": "nose",
+      "description": "one slightly curved prominent nose seen straight from front, subtle asymmetry in terracotta shadow and a small peach highlight",
+      "width": 4,
+      "height": 4,
+      "source": "nose_curved.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/face-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar nose layer. The input is a STYLE REFERENCE for the small DIFF character, not a request to recreate a portrait. Create ONLY one slightly curved prominent nose seen straight from front, subtle asymmetry in terracotta shadow and a small peach highlight. No head, face silhouette, hair, neck, clothing or unrelated facial features. If a pair is requested, show exactly two corresponding left/right features on one horizontal line. Deliberately coarse modern pixel art with crisp stair-step edges, broad readable clusters and 2\u20134 tonal values, matching the reference. No realistic texture, airbrush, gradients, exaggerated expression, outline box, labels or watermark. Center the complete isolated feature on a square transparent RGBA canvas with generous margin. True transparency in all empty areas; no painted checkerboard or backdrop. These source pixels will be isolated and normalized into a fixed 128\u00d7128 rig. One requested module only."
+    },
+    {
+      "id": "mouth.wide_smile",
+      "name": "Wide small smile",
+      "slot": "mouth",
+      "description": "one closed small wide smile, subtly raised corners in muted warm brown, no teeth, no surrounding skin",
+      "width": 6,
+      "height": 2,
+      "source": "mouth_wide_smile.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/face-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar mouth layer. The input is a STYLE REFERENCE for the small DIFF character, not a request to recreate a portrait. Create ONLY one closed small wide smile, subtly raised corners in muted warm brown, no teeth, no surrounding skin. No head, face silhouette, hair, neck, clothing or unrelated facial features. If a pair is requested, show exactly two corresponding left/right features on one horizontal line. Deliberately coarse modern pixel art with crisp stair-step edges, broad readable clusters and 2\u20134 tonal values, matching the reference. No realistic texture, airbrush, gradients, exaggerated expression, outline box, labels or watermark. Center the complete isolated feature on a square transparent RGBA canvas with generous margin. True transparency in all empty areas; no painted checkerboard or backdrop. These source pixels will be isolated and normalized into a fixed 128\u00d7128 rig. One requested module only."
+    },
+    {
+      "id": "mouth.thin",
+      "name": "Thin relaxed mouth",
+      "slot": "mouth",
+      "description": "one thin relaxed closed mouth, narrow muted warm-brown lip line, neutral expression, no surrounding skin",
+      "width": 5,
+      "height": 1,
+      "source": "mouth_thin.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/face-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar mouth layer. The input is a STYLE REFERENCE for the small DIFF character, not a request to recreate a portrait. Create ONLY one thin relaxed closed mouth, narrow muted warm-brown lip line, neutral expression, no surrounding skin. No head, face silhouette, hair, neck, clothing or unrelated facial features. If a pair is requested, show exactly two corresponding left/right features on one horizontal line. Deliberately coarse modern pixel art with crisp stair-step edges, broad readable clusters and 2\u20134 tonal values, matching the reference. No realistic texture, airbrush, gradients, exaggerated expression, outline box, labels or watermark. Center the complete isolated feature on a square transparent RGBA canvas with generous margin. True transparency in all empty areas; no painted checkerboard or backdrop. These source pixels will be isolated and normalized into a fixed 128\u00d7128 rig. One requested module only."
+    },
+    {
+      "id": "mouth.full",
+      "name": "Full relaxed lips",
+      "slot": "mouth",
+      "description": "one pair of softly full closed lips, muted terracotta upper lip and lighter lower lip, neutral expression, no surrounding skin",
+      "width": 5,
+      "height": 2,
+      "source": "mouth_full.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/face-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar mouth layer. The input is a STYLE REFERENCE for the small DIFF character, not a request to recreate a portrait. Create ONLY one pair of softly full closed lips, muted terracotta upper lip and lighter lower lip, neutral expression, no surrounding skin. No head, face silhouette, hair, neck, clothing or unrelated facial features. If a pair is requested, show exactly two corresponding left/right features on one horizontal line. Deliberately coarse modern pixel art with crisp stair-step edges, broad readable clusters and 2\u20134 tonal values, matching the reference. No realistic texture, airbrush, gradients, exaggerated expression, outline box, labels or watermark. Center the complete isolated feature on a square transparent RGBA canvas with generous margin. True transparency in all empty areas; no painted checkerboard or backdrop. These source pixels will be isolated and normalized into a fixed 128\u00d7128 rig. One requested module only."
+    },
+    {
+      "id": "mouth.mature",
+      "name": "Mature smile",
+      "slot": "mouth",
+      "description": "one understated mature closed smile, small central dip and gently lifted ends in warm muted brown, no surrounding skin",
+      "width": 5,
+      "height": 2,
+      "source": "mouth_mature.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/face-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar mouth layer. The input is a STYLE REFERENCE for the small DIFF character, not a request to recreate a portrait. Create ONLY one understated mature closed smile, small central dip and gently lifted ends in warm muted brown, no surrounding skin. No head, face silhouette, hair, neck, clothing or unrelated facial features. If a pair is requested, show exactly two corresponding left/right features on one horizontal line. Deliberately coarse modern pixel art with crisp stair-step edges, broad readable clusters and 2\u20134 tonal values, matching the reference. No realistic texture, airbrush, gradients, exaggerated expression, outline box, labels or watermark. Center the complete isolated feature on a square transparent RGBA canvas with generous margin. True transparency in all empty areas; no painted checkerboard or backdrop. These source pixels will be isolated and normalized into a fixed 128\u00d7128 rig. One requested module only."
+    },
+    {
+      "id": "facialHair.stubble",
+      "name": "Light stubble",
+      "slot": "facialHair",
+      "description": "sparse brown stubble dots along cheeks and chin, empty mouth opening",
+      "width": 16,
+      "height": 9,
+      "source": "facialhair_stubble.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/face-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar facialHair layer. The input is a STYLE REFERENCE for the small DIFF character, not a request to recreate a portrait. Create ONLY sparse brown stubble dots along cheeks and chin, empty mouth opening. Facial hair only: no skin, head outline, eyes, nose, lips or clothing. Deliberately coarse modern pixel art with crisp stair-step edges, broad readable clusters and 2\u20134 tonal values, matching the reference. No realistic texture, airbrush, gradients, exaggerated expression, outline box, labels or watermark. Center the complete isolated feature on a square transparent RGBA canvas with generous margin. True transparency in all empty areas; no painted checkerboard or backdrop. These source pixels will be isolated and normalized into a fixed 128\u00d7128 rig. One requested module only."
+    },
+    {
+      "id": "facialHair.mustache",
+      "name": "Simple mustache",
+      "slot": "facialHair",
+      "description": "a simple medium-brown mustache, two gently curved halves meeting beneath the nose; no lips, nose or face",
+      "width": 8,
+      "height": 2,
+      "source": "facialhair_mustache.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/face-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar facialHair layer. The input is a STYLE REFERENCE for the small DIFF character, not a request to recreate a portrait. Create ONLY a simple medium-brown mustache, two gently curved halves meeting beneath the nose; no lips, nose or face. Facial hair only: no skin, head outline, eyes, nose, lips or clothing. Deliberately coarse modern pixel art with crisp stair-step edges, broad readable clusters and 2\u20134 tonal values, matching the reference. No realistic texture, airbrush, gradients, exaggerated expression, outline box, labels or watermark. Center the complete isolated feature on a square transparent RGBA canvas with generous margin. True transparency in all empty areas; no painted checkerboard or backdrop. These source pixels will be isolated and normalized into a fixed 128\u00d7128 rig. One requested module only."
+    },
+    {
+      "id": "facialHair.goatee",
+      "name": "Goatee",
+      "slot": "facialHair",
+      "description": "a neat medium-brown goatee around chin with a small mustache and completely empty mouth opening",
+      "width": 10,
+      "height": 9,
+      "source": "facialhair_goatee.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/face-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar facialHair layer. The input is a STYLE REFERENCE for the small DIFF character, not a request to recreate a portrait. Create ONLY a neat medium-brown goatee around chin with a small mustache and completely empty mouth opening. Facial hair only: no skin, head outline, eyes, nose, lips or clothing. Deliberately coarse modern pixel art with crisp stair-step edges, broad readable clusters and 2\u20134 tonal values, matching the reference. No realistic texture, airbrush, gradients, exaggerated expression, outline box, labels or watermark. Center the complete isolated feature on a square transparent RGBA canvas with generous margin. True transparency in all empty areas; no painted checkerboard or backdrop. These source pixels will be isolated and normalized into a fixed 128\u00d7128 rig. One requested module only."
+    },
+    {
+      "id": "facialHair.short_beard",
+      "name": "Short beard",
+      "slot": "facialHair",
+      "description": "a tidy short full medium-brown beard along lower cheeks and jaw, soft chin curve and empty mouth opening",
+      "width": 17,
+      "height": 10,
+      "source": "facialhair_short_beard.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/face-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar facialHair layer. The input is a STYLE REFERENCE for the small DIFF character, not a request to recreate a portrait. Create ONLY a tidy short full medium-brown beard along lower cheeks and jaw, soft chin curve and empty mouth opening. Facial hair only: no skin, head outline, eyes, nose, lips or clothing. Deliberately coarse modern pixel art with crisp stair-step edges, broad readable clusters and 2\u20134 tonal values, matching the reference. No realistic texture, airbrush, gradients, exaggerated expression, outline box, labels or watermark. Center the complete isolated feature on a square transparent RGBA canvas with generous margin. True transparency in all empty areas; no painted checkerboard or backdrop. These source pixels will be isolated and normalized into a fixed 128\u00d7128 rig. One requested module only."
+    },
+    {
+      "id": "facialHair.full_beard",
+      "name": "Full beard",
+      "slot": "facialHair",
+      "description": "a fuller rounded medium-brown beard with restrained block-level strand shading and an empty mouth opening",
+      "width": 18,
+      "height": 12,
+      "source": "facialhair_full_beard.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/face-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar facialHair layer. The input is a STYLE REFERENCE for the small DIFF character, not a request to recreate a portrait. Create ONLY a fuller rounded medium-brown beard with restrained block-level strand shading and an empty mouth opening. Facial hair only: no skin, head outline, eyes, nose, lips or clothing. Deliberately coarse modern pixel art with crisp stair-step edges, broad readable clusters and 2\u20134 tonal values, matching the reference. No realistic texture, airbrush, gradients, exaggerated expression, outline box, labels or watermark. Center the complete isolated feature on a square transparent RGBA canvas with generous margin. True transparency in all empty areas; no painted checkerboard or backdrop. These source pixels will be isolated and normalized into a fixed 128\u00d7128 rig. One requested module only."
+    },
+    {
+      "id": "facialHair.boxed_beard",
+      "name": "Boxed beard",
+      "slot": "facialHair",
+      "description": "a trimmed medium-brown boxed beard with angular lower jaw edges, short sideburns and empty mouth opening",
+      "width": 17,
+      "height": 10,
+      "source": "facialhair_boxed_beard.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/face-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar facialHair layer. The input is a STYLE REFERENCE for the small DIFF character, not a request to recreate a portrait. Create ONLY a trimmed medium-brown boxed beard with angular lower jaw edges, short sideburns and empty mouth opening. Facial hair only: no skin, head outline, eyes, nose, lips or clothing. Deliberately coarse modern pixel art with crisp stair-step edges, broad readable clusters and 2\u20134 tonal values, matching the reference. No realistic texture, airbrush, gradients, exaggerated expression, outline box, labels or watermark. Center the complete isolated feature on a square transparent RGBA canvas with generous margin. True transparency in all empty areas; no painted checkerboard or backdrop. These source pixels will be isolated and normalized into a fixed 128\u00d7128 rig. One requested module only."
+    },
+    {
+      "id": "freckles.soft",
+      "name": "Soft freckles",
+      "slot": "freckles",
+      "description": "a sparse horizontal cluster of subtle warm terracotta freckles across two cheeks, separated into left and right groups with a clear nose gap",
+      "width": 16,
+      "height": 3,
+      "source": "freckles_soft.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/face-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar freckles layer. The input is a STYLE REFERENCE for the small DIFF character, not a request to recreate a portrait. Create ONLY a sparse horizontal cluster of subtle warm terracotta freckles across two cheeks, separated into left and right groups with a clear nose gap. No head, face silhouette, hair, neck, clothing or unrelated facial features. If a pair is requested, show exactly two corresponding left/right features on one horizontal line. Deliberately coarse modern pixel art with crisp stair-step edges, broad readable clusters and 2\u20134 tonal values, matching the reference. No realistic texture, airbrush, gradients, exaggerated expression, outline box, labels or watermark. Center the complete isolated feature on a square transparent RGBA canvas with generous margin. True transparency in all empty areas; no painted checkerboard or backdrop. These source pixels will be isolated and normalized into a fixed 128\u00d7128 rig. One requested module only."
+    },
+    {
+      "id": "birthmark.cheek",
+      "name": "Cheek birthmark",
+      "slot": "birthmark",
+      "description": "one small irregular warm-brown cheek birthmark, subtle organic stepped shape",
+      "width": 3,
+      "height": 3,
+      "source": "birthmark_cheek.png",
+      "refs": [],
+      "prompt": "Use case: stylized-concept. Draw a small flat irregular brown birthmark SYMBOL for the cheek of a cartoon pixel avatar. Only a tiny asymmetric cluster of contiguous muted brown square pixels, like an irregular freckle patch. Two warm brown shades. No face, skin surface, body, person, organs or any other object. Flat 2D icon with true transparent background. Clean deliberate coarse pixel clusters, no text or framing. This will be reduced to 3 by 3 pixels in a facial customization layer.\n",
+      "attemptPrompts": [
+        "Use case: stylized-concept. Asset type: ONE modular pixel-avatar birthmark layer. The input is a STYLE REFERENCE for the small DIFF character, not a request to recreate a portrait. Create ONLY one small irregular warm-brown cheek birthmark, subtle organic stepped shape. No head, face silhouette, hair, neck, clothing or unrelated facial features. If a pair is requested, show exactly two corresponding left/right features on one horizontal line. Deliberately coarse modern pixel art with crisp stair-step edges, broad readable clusters and 2\u20134 tonal values, matching the reference. No realistic texture, airbrush, gradients, exaggerated expression, outline box, labels or watermark. Center the complete isolated feature on a square transparent RGBA canvas with generous margin. True transparency in all empty areas; no painted checkerboard or backdrop. These source pixels will be isolated and normalized into a fixed 128\u00d7128 rig. One requested module only."
+      ]
+    },
+    {
+      "id": "scar.cheek",
+      "name": "Small cheek scar",
+      "slot": "scar",
+      "description": "one small healed diagonal cheek scar, two restrained warm peach-brown pixel tones, not a wound",
+      "width": 2,
+      "height": 4,
+      "source": "scar_cheek.png",
+      "refs": [],
+      "prompt": "Use case: stylized-concept. Asset: a tiny abstract 2D pixel icon representing a healed scar for a cartoon avatar customizer. Two very short parallel diagonal strokes in muted peach and tan, four coarse square pixels long. Flat icon, completely isolated on transparent background. No human, no skin surface, no body, no blood, no wound, no anatomical object, no text. Subtle friendly pixel style.\n",
+      "attemptPrompts": [
+        "Use case: stylized-concept. Asset type: ONE modular pixel-avatar scar layer. The input is a STYLE REFERENCE for the small DIFF character, not a request to recreate a portrait. Create ONLY one small healed diagonal cheek scar, two restrained warm peach-brown pixel tones, not a wound. No head, face silhouette, hair, neck, clothing or unrelated facial features. If a pair is requested, show exactly two corresponding left/right features on one horizontal line. Deliberately coarse modern pixel art with crisp stair-step edges, broad readable clusters and 2\u20134 tonal values, matching the reference. No realistic texture, airbrush, gradients, exaggerated expression, outline box, labels or watermark. Center the complete isolated feature on a square transparent RGBA canvas with generous margin. True transparency in all empty areas; no painted checkerboard or backdrop. These source pixels will be isolated and normalized into a fixed 128\u00d7128 rig. One requested module only."
+      ]
+    },
+    {
+      "id": "ageLines.soft",
+      "name": "Soft age lines",
+      "slot": "ageLines",
+      "description": "a symmetrical pair of very subtle warm-brown short crow-foot and under-eye crease marks, separated horizontally; no eyes or skin",
+      "width": 18,
+      "height": 2,
+      "source": "agelines_soft.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/face-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar ageLines layer. The input is a STYLE REFERENCE for the small DIFF character, not a request to recreate a portrait. Create ONLY a symmetrical pair of very subtle warm-brown short crow-foot and under-eye crease marks, separated horizontally; no eyes or skin. No head, face silhouette, hair, neck, clothing or unrelated facial features. If a pair is requested, show exactly two corresponding left/right features on one horizontal line. Deliberately coarse modern pixel art with crisp stair-step edges, broad readable clusters and 2\u20134 tonal values, matching the reference. No realistic texture, airbrush, gradients, exaggerated expression, outline box, labels or watermark. Center the complete isolated feature on a square transparent RGBA canvas with generous margin. True transparency in all empty areas; no painted checkerboard or backdrop. These source pixels will be isolated and normalized into a fixed 128\u00d7128 rig. One requested module only."
+    },
+    {
+      "id": "hearingAidLeft.small",
+      "name": "Left hearing aid",
+      "slot": "hearingAidLeft",
+      "description": "one small discreet pearl-gray behind-the-ear hearing aid seen on the image-left ear from front, compact curved shell and tiny hook; no ear, face or skin",
+      "width": 2,
+      "height": 5,
+      "source": "hearingaidleft_small.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/face-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar hearingAidLeft layer. The input is a STYLE REFERENCE for the small DIFF character, not a request to recreate a portrait. Create ONLY one small discreet pearl-gray behind-the-ear hearing aid seen on the image-left ear from front, compact curved shell and tiny hook; no ear, face or skin. No head, face silhouette, hair, neck, clothing or unrelated facial features. If a pair is requested, show exactly two corresponding left/right features on one horizontal line. Deliberately coarse modern pixel art with crisp stair-step edges, broad readable clusters and 2\u20134 tonal values, matching the reference. No realistic texture, airbrush, gradients, exaggerated expression, outline box, labels or watermark. Center the complete isolated feature on a square transparent RGBA canvas with generous margin. True transparency in all empty areas; no painted checkerboard or backdrop. These source pixels will be isolated and normalized into a fixed 128\u00d7128 rig. One requested module only."
+    },
+    {
+      "id": "hearingAidRight.small",
+      "name": "Right hearing aid",
+      "slot": "hearingAidRight",
+      "description": "one small discreet pearl-gray behind-the-ear hearing aid seen on the image-right ear from front, compact curved shell and tiny hook; no ear, face or skin",
+      "width": 2,
+      "height": 5,
+      "source": "hearingaidright_small.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/face-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular pixel-avatar hearingAidRight layer. The input is a STYLE REFERENCE for the small DIFF character, not a request to recreate a portrait. Create ONLY one small discreet pearl-gray behind-the-ear hearing aid seen on the image-right ear from front, compact curved shell and tiny hook; no ear, face or skin. No head, face silhouette, hair, neck, clothing or unrelated facial features. If a pair is requested, show exactly two corresponding left/right features on one horizontal line. Deliberately coarse modern pixel art with crisp stair-step edges, broad readable clusters and 2\u20134 tonal values, matching the reference. No realistic texture, airbrush, gradients, exaggerated expression, outline box, labels or watermark. Center the complete isolated feature on a square transparent RGBA canvas with generous margin. True transparency in all empty areas; no painted checkerboard or backdrop. These source pixels will be isolated and normalized into a fixed 128\u00d7128 rig. One requested module only."
+    }
+  ]
+}

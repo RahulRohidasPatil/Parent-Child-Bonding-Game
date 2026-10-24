@@ -1,0 +1,31 @@
+[
+  {
+    "id": "eyes-blue-master",
+    "refs": [
+      "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-refinement-v4/style-reference.png"
+    ],
+    "prompt": "Use case: precise-object-edit. Asset type: isolated modular pixel-avatar EYES ONLY, both eyes as one pair. Use the attached portrait as the exact drawing/style reference. Isolate and faithfully recreate the COMPLETE two eye shapes, keeping dark upper lids, dark pupils, small white sclera corners and restrained highlights. Change only iris color to a muted natural BLUE so iris pixels are clearly distinguishable from pupils and outlines. No eyebrows, no skin patches, nose, hair or other face parts. Deliberate chunky pixel clusters, about SIX logical pixels wide by FOUR logical pixels tall PER EYE, enlarged for source extraction. Exactly frontal and symmetric eye line, neutral expression. No airbrush, gradients, glow, tiny texture or soft edges. Keep a generous gap between eyes. Output a real transparent RGBA PNG, alpha zero around and between the eyes; no checkerboard. White eye pixels must remain opaque."
+  },
+  {
+    "id": "neck-skin",
+    "refs": [
+      "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-refinement-v4/style-reference.png"
+    ],
+    "prompt": "Use case: background-extraction. Asset type: modular pixel-avatar neck skin component. From this portrait, isolate the ENTIRE visible neck and small upper-chest skin area, including the warm under-chin shadow. Remove the head, hair, ears, facial features, clothing and background. Keep the illustrated neck as an actual coherent skin shape, narrow at the top and widening gently at the base. Preserve the reference's pixel-art style, skin tones and simple stepped shadow. The top should extend a little under the future jaw and the bottom under the future collar. Show the small component enlarged in the middle of a transparent RGBA PNG. No text, no checkerboard, no glow."
+  },
+  {
+    "id": "hoodie-forest-neck",
+    "refs": [
+      "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-atelier/top-forest-hoodie.png",
+      "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-refinement-v4/style-reference.png"
+    ],
+    "prompt": "Use case: precise-object-edit. Image 1 is the garment to edit; image 2 is only a reference for how a visible neck fits within a collar. Edit ONLY the hood/neck opening of the forest-green zip hoodie. Keep the full garment silhouette, relaxed sleeve positions, cuffs, hem, pockets, green cloth artwork and zipper unchanged. Make a clear U/V-shaped OPENING where a human throat will show: the central neck opening must be actual transparency, bounded by two low folded hood edges. Lower the front meeting point of the hood enough to reveal a short neck above it; preserve the recognizable hood behind it. Do not add skin, head, face, mannequin or clothing underneath. Preserve the entire square source canvas, no crop. Real PNG alpha transparency outside the hoodie AND inside the neck opening. No fake checkerboard."
+  },
+  {
+    "id": "shoes-white-clean",
+    "refs": [
+      "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-atelier/shoe-white.png"
+    ],
+    "prompt": "Use case: precise-object-edit. Refine the two white pixel-art sneakers in this asset. Keep both shoes in their existing lower-canvas positions, same shared floor baseline, same overall size and toe directions, full square canvas. Use deliberate simple pixel clusters: a clean white upper, restrained cool gray side plane, dark thin outline and one crisp consistent sole band. Make the heel/ankle openings clear and aligned, with modest toes. Remove noisy gray/checker-like texture and excessive tiny lace details. No logos or trademark stripes, no feet/skin, no pants. Keep real transparent RGBA alpha outside the complete shoe silhouettes, no checkerboard background."
+  }
+]

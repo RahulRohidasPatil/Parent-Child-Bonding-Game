@@ -1,0 +1,1241 @@
+{
+  "mode": "built-in image_gen",
+  "targetTotal": 100,
+  "jobs": [
+    {
+      "id": "hair.low_taper_fade",
+      "name": "Low taper fade",
+      "group": "Short",
+      "texture": "straight",
+      "fringe": "open",
+      "source": "low_taper_fade.png",
+      "guide": {
+        "width": 28,
+        "y": 4,
+        "height": 18
+      },
+      "prompt": "Use case: stylized-concept. Asset type: one modular DIFF pixel-avatar hairstyle, production source artwork. Reference 1 supplies the approved pixel-art style; reference 2 supplies the blank head proportions. Generate ONLY a neat low taper fade haircut: compact short textured top, closely tapered sides with a subtle low fade, no tall quiff, readable at tiny avatar size. One hairstyle only, front facing, upright. Medium neutral brown hair, dark brown contour, 3–5 restrained tonal values, deliberate coarse square pixel clusters matching the reference. No realistic strands or antialiasing. Show the entire crown and side sections centered on a square canvas with generous transparent padding. Face opening is genuinely transparent; no face, eyes, brows, nose, mouth, skin, ears, neck, body, clothing, labels or props. No painted checkerboard. True RGBA transparent background. Keep the compact head silhouette compatible with the supplied master; leave the eyebrows and eye line completely clear. This layer will be normalized onto the locked 128×128 rig, never positioned using runtime offsets.",
+      "status": "generated",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png",
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ]
+    },
+    {
+      "id": "hair.mid_taper_fade",
+      "name": "Mid taper fade",
+      "group": "Short",
+      "texture": "straight",
+      "fringe": "open",
+      "source": "mid_taper_fade_v2.png",
+      "guide": {
+        "width": 27,
+        "y": 3,
+        "height": 20
+      },
+      "prompt": "Use case: stylized-concept. One DIFF modular pixel-art hair layer. The first input is the STYLE and close-cropped height reference. The second is ONLY the head registration guide. Create a literal Mid taper fade: a low, compact, flat textured crown, visible stepped taper halfway up the temple sections. Match the first reference's LOW HAIR VOLUME. NO fluffy tall crown, NO middle part, NO curtains, NO long sweeping bangs. Brown hair only, dark brown outline, 3–4 brown tones, coarse deliberate square pixel clusters. Represent fades with hair density and brown shading, NEVER skin or beige pixels. Full hairstyle centered on transparent square canvas with padding. Face opening transparent. No head, body, face, ears, clothes, text, background or checkerboard. Source must fit the supplied head when normalized to our existing 128×128 rig. One hairstyle, frontal and upright.",
+      "status": "generated",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-hair-library/high_and_tight.png",
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ],
+      "drafts": [
+        {
+          "source": "mid_taper_fade.png",
+          "prompt": "Use case: stylized-concept. Asset type: ONE modular DIFF pixel-avatar hairstyle, source artwork for a locked 128x128 layer. Input 1 is the approved style reference; input 2 is head-proportion reference only. Produce ONLY a mid taper fade with a compact squared top and a visibly higher temple taper. Front-facing, upright, ONE hairstyle. Match the reference's deliberate coarse square pixel clusters, compact head proportions, dark contour and restrained shading. Brown hair ONLY: outline #211414, shadows #38241d, base #654333, highlights #8b6148. No peach, beige, flesh or skin-colored marks. Fade regions must be sparse/darker brown hair or transparent, never skin. Entire hair silhouette centered on a square canvas with generous transparent padding, complete crown and tips visible. Empty genuinely transparent face opening. Keep all bangs above eyebrows; no eyes, brows, nose, mouth, ears, head, skin, neck, body, clothing, hats, jewelry, text, borders or backdrop. True RGBA transparency, not a painted checkerboard. No fine realistic strands, blurry shading, gradients or antialiasing. Keep the head opening compatible with the reference; do not draw a complete character.",
+          "refs": [
+            "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png",
+            "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hair.high_taper_fade",
+      "name": "High taper fade",
+      "group": "Short",
+      "texture": "straight",
+      "fringe": "open",
+      "source": "high_taper_fade_v2.png",
+      "guide": {
+        "width": 26,
+        "y": 4,
+        "height": 19
+      },
+      "prompt": "Use case: stylized-concept. One DIFF modular pixel-art hair layer. The first input is the STYLE and close-cropped height reference. The second is ONLY the head registration guide. Create a literal High taper fade: a narrow, very short cropped top with strongly reduced high temple sections; only tiny short side strips. Match the first reference's LOW HAIR VOLUME. NO fluffy tall crown, NO middle part, NO curtains, NO long sweeping bangs. Brown hair only, dark brown outline, 3–4 brown tones, coarse deliberate square pixel clusters. Represent fades with hair density and brown shading, NEVER skin or beige pixels. Full hairstyle centered on transparent square canvas with padding. Face opening transparent. No head, body, face, ears, clothes, text, background or checkerboard. Source must fit the supplied head when normalized to our existing 128×128 rig. One hairstyle, frontal and upright.",
+      "status": "generated",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-hair-library/high_and_tight.png",
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ],
+      "drafts": [
+        {
+          "source": "high_taper_fade.png",
+          "prompt": "Use case: stylized-concept. Asset type: ONE modular DIFF pixel-avatar hairstyle, source artwork for a locked 128x128 layer. Input 1 is the approved style reference; input 2 is head-proportion reference only. Produce ONLY a high taper fade, narrow compact crown and strongly reduced upper side sections. Front-facing, upright, ONE hairstyle. Match the reference's deliberate coarse square pixel clusters, compact head proportions, dark contour and restrained shading. Brown hair ONLY: outline #211414, shadows #38241d, base #654333, highlights #8b6148. No peach, beige, flesh or skin-colored marks. Fade regions must be sparse/darker brown hair or transparent, never skin. Entire hair silhouette centered on a square canvas with generous transparent padding, complete crown and tips visible. Empty genuinely transparent face opening. Keep all bangs above eyebrows; no eyes, brows, nose, mouth, ears, head, skin, neck, body, clothing, hats, jewelry, text, borders or backdrop. True RGBA transparency, not a painted checkerboard. No fine realistic strands, blurry shading, gradients or antialiasing. Keep the head opening compatible with the reference; do not draw a complete character.",
+          "refs": [
+            "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png",
+            "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hair.skin_fade_crop",
+      "name": "Skin fade crop",
+      "group": "Short",
+      "texture": "straight",
+      "fringe": "blunt",
+      "source": "skin_fade_crop_v2.png",
+      "guide": {
+        "width": 27,
+        "y": 4,
+        "height": 18
+      },
+      "prompt": "Use case: stylized-concept. One DIFF modular pixel-art hair layer. The first input is the STYLE and close-cropped height reference. The second is ONLY the head registration guide. Create a literal Skin fade crop: a very short square-topped crop with a shallow straight blunt fringe and sparse brown hair pixels at the temples. Match the first reference's LOW HAIR VOLUME. NO fluffy tall crown, NO middle part, NO curtains, NO long sweeping bangs. Brown hair only, dark brown outline, 3–4 brown tones, coarse deliberate square pixel clusters. Represent fades with hair density and brown shading, NEVER skin or beige pixels. Full hairstyle centered on transparent square canvas with padding. Face opening transparent. No head, body, face, ears, clothes, text, background or checkerboard. Source must fit the supplied head when normalized to our existing 128×128 rig. One hairstyle, frontal and upright.",
+      "status": "generated",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-hair-library/high_and_tight.png",
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ],
+      "drafts": [
+        {
+          "source": "skin_fade_crop.png",
+          "prompt": "Use case: stylized-concept. Asset type: ONE modular DIFF pixel-avatar hairstyle, source artwork for a locked 128x128 layer. Input 1 is the approved style reference; input 2 is head-proportion reference only. Produce ONLY a short sharp crop with tightly faded sides, straight shallow fringe; fade shown by sparse brown hair pixels, not skin. Front-facing, upright, ONE hairstyle. Match the reference's deliberate coarse square pixel clusters, compact head proportions, dark contour and restrained shading. Brown hair ONLY: outline #211414, shadows #38241d, base #654333, highlights #8b6148. No peach, beige, flesh or skin-colored marks. Fade regions must be sparse/darker brown hair or transparent, never skin. Entire hair silhouette centered on a square canvas with generous transparent padding, complete crown and tips visible. Empty genuinely transparent face opening. Keep all bangs above eyebrows; no eyes, brows, nose, mouth, ears, head, skin, neck, body, clothing, hats, jewelry, text, borders or backdrop. True RGBA transparency, not a painted checkerboard. No fine realistic strands, blurry shading, gradients or antialiasing. Keep the head opening compatible with the reference; do not draw a complete character.",
+          "refs": [
+            "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png",
+            "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hair.drop_fade",
+      "name": "Drop fade",
+      "group": "Short",
+      "texture": "wavy",
+      "fringe": "open",
+      "source": "drop_fade_v2.png",
+      "guide": {
+        "width": 28,
+        "y": 3,
+        "height": 20
+      },
+      "prompt": "Use case: stylized-concept. One DIFF modular pixel-art hair layer. The first input is the STYLE and close-cropped height reference. The second is ONLY the head registration guide. Create a literal Drop fade: a compact close-cropped wavy top and a gently curved lower edge dropping behind the temples. Match the first reference's LOW HAIR VOLUME. NO fluffy tall crown, NO middle part, NO curtains, NO long sweeping bangs. Brown hair only, dark brown outline, 3–4 brown tones, coarse deliberate square pixel clusters. Represent fades with hair density and brown shading, NEVER skin or beige pixels. Full hairstyle centered on transparent square canvas with padding. Face opening transparent. No head, body, face, ears, clothes, text, background or checkerboard. Source must fit the supplied head when normalized to our existing 128×128 rig. One hairstyle, frontal and upright.",
+      "status": "generated",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-hair-library/high_and_tight.png",
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ],
+      "drafts": [
+        {
+          "source": "drop_fade.png",
+          "prompt": "Use case: stylized-concept. Asset type: ONE modular DIFF pixel-avatar hairstyle, source artwork for a locked 128x128 layer. Input 1 is the approved style reference; input 2 is head-proportion reference only. Produce ONLY a rounded drop fade with a low curved temple edge and compact dense textured top. Front-facing, upright, ONE hairstyle. Match the reference's deliberate coarse square pixel clusters, compact head proportions, dark contour and restrained shading. Brown hair ONLY: outline #211414, shadows #38241d, base #654333, highlights #8b6148. No peach, beige, flesh or skin-colored marks. Fade regions must be sparse/darker brown hair or transparent, never skin. Entire hair silhouette centered on a square canvas with generous transparent padding, complete crown and tips visible. Empty genuinely transparent face opening. Keep all bangs above eyebrows; no eyes, brows, nose, mouth, ears, head, skin, neck, body, clothing, hats, jewelry, text, borders or backdrop. True RGBA transparency, not a painted checkerboard. No fine realistic strands, blurry shading, gradients or antialiasing. Keep the head opening compatible with the reference; do not draw a complete character.",
+          "refs": [
+            "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png",
+            "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hair.burst_fade",
+      "name": "Burst fade",
+      "group": "Short",
+      "texture": "curly",
+      "fringe": "open",
+      "source": "burst_fade.png",
+      "guide": {
+        "width": 28,
+        "y": 2,
+        "height": 21
+      },
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular DIFF pixel-avatar hairstyle, source artwork for a locked 128x128 layer. The input is a BLANK HEAD used only for skull proportions and pixel-art style. Design the requested new haircut with its own unmistakable silhouette; do not add a generic fluffy center-part. Never draw the reference head or body. Produce ONLY a burst fade with short curly center ridge and small semicircular tapered temple shapes. Front-facing, upright, ONE hairstyle. Match the reference's deliberate coarse square pixel clusters, compact head proportions, dark contour and restrained shading. Brown hair ONLY: outline #211414, shadows #38241d, base #654333, highlights #8b6148. No peach, beige, flesh or skin-colored marks. Fade regions must be sparse/darker brown hair or transparent, never skin. Entire hair silhouette centered on a square canvas with generous transparent padding, complete crown and tips visible. Empty genuinely transparent face opening. Keep all bangs above eyebrows; no eyes, brows, nose, mouth, ears, head, skin, neck, body, clothing, hats, jewelry, text, borders or backdrop. True RGBA transparency, not a painted checkerboard. No fine realistic strands, blurry shading, gradients or antialiasing. Keep the head opening compatible with the reference; do not draw a complete character.",
+      "status": "generated",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ]
+    },
+    {
+      "id": "hair.ivy_league",
+      "name": "Ivy League cut",
+      "group": "Short",
+      "texture": "straight",
+      "fringe": "side",
+      "source": "ivy_league.png",
+      "guide": {
+        "width": 28,
+        "y": 2,
+        "height": 21
+      },
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular DIFF pixel-avatar hairstyle, source artwork for a locked 128x128 layer. The input is a BLANK HEAD used only for skull proportions and pixel-art style. Design the requested new haircut with its own unmistakable silhouette; do not add a generic fluffy center-part. Never draw the reference head or body. Produce ONLY a neat Ivy League haircut with a small side part, low groomed top and neatly tapered sides. Front-facing, upright, ONE hairstyle. Match the reference's deliberate coarse square pixel clusters, compact head proportions, dark contour and restrained shading. Brown hair ONLY: outline #211414, shadows #38241d, base #654333, highlights #8b6148. No peach, beige, flesh or skin-colored marks. Fade regions must be sparse/darker brown hair or transparent, never skin. Entire hair silhouette centered on a square canvas with generous transparent padding, complete crown and tips visible. Empty genuinely transparent face opening. Keep all bangs above eyebrows; no eyes, brows, nose, mouth, ears, head, skin, neck, body, clothing, hats, jewelry, text, borders or backdrop. True RGBA transparency, not a painted checkerboard. No fine realistic strands, blurry shading, gradients or antialiasing. Keep the head opening compatible with the reference; do not draw a complete character.",
+      "status": "generated",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ]
+    },
+    {
+      "id": "hair.caesar_cut",
+      "name": "Caesar cut",
+      "group": "Short",
+      "texture": "straight",
+      "fringe": "blunt",
+      "source": "caesar_cut.png",
+      "guide": {
+        "width": 28,
+        "y": 2,
+        "height": 21
+      },
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular DIFF pixel-avatar hairstyle, source artwork for a locked 128x128 layer. The input is a BLANK HEAD used only for skull proportions and pixel-art style. Design the requested new haircut with its own unmistakable silhouette; do not add a generic fluffy center-part. Never draw the reference head or body. Produce ONLY a Caesar haircut with very short horizontal blunt fringe and low uniformly cropped rounded crown. Front-facing, upright, ONE hairstyle. Match the reference's deliberate coarse square pixel clusters, compact head proportions, dark contour and restrained shading. Brown hair ONLY: outline #211414, shadows #38241d, base #654333, highlights #8b6148. No peach, beige, flesh or skin-colored marks. Fade regions must be sparse/darker brown hair or transparent, never skin. Entire hair silhouette centered on a square canvas with generous transparent padding, complete crown and tips visible. Empty genuinely transparent face opening. Keep all bangs above eyebrows; no eyes, brows, nose, mouth, ears, head, skin, neck, body, clothing, hats, jewelry, text, borders or backdrop. True RGBA transparency, not a painted checkerboard. No fine realistic strands, blurry shading, gradients or antialiasing. Keep the head opening compatible with the reference; do not draw a complete character.",
+      "status": "generated",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ]
+    },
+    {
+      "id": "hair.high_and_tight",
+      "name": "High and tight",
+      "group": "Short",
+      "texture": "straight",
+      "fringe": "open",
+      "source": "high_and_tight.png",
+      "guide": {
+        "width": 28,
+        "y": 2,
+        "height": 21
+      },
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular DIFF pixel-avatar hairstyle, source artwork for a locked 128x128 layer. The input is a BLANK HEAD used only for skull proportions and pixel-art style. Design the requested new haircut with its own unmistakable silhouette; do not add a generic fluffy center-part. Never draw the reference head or body. Produce ONLY a high and tight haircut with a small short rectangular top and almost absent side sections, NO skin pixels. Front-facing, upright, ONE hairstyle. Match the reference's deliberate coarse square pixel clusters, compact head proportions, dark contour and restrained shading. Brown hair ONLY: outline #211414, shadows #38241d, base #654333, highlights #8b6148. No peach, beige, flesh or skin-colored marks. Fade regions must be sparse/darker brown hair or transparent, never skin. Entire hair silhouette centered on a square canvas with generous transparent padding, complete crown and tips visible. Empty genuinely transparent face opening. Keep all bangs above eyebrows; no eyes, brows, nose, mouth, ears, head, skin, neck, body, clothing, hats, jewelry, text, borders or backdrop. True RGBA transparency, not a painted checkerboard. No fine realistic strands, blurry shading, gradients or antialiasing. Keep the head opening compatible with the reference; do not draw a complete character.",
+      "status": "generated",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ]
+    },
+    {
+      "id": "hair.brush_cut",
+      "name": "Brush cut",
+      "group": "Short",
+      "texture": "straight",
+      "fringe": "open",
+      "source": "brush_cut.png",
+      "guide": {
+        "width": 28,
+        "y": 2,
+        "height": 21
+      },
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular DIFF pixel-avatar hairstyle, source artwork for a locked 128x128 layer. The input is a BLANK HEAD used only for skull proportions and pixel-art style. Design the requested new haircut with its own unmistakable silhouette; do not add a generic fluffy center-part. Never draw the reference head or body. Produce ONLY a close upright brush cut with tiny squared bristle clusters and broad flat top, compact outline. Front-facing, upright, ONE hairstyle. Match the reference's deliberate coarse square pixel clusters, compact head proportions, dark contour and restrained shading. Brown hair ONLY: outline #211414, shadows #38241d, base #654333, highlights #8b6148. No peach, beige, flesh or skin-colored marks. Fade regions must be sparse/darker brown hair or transparent, never skin. Entire hair silhouette centered on a square canvas with generous transparent padding, complete crown and tips visible. Empty genuinely transparent face opening. Keep all bangs above eyebrows; no eyes, brows, nose, mouth, ears, head, skin, neck, body, clothing, hats, jewelry, text, borders or backdrop. True RGBA transparency, not a painted checkerboard. No fine realistic strands, blurry shading, gradients or antialiasing. Keep the head opening compatible with the reference; do not draw a complete character.",
+      "status": "generated",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ]
+    },
+    {
+      "id": "hair.flat_crop",
+      "name": "Flat textured crop",
+      "group": "Short",
+      "texture": "straight",
+      "fringe": "textured",
+      "source": "flat_crop.png",
+      "guide": {
+        "width": 28,
+        "y": 2,
+        "height": 21
+      },
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular DIFF pixel-avatar hairstyle, source artwork for a locked 128x128 layer. The input is a BLANK HEAD used only for skull proportions and pixel-art style. Design the requested new haircut with its own unmistakable silhouette; do not add a generic fluffy center-part. Never draw the reference head or body. Produce ONLY a flat textured crop, low horizontal top with irregular block clusters and shallow uneven fringe. Front-facing, upright, ONE hairstyle. Match the reference's deliberate coarse square pixel clusters, compact head proportions, dark contour and restrained shading. Brown hair ONLY: outline #211414, shadows #38241d, base #654333, highlights #8b6148. No peach, beige, flesh or skin-colored marks. Fade regions must be sparse/darker brown hair or transparent, never skin. Entire hair silhouette centered on a square canvas with generous transparent padding, complete crown and tips visible. Empty genuinely transparent face opening. Keep all bangs above eyebrows; no eyes, brows, nose, mouth, ears, head, skin, neck, body, clothing, hats, jewelry, text, borders or backdrop. True RGBA transparency, not a painted checkerboard. No fine realistic strands, blurry shading, gradients or antialiasing. Keep the head opening compatible with the reference; do not draw a complete character.",
+      "status": "generated",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ]
+    },
+    {
+      "id": "hair.textured_undercut",
+      "name": "Textured undercut",
+      "group": "Short",
+      "texture": "wavy",
+      "fringe": "side",
+      "source": "textured_undercut.png",
+      "guide": {
+        "width": 28,
+        "y": 2,
+        "height": 21
+      },
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular DIFF pixel-avatar hairstyle, source artwork for a locked 128x128 layer. The input is a BLANK HEAD used only for skull proportions and pixel-art style. Design the requested new haircut with its own unmistakable silhouette; do not add a generic fluffy center-part. Never draw the reference head or body. Produce ONLY a disconnected textured undercut with short sides and a swept compact choppy top, clear stepped separation. Front-facing, upright, ONE hairstyle. Match the reference's deliberate coarse square pixel clusters, compact head proportions, dark contour and restrained shading. Brown hair ONLY: outline #211414, shadows #38241d, base #654333, highlights #8b6148. No peach, beige, flesh or skin-colored marks. Fade regions must be sparse/darker brown hair or transparent, never skin. Entire hair silhouette centered on a square canvas with generous transparent padding, complete crown and tips visible. Empty genuinely transparent face opening. Keep all bangs above eyebrows; no eyes, brows, nose, mouth, ears, head, skin, neck, body, clothing, hats, jewelry, text, borders or backdrop. True RGBA transparency, not a painted checkerboard. No fine realistic strands, blurry shading, gradients or antialiasing. Keep the head opening compatible with the reference; do not draw a complete character.",
+      "status": "generated",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ]
+    },
+    {
+      "id": "hair.disconnected_undercut",
+      "name": "Swept undercut",
+      "group": "Short",
+      "texture": "straight",
+      "fringe": "side",
+      "source": "disconnected_undercut.png",
+      "guide": {
+        "width": 28,
+        "y": 2,
+        "height": 21
+      },
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular DIFF pixel-avatar hairstyle, source artwork for a locked 128x128 layer. The input is a BLANK HEAD used only for skull proportions and pixel-art style. Design the requested new haircut with its own unmistakable silhouette; do not add a generic fluffy center-part. Never draw the reference head or body. Produce ONLY a bold side-swept disconnected undercut, top leaning to one side, closely clipped opposite temple. Front-facing, upright, ONE hairstyle. Match the reference's deliberate coarse square pixel clusters, compact head proportions, dark contour and restrained shading. Brown hair ONLY: outline #211414, shadows #38241d, base #654333, highlights #8b6148. No peach, beige, flesh or skin-colored marks. Fade regions must be sparse/darker brown hair or transparent, never skin. Entire hair silhouette centered on a square canvas with generous transparent padding, complete crown and tips visible. Empty genuinely transparent face opening. Keep all bangs above eyebrows; no eyes, brows, nose, mouth, ears, head, skin, neck, body, clothing, hats, jewelry, text, borders or backdrop. True RGBA transparency, not a painted checkerboard. No fine realistic strands, blurry shading, gradients or antialiasing. Keep the head opening compatible with the reference; do not draw a complete character.",
+      "status": "generated",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ]
+    },
+    {
+      "id": "hair.slick_back",
+      "name": "Clean slick back",
+      "group": "Short",
+      "texture": "straight",
+      "fringe": "open",
+      "source": "slick_back.png",
+      "guide": {
+        "width": 28,
+        "y": 2,
+        "height": 21
+      },
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular DIFF pixel-avatar hairstyle, source artwork for a locked 128x128 layer. The input is a BLANK HEAD used only for skull proportions and pixel-art style. Design the requested new haircut with its own unmistakable silhouette; do not add a generic fluffy center-part. Never draw the reference head or body. Produce ONLY a smooth slick-back haircut with shallow backward directional pixel ridges, fully open forehead, small side sections. Front-facing, upright, ONE hairstyle. Match the reference's deliberate coarse square pixel clusters, compact head proportions, dark contour and restrained shading. Brown hair ONLY: outline #211414, shadows #38241d, base #654333, highlights #8b6148. No peach, beige, flesh or skin-colored marks. Fade regions must be sparse/darker brown hair or transparent, never skin. Entire hair silhouette centered on a square canvas with generous transparent padding, complete crown and tips visible. Empty genuinely transparent face opening. Keep all bangs above eyebrows; no eyes, brows, nose, mouth, ears, head, skin, neck, body, clothing, hats, jewelry, text, borders or backdrop. True RGBA transparency, not a painted checkerboard. No fine realistic strands, blurry shading, gradients or antialiasing. Keep the head opening compatible with the reference; do not draw a complete character.",
+      "status": "generated",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ]
+    },
+    {
+      "id": "hair.short_pixie",
+      "name": "Cropped pixie",
+      "group": "Short",
+      "texture": "straight",
+      "fringe": "side",
+      "source": "short_pixie.png",
+      "guide": {
+        "width": 28,
+        "y": 2,
+        "height": 21
+      },
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular DIFF pixel-avatar hairstyle, source artwork for a locked 128x128 layer. The input is a BLANK HEAD used only for skull proportions and pixel-art style. Design the requested new haircut with its own unmistakable silhouette; do not add a generic fluffy center-part. Never draw the reference head or body. Produce ONLY a very short cropped pixie with tiny pointed side wisps and a diagonal micro fringe. Front-facing, upright, ONE hairstyle. Match the reference's deliberate coarse square pixel clusters, compact head proportions, dark contour and restrained shading. Brown hair ONLY: outline #211414, shadows #38241d, base #654333, highlights #8b6148. No peach, beige, flesh or skin-colored marks. Fade regions must be sparse/darker brown hair or transparent, never skin. Entire hair silhouette centered on a square canvas with generous transparent padding, complete crown and tips visible. Empty genuinely transparent face opening. Keep all bangs above eyebrows; no eyes, brows, nose, mouth, ears, head, skin, neck, body, clothing, hats, jewelry, text, borders or backdrop. True RGBA transparency, not a painted checkerboard. No fine realistic strands, blurry shading, gradients or antialiasing. Keep the head opening compatible with the reference; do not draw a complete character.",
+      "status": "generated",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ]
+    },
+    {
+      "id": "hair.classic_pixie",
+      "name": "Classic pixie",
+      "group": "Short",
+      "texture": "straight",
+      "fringe": "side",
+      "source": "classic_pixie.png",
+      "guide": {
+        "width": 28,
+        "y": 2,
+        "height": 21
+      },
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular DIFF pixel-avatar hairstyle, source artwork for a locked 128x128 layer. The input is a BLANK HEAD used only for skull proportions and pixel-art style. Design the requested new haircut with its own unmistakable silhouette; do not add a generic fluffy center-part. Never draw the reference head or body. Produce ONLY a classic pixie haircut, short sculpted crown, fine tapered side sections and soft wispy diagonal fringe. Front-facing, upright, ONE hairstyle. Match the reference's deliberate coarse square pixel clusters, compact head proportions, dark contour and restrained shading. Brown hair ONLY: outline #211414, shadows #38241d, base #654333, highlights #8b6148. No peach, beige, flesh or skin-colored marks. Fade regions must be sparse/darker brown hair or transparent, never skin. Entire hair silhouette centered on a square canvas with generous transparent padding, complete crown and tips visible. Empty genuinely transparent face opening. Keep all bangs above eyebrows; no eyes, brows, nose, mouth, ears, head, skin, neck, body, clothing, hats, jewelry, text, borders or backdrop. True RGBA transparency, not a painted checkerboard. No fine realistic strands, blurry shading, gradients or antialiasing. Keep the head opening compatible with the reference; do not draw a complete character.",
+      "status": "generated",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ]
+    },
+    {
+      "id": "hair.long_pixie",
+      "name": "Long pixie",
+      "group": "Medium",
+      "texture": "straight",
+      "fringe": "side",
+      "source": "long_pixie.png",
+      "guide": {
+        "width": 30,
+        "y": 2,
+        "height": 28
+      },
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular DIFF pixel-avatar hairstyle, source artwork for a locked 128x128 layer. The input is a BLANK HEAD used only for skull proportions and pixel-art style. Design the requested new haircut with its own unmistakable silhouette; do not add a generic fluffy center-part. Never draw the reference head or body. Produce ONLY a long pixie with longer side-swept upper fringe and one small ear-length side section. Front-facing, upright, ONE hairstyle. Match the reference's deliberate coarse square pixel clusters, compact head proportions, dark contour and restrained shading. Brown hair ONLY: outline #211414, shadows #38241d, base #654333, highlights #8b6148. No peach, beige, flesh or skin-colored marks. Fade regions must be sparse/darker brown hair or transparent, never skin. Entire hair silhouette centered on a square canvas with generous transparent padding, complete crown and tips visible. Empty genuinely transparent face opening. Keep all bangs above eyebrows; no eyes, brows, nose, mouth, ears, head, skin, neck, body, clothing, hats, jewelry, text, borders or backdrop. True RGBA transparency, not a painted checkerboard. No fine realistic strands, blurry shading, gradients or antialiasing. Keep the head opening compatible with the reference; do not draw a complete character.",
+      "status": "generated",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ]
+    },
+    {
+      "id": "hair.bixie",
+      "name": "Bixie cut",
+      "group": "Medium",
+      "texture": "wavy",
+      "fringe": "side",
+      "source": "bixie.png",
+      "guide": {
+        "width": 31,
+        "y": 2,
+        "height": 31
+      },
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular DIFF pixel-avatar hairstyle, source artwork for a locked 128x128 layer. The input is a BLANK HEAD used only for skull proportions and pixel-art style. Design the requested new haircut with its own unmistakable silhouette; do not add a generic fluffy center-part. Never draw the reference head or body. Produce ONLY a bixie cut halfway between a pixie and short bob, softly feathered sides to ear level. Front-facing, upright, ONE hairstyle. Match the reference's deliberate coarse square pixel clusters, compact head proportions, dark contour and restrained shading. Brown hair ONLY: outline #211414, shadows #38241d, base #654333, highlights #8b6148. No peach, beige, flesh or skin-colored marks. Fade regions must be sparse/darker brown hair or transparent, never skin. Entire hair silhouette centered on a square canvas with generous transparent padding, complete crown and tips visible. Empty genuinely transparent face opening. Keep all bangs above eyebrows; no eyes, brows, nose, mouth, ears, head, skin, neck, body, clothing, hats, jewelry, text, borders or backdrop. True RGBA transparency, not a painted checkerboard. No fine realistic strands, blurry shading, gradients or antialiasing. Keep the head opening compatible with the reference; do not draw a complete character.",
+      "status": "generated",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ]
+    },
+    {
+      "id": "hair.blunt_bob",
+      "name": "Blunt bob",
+      "group": "Medium",
+      "texture": "straight",
+      "fringe": "blunt",
+      "source": "blunt_bob.png",
+      "guide": {
+        "width": 32,
+        "y": 2,
+        "height": 34
+      },
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular DIFF pixel-avatar hairstyle, source artwork for a locked 128x128 layer. The input is a BLANK HEAD used only for skull proportions and pixel-art style. Design the requested new haircut with its own unmistakable silhouette; do not add a generic fluffy center-part. Never draw the reference head or body. Produce ONLY a straight chin-length blunt bob with an even horizontal bottom and a short straight brow-clearing fringe. Front-facing, upright, ONE hairstyle. Match the reference's deliberate coarse square pixel clusters, compact head proportions, dark contour and restrained shading. Brown hair ONLY: outline #211414, shadows #38241d, base #654333, highlights #8b6148. No peach, beige, flesh or skin-colored marks. Fade regions must be sparse/darker brown hair or transparent, never skin. Entire hair silhouette centered on a square canvas with generous transparent padding, complete crown and tips visible. Empty genuinely transparent face opening. Keep all bangs above eyebrows; no eyes, brows, nose, mouth, ears, head, skin, neck, body, clothing, hats, jewelry, text, borders or backdrop. True RGBA transparency, not a painted checkerboard. No fine realistic strands, blurry shading, gradients or antialiasing. Keep the head opening compatible with the reference; do not draw a complete character.",
+      "status": "generated",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ]
+    },
+    {
+      "id": "hair.french_bob",
+      "name": "French bob",
+      "group": "Medium",
+      "texture": "wavy",
+      "fringe": "blunt",
+      "source": "french_bob.png",
+      "guide": {
+        "width": 32,
+        "y": 2,
+        "height": 32
+      },
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular DIFF pixel-avatar hairstyle, source artwork for a locked 128x128 layer. The input is a BLANK HEAD used only for skull proportions and pixel-art style. Design the requested new haircut with its own unmistakable silhouette; do not add a generic fluffy center-part. Never draw the reference head or body. Produce ONLY a short French bob ending above the chin, slightly rounded ends and a short airy brow-clearing fringe. Front-facing, upright, ONE hairstyle. Match the reference's deliberate coarse square pixel clusters, compact head proportions, dark contour and restrained shading. Brown hair ONLY: outline #211414, shadows #38241d, base #654333, highlights #8b6148. No peach, beige, flesh or skin-colored marks. Fade regions must be sparse/darker brown hair or transparent, never skin. Entire hair silhouette centered on a square canvas with generous transparent padding, complete crown and tips visible. Empty genuinely transparent face opening. Keep all bangs above eyebrows; no eyes, brows, nose, mouth, ears, head, skin, neck, body, clothing, hats, jewelry, text, borders or backdrop. True RGBA transparency, not a painted checkerboard. No fine realistic strands, blurry shading, gradients or antialiasing. Keep the head opening compatible with the reference; do not draw a complete character.",
+      "status": "generated",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ]
+    },
+    {
+      "id": "hair.micro_bob",
+      "name": "Micro bob",
+      "group": "Medium",
+      "texture": "straight",
+      "fringe": "middle",
+      "source": "micro_bob.png",
+      "guide": {
+        "width": 32,
+        "y": 2,
+        "height": 32
+      },
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular DIFF pixel-avatar hairstyle, source artwork for a locked 128x128 layer. The input is a BLANK HEAD used only for skull proportions and pixel-art style. Design the requested new haircut with its own unmistakable silhouette; do not add a generic fluffy center-part. Never draw the reference head or body. Produce ONLY an ultra-short micro bob at ear-lobe level, compact geometric shape with an open central face opening. Front-facing, upright, ONE hairstyle. Match the reference's deliberate coarse square pixel clusters, compact head proportions, dark contour and restrained shading. Brown hair ONLY: outline #211414, shadows #38241d, base #654333, highlights #8b6148. No peach, beige, flesh or skin-colored marks. Fade regions must be sparse/darker brown hair or transparent, never skin. Entire hair silhouette centered on a square canvas with generous transparent padding, complete crown and tips visible. Empty genuinely transparent face opening. Keep all bangs above eyebrows; no eyes, brows, nose, mouth, ears, head, skin, neck, body, clothing, hats, jewelry, text, borders or backdrop. True RGBA transparency, not a painted checkerboard. No fine realistic strands, blurry shading, gradients or antialiasing. Keep the head opening compatible with the reference; do not draw a complete character.",
+      "status": "generated",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ]
+    },
+    {
+      "id": "hair.angled_bob",
+      "name": "Angled bob",
+      "group": "Medium",
+      "texture": "straight",
+      "fringe": "side",
+      "source": "angled_bob.png",
+      "guide": {
+        "width": 32,
+        "y": 2,
+        "height": 34
+      },
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular DIFF pixel-avatar hairstyle, source artwork for a locked 128x128 layer. The input is a BLANK HEAD used only for skull proportions and pixel-art style. Design the requested new haircut with its own unmistakable silhouette; do not add a generic fluffy center-part. Never draw the reference head or body. Produce ONLY an angled bob with crisp diagonal side lengths, longer near the chin and shorter rear volume. Front-facing, upright, ONE hairstyle. Match the reference's deliberate coarse square pixel clusters, compact head proportions, dark contour and restrained shading. Brown hair ONLY: outline #211414, shadows #38241d, base #654333, highlights #8b6148. No peach, beige, flesh or skin-colored marks. Fade regions must be sparse/darker brown hair or transparent, never skin. Entire hair silhouette centered on a square canvas with generous transparent padding, complete crown and tips visible. Empty genuinely transparent face opening. Keep all bangs above eyebrows; no eyes, brows, nose, mouth, ears, head, skin, neck, body, clothing, hats, jewelry, text, borders or backdrop. True RGBA transparency, not a painted checkerboard. No fine realistic strands, blurry shading, gradients or antialiasing. Keep the head opening compatible with the reference; do not draw a complete character.",
+      "status": "generated",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ]
+    },
+    {
+      "id": "hair.asymmetric_bob",
+      "name": "Asymmetric bob",
+      "group": "Medium",
+      "texture": "straight",
+      "fringe": "side",
+      "source": "asymmetric_bob.png",
+      "guide": {
+        "width": 32,
+        "y": 2,
+        "height": 34
+      },
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular DIFF pixel-avatar hairstyle, source artwork for a locked 128x128 layer. The input is a BLANK HEAD used only for skull proportions and pixel-art style. Design the requested new haircut with its own unmistakable silhouette; do not add a generic fluffy center-part. Never draw the reference head or body. Produce ONLY an asymmetric bob, one side at chin level and the other at ear level, swept top and clear face opening. Front-facing, upright, ONE hairstyle. Match the reference's deliberate coarse square pixel clusters, compact head proportions, dark contour and restrained shading. Brown hair ONLY: outline #211414, shadows #38241d, base #654333, highlights #8b6148. No peach, beige, flesh or skin-colored marks. Fade regions must be sparse/darker brown hair or transparent, never skin. Entire hair silhouette centered on a square canvas with generous transparent padding, complete crown and tips visible. Empty genuinely transparent face opening. Keep all bangs above eyebrows; no eyes, brows, nose, mouth, ears, head, skin, neck, body, clothing, hats, jewelry, text, borders or backdrop. True RGBA transparency, not a painted checkerboard. No fine realistic strands, blurry shading, gradients or antialiasing. Keep the head opening compatible with the reference; do not draw a complete character.",
+      "status": "generated",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ]
+    },
+    {
+      "id": "hair.wavy_bob",
+      "name": "Wavy bob",
+      "group": "Medium",
+      "texture": "wavy",
+      "fringe": "middle",
+      "source": "wavy_bob.png",
+      "guide": {
+        "width": 32,
+        "y": 2,
+        "height": 34
+      },
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular DIFF pixel-avatar hairstyle, source artwork for a locked 128x128 layer. The input is a BLANK HEAD used only for skull proportions and pixel-art style. Design the requested new haircut with its own unmistakable silhouette; do not add a generic fluffy center-part. Never draw the reference head or body. Produce ONLY a chin-length wavy bob with broad S-shaped pixel locks and a central part. Front-facing, upright, ONE hairstyle. Match the reference's deliberate coarse square pixel clusters, compact head proportions, dark contour and restrained shading. Brown hair ONLY: outline #211414, shadows #38241d, base #654333, highlights #8b6148. No peach, beige, flesh or skin-colored marks. Fade regions must be sparse/darker brown hair or transparent, never skin. Entire hair silhouette centered on a square canvas with generous transparent padding, complete crown and tips visible. Empty genuinely transparent face opening. Keep all bangs above eyebrows; no eyes, brows, nose, mouth, ears, head, skin, neck, body, clothing, hats, jewelry, text, borders or backdrop. True RGBA transparency, not a painted checkerboard. No fine realistic strands, blurry shading, gradients or antialiasing. Keep the head opening compatible with the reference; do not draw a complete character.",
+      "status": "generated",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ]
+    },
+    {
+      "id": "hair.curly_bob",
+      "name": "Curly bob",
+      "group": "Medium",
+      "texture": "curly",
+      "fringe": "middle",
+      "source": "curly_bob.png",
+      "guide": {
+        "width": 32,
+        "y": 2,
+        "height": 34
+      },
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular DIFF pixel-avatar hairstyle, source artwork for a locked 128x128 layer. The input is a BLANK HEAD used only for skull proportions and pixel-art style. Design the requested new haircut with its own unmistakable silhouette; do not add a generic fluffy center-part. Never draw the reference head or body. Produce ONLY a rounded chin-length curly bob with distinct chunky ringlet clusters framing an open face. Front-facing, upright, ONE hairstyle. Match the reference's deliberate coarse square pixel clusters, compact head proportions, dark contour and restrained shading. Brown hair ONLY: outline #211414, shadows #38241d, base #654333, highlights #8b6148. No peach, beige, flesh or skin-colored marks. Fade regions must be sparse/darker brown hair or transparent, never skin. Entire hair silhouette centered on a square canvas with generous transparent padding, complete crown and tips visible. Empty genuinely transparent face opening. Keep all bangs above eyebrows; no eyes, brows, nose, mouth, ears, head, skin, neck, body, clothing, hats, jewelry, text, borders or backdrop. True RGBA transparency, not a painted checkerboard. No fine realistic strands, blurry shading, gradients or antialiasing. Keep the head opening compatible with the reference; do not draw a complete character.",
+      "status": "generated",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ]
+    },
+    {
+      "id": "hair.rounded_bob",
+      "name": "Rounded bob",
+      "group": "Medium",
+      "texture": "straight",
+      "fringe": "blunt",
+      "source": "rounded_bob.png",
+      "guide": {
+        "width": 32,
+        "y": 2,
+        "height": 34
+      },
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular DIFF pixel-avatar hairstyle, source artwork for a locked 128x128 layer. The input is a BLANK HEAD used only for skull proportions and pixel-art style. Design the requested new haircut with its own unmistakable silhouette; do not add a generic fluffy center-part. Never draw the reference head or body. Produce ONLY a smooth rounded bubble bob with inward-turning ends and a shallow rounded brow-clearing fringe. Front-facing, upright, ONE hairstyle. Match the reference's deliberate coarse square pixel clusters, compact head proportions, dark contour and restrained shading. Brown hair ONLY: outline #211414, shadows #38241d, base #654333, highlights #8b6148. No peach, beige, flesh or skin-colored marks. Fade regions must be sparse/darker brown hair or transparent, never skin. Entire hair silhouette centered on a square canvas with generous transparent padding, complete crown and tips visible. Empty genuinely transparent face opening. Keep all bangs above eyebrows; no eyes, brows, nose, mouth, ears, head, skin, neck, body, clothing, hats, jewelry, text, borders or backdrop. True RGBA transparency, not a painted checkerboard. No fine realistic strands, blurry shading, gradients or antialiasing. Keep the head opening compatible with the reference; do not draw a complete character.",
+      "status": "generated",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ]
+    },
+    {
+      "id": "hair.curtain_bob",
+      "name": "Curtain bob",
+      "group": "Medium",
+      "texture": "straight",
+      "fringe": "middle",
+      "source": "curtain_bob.png",
+      "guide": {
+        "width": 32,
+        "y": 2,
+        "height": 34
+      },
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular DIFF pixel-avatar hairstyle, source artwork for a locked 128x128 layer. The input is a BLANK HEAD used only for skull proportions and pixel-art style. Design the requested new haircut with its own unmistakable silhouette; do not add a generic fluffy center-part. Never draw the reference head or body. Produce ONLY a chin-length bob with two clearly separated curtain fringe sections, open forehead center. Front-facing, upright, ONE hairstyle. Match the reference's deliberate coarse square pixel clusters, compact head proportions, dark contour and restrained shading. Brown hair ONLY: outline #211414, shadows #38241d, base #654333, highlights #8b6148. No peach, beige, flesh or skin-colored marks. Fade regions must be sparse/darker brown hair or transparent, never skin. Entire hair silhouette centered on a square canvas with generous transparent padding, complete crown and tips visible. Empty genuinely transparent face opening. Keep all bangs above eyebrows; no eyes, brows, nose, mouth, ears, head, skin, neck, body, clothing, hats, jewelry, text, borders or backdrop. True RGBA transparency, not a painted checkerboard. No fine realistic strands, blurry shading, gradients or antialiasing. Keep the head opening compatible with the reference; do not draw a complete character.",
+      "status": "generated",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ]
+    },
+    {
+      "id": "hair.jellyfish_cut",
+      "name": "Jellyfish cut",
+      "group": "Long",
+      "texture": "straight",
+      "fringe": "blunt",
+      "source": "jellyfish_cut.png",
+      "guide": {
+        "width": 36,
+        "y": 2,
+        "height": 52
+      },
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular DIFF pixel-avatar hairstyle, source artwork for a locked 128x128 layer. The input is a BLANK HEAD used only for skull proportions and pixel-art style. Design the requested new haircut with its own unmistakable silhouette; do not add a generic fluffy center-part. Never draw the reference head or body. Produce ONLY a jellyfish haircut with a compact rounded upper bob cap and two long straight narrow lower sections. Front-facing, upright, ONE hairstyle. Match the reference's deliberate coarse square pixel clusters, compact head proportions, dark contour and restrained shading. Brown hair ONLY: outline #211414, shadows #38241d, base #654333, highlights #8b6148. No peach, beige, flesh or skin-colored marks. Fade regions must be sparse/darker brown hair or transparent, never skin. Entire hair silhouette centered on a square canvas with generous transparent padding, complete crown and tips visible. Empty genuinely transparent face opening. Keep all bangs above eyebrows; no eyes, brows, nose, mouth, ears, head, skin, neck, body, clothing, hats, jewelry, text, borders or backdrop. True RGBA transparency, not a painted checkerboard. No fine realistic strands, blurry shading, gradients or antialiasing. Keep the head opening compatible with the reference; do not draw a complete character.",
+      "status": "generated",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ]
+    },
+    {
+      "id": "hair.hime_cut",
+      "name": "Hime cut",
+      "group": "Long",
+      "texture": "straight",
+      "fringe": "blunt",
+      "source": "hime_cut.png",
+      "guide": {
+        "width": 36,
+        "y": 2,
+        "height": 52
+      },
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular DIFF pixel-avatar hairstyle, source artwork for a locked 128x128 layer. The input is a BLANK HEAD used only for skull proportions and pixel-art style. Design the requested new haircut with its own unmistakable silhouette; do not add a generic fluffy center-part. Never draw the reference head or body. Produce ONLY a hime haircut with a short blunt brow-clearing fringe, straight chin-level side steps and long straight back hair. Front-facing, upright, ONE hairstyle. Match the reference's deliberate coarse square pixel clusters, compact head proportions, dark contour and restrained shading. Brown hair ONLY: outline #211414, shadows #38241d, base #654333, highlights #8b6148. No peach, beige, flesh or skin-colored marks. Fade regions must be sparse/darker brown hair or transparent, never skin. Entire hair silhouette centered on a square canvas with generous transparent padding, complete crown and tips visible. Empty genuinely transparent face opening. Keep all bangs above eyebrows; no eyes, brows, nose, mouth, ears, head, skin, neck, body, clothing, hats, jewelry, text, borders or backdrop. True RGBA transparency, not a painted checkerboard. No fine realistic strands, blurry shading, gradients or antialiasing. Keep the head opening compatible with the reference; do not draw a complete character.",
+      "status": "generated",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ]
+    },
+    {
+      "id": "hair.shaggy_mop",
+      "name": "Shaggy mop",
+      "group": "Medium",
+      "texture": "wavy",
+      "fringe": "textured",
+      "source": "shaggy_mop.png",
+      "guide": {
+        "width": 32,
+        "y": 2,
+        "height": 34
+      },
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular DIFF pixel-avatar hairstyle, source artwork for a locked 128x128 layer. The input is a BLANK HEAD used only for skull proportions and pixel-art style. Design the requested new haircut with its own unmistakable silhouette; do not add a generic fluffy center-part. Never draw the reference head or body. Produce ONLY a shaggy mop haircut with layered ear-length wisps, choppy rounded volume, parted short fringe above eyebrows. Front-facing, upright, ONE hairstyle. Match the reference's deliberate coarse square pixel clusters, compact head proportions, dark contour and restrained shading. Brown hair ONLY: outline #211414, shadows #38241d, base #654333, highlights #8b6148. No peach, beige, flesh or skin-colored marks. Fade regions must be sparse/darker brown hair or transparent, never skin. Entire hair silhouette centered on a square canvas with generous transparent padding, complete crown and tips visible. Empty genuinely transparent face opening. Keep all bangs above eyebrows; no eyes, brows, nose, mouth, ears, head, skin, neck, body, clothing, hats, jewelry, text, borders or backdrop. True RGBA transparency, not a painted checkerboard. No fine realistic strands, blurry shading, gradients or antialiasing. Keep the head opening compatible with the reference; do not draw a complete character.",
+      "status": "generated",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ]
+    },
+    {
+      "id": "hair.tight_curls_fade",
+      "name": "Tight curls fade",
+      "group": "Short",
+      "texture": "coily",
+      "fringe": "open",
+      "source": "tight_curls_fade.png",
+      "guide": {
+        "width": 28,
+        "y": 2,
+        "height": 21
+      },
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular DIFF pixel-avatar hairstyle, source artwork for a locked 128x128 layer. The input is a BLANK HEAD used only for skull proportions and pixel-art style. Design the requested new haircut with its own unmistakable silhouette; do not add a generic fluffy center-part. Never draw the reference head or body. Produce ONLY a close tight-curled crop with low faded sides, small crisp coil clusters across the top. Front-facing, upright, ONE hairstyle. Match the reference's deliberate coarse square pixel clusters, compact head proportions, dark contour and restrained shading. Brown hair ONLY: outline #211414, shadows #38241d, base #654333, highlights #8b6148. No peach, beige, flesh or skin-colored marks. Fade regions must be sparse/darker brown hair or transparent, never skin. Entire hair silhouette centered on a square canvas with generous transparent padding, complete crown and tips visible. Empty genuinely transparent face opening. Keep all bangs above eyebrows; no eyes, brows, nose, mouth, ears, head, skin, neck, body, clothing, hats, jewelry, text, borders or backdrop. True RGBA transparency, not a painted checkerboard. No fine realistic strands, blurry shading, gradients or antialiasing. Keep the head opening compatible with the reference; do not draw a complete character.",
+      "status": "generated",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ]
+    },
+    {
+      "id": "hair.loose_curly_crop",
+      "name": "Loose curly crop",
+      "group": "Short",
+      "texture": "curly",
+      "fringe": "textured",
+      "source": "loose_curly_crop.png",
+      "guide": {
+        "width": 28,
+        "y": 2,
+        "height": 21
+      },
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular DIFF pixel-avatar hairstyle, source artwork for a locked 128x128 layer. The input is a BLANK HEAD used only for skull proportions and pixel-art style. Design the requested new haircut with its own unmistakable silhouette; do not add a generic fluffy center-part. Never draw the reference head or body. Produce ONLY a low loose-curly crop with five or six broad curl clusters and small temple locks. Front-facing, upright, ONE hairstyle. Match the reference's deliberate coarse square pixel clusters, compact head proportions, dark contour and restrained shading. Brown hair ONLY: outline #211414, shadows #38241d, base #654333, highlights #8b6148. No peach, beige, flesh or skin-colored marks. Fade regions must be sparse/darker brown hair or transparent, never skin. Entire hair silhouette centered on a square canvas with generous transparent padding, complete crown and tips visible. Empty genuinely transparent face opening. Keep all bangs above eyebrows; no eyes, brows, nose, mouth, ears, head, skin, neck, body, clothing, hats, jewelry, text, borders or backdrop. True RGBA transparency, not a painted checkerboard. No fine realistic strands, blurry shading, gradients or antialiasing. Keep the head opening compatible with the reference; do not draw a complete character.",
+      "status": "generated",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ]
+    },
+    {
+      "id": "hair.curly_fringe",
+      "name": "Curly fringe",
+      "group": "Short",
+      "texture": "curly",
+      "fringe": "textured",
+      "source": "curly_fringe.png",
+      "guide": {
+        "width": 28,
+        "y": 2,
+        "height": 21
+      },
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular DIFF pixel-avatar hairstyle, source artwork for a locked 128x128 layer. The input is a BLANK HEAD used only for skull proportions and pixel-art style. Design the requested new haircut with its own unmistakable silhouette; do not add a generic fluffy center-part. Never draw the reference head or body. Produce ONLY a short tapered haircut with a row of distinct rounded curl tips across the forehead, ending above eyebrows. Front-facing, upright, ONE hairstyle. Match the reference's deliberate coarse square pixel clusters, compact head proportions, dark contour and restrained shading. Brown hair ONLY: outline #211414, shadows #38241d, base #654333, highlights #8b6148. No peach, beige, flesh or skin-colored marks. Fade regions must be sparse/darker brown hair or transparent, never skin. Entire hair silhouette centered on a square canvas with generous transparent padding, complete crown and tips visible. Empty genuinely transparent face opening. Keep all bangs above eyebrows; no eyes, brows, nose, mouth, ears, head, skin, neck, body, clothing, hats, jewelry, text, borders or backdrop. True RGBA transparency, not a painted checkerboard. No fine realistic strands, blurry shading, gradients or antialiasing. Keep the head opening compatible with the reference; do not draw a complete character.",
+      "status": "generated",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ]
+    },
+    {
+      "id": "hair.curly_mop",
+      "name": "Curly mop",
+      "group": "Medium",
+      "texture": "curly",
+      "fringe": "middle",
+      "source": "curly_mop.png",
+      "guide": {
+        "width": 34,
+        "y": 2,
+        "height": 33
+      },
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular DIFF pixel-avatar hairstyle, source artwork for a locked 128x128 layer. The input is a BLANK HEAD used only for skull proportions and pixel-art style. Design the requested new haircut with its own unmistakable silhouette; do not add a generic fluffy center-part. Never draw the reference head or body. Produce ONLY an ear-length curly mop with soft irregular rounded ringlets and an open center forehead. Front-facing, upright, ONE hairstyle. Match the reference's deliberate coarse square pixel clusters, compact head proportions, dark contour and restrained shading. Brown hair ONLY: outline #211414, shadows #38241d, base #654333, highlights #8b6148. No peach, beige, flesh or skin-colored marks. Fade regions must be sparse/darker brown hair or transparent, never skin. Entire hair silhouette centered on a square canvas with generous transparent padding, complete crown and tips visible. Empty genuinely transparent face opening. Keep all bangs above eyebrows; no eyes, brows, nose, mouth, ears, head, skin, neck, body, clothing, hats, jewelry, text, borders or backdrop. True RGBA transparency, not a painted checkerboard. No fine realistic strands, blurry shading, gradients or antialiasing. Keep the head opening compatible with the reference; do not draw a complete character.",
+      "status": "generated",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ]
+    },
+    {
+      "id": "hair.rounded_coils",
+      "name": "Rounded coils",
+      "group": "Short",
+      "texture": "coily",
+      "fringe": "open",
+      "source": "rounded_coils.png",
+      "guide": {
+        "width": 34,
+        "y": 2,
+        "height": 21
+      },
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular DIFF pixel-avatar hairstyle, source artwork for a locked 128x128 layer. The input is a BLANK HEAD used only for skull proportions and pixel-art style. Design the requested new haircut with its own unmistakable silhouette; do not add a generic fluffy center-part. Never draw the reference head or body. Produce ONLY a compact rounded natural coily silhouette with dense small grouped coils and clean temple edge. Front-facing, upright, ONE hairstyle. Match the reference's deliberate coarse square pixel clusters, compact head proportions, dark contour and restrained shading. Brown hair ONLY: outline #211414, shadows #38241d, base #654333, highlights #8b6148. No peach, beige, flesh or skin-colored marks. Fade regions must be sparse/darker brown hair or transparent, never skin. Entire hair silhouette centered on a square canvas with generous transparent padding, complete crown and tips visible. Empty genuinely transparent face opening. Keep all bangs above eyebrows; no eyes, brows, nose, mouth, ears, head, skin, neck, body, clothing, hats, jewelry, text, borders or backdrop. True RGBA transparency, not a painted checkerboard. No fine realistic strands, blurry shading, gradients or antialiasing. Keep the head opening compatible with the reference; do not draw a complete character.",
+      "status": "generated",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ]
+    },
+    {
+      "id": "hair.tall_afro",
+      "name": "Tall afro",
+      "group": "Short",
+      "texture": "coily",
+      "fringe": "open",
+      "source": "tall_afro.png",
+      "guide": {
+        "width": 34,
+        "y": 2,
+        "height": 25
+      },
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular DIFF pixel-avatar hairstyle, source artwork for a locked 128x128 layer. The input is a BLANK HEAD used only for skull proportions and pixel-art style. Design the requested new haircut with its own unmistakable silhouette; do not add a generic fluffy center-part. Never draw the reference head or body. Produce ONLY a tall rounded afro with a clearly elevated soft dome, dense deliberate coil clusters and balanced sides. Front-facing, upright, ONE hairstyle. Match the reference's deliberate coarse square pixel clusters, compact head proportions, dark contour and restrained shading. Brown hair ONLY: outline #211414, shadows #38241d, base #654333, highlights #8b6148. No peach, beige, flesh or skin-colored marks. Fade regions must be sparse/darker brown hair or transparent, never skin. Entire hair silhouette centered on a square canvas with generous transparent padding, complete crown and tips visible. Empty genuinely transparent face opening. Keep all bangs above eyebrows; no eyes, brows, nose, mouth, ears, head, skin, neck, body, clothing, hats, jewelry, text, borders or backdrop. True RGBA transparency, not a painted checkerboard. No fine realistic strands, blurry shading, gradients or antialiasing. Keep the head opening compatible with the reference; do not draw a complete character.",
+      "status": "generated",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ]
+    },
+    {
+      "id": "hair.mini_afro",
+      "name": "Mini afro",
+      "group": "Short",
+      "texture": "coily",
+      "fringe": "open",
+      "source": "mini_afro.png",
+      "guide": {
+        "width": 28,
+        "y": 2,
+        "height": 21
+      },
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular DIFF pixel-avatar hairstyle, source artwork for a locked 128x128 layer. The input is a BLANK HEAD used only for skull proportions and pixel-art style. Design the requested new haircut with its own unmistakable silhouette; do not add a generic fluffy center-part. Never draw the reference head or body. Produce ONLY a very compact small rounded afro following the skull with short dense coil texture. Front-facing, upright, ONE hairstyle. Match the reference's deliberate coarse square pixel clusters, compact head proportions, dark contour and restrained shading. Brown hair ONLY: outline #211414, shadows #38241d, base #654333, highlights #8b6148. No peach, beige, flesh or skin-colored marks. Fade regions must be sparse/darker brown hair or transparent, never skin. Entire hair silhouette centered on a square canvas with generous transparent padding, complete crown and tips visible. Empty genuinely transparent face opening. Keep all bangs above eyebrows; no eyes, brows, nose, mouth, ears, head, skin, neck, body, clothing, hats, jewelry, text, borders or backdrop. True RGBA transparency, not a painted checkerboard. No fine realistic strands, blurry shading, gradients or antialiasing. Keep the head opening compatible with the reference; do not draw a complete character.",
+      "status": "generated",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ]
+    },
+    {
+      "id": "hair.tapered_afro",
+      "name": "Tapered afro",
+      "group": "Short",
+      "texture": "coily",
+      "fringe": "open",
+      "source": "tapered_afro.png",
+      "guide": {
+        "width": 34,
+        "y": 2,
+        "height": 21
+      },
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular DIFF pixel-avatar hairstyle, source artwork for a locked 128x128 layer. The input is a BLANK HEAD used only for skull proportions and pixel-art style. Design the requested new haircut with its own unmistakable silhouette; do not add a generic fluffy center-part. Never draw the reference head or body. Produce ONLY a tapered afro with rounded upper volume and narrower cropped sides, gently trapezoidal silhouette. Front-facing, upright, ONE hairstyle. Match the reference's deliberate coarse square pixel clusters, compact head proportions, dark contour and restrained shading. Brown hair ONLY: outline #211414, shadows #38241d, base #654333, highlights #8b6148. No peach, beige, flesh or skin-colored marks. Fade regions must be sparse/darker brown hair or transparent, never skin. Entire hair silhouette centered on a square canvas with generous transparent padding, complete crown and tips visible. Empty genuinely transparent face opening. Keep all bangs above eyebrows; no eyes, brows, nose, mouth, ears, head, skin, neck, body, clothing, hats, jewelry, text, borders or backdrop. True RGBA transparency, not a painted checkerboard. No fine realistic strands, blurry shading, gradients or antialiasing. Keep the head opening compatible with the reference; do not draw a complete character.",
+      "status": "generated",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ]
+    },
+    {
+      "id": "hair.curly_shoulder",
+      "name": "Shoulder-length curls",
+      "group": "Long",
+      "texture": "curly",
+      "fringe": "middle",
+      "source": "curly_shoulder.png",
+      "guide": {
+        "width": 36,
+        "y": 2,
+        "height": 52
+      },
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular DIFF pixel-avatar hairstyle, source artwork for a locked 128x128 layer. The input is a BLANK HEAD used only for skull proportions and pixel-art style. Design the requested new haircut with its own unmistakable silhouette; do not add a generic fluffy center-part. Never draw the reference head or body. Produce ONLY shoulder-length broad ringlets, central part and rounded ends, hair falling on both sides of an empty face opening. Front-facing, upright, ONE hairstyle. Match the reference's deliberate coarse square pixel clusters, compact head proportions, dark contour and restrained shading. Brown hair ONLY: outline #211414, shadows #38241d, base #654333, highlights #8b6148. No peach, beige, flesh or skin-colored marks. Fade regions must be sparse/darker brown hair or transparent, never skin. Entire hair silhouette centered on a square canvas with generous transparent padding, complete crown and tips visible. Empty genuinely transparent face opening. Keep all bangs above eyebrows; no eyes, brows, nose, mouth, ears, head, skin, neck, body, clothing, hats, jewelry, text, borders or backdrop. True RGBA transparency, not a painted checkerboard. No fine realistic strands, blurry shading, gradients or antialiasing. Keep the head opening compatible with the reference; do not draw a complete character.",
+      "status": "generated",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ]
+    },
+    {
+      "id": "hair.long_ringlets",
+      "name": "Long ringlets",
+      "group": "Long",
+      "texture": "curly",
+      "fringe": "middle",
+      "source": "long_ringlets.png",
+      "guide": {
+        "width": 36,
+        "y": 2,
+        "height": 52
+      },
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular DIFF pixel-avatar hairstyle, source artwork for a locked 128x128 layer. The input is a BLANK HEAD used only for skull proportions and pixel-art style. Design the requested new haircut with its own unmistakable silhouette; do not add a generic fluffy center-part. Never draw the reference head or body. Produce ONLY long clearly separated spiral ringlets, balanced central part and narrow curled ends below shoulders. Front-facing, upright, ONE hairstyle. Match the reference's deliberate coarse square pixel clusters, compact head proportions, dark contour and restrained shading. Brown hair ONLY: outline #211414, shadows #38241d, base #654333, highlights #8b6148. No peach, beige, flesh or skin-colored marks. Fade regions must be sparse/darker brown hair or transparent, never skin. Entire hair silhouette centered on a square canvas with generous transparent padding, complete crown and tips visible. Empty genuinely transparent face opening. Keep all bangs above eyebrows; no eyes, brows, nose, mouth, ears, head, skin, neck, body, clothing, hats, jewelry, text, borders or backdrop. True RGBA transparency, not a painted checkerboard. No fine realistic strands, blurry shading, gradients or antialiasing. Keep the head opening compatible with the reference; do not draw a complete character.",
+      "status": "generated",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ]
+    },
+    {
+      "id": "hair.box_braids",
+      "name": "Box braids",
+      "group": "Long",
+      "texture": "braided",
+      "fringe": "middle",
+      "source": "box_braids.png",
+      "guide": {
+        "width": 36,
+        "y": 2,
+        "height": 52
+      },
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular DIFF pixel-avatar hairstyle, source artwork for a locked 128x128 layer. The input is a BLANK HEAD used only for skull proportions and pixel-art style. Design the requested new haircut with its own unmistakable silhouette; do not add a generic fluffy center-part. Never draw the reference head or body. Produce ONLY long medium-thickness box braids with clean parted crown and straight segmented plaits, no beads. Front-facing, upright, ONE hairstyle. Match the reference's deliberate coarse square pixel clusters, compact head proportions, dark contour and restrained shading. Brown hair ONLY: outline #211414, shadows #38241d, base #654333, highlights #8b6148. No peach, beige, flesh or skin-colored marks. Fade regions must be sparse/darker brown hair or transparent, never skin. Entire hair silhouette centered on a square canvas with generous transparent padding, complete crown and tips visible. Empty genuinely transparent face opening. Keep all bangs above eyebrows; no eyes, brows, nose, mouth, ears, head, skin, neck, body, clothing, hats, jewelry, text, borders or backdrop. True RGBA transparency, not a painted checkerboard. No fine realistic strands, blurry shading, gradients or antialiasing. Keep the head opening compatible with the reference; do not draw a complete character.",
+      "status": "generated",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ]
+    },
+    {
+      "id": "hair.knotless_braids",
+      "name": "Knotless braids",
+      "group": "Long",
+      "texture": "braided",
+      "fringe": "middle",
+      "source": "knotless_braids.png",
+      "guide": {
+        "width": 36,
+        "y": 2,
+        "height": 52
+      },
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular DIFF pixel-avatar hairstyle, source artwork for a locked 128x128 layer. The input is a BLANK HEAD used only for skull proportions and pixel-art style. Design the requested new haircut with its own unmistakable silhouette; do not add a generic fluffy center-part. Never draw the reference head or body. Produce ONLY long fine knotless braids, smooth low-volume scalp sections, many fine parallel plaits and tapered ends. Front-facing, upright, ONE hairstyle. Match the reference's deliberate coarse square pixel clusters, compact head proportions, dark contour and restrained shading. Brown hair ONLY: outline #211414, shadows #38241d, base #654333, highlights #8b6148. No peach, beige, flesh or skin-colored marks. Fade regions must be sparse/darker brown hair or transparent, never skin. Entire hair silhouette centered on a square canvas with generous transparent padding, complete crown and tips visible. Empty genuinely transparent face opening. Keep all bangs above eyebrows; no eyes, brows, nose, mouth, ears, head, skin, neck, body, clothing, hats, jewelry, text, borders or backdrop. True RGBA transparency, not a painted checkerboard. No fine realistic strands, blurry shading, gradients or antialiasing. Keep the head opening compatible with the reference; do not draw a complete character.",
+      "status": "generated",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ]
+    },
+    {
+      "id": "hair.braided_bob",
+      "name": "Braided bob",
+      "group": "Medium",
+      "texture": "braided",
+      "fringe": "middle",
+      "source": "braided_bob.png",
+      "guide": {
+        "width": 32,
+        "y": 2,
+        "height": 34
+      },
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular DIFF pixel-avatar hairstyle, source artwork for a locked 128x128 layer. The input is a BLANK HEAD used only for skull proportions and pixel-art style. Design the requested new haircut with its own unmistakable silhouette; do not add a generic fluffy center-part. Never draw the reference head or body. Produce ONLY a chin-length braided bob, chunky plaits cut to a clean short bob silhouette, central part. Front-facing, upright, ONE hairstyle. Match the reference's deliberate coarse square pixel clusters, compact head proportions, dark contour and restrained shading. Brown hair ONLY: outline #211414, shadows #38241d, base #654333, highlights #8b6148. No peach, beige, flesh or skin-colored marks. Fade regions must be sparse/darker brown hair or transparent, never skin. Entire hair silhouette centered on a square canvas with generous transparent padding, complete crown and tips visible. Empty genuinely transparent face opening. Keep all bangs above eyebrows; no eyes, brows, nose, mouth, ears, head, skin, neck, body, clothing, hats, jewelry, text, borders or backdrop. True RGBA transparency, not a painted checkerboard. No fine realistic strands, blurry shading, gradients or antialiasing. Keep the head opening compatible with the reference; do not draw a complete character.",
+      "status": "generated",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ]
+    },
+    {
+      "id": "hair.feed_in_braids",
+      "name": "Feed-in braids",
+      "group": "Long",
+      "texture": "braided",
+      "fringe": "open",
+      "source": "feed_in_braids.png",
+      "guide": {
+        "width": 36,
+        "y": 2,
+        "height": 52
+      },
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular DIFF pixel-avatar hairstyle, source artwork for a locked 128x128 layer. The input is a BLANK HEAD used only for skull proportions and pixel-art style. Design the requested new haircut with its own unmistakable silhouette; do not add a generic fluffy center-part. Never draw the reference head or body. Produce ONLY neat feed-in braids, gently curved front-to-back scalp tracks feeding into long plaits, forehead open. Front-facing, upright, ONE hairstyle. Match the reference's deliberate coarse square pixel clusters, compact head proportions, dark contour and restrained shading. Brown hair ONLY: outline #211414, shadows #38241d, base #654333, highlights #8b6148. No peach, beige, flesh or skin-colored marks. Fade regions must be sparse/darker brown hair or transparent, never skin. Entire hair silhouette centered on a square canvas with generous transparent padding, complete crown and tips visible. Empty genuinely transparent face opening. Keep all bangs above eyebrows; no eyes, brows, nose, mouth, ears, head, skin, neck, body, clothing, hats, jewelry, text, borders or backdrop. True RGBA transparency, not a painted checkerboard. No fine realistic strands, blurry shading, gradients or antialiasing. Keep the head opening compatible with the reference; do not draw a complete character.",
+      "status": "generated",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ]
+    },
+    {
+      "id": "hair.micro_braids",
+      "name": "Micro braids",
+      "group": "Long",
+      "texture": "braided",
+      "fringe": "side",
+      "source": "micro_braids.png",
+      "guide": {
+        "width": 36,
+        "y": 2,
+        "height": 52
+      },
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular DIFF pixel-avatar hairstyle, source artwork for a locked 128x128 layer. The input is a BLANK HEAD used only for skull proportions and pixel-art style. Design the requested new haircut with its own unmistakable silhouette; do not add a generic fluffy center-part. Never draw the reference head or body. Produce ONLY a long micro-braid hairstyle, narrow grouped straight braid lines, balanced low volume and side part. Front-facing, upright, ONE hairstyle. Match the reference's deliberate coarse square pixel clusters, compact head proportions, dark contour and restrained shading. Brown hair ONLY: outline #211414, shadows #38241d, base #654333, highlights #8b6148. No peach, beige, flesh or skin-colored marks. Fade regions must be sparse/darker brown hair or transparent, never skin. Entire hair silhouette centered on a square canvas with generous transparent padding, complete crown and tips visible. Empty genuinely transparent face opening. Keep all bangs above eyebrows; no eyes, brows, nose, mouth, ears, head, skin, neck, body, clothing, hats, jewelry, text, borders or backdrop. True RGBA transparency, not a painted checkerboard. No fine realistic strands, blurry shading, gradients or antialiasing. Keep the head opening compatible with the reference; do not draw a complete character.",
+      "status": "generated",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ]
+    },
+    {
+      "id": "hair.short_locs",
+      "name": "Short locs",
+      "group": "Short",
+      "texture": "locs",
+      "fringe": "textured",
+      "source": "short_locs.png",
+      "guide": {
+        "width": 28,
+        "y": 2,
+        "height": 21
+      },
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular DIFF pixel-avatar hairstyle, source artwork for a locked 128x128 layer. The input is a BLANK HEAD used only for skull proportions and pixel-art style. Design the requested new haircut with its own unmistakable silhouette; do not add a generic fluffy center-part. Never draw the reference head or body. Produce ONLY short upright locs with thick blunt rounded tips and a compact tapered silhouette. Front-facing, upright, ONE hairstyle. Match the reference's deliberate coarse square pixel clusters, compact head proportions, dark contour and restrained shading. Brown hair ONLY: outline #211414, shadows #38241d, base #654333, highlights #8b6148. No peach, beige, flesh or skin-colored marks. Fade regions must be sparse/darker brown hair or transparent, never skin. Entire hair silhouette centered on a square canvas with generous transparent padding, complete crown and tips visible. Empty genuinely transparent face opening. Keep all bangs above eyebrows; no eyes, brows, nose, mouth, ears, head, skin, neck, body, clothing, hats, jewelry, text, borders or backdrop. True RGBA transparency, not a painted checkerboard. No fine realistic strands, blurry shading, gradients or antialiasing. Keep the head opening compatible with the reference; do not draw a complete character.",
+      "status": "generated",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ]
+    },
+    {
+      "id": "hair.loc_bob",
+      "name": "Loc bob",
+      "group": "Medium",
+      "texture": "locs",
+      "fringe": "middle",
+      "source": "loc_bob.png",
+      "guide": {
+        "width": 32,
+        "y": 2,
+        "height": 34
+      },
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular DIFF pixel-avatar hairstyle, source artwork for a locked 128x128 layer. The input is a BLANK HEAD used only for skull proportions and pixel-art style. Design the requested new haircut with its own unmistakable silhouette; do not add a generic fluffy center-part. Never draw the reference head or body. Produce ONLY a chin-length loc bob with thick softly rounded loc sections and an open middle part. Front-facing, upright, ONE hairstyle. Match the reference's deliberate coarse square pixel clusters, compact head proportions, dark contour and restrained shading. Brown hair ONLY: outline #211414, shadows #38241d, base #654333, highlights #8b6148. No peach, beige, flesh or skin-colored marks. Fade regions must be sparse/darker brown hair or transparent, never skin. Entire hair silhouette centered on a square canvas with generous transparent padding, complete crown and tips visible. Empty genuinely transparent face opening. Keep all bangs above eyebrows; no eyes, brows, nose, mouth, ears, head, skin, neck, body, clothing, hats, jewelry, text, borders or backdrop. True RGBA transparency, not a painted checkerboard. No fine realistic strands, blurry shading, gradients or antialiasing. Keep the head opening compatible with the reference; do not draw a complete character.",
+      "status": "generated",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ]
+    },
+    {
+      "id": "hair.thick_locs",
+      "name": "Thick long locs",
+      "group": "Long",
+      "texture": "locs",
+      "fringe": "side",
+      "source": "thick_locs.png",
+      "guide": {
+        "width": 36,
+        "y": 2,
+        "height": 52
+      },
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular DIFF pixel-avatar hairstyle, source artwork for a locked 128x128 layer. The input is a BLANK HEAD used only for skull proportions and pixel-art style. Design the requested new haircut with its own unmistakable silhouette; do not add a generic fluffy center-part. Never draw the reference head or body. Produce ONLY long thick locs with distinct rounded cylindrical block clusters, some asymmetry and open face. Front-facing, upright, ONE hairstyle. Match the reference's deliberate coarse square pixel clusters, compact head proportions, dark contour and restrained shading. Brown hair ONLY: outline #211414, shadows #38241d, base #654333, highlights #8b6148. No peach, beige, flesh or skin-colored marks. Fade regions must be sparse/darker brown hair or transparent, never skin. Entire hair silhouette centered on a square canvas with generous transparent padding, complete crown and tips visible. Empty genuinely transparent face opening. Keep all bangs above eyebrows; no eyes, brows, nose, mouth, ears, head, skin, neck, body, clothing, hats, jewelry, text, borders or backdrop. True RGBA transparency, not a painted checkerboard. No fine realistic strands, blurry shading, gradients or antialiasing. Keep the head opening compatible with the reference; do not draw a complete character.",
+      "status": "generated",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ]
+    },
+    {
+      "id": "hair.two_strand_twists",
+      "name": "Two-strand twists",
+      "group": "Medium",
+      "texture": "coily",
+      "fringe": "middle",
+      "source": "two_strand_twists.png",
+      "guide": {
+        "width": 32,
+        "y": 2,
+        "height": 34
+      },
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular DIFF pixel-avatar hairstyle, source artwork for a locked 128x128 layer. The input is a BLANK HEAD used only for skull proportions and pixel-art style. Design the requested new haircut with its own unmistakable silhouette; do not add a generic fluffy center-part. Never draw the reference head or body. Produce ONLY ear-to-chin-length two-strand twists with clearly paired twist segments, soft central part. Front-facing, upright, ONE hairstyle. Match the reference's deliberate coarse square pixel clusters, compact head proportions, dark contour and restrained shading. Brown hair ONLY: outline #211414, shadows #38241d, base #654333, highlights #8b6148. No peach, beige, flesh or skin-colored marks. Fade regions must be sparse/darker brown hair or transparent, never skin. Entire hair silhouette centered on a square canvas with generous transparent padding, complete crown and tips visible. Empty genuinely transparent face opening. Keep all bangs above eyebrows; no eyes, brows, nose, mouth, ears, head, skin, neck, body, clothing, hats, jewelry, text, borders or backdrop. True RGBA transparency, not a painted checkerboard. No fine realistic strands, blurry shading, gradients or antialiasing. Keep the head opening compatible with the reference; do not draw a complete character.",
+      "status": "generated",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ]
+    },
+    {
+      "id": "hair.flat_twists",
+      "name": "Flat twists",
+      "group": "Short",
+      "texture": "coily",
+      "fringe": "open",
+      "source": "flat_twists.png",
+      "guide": {
+        "width": 28,
+        "y": 2,
+        "height": 21
+      },
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular DIFF pixel-avatar hairstyle, source artwork for a locked 128x128 layer. The input is a BLANK HEAD used only for skull proportions and pixel-art style. Design the requested new haircut with its own unmistakable silhouette; do not add a generic fluffy center-part. Never draw the reference head or body. Produce ONLY close flat twists arranged in tidy curved scalp tracks with small tucked ends, no loose long hair. Front-facing, upright, ONE hairstyle. Match the reference's deliberate coarse square pixel clusters, compact head proportions, dark contour and restrained shading. Brown hair ONLY: outline #211414, shadows #38241d, base #654333, highlights #8b6148. No peach, beige, flesh or skin-colored marks. Fade regions must be sparse/darker brown hair or transparent, never skin. Entire hair silhouette centered on a square canvas with generous transparent padding, complete crown and tips visible. Empty genuinely transparent face opening. Keep all bangs above eyebrows; no eyes, brows, nose, mouth, ears, head, skin, neck, body, clothing, hats, jewelry, text, borders or backdrop. True RGBA transparency, not a painted checkerboard. No fine realistic strands, blurry shading, gradients or antialiasing. Keep the head opening compatible with the reference; do not draw a complete character.",
+      "status": "generated",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ]
+    },
+    {
+      "id": "hair.long_sleek",
+      "name": "Long sleek hair",
+      "group": "Long",
+      "texture": "straight",
+      "fringe": "middle",
+      "source": "long_sleek.png",
+      "guide": {
+        "width": 36,
+        "y": 2,
+        "height": 52
+      },
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular DIFF pixel-avatar hairstyle, source artwork for a locked 128x128 layer. The input is a BLANK HEAD used only for skull proportions and pixel-art style. Design the requested new haircut with its own unmistakable silhouette; do not add a generic fluffy center-part. Never draw the reference head or body. Produce ONLY long sleek straight hair with a precise middle part, narrow flat side panels and smooth blunt lower edge. Front-facing, upright, ONE hairstyle. Match the reference's deliberate coarse square pixel clusters, compact head proportions, dark contour and restrained shading. Brown hair ONLY: outline #211414, shadows #38241d, base #654333, highlights #8b6148. No peach, beige, flesh or skin-colored marks. Fade regions must be sparse/darker brown hair or transparent, never skin. Entire hair silhouette centered on a square canvas with generous transparent padding, complete crown and tips visible. Empty genuinely transparent face opening. Keep all bangs above eyebrows; no eyes, brows, nose, mouth, ears, head, skin, neck, body, clothing, hats, jewelry, text, borders or backdrop. True RGBA transparency, not a painted checkerboard. No fine realistic strands, blurry shading, gradients or antialiasing. Keep the head opening compatible with the reference; do not draw a complete character.",
+      "status": "generated",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ]
+    },
+    {
+      "id": "hair.long_layers",
+      "name": "Long layers",
+      "group": "Long",
+      "texture": "wavy",
+      "fringe": "middle",
+      "source": "long_layers.png",
+      "guide": {
+        "width": 36,
+        "y": 2,
+        "height": 52
+      },
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular DIFF pixel-avatar hairstyle, source artwork for a locked 128x128 layer. The input is a BLANK HEAD used only for skull proportions and pixel-art style. Design the requested new haircut with its own unmistakable silhouette; do not add a generic fluffy center-part. Never draw the reference head or body. Produce ONLY long layered hair with softly staggered face-framing side lengths and an open central part. Front-facing, upright, ONE hairstyle. Match the reference's deliberate coarse square pixel clusters, compact head proportions, dark contour and restrained shading. Brown hair ONLY: outline #211414, shadows #38241d, base #654333, highlights #8b6148. No peach, beige, flesh or skin-colored marks. Fade regions must be sparse/darker brown hair or transparent, never skin. Entire hair silhouette centered on a square canvas with generous transparent padding, complete crown and tips visible. Empty genuinely transparent face opening. Keep all bangs above eyebrows; no eyes, brows, nose, mouth, ears, head, skin, neck, body, clothing, hats, jewelry, text, borders or backdrop. True RGBA transparency, not a painted checkerboard. No fine realistic strands, blurry shading, gradients or antialiasing. Keep the head opening compatible with the reference; do not draw a complete character.",
+      "status": "generated",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ]
+    },
+    {
+      "id": "hair.long_curtain_bangs",
+      "name": "Long curtain bangs",
+      "group": "Long",
+      "texture": "straight",
+      "fringe": "middle",
+      "source": "long_curtain_bangs.png",
+      "guide": {
+        "width": 36,
+        "y": 2,
+        "height": 52
+      },
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular DIFF pixel-avatar hairstyle, source artwork for a locked 128x128 layer. The input is a BLANK HEAD used only for skull proportions and pixel-art style. Design the requested new haircut with its own unmistakable silhouette; do not add a generic fluffy center-part. Never draw the reference head or body. Produce ONLY long flowing straight hair with distinct swept curtain bangs, transparent center forehead and long side lengths. Front-facing, upright, ONE hairstyle. Match the reference's deliberate coarse square pixel clusters, compact head proportions, dark contour and restrained shading. Brown hair ONLY: outline #211414, shadows #38241d, base #654333, highlights #8b6148. No peach, beige, flesh or skin-colored marks. Fade regions must be sparse/darker brown hair or transparent, never skin. Entire hair silhouette centered on a square canvas with generous transparent padding, complete crown and tips visible. Empty genuinely transparent face opening. Keep all bangs above eyebrows; no eyes, brows, nose, mouth, ears, head, skin, neck, body, clothing, hats, jewelry, text, borders or backdrop. True RGBA transparency, not a painted checkerboard. No fine realistic strands, blurry shading, gradients or antialiasing. Keep the head opening compatible with the reference; do not draw a complete character.",
+      "status": "generated",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ]
+    },
+    {
+      "id": "hair.long_blunt_bangs",
+      "name": "Long blunt bangs",
+      "group": "Long",
+      "texture": "straight",
+      "fringe": "blunt",
+      "source": "long_blunt_bangs.png",
+      "guide": {
+        "width": 36,
+        "y": 2,
+        "height": 52
+      },
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular DIFF pixel-avatar hairstyle, source artwork for a locked 128x128 layer. The input is a BLANK HEAD used only for skull proportions and pixel-art style. Design the requested new haircut with its own unmistakable silhouette; do not add a generic fluffy center-part. Never draw the reference head or body. Produce ONLY long straight hair with a clean short blunt fringe above the brow line, symmetrical straight side lengths. Front-facing, upright, ONE hairstyle. Match the reference's deliberate coarse square pixel clusters, compact head proportions, dark contour and restrained shading. Brown hair ONLY: outline #211414, shadows #38241d, base #654333, highlights #8b6148. No peach, beige, flesh or skin-colored marks. Fade regions must be sparse/darker brown hair or transparent, never skin. Entire hair silhouette centered on a square canvas with generous transparent padding, complete crown and tips visible. Empty genuinely transparent face opening. Keep all bangs above eyebrows; no eyes, brows, nose, mouth, ears, head, skin, neck, body, clothing, hats, jewelry, text, borders or backdrop. True RGBA transparency, not a painted checkerboard. No fine realistic strands, blurry shading, gradients or antialiasing. Keep the head opening compatible with the reference; do not draw a complete character.",
+      "status": "generated",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ]
+    },
+    {
+      "id": "hair.beach_waves",
+      "name": "Loose beach waves",
+      "group": "Long",
+      "texture": "wavy",
+      "fringe": "side",
+      "source": "beach_waves.png",
+      "guide": {
+        "width": 36,
+        "y": 2,
+        "height": 52
+      },
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular DIFF pixel-avatar hairstyle, source artwork for a locked 128x128 layer. The input is a BLANK HEAD used only for skull proportions and pixel-art style. Design the requested new haircut with its own unmistakable silhouette; do not add a generic fluffy center-part. Never draw the reference head or body. Produce ONLY long loose beach waves with broad irregular S-shaped locks, open side part and softly tapered ends. Front-facing, upright, ONE hairstyle. Match the reference's deliberate coarse square pixel clusters, compact head proportions, dark contour and restrained shading. Brown hair ONLY: outline #211414, shadows #38241d, base #654333, highlights #8b6148. No peach, beige, flesh or skin-colored marks. Fade regions must be sparse/darker brown hair or transparent, never skin. Entire hair silhouette centered on a square canvas with generous transparent padding, complete crown and tips visible. Empty genuinely transparent face opening. Keep all bangs above eyebrows; no eyes, brows, nose, mouth, ears, head, skin, neck, body, clothing, hats, jewelry, text, borders or backdrop. True RGBA transparency, not a painted checkerboard. No fine realistic strands, blurry shading, gradients or antialiasing. Keep the head opening compatible with the reference; do not draw a complete character.",
+      "status": "generated",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ]
+    },
+    {
+      "id": "hair.long_curls_sidepart",
+      "name": "Side-parted long curls",
+      "group": "Long",
+      "texture": "curly",
+      "fringe": "side",
+      "source": "long_curls_sidepart_v2.png",
+      "guide": {
+        "width": 38,
+        "height": 48,
+        "y": 1
+      },
+      "prompt": "Use case: precise-object-edit. Image 1 is the hair sprite to correct. Image 2 is only the skull registration guide. Preserve the brown pixel-art style and long side-parted curls, with a full rounded scalp cap covering BOTH upper sides of the head, no shaved temple or diagonal bald opening. Correct the head opening so it is centered under a full rounded crown, wide enough for the reference head. Make the upper crown continuous, without transparent holes or missing corners above the eyebrows. Only the face opening and background are transparent. The crown cap must follow the whole top of the skull, not sit to one side. Keep bangs above the eye line. Entire hair only, frontal upright, on a square transparent RGBA canvas with padding. No face, skin, ears, body, clothes, jewelry, text or painted checkerboard. Coarse deliberate square pixel clusters and 4 brown tones, dark brown outline, no smooth vectors or fine realistic strands.",
+      "status": "generated",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-hair-library/long_curls_sidepart.png",
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ],
+      "drafts": [
+        {
+          "source": "long_curls_sidepart.png",
+          "prompt": "Use case: stylized-concept. Asset type: ONE modular DIFF pixel-avatar hairstyle, source artwork for a locked 128x128 layer. The input is a BLANK HEAD used only for skull proportions and pixel-art style. Design the requested new haircut with its own unmistakable silhouette; do not add a generic fluffy center-part. Never draw the reference head or body. Produce ONLY long voluminous curls with an obvious side part, one fuller side and broad distinct ringlets. Front-facing, upright, ONE hairstyle. Match the reference's deliberate coarse square pixel clusters, compact head proportions, dark contour and restrained shading. Brown hair ONLY: outline #211414, shadows #38241d, base #654333, highlights #8b6148. No peach, beige, flesh or skin-colored marks. Fade regions must be sparse/darker brown hair or transparent, never skin. Entire hair silhouette centered on a square canvas with generous transparent padding, complete crown and tips visible. Empty genuinely transparent face opening. Keep all bangs above eyebrows; no eyes, brows, nose, mouth, ears, head, skin, neck, body, clothing, hats, jewelry, text, borders or backdrop. True RGBA transparency, not a painted checkerboard. No fine realistic strands, blurry shading, gradients or antialiasing. Keep the head opening compatible with the reference; do not draw a complete character.",
+          "refs": [
+            "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hair.long_shag",
+      "name": "Long shag",
+      "group": "Long",
+      "texture": "wavy",
+      "fringe": "textured",
+      "source": "long_shag.png",
+      "guide": {
+        "width": 36,
+        "y": 2,
+        "height": 52
+      },
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular DIFF pixel-avatar hairstyle, source artwork for a locked 128x128 layer. The input is a BLANK HEAD used only for skull proportions and pixel-art style. Design the requested new haircut with its own unmistakable silhouette; do not add a generic fluffy center-part. Never draw the reference head or body. Produce ONLY a long shag with pronounced feathered layered side sections, wispy separated short bangs and tapered ends. Front-facing, upright, ONE hairstyle. Match the reference's deliberate coarse square pixel clusters, compact head proportions, dark contour and restrained shading. Brown hair ONLY: outline #211414, shadows #38241d, base #654333, highlights #8b6148. No peach, beige, flesh or skin-colored marks. Fade regions must be sparse/darker brown hair or transparent, never skin. Entire hair silhouette centered on a square canvas with generous transparent padding, complete crown and tips visible. Empty genuinely transparent face opening. Keep all bangs above eyebrows; no eyes, brows, nose, mouth, ears, head, skin, neck, body, clothing, hats, jewelry, text, borders or backdrop. True RGBA transparency, not a painted checkerboard. No fine realistic strands, blurry shading, gradients or antialiasing. Keep the head opening compatible with the reference; do not draw a complete character.",
+      "status": "generated",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ]
+    },
+    {
+      "id": "hair.waist_length_straight",
+      "name": "Extra-long straight hair",
+      "group": "Long",
+      "texture": "straight",
+      "fringe": "middle",
+      "source": "waist_length_straight.png",
+      "guide": {
+        "width": 36,
+        "y": 2,
+        "height": 68
+      },
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular DIFF pixel-avatar hairstyle, source artwork for a locked 128x128 layer. The input is a BLANK HEAD used only for skull proportions and pixel-art style. Design the requested new haircut with its own unmistakable silhouette; do not add a generic fluffy center-part. Never draw the reference head or body. Produce ONLY extra-long straight hair reaching toward waist level when equipped, two narrow long panels, simple middle part. Front-facing, upright, ONE hairstyle. Match the reference's deliberate coarse square pixel clusters, compact head proportions, dark contour and restrained shading. Brown hair ONLY: outline #211414, shadows #38241d, base #654333, highlights #8b6148. No peach, beige, flesh or skin-colored marks. Fade regions must be sparse/darker brown hair or transparent, never skin. Entire hair silhouette centered on a square canvas with generous transparent padding, complete crown and tips visible. Empty genuinely transparent face opening. Keep all bangs above eyebrows; no eyes, brows, nose, mouth, ears, head, skin, neck, body, clothing, hats, jewelry, text, borders or backdrop. True RGBA transparency, not a painted checkerboard. No fine realistic strands, blurry shading, gradients or antialiasing. Keep the head opening compatible with the reference; do not draw a complete character.",
+      "status": "generated",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ]
+    },
+    {
+      "id": "hair.low_ponytail",
+      "name": "Low ponytail",
+      "group": "Tied",
+      "texture": "straight",
+      "fringe": "open",
+      "source": "low_ponytail.png",
+      "guide": {
+        "width": 34,
+        "y": 1,
+        "height": 50
+      },
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular DIFF pixel-avatar hairstyle, source artwork for a locked 128x128 layer. The input is a BLANK HEAD used only for skull proportions and pixel-art style. Design the requested new haircut with its own unmistakable silhouette; do not add a generic fluffy center-part. Never draw the reference head or body. Produce ONLY a neat low ponytail visible behind one shoulder, smooth compact crown with open forehead and subtle side part. Front-facing, upright, ONE hairstyle. Match the reference's deliberate coarse square pixel clusters, compact head proportions, dark contour and restrained shading. Brown hair ONLY: outline #211414, shadows #38241d, base #654333, highlights #8b6148. No peach, beige, flesh or skin-colored marks. Fade regions must be sparse/darker brown hair or transparent, never skin. Entire hair silhouette centered on a square canvas with generous transparent padding, complete crown and tips visible. Empty genuinely transparent face opening. Keep all bangs above eyebrows; no eyes, brows, nose, mouth, ears, head, skin, neck, body, clothing, hats, jewelry, text, borders or backdrop. True RGBA transparency, not a painted checkerboard. No fine realistic strands, blurry shading, gradients or antialiasing. Keep the head opening compatible with the reference; do not draw a complete character.",
+      "status": "generated",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ]
+    },
+    {
+      "id": "hair.side_ponytail",
+      "name": "Side ponytail",
+      "group": "Tied",
+      "texture": "wavy",
+      "fringe": "side",
+      "source": "side_ponytail.png",
+      "guide": {
+        "width": 39,
+        "y": 1,
+        "height": 50
+      },
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular DIFF pixel-avatar hairstyle, source artwork for a locked 128x128 layer. The input is a BLANK HEAD used only for skull proportions and pixel-art style. Design the requested new haircut with its own unmistakable silhouette; do not add a generic fluffy center-part. Never draw the reference head or body. Produce ONLY a clearly visible side ponytail with soft wavy locks beside one shoulder, compact crown and open forehead. Front-facing, upright, ONE hairstyle. Match the reference's deliberate coarse square pixel clusters, compact head proportions, dark contour and restrained shading. Brown hair ONLY: outline #211414, shadows #38241d, base #654333, highlights #8b6148. No peach, beige, flesh or skin-colored marks. Fade regions must be sparse/darker brown hair or transparent, never skin. Entire hair silhouette centered on a square canvas with generous transparent padding, complete crown and tips visible. Empty genuinely transparent face opening. Keep all bangs above eyebrows; no eyes, brows, nose, mouth, ears, head, skin, neck, body, clothing, hats, jewelry, text, borders or backdrop. True RGBA transparency, not a painted checkerboard. No fine realistic strands, blurry shading, gradients or antialiasing. Keep the head opening compatible with the reference; do not draw a complete character.",
+      "status": "generated",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ]
+    },
+    {
+      "id": "hair.braided_ponytail",
+      "name": "Braided ponytail",
+      "group": "Tied",
+      "texture": "braided",
+      "fringe": "open",
+      "source": "braided_ponytail.png",
+      "guide": {
+        "width": 39,
+        "y": 1,
+        "height": 50
+      },
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular DIFF pixel-avatar hairstyle, source artwork for a locked 128x128 layer. The input is a BLANK HEAD used only for skull proportions and pixel-art style. Design the requested new haircut with its own unmistakable silhouette; do not add a generic fluffy center-part. Never draw the reference head or body. Produce ONLY a high ponytail feeding into one thick long segmented braid visible beside the head and shoulder, smooth crown. Front-facing, upright, ONE hairstyle. Match the reference's deliberate coarse square pixel clusters, compact head proportions, dark contour and restrained shading. Brown hair ONLY: outline #211414, shadows #38241d, base #654333, highlights #8b6148. No peach, beige, flesh or skin-colored marks. Fade regions must be sparse/darker brown hair or transparent, never skin. Entire hair silhouette centered on a square canvas with generous transparent padding, complete crown and tips visible. Empty genuinely transparent face opening. Keep all bangs above eyebrows; no eyes, brows, nose, mouth, ears, head, skin, neck, body, clothing, hats, jewelry, text, borders or backdrop. True RGBA transparency, not a painted checkerboard. No fine realistic strands, blurry shading, gradients or antialiasing. Keep the head opening compatible with the reference; do not draw a complete character.",
+      "status": "generated",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ]
+    },
+    {
+      "id": "hair.low_bun",
+      "name": "Low bun",
+      "group": "Tied",
+      "texture": "straight",
+      "fringe": "middle",
+      "source": "low_bun.png",
+      "guide": {
+        "width": 34,
+        "y": 1,
+        "height": 34
+      },
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular DIFF pixel-avatar hairstyle, source artwork for a locked 128x128 layer. The input is a BLANK HEAD used only for skull proportions and pixel-art style. Design the requested new haircut with its own unmistakable silhouette; do not add a generic fluffy center-part. Never draw the reference head or body. Produce ONLY a sleek low bun with compact smooth crown, small rounded knot visible beside the nape, central part. Front-facing, upright, ONE hairstyle. Match the reference's deliberate coarse square pixel clusters, compact head proportions, dark contour and restrained shading. Brown hair ONLY: outline #211414, shadows #38241d, base #654333, highlights #8b6148. No peach, beige, flesh or skin-colored marks. Fade regions must be sparse/darker brown hair or transparent, never skin. Entire hair silhouette centered on a square canvas with generous transparent padding, complete crown and tips visible. Empty genuinely transparent face opening. Keep all bangs above eyebrows; no eyes, brows, nose, mouth, ears, head, skin, neck, body, clothing, hats, jewelry, text, borders or backdrop. True RGBA transparency, not a painted checkerboard. No fine realistic strands, blurry shading, gradients or antialiasing. Keep the head opening compatible with the reference; do not draw a complete character.",
+      "status": "generated",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ]
+    },
+    {
+      "id": "hair.high_bun",
+      "name": "High bun",
+      "group": "Tied",
+      "texture": "straight",
+      "fringe": "open",
+      "source": "high_bun.png",
+      "guide": {
+        "width": 34,
+        "y": 1,
+        "height": 28
+      },
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular DIFF pixel-avatar hairstyle, source artwork for a locked 128x128 layer. The input is a BLANK HEAD used only for skull proportions and pixel-art style. Design the requested new haircut with its own unmistakable silhouette; do not add a generic fluffy center-part. Never draw the reference head or body. Produce ONLY a sleek high bun with one crisp rounded top knot, smooth pulled-back sides and fully open forehead. Front-facing, upright, ONE hairstyle. Match the reference's deliberate coarse square pixel clusters, compact head proportions, dark contour and restrained shading. Brown hair ONLY: outline #211414, shadows #38241d, base #654333, highlights #8b6148. No peach, beige, flesh or skin-colored marks. Fade regions must be sparse/darker brown hair or transparent, never skin. Entire hair silhouette centered on a square canvas with generous transparent padding, complete crown and tips visible. Empty genuinely transparent face opening. Keep all bangs above eyebrows; no eyes, brows, nose, mouth, ears, head, skin, neck, body, clothing, hats, jewelry, text, borders or backdrop. True RGBA transparency, not a painted checkerboard. No fine realistic strands, blurry shading, gradients or antialiasing. Keep the head opening compatible with the reference; do not draw a complete character.",
+      "status": "generated",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ]
+    },
+    {
+      "id": "hair.half_up",
+      "name": "Half-up waves",
+      "group": "Tied",
+      "texture": "wavy",
+      "fringe": "middle",
+      "source": "half_up_v2.png",
+      "guide": {
+        "width": 36,
+        "y": 1,
+        "height": 50
+      },
+      "prompt": "Use case: precise-object-edit. Image 1 is the hair sprite to correct. Image 2 is only the skull registration guide. Preserve the brown pixel-art style and half-up loose shoulder-length waves, but REMOVE THE TOP BUN completely. Use a smooth compact rounded crown with the upper side sections swept back and long loose waves below. Correct the head opening so it is centered under a full rounded crown, wide enough for the reference head. Make the upper crown continuous, without transparent holes or missing corners above the eyebrows. Only the face opening and background are transparent. The crown cap must follow the whole top of the skull, not sit to one side. Keep bangs above the eye line. Entire hair only, frontal upright, on a square transparent RGBA canvas with padding. No face, skin, ears, body, clothes, jewelry, text or painted checkerboard. Coarse deliberate square pixel clusters and 4 brown tones, dark brown outline, no smooth vectors or fine realistic strands.",
+      "status": "generated",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-hair-library/half_up.png",
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ],
+      "drafts": [
+        {
+          "source": "half_up.png",
+          "prompt": "Use case: stylized-concept. Asset type: ONE modular DIFF pixel-avatar hairstyle, source artwork for a locked 128x128 layer. The input is a BLANK HEAD used only for skull proportions and pixel-art style. Design the requested new haircut with its own unmistakable silhouette; do not add a generic fluffy center-part. Never draw the reference head or body. Produce ONLY half-up hair with a small gathered top section and loose shoulder-length waves on both sides. Front-facing, upright, ONE hairstyle. Match the reference's deliberate coarse square pixel clusters, compact head proportions, dark contour and restrained shading. Brown hair ONLY: outline #211414, shadows #38241d, base #654333, highlights #8b6148. No peach, beige, flesh or skin-colored marks. Fade regions must be sparse/darker brown hair or transparent, never skin. Entire hair silhouette centered on a square canvas with generous transparent padding, complete crown and tips visible. Empty genuinely transparent face opening. Keep all bangs above eyebrows; no eyes, brows, nose, mouth, ears, head, skin, neck, body, clothing, hats, jewelry, text, borders or backdrop. True RGBA transparency, not a painted checkerboard. No fine realistic strands, blurry shading, gradients or antialiasing. Keep the head opening compatible with the reference; do not draw a complete character.",
+          "refs": [
+            "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hair.double_buns",
+      "name": "Double buns",
+      "group": "Tied",
+      "texture": "coily",
+      "fringe": "open",
+      "source": "double_buns.png",
+      "guide": {
+        "width": 39,
+        "y": 1,
+        "height": 28
+      },
+      "prompt": "Use case: stylized-concept. Asset type: ONE modular DIFF pixel-avatar hairstyle, source artwork for a locked 128x128 layer. The input is a BLANK HEAD used only for skull proportions and pixel-art style. Design the requested new haircut with its own unmistakable silhouette; do not add a generic fluffy center-part. Never draw the reference head or body. Produce ONLY two balanced small rounded buns high on the sides of the crown with smooth pulled-back hair, open forehead. Front-facing, upright, ONE hairstyle. Match the reference's deliberate coarse square pixel clusters, compact head proportions, dark contour and restrained shading. Brown hair ONLY: outline #211414, shadows #38241d, base #654333, highlights #8b6148. No peach, beige, flesh or skin-colored marks. Fade regions must be sparse/darker brown hair or transparent, never skin. Entire hair silhouette centered on a square canvas with generous transparent padding, complete crown and tips visible. Empty genuinely transparent face opening. Keep all bangs above eyebrows; no eyes, brows, nose, mouth, ears, head, skin, neck, body, clothing, hats, jewelry, text, borders or backdrop. True RGBA transparency, not a painted checkerboard. No fine realistic strands, blurry shading, gradients or antialiasing. Keep the head opening compatible with the reference; do not draw a complete character.",
+      "status": "generated",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "mode": "built-in image_gen",
+  "reference": "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png",
+  "jobs": [
+    {
+      "id": "jacket.suit_charcoal",
+      "source": "suit_charcoal.png",
+      "prompt": "Use case: stylized-concept. Asset type: a single separate modular pixel-avatar clothing layer. Input 1 is the approved character STYLE, proportions and frontal standing pose reference. Deliberate coarse pixel art, dark stair-step outline, 3–5 restrained tonal values, broad readable pixel clusters. No character, skin, head, hands, background, mannequin, text, logos or other garments. Entire item centered on square canvas with generous margins. Genuine transparent RGBA background and transparent openings, not a painted checkerboard. This image will become a 128×128 aligned full-canvas production layer. Create ONLY an open anthracite charcoal tailored suit jacket, notched lapels, two-button single-breasted design worn fully OPEN, two restrained flap pockets, long sleeves relaxed down at the sides following the reference arms. Smooth fine wool represented with clean broad pixel shading. Keep the complete middle TRANSPARENT from neck opening to hem; no shirt, tie, vest or dark lining filling the middle. Narrow tailored but relaxed modern silhouette, hip-length hem, cuffs at reference wrists. Jacket charcoal color is fixed."
+    },
+    {
+      "id": "top.dress_white",
+      "source": "dress_white.png",
+      "prompt": "Use case: stylized-concept. Asset type: a single separate modular pixel-avatar clothing layer. Input 1 is the approved character STYLE, proportions and frontal standing pose reference. Deliberate coarse pixel art, dark stair-step outline, 3–5 restrained tonal values, broad readable pixel clusters. No character, skin, head, hands, background, mannequin, text, logos or other garments. Entire item centered on square canvas with generous margins. Genuine transparent RGBA background and transparent openings, not a painted checkerboard. This image will become a 128×128 aligned full-canvas production layer. Create ONLY a white long-sleeve formal dress shirt, buttoned to neck, crisp small pointed collar, subtle pale gray folds, narrow button placket, simple sleeve cuffs. Arms relaxed down matching reference, full torso to waistband. Empty shirt with transparent neck opening, no tie or jacket. The two collar points leave a small central opening for a separately layered tie knot. White fabric color is fixed; avoid yellow or blue cast."
+    },
+    {
+      "id": "tie.classic",
+      "source": "tie_classic.png",
+      "prompt": "Use case: stylized-concept. Asset type: a single separate modular pixel-avatar clothing layer. Input 1 is the approved character STYLE, proportions and frontal standing pose reference. Deliberate coarse pixel art, dark stair-step outline, 3–5 restrained tonal values, broad readable pixel clusters. No character, skin, head, hands, background, mannequin, text, logos or other garments. Entire item centered on square canvas with generous margins. Genuine transparent RGBA background and transparent openings, not a painted checkerboard. This image will become a 128×128 aligned full-canvas production layer. Create ONLY ONE burgundy necktie hanging vertically straight in frontal view: compact small four-in-hand trapezoid knot at top, a slender tapered blade beneath it with a pointed lower tip. A small subtle diagonal highlight and burgundy shadow. NO collar, shirt, neck, neck loop, jacket, person, clip or background. Full tie from knot through tip visible. Width at widest blade about one sixth of its total height; classic understated modern proportions, clean simple outline. The tie will be recolored with explicit palettes."
+    }
+  ]
+}

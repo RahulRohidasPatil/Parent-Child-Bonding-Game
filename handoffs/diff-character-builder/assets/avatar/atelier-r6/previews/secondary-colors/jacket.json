@@ -1,0 +1,914 @@
+[
+  {
+    "label": "Denim jacket",
+    "config": {
+      "version": 6,
+      "rig": "front_reference_v1",
+      "pack": "atelier-r6",
+      "skin": "skin_02",
+      "equipment": {
+        "hair": "hair.textured",
+        "eyes": "eyes.reference_neutral",
+        "brows": "brows.reference_neutral",
+        "nose": "nose.reference_neutral",
+        "mouth": "mouth.reference_neutral",
+        "ears": "ears.small",
+        "top": "top.navy",
+        "jacket": "jacket.denim",
+        "bottom": "bottom.denim",
+        "shoes": "shoes.black",
+        "hat": null,
+        "glasses": null,
+        "earrings": null,
+        "head": "head.soft_oval",
+        "tie": null
+      },
+      "eyeColor": "eye.dark_brown",
+      "hairColor": "hair.original",
+      "wearColors": {
+        "top": "wear.original",
+        "jacket": "wear.navy",
+        "bottom": "wear.original",
+        "shoes": "wear.original",
+        "hat": "wear.original",
+        "glasses": "wear.original",
+        "earrings": "wear.original",
+        "tie": "wear.original"
+      },
+      "wearAccentColors": {
+        "top": "wear.original",
+        "jacket": "wear.cream",
+        "bottom": "wear.original",
+        "shoes": "wear.original",
+        "hat": "wear.original",
+        "glasses": "wear.original",
+        "earrings": "wear.original",
+        "tie": "wear.original"
+      }
+    }
+  },
+  {
+    "label": "Black bomber",
+    "config": {
+      "version": 6,
+      "rig": "front_reference_v1",
+      "pack": "atelier-r6",
+      "skin": "skin_02",
+      "equipment": {
+        "hair": "hair.textured",
+        "eyes": "eyes.reference_neutral",
+        "brows": "brows.reference_neutral",
+        "nose": "nose.reference_neutral",
+        "mouth": "mouth.reference_neutral",
+        "ears": "ears.small",
+        "top": "top.navy",
+        "jacket": "jacket.bomber",
+        "bottom": "bottom.denim",
+        "shoes": "shoes.black",
+        "hat": null,
+        "glasses": null,
+        "earrings": null,
+        "head": "head.soft_oval",
+        "tie": null
+      },
+      "eyeColor": "eye.dark_brown",
+      "hairColor": "hair.original",
+      "wearColors": {
+        "top": "wear.original",
+        "jacket": "wear.navy",
+        "bottom": "wear.original",
+        "shoes": "wear.original",
+        "hat": "wear.original",
+        "glasses": "wear.original",
+        "earrings": "wear.original",
+        "tie": "wear.original"
+      },
+      "wearAccentColors": {
+        "top": "wear.original",
+        "jacket": "wear.cream",
+        "bottom": "wear.original",
+        "shoes": "wear.original",
+        "hat": "wear.original",
+        "glasses": "wear.original",
+        "earrings": "wear.original",
+        "tie": "wear.original"
+      }
+    }
+  },
+  {
+    "label": "Track jacket",
+    "config": {
+      "version": 6,
+      "rig": "front_reference_v1",
+      "pack": "atelier-r6",
+      "skin": "skin_02",
+      "equipment": {
+        "hair": "hair.textured",
+        "eyes": "eyes.reference_neutral",
+        "brows": "brows.reference_neutral",
+        "nose": "nose.reference_neutral",
+        "mouth": "mouth.reference_neutral",
+        "ears": "ears.small",
+        "top": "top.navy",
+        "jacket": "jacket.track",
+        "bottom": "bottom.denim",
+        "shoes": "shoes.black",
+        "hat": null,
+        "glasses": null,
+        "earrings": null,
+        "head": "head.soft_oval",
+        "tie": null
+      },
+      "eyeColor": "eye.dark_brown",
+      "hairColor": "hair.original",
+      "wearColors": {
+        "top": "wear.original",
+        "jacket": "wear.navy",
+        "bottom": "wear.original",
+        "shoes": "wear.original",
+        "hat": "wear.original",
+        "glasses": "wear.original",
+        "earrings": "wear.original",
+        "tie": "wear.original"
+      },
+      "wearAccentColors": {
+        "top": "wear.original",
+        "jacket": "wear.cream",
+        "bottom": "wear.original",
+        "shoes": "wear.original",
+        "hat": "wear.original",
+        "glasses": "wear.original",
+        "earrings": "wear.original",
+        "tie": "wear.original"
+      }
+    }
+  },
+  {
+    "label": "Studio bomber",
+    "config": {
+      "version": 6,
+      "rig": "front_reference_v1",
+      "pack": "atelier-r6",
+      "skin": "skin_02",
+      "equipment": {
+        "hair": "hair.textured",
+        "eyes": "eyes.reference_neutral",
+        "brows": "brows.reference_neutral",
+        "nose": "nose.reference_neutral",
+        "mouth": "mouth.reference_neutral",
+        "ears": "ears.small",
+        "top": "top.navy",
+        "jacket": "jacket.studio_bomber",
+        "bottom": "bottom.denim",
+        "shoes": "shoes.black",
+        "hat": null,
+        "glasses": null,
+        "earrings": null,
+        "head": "head.soft_oval",
+        "tie": null
+      },
+      "eyeColor": "eye.dark_brown",
+      "hairColor": "hair.original",
+      "wearColors": {
+        "top": "wear.original",
+        "jacket": "wear.navy",
+        "bottom": "wear.original",
+        "shoes": "wear.original",
+        "hat": "wear.original",
+        "glasses": "wear.original",
+        "earrings": "wear.original",
+        "tie": "wear.original"
+      },
+      "wearAccentColors": {
+        "top": "wear.original",
+        "jacket": "wear.cream",
+        "bottom": "wear.original",
+        "shoes": "wear.original",
+        "hat": "wear.original",
+        "glasses": "wear.original",
+        "earrings": "wear.original",
+        "tie": "wear.original"
+      }
+    }
+  },
+  {
+    "label": "Washed denim jacket",
+    "config": {
+      "version": 6,
+      "rig": "front_reference_v1",
+      "pack": "atelier-r6",
+      "skin": "skin_02",
+      "equipment": {
+        "hair": "hair.textured",
+        "eyes": "eyes.reference_neutral",
+        "brows": "brows.reference_neutral",
+        "nose": "nose.reference_neutral",
+        "mouth": "mouth.reference_neutral",
+        "ears": "ears.small",
+        "top": "top.navy",
+        "jacket": "jacket.light_denim",
+        "bottom": "bottom.denim",
+        "shoes": "shoes.black",
+        "hat": null,
+        "glasses": null,
+        "earrings": null,
+        "head": "head.soft_oval",
+        "tie": null
+      },
+      "eyeColor": "eye.dark_brown",
+      "hairColor": "hair.original",
+      "wearColors": {
+        "top": "wear.original",
+        "jacket": "wear.navy",
+        "bottom": "wear.original",
+        "shoes": "wear.original",
+        "hat": "wear.original",
+        "glasses": "wear.original",
+        "earrings": "wear.original",
+        "tie": "wear.original"
+      },
+      "wearAccentColors": {
+        "top": "wear.original",
+        "jacket": "wear.cream",
+        "bottom": "wear.original",
+        "shoes": "wear.original",
+        "hat": "wear.original",
+        "glasses": "wear.original",
+        "earrings": "wear.original",
+        "tie": "wear.original"
+      }
+    }
+  },
+  {
+    "label": "Fleece jacket",
+    "config": {
+      "version": 6,
+      "rig": "front_reference_v1",
+      "pack": "atelier-r6",
+      "skin": "skin_02",
+      "equipment": {
+        "hair": "hair.textured",
+        "eyes": "eyes.reference_neutral",
+        "brows": "brows.reference_neutral",
+        "nose": "nose.reference_neutral",
+        "mouth": "mouth.reference_neutral",
+        "ears": "ears.small",
+        "top": "top.navy",
+        "jacket": "jacket.fleece",
+        "bottom": "bottom.denim",
+        "shoes": "shoes.black",
+        "hat": null,
+        "glasses": null,
+        "earrings": null,
+        "head": "head.soft_oval",
+        "tie": null
+      },
+      "eyeColor": "eye.dark_brown",
+      "hairColor": "hair.original",
+      "wearColors": {
+        "top": "wear.original",
+        "jacket": "wear.navy",
+        "bottom": "wear.original",
+        "shoes": "wear.original",
+        "hat": "wear.original",
+        "glasses": "wear.original",
+        "earrings": "wear.original",
+        "tie": "wear.original"
+      },
+      "wearAccentColors": {
+        "top": "wear.original",
+        "jacket": "wear.cream",
+        "bottom": "wear.original",
+        "shoes": "wear.original",
+        "hat": "wear.original",
+        "glasses": "wear.original",
+        "earrings": "wear.original",
+        "tie": "wear.original"
+      }
+    }
+  },
+  {
+    "label": "Chore jacket",
+    "config": {
+      "version": 6,
+      "rig": "front_reference_v1",
+      "pack": "atelier-r6",
+      "skin": "skin_02",
+      "equipment": {
+        "hair": "hair.textured",
+        "eyes": "eyes.reference_neutral",
+        "brows": "brows.reference_neutral",
+        "nose": "nose.reference_neutral",
+        "mouth": "mouth.reference_neutral",
+        "ears": "ears.small",
+        "top": "top.navy",
+        "jacket": "jacket.chore",
+        "bottom": "bottom.denim",
+        "shoes": "shoes.black",
+        "hat": null,
+        "glasses": null,
+        "earrings": null,
+        "head": "head.soft_oval",
+        "tie": null
+      },
+      "eyeColor": "eye.dark_brown",
+      "hairColor": "hair.original",
+      "wearColors": {
+        "top": "wear.original",
+        "jacket": "wear.navy",
+        "bottom": "wear.original",
+        "shoes": "wear.original",
+        "hat": "wear.original",
+        "glasses": "wear.original",
+        "earrings": "wear.original",
+        "tie": "wear.original"
+      },
+      "wearAccentColors": {
+        "top": "wear.original",
+        "jacket": "wear.cream",
+        "bottom": "wear.original",
+        "shoes": "wear.original",
+        "hat": "wear.original",
+        "glasses": "wear.original",
+        "earrings": "wear.original",
+        "tie": "wear.original"
+      }
+    }
+  },
+  {
+    "label": "Piped track jacket",
+    "config": {
+      "version": 6,
+      "rig": "front_reference_v1",
+      "pack": "atelier-r6",
+      "skin": "skin_02",
+      "equipment": {
+        "hair": "hair.textured",
+        "eyes": "eyes.reference_neutral",
+        "brows": "brows.reference_neutral",
+        "nose": "nose.reference_neutral",
+        "mouth": "mouth.reference_neutral",
+        "ears": "ears.small",
+        "top": "top.navy",
+        "jacket": "jacket.navy_track",
+        "bottom": "bottom.denim",
+        "shoes": "shoes.black",
+        "hat": null,
+        "glasses": null,
+        "earrings": null,
+        "head": "head.soft_oval",
+        "tie": null
+      },
+      "eyeColor": "eye.dark_brown",
+      "hairColor": "hair.original",
+      "wearColors": {
+        "top": "wear.original",
+        "jacket": "wear.navy",
+        "bottom": "wear.original",
+        "shoes": "wear.original",
+        "hat": "wear.original",
+        "glasses": "wear.original",
+        "earrings": "wear.original",
+        "tie": "wear.original"
+      },
+      "wearAccentColors": {
+        "top": "wear.original",
+        "jacket": "wear.cream",
+        "bottom": "wear.original",
+        "shoes": "wear.original",
+        "hat": "wear.original",
+        "glasses": "wear.original",
+        "earrings": "wear.original",
+        "tie": "wear.original"
+      }
+    }
+  },
+  {
+    "label": "DIFF track jacket",
+    "config": {
+      "version": 6,
+      "rig": "front_reference_v1",
+      "pack": "atelier-r6",
+      "skin": "skin_02",
+      "equipment": {
+        "hair": "hair.textured",
+        "eyes": "eyes.reference_neutral",
+        "brows": "brows.reference_neutral",
+        "nose": "nose.reference_neutral",
+        "mouth": "mouth.reference_neutral",
+        "ears": "ears.small",
+        "top": "top.navy",
+        "jacket": "jacket.diff_track",
+        "bottom": "bottom.denim",
+        "shoes": "shoes.black",
+        "hat": null,
+        "glasses": null,
+        "earrings": null,
+        "head": "head.soft_oval",
+        "tie": null
+      },
+      "eyeColor": "eye.dark_brown",
+      "hairColor": "hair.original",
+      "wearColors": {
+        "top": "wear.original",
+        "jacket": "wear.navy",
+        "bottom": "wear.original",
+        "shoes": "wear.original",
+        "hat": "wear.original",
+        "glasses": "wear.original",
+        "earrings": "wear.original",
+        "tie": "wear.original"
+      },
+      "wearAccentColors": {
+        "top": "wear.original",
+        "jacket": "wear.cream",
+        "bottom": "wear.original",
+        "shoes": "wear.original",
+        "hat": "wear.original",
+        "glasses": "wear.original",
+        "earrings": "wear.original",
+        "tie": "wear.original"
+      }
+    }
+  },
+  {
+    "label": "Box puffer",
+    "config": {
+      "version": 6,
+      "rig": "front_reference_v1",
+      "pack": "atelier-r6",
+      "skin": "skin_02",
+      "equipment": {
+        "hair": "hair.textured",
+        "eyes": "eyes.reference_neutral",
+        "brows": "brows.reference_neutral",
+        "nose": "nose.reference_neutral",
+        "mouth": "mouth.reference_neutral",
+        "ears": "ears.small",
+        "top": "top.navy",
+        "jacket": "jacket.box_puffer",
+        "bottom": "bottom.denim",
+        "shoes": "shoes.black",
+        "hat": null,
+        "glasses": null,
+        "earrings": null,
+        "head": "head.soft_oval",
+        "tie": null
+      },
+      "eyeColor": "eye.dark_brown",
+      "hairColor": "hair.original",
+      "wearColors": {
+        "top": "wear.original",
+        "jacket": "wear.navy",
+        "bottom": "wear.original",
+        "shoes": "wear.original",
+        "hat": "wear.original",
+        "glasses": "wear.original",
+        "earrings": "wear.original",
+        "tie": "wear.original"
+      },
+      "wearAccentColors": {
+        "top": "wear.original",
+        "jacket": "wear.cream",
+        "bottom": "wear.original",
+        "shoes": "wear.original",
+        "hat": "wear.original",
+        "glasses": "wear.original",
+        "earrings": "wear.original",
+        "tie": "wear.original"
+      }
+    }
+  },
+  {
+    "label": "Hooded puffer",
+    "config": {
+      "version": 6,
+      "rig": "front_reference_v1",
+      "pack": "atelier-r6",
+      "skin": "skin_02",
+      "equipment": {
+        "hair": "hair.textured",
+        "eyes": "eyes.reference_neutral",
+        "brows": "brows.reference_neutral",
+        "nose": "nose.reference_neutral",
+        "mouth": "mouth.reference_neutral",
+        "ears": "ears.small",
+        "top": "top.navy",
+        "jacket": "jacket.hooded_puffer",
+        "bottom": "bottom.denim",
+        "shoes": "shoes.black",
+        "hat": null,
+        "glasses": null,
+        "earrings": null,
+        "head": "head.soft_oval",
+        "tie": null
+      },
+      "eyeColor": "eye.dark_brown",
+      "hairColor": "hair.original",
+      "wearColors": {
+        "top": "wear.original",
+        "jacket": "wear.navy",
+        "bottom": "wear.original",
+        "shoes": "wear.original",
+        "hat": "wear.original",
+        "glasses": "wear.original",
+        "earrings": "wear.original",
+        "tie": "wear.original"
+      },
+      "wearAccentColors": {
+        "top": "wear.original",
+        "jacket": "wear.cream",
+        "bottom": "wear.original",
+        "shoes": "wear.original",
+        "hat": "wear.original",
+        "glasses": "wear.original",
+        "earrings": "wear.original",
+        "tie": "wear.original"
+      }
+    }
+  },
+  {
+    "label": "Quilted liner",
+    "config": {
+      "version": 6,
+      "rig": "front_reference_v1",
+      "pack": "atelier-r6",
+      "skin": "skin_02",
+      "equipment": {
+        "hair": "hair.textured",
+        "eyes": "eyes.reference_neutral",
+        "brows": "brows.reference_neutral",
+        "nose": "nose.reference_neutral",
+        "mouth": "mouth.reference_neutral",
+        "ears": "ears.small",
+        "top": "top.navy",
+        "jacket": "jacket.quilt_liner",
+        "bottom": "bottom.denim",
+        "shoes": "shoes.black",
+        "hat": null,
+        "glasses": null,
+        "earrings": null,
+        "head": "head.soft_oval",
+        "tie": null
+      },
+      "eyeColor": "eye.dark_brown",
+      "hairColor": "hair.original",
+      "wearColors": {
+        "top": "wear.original",
+        "jacket": "wear.navy",
+        "bottom": "wear.original",
+        "shoes": "wear.original",
+        "hat": "wear.original",
+        "glasses": "wear.original",
+        "earrings": "wear.original",
+        "tie": "wear.original"
+      },
+      "wearAccentColors": {
+        "top": "wear.original",
+        "jacket": "wear.cream",
+        "bottom": "wear.original",
+        "shoes": "wear.original",
+        "hat": "wear.original",
+        "glasses": "wear.original",
+        "earrings": "wear.original",
+        "tie": "wear.original"
+      }
+    }
+  },
+  {
+    "label": "Flight bomber",
+    "config": {
+      "version": 6,
+      "rig": "front_reference_v1",
+      "pack": "atelier-r6",
+      "skin": "skin_02",
+      "equipment": {
+        "hair": "hair.textured",
+        "eyes": "eyes.reference_neutral",
+        "brows": "brows.reference_neutral",
+        "nose": "nose.reference_neutral",
+        "mouth": "mouth.reference_neutral",
+        "ears": "ears.small",
+        "top": "top.navy",
+        "jacket": "jacket.flight_bomber",
+        "bottom": "bottom.denim",
+        "shoes": "shoes.black",
+        "hat": null,
+        "glasses": null,
+        "earrings": null,
+        "head": "head.soft_oval",
+        "tie": null
+      },
+      "eyeColor": "eye.dark_brown",
+      "hairColor": "hair.original",
+      "wearColors": {
+        "top": "wear.original",
+        "jacket": "wear.navy",
+        "bottom": "wear.original",
+        "shoes": "wear.original",
+        "hat": "wear.original",
+        "glasses": "wear.original",
+        "earrings": "wear.original",
+        "tie": "wear.original"
+      },
+      "wearAccentColors": {
+        "top": "wear.original",
+        "jacket": "wear.cream",
+        "bottom": "wear.original",
+        "shoes": "wear.original",
+        "hat": "wear.original",
+        "glasses": "wear.original",
+        "earrings": "wear.original",
+        "tie": "wear.original"
+      }
+    }
+  },
+  {
+    "label": "Wool varsity",
+    "config": {
+      "version": 6,
+      "rig": "front_reference_v1",
+      "pack": "atelier-r6",
+      "skin": "skin_02",
+      "equipment": {
+        "hair": "hair.textured",
+        "eyes": "eyes.reference_neutral",
+        "brows": "brows.reference_neutral",
+        "nose": "nose.reference_neutral",
+        "mouth": "mouth.reference_neutral",
+        "ears": "ears.small",
+        "top": "top.navy",
+        "jacket": "jacket.varsity_wool",
+        "bottom": "bottom.denim",
+        "shoes": "shoes.black",
+        "hat": null,
+        "glasses": null,
+        "earrings": null,
+        "head": "head.soft_oval",
+        "tie": null
+      },
+      "eyeColor": "eye.dark_brown",
+      "hairColor": "hair.original",
+      "wearColors": {
+        "top": "wear.original",
+        "jacket": "wear.navy",
+        "bottom": "wear.original",
+        "shoes": "wear.original",
+        "hat": "wear.original",
+        "glasses": "wear.original",
+        "earrings": "wear.original",
+        "tie": "wear.original"
+      },
+      "wearAccentColors": {
+        "top": "wear.original",
+        "jacket": "wear.cream",
+        "bottom": "wear.original",
+        "shoes": "wear.original",
+        "hat": "wear.original",
+        "glasses": "wear.original",
+        "earrings": "wear.original",
+        "tie": "wear.original"
+      }
+    }
+  },
+  {
+    "label": "Denim trucker",
+    "config": {
+      "version": 6,
+      "rig": "front_reference_v1",
+      "pack": "atelier-r6",
+      "skin": "skin_02",
+      "equipment": {
+        "hair": "hair.textured",
+        "eyes": "eyes.reference_neutral",
+        "brows": "brows.reference_neutral",
+        "nose": "nose.reference_neutral",
+        "mouth": "mouth.reference_neutral",
+        "ears": "ears.small",
+        "top": "top.navy",
+        "jacket": "jacket.denim_trucker",
+        "bottom": "bottom.denim",
+        "shoes": "shoes.black",
+        "hat": null,
+        "glasses": null,
+        "earrings": null,
+        "head": "head.soft_oval",
+        "tie": null
+      },
+      "eyeColor": "eye.dark_brown",
+      "hairColor": "hair.original",
+      "wearColors": {
+        "top": "wear.original",
+        "jacket": "wear.navy",
+        "bottom": "wear.original",
+        "shoes": "wear.original",
+        "hat": "wear.original",
+        "glasses": "wear.original",
+        "earrings": "wear.original",
+        "tie": "wear.original"
+      },
+      "wearAccentColors": {
+        "top": "wear.original",
+        "jacket": "wear.cream",
+        "bottom": "wear.original",
+        "shoes": "wear.original",
+        "hat": "wear.original",
+        "glasses": "wear.original",
+        "earrings": "wear.original",
+        "tie": "wear.original"
+      }
+    }
+  },
+  {
+    "label": "Biker jacket",
+    "config": {
+      "version": 6,
+      "rig": "front_reference_v1",
+      "pack": "atelier-r6",
+      "skin": "skin_02",
+      "equipment": {
+        "hair": "hair.textured",
+        "eyes": "eyes.reference_neutral",
+        "brows": "brows.reference_neutral",
+        "nose": "nose.reference_neutral",
+        "mouth": "mouth.reference_neutral",
+        "ears": "ears.small",
+        "top": "top.navy",
+        "jacket": "jacket.leather_biker",
+        "bottom": "bottom.denim",
+        "shoes": "shoes.black",
+        "hat": null,
+        "glasses": null,
+        "earrings": null,
+        "head": "head.soft_oval",
+        "tie": null
+      },
+      "eyeColor": "eye.dark_brown",
+      "hairColor": "hair.original",
+      "wearColors": {
+        "top": "wear.original",
+        "jacket": "wear.navy",
+        "bottom": "wear.original",
+        "shoes": "wear.original",
+        "hat": "wear.original",
+        "glasses": "wear.original",
+        "earrings": "wear.original",
+        "tie": "wear.original"
+      },
+      "wearAccentColors": {
+        "top": "wear.original",
+        "jacket": "wear.cream",
+        "bottom": "wear.original",
+        "shoes": "wear.original",
+        "hat": "wear.original",
+        "glasses": "wear.original",
+        "earrings": "wear.original",
+        "tie": "wear.original"
+      }
+    }
+  },
+  {
+    "label": "Rain parka",
+    "config": {
+      "version": 6,
+      "rig": "front_reference_v1",
+      "pack": "atelier-r6",
+      "skin": "skin_02",
+      "equipment": {
+        "hair": "hair.textured",
+        "eyes": "eyes.reference_neutral",
+        "brows": "brows.reference_neutral",
+        "nose": "nose.reference_neutral",
+        "mouth": "mouth.reference_neutral",
+        "ears": "ears.small",
+        "top": "top.navy",
+        "jacket": "jacket.rain_parka",
+        "bottom": "bottom.denim",
+        "shoes": "shoes.black",
+        "hat": null,
+        "glasses": null,
+        "earrings": null,
+        "head": "head.soft_oval",
+        "tie": null
+      },
+      "eyeColor": "eye.dark_brown",
+      "hairColor": "hair.original",
+      "wearColors": {
+        "top": "wear.original",
+        "jacket": "wear.navy",
+        "bottom": "wear.original",
+        "shoes": "wear.original",
+        "hat": "wear.original",
+        "glasses": "wear.original",
+        "earrings": "wear.original",
+        "tie": "wear.original"
+      },
+      "wearAccentColors": {
+        "top": "wear.original",
+        "jacket": "wear.cream",
+        "bottom": "wear.original",
+        "shoes": "wear.original",
+        "hat": "wear.original",
+        "glasses": "wear.original",
+        "earrings": "wear.original",
+        "tie": "wear.original"
+      }
+    }
+  },
+  {
+    "label": "Sherpa fleece",
+    "config": {
+      "version": 6,
+      "rig": "front_reference_v1",
+      "pack": "atelier-r6",
+      "skin": "skin_02",
+      "equipment": {
+        "hair": "hair.textured",
+        "eyes": "eyes.reference_neutral",
+        "brows": "brows.reference_neutral",
+        "nose": "nose.reference_neutral",
+        "mouth": "mouth.reference_neutral",
+        "ears": "ears.small",
+        "top": "top.navy",
+        "jacket": "jacket.sherpa_fleece",
+        "bottom": "bottom.denim",
+        "shoes": "shoes.black",
+        "hat": null,
+        "glasses": null,
+        "earrings": null,
+        "head": "head.soft_oval",
+        "tie": null
+      },
+      "eyeColor": "eye.dark_brown",
+      "hairColor": "hair.original",
+      "wearColors": {
+        "top": "wear.original",
+        "jacket": "wear.navy",
+        "bottom": "wear.original",
+        "shoes": "wear.original",
+        "hat": "wear.original",
+        "glasses": "wear.original",
+        "earrings": "wear.original",
+        "tie": "wear.original"
+      },
+      "wearAccentColors": {
+        "top": "wear.original",
+        "jacket": "wear.cream",
+        "bottom": "wear.original",
+        "shoes": "wear.original",
+        "hat": "wear.original",
+        "glasses": "wear.original",
+        "earrings": "wear.original",
+        "tie": "wear.original"
+      }
+    }
+  },
+  {
+    "label": "Piped track jacket",
+    "config": {
+      "version": 6,
+      "rig": "front_reference_v1",
+      "pack": "atelier-r6",
+      "skin": "skin_02",
+      "equipment": {
+        "hair": "hair.textured",
+        "eyes": "eyes.reference_neutral",
+        "brows": "brows.reference_neutral",
+        "nose": "nose.reference_neutral",
+        "mouth": "mouth.reference_neutral",
+        "ears": "ears.small",
+        "top": "top.navy",
+        "jacket": "jacket.track_piped",
+        "bottom": "bottom.denim",
+        "shoes": "shoes.black",
+        "hat": null,
+        "glasses": null,
+        "earrings": null,
+        "head": "head.soft_oval",
+        "tie": null
+      },
+      "eyeColor": "eye.dark_brown",
+      "hairColor": "hair.original",
+      "wearColors": {
+        "top": "wear.original",
+        "jacket": "wear.navy",
+        "bottom": "wear.original",
+        "shoes": "wear.original",
+        "hat": "wear.original",
+        "glasses": "wear.original",
+        "earrings": "wear.original",
+        "tie": "wear.original"
+      },
+      "wearAccentColors": {
+        "top": "wear.original",
+        "jacket": "wear.cream",
+        "bottom": "wear.original",
+        "shoes": "wear.original",
+        "hat": "wear.original",
+        "glasses": "wear.original",
+        "earrings": "wear.original",
+        "tie": "wear.original"
+      }
+    }
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "id": "eyes-focused",
+    "prompt": "Use case: stylized-concept. Asset type: actual transparent cosmetic layer for a modular pixel avatar. Reference image defines the pixel-art quality. Create one isolated overlay module, in a coherent 16-bit pixel-art language with crisp dark contours, original shape, restrained shades. Plain transparent ALPHA background. Do not paint a checkerboard or any white backdrop. Show only the requested part, with all other pixels empty. Do not include a complete character, any clothing, UI or labels. Deliberately low-pixel-density art suitable for a 128-pixel-tall adult avatar; tiny facial features should be readable and subtle.\nRequested part: Only a PAIR of narrow focused adult pixel eyes, two separate small eyes with dark brown pupils, white sclera, slightly lowered upper lids. No brows, skin, nose or head."
+  },
+  {
+    "id": "eyes-soft",
+    "prompt": "Use case: stylized-concept. Asset type: actual transparent cosmetic layer for a modular pixel avatar. Reference image defines the pixel-art quality. Create one isolated overlay module, in a coherent 16-bit pixel-art language with crisp dark contours, original shape, restrained shades. Plain transparent ALPHA background. Do not paint a checkerboard or any white backdrop. Show only the requested part, with all other pixels empty. Do not include a complete character, any clothing, UI or labels. Deliberately low-pixel-density art suitable for a 128-pixel-tall adult avatar; tiny facial features should be readable and subtle.\nRequested part: Only a PAIR of calm soft adult pixel eyes, subtle dark brown pupils, small white sclera and relaxed upper lids. No eyebrows, skin, nose or head."
+  },
+  {
+    "id": "eyes-happy",
+    "prompt": "Use case: stylized-concept. Asset type: actual transparent cosmetic layer for a modular pixel avatar. Reference image defines the pixel-art quality. Create one isolated overlay module, in a coherent 16-bit pixel-art language with crisp dark contours, original shape, restrained shades. Plain transparent ALPHA background. Do not paint a checkerboard or any white backdrop. Show only the requested part, with all other pixels empty. Do not include a complete character, any clothing, UI or labels. Deliberately low-pixel-density art suitable for a 128-pixel-tall adult avatar; tiny facial features should be readable and subtle.\nRequested part: Only a PAIR of subtly happy squinting pixel eyes, tiny curved dark upper lids. Keep expression subtle and adult, not emoji. No eyebrows, skin or head."
+  },
+  {
+    "id": "brows-soft",
+    "prompt": "Use case: stylized-concept. Asset type: actual transparent cosmetic layer for a modular pixel avatar. Reference image defines the pixel-art quality. Create one isolated overlay module, in a coherent 16-bit pixel-art language with crisp dark contours, original shape, restrained shades. Plain transparent ALPHA background. Do not paint a checkerboard or any white backdrop. Show only the requested part, with all other pixels empty. Do not include a complete character, any clothing, UI or labels. Deliberately low-pixel-density art suitable for a 128-pixel-tall adult avatar; tiny facial features should be readable and subtle.\nRequested part: Only a PAIR of gently arched DARK BROWN EYEBROWS, restrained fine shape, no eyes, skin or head."
+  },
+  {
+    "id": "brows-thick",
+    "prompt": "Use case: stylized-concept. Asset type: actual transparent cosmetic layer for a modular pixel avatar. Reference image defines the pixel-art quality. Create one isolated overlay module, in a coherent 16-bit pixel-art language with crisp dark contours, original shape, restrained shades. Plain transparent ALPHA background. Do not paint a checkerboard or any white backdrop. Show only the requested part, with all other pixels empty. Do not include a complete character, any clothing, UI or labels. Deliberately low-pixel-density art suitable for a 128-pixel-tall adult avatar; tiny facial features should be readable and subtle.\nRequested part: Only a PAIR of straight thick DARK BROWN EYEBROWS, expressive but not angry, no eyes, skin or head."
+  },
+  {
+    "id": "mouth-smile",
+    "prompt": "Use case: stylized-concept. Asset type: actual transparent cosmetic layer for a modular pixel avatar. Reference image defines the pixel-art quality. Create one isolated overlay module, in a coherent 16-bit pixel-art language with crisp dark contours, original shape, restrained shades. Plain transparent ALPHA background. Do not paint a checkerboard or any white backdrop. Show only the requested part, with all other pixels empty. Do not include a complete character, any clothing, UI or labels. Deliberately low-pixel-density art suitable for a 128-pixel-tall adult avatar; tiny facial features should be readable and subtle.\nRequested part: Only a small closed gentle SMILE in warm dark terracotta pixels, subtle adult expression, no lips gloss, no face or skin."
+  },
+  {
+    "id": "mouth-serious",
+    "prompt": "Use case: stylized-concept. Asset type: actual transparent cosmetic layer for a modular pixel avatar. Reference image defines the pixel-art quality. Create one isolated overlay module, in a coherent 16-bit pixel-art language with crisp dark contours, original shape, restrained shades. Plain transparent ALPHA background. Do not paint a checkerboard or any white backdrop. Show only the requested part, with all other pixels empty. Do not include a complete character, any clothing, UI or labels. Deliberately low-pixel-density art suitable for a 128-pixel-tall adult avatar; tiny facial features should be readable and subtle.\nRequested part: Only a tiny serious NEUTRAL MOUTH, flat line in muted brown-red pixels, no face or skin."
+  },
+  {
+    "id": "ears-rounded",
+    "prompt": "Use case: stylized-concept. Asset type: actual transparent cosmetic layer for a modular pixel avatar. Reference image defines the pixel-art quality. Create one isolated overlay module, in a coherent 16-bit pixel-art language with crisp dark contours, original shape, restrained shades. Plain transparent ALPHA background. Do not paint a checkerboard or any white backdrop. Show only the requested part, with all other pixels empty. Do not include a complete character, any clothing, UI or labels. Deliberately low-pixel-density art suitable for a 128-pixel-tall adult avatar; tiny facial features should be readable and subtle.\nRequested part: Only a PAIR of small rounded HUMAN EARS in light warm skin tones, front-facing mirrored pair, carefully pixel shaded. No head, no face, no hair. Separated as left and right ears as if on one head."
+  },
+  {
+    "id": "earrings-studs",
+    "prompt": "Use case: stylized-concept. Asset type: actual transparent cosmetic layer for a modular pixel avatar. Reference image defines the pixel-art quality. Create one isolated overlay module, in a coherent 16-bit pixel-art language with crisp dark contours, original shape, restrained shades. Plain transparent ALPHA background. Do not paint a checkerboard or any white backdrop. Show only the requested part, with all other pixels empty. Do not include a complete character, any clothing, UI or labels. Deliberately low-pixel-density art suitable for a 128-pixel-tall adult avatar; tiny facial features should be readable and subtle.\nRequested part: Only a PAIR of tiny SILVER STUD EARRINGS, two little silver dots with one-pixel gleam, no ears, face or skin."
+  },
+  {
+    "id": "earrings-hoops",
+    "prompt": "Use case: stylized-concept. Asset type: actual transparent cosmetic layer for a modular pixel avatar. Reference image defines the pixel-art quality. Create one isolated overlay module, in a coherent 16-bit pixel-art language with crisp dark contours, original shape, restrained shades. Plain transparent ALPHA background. Do not paint a checkerboard or any white backdrop. Show only the requested part, with all other pixels empty. Do not include a complete character, any clothing, UI or labels. Deliberately low-pixel-density art suitable for a 128-pixel-tall adult avatar; tiny facial features should be readable and subtle.\nRequested part: Only a PAIR of small thin GOLD HOOP EARRINGS, mirror symmetrical, plain generic jewelry, no ears, face or skin."
+  },
+  {
+    "id": "hat-cap",
+    "prompt": "Use case: stylized-concept. Asset type: actual transparent cosmetic layer for a modular pixel avatar. Reference image defines the pixel-art quality. Create one isolated overlay module, in a coherent 16-bit pixel-art language with crisp dark contours, original shape, restrained shades. Plain transparent ALPHA background. Do not paint a checkerboard or any white backdrop. Show only the requested part, with all other pixels empty. Do not include a complete character, any clothing, UI or labels. Deliberately low-pixel-density art suitable for a 128-pixel-tall adult avatar; tiny facial features should be readable and subtle.\nRequested part: Only a BLACK BASEBALL CAP, front-facing, dark charcoal highlights, curved brim, no head or hair or skin. Keep one small original abstract stitch; no logos."
+  },
+  {
+    "id": "hat-beanie",
+    "prompt": "Use case: stylized-concept. Asset type: actual transparent cosmetic layer for a modular pixel avatar. Reference image defines the pixel-art quality. Create one isolated overlay module, in a coherent 16-bit pixel-art language with crisp dark contours, original shape, restrained shades. Plain transparent ALPHA background. Do not paint a checkerboard or any white backdrop. Show only the requested part, with all other pixels empty. Do not include a complete character, any clothing, UI or labels. Deliberately low-pixel-density art suitable for a 128-pixel-tall adult avatar; tiny facial features should be readable and subtle.\nRequested part: Only a BLACK FOLDED BEANIE, front-facing, dark charcoal rib knit detail, no head or hair or skin."
+  },
+  {
+    "id": "glasses-round",
+    "prompt": "Use case: stylized-concept. Asset type: actual transparent cosmetic layer for a modular pixel avatar. Reference image defines the pixel-art quality. Create one isolated overlay module, in a coherent 16-bit pixel-art language with crisp dark contours, original shape, restrained shades. Plain transparent ALPHA background. Do not paint a checkerboard or any white backdrop. Show only the requested part, with all other pixels empty. Do not include a complete character, any clothing, UI or labels. Deliberately low-pixel-density art suitable for a 128-pixel-tall adult avatar; tiny facial features should be readable and subtle.\nRequested part: Only a PAIR of thin round graphite GLASSES, two empty transparent lens centers, connecting bridge, small temples. No face, no eyes, no skin."
+  },
+  {
+    "id": "glasses-rect",
+    "prompt": "Use case: stylized-concept. Asset type: actual transparent cosmetic layer for a modular pixel avatar. Reference image defines the pixel-art quality. Create one isolated overlay module, in a coherent 16-bit pixel-art language with crisp dark contours, original shape, restrained shades. Plain transparent ALPHA background. Do not paint a checkerboard or any white backdrop. Show only the requested part, with all other pixels empty. Do not include a complete character, any clothing, UI or labels. Deliberately low-pixel-density art suitable for a 128-pixel-tall adult avatar; tiny facial features should be readable and subtle.\nRequested part: Only a PAIR of small rectangular black GLASSES, clear truly transparent lens openings, thin bridge and compact temples. No face eyes or skin."
+  }
+]
