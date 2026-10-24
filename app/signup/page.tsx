@@ -6,21 +6,8 @@ import { ArrowLeft, Check, Eye, EyeOff, Info, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { createClient } from "@/lib/supabase/client";
-
-type Role = "student" | "parent";
-type Screen = "form" | "sent" | "active";
-
-const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
-
-function ageFromDate(value: string) {
-  if (!/^\d{4}-\d{2}-\d{2}$/.test(value)) return null;
-  const date = new Date(`${value}T00:00:00`);
-  if (Number.isNaN(date.getTime())) return null;
-  const today = new Date();
-  let age = today.getFullYear() - date.getFullYear();
-  if (today < new Date(today.getFullYear(), date.getMonth(), date.getDate())) age -= 1;
-  return age < 0 || age > 120 ? null : age;
-}
+import type { Role, Screen } from "@/lib/types";
+import { ageFromDate, emailPattern, getSignupMode } from "@/lib/utils";
 
 export default function SignupPage() {
   const [screen, setScreen] = useState<Screen>("form");
@@ -40,8 +27,7 @@ export default function SignupPage() {
 
   const age = ageFromDate(dob);
   const isMinor = age !== null && age < 18 && role === "student";
-  const isAdult = age !== null && role === "parent";
-  const mode = isMinor ? "minor" : isAdult ? "adult" : "none";
+  const mode = getSignupMode(age, role);
   const canContinue = formStep === 1
     ? Boolean(name.trim() && role && dob && ((mode === "adult" && email.trim()) || (mode === "minor" && parentEmail.trim())))
     : Boolean(username.trim() && password && confirmation);
