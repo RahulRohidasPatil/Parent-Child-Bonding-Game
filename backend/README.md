@@ -4,7 +4,47 @@ FastAPI API backed by Supabase Auth. The existing Next.js frontend is unchanged.
 No custom user table, database password, service-role key, or FastAPI password database is needed:
 Supabase owns password hashing, users, email confirmation, sessions, and recovery.
 
-## Run locally
+## Offline demo mode — no Supabase or SMTP required
+
+From this directory:
+
+```sh
+cp .env.demo.example .env
+uv sync --locked
+uv run uvicorn app.main:create_app --factory --host 127.0.0.1 --port 8000 --no-access-log
+```
+
+Use one worker. Demo sessions live in memory and reset when the process restarts or reloads;
+multiple workers/replicas do not share them. Open http://localhost:8000/docs to try the API.
+`GET /health` reports `auth_mode: demo`, and demo identities carry `user_metadata.demo: true`.
+`GET /auth/demo-accounts` lists the two synthetic accounts without their passwords.
+
+| Demo account | Email | Demo password | API account type |
+| --- | --- | --- | --- |
+| Parent: Alex | `parent@demo.example.com` | `DemoParent123!` | `parent` |
+| Child: Sam | `child@demo.example.com` | `DemoChild123!` | `learner` |
+
+These published credentials are only for the local demo. They are not Supabase users or real
+mailboxes. The shared `demo_family_id` is sample metadata, not a verified guardian relationship
+or a family authorization system. No schoolwork, progress, or real personal data is seeded.
+
+1. POST `/auth/login` with a demo email and password.
+2. Use the returned access token as a Bearer token for GET `/auth/me`.
+3. POST `/auth/refresh` with the refresh token. Both old tokens become invalid immediately.
+4. POST `/auth/logout` with the current access token. Both current tokens become invalid.
+
+Access tokens expire after one hour; refresh sessions expire after 24 hours from their latest
+issuance. Each login has independent random tokens. At most 1,000 active sessions are retained.
+Demo registration, confirmation, resend, recovery, and password changes return 409: use the seeded
+accounts instead. The demo never sends email, connects to Supabase, or changes hosted auth settings.
+
+Demo mode is **off by default**. Enabling it requires both `DEMO_MODE=true` and
+`APP_ENV=development` (or `test`); `APP_ENV` defaults to `production` and refuses demo startup.
+Keep demo mode bound to localhost, do not deploy the published accounts publicly, and use
+`DEMO_MODE=false` for Supabase/production. Supabase mode rejects demo token prefixes before
+contacting Supabase and does not expose the demo account-list endpoint.
+
+## Run locally with Supabase
 
 Install [uv](https://docs.astral.sh/uv/), then from this directory:
 
@@ -17,7 +57,7 @@ uv run uvicorn app.main:create_app --factory --reload --host 127.0.0.1 --port 80
 
 The configured local `.env` is ignored by Git; teammates must create their own.
 Use Python 3.12 or later. Open http://localhost:8000/docs for the interactive API contract.
-`GET /health` checks process health, not Supabase availability. Missing/invalid configuration fails startup.
+`GET /health` checks process health, not Supabase availability. Missing/invalid Supabase configuration fails startup when demo mode is disabled.
 `uv run pytest -q` runs the mocked integration suite. `uv run ruff check app tests` and
 `uv run ruff format --check app tests` check style.
 
