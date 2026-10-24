@@ -109,8 +109,8 @@ export default function SignupPage() {
 
   if (screen !== "form") {
     const minor = isMinor;
-    return <main className="flex min-h-dvh items-center justify-center bg-[#faf9f5] px-4 py-6 text-[#1f2d3a]">
-      <section className="flex min-h-[min(844px,calc(100dvh-3rem))] w-full max-w-[390px] flex-col overflow-hidden rounded-[28px] bg-white shadow-[0_20px_70px_rgba(31,45,58,.12)]">
+    return <main className="flex min-h-dvh items-center justify-center bg-[#faf9f5] px-4 py-6 text-[#1f2d3a] md:px-8 md:py-10 lg:px-12 lg:py-14">
+      <section className="flex min-h-[min(844px,calc(100dvh-3rem))] w-full max-w-[390px] flex-col overflow-hidden rounded-[28px] bg-white shadow-[0_20px_70px_rgba(31,45,58,.12)] md:max-w-2xl md:rounded-[32px] lg:max-w-4xl">
         <SignupHeader step={step} title={screen === "active" ? "Account activated" : minor ? "Ask a parent to approve" : "Verify your email"} subtitle={screen === "active" ? minor ? "Your parent approved your account. You’re all set." : "Your email is verified. You’re all set." : minor ? "Your account switches on as soon as your parent taps the link." : "Tap the link we sent to activate your account."} />
         <div className="flex flex-1 flex-col gap-4 overflow-y-auto px-5 py-3">
           <div className="flex h-44 items-center justify-center rounded-[22px] bg-[#e6f4ee]">{screen === "active" ? <span className="grid size-24 place-items-center rounded-full bg-[#2e8a69]"><Check className="size-14 text-white" strokeWidth={3} /></span> : <Mail className="size-20 text-[#2e8a69]" strokeWidth={1.5} />}</div>
