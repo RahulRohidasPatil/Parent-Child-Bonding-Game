@@ -1,8 +1,9 @@
 "use client";
 
-import { FormEvent, useMemo, useState } from "react";
+import { SyntheticEvent, useMemo, useState } from "react";
 import Link from "next/link";
 import { Check, Eye, EyeOff, Info, Mail } from "lucide-react";
+import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { createClient } from "@/lib/supabase/client";
@@ -61,7 +62,7 @@ export default function SignupPage() {
     return next;
   }, [age, role, name, dob, email, parentEmail, username, password, confirmation, mode, formStep]);
 
-  async function submit(event: FormEvent<HTMLFormElement>) {
+  async function submit(event: SyntheticEvent<HTMLFormElement>) {
     event.preventDefault();
     setTried(true);
     setError("");
@@ -78,7 +79,9 @@ export default function SignupPage() {
         body: JSON.stringify({ learnerDisplayName: name, parentEmail, learnerBirthYear: Number(dob.slice(0, 4)) }),
       });
       if (!response.ok) {
-        setError("We could not send the approval request. Please try again.");
+        const message = "We could not send the approval request. Please try again.";
+        setError(message);
+        toast.error(message);
         return;
       }
     } else if (role === "parent") {
@@ -94,11 +97,25 @@ export default function SignupPage() {
         },
       });
       if (signUpError) {
-        setError("We could not create that account. Check your details and try again.");
+        console.error("[signup] Parent Supabase registration failed", {
+          name: signUpError.name,
+          message: signUpError.message,
+          status: signUpError.status,
+          code: signUpError.code,
+        });
+        if (signUpError.status === 429 || signUpError.message.toLowerCase().includes("rate limit")) {
+          setError(signUpError.message);
+          toast.error(signUpError.message);
+          return;
+        }
+        setError(signUpError.message);
+        toast.error(signUpError.message);
         return;
       }
     } else {
-      setError("Learner accounts must be approved by a parent or guardian first.");
+      const message = "Learner accounts must be approved by a parent or guardian first.";
+      setError(message);
+      toast.error(message);
       return;
     }
     setScreen("sent");
