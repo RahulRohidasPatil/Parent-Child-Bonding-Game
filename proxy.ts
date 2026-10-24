@@ -28,7 +28,7 @@ export const config = {
     "/home",
     "/learn/:path*",
     "/play/:path*",
-    "/base",
+    "/base/:path*",
     "/shop",
     "/quests",
     "/friends",

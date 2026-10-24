@@ -3,14 +3,15 @@
 import { useState } from "react";
 import { useClientValue } from "@/lib/use-client-value";
 import Link from "next/link";
-import Image from "next/image";
 import { ChevronRight, Pencil } from "lucide-react";
 import { Page } from "@/components/qn/app-shell";
+import { IsoHouse } from "@/components/qn/iso-house";
 import { Face, Sprite, Stage } from "@/components/qn/sprite";
 import { Notice, ProgressBar, StatChips } from "@/components/qn/ui";
 import { useQN } from "@/lib/store";
 import { useUser } from "@/lib/use-user";
 import { QUESTS, subjectOf } from "@/lib/qn-data";
+import { ROOMS, ROOM_GRID, UNLOCK_LEVEL, levelsOf, unlockProgress } from "@/lib/home-data";
 
 export function HomeScreen() {
   const { user } = useUser();
@@ -19,7 +20,8 @@ export function HomeScreen() {
   const recent = useQN((s) => s.recent);
   const progress = useQN((s) => s.progress);
   const claimed = useQN((s) => s.claimed);
-  const science = useQN((s) => s.base.science);
+  const homeRooms = useQN((s) => s.home.rooms);
+  const homeLayout = useQN((s) => s.home.layout);
   const streak = useQN((s) => s.streakDays);
   const day = useClientValue(() => new Date().toLocaleDateString("en-GB", { weekday: "long" }), "");
   const welcomeParam = useClientValue(() => new URLSearchParams(window.location.search).get("welcome") === "1", false);
@@ -30,7 +32,10 @@ export function HomeScreen() {
   const latest = lessons[0];
   const daily = QUESTS.filter((q) => q.kind === "daily");
   const doneDaily = daily.filter((q) => (progress[q.id] ?? 0) >= q.of || claimed.includes(q.id)).length;
-  const roomLevel = science.levels.reduce((a, b) => a + b, 0);
+  const built = ROOMS.filter((r) => homeRooms[r.id]);
+  const newest = built[built.length - 1] ?? ROOMS[0];
+  const nextRoom = ROOMS[built.length];
+  const unlock = unlockProgress(newest, levelsOf(newest, homeRooms[newest.id]));
   const first = user?.name?.split(" ")[0] ?? "";
 
   return (
@@ -109,13 +114,18 @@ export function HomeScreen() {
 
         {/* right column */}
         <Link href="/base" className="flex flex-col overflow-hidden rounded-3xl border border-line bg-card md:col-span-2 md:row-start-3 md:flex-row xl:col-span-1 xl:col-start-3 xl:row-span-2 xl:row-start-1 xl:flex-col">
-          <Image src="/qn/rooms/science.jpg" alt="Your science lab" width={1252} height={1026} className="h-[190px] w-full bg-[#c3eef5] object-cover md:h-auto md:w-[260px] xl:h-0 xl:min-h-[240px] xl:w-full xl:flex-1" />
+          <span className="flex items-center justify-center bg-[#c3eef5] p-3 md:w-[260px] xl:w-full xl:flex-1">
+            <IsoHouse rooms={built.map((r) => ({ room: r, levels: levelsOf(r, homeRooms[r.id]), layout: homeLayout[r.id], grid: ROOM_GRID[r.id] }))} focus={null} aspect={1.25} className="max-w-[320px]" />
+          </span>
           <span className="flex flex-1 flex-col justify-center gap-1.5 p-4 xl:flex-none">
             <span className="flex items-center justify-between text-[18px] font-black">
-              My base · Lab <ChevronRight className="size-5 text-muted-foreground" />
+              My base <ChevronRight className="size-5 text-muted-foreground" />
             </span>
-            <span className="text-sm font-bold text-muted-foreground">Tier {science.tier} · {roomLevel}/60 levels</span>
-            <ProgressBar value={(roomLevel / 60) * 100} className="h-2" />
+            <span className="text-sm font-bold text-muted-foreground">
+              {built.length} {built.length === 1 ? "room" : "rooms"}
+              {nextRoom ? (unlock.ready ? ` · ${nextRoom.name} ready to buy` : ` · ${unlock.have}/${unlock.need} items at Lv ${UNLOCK_LEVEL} for the ${nextRoom.name.toLowerCase()}`) : " · all built"}
+            </span>
+            <ProgressBar value={nextRoom ? (unlock.have / unlock.need) * 100 : 100} className="h-2" />
           </span>
         </Link>
       </div>
