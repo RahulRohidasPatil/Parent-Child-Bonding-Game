@@ -1,0 +1,1082 @@
+{
+  "version": 2,
+  "rig": "front_idle_atelier_v1",
+  "pack": "atelier-r2",
+  "size": 128,
+  "cosmetics": [
+    {
+      "id": "ears.classic",
+      "name": "Classic ears",
+      "slot": "ears",
+      "collection": "Details",
+      "color": "Skin matched",
+      "layers": [
+        {
+          "file": "layers/ears_classic_skin_04_v2.png",
+          "z": 22,
+          "region": "ears",
+          "source": "references/avatar-atelier/body-source.png",
+          "sha256": "07fbe2ae5cedb6aa1fc21d37e4e3e682cd3ab62ff4c34d43edbc25676b293e7c",
+          "skinVariants": {
+            "skin_01": "layers/ears_classic_skin_01_v2.png",
+            "skin_02": "layers/ears_classic_skin_02_v2.png",
+            "skin_03": "layers/ears_classic_skin_03_v2.png",
+            "skin_04": "layers/ears_classic_skin_04_v2.png",
+            "skin_05": "layers/ears_classic_skin_05_v2.png",
+            "skin_06": "layers/ears_classic_skin_06_v2.png",
+            "skin_07": "layers/ears_classic_skin_07_v2.png",
+            "skin_08": "layers/ears_classic_skin_08_v2.png",
+            "skin_09": "layers/ears_classic_skin_09_v2.png",
+            "skin_10": "layers/ears_classic_skin_10_v2.png",
+            "skin_11": "layers/ears_classic_skin_11_v2.png",
+            "skin_12": "layers/ears_classic_skin_12_v2.png"
+          }
+        }
+      ]
+    },
+    {
+      "id": "top.navy",
+      "name": "Navy crewneck",
+      "slot": "top",
+      "collection": "Essentials",
+      "color": "Navy",
+      "layers": [
+        {
+          "file": "layers/top_navy_v2.png",
+          "z": 40,
+          "region": "top",
+          "source": "references/avatar-atelier/top-navy.png",
+          "sha256": "f09b06f78768dacc31ace80dceeb87798574c272d9ebed8f168cf99df3fd67b4"
+        }
+      ]
+    },
+    {
+      "id": "top.quarter",
+      "name": "Fleece quarter zip",
+      "slot": "top",
+      "collection": "Essentials",
+      "color": "Cream",
+      "layers": [
+        {
+          "file": "layers/top_quarter_v2.png",
+          "z": 40,
+          "region": "top",
+          "source": "references/avatar-atelier/top-quarter.png",
+          "sha256": "a958f018515bb5820dabab39e20b00b5d8b76741aa140880381888f8b0fd1b3c"
+        }
+      ]
+    },
+    {
+      "id": "top.white_tee",
+      "name": "Heavyweight tee",
+      "slot": "top",
+      "collection": "Essentials",
+      "color": "Off-white",
+      "layers": [
+        {
+          "file": "layers/top_white_tee_v2.png",
+          "z": 40,
+          "region": "top",
+          "source": "references/avatar-atelier/top-white-tee.png",
+          "sha256": "5dea732c41bf9989e5f126d8cb80f6b045ee1a2b248f873fce0530e33c238c7e"
+        }
+      ]
+    },
+    {
+      "id": "top.hoodie",
+      "name": "Black pullover hoodie",
+      "slot": "top",
+      "collection": "Off duty",
+      "color": "Black",
+      "layers": [
+        {
+          "file": "layers/top_hoodie_v2.png",
+          "z": 40,
+          "region": "top",
+          "source": "references/avatar-atelier/top-hoodie.png",
+          "sha256": "14155ca1e9387d8030b5e0e7ef9a085385514ee5d7d614f0575ad1857013c812"
+        }
+      ]
+    },
+    {
+      "id": "top.forest_hoodie",
+      "name": "Forest zip hoodie",
+      "slot": "top",
+      "collection": "Off duty",
+      "color": "Forest",
+      "layers": [
+        {
+          "file": "layers/top_forest_hoodie_v2.png",
+          "z": 40,
+          "region": "top",
+          "source": "references/avatar-atelier/top-forest-hoodie.png",
+          "sha256": "cd1e8a3e609ff8adee67707104be1803069f38ba834b6b4720c41d29004e2f0e"
+        }
+      ]
+    },
+    {
+      "id": "top.polo",
+      "name": "Knit polo",
+      "slot": "top",
+      "collection": "Smart casual",
+      "color": "Sand",
+      "layers": [
+        {
+          "file": "layers/top_polo_v2.png",
+          "z": 40,
+          "region": "top",
+          "source": "references/avatar-atelier/top-polo.png",
+          "sha256": "febad5accdec7d820a8eba950ebe8b05631b1dfc75bc9936fd19fe7785ce86d2"
+        }
+      ]
+    },
+    {
+      "id": "top.oxford",
+      "name": "Oxford shirt",
+      "slot": "top",
+      "collection": "Smart casual",
+      "color": "Sky blue",
+      "layers": [
+        {
+          "file": "layers/top_oxford_v2.png",
+          "z": 40,
+          "region": "top",
+          "source": "references/avatar-atelier/top-oxford.png",
+          "sha256": "30fea43a5f14f9a6b30deedbd23398824199ed4dda6c64a363e9ccbc93e8d3d7"
+        }
+      ]
+    },
+    {
+      "id": "top.knit",
+      "name": "Ribbed knit",
+      "slot": "top",
+      "collection": "Smart casual",
+      "color": "Charcoal",
+      "layers": [
+        {
+          "file": "layers/top_knit_v2.png",
+          "z": 40,
+          "region": "top",
+          "source": "references/avatar-atelier/top-knit.png",
+          "sha256": "97a84c1f58e80509c4854ab4bf855d28c04a8d35bbecb974b62adb73b86f7b86"
+        }
+      ]
+    },
+    {
+      "id": "jacket.denim",
+      "name": "Denim jacket",
+      "slot": "jacket",
+      "collection": "Layers",
+      "color": "Washed blue",
+      "layers": [
+        {
+          "file": "layers/jacket_denim_v2.png",
+          "z": 42,
+          "region": "jacket",
+          "source": "references/avatar-atelier/jacket-denim.png",
+          "sha256": "d445c1bd65d8780174050546fba8ef3bb2b9de07aeb14584b65e329399156a05",
+          "hide": [
+            "top:top_sleeves"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jacket.bomber",
+      "name": "Black bomber",
+      "slot": "jacket",
+      "collection": "Layers",
+      "color": "Black",
+      "layers": [
+        {
+          "file": "layers/jacket_bomber_v2.png",
+          "z": 42,
+          "region": "jacket",
+          "source": "references/avatar-atelier/jacket-bomber.png",
+          "sha256": "f4ded8ca4356e87051a168e094d84aaf29301ae843fa7a7f6d0ebc720119f34b",
+          "hide": [
+            "top:top_sleeves"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jacket.track",
+      "name": "Track jacket",
+      "slot": "jacket",
+      "collection": "Training",
+      "color": "Black + green",
+      "layers": [
+        {
+          "file": "layers/jacket_track_v2.png",
+          "z": 42,
+          "region": "jacket",
+          "source": "references/avatar-atelier/jacket-track.png",
+          "sha256": "e4301645133c87044700b1da25121e734397a824b5ae6e52e97d57fdf371a838",
+          "hide": [
+            "top:top_sleeves"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bottom.denim",
+      "name": "Indigo straight jeans",
+      "slot": "bottom",
+      "collection": "Essentials",
+      "color": "Indigo",
+      "layers": [
+        {
+          "file": "layers/bottom_denim_v2.png",
+          "z": 32,
+          "region": "bottom",
+          "source": "references/avatar-atelier/bottom-denim.png",
+          "sha256": "cc2cb72f79d44b3c8f44060bda2bb3563db338afa8dd24dc6fb3d491eb444d7e"
+        }
+      ]
+    },
+    {
+      "id": "bottom.black",
+      "name": "Black straight trousers",
+      "slot": "bottom",
+      "collection": "Essentials",
+      "color": "Black",
+      "layers": [
+        {
+          "file": "layers/bottom_black_v2.png",
+          "z": 32,
+          "region": "bottom",
+          "source": "references/avatar-atelier/bottom-black.png",
+          "sha256": "ac9b2bd752d9ed59de9e150cc2adb799cdacbf9ca58b4f9e76eb29d9c92b8fcd"
+        }
+      ]
+    },
+    {
+      "id": "bottom.cargo",
+      "name": "Olive cargos",
+      "slot": "bottom",
+      "collection": "Off duty",
+      "color": "Olive",
+      "layers": [
+        {
+          "file": "layers/bottom_cargo_v2.png",
+          "z": 32,
+          "region": "bottom",
+          "source": "references/avatar-atelier/bottom-cargo.png",
+          "sha256": "e02fec2a6fa3cd36dd17540c99a04f6092114f2783cba59d2902f26e73d9466e"
+        }
+      ]
+    },
+    {
+      "id": "bottom.track",
+      "name": "Graphite track pants",
+      "slot": "bottom",
+      "collection": "Training",
+      "color": "Graphite + mint",
+      "layers": [
+        {
+          "file": "layers/bottom_track_v2.png",
+          "z": 32,
+          "region": "bottom",
+          "source": "references/avatar-atelier/bottom-track.png",
+          "sha256": "ee04d0ccc2dd8c2ca87f50a8da48f9b10a17e35480fdb2ad464777b2b24d70a3"
+        }
+      ]
+    },
+    {
+      "id": "shoes.white",
+      "name": "White low sneakers",
+      "slot": "shoes",
+      "collection": "Essentials",
+      "color": "White",
+      "layers": [
+        {
+          "file": "layers/shoes_white_v2.png",
+          "z": 34,
+          "region": "shoes",
+          "source": "references/avatar-atelier/shoe-white.png",
+          "sha256": "a2cb3bf37b0664bb8524d9b39effd7bab4b34ddb5443600ef00d598392133e6d"
+        }
+      ]
+    },
+    {
+      "id": "shoes.black",
+      "name": "Black low sneakers",
+      "slot": "shoes",
+      "collection": "Essentials",
+      "color": "Black",
+      "layers": [
+        {
+          "file": "layers/shoes_black_v2.png",
+          "z": 34,
+          "region": "shoes",
+          "source": "references/avatar-atelier/shoe-black.png",
+          "sha256": "eefa3bd4c91ebd6bc8ae038d9bfc07d245b0c5c59c600627875483beade4f3ab"
+        }
+      ]
+    },
+    {
+      "id": "hair.textured",
+      "name": "Textured side part",
+      "slot": "hair",
+      "collection": "Short",
+      "color": "Brown",
+      "layers": [
+        {
+          "file": "layers/hair_textured_v2.png",
+          "z": 60,
+          "region": "hair_front",
+          "source": "references/avatar-atelier/hair-textured.png",
+          "sha256": "68c990a390a4e4b33803c6fea74f81e91748545489cd2fbd11b185d639e97602"
+        }
+      ]
+    },
+    {
+      "id": "hair.fluffy",
+      "name": "Fluffy middle part",
+      "slot": "hair",
+      "collection": "Medium",
+      "color": "Dark brown",
+      "layers": [
+        {
+          "file": "layers/hair_fluffy_v2.png",
+          "z": 60,
+          "region": "hair_front",
+          "source": "references/avatar-atelier/hair-fluffy.png",
+          "sha256": "e661a0fb50ef566960cebf0066589784757726b04ee3047451887f347f33d895"
+        }
+      ]
+    },
+    {
+      "id": "hair.crop",
+      "name": "Textured crop",
+      "slot": "hair",
+      "collection": "Short",
+      "color": "Soft black",
+      "layers": [
+        {
+          "file": "layers/hair_crop_v2.png",
+          "z": 60,
+          "region": "hair_front",
+          "source": "references/avatar-atelier/hair-crop.png",
+          "sha256": "460809b50877860d149012960a8d37098eb74bd972bb38deea133f7714cce9c9"
+        }
+      ]
+    },
+    {
+      "id": "hair.curls",
+      "name": "Short curls",
+      "slot": "hair",
+      "collection": "Short",
+      "color": "Espresso",
+      "layers": [
+        {
+          "file": "layers/hair_curls_v2.png",
+          "z": 60,
+          "region": "hair_front",
+          "source": "references/avatar-atelier/hair-curls.png",
+          "sha256": "826200dc856a0260ca14cd9c1b88dc83dc4f34fa98fd7c311b61e8401d0890a5"
+        }
+      ]
+    },
+    {
+      "id": "hair.long",
+      "name": "Long wavy",
+      "slot": "hair",
+      "collection": "Long",
+      "color": "Dark brown",
+      "layers": [
+        {
+          "file": "layers/hair_long_back_v2.png",
+          "z": 10,
+          "region": "hair_back",
+          "source": "references/avatar-atelier/hair-long.png",
+          "sha256": "8ada1dc467522164b2aaa5dcd6f24a22723fe1b84410dfced2651612f55d51e4"
+        },
+        {
+          "file": "layers/hair_long_front_v2.png",
+          "z": 60,
+          "region": "hair_front",
+          "source": "references/avatar-atelier/hair-long.png",
+          "sha256": "d9046bb56e937e796932fbec73e32dfb7d65df62b850269470f440ff4bda13d3"
+        }
+      ]
+    },
+    {
+      "id": "hair.bob",
+      "name": "Soft bob",
+      "slot": "hair",
+      "collection": "Medium",
+      "color": "Chestnut",
+      "layers": [
+        {
+          "file": "layers/hair_bob_back_v2.png",
+          "z": 10,
+          "region": "hair_back",
+          "source": "references/avatar-atelier/hair-bob.png",
+          "sha256": "0b325347c6aa9e2aa3a6cc58f01df1be0d87e95cf76fe666dc4cac06e4c1d9ca"
+        },
+        {
+          "file": "layers/hair_bob_front_v2.png",
+          "z": 60,
+          "region": "hair_front",
+          "source": "references/avatar-atelier/hair-bob.png",
+          "sha256": "9e5312599974ececd40469a9c1f3f45d8fed98de0fda681153387f0eb6485540"
+        }
+      ]
+    },
+    {
+      "id": "hair.braids",
+      "name": "Long braids",
+      "slot": "hair",
+      "collection": "Long",
+      "color": "Black",
+      "layers": [
+        {
+          "file": "layers/hair_braids_back_v2.png",
+          "z": 10,
+          "region": "hair_back",
+          "source": "references/avatar-atelier/hair-braids.png",
+          "sha256": "511498f0ff65bbeb6f00a9c0441b2818cf879cde78791858b7680bacbcfb1f9a"
+        },
+        {
+          "file": "layers/hair_braids_front_v2.png",
+          "z": 60,
+          "region": "hair_front",
+          "source": "references/avatar-atelier/hair-braids.png",
+          "sha256": "f09e0f6531ab61bfbb982528336d6962e5aa2bfcfc4ed45e573ab3f99c5fcac3"
+        }
+      ]
+    },
+    {
+      "id": "eyes.neutral",
+      "name": "Neutral eyes",
+      "slot": "eyes",
+      "collection": "Expression",
+      "color": "Brown",
+      "layers": [
+        {
+          "file": "layers/eyes_neutral_v2.png",
+          "z": 50,
+          "region": "eyes",
+          "source": "references/avatar-atelier/eyes-neutral.png",
+          "sha256": "51cb32747ba1db55364cc71b402779831db326fd939b0cf80bef58ce77141713"
+        }
+      ]
+    },
+    {
+      "id": "eyes.focused",
+      "name": "Focused eyes",
+      "slot": "eyes",
+      "collection": "Expression",
+      "color": "Brown",
+      "layers": [
+        {
+          "file": "layers/eyes_focused_v2.png",
+          "z": 50,
+          "region": "eyes",
+          "source": "references/avatar-atelier/eyes-focused.png",
+          "sha256": "5b4f8b6e0624a054f41488d13343b34124f400e30b6c88dfb45dc2ebcf2861b3"
+        }
+      ]
+    },
+    {
+      "id": "eyes.soft",
+      "name": "Soft eyes",
+      "slot": "eyes",
+      "collection": "Expression",
+      "color": "Brown",
+      "layers": [
+        {
+          "file": "layers/eyes_soft_v2.png",
+          "z": 50,
+          "region": "eyes",
+          "source": "references/avatar-atelier/eyes-soft.png",
+          "sha256": "3d8232fc1bbf03e9344d4fbe07d07eb3d0d7566b4d5498e0e8c2c44a9267090b"
+        }
+      ]
+    },
+    {
+      "id": "eyes.bright",
+      "name": "Bright eyes",
+      "slot": "eyes",
+      "collection": "Expression",
+      "color": "Brown",
+      "layers": [
+        {
+          "file": "layers/eyes_bright_v2.png",
+          "z": 50,
+          "region": "eyes",
+          "source": "references/avatar-atelier/eyes-happy.png",
+          "sha256": "700a17094f45bccff13bcbdc4b713a232b103d895386176c7f52cb4b3f811abb"
+        }
+      ]
+    },
+    {
+      "id": "brows.straight",
+      "name": "Straight brows",
+      "slot": "brows",
+      "collection": "Expression",
+      "color": "Brown",
+      "layers": [
+        {
+          "file": "layers/brows_straight_v2.png",
+          "z": 52,
+          "region": "brows",
+          "source": "references/avatar-atelier/brows-straight.png",
+          "sha256": "1e13a9c87e052673d8e7cf34183e923320504fd9d9ba0f32577f94e7d67e241f"
+        }
+      ]
+    },
+    {
+      "id": "brows.soft",
+      "name": "Soft arch brows",
+      "slot": "brows",
+      "collection": "Expression",
+      "color": "Dark brown",
+      "layers": [
+        {
+          "file": "layers/brows_soft_v2.png",
+          "z": 52,
+          "region": "brows",
+          "source": "references/avatar-atelier/brows-soft.png",
+          "sha256": "50a4f08125246d2339728ce770e62e447af1a497f436fbcecabad8591a26d5c7"
+        }
+      ]
+    },
+    {
+      "id": "brows.thick",
+      "name": "Thick brows",
+      "slot": "brows",
+      "collection": "Expression",
+      "color": "Dark brown",
+      "layers": [
+        {
+          "file": "layers/brows_thick_v2.png",
+          "z": 52,
+          "region": "brows",
+          "source": "references/avatar-atelier/brows-thick.png",
+          "sha256": "d9a4c2ad508b96da990cfdd91645c0673940b26d9a55fc189470b95f982725aa"
+        }
+      ]
+    },
+    {
+      "id": "nose.subtle",
+      "name": "Subtle nose",
+      "slot": "nose",
+      "collection": "Details",
+      "color": "Natural",
+      "layers": [
+        {
+          "file": "layers/nose_subtle_v2.png",
+          "z": 53,
+          "region": "nose",
+          "source": "references/avatar-atelier/quality-reference.png",
+          "sha256": "fae9a03c21a617d3f9411199c4829b30b3361fd1e66301efadaf8fa7a52040ac"
+        }
+      ]
+    },
+    {
+      "id": "mouth.neutral",
+      "name": "Neutral mouth",
+      "slot": "mouth",
+      "collection": "Expression",
+      "color": "Natural",
+      "layers": [
+        {
+          "file": "layers/mouth_neutral_v2.png",
+          "z": 54,
+          "region": "mouth",
+          "source": "references/avatar-atelier/mouth-neutral.png",
+          "sha256": "fcf1454ca3eddd516bfca948d16ab93187ad913d405c9007bd4fc26274b799f5"
+        }
+      ]
+    },
+    {
+      "id": "mouth.smile",
+      "name": "Small smile",
+      "slot": "mouth",
+      "collection": "Expression",
+      "color": "Natural",
+      "layers": [
+        {
+          "file": "layers/mouth_smile_v2.png",
+          "z": 54,
+          "region": "mouth",
+          "source": "references/avatar-atelier/mouth-smile.png",
+          "sha256": "06cbe993519f44077bcd1d977ee120d31bab060828bca2db3b031df8079d1c31"
+        }
+      ]
+    },
+    {
+      "id": "mouth.serious",
+      "name": "Serious mouth",
+      "slot": "mouth",
+      "collection": "Expression",
+      "color": "Natural",
+      "layers": [
+        {
+          "file": "layers/mouth_serious_v2.png",
+          "z": 54,
+          "region": "mouth",
+          "source": "references/avatar-atelier/mouth-serious.png",
+          "sha256": "1aabf886eb7b6059268b5b163dba8cb4d3dacfb7dd3ba4127bbb057a9e07ddb1"
+        }
+      ]
+    },
+    {
+      "id": "ears.rounded",
+      "name": "Rounded ears",
+      "slot": "ears",
+      "collection": "Details",
+      "color": "Skin matched",
+      "layers": [
+        {
+          "file": "layers/ears_rounded_skin_04_v2.png",
+          "z": 22,
+          "region": "ears",
+          "source": "references/avatar-atelier/ears-rounded.png",
+          "sha256": "5f162c775652426a19969a9ec49fc5215e5b558b011d0d1c9c0a4f1a145b011b",
+          "skinVariants": {
+            "skin_01": "layers/ears_rounded_skin_01_v2.png",
+            "skin_02": "layers/ears_rounded_skin_02_v2.png",
+            "skin_03": "layers/ears_rounded_skin_03_v2.png",
+            "skin_04": "layers/ears_rounded_skin_04_v2.png",
+            "skin_05": "layers/ears_rounded_skin_05_v2.png",
+            "skin_06": "layers/ears_rounded_skin_06_v2.png",
+            "skin_07": "layers/ears_rounded_skin_07_v2.png",
+            "skin_08": "layers/ears_rounded_skin_08_v2.png",
+            "skin_09": "layers/ears_rounded_skin_09_v2.png",
+            "skin_10": "layers/ears_rounded_skin_10_v2.png",
+            "skin_11": "layers/ears_rounded_skin_11_v2.png",
+            "skin_12": "layers/ears_rounded_skin_12_v2.png"
+          }
+        }
+      ]
+    },
+    {
+      "id": "earrings.studs",
+      "name": "Silver studs",
+      "slot": "earrings",
+      "collection": "Details",
+      "color": "Silver",
+      "layers": [
+        {
+          "file": "layers/earrings_studs_v2.png",
+          "z": 70,
+          "region": "earrings",
+          "source": "references/avatar-atelier/earrings-studs.png",
+          "sha256": "f490ab18c11b16e9f2e2834a2ead10c0a6f3a43ce77c76cafed49aca96e3a6e6"
+        }
+      ]
+    },
+    {
+      "id": "earrings.hoops",
+      "name": "Gold hoops",
+      "slot": "earrings",
+      "collection": "Details",
+      "color": "Gold",
+      "layers": [
+        {
+          "file": "layers/earrings_hoops_v2.png",
+          "z": 70,
+          "region": "earrings",
+          "source": "references/avatar-atelier/earrings-hoops.png",
+          "sha256": "855e908f42484e1905eeef9ae656370120f9a9339eaa3b9fb23bfd9f6ff5e722"
+        }
+      ]
+    },
+    {
+      "id": "hat.cap",
+      "name": "Classic cap",
+      "slot": "hat",
+      "collection": "Off duty",
+      "color": "Black",
+      "layers": [
+        {
+          "file": "layers/hat_cap_v2.png",
+          "z": 80,
+          "region": "headwear",
+          "source": "references/avatar-atelier/hat-cap.png",
+          "sha256": "1a4b4932eacff1549bf360f577c5fc7759cc5e63ba5ebc884d371e1175eb417b",
+          "hide": [
+            "hair_front:hair_crown",
+            "hair_back:hair_crown"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hat.beanie",
+      "name": "Folded beanie",
+      "slot": "hat",
+      "collection": "Off duty",
+      "color": "Black",
+      "layers": [
+        {
+          "file": "layers/hat_beanie_v2.png",
+          "z": 80,
+          "region": "headwear",
+          "source": "references/avatar-atelier/hat-beanie.png",
+          "sha256": "3a9909af9f3acc1ca56a642bdfec469bd8ae0edc35b82ed867fecafb23fb1dc4",
+          "hide": [
+            "hair_front:hair_crown",
+            "hair_back:hair_crown"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "glasses.round",
+      "name": "Round graphite glasses",
+      "slot": "glasses",
+      "collection": "Details",
+      "color": "Graphite",
+      "layers": [
+        {
+          "file": "layers/glasses_round_v2.png",
+          "z": 72,
+          "region": "glasses",
+          "source": "references/avatar-atelier/glasses-round.png",
+          "sha256": "b008578d3056fd17b05c5d16f7c19937c3274d53aba7a2670cde6ee9f5b8db12"
+        }
+      ]
+    },
+    {
+      "id": "glasses.rect",
+      "name": "Rectangular glasses",
+      "slot": "glasses",
+      "collection": "Details",
+      "color": "Black",
+      "layers": [
+        {
+          "file": "layers/glasses_rect_v2.png",
+          "z": 72,
+          "region": "glasses",
+          "source": "references/avatar-atelier/glasses-rect.png",
+          "sha256": "2511c0cde84808bceef486b5c5e3e6564520ba88449e50824dc3260d06924680"
+        }
+      ]
+    }
+  ],
+  "skins": [
+    {
+      "id": "skin_01",
+      "color": "rgb(244,209,187)",
+      "layer": {
+        "file": "layers/body_skin_01_v2.png",
+        "z": 20,
+        "region": "body",
+        "source": "references/avatar-atelier/body-source.png",
+        "sha256": "feb7920d56a63f59781025201d75736cb0f22fc0aedc6ea705f265c7dd8e5804"
+      }
+    },
+    {
+      "id": "skin_02",
+      "color": "rgb(235,194,167)",
+      "layer": {
+        "file": "layers/body_skin_02_v2.png",
+        "z": 20,
+        "region": "body",
+        "source": "references/avatar-atelier/body-source.png",
+        "sha256": "59236e1db29a20899edf8521d920a5b4ee71bccb0716deb8bb203a019969c964"
+      }
+    },
+    {
+      "id": "skin_03",
+      "color": "rgb(220,174,142)",
+      "layer": {
+        "file": "layers/body_skin_03_v2.png",
+        "z": 20,
+        "region": "body",
+        "source": "references/avatar-atelier/body-source.png",
+        "sha256": "591e912a6087ec36e56bd6f32d3bda249244d97e70fee9807c1c390dc98661a5"
+      }
+    },
+    {
+      "id": "skin_04",
+      "color": "rgb(201,149,114)",
+      "layer": {
+        "file": "layers/body_skin_04_v2.png",
+        "z": 20,
+        "region": "body",
+        "source": "references/avatar-atelier/body-source.png",
+        "sha256": "b1caf90268a980a98d61bfc4021eafa54a05a29f2a779d42fa671c9eca59fd65"
+      }
+    },
+    {
+      "id": "skin_05",
+      "color": "rgb(183,127,91)",
+      "layer": {
+        "file": "layers/body_skin_05_v2.png",
+        "z": 20,
+        "region": "body",
+        "source": "references/avatar-atelier/body-source.png",
+        "sha256": "d120f1a0d5bdcf77eccbbab837ff9d770fc4426f3ac195fccf0f54fdc444313e"
+      }
+    },
+    {
+      "id": "skin_06",
+      "color": "rgb(165,105,73)",
+      "layer": {
+        "file": "layers/body_skin_06_v2.png",
+        "z": 20,
+        "region": "body",
+        "source": "references/avatar-atelier/body-source.png",
+        "sha256": "9075351c992c3549787b62d2e53dc5c43df68b85345c04a1c47011b734df4a7a"
+      }
+    },
+    {
+      "id": "skin_07",
+      "color": "rgb(142,87,61)",
+      "layer": {
+        "file": "layers/body_skin_07_v2.png",
+        "z": 20,
+        "region": "body",
+        "source": "references/avatar-atelier/body-source.png",
+        "sha256": "21ff692f3bb049e06bf6380ae91ad3a30400cf19fa82db12087f1b3164a58207"
+      }
+    },
+    {
+      "id": "skin_08",
+      "color": "rgb(119,70,48)",
+      "layer": {
+        "file": "layers/body_skin_08_v2.png",
+        "z": 20,
+        "region": "body",
+        "source": "references/avatar-atelier/body-source.png",
+        "sha256": "784ec4c71692a158f065c6b5821306a35e1d2a49f7886d08fd906cd5bc434cd4"
+      }
+    },
+    {
+      "id": "skin_09",
+      "color": "rgb(96,55,41)",
+      "layer": {
+        "file": "layers/body_skin_09_v2.png",
+        "z": 20,
+        "region": "body",
+        "source": "references/avatar-atelier/body-source.png",
+        "sha256": "f905078b3d28bd0f5bca670907bb4e444723c1123c89546f964c9d9d0183cc1e"
+      }
+    },
+    {
+      "id": "skin_10",
+      "color": "rgb(76,43,33)",
+      "layer": {
+        "file": "layers/body_skin_10_v2.png",
+        "z": 20,
+        "region": "body",
+        "source": "references/avatar-atelier/body-source.png",
+        "sha256": "b85d6930485a92b0e89d239026994890f788a60a1d8679e7418341c936e49dbe"
+      }
+    },
+    {
+      "id": "skin_11",
+      "color": "rgb(58,34,26)",
+      "layer": {
+        "file": "layers/body_skin_11_v2.png",
+        "z": 20,
+        "region": "body",
+        "source": "references/avatar-atelier/body-source.png",
+        "sha256": "f83d1ea2c9dde55ece2eb58d5695bb4ab158c67a8585c96b84774956b3d99d6b"
+      }
+    },
+    {
+      "id": "skin_12",
+      "color": "rgb(42,25,20)",
+      "layer": {
+        "file": "layers/body_skin_12_v2.png",
+        "z": 20,
+        "region": "body",
+        "source": "references/avatar-atelier/body-source.png",
+        "sha256": "3cf4088a84e55ab8ea564718dc158d001d7a44c47aacec67103317424e623757"
+      }
+    }
+  ],
+  "regions": {
+    "body": [
+      42,
+      7,
+      44,
+      115
+    ],
+    "ears": [
+      52,
+      16,
+      24,
+      10
+    ],
+    "eyes": [
+      56,
+      18,
+      16,
+      4
+    ],
+    "brows": [
+      56,
+      16,
+      16,
+      2
+    ],
+    "nose": [
+      62,
+      20,
+      4,
+      3
+    ],
+    "mouth": [
+      60,
+      24,
+      8,
+      4
+    ],
+    "hair_front": [
+      47,
+      0,
+      34,
+      59
+    ],
+    "hair_back": [
+      47,
+      0,
+      34,
+      59
+    ],
+    "top": [
+      41,
+      27,
+      46,
+      45
+    ],
+    "jacket": [
+      40,
+      26,
+      48,
+      47
+    ],
+    "bottom": [
+      49,
+      59,
+      30,
+      60
+    ],
+    "shoes": [
+      46,
+      110,
+      36,
+      13
+    ],
+    "headwear": [
+      49,
+      1,
+      30,
+      19
+    ],
+    "glasses": [
+      53,
+      18,
+      22,
+      8
+    ],
+    "earrings": [
+      52,
+      21,
+      24,
+      7
+    ]
+  },
+  "masks": {
+    "hair_crown": "masks/hair_crown_v2.png",
+    "top_sleeves": "masks/top_sleeves_v2.png"
+  },
+  "sources": {
+    "body-source": "references/avatar-atelier/body-source.png",
+    "top-navy": "references/avatar-atelier/top-navy.png",
+    "top-quarter": "references/avatar-atelier/top-quarter.png",
+    "top-white-tee": "references/avatar-atelier/top-white-tee.png",
+    "top-hoodie": "references/avatar-atelier/top-hoodie.png",
+    "top-forest-hoodie": "references/avatar-atelier/top-forest-hoodie.png",
+    "top-polo": "references/avatar-atelier/top-polo.png",
+    "top-oxford": "references/avatar-atelier/top-oxford.png",
+    "top-knit": "references/avatar-atelier/top-knit.png",
+    "jacket-denim": "references/avatar-atelier/jacket-denim.png",
+    "jacket-bomber": "references/avatar-atelier/jacket-bomber.png",
+    "jacket-track": "references/avatar-atelier/jacket-track.png",
+    "bottom-denim": "references/avatar-atelier/bottom-denim.png",
+    "bottom-black": "references/avatar-atelier/bottom-black.png",
+    "bottom-cargo": "references/avatar-atelier/bottom-cargo.png",
+    "bottom-track": "references/avatar-atelier/bottom-track.png",
+    "shoe-white": "references/avatar-atelier/shoe-white.png",
+    "shoe-black": "references/avatar-atelier/shoe-black.png",
+    "hair-textured": "references/avatar-atelier/hair-textured.png",
+    "hair-fluffy": "references/avatar-atelier/hair-fluffy.png",
+    "hair-crop": "references/avatar-atelier/hair-crop.png",
+    "hair-curls": "references/avatar-atelier/hair-curls.png",
+    "hair-long": "references/avatar-atelier/hair-long.png",
+    "hair-bob": "references/avatar-atelier/hair-bob.png",
+    "hair-braids": "references/avatar-atelier/hair-braids.png",
+    "eyes-neutral": "references/avatar-atelier/eyes-neutral.png",
+    "eyes-focused": "references/avatar-atelier/eyes-focused.png",
+    "eyes-soft": "references/avatar-atelier/eyes-soft.png",
+    "eyes-happy": "references/avatar-atelier/eyes-happy.png",
+    "brows-straight": "references/avatar-atelier/brows-straight.png",
+    "brows-soft": "references/avatar-atelier/brows-soft.png",
+    "brows-thick": "references/avatar-atelier/brows-thick.png",
+    "quality-reference": "references/avatar-atelier/quality-reference.png",
+    "mouth-neutral": "references/avatar-atelier/mouth-neutral.png",
+    "mouth-smile": "references/avatar-atelier/mouth-smile.png",
+    "mouth-serious": "references/avatar-atelier/mouth-serious.png",
+    "ears-rounded": "references/avatar-atelier/ears-rounded.png",
+    "earrings-studs": "references/avatar-atelier/earrings-studs.png",
+    "earrings-hoops": "references/avatar-atelier/earrings-hoops.png",
+    "hat-cap": "references/avatar-atelier/hat-cap.png",
+    "hat-beanie": "references/avatar-atelier/hat-beanie.png",
+    "glasses-round": "references/avatar-atelier/glasses-round.png",
+    "glasses-rect": "references/avatar-atelier/glasses-rect.png"
+  },
+  "pictureHashes": {
+    "references/avatar-atelier/body-source.png": "89a4c000d0495dea0e5da7d82b9eabd5e42ab9b2a3671936c33d06e07d341211",
+    "references/avatar-atelier/top-navy.png": "b26250ffdaf0384686955be2ba5f802b0539e3763d27cc3344e19c2ca71c8e36",
+    "references/avatar-atelier/top-quarter.png": "94051e8222c471fe56aa7c4708fda818373aa9bcc17183dddae27d81e1f4d363",
+    "references/avatar-atelier/top-white-tee.png": "f3a73452ca0efc13f7a135159777b968cabe427f9a06def0959f09406703085a",
+    "references/avatar-atelier/top-hoodie.png": "f2b1e597cf5ad3b9ce41d88ff210229bfce2992f2447267fb02f7b910834cfd3",
+    "references/avatar-atelier/top-forest-hoodie.png": "4a3140e0fa3ff6996637996b3e711c46469e7bce96f0d6574297bfc3974b6a79",
+    "references/avatar-atelier/top-polo.png": "8110cc9c45a466a6739a95183a7c216ff9e00b753425436cbd8c7816e3027b7d",
+    "references/avatar-atelier/top-oxford.png": "5f33c1359b97b93f53287fcfb38942d16bd8c019217f13d8b08448bd3e85f680",
+    "references/avatar-atelier/top-knit.png": "47ac5c0a40d996fd0b28e5ca499f5ef30a65de17f11cd9a55de0b689778c74c9",
+    "references/avatar-atelier/jacket-denim.png": "6853083c75579c472118a3e5a76fc27c02ed675d5d5d01bdec753e81dda6988a",
+    "references/avatar-atelier/jacket-bomber.png": "c4295aba29e366097819cf89331f76de0dbef739a4b29b756dfbb670a8d9f489",
+    "references/avatar-atelier/jacket-track.png": "599512be85509382a6a21061b463000b9b45f2add1bf895dc43f13d5320982ff",
+    "references/avatar-atelier/bottom-denim.png": "3a6c0aa76def70bf47f65038815a6a89a0b20b232c71a0ef448a8196b35e7edb",
+    "references/avatar-atelier/bottom-black.png": "dcd81e5437bc986cc0874b69cdbc76485edebd00e28a96c9874d7a9a8bd1448e",
+    "references/avatar-atelier/bottom-cargo.png": "dd384688beb127fe867bd9e17d5cdb8022e42a3c767d0d1577e152762132f32d",
+    "references/avatar-atelier/bottom-track.png": "d3637503013e75fba12dd477b70a2599d7ce60824eb65bd086de2e8695d9b025",
+    "references/avatar-atelier/shoe-white.png": "cc4e75589a41fb8352caa4b1c91a0a59fb0a11d0cc1daf33438812bd16af737b",
+    "references/avatar-atelier/shoe-black.png": "01a18e4943f1ceca731a1ba4a47c4524292f92bffd00189b5fbce4e18ac6e360",
+    "references/avatar-atelier/hair-textured.png": "b0c2ed8eb30601e0af1ceae5b46dc6684c992ad04881e27a817219adb0d93cec",
+    "references/avatar-atelier/hair-fluffy.png": "0dbc9841d8c0587539b6e347a30f02dd01416b61508b7422c63b33a76574f767",
+    "references/avatar-atelier/hair-crop.png": "41c43148a2e616a6cd73a1292cae18541ebd9818a3b0cb8a9d12ae0c6cf85229",
+    "references/avatar-atelier/hair-curls.png": "1af2452144eb42f5626aba0cd1f7a77b6b8bc5d8113127a5b115ecc89aed6011",
+    "references/avatar-atelier/hair-long.png": "81e2f0a1bff7dd5cbde136fb5037d1542a5a67d4e29ddd8b5211f2a4f92cf00c",
+    "references/avatar-atelier/hair-bob.png": "8d83ccc7b88f5bebc6f2e2e22420426c389b0aec3632580b08a5fe682c79a22d",
+    "references/avatar-atelier/hair-braids.png": "8daffb2adcc3cd91552d2aeb3e3e3a8f4d2fd1f5731bab81f16e72523b471598",
+    "references/avatar-atelier/eyes-neutral.png": "059dcc75b5ab291cf7b07c827f565d593e86320fb9fbed7e68e7530737fa3b28",
+    "references/avatar-atelier/eyes-focused.png": "fd52a01a8a3a19dde22548dfaca17d1428bdc4e320431550349827ce9fc210ff",
+    "references/avatar-atelier/eyes-soft.png": "0d00c57cafe905f6bdda67dd2310e220c928aadabb0ab6f6b8aa874315f85957",
+    "references/avatar-atelier/eyes-happy.png": "959a7b646e51218b880a4a40c209d56aa62534b97cfffd5d9608a854980da5d3",
+    "references/avatar-atelier/brows-straight.png": "2d74579dab3c14984120f8f66c6d19738fc956b189faf42400823ac18814a9bb",
+    "references/avatar-atelier/brows-soft.png": "4d6c71b1a772dea1a714869af1b23e39b029aea0e0e286b2ac9f4e3fc0b7d6b5",
+    "references/avatar-atelier/brows-thick.png": "43e6d7261d0f365184ab51b1e0b6bcb2b3b5a199faa33fe8610f4e6622c8aff9",
+    "references/avatar-atelier/quality-reference.png": "797766b58ca17a156fefb23600dc3c3cf85b13b4bf9737f4df54b45c3a4759b1",
+    "references/avatar-atelier/mouth-neutral.png": "3fbc92f869dd0d9e64f0dd487fe14dbab71ee325bd4ccb013ba0dd2b830dcb2d",
+    "references/avatar-atelier/mouth-smile.png": "1dce3f8b5eb974ae0ab3d7da846135f07aa45a1aceb3ff7408458a05c6793360",
+    "references/avatar-atelier/mouth-serious.png": "631ea43e7f955283409a59b44fb3625ffd137d3531a6bf66b01447f70daf525b",
+    "references/avatar-atelier/ears-rounded.png": "624ed0c65d007b7937489375b9f991431d4bbb4be96faaf6b6da205233d455b4",
+    "references/avatar-atelier/earrings-studs.png": "82ef20e22a91d3db46913cbecb344fcd71f8f7dd12d659718b73614749271baf",
+    "references/avatar-atelier/earrings-hoops.png": "157c086b418939e7a2f80f87640765a1d57bb7c434c30a3daa259c026c8a2757",
+    "references/avatar-atelier/hat-cap.png": "bea76be91f763067762e71a8f14f7b0de88ba69822623ea577df54a4f52df2d8",
+    "references/avatar-atelier/hat-beanie.png": "418339c6c847bc8e27f84210d564844f97dc6c9e74be2b1b7fbc5fd6205aa9ba",
+    "references/avatar-atelier/glasses-round.png": "8da6928d2c9281e887923255ecbae214f52a216959e6325f503b80c6d55ed7d8",
+    "references/avatar-atelier/glasses-rect.png": "24142edb6fee936993b36f100b4f339843f619362f91a7c1d59dc0edb607e599"
+  }
+}

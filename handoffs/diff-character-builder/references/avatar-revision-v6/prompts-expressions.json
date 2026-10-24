@@ -1,0 +1,19 @@
+{
+  "mode": "built-in image_gen",
+  "jobs": [
+    {
+      "id": "face-friendly",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: precise-object-edit. Edit ONLY this pixel character's facial expression to be gently friendly, with subtly softened upper eyelids, gently relaxed brows, a small closed smile; keep mouth tiny and avoid a cartoon grin. Keep EXACTLY the tiny eye sizes, eye spacing, eye line, nose size and position, lip position, head shape, chin, ears, skin color, hair, neck, body, clothes, shoes, pose, canvas framing and pixel density of the supplied master. Pupils remain small dark brown with tiny white corners. All features remain separable pixel clusters with clean skin in between. No enlarged eyes, no makeup, no facial hair or new details, no labels. Return the same full-body image with only the subtle expression edit. We will extract the eyes, brows, nose and mouth independently; nothing else should change."
+    },
+    {
+      "id": "face-focused",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: precise-object-edit. Edit ONLY this pixel character's facial expression to be quietly focused, with slightly straighter upper eyelids, gently lowered brows, a small neutral serious mouth; do not make it angry or intimidating. Keep EXACTLY the tiny eye sizes, eye spacing, eye line, nose size and position, lip position, head shape, chin, ears, skin color, hair, neck, body, clothes, shoes, pose, canvas framing and pixel density of the supplied master. Pupils remain small dark brown with tiny white corners. All features remain separable pixel clusters with clean skin in between. No enlarged eyes, no makeup, no facial hair or new details, no labels. Return the same full-body image with only the subtle expression edit. We will extract the eyes, brows, nose and mouth independently; nothing else should change."
+    }
+  ]
+}

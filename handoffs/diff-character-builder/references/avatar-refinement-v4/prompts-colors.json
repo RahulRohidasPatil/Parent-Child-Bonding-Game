@@ -1,0 +1,22 @@
+[
+  {
+    "id": "dark-brown",
+    "prompt": "Use case: precise-object-edit. Change ONLY the blue iris pixels in this eye-pair sprite to deep natural dark brown. Preserve every white eye corner, gray highlight, dark pupil, eyelid and the exact silhouette, eye spacing, pixel grid and source canvas. Do not enlarge or move anything, do not recolor the dark pupils or the whites. Keep the restrained natural contrast of a tiny pixel avatar. Output real transparent RGBA PNG around the eyes, no checkerboard."
+  },
+  {
+    "id": "brown",
+    "prompt": "Use case: precise-object-edit. Change ONLY the blue iris pixels in this eye-pair sprite to warm medium brown. Preserve every white eye corner, gray highlight, dark pupil, eyelid and the exact silhouette, eye spacing, pixel grid and source canvas. Do not enlarge or move anything, do not recolor the dark pupils or the whites. Keep the restrained natural contrast of a tiny pixel avatar. Output real transparent RGBA PNG around the eyes, no checkerboard."
+  },
+  {
+    "id": "hazel",
+    "prompt": "Use case: precise-object-edit. Change ONLY the blue iris pixels in this eye-pair sprite to muted golden olive hazel. Preserve every white eye corner, gray highlight, dark pupil, eyelid and the exact silhouette, eye spacing, pixel grid and source canvas. Do not enlarge or move anything, do not recolor the dark pupils or the whites. Keep the restrained natural contrast of a tiny pixel avatar. Output real transparent RGBA PNG around the eyes, no checkerboard."
+  },
+  {
+    "id": "green",
+    "prompt": "Use case: precise-object-edit. Change ONLY the blue iris pixels in this eye-pair sprite to natural muted forest green. Preserve every white eye corner, gray highlight, dark pupil, eyelid and the exact silhouette, eye spacing, pixel grid and source canvas. Do not enlarge or move anything, do not recolor the dark pupils or the whites. Keep the restrained natural contrast of a tiny pixel avatar. Output real transparent RGBA PNG around the eyes, no checkerboard."
+  },
+  {
+    "id": "gray",
+    "prompt": "Use case: precise-object-edit. Change ONLY the blue iris pixels in this eye-pair sprite to natural cool gray. Preserve every white eye corner, gray highlight, dark pupil, eyelid and the exact silhouette, eye spacing, pixel grid and source canvas. Do not enlarge or move anything, do not recolor the dark pupils or the whites. Keep the restrained natural contrast of a tiny pixel avatar. Output real transparent RGBA PNG around the eyes, no checkerboard."
+  }
+]

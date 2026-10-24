@@ -1,0 +1,325 @@
+{
+  "mode": "built-in image_gen",
+  "jobs": [
+    {
+      "id": "hair.buzz",
+      "name": "Buzz cut",
+      "group": "Short",
+      "guide": {
+        "width": 24,
+        "y": 4,
+        "height": 17
+      },
+      "source": "buzz.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png",
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: one modular pixel-avatar hair sprite. Input 1 is the approved visual style and proportions; input 2 is the blank head registration reference. Create ONLY a very close buzz cut, short dense velvety cropped hair following the skull, clean rounded front edge. Hair is medium neutral brown, with dark brown outlines, broad readable pixel clusters and 3\u20135 restrained tonal values. Front-facing and upright, no perspective or side view. The scalp is the same compact slightly oversized head as the references. Leave a clear face opening: no fringe below the eyebrows, no eyes, eyebrows, nose, mouth, skin, ears, neck, body, clothes or accessories anywhere. Keep a recognizable silhouette and intentional coarse pixel design, not fine realistic strands. Show the full crown and short side sections with an empty face opening below. Center the complete hair on a square canvas, with generous transparent padding and no clipping. True transparent RGBA background, including the face opening; no checkerboard, labels, borders, scenery or presentation layout. One hairstyle only. The output will be normalized to a locked 128\u00d7128 rig, so visual proportions must follow the supplied character closely."
+    },
+    {
+      "id": "hair.crew_cut",
+      "name": "Crew cut",
+      "group": "Short",
+      "guide": {
+        "width": 28,
+        "y": 3,
+        "height": 19
+      },
+      "source": "crew_cut.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png",
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: one modular pixel-avatar hair sprite. Input 1 is the approved visual style and proportions; input 2 is the blank head registration reference. Create ONLY a neat crew cut with a short flat textured top and tapered compact sides. Hair is medium neutral brown, with dark brown outlines, broad readable pixel clusters and 3\u20135 restrained tonal values. Front-facing and upright, no perspective or side view. The scalp is the same compact slightly oversized head as the references. Leave a clear face opening: no fringe below the eyebrows, no eyes, eyebrows, nose, mouth, skin, ears, neck, body, clothes or accessories anywhere. Keep a recognizable silhouette and intentional coarse pixel design, not fine realistic strands. Show the full crown and short side sections with an empty face opening below. Center the complete hair on a square canvas, with generous transparent padding and no clipping. True transparent RGBA background, including the face opening; no checkerboard, labels, borders, scenery or presentation layout. One hairstyle only. The output will be normalized to a locked 128\u00d7128 rig, so visual proportions must follow the supplied character closely."
+    },
+    {
+      "id": "hair.french_crop",
+      "name": "French crop",
+      "group": "Short",
+      "guide": {
+        "width": 30,
+        "y": 2,
+        "height": 20
+      },
+      "source": "french_crop.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png",
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: one modular pixel-avatar hair sprite. Input 1 is the approved visual style and proportions; input 2 is the blank head registration reference. Create ONLY a French crop with a compact textured top and a short straight blunt fringe, clearly distinct from a spiky crop. Hair is medium neutral brown, with dark brown outlines, broad readable pixel clusters and 3\u20135 restrained tonal values. Front-facing and upright, no perspective or side view. The scalp is the same compact slightly oversized head as the references. Leave a clear face opening: no fringe below the eyebrows, no eyes, eyebrows, nose, mouth, skin, ears, neck, body, clothes or accessories anywhere. Keep a recognizable silhouette and intentional coarse pixel design, not fine realistic strands. Show the full crown and short side sections with an empty face opening below. Center the complete hair on a square canvas, with generous transparent padding and no clipping. True transparent RGBA background, including the face opening; no checkerboard, labels, borders, scenery or presentation layout. One hairstyle only. The output will be normalized to a locked 128\u00d7128 rig, so visual proportions must follow the supplied character closely."
+    },
+    {
+      "id": "hair.side_part",
+      "name": "Classic side part",
+      "group": "Short",
+      "guide": {
+        "width": 30,
+        "y": 2,
+        "height": 20
+      },
+      "source": "side_part.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png",
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: one modular pixel-avatar hair sprite. Input 1 is the approved visual style and proportions; input 2 is the blank head registration reference. Create ONLY a neat classic side part combed to one side with a clean diagonal part and low tapered sides. Hair is medium neutral brown, with dark brown outlines, broad readable pixel clusters and 3\u20135 restrained tonal values. Front-facing and upright, no perspective or side view. The scalp is the same compact slightly oversized head as the references. Leave a clear face opening: no fringe below the eyebrows, no eyes, eyebrows, nose, mouth, skin, ears, neck, body, clothes or accessories anywhere. Keep a recognizable silhouette and intentional coarse pixel design, not fine realistic strands. Show the full crown and short side sections with an empty face opening below. Center the complete hair on a square canvas, with generous transparent padding and no clipping. True transparent RGBA background, including the face opening; no checkerboard, labels, borders, scenery or presentation layout. One hairstyle only. The output will be normalized to a locked 128\u00d7128 rig, so visual proportions must follow the supplied character closely."
+    },
+    {
+      "id": "hair.quiff",
+      "name": "Soft quiff",
+      "group": "Short",
+      "guide": {
+        "width": 31,
+        "y": 1,
+        "height": 21
+      },
+      "source": "quiff.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png",
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: one modular pixel-avatar hair sprite. Input 1 is the approved visual style and proportions; input 2 is the blank head registration reference. Create ONLY a soft lifted quiff with one broad swept-up front wave and short tidy sides. Hair is medium neutral brown, with dark brown outlines, broad readable pixel clusters and 3\u20135 restrained tonal values. Front-facing and upright, no perspective or side view. The scalp is the same compact slightly oversized head as the references. Leave a clear face opening: no fringe below the eyebrows, no eyes, eyebrows, nose, mouth, skin, ears, neck, body, clothes or accessories anywhere. Keep a recognizable silhouette and intentional coarse pixel design, not fine realistic strands. Show the full crown and short side sections with an empty face opening below. Center the complete hair on a square canvas, with generous transparent padding and no clipping. True transparent RGBA background, including the face opening; no checkerboard, labels, borders, scenery or presentation layout. One hairstyle only. The output will be normalized to a locked 128\u00d7128 rig, so visual proportions must follow the supplied character closely."
+    },
+    {
+      "id": "hair.pompadour",
+      "name": "Pompadour",
+      "group": "Short",
+      "guide": {
+        "width": 31,
+        "y": 0,
+        "height": 22
+      },
+      "source": "pompadour.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png",
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: one modular pixel-avatar hair sprite. Input 1 is the approved visual style and proportions; input 2 is the blank head registration reference. Create ONLY a sculpted pompadour, smooth raised swept-back front volume with restrained curved strand clusters. Hair is medium neutral brown, with dark brown outlines, broad readable pixel clusters and 3\u20135 restrained tonal values. Front-facing and upright, no perspective or side view. The scalp is the same compact slightly oversized head as the references. Leave a clear face opening: no fringe below the eyebrows, no eyes, eyebrows, nose, mouth, skin, ears, neck, body, clothes or accessories anywhere. Keep a recognizable silhouette and intentional coarse pixel design, not fine realistic strands. Show the full crown and short side sections with an empty face opening below. Center the complete hair on a square canvas, with generous transparent padding and no clipping. True transparent RGBA background, including the face opening; no checkerboard, labels, borders, scenery or presentation layout. One hairstyle only. The output will be normalized to a locked 128\u00d7128 rig, so visual proportions must follow the supplied character closely."
+    },
+    {
+      "id": "hair.spiky",
+      "name": "Spiky short",
+      "group": "Short",
+      "guide": {
+        "width": 32,
+        "y": 0,
+        "height": 22
+      },
+      "source": "spiky.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png",
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: one modular pixel-avatar hair sprite. Input 1 is the approved visual style and proportions; input 2 is the blank head registration reference. Create ONLY a short deliberately spiky cut with five or six readable chunky upward points and short sides. Hair is medium neutral brown, with dark brown outlines, broad readable pixel clusters and 3\u20135 restrained tonal values. Front-facing and upright, no perspective or side view. The scalp is the same compact slightly oversized head as the references. Leave a clear face opening: no fringe below the eyebrows, no eyes, eyebrows, nose, mouth, skin, ears, neck, body, clothes or accessories anywhere. Keep a recognizable silhouette and intentional coarse pixel design, not fine realistic strands. Show the full crown and short side sections with an empty face opening below. Center the complete hair on a square canvas, with generous transparent padding and no clipping. True transparent RGBA background, including the face opening; no checkerboard, labels, borders, scenery or presentation layout. One hairstyle only. The output will be normalized to a locked 128\u00d7128 rig, so visual proportions must follow the supplied character closely."
+    },
+    {
+      "id": "hair.short_waves",
+      "name": "Short waves",
+      "group": "Short",
+      "guide": {
+        "width": 31,
+        "y": 2,
+        "height": 20
+      },
+      "source": "short_waves.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png",
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: one modular pixel-avatar hair sprite. Input 1 is the approved visual style and proportions; input 2 is the blank head registration reference. Create ONLY short close wavy hair with broad subtle S-shaped wave clusters and a soft irregular fringe. Hair is medium neutral brown, with dark brown outlines, broad readable pixel clusters and 3\u20135 restrained tonal values. Front-facing and upright, no perspective or side view. The scalp is the same compact slightly oversized head as the references. Leave a clear face opening: no fringe below the eyebrows, no eyes, eyebrows, nose, mouth, skin, ears, neck, body, clothes or accessories anywhere. Keep a recognizable silhouette and intentional coarse pixel design, not fine realistic strands. Show the full crown and short side sections with an empty face opening below. Center the complete hair on a square canvas, with generous transparent padding and no clipping. True transparent RGBA background, including the face opening; no checkerboard, labels, borders, scenery or presentation layout. One hairstyle only. The output will be normalized to a locked 128\u00d7128 rig, so visual proportions must follow the supplied character closely."
+    },
+    {
+      "id": "hair.afro",
+      "name": "Rounded afro",
+      "group": "Short",
+      "guide": {
+        "width": 38,
+        "y": 0,
+        "height": 26
+      },
+      "source": "afro.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png",
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: one modular pixel-avatar hair sprite. Input 1 is the approved visual style and proportions; input 2 is the blank head registration reference. Create ONLY a rounded natural afro, broad compact cloud silhouette with dense deliberate curl clusters, symmetric but organic. Hair is medium neutral brown, with dark brown outlines, broad readable pixel clusters and 3\u20135 restrained tonal values. Front-facing and upright, no perspective or side view. The scalp is the same compact slightly oversized head as the references. Leave a clear face opening: no fringe below the eyebrows, no eyes, eyebrows, nose, mouth, skin, ears, neck, body, clothes or accessories anywhere. Keep a recognizable silhouette and intentional coarse pixel design, not fine realistic strands. Show the full crown and short side sections with an empty face opening below. Center the complete hair on a square canvas, with generous transparent padding and no clipping. True transparent RGBA background, including the face opening; no checkerboard, labels, borders, scenery or presentation layout. One hairstyle only. The output will be normalized to a locked 128\u00d7128 rig, so visual proportions must follow the supplied character closely."
+    },
+    {
+      "id": "hair.coils",
+      "name": "Close coils",
+      "group": "Short",
+      "guide": {
+        "width": 30,
+        "y": 2,
+        "height": 21
+      },
+      "source": "coils.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png",
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: one modular pixel-avatar hair sprite. Input 1 is the approved visual style and proportions; input 2 is the blank head registration reference. Create ONLY a close tightly coiled crop with small readable rounded coil clusters and a clean low silhouette. Hair is medium neutral brown, with dark brown outlines, broad readable pixel clusters and 3\u20135 restrained tonal values. Front-facing and upright, no perspective or side view. The scalp is the same compact slightly oversized head as the references. Leave a clear face opening: no fringe below the eyebrows, no eyes, eyebrows, nose, mouth, skin, ears, neck, body, clothes or accessories anywhere. Keep a recognizable silhouette and intentional coarse pixel design, not fine realistic strands. Show the full crown and short side sections with an empty face opening below. Center the complete hair on a square canvas, with generous transparent padding and no clipping. True transparent RGBA background, including the face opening; no checkerboard, labels, borders, scenery or presentation layout. One hairstyle only. The output will be normalized to a locked 128\u00d7128 rig, so visual proportions must follow the supplied character closely."
+    },
+    {
+      "id": "hair.tapered_curls",
+      "name": "Tapered curls",
+      "group": "Short",
+      "guide": {
+        "width": 33,
+        "y": 1,
+        "height": 23
+      },
+      "source": "tapered_curls.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png",
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: one modular pixel-avatar hair sprite. Input 1 is the approved visual style and proportions; input 2 is the blank head registration reference. Create ONLY a tapered curly high top with compact sides, a rounded crown and well separated springy curl clumps. Hair is medium neutral brown, with dark brown outlines, broad readable pixel clusters and 3\u20135 restrained tonal values. Front-facing and upright, no perspective or side view. The scalp is the same compact slightly oversized head as the references. Leave a clear face opening: no fringe below the eyebrows, no eyes, eyebrows, nose, mouth, skin, ears, neck, body, clothes or accessories anywhere. Keep a recognizable silhouette and intentional coarse pixel design, not fine realistic strands. Show the full crown and short side sections with an empty face opening below. Center the complete hair on a square canvas, with generous transparent padding and no clipping. True transparent RGBA background, including the face opening; no checkerboard, labels, borders, scenery or presentation layout. One hairstyle only. The output will be normalized to a locked 128\u00d7128 rig, so visual proportions must follow the supplied character closely."
+    },
+    {
+      "id": "hair.curtains",
+      "name": "Straight curtains",
+      "group": "Medium",
+      "guide": {
+        "width": 32,
+        "y": 2,
+        "height": 31
+      },
+      "source": "curtains.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png",
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: one modular pixel-avatar hair sprite. Input 1 is the approved visual style and proportions; input 2 is the blank head registration reference. Create ONLY medium straight curtains with a crisp central part, smooth falling sides and distinct curved curtain tips. Hair is medium neutral brown, with dark brown outlines, broad readable pixel clusters and 3\u20135 restrained tonal values. Front-facing and upright, no perspective or side view. The scalp is the same compact slightly oversized head as the references. Leave a clear face opening: no fringe below the eyebrows, no eyes, eyebrows, nose, mouth, skin, ears, neck, body, clothes or accessories anywhere. Keep a recognizable silhouette and intentional coarse pixel design, not fine realistic strands. Show the full hairstyle including all back lengths or gathered sections, with an empty face opening, so we can separate front and back layers. Center the complete hair on a square canvas, with generous transparent padding and no clipping. True transparent RGBA background, including the face opening; no checkerboard, labels, borders, scenery or presentation layout. One hairstyle only. The output will be normalized to a locked 128\u00d7128 rig, so visual proportions must follow the supplied character closely."
+    },
+    {
+      "id": "hair.shag",
+      "name": "Layered shag",
+      "group": "Medium",
+      "guide": {
+        "width": 34,
+        "y": 1,
+        "height": 36
+      },
+      "source": "shag.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png",
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: one modular pixel-avatar hair sprite. Input 1 is the approved visual style and proportions; input 2 is the blank head registration reference. Create ONLY a medium layered shag with feathered outward ends and uneven textured side layers, eyebrows kept clear. Hair is medium neutral brown, with dark brown outlines, broad readable pixel clusters and 3\u20135 restrained tonal values. Front-facing and upright, no perspective or side view. The scalp is the same compact slightly oversized head as the references. Leave a clear face opening: no fringe below the eyebrows, no eyes, eyebrows, nose, mouth, skin, ears, neck, body, clothes or accessories anywhere. Keep a recognizable silhouette and intentional coarse pixel design, not fine realistic strands. Show the full hairstyle including all back lengths or gathered sections, with an empty face opening, so we can separate front and back layers. Center the complete hair on a square canvas, with generous transparent padding and no clipping. True transparent RGBA background, including the face opening; no checkerboard, labels, borders, scenery or presentation layout. One hairstyle only. The output will be normalized to a locked 128\u00d7128 rig, so visual proportions must follow the supplied character closely."
+    },
+    {
+      "id": "hair.wolf_cut",
+      "name": "Wolf cut",
+      "group": "Medium",
+      "guide": {
+        "width": 34,
+        "y": 1,
+        "height": 39
+      },
+      "source": "wolf_cut.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png",
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: one modular pixel-avatar hair sprite. Input 1 is the approved visual style and proportions; input 2 is the blank head registration reference. Create ONLY a medium wolf cut with a compact tousled crown and stepped longer side and back layers. Hair is medium neutral brown, with dark brown outlines, broad readable pixel clusters and 3\u20135 restrained tonal values. Front-facing and upright, no perspective or side view. The scalp is the same compact slightly oversized head as the references. Leave a clear face opening: no fringe below the eyebrows, no eyes, eyebrows, nose, mouth, skin, ears, neck, body, clothes or accessories anywhere. Keep a recognizable silhouette and intentional coarse pixel design, not fine realistic strands. Show the full hairstyle including all back lengths or gathered sections, with an empty face opening, so we can separate front and back layers. Center the complete hair on a square canvas, with generous transparent padding and no clipping. True transparent RGBA background, including the face opening; no checkerboard, labels, borders, scenery or presentation layout. One hairstyle only. The output will be normalized to a locked 128\u00d7128 rig, so visual proportions must follow the supplied character closely."
+    },
+    {
+      "id": "hair.mullet",
+      "name": "Soft mullet",
+      "group": "Medium",
+      "guide": {
+        "width": 32,
+        "y": 2,
+        "height": 38
+      },
+      "source": "mullet.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png",
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: one modular pixel-avatar hair sprite. Input 1 is the approved visual style and proportions; input 2 is the blank head registration reference. Create ONLY a modern soft mullet with short sides and fringe and distinctly longer feathered hair at the back. Hair is medium neutral brown, with dark brown outlines, broad readable pixel clusters and 3\u20135 restrained tonal values. Front-facing and upright, no perspective or side view. The scalp is the same compact slightly oversized head as the references. Leave a clear face opening: no fringe below the eyebrows, no eyes, eyebrows, nose, mouth, skin, ears, neck, body, clothes or accessories anywhere. Keep a recognizable silhouette and intentional coarse pixel design, not fine realistic strands. Show the full hairstyle including all back lengths or gathered sections, with an empty face opening, so we can separate front and back layers. Center the complete hair on a square canvas, with generous transparent padding and no clipping. True transparent RGBA background, including the face opening; no checkerboard, labels, borders, scenery or presentation layout. One hairstyle only. The output will be normalized to a locked 128\u00d7128 rig, so visual proportions must follow the supplied character closely."
+    },
+    {
+      "id": "hair.straight_shoulder",
+      "name": "Shoulder-length straight",
+      "group": "Long",
+      "guide": {
+        "width": 32,
+        "y": 2,
+        "height": 45
+      },
+      "source": "straight_shoulder.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png",
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: one modular pixel-avatar hair sprite. Input 1 is the approved visual style and proportions; input 2 is the blank head registration reference. Create ONLY shoulder-length straight hair with a center part, clean vertical side sections and slightly tucked inward ends. Hair is medium neutral brown, with dark brown outlines, broad readable pixel clusters and 3\u20135 restrained tonal values. Front-facing and upright, no perspective or side view. The scalp is the same compact slightly oversized head as the references. Leave a clear face opening: no fringe below the eyebrows, no eyes, eyebrows, nose, mouth, skin, ears, neck, body, clothes or accessories anywhere. Keep a recognizable silhouette and intentional coarse pixel design, not fine realistic strands. Show the full hairstyle including all back lengths or gathered sections, with an empty face opening, so we can separate front and back layers. Center the complete hair on a square canvas, with generous transparent padding and no clipping. True transparent RGBA background, including the face opening; no checkerboard, labels, borders, scenery or presentation layout. One hairstyle only. The output will be normalized to a locked 128\u00d7128 rig, so visual proportions must follow the supplied character closely."
+    },
+    {
+      "id": "hair.locs",
+      "name": "Long locs",
+      "group": "Long",
+      "guide": {
+        "width": 35,
+        "y": 1,
+        "height": 59
+      },
+      "source": "locs.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png",
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: one modular pixel-avatar hair sprite. Input 1 is the approved visual style and proportions; input 2 is the blank head registration reference. Create ONLY long natural locs with individual broad rope-like sections, center part and irregular but clean lower ends. Hair is medium neutral brown, with dark brown outlines, broad readable pixel clusters and 3\u20135 restrained tonal values. Front-facing and upright, no perspective or side view. The scalp is the same compact slightly oversized head as the references. Leave a clear face opening: no fringe below the eyebrows, no eyes, eyebrows, nose, mouth, skin, ears, neck, body, clothes or accessories anywhere. Keep a recognizable silhouette and intentional coarse pixel design, not fine realistic strands. Show the full hairstyle including all back lengths or gathered sections, with an empty face opening, so we can separate front and back layers. Center the complete hair on a square canvas, with generous transparent padding and no clipping. True transparent RGBA background, including the face opening; no checkerboard, labels, borders, scenery or presentation layout. One hairstyle only. The output will be normalized to a locked 128\u00d7128 rig, so visual proportions must follow the supplied character closely."
+    },
+    {
+      "id": "hair.ponytail",
+      "name": "High ponytail",
+      "group": "Tied",
+      "guide": {
+        "width": 35,
+        "y": 0,
+        "height": 45
+      },
+      "source": "ponytail.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png",
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: one modular pixel-avatar hair sprite. Input 1 is the approved visual style and proportions; input 2 is the blank head registration reference. Create ONLY a high ponytail with a swept-back crown and one thick flowing gathered tail visible at the right side, no visible hair tie or accessory. Hair is medium neutral brown, with dark brown outlines, broad readable pixel clusters and 3\u20135 restrained tonal values. Front-facing and upright, no perspective or side view. The scalp is the same compact slightly oversized head as the references. Leave a clear face opening: no fringe below the eyebrows, no eyes, eyebrows, nose, mouth, skin, ears, neck, body, clothes or accessories anywhere. Keep a recognizable silhouette and intentional coarse pixel design, not fine realistic strands. Show the full hairstyle including all back lengths or gathered sections, with an empty face opening, so we can separate front and back layers. Center the complete hair on a square canvas, with generous transparent padding and no clipping. True transparent RGBA background, including the face opening; no checkerboard, labels, borders, scenery or presentation layout. One hairstyle only. The output will be normalized to a locked 128\u00d7128 rig, so visual proportions must follow the supplied character closely."
+    },
+    {
+      "id": "hair.bun",
+      "name": "Messy bun",
+      "group": "Tied",
+      "guide": {
+        "width": 31,
+        "y": 0,
+        "height": 27
+      },
+      "source": "bun.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png",
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: one modular pixel-avatar hair sprite. Input 1 is the approved visual style and proportions; input 2 is the blank head registration reference. Create ONLY a compact messy high bun with a gathered rounded knot above the crown and a few controlled wisps, no hair tie or accessory. Hair is medium neutral brown, with dark brown outlines, broad readable pixel clusters and 3\u20135 restrained tonal values. Front-facing and upright, no perspective or side view. The scalp is the same compact slightly oversized head as the references. Leave a clear face opening: no fringe below the eyebrows, no eyes, eyebrows, nose, mouth, skin, ears, neck, body, clothes or accessories anywhere. Keep a recognizable silhouette and intentional coarse pixel design, not fine realistic strands. Show the full hairstyle including all back lengths or gathered sections, with an empty face opening, so we can separate front and back layers. Center the complete hair on a square canvas, with generous transparent padding and no clipping. True transparent RGBA background, including the face opening; no checkerboard, labels, borders, scenery or presentation layout. One hairstyle only. The output will be normalized to a locked 128\u00d7128 rig, so visual proportions must follow the supplied character closely."
+    },
+    {
+      "id": "hair.twists",
+      "name": "Medium twists",
+      "group": "Medium",
+      "guide": {
+        "width": 34,
+        "y": 1,
+        "height": 38
+      },
+      "source": "twists.png",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png",
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: one modular pixel-avatar hair sprite. Input 1 is the approved visual style and proportions; input 2 is the blank head registration reference. Create ONLY medium natural two-strand twists with individual readable twisting locks around the sides and back. Hair is medium neutral brown, with dark brown outlines, broad readable pixel clusters and 3\u20135 restrained tonal values. Front-facing and upright, no perspective or side view. The scalp is the same compact slightly oversized head as the references. Leave a clear face opening: no fringe below the eyebrows, no eyes, eyebrows, nose, mouth, skin, ears, neck, body, clothes or accessories anywhere. Keep a recognizable silhouette and intentional coarse pixel design, not fine realistic strands. Show the full hairstyle including all back lengths or gathered sections, with an empty face opening, so we can separate front and back layers. Center the complete hair on a square canvas, with generous transparent padding and no clipping. True transparent RGBA background, including the face opening; no checkerboard, labels, borders, scenery or presentation layout. One hairstyle only. The output will be normalized to a locked 128\u00d7128 rig, so visual proportions must follow the supplied character closely."
+    }
+  ]
+}

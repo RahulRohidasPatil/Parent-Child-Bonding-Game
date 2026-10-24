@@ -1,0 +1,11 @@
+{
+  "id": "hair.drop_fade",
+  "source": "drop_fade_v2.png",
+  "prompt": "Use case: stylized-concept. One DIFF modular pixel-art hair layer. The first input is the STYLE and close-cropped height reference. The second is ONLY the head registration guide. Create a literal Drop fade: a compact close-cropped wavy top and a gently curved lower edge dropping behind the temples. Match the first reference's LOW HAIR VOLUME. NO fluffy tall crown, NO middle part, NO curtains, NO long sweeping bangs. Brown hair only, dark brown outline, 3–4 brown tones, coarse deliberate square pixel clusters. Represent fades with hair density and brown shading, NEVER skin or beige pixels. Full hairstyle centered on transparent square canvas with padding. Face opening transparent. No head, body, face, ears, clothes, text, background or checkerboard. Source must fit the supplied head when normalized to our existing 128×128 rig. One hairstyle, frontal and upright.",
+  "refs": [
+    "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-hair-library/high_and_tight.png",
+    "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+  ],
+  "origin": "/Users/vlad/.codex/generated_images/01a07a71-8c9e-7292-bd75-a2688e8698a6/exec-014e4264-2d78-4a0d-aa6b-89c63304982f.png",
+  "mode": "built-in image_gen"
+}

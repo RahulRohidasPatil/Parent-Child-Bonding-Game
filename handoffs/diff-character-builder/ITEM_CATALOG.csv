@@ -1,0 +1,271 @@
+id,name,slot,collection,layer_files,source_files
+head.soft_oval,Oval face,head,Head shape,layers/head_soft_oval_skin_02_v6.png,references/avatar-exact-v5/body-reference.png
+head.round,Round face,head,Head shape,layers/head_round_skin_02_v6.png,references/avatar-revision-v6/head-round.png
+head.soft_square,Soft square face,head,Head shape,layers/head_soft_square_skin_02_v6.png,references/avatar-revision-v6/head-soft-square.png
+head.full_round,Full round face,head,Head shape,layers/head_full_round_skin_02_v6.png,references/avatar-revision-v6/head-full-round.png
+head.narrow,Narrow oval face,head,Head shape,layers/head_narrow_skin_02_v6.png,references/avatar-revision-v6/head-narrow.png
+head.angular,Angular face,head,Head shape,layers/head_angular_skin_02_v6.png,references/avatar-revision-v6/head-angular.png
+eyes.reference_neutral,Straight eyes,eyes,Expression,layers/eyes_reference_neutral_eye_dark_brown_v6.png,references/avatar-exact-v5/body-reference.png
+eyes.reference_friendly,Soft eyes,eyes,Expression,layers/eyes_reference_friendly_eye_dark_brown_v6.png,references/avatar-revision-v6/face-friendly.png
+eyes.reference_focused,Narrow eyes,eyes,Expression,layers/eyes_reference_focused_eye_dark_brown_v6.png,references/avatar-revision-v6/face-focused.png
+brows.reference_neutral,Straight eyebrows,brows,Expression,layers/brows_reference_neutral_v6.png,references/avatar-exact-v5/body-reference.png
+brows.reference_friendly,Soft-arched eyebrows,brows,Expression,layers/brows_reference_friendly_v6.png,references/avatar-revision-v6/face-friendly.png
+brows.reference_focused,Low straight eyebrows,brows,Expression,layers/brows_reference_focused_v6.png,references/avatar-revision-v6/face-focused.png
+nose.reference_neutral,Small straight nose,nose,Expression,layers/nose_reference_neutral_skin_02_v5.png,references/avatar-exact-v5/body-reference.png
+nose.reference_friendly,Soft-tipped nose,nose,Expression,layers/nose_reference_friendly_skin_02_v6.png,references/avatar-revision-v6/face-friendly.png
+nose.reference_focused,Narrow nose,nose,Expression,layers/nose_reference_focused_skin_02_v6.png,references/avatar-revision-v6/face-focused.png
+mouth.reference_neutral,Relaxed lips,mouth,Expression,layers/mouth_reference_neutral_skin_02_v5.png,references/avatar-exact-v5/body-reference.png
+mouth.reference_friendly,Small smile,mouth,Expression,layers/mouth_reference_friendly_skin_02_v6.png,references/avatar-revision-v6/face-friendly.png
+mouth.reference_focused,Closed lips,mouth,Expression,layers/mouth_reference_focused_skin_02_v6.png,references/avatar-revision-v6/face-focused.png
+ears.small,Small ears,ears,Ears,layers/ears_small_skin_02_v5.png,references/avatar-exact-v5/body-reference.png
+ears.rounded,Rounded ears,ears,Ears,layers/ears_rounded_skin_02_v5.png,references/avatar-exact-v5/body-reference.png
+hair.textured,Textured side-part haircut,hair,Short,layers/hair_textured_skin_02_v6.png,references/avatar-exact-v5/body-reference.png
+hair.fluffy,Fluffy middle-part haircut,hair,Medium,layers/hair_fluffy_back_registered_v6.png|layers/hair_fluffy_front_v5.png,references/avatar-atelier/hair-fluffy.png
+hair.crop,Short textured crop,hair,Short,layers/hair_crop_back_v5.png|layers/hair_crop_front_v5.png,references/avatar-atelier/hair-crop.png
+hair.curls,Short curls,hair,Short,layers/hair_curls_back_v5.png|layers/hair_curls_front_v5.png,references/avatar-atelier/hair-curls.png
+hair.long,Long wavy hair,hair,Long,layers/hair_long_back_registered_v6.png|layers/hair_long_front_v5.png,references/avatar-atelier/hair-long.png
+hair.bob,Chin-length bob,hair,Medium,layers/hair_bob_back_registered_v6.png|layers/hair_bob_front_v5.png,references/avatar-atelier/hair-bob.png
+hair.braids,Long braids,hair,Long,layers/hair_braids_back_registered_v6.png|layers/hair_braids_front_v5.png,references/avatar-atelier/hair-braids.png
+top.navy,Crewneck sweatshirt,top,Essentials,layers/top_navy_v5.png,references/avatar-exact-v5/body-reference.png
+top.quarter,Fleece quarter-zip pullover,top,Essentials,layers/top_quarter_v5.png,references/avatar-atelier/top-quarter.png
+top.white_tee,Heavyweight crewneck T-shirt,top,Essentials,layers/top_white_tee_v5.png,references/avatar-atelier/top-white-tee.png
+top.hoodie,Pullover hoodie,top,Off duty,layers/top_hoodie_back_v5.png|layers/top_hoodie_v5.png,references/avatar-atelier/top-hoodie.png
+top.forest_hoodie,Zip-up hoodie,top,Off duty,layers/top_forest_hoodie_back_v5.png|layers/top_forest_hoodie_v5.png,references/avatar-atelier/top-forest-hoodie.png|references/avatar-exact-v5/forest-reference.png
+top.polo,Short-sleeve knit polo,top,Smart casual,layers/top_polo_v5.png,references/avatar-atelier/top-polo.png
+top.oxford,Oxford shirt,top,Smart casual,layers/top_oxford_v5.png,references/avatar-atelier/top-oxford.png
+top.knit,Ribbed knit sweater,top,Smart casual,layers/top_knit_v5.png,references/avatar-atelier/top-knit.png
+jacket.denim,Denim jacket,jacket,Layers,layers/jacket_denim_v5.png,references/avatar-atelier/jacket-denim.png
+jacket.bomber,Classic bomber jacket,jacket,Layers,layers/jacket_bomber_v5.png,references/avatar-atelier/jacket-bomber.png
+jacket.track,Track jacket,jacket,Training,layers/jacket_track_v5.png,references/avatar-atelier/jacket-track.png
+bottom.denim,Straight-leg jeans,bottom,Essentials,layers/bottom_denim_v5.png,references/avatar-exact-v5/body-reference.png
+bottom.black,Straight-leg trousers,bottom,Essentials,layers/bottom_black_v5.png,references/avatar-atelier/bottom-black.png
+bottom.cargo,Cargo trousers,bottom,Off duty,layers/bottom_cargo_v5.png,references/avatar-atelier/bottom-cargo.png
+bottom.track,Track pants,bottom,Training,layers/bottom_track_v5.png,references/avatar-atelier/bottom-track.png
+shoes.white,Minimal low-top sneakers,shoes,Essentials,layers/shoes_white_v5.png,references/avatar-refinement-v4/shoes-white-final.png
+shoes.black,Classic low-top sneakers,shoes,Essentials,layers/shoes_black_v5.png,references/avatar-exact-v5/body-reference.png
+earrings.studs,Stud earrings,earrings,Details,layers/earrings_studs_v5.png,references/avatar-atelier/earrings-studs.png
+earrings.hoops,Hoop earrings,earrings,Details,layers/earrings_hoops_v5.png,references/avatar-atelier/earrings-hoops.png
+hat.cap,Baseball cap,hat,Off duty,layers/hat_cap_v5.png,references/avatar-atelier/hat-cap.png
+hat.beanie,Cuffed beanie,hat,Off duty,layers/hat_beanie_v5.png,references/avatar-atelier/hat-beanie.png
+glasses.round,Round-frame glasses,glasses,Details,layers/glasses_round_v5.png,references/avatar-atelier/glasses-round.png
+glasses.rect,Rectangular-frame glasses,glasses,Details,layers/glasses_rect_v5.png,references/avatar-atelier/glasses-rect.png
+hair.buzz,Buzz cut,hair,Short,layers/hair_buzz_front_v6.png,references/avatar-hair-expansion/buzz.png
+hair.crew_cut,Crew cut,hair,Short,layers/hair_crew_cut_front_v6.png,references/avatar-hair-expansion/crew_cut.png
+hair.french_crop,French crop,hair,Short,layers/hair_french_crop_front_v6.png,references/avatar-hair-expansion/french_crop.png
+hair.side_part,Classic side part,hair,Short,layers/hair_side_part_front_v6.png,references/avatar-hair-expansion/side_part.png
+hair.quiff,Textured quiff,hair,Short,layers/hair_quiff_front_v6.png,references/avatar-hair-expansion/quiff.png
+hair.pompadour,Pompadour,hair,Short,layers/hair_pompadour_front_v6.png,references/avatar-hair-expansion/pompadour.png
+hair.spiky,Short spiky hair,hair,Short,layers/hair_spiky_front_v6.png,references/avatar-hair-expansion/spiky.png
+hair.short_waves,Short waves,hair,Short,layers/hair_short_waves_front_v6.png,references/avatar-hair-expansion/short_waves.png
+hair.afro,Rounded afro,hair,Short,layers/hair_afro_front_v6.png,references/avatar-hair-expansion/afro.png
+hair.coils,Close-cropped coils,hair,Short,layers/hair_coils_front_v6.png,references/avatar-hair-expansion/coils.png
+hair.tapered_curls,Tapered curls,hair,Short,layers/hair_tapered_curls_front_v6.png,references/avatar-hair-expansion/tapered_curls.png
+hair.curtains,Straight middle-part hair,hair,Medium,layers/hair_curtains_back_v6.png|layers/hair_curtains_front_v6.png,references/avatar-hair-expansion/curtains.png
+hair.shag,Layered shag haircut,hair,Medium,layers/hair_shag_back_v6.png|layers/hair_shag_front_v6.png,references/avatar-hair-expansion/shag.png
+hair.wolf_cut,Wolf cut,hair,Medium,layers/hair_wolf_cut_back_v6.png|layers/hair_wolf_cut_front_v6.png,references/avatar-hair-expansion/wolf_cut.png
+hair.mullet,Short mullet,hair,Medium,layers/hair_mullet_back_v6.png|layers/hair_mullet_front_v6.png,references/avatar-hair-expansion/mullet.png
+hair.straight_shoulder,Shoulder-length straight hair,hair,Long,layers/hair_straight_shoulder_back_v6.png|layers/hair_straight_shoulder_front_v6.png,references/avatar-hair-expansion/straight_shoulder.png
+hair.locs,Long locs,hair,Long,layers/hair_locs_back_v6.png|layers/hair_locs_front_v6.png,references/avatar-hair-expansion/locs.png
+hair.ponytail,High ponytail,hair,Tied,layers/hair_ponytail_back_v6.png|layers/hair_ponytail_front_v6.png,references/avatar-hair-expansion/ponytail.png
+hair.bun,Messy bun,hair,Tied,layers/hair_bun_back_v6.png|layers/hair_bun_front_v6.png,references/avatar-hair-expansion/bun.png
+hair.twists,Medium-length twists,hair,Medium,layers/hair_twists_back_v6.png|layers/hair_twists_front_v6.png,references/avatar-hair-expansion/twists.png
+hair.receding_crop,Short crop with receding hairline,hair,Short,layers/hair_receding_crop_front_v6.png,references/avatar-identity-expansion/hair_receding_crop.png
+hair.receding_waves,Short waves with receding hairline,hair,Short,layers/hair_receding_waves_front_v6.png,references/avatar-identity-expansion/hair_receding_waves.png
+hair.balding_crown,Short hair with thinning crown,hair,Short,layers/hair_balding_crown_front_v6.png,references/avatar-identity-expansion/hair_balding_crown.png
+hair.flat_top,Flat-top haircut,hair,Short,layers/hair_flat_top_front_v6.png,references/avatar-identity-expansion/hair_flat_top.png
+hair.short_twists,Short twists,hair,Short,layers/hair_short_twists_front_v6.png,references/avatar-identity-expansion/hair_short_twists.png
+hair.cornrows,Cornrows,hair,Short,layers/hair_cornrows_front_v6.png,references/avatar-identity-expansion/hair_cornrows.png
+hair.afro_puffs,Double afro puffs,hair,Tied,layers/hair_afro_puffs_back_v6.png|layers/hair_afro_puffs_front_v6.png,references/avatar-identity-expansion/hair_afro_puffs.png
+hair.side_bob,Side-swept bob,hair,Medium,layers/hair_side_bob_back_v6.png|layers/hair_side_bob_front_v6.png,references/avatar-identity-expansion/hair_side_bob.png
+eyes.almond,Almond eyes,eyes,Face,layers/eyes_almond_eye_dark_brown_v6.png,references/avatar-identity-expansion/eyes_almond.png
+eyes.hooded,Hooded eyes,eyes,Face,layers/eyes_hooded_eye_dark_brown_v6.png,references/avatar-identity-expansion/eyes_hooded.png
+eyes.monolid,Monolid eyes,eyes,Face,layers/eyes_monolid_eye_dark_brown_v6.png,references/avatar-identity-expansion/eyes_monolid.png
+eyes.round_soft,Round eyes,eyes,Face,layers/eyes_round_soft_eye_dark_brown_v6.png,references/avatar-identity-expansion/eyes_round_soft.png
+eyes.upturned,Upturned eyes,eyes,Face,layers/eyes_upturned_eye_dark_brown_v6.png,references/avatar-identity-expansion/eyes_upturned.png
+eyes.mature,Deep-set eyes,eyes,Face,layers/eyes_mature_eye_dark_brown_v6.png,references/avatar-identity-expansion/eyes_mature.png
+brows.fine,Thin eyebrows,brows,Face,layers/brows_fine_v6.png,references/avatar-identity-expansion/brows_fine.png
+brows.full,Thick eyebrows,brows,Face,layers/brows_full_v6.png,references/avatar-identity-expansion/brows_full.png
+brows.arch,Arched eyebrows,brows,Face,layers/brows_arch_v6.png,references/avatar-identity-expansion/brows_arch.png
+brows.bushy,Bushy eyebrows,brows,Face,layers/brows_bushy_v6.png,references/avatar-identity-expansion/brows_bushy.png
+nose.button,Button nose,nose,Face,layers/nose_button_skin_02_v6.png,references/avatar-identity-expansion/nose_button.png
+nose.broad,Broad nose,nose,Face,layers/nose_broad_skin_02_v6.png,references/avatar-identity-expansion/nose_broad.png
+nose.straight,Straight nose,nose,Face,layers/nose_straight_skin_02_v6.png,references/avatar-identity-expansion/nose_straight_portrait.png
+nose.curved,Curved nose,nose,Face,layers/nose_curved_skin_02_v6.png,references/avatar-identity-expansion/nose_curved.png
+mouth.wide_smile,Wide smile,mouth,Face,layers/mouth_wide_smile_skin_02_v6.png,references/avatar-identity-expansion/mouth_wide_smile.png
+mouth.thin,Thin lips,mouth,Face,layers/mouth_thin_skin_02_v6.png,references/avatar-identity-expansion/mouth_thin.png
+mouth.full,Full lips,mouth,Face,layers/mouth_full_skin_02_v6.png,references/avatar-identity-expansion/mouth_full.png
+mouth.mature,Subtle smile,mouth,Face,layers/mouth_mature_skin_02_v6.png,references/avatar-identity-expansion/mouth_mature.png
+facialHair.stubble,Light stubble,facialHair,Facial hair,layers/facialhair_stubble_v6.png,references/avatar-identity-expansion/facialhair_stubble.png
+facialHair.mustache,Classic mustache,facialHair,Facial hair,layers/facialhair_mustache_v6.png,references/avatar-identity-expansion/facialhair_mustache.png
+facialHair.goatee,Goatee,facialHair,Facial hair,layers/facialhair_goatee_v6.png,references/avatar-identity-expansion/facialhair_goatee.png
+facialHair.short_beard,Short beard,facialHair,Facial hair,layers/facialhair_short_beard_v6.png,references/avatar-identity-expansion/facialhair_short_beard.png
+facialHair.full_beard,Full beard,facialHair,Facial hair,layers/facialhair_full_beard_v6.png,references/avatar-identity-expansion/facialhair_full_beard.png
+facialHair.boxed_beard,Short boxed beard,facialHair,Facial hair,layers/facialhair_boxed_beard_v6.png,references/avatar-identity-expansion/facialhair_boxed_beard.png
+freckles.soft,Light freckles,freckles,Personal,layers/freckles_soft_skin_02_v6.png,references/avatar-identity-expansion/freckles_soft.png
+birthmark.cheek,Cheek birthmark,birthmark,Personal,layers/birthmark_cheek_skin_02_v6.png,references/avatar-identity-expansion/birthmark_cheek.png
+scar.cheek,Small cheek scar,scar,Personal,layers/scar_cheek_skin_02_v6.png,references/avatar-identity-expansion/scar_cheek.png
+ageLines.soft,Fine expression lines,ageLines,Personal,layers/agelines_soft_skin_02_v6.png,references/avatar-identity-expansion/agelines_soft.png
+hearingAidLeft.small,Left hearing aid,hearingAidLeft,Personal,layers/hearingaidleft_small_v6.png,references/avatar-identity-expansion/hearingaidleft_small.png
+hearingAidRight.small,Right hearing aid,hearingAidRight,Personal,layers/hearingaidright_small_v6.png,references/avatar-identity-expansion/hearingaidright_small.png
+top.oat_quarter,Relaxed fleece quarter-zip,top,Smart,layers/top_oat_quarter_back_v6.png|layers/top_oat_quarter_v6.png,references/avatar-revision-v6/top-oat_quarter.png
+top.tech_quarter,Technical quarter-zip top,top,Sport,layers/top_tech_quarter_back_v6.png|layers/top_tech_quarter_v6.png,references/avatar-revision-v6/top-tech_quarter.png
+top.burgundy_hoodie,Relaxed pullover hoodie,top,Casual,layers/top_burgundy_hoodie_back_v6.png|layers/top_burgundy_hoodie_v6.png,references/avatar-revision-v6/top-burgundy_hoodie.png
+top.gray_crew,Classic crewneck sweatshirt,top,Basic,layers/top_gray_crew_back_v6.png|layers/top_gray_crew_v6.png,references/avatar-revision-v6/top-gray_crew.png
+top.breton,Striped long-sleeve T-shirt,top,Casual,layers/top_breton_back_v6.png|layers/top_breton_v6.png,references/avatar-revision-v6/top-breton.png
+top.cable_knit,Cable-knit sweater,top,Smart,layers/top_cable_knit_back_v6.png|layers/top_cable_knit_v6.png,references/avatar-polish/cable_knit_v2.png
+top.work_shirt,Button-front work shirt,top,Street,layers/top_work_shirt_back_v6.png|layers/top_work_shirt_v6.png,references/avatar-revision-v6/top-work_shirt.png
+top.olive_polo,Textured knit polo,top,Smart,layers/top_olive_polo_back_v6.png|layers/top_olive_polo_v6.png,references/avatar-revision-v6/top-olive_polo.png
+top.terminal_tee,Graphic crewneck T-shirt,top,Contrast details,layers/top_terminal_tee_back_v6.png|layers/top_terminal_tee_v6.png,references/avatar-revision-v6/top-terminal_tee.png
+top.sky_tee,Washed cotton T-shirt,top,Basic,layers/top_sky_tee_back_v6.png|layers/top_sky_tee_v6.png,references/avatar-revision-v6/top-sky_tee.png
+jacket.studio_bomber,Relaxed bomber jacket,jacket,Street,layers/jacket_studio_bomber_back_v6.png|layers/jacket_studio_bomber_v6.png,references/avatar-revision-v6/jacket-studio_bomber.png
+jacket.light_denim,Washed denim jacket,jacket,Casual,layers/jacket_light_denim_back_v6.png|layers/jacket_light_denim_v6.png,references/avatar-revision-v6/jacket-light_denim.png
+jacket.fleece,Fleece jacket,jacket,Casual,layers/jacket_fleece_back_v6.png|layers/jacket_fleece_v6.png,references/avatar-revision-v6/jacket-fleece.png
+jacket.chore,Canvas chore jacket,jacket,Street,layers/jacket_chore_back_v6.png|layers/jacket_chore_v6.png,references/avatar-revision-v6/jacket-chore.png
+jacket.navy_track,Contrast-piping track jacket,jacket,Training,layers/jacket_navy_track_back_v6.png|layers/jacket_navy_track_v6.png,references/avatar-revision-v6/jacket-navy_track.png
+jacket.diff_track,Contrast-panel track jacket,jacket,Contrast details,layers/jacket_diff_track_back_v6.png|layers/jacket_diff_track_v6.png,references/avatar-revision-v6/jacket-diff_track.png
+bottom.cream_chinos,Chino trousers,bottom,Smart,layers/bottom_cream_chinos_v6.png,references/avatar-revision-v6/bottom-cream_chinos.png
+bottom.slate_pleats,Pleated tailored trousers,bottom,Smart,layers/bottom_slate_pleats_v6.png,references/avatar-revision-v6/bottom-slate_pleats.png
+bottom.washed_jeans,Washed straight-leg jeans,bottom,Casual,layers/bottom_washed_jeans_v6.png,references/avatar-revision-v6/bottom-washed_jeans.png
+bottom.olive_cargo,Relaxed cargo trousers,bottom,Street,layers/bottom_olive_cargo_v6.png,references/avatar-revision-v6/bottom-olive_cargo.png
+bottom.diff_track,Contrast-panel track pants,bottom,Contrast details,layers/bottom_diff_track_v6.png,references/avatar-revision-v6/bottom-diff_track.png
+bottom.burgundy_sweats,Relaxed sweatpants,bottom,Casual,layers/bottom_burgundy_sweats_v6.png,references/avatar-revision-v6/bottom-burgundy_sweats.png
+shoes.brown_boots,Leather work boots,shoes,Street,layers/shoes_brown_boots_v6.png,references/avatar-revision-v6/shoes-brown_boots.png
+shoes.cream_runner,Retro running sneakers,shoes,Sport,layers/shoes_cream_runner_v6.png,references/avatar-revision-v6/shoes-cream_runner.png
+shoes.court_high,High-top basketball sneakers,shoes,Sneakers,layers/shoes_court_high_v6.png,references/avatar-wardrobe-expansion/shoes_court_high.png
+shoes.court_mid,Mid-top basketball sneakers,shoes,Sneakers,layers/shoes_court_mid_v6.png,references/avatar-wardrobe-expansion/shoes_court_mid.png
+shoes.court_low,Low-top basketball sneakers,shoes,Sneakers,layers/shoes_court_low_v6.png,references/avatar-wardrobe-expansion/shoes_court_low.png
+shoes.skate_chunky,Chunky skate sneakers,shoes,Sneakers,layers/shoes_skate_chunky_v6.png,references/avatar-wardrobe-expansion/shoes_skate_chunky.png
+shoes.suede_terrace,Suede low-top sneakers,shoes,Sneakers,layers/shoes_suede_terrace_v6.png,references/avatar-wardrobe-expansion/shoes_suede_terrace.png
+shoes.canvas_high,High-top canvas sneakers,shoes,Sneakers,layers/shoes_canvas_high_v6.png,references/avatar-wardrobe-expansion/shoes_canvas_high.png
+shoes.canvas_low,Low-top canvas sneakers,shoes,Sneakers,layers/shoes_canvas_low_v6.png,references/avatar-wardrobe-expansion/shoes_canvas_low.png
+shoes.slip_on,Canvas slip-on shoes,shoes,Sneakers,layers/shoes_slip_on_v6.png,references/avatar-wardrobe-expansion/shoes_slip_on.png
+shoes.retro_mesh,Mesh running sneakers,shoes,Running,layers/shoes_retro_mesh_v6.png,references/avatar-wardrobe-expansion/shoes_retro_mesh.png
+shoes.performance_runner,Performance running shoes,shoes,Running,layers/shoes_performance_runner_v6.png,references/avatar-wardrobe-expansion/shoes_performance_runner.png
+shoes.trail_grip,Trail running shoes,shoes,Running,layers/shoes_trail_grip_v6.png,references/avatar-wardrobe-expansion/shoes_trail_grip.png
+shoes.knit_runner,Knit running sneakers,shoes,Running,layers/shoes_knit_runner_v6.png,references/avatar-wardrobe-expansion/shoes_knit_runner.png
+shoes.platform_sneaker,Platform sneakers,shoes,Sneakers,layers/shoes_platform_sneaker_v6.png,references/avatar-wardrobe-expansion/shoes_platform_sneaker.png
+shoes.tennis_court,Tennis shoes,shoes,Sport,layers/shoes_tennis_court_v6.png,references/avatar-wardrobe-expansion/shoes_tennis_court.png
+shoes.hiking_lace,Lace-up hiking boots,shoes,Boots,layers/shoes_hiking_lace_v6.png,references/avatar-wardrobe-expansion/shoes_hiking_lace.png
+shoes.work_lace,Lace-up work boots,shoes,Boots,layers/shoes_work_lace_v6.png,references/avatar-wardrobe-expansion/shoes_work_lace.png
+shoes.chelsea,Chelsea boots,shoes,Boots,layers/shoes_chelsea_v6.png,references/avatar-wardrobe-expansion/shoes_chelsea.png
+shoes.combat_lace,Lace-up combat boots,shoes,Boots,layers/shoes_combat_lace_v6.png,references/avatar-wardrobe-expansion/shoes_combat_lace.png
+shoes.desert_suede,Suede desert boots,shoes,Boots,layers/shoes_desert_suede_v6.png,references/avatar-wardrobe-expansion/shoes_desert_suede.png
+shoes.winter_padded,Padded winter boots,shoes,Boots,layers/shoes_winter_padded_v6.png,references/avatar-wardrobe-expansion/shoes_winter_padded.png
+shoes.penny_loafer,Penny loafers,shoes,Smart,layers/shoes_penny_loafer_v6.png,references/avatar-wardrobe-expansion/shoes_penny_loafer.png
+shoes.tassel_loafer,Tassel loafers,shoes,Smart,layers/shoes_tassel_loafer_v6.png,references/avatar-wardrobe-expansion/shoes_tassel_loafer.png
+shoes.derby_lace,Derby shoes,shoes,Smart,layers/shoes_derby_lace_v6.png,references/avatar-wardrobe-expansion/shoes_derby_lace.png
+shoes.mary_jane,Buckle-strap flats,shoes,Smart,layers/shoes_mary_jane_v6.png,references/avatar-wardrobe-expansion/shoes_mary_jane.png
+shoes.clog_cork,Cork-footbed clogs,shoes,Relaxed,layers/shoes_clog_cork_v6.png,references/avatar-wardrobe-expansion/shoes_clog_cork.png
+shoes.house_mule,Backless slippers,shoes,Relaxed,layers/shoes_house_mule_v6.png,references/avatar-wardrobe-expansion/shoes_house_mule.png
+top.boxy_heavy_tee,Boxy heavyweight T-shirt,top,Everyday,layers/top_boxy_heavy_tee_back_v6.png|layers/top_boxy_heavy_tee_v6.png,references/avatar-wardrobe-expansion/top_boxy_heavy_tee.png
+top.rugby_collar,Long-sleeve rugby shirt,top,Smart,layers/top_rugby_collar_back_v6.png|layers/top_rugby_collar_v6.png,references/avatar-wardrobe-expansion/top_rugby_collar.png
+top.knit_polo,Relaxed knit polo,top,Smart,layers/top_knit_polo_back_v6.png|layers/top_knit_polo_v6.png,references/avatar-wardrobe-expansion/top_knit_polo.png
+top.waffle_henley,Waffle-knit Henley shirt,top,Everyday,layers/top_waffle_henley_back_v6.png|layers/top_waffle_henley_v6.png,references/avatar-polish/henley_v2.png
+top.mockneck_zip,Mock-neck half-zip pullover,top,Sport,layers/top_mockneck_zip_back_v6.png|layers/top_mockneck_zip_v6.png,references/avatar-wardrobe-expansion/top_mockneck_zip.png
+top.relaxed_cardigan,Relaxed knit cardigan,top,Smart,layers/top_relaxed_cardigan_back_v6.png|layers/top_relaxed_cardigan_v6.png,references/avatar-wardrobe-expansion/top_relaxed_cardigan.png
+jacket.box_puffer,Boxy puffer jacket,jacket,Winter,layers/jacket_box_puffer_back_v6.png|layers/jacket_box_puffer_v6.png,references/avatar-wardrobe-expansion/jacket_box_puffer.png
+jacket.hooded_puffer,Hooded puffer jacket,jacket,Winter,layers/jacket_hooded_puffer_back_v6.png|layers/jacket_hooded_puffer_v6.png,references/avatar-wardrobe-expansion/jacket_hooded_puffer.png
+jacket.quilt_liner,Quilted liner jacket,jacket,Everyday,layers/jacket_quilt_liner_back_v6.png|layers/jacket_quilt_liner_v6.png,references/avatar-wardrobe-expansion/jacket_quilt_liner.png
+jacket.flight_bomber,Flight bomber jacket,jacket,Street,layers/jacket_flight_bomber_back_v6.png|layers/jacket_flight_bomber_v6.png,references/avatar-wardrobe-expansion/jacket_flight_bomber.png
+jacket.varsity_wool,Wool varsity jacket,jacket,Street,layers/jacket_varsity_wool_back_v6.png|layers/jacket_varsity_wool_v6.png,references/avatar-wardrobe-expansion/jacket_varsity_wool.png
+jacket.denim_trucker,Denim trucker jacket,jacket,Everyday,layers/jacket_denim_trucker_back_v6.png|layers/jacket_denim_trucker_v6.png,references/avatar-wardrobe-expansion/jacket_denim_trucker.png
+jacket.leather_biker,Leather biker jacket,jacket,Street,layers/jacket_leather_biker_back_v6.png|layers/jacket_leather_biker_v6.png,references/avatar-wardrobe-expansion/jacket_leather_biker.png
+jacket.rain_parka,Rain parka,jacket,Tech,layers/jacket_rain_parka_back_v6.png|layers/jacket_rain_parka_v6.png,references/avatar-wardrobe-expansion/jacket_rain_parka.png
+jacket.sherpa_fleece,Sherpa fleece jacket,jacket,Winter,layers/jacket_sherpa_fleece_back_v6.png|layers/jacket_sherpa_fleece_v6.png,references/avatar-polish/sherpa_v2.png
+jacket.track_piped,Zip-up track jacket with piping,jacket,Training,layers/jacket_track_piped_back_v6.png|layers/jacket_track_piped_v6.png,references/avatar-wardrobe-expansion/jacket_track_piped.png
+bottom.baggy_denim,Baggy jeans,bottom,Denim,layers/bottom_baggy_denim_v6.png,references/avatar-wardrobe-expansion/bottom_baggy_denim.png
+bottom.wide_denim,Wide-leg jeans,bottom,Denim,layers/bottom_wide_denim_v6.png,references/avatar-wardrobe-expansion/bottom_wide_denim.png
+bottom.carpenter_denim,Carpenter jeans,bottom,Denim,layers/bottom_carpenter_denim_v6.png,references/avatar-wardrobe-expansion/bottom_carpenter_denim.png
+bottom.barrel_denim,Barrel-leg jeans,bottom,Denim,layers/bottom_barrel_denim_v6.png,references/avatar-wardrobe-expansion/bottom_barrel_denim.png
+bottom.parachute_cargo,Parachute cargo trousers,bottom,Street,layers/bottom_parachute_cargo_v6.png,references/avatar-wardrobe-expansion/bottom_parachute_cargo.png
+bottom.pleated_wide,Wide pleated trousers,bottom,Smart,layers/bottom_pleated_wide_v6.png,references/avatar-wardrobe-expansion/bottom_pleated_wide.png
+bottom.stacked_sweats,Stacked sweatpants,bottom,Everyday,layers/bottom_stacked_sweats_v6.png,references/avatar-wardrobe-expansion/bottom_stacked_sweats.png
+bottom.piped_warmup,Warm-up pants with piping,bottom,Training,layers/bottom_piped_warmup_v6.png,references/avatar-wardrobe-expansion/bottom_piped_warmup.png
+top.dress_white,White dress shirt,top,Tailoring,layers/top_dress_white_back_v6.png|layers/top_dress_white_v6.png|layers/top_dress_white_collar_v6.png,references/avatar-suit/dress_white.png
+jacket.suit_charcoal,Charcoal suit jacket,jacket,Tailoring,layers/jacket_suit_charcoal_back_v6.png|layers/jacket_suit_charcoal_v6.png,references/avatar-suit/suit_charcoal.png
+tie.classic,Classic necktie,tie,Tailoring,layers/tie_classic_v6.png,references/avatar-suit/tie_classic.png
+hair.low_taper_fade,Low taper fade,hair,Short,layers/library_hair_low_taper_fade_hair_front_v6.png,references/avatar-hair-library/low_taper_fade.png
+hair.mid_taper_fade,Mid taper fade,hair,Short,layers/library_hair_mid_taper_fade_hair_front_v6.png,references/avatar-hair-library/mid_taper_fade_v2.png
+hair.high_taper_fade,High taper fade,hair,Short,layers/library_hair_high_taper_fade_hair_front_v6.png,references/avatar-hair-library/high_taper_fade_v2.png
+hair.skin_fade_crop,Skin fade crop,hair,Short,layers/library_hair_skin_fade_crop_hair_front_v6.png,references/avatar-hair-library/skin_fade_crop_v2.png
+hair.drop_fade,Drop fade,hair,Short,layers/library_hair_drop_fade_hair_front_v6.png,references/avatar-hair-library/drop_fade_v2.png
+hair.burst_fade,Burst fade,hair,Short,layers/library_hair_burst_fade_hair_front_v6.png,references/avatar-hair-library/burst_fade.png
+hair.ivy_league,Short tapered side part,hair,Short,layers/library_hair_ivy_league_hair_front_v6.png,references/avatar-hair-library/ivy_league.png
+hair.caesar_cut,Caesar cut,hair,Short,layers/library_hair_caesar_cut_hair_front_v6.png,references/avatar-hair-library/caesar_cut.png
+hair.high_and_tight,High-and-tight haircut,hair,Short,layers/library_hair_high_and_tight_hair_front_v6.png,references/avatar-hair-library/high_and_tight.png
+hair.brush_cut,Brush cut,hair,Short,layers/library_hair_brush_cut_hair_front_v6.png,references/avatar-hair-library/brush_cut.png
+hair.flat_crop,Flat textured crop,hair,Short,layers/library_hair_flat_crop_hair_front_v6.png,references/avatar-hair-library/flat_crop.png
+hair.textured_undercut,Textured undercut,hair,Short,layers/library_hair_textured_undercut_hair_front_v6.png,references/avatar-hair-library/textured_undercut.png
+hair.disconnected_undercut,Side-swept undercut,hair,Short,layers/library_hair_disconnected_undercut_hair_front_v6.png,references/avatar-hair-library/disconnected_undercut.png
+hair.slick_back,Slicked-back hair,hair,Short,layers/library_hair_slick_back_hair_front_v6.png,references/avatar-hair-library/slick_back.png
+hair.short_pixie,Cropped pixie,hair,Short,layers/library_hair_short_pixie_hair_front_v6.png,references/avatar-hair-library/short_pixie.png
+hair.classic_pixie,Classic pixie,hair,Short,layers/library_hair_classic_pixie_hair_front_v6.png,references/avatar-hair-library/classic_pixie.png
+hair.long_pixie,Long pixie,hair,Medium,layers/library_hair_long_pixie_hair_back_v6.png|layers/library_hair_long_pixie_hair_front_v6.png,references/avatar-hair-library/long_pixie.png
+hair.bixie,Pixie bob,hair,Medium,layers/library_hair_bixie_hair_back_v6.png|layers/library_hair_bixie_hair_front_v6.png,references/avatar-hair-library/bixie.png
+hair.blunt_bob,Blunt bob,hair,Medium,layers/library_hair_blunt_bob_hair_back_v6.png|layers/library_hair_blunt_bob_hair_front_v6.png,references/avatar-hair-library/blunt_bob.png
+hair.french_bob,French bob,hair,Medium,layers/library_hair_french_bob_hair_back_v6.png|layers/library_hair_french_bob_hair_front_v6.png,references/avatar-hair-library/french_bob.png
+hair.micro_bob,Micro bob,hair,Medium,layers/library_hair_micro_bob_hair_back_v6.png|layers/library_hair_micro_bob_hair_front_v6.png,references/avatar-hair-library/micro_bob.png
+hair.angled_bob,Angled bob,hair,Medium,layers/library_hair_angled_bob_hair_back_v6.png|layers/library_hair_angled_bob_hair_front_v6.png,references/avatar-hair-library/angled_bob.png
+hair.asymmetric_bob,Asymmetric bob,hair,Medium,layers/library_hair_asymmetric_bob_hair_back_v6.png|layers/library_hair_asymmetric_bob_hair_front_v6.png,references/avatar-hair-library/asymmetric_bob.png
+hair.wavy_bob,Wavy bob,hair,Medium,layers/library_hair_wavy_bob_hair_back_v6.png|layers/library_hair_wavy_bob_hair_front_v6.png,references/avatar-hair-library/wavy_bob.png
+hair.curly_bob,Curly bob,hair,Medium,layers/library_hair_curly_bob_hair_back_v6.png|layers/library_hair_curly_bob_hair_front_v6.png,references/avatar-hair-library/curly_bob.png
+hair.rounded_bob,Rounded chin-length bob,hair,Medium,layers/library_hair_rounded_bob_hair_back_v6.png|layers/library_hair_rounded_bob_hair_front_v6.png,references/avatar-hair-library/rounded_bob.png
+hair.curtain_bob,Bob with curtain bangs,hair,Medium,layers/library_hair_curtain_bob_hair_back_v6.png|layers/library_hair_curtain_bob_hair_front_v6.png,references/avatar-hair-library/curtain_bob.png
+hair.jellyfish_cut,Two-tier layered haircut,hair,Long,layers/library_hair_jellyfish_cut_hair_back_v6.png|layers/library_hair_jellyfish_cut_hair_front_v6.png,references/avatar-hair-library/jellyfish_cut.png
+hair.hime_cut,Long hair with blunt cheek-length layers,hair,Long,layers/library_hair_hime_cut_hair_back_v6.png|layers/library_hair_hime_cut_hair_front_v6.png,references/avatar-hair-library/hime_cut.png
+hair.shaggy_mop,Medium-length shag,hair,Medium,layers/library_hair_shaggy_mop_hair_back_v6.png|layers/library_hair_shaggy_mop_hair_front_v6.png,references/avatar-hair-library/shaggy_mop.png
+hair.tight_curls_fade,Tight curls fade,hair,Short,layers/library_hair_tight_curls_fade_hair_front_v6.png,references/avatar-hair-library/tight_curls_fade.png
+hair.loose_curly_crop,Loose curly crop,hair,Short,layers/library_hair_loose_curly_crop_hair_front_v6.png,references/avatar-hair-library/loose_curly_crop.png
+hair.curly_fringe,Curly fringe,hair,Short,layers/library_hair_curly_fringe_hair_front_v6.png,references/avatar-hair-library/curly_fringe.png
+hair.curly_mop,Medium-length curls,hair,Medium,layers/library_hair_curly_mop_hair_back_v6.png|layers/library_hair_curly_mop_hair_front_v6.png,references/avatar-hair-library/curly_mop.png
+hair.rounded_coils,Rounded coily crop,hair,Short,layers/library_hair_rounded_coils_hair_front_v6.png,references/avatar-hair-library/rounded_coils.png
+hair.tall_afro,Tall afro,hair,Short,layers/library_hair_tall_afro_hair_front_v6.png,references/avatar-hair-library/tall_afro.png
+hair.mini_afro,Mini afro,hair,Short,layers/library_hair_mini_afro_hair_front_v6.png,references/avatar-hair-library/mini_afro.png
+hair.tapered_afro,Tapered afro,hair,Short,layers/library_hair_tapered_afro_hair_front_v6.png,references/avatar-hair-library/tapered_afro.png
+hair.curly_shoulder,Shoulder-length curls,hair,Long,layers/library_hair_curly_shoulder_hair_back_v6.png|layers/library_hair_curly_shoulder_hair_front_v6.png,references/avatar-hair-library/curly_shoulder.png
+hair.long_ringlets,Long ringlets,hair,Long,layers/library_hair_long_ringlets_hair_back_v6.png|layers/library_hair_long_ringlets_hair_front_v6.png,references/avatar-hair-library/long_ringlets.png
+hair.box_braids,Box braids,hair,Long,layers/library_hair_box_braids_hair_back_v6.png|layers/library_hair_box_braids_hair_front_v6.png,references/avatar-hair-library/box_braids.png
+hair.knotless_braids,Knotless braids,hair,Long,layers/library_hair_knotless_braids_hair_back_v6.png|layers/library_hair_knotless_braids_hair_front_v6.png,references/avatar-hair-library/knotless_braids.png
+hair.braided_bob,Braided bob,hair,Medium,layers/library_hair_braided_bob_hair_back_v6.png|layers/library_hair_braided_bob_hair_front_v6.png,references/avatar-hair-library/braided_bob.png
+hair.feed_in_braids,Feed-in braids,hair,Long,layers/library_hair_feed_in_braids_hair_back_v6.png|layers/library_hair_feed_in_braids_hair_front_v6.png,references/avatar-hair-library/feed_in_braids.png
+hair.micro_braids,Micro braids,hair,Long,layers/library_hair_micro_braids_hair_back_v6.png|layers/library_hair_micro_braids_hair_front_v6.png,references/avatar-hair-library/micro_braids.png
+hair.short_locs,Short locs,hair,Short,layers/library_hair_short_locs_hair_front_v6.png,references/avatar-hair-library/short_locs.png
+hair.loc_bob,Loc bob,hair,Medium,layers/library_hair_loc_bob_hair_back_v6.png|layers/library_hair_loc_bob_hair_front_v6.png,references/avatar-hair-library/loc_bob.png
+hair.thick_locs,Long thick locs,hair,Long,layers/library_hair_thick_locs_hair_back_v6.png|layers/library_hair_thick_locs_hair_front_v6.png,references/avatar-hair-library/thick_locs.png
+hair.two_strand_twists,Two-strand twists,hair,Medium,layers/library_hair_two_strand_twists_hair_back_v6.png|layers/library_hair_two_strand_twists_hair_front_v6.png,references/avatar-hair-library/two_strand_twists.png
+hair.flat_twists,Flat twists,hair,Short,layers/library_hair_flat_twists_hair_front_v6.png,references/avatar-hair-library/flat_twists.png
+hair.long_sleek,Long straight hair,hair,Long,layers/library_hair_long_sleek_hair_back_v6.png|layers/library_hair_long_sleek_hair_front_v6.png,references/avatar-hair-library/long_sleek.png
+hair.long_layers,Long layered hair,hair,Long,layers/library_hair_long_layers_hair_back_v6.png|layers/library_hair_long_layers_hair_front_v6.png,references/avatar-hair-library/long_layers.png
+hair.long_curtain_bangs,Long hair with curtain bangs,hair,Long,layers/library_hair_long_curtain_bangs_hair_back_v6.png|layers/library_hair_long_curtain_bangs_hair_front_v6.png,references/avatar-hair-library/long_curtain_bangs.png
+hair.long_blunt_bangs,Long hair with blunt bangs,hair,Long,layers/library_hair_long_blunt_bangs_hair_back_v6.png|layers/library_hair_long_blunt_bangs_hair_front_v6.png,references/avatar-hair-library/long_blunt_bangs.png
+hair.beach_waves,Loose beach waves,hair,Long,layers/library_hair_beach_waves_hair_back_v6.png|layers/library_hair_beach_waves_hair_front_v6.png,references/avatar-hair-library/beach_waves.png
+hair.long_curls_sidepart,Side-parted long curls,hair,Long,layers/library_hair_long_curls_sidepart_hair_back_v6.png|layers/library_hair_long_curls_sidepart_hair_front_v6.png,references/avatar-hair-library/long_curls_sidepart_v2.png
+hair.long_shag,Long shag haircut,hair,Long,layers/library_hair_long_shag_hair_back_v6.png|layers/library_hair_long_shag_hair_front_v6.png,references/avatar-hair-library/long_shag.png
+hair.waist_length_straight,Waist-length straight hair,hair,Long,layers/library_hair_waist_length_straight_hair_back_v6.png|layers/library_hair_waist_length_straight_hair_front_v6.png,references/avatar-hair-library/waist_length_straight.png
+hair.low_ponytail,Low ponytail,hair,Tied,layers/library_hair_low_ponytail_hair_back_v6.png|layers/library_hair_low_ponytail_hair_front_v6.png,references/avatar-hair-library/low_ponytail.png
+hair.side_ponytail,Side ponytail,hair,Tied,layers/library_hair_side_ponytail_hair_back_v6.png|layers/library_hair_side_ponytail_hair_front_v6.png,references/avatar-hair-library/side_ponytail.png
+hair.braided_ponytail,Braided ponytail,hair,Tied,layers/library_hair_braided_ponytail_hair_back_v6.png|layers/library_hair_braided_ponytail_hair_front_v6.png,references/avatar-hair-library/braided_ponytail.png
+hair.low_bun,Low bun,hair,Tied,layers/library_hair_low_bun_hair_back_v6.png|layers/library_hair_low_bun_hair_front_v6.png,references/avatar-hair-library/low_bun.png
+hair.high_bun,High bun,hair,Tied,layers/library_hair_high_bun_hair_back_v6.png|layers/library_hair_high_bun_hair_front_v6.png,references/avatar-hair-library/high_bun.png
+hair.half_up,Half-up wavy hair,hair,Tied,layers/library_hair_half_up_hair_back_v6.png|layers/library_hair_half_up_hair_front_v6.png,references/avatar-hair-library/half_up_v2.png
+hair.double_buns,Double buns,hair,Tied,layers/library_hair_double_buns_hair_back_v6.png|layers/library_hair_double_buns_hair_front_v6.png,references/avatar-hair-library/double_buns.png
+top.fine_turtleneck,Fine-knit turtleneck,top,Casual,layers/wardrobe_two_top_fine_turtleneck_back_v6.png|layers/wardrobe_two_top_fine_turtleneck_front_v6.png,references/avatar-wardrobe-two/top_fine_turtleneck.png
+top.shawl_sweater,Shawl-collar sweater,top,Casual,layers/wardrobe_two_top_shawl_sweater_back_v6.png|layers/wardrobe_two_top_shawl_sweater_front_v6.png,references/avatar-wardrobe-two/top_shawl_sweater.png
+top.raglan_baseball,Raglan baseball T-shirt,top,Casual,layers/wardrobe_two_top_raglan_baseball_back_v6.png|layers/wardrobe_two_top_raglan_baseball_front_v6.png,references/avatar-wardrobe-two/top_raglan_baseball.png
+top.camp_collar,Camp-collar shirt,top,Casual,layers/wardrobe_two_top_camp_collar_back_v6.png|layers/wardrobe_two_top_camp_collar_front_v6.png,references/avatar-wardrobe-two/top_camp_collar.png
+top.training_panel,Panelled training top,top,Casual,layers/wardrobe_two_top_training_panel_back_v6.png|layers/wardrobe_two_top_training_panel_front_v6.png,references/avatar-wardrobe-two/top_training_panel.png
+top.check_flannel,Checked flannel shirt,top,Casual,layers/wardrobe_two_top_check_flannel_back_v6.png|layers/wardrobe_two_top_check_flannel_front_v6.png,references/avatar-wardrobe-two/top_check_flannel.png
+top.utility_pocket_tee,Utility pocket T-shirt,top,Casual,layers/wardrobe_two_top_utility_pocket_tee_back_v6.png|layers/wardrobe_two_top_utility_pocket_tee_front_v6.png,references/avatar-wardrobe-two/top_utility_pocket_tee.png
+top.fisherman_knit,Fisherman rib sweater,top,Casual,layers/wardrobe_two_top_fisherman_knit_back_v6.png|layers/wardrobe_two_top_fisherman_knit_front_v6.png,references/avatar-wardrobe-two/top_fisherman_knit.png
+jacket.corduroy,Corduroy jacket,jacket,Layers,layers/wardrobe_two_jacket_corduroy_back_v6.png|layers/wardrobe_two_jacket_corduroy_front_v6.png,references/avatar-wardrobe-two/jacket_corduroy.png
+jacket.cafe_racer,Stand-collar leather jacket,jacket,Layers,layers/wardrobe_two_jacket_cafe_racer_back_v6.png|layers/wardrobe_two_jacket_cafe_racer_front_v6.png,references/avatar-wardrobe-two/jacket_cafe_racer.png
+jacket.hood_anorak,Hooded anorak,jacket,Layers,layers/wardrobe_two_jacket_hood_anorak_back_v6.png|layers/wardrobe_two_jacket_hood_anorak_front_v6.png,references/avatar-wardrobe-two/jacket_hood_anorak.png
+jacket.double_blazer,Double-breasted blazer,jacket,Layers,layers/wardrobe_two_jacket_double_blazer_back_v6.png|layers/wardrobe_two_jacket_double_blazer_front_v6.png,references/avatar-wardrobe-two/jacket_double_blazer.png
+jacket.herringbone,Herringbone overshirt,jacket,Layers,layers/wardrobe_two_jacket_herringbone_back_v6.png|layers/wardrobe_two_jacket_herringbone_front_v6.png,references/avatar-wardrobe-two/jacket_herringbone.png
+jacket.utility_field,Utility field jacket,jacket,Layers,layers/wardrobe_two_jacket_utility_field_back_v6.png|layers/wardrobe_two_jacket_utility_field_front_v6.png,references/avatar-wardrobe-two/jacket_utility_field.png
+bottom.corduroy_straight,Straight corduroy trousers,bottom,Everyday,layers/wardrobe_two_bottom_corduroy_straight_front_v6.png,references/avatar-wardrobe-two/bottom_corduroy_straight.png
+bottom.pinstripe,Pinstripe trousers,bottom,Everyday,layers/wardrobe_two_bottom_pinstripe_front_v6.png,references/avatar-wardrobe-two/bottom_pinstripe.png
+bottom.cuffed_joggers,Cuffed joggers,bottom,Everyday,layers/wardrobe_two_bottom_cuffed_joggers_front_v6.png,references/avatar-wardrobe-two/bottom_cuffed_joggers.png
+bottom.double_knee,Double-knee work trousers,bottom,Everyday,layers/wardrobe_two_bottom_double_knee_front_v6.png,references/avatar-wardrobe-two/bottom_double_knee.png
+bottom.patchwork_denim,Patchwork jeans,bottom,Everyday,layers/wardrobe_two_bottom_patchwork_denim_front_v6.png,references/avatar-wardrobe-two/bottom_patchwork_denim.png
+bottom.bootcut_denim,Bootcut jeans,bottom,Everyday,layers/wardrobe_two_bottom_bootcut_denim_front_v6.png,references/avatar-wardrobe-two/bottom_bootcut_denim.png

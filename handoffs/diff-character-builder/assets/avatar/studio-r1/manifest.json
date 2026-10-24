@@ -1,0 +1,391 @@
+{
+  "version": 1,
+  "pack": "studio-r1",
+  "size": 128,
+  "assets": [
+    {
+      "id": "body.skin_01",
+      "name": "Skin 01",
+      "slot": "body",
+      "z": 20,
+      "source": "references/avatar-v1/master-body-imagegen.png",
+      "file": "body_skin_01.png",
+      "bounds": [
+        42,
+        14,
+        86,
+        124
+      ]
+    },
+    {
+      "id": "body.skin_02",
+      "name": "Skin 02",
+      "slot": "body",
+      "z": 20,
+      "source": "references/avatar-v1/master-body-imagegen.png",
+      "file": "body_skin_02.png",
+      "bounds": [
+        42,
+        14,
+        86,
+        124
+      ]
+    },
+    {
+      "id": "body.skin_03",
+      "name": "Skin 03",
+      "slot": "body",
+      "z": 20,
+      "source": "references/avatar-v1/master-body-imagegen.png",
+      "file": "body_skin_03.png",
+      "bounds": [
+        42,
+        14,
+        86,
+        124
+      ]
+    },
+    {
+      "id": "body.skin_04",
+      "name": "Skin 04",
+      "slot": "body",
+      "z": 20,
+      "source": "references/avatar-v1/master-body-imagegen.png",
+      "file": "body_skin_04.png",
+      "bounds": [
+        42,
+        14,
+        86,
+        124
+      ]
+    },
+    {
+      "id": "body.skin_05",
+      "name": "Skin 05",
+      "slot": "body",
+      "z": 20,
+      "source": "references/avatar-v1/master-body-imagegen.png",
+      "file": "body_skin_05.png",
+      "bounds": [
+        42,
+        14,
+        86,
+        124
+      ]
+    },
+    {
+      "id": "body.skin_06",
+      "name": "Skin 06",
+      "slot": "body",
+      "z": 20,
+      "source": "references/avatar-v1/master-body-imagegen.png",
+      "file": "body_skin_06.png",
+      "bounds": [
+        42,
+        14,
+        86,
+        124
+      ]
+    },
+    {
+      "id": "body.skin_07",
+      "name": "Skin 07",
+      "slot": "body",
+      "z": 20,
+      "source": "references/avatar-v1/master-body-imagegen.png",
+      "file": "body_skin_07.png",
+      "bounds": [
+        42,
+        14,
+        86,
+        124
+      ]
+    },
+    {
+      "id": "body.skin_08",
+      "name": "Skin 08",
+      "slot": "body",
+      "z": 20,
+      "source": "references/avatar-v1/master-body-imagegen.png",
+      "file": "body_skin_08.png",
+      "bounds": [
+        42,
+        14,
+        86,
+        124
+      ]
+    },
+    {
+      "id": "body.skin_09",
+      "name": "Skin 09",
+      "slot": "body",
+      "z": 20,
+      "source": "references/avatar-v1/master-body-imagegen.png",
+      "file": "body_skin_09.png",
+      "bounds": [
+        42,
+        14,
+        86,
+        124
+      ]
+    },
+    {
+      "id": "body.skin_10",
+      "name": "Skin 10",
+      "slot": "body",
+      "z": 20,
+      "source": "references/avatar-v1/master-body-imagegen.png",
+      "file": "body_skin_10.png",
+      "bounds": [
+        42,
+        14,
+        86,
+        124
+      ]
+    },
+    {
+      "id": "body.skin_11",
+      "name": "Skin 11",
+      "slot": "body",
+      "z": 20,
+      "source": "references/avatar-v1/master-body-imagegen.png",
+      "file": "body_skin_11.png",
+      "bounds": [
+        42,
+        14,
+        86,
+        124
+      ]
+    },
+    {
+      "id": "body.skin_12",
+      "name": "Skin 12",
+      "slot": "body",
+      "z": 20,
+      "source": "references/avatar-v1/master-body-imagegen.png",
+      "file": "body_skin_12.png",
+      "bounds": [
+        42,
+        14,
+        86,
+        124
+      ]
+    },
+    {
+      "id": "eyes.neutral",
+      "name": "Neutral eyes",
+      "slot": "eyes",
+      "z": 60,
+      "source": "references/avatar-v1/checkpoint-imagegen/01_checkpoint_base.png",
+      "file": "eyes_neutral.png",
+      "bounds": [
+        56,
+        25,
+        72,
+        30
+      ]
+    },
+    {
+      "id": "brows.straight",
+      "name": "Straight brows",
+      "slot": "brows",
+      "z": 62,
+      "source": "references/avatar-v1/checkpoint-imagegen/01_checkpoint_base.png",
+      "file": "brows_straight.png",
+      "bounds": [
+        55,
+        22,
+        74,
+        23
+      ]
+    },
+    {
+      "id": "mouth.smile",
+      "name": "Small smile",
+      "slot": "mouth",
+      "z": 64,
+      "source": "references/avatar-v1/checkpoint-imagegen/01_checkpoint_base.png",
+      "file": "mouth_smile_r2.png",
+      "bounds": [
+        62,
+        32,
+        66,
+        34
+      ]
+    },
+    {
+      "id": "hair.fluffy.front",
+      "name": "Fluffy middle part",
+      "slot": "hair_front",
+      "z": 70,
+      "source": "references/avatar-v1/checkpoint-imagegen/01_checkpoint_base.png",
+      "file": "hair_fluffy_front.png",
+      "bounds": [
+        47,
+        4,
+        81,
+        30
+      ]
+    },
+    {
+      "id": "hat.cap",
+      "name": "Classic cap",
+      "slot": "headwear",
+      "z": 90,
+      "source": "references/avatar-v1/checkpoint-imagegen/02_variant_a_cap.png",
+      "file": "hat_cap.png",
+      "bounds": [
+        50,
+        2,
+        79,
+        18
+      ]
+    },
+    {
+      "id": "hat.beanie",
+      "name": "Folded beanie",
+      "slot": "headwear",
+      "z": 90,
+      "source": "references/avatar-v1/checkpoint-imagegen/03_variant_b_beanie.png",
+      "file": "hat_beanie.png",
+      "bounds": [
+        49,
+        2,
+        79,
+        18
+      ]
+    },
+    {
+      "id": "top.cream",
+      "name": "Fleece quarter zip",
+      "slot": "top",
+      "z": 50,
+      "source": "references/avatar-v1/checkpoint-imagegen/01_checkpoint_base.png",
+      "file": "top_cream.png",
+      "bounds": [
+        41,
+        36,
+        87,
+        74
+      ]
+    },
+    {
+      "id": "bottom.straight",
+      "name": "Straight trousers",
+      "slot": "bottom",
+      "z": 30,
+      "source": "references/avatar-v1/checkpoint-imagegen/01_checkpoint_base.png",
+      "file": "bottom_straight.png",
+      "bounds": [
+        52,
+        74,
+        76,
+        116
+      ]
+    },
+    {
+      "id": "bottom.track",
+      "name": "Track pants",
+      "slot": "bottom",
+      "z": 30,
+      "source": "references/avatar-v1/checkpoint-imagegen/07_variant_f_track_pants.png",
+      "file": "bottom_track.png",
+      "bounds": [
+        51,
+        74,
+        77,
+        117
+      ]
+    },
+    {
+      "id": "shoes.white",
+      "name": "Low sneakers",
+      "slot": "shoes",
+      "z": 40,
+      "source": "references/avatar-v1/checkpoint-imagegen/01_checkpoint_base.png",
+      "file": "shoes_white.png",
+      "bounds": [
+        48,
+        116,
+        81,
+        124
+      ]
+    },
+    {
+      "id": "jacket.track",
+      "name": "Track jacket",
+      "slot": "outerwear",
+      "z": 55,
+      "source": "references/avatar-v1/checkpoint-imagegen/04_variant_c_track_jacket.png",
+      "file": "jacket_track.png",
+      "bounds": [
+        40,
+        36,
+        89,
+        76
+      ]
+    },
+    {
+      "id": "hair.long_wavy.back",
+      "name": "Long wavy · back",
+      "slot": "hair_back",
+      "z": 10,
+      "source": "references/avatar-v1/checkpoint-imagegen/05_variant_d_long_wavy.png",
+      "file": "hair_long_wavy_back.png",
+      "bounds": [
+        46,
+        8,
+        82,
+        62
+      ]
+    },
+    {
+      "id": "hair.long_wavy.front",
+      "name": "Long wavy · front",
+      "slot": "hair_front",
+      "z": 70,
+      "source": "references/avatar-v1/checkpoint-imagegen/05_variant_d_long_wavy.png",
+      "file": "hair_long_wavy_front.png",
+      "bounds": [
+        46,
+        8,
+        82,
+        62
+      ]
+    },
+    {
+      "id": "glasses.round",
+      "name": "Round glasses",
+      "slot": "glasses",
+      "z": 82,
+      "source": "references/avatar-v1/checkpoint-imagegen/06_variant_e_glasses.png",
+      "file": "glasses_round.png",
+      "bounds": [
+        51,
+        22,
+        74,
+        33
+      ]
+    }
+  ],
+  "sources": {
+    "body": "references/avatar-v1/master-body-imagegen.png",
+    "base": "references/avatar-v1/checkpoint-imagegen/01_checkpoint_base.png",
+    "cap": "references/avatar-v1/checkpoint-imagegen/02_variant_a_cap.png",
+    "beanie": "references/avatar-v1/checkpoint-imagegen/03_variant_b_beanie.png",
+    "trackJacket": "references/avatar-v1/checkpoint-imagegen/04_variant_c_track_jacket.png",
+    "longWavy": "references/avatar-v1/checkpoint-imagegen/05_variant_d_long_wavy.png",
+    "glasses": "references/avatar-v1/checkpoint-imagegen/06_variant_e_glasses.png",
+    "trackPants": "references/avatar-v1/checkpoint-imagegen/07_variant_f_track_pants.png"
+  },
+  "sourceHashes": {
+    "references/avatar-v1/master-body-imagegen.png": "b174114e6ba7113db9a1258001b8c5c1f73b35ceb3529dc409172bc287cb40de",
+    "references/avatar-v1/checkpoint-imagegen/01_checkpoint_base.png": "ec0d753a63f741cea0c1f923b96d124111677e232f09cd06d7ea3aae5932b5b5",
+    "references/avatar-v1/checkpoint-imagegen/02_variant_a_cap.png": "f01f479c6d85de4d7a80d18c09a67f8b9aa14e7f913e0b7a16575fc8ce0804ca",
+    "references/avatar-v1/checkpoint-imagegen/03_variant_b_beanie.png": "7f1ab5ba3c513fc23aee40ea3da0455fa329ea8ebfeb5a0c6e8eaaa4fb7b7da4",
+    "references/avatar-v1/checkpoint-imagegen/04_variant_c_track_jacket.png": "89e0dc6cdb6a7259c39f77f820315883caf261aec0ade0d2cf5ea95ae72ec6f3",
+    "references/avatar-v1/checkpoint-imagegen/05_variant_d_long_wavy.png": "04bfe9faef3251678d1a70ad2d835e90c591a13e722e453fef646238d1370a7d",
+    "references/avatar-v1/checkpoint-imagegen/06_variant_e_glasses.png": "b66ddc0ed1e8d61c32372590ae51e18383ef2f5ef2dce55d8e233bb63f464c42",
+    "references/avatar-v1/checkpoint-imagegen/07_variant_f_track_pants.png": "58335a8725b1b43d207eb3449efb34e6709da8ddabebdb0a97a9c551e35a5574"
+  }
+}

@@ -1,0 +1,203 @@
+{
+  "base": {
+    "version": 1,
+    "rig": "front_idle_v1",
+    "skin": "skin_04",
+    "eyes": "eyes.neutral",
+    "brows": "brows.straight",
+    "mouth": "mouth.small_smile",
+    "hair": "hair.fluffy_middle",
+    "hairColor": "dark_brown",
+    "facialHair": null,
+    "top": {
+      "id": "top.quarter_zip_fleece",
+      "color": "cream"
+    },
+    "outerwear": null,
+    "bottom": {
+      "id": "bottom.straight_trousers",
+      "color": "black"
+    },
+    "shoes": {
+      "id": "shoe.minimal_low",
+      "color": "white"
+    },
+    "headwear": null,
+    "glasses": null,
+    "accessories": []
+  },
+  "variant_a_cap": {
+    "version": 1,
+    "rig": "front_idle_v1",
+    "skin": "skin_04",
+    "eyes": "eyes.neutral",
+    "brows": "brows.straight",
+    "mouth": "mouth.small_smile",
+    "hair": "hair.fluffy_middle",
+    "hairColor": "dark_brown",
+    "facialHair": null,
+    "top": {
+      "id": "top.quarter_zip_fleece",
+      "color": "cream"
+    },
+    "outerwear": null,
+    "bottom": {
+      "id": "bottom.straight_trousers",
+      "color": "black"
+    },
+    "shoes": {
+      "id": "shoe.minimal_low",
+      "color": "white"
+    },
+    "headwear": {
+      "id": "headwear.cap_forward",
+      "color": "black"
+    },
+    "glasses": null,
+    "accessories": []
+  },
+  "variant_b_beanie": {
+    "version": 1,
+    "rig": "front_idle_v1",
+    "skin": "skin_04",
+    "eyes": "eyes.neutral",
+    "brows": "brows.straight",
+    "mouth": "mouth.small_smile",
+    "hair": "hair.fluffy_middle",
+    "hairColor": "dark_brown",
+    "facialHair": null,
+    "top": {
+      "id": "top.quarter_zip_fleece",
+      "color": "cream"
+    },
+    "outerwear": null,
+    "bottom": {
+      "id": "bottom.straight_trousers",
+      "color": "black"
+    },
+    "shoes": {
+      "id": "shoe.minimal_low",
+      "color": "white"
+    },
+    "headwear": {
+      "id": "headwear.beanie_folded",
+      "color": "black"
+    },
+    "glasses": null,
+    "accessories": []
+  },
+  "variant_c_track_jacket": {
+    "version": 1,
+    "rig": "front_idle_v1",
+    "skin": "skin_04",
+    "eyes": "eyes.neutral",
+    "brows": "brows.straight",
+    "mouth": "mouth.small_smile",
+    "hair": "hair.fluffy_middle",
+    "hairColor": "dark_brown",
+    "facialHair": null,
+    "top": {
+      "id": "top.quarter_zip_fleece",
+      "color": "cream"
+    },
+    "outerwear": {
+      "id": "outer.track_classic",
+      "color": "diff_track"
+    },
+    "bottom": {
+      "id": "bottom.straight_trousers",
+      "color": "black"
+    },
+    "shoes": {
+      "id": "shoe.minimal_low",
+      "color": "white"
+    },
+    "headwear": null,
+    "glasses": null,
+    "accessories": []
+  },
+  "variant_d_long_wavy": {
+    "version": 1,
+    "rig": "front_idle_v1",
+    "skin": "skin_04",
+    "eyes": "eyes.neutral",
+    "brows": "brows.straight",
+    "mouth": "mouth.small_smile",
+    "hair": "hair.long_wavy",
+    "hairColor": "dark_brown",
+    "facialHair": null,
+    "top": {
+      "id": "top.quarter_zip_fleece",
+      "color": "cream"
+    },
+    "outerwear": null,
+    "bottom": {
+      "id": "bottom.straight_trousers",
+      "color": "black"
+    },
+    "shoes": {
+      "id": "shoe.minimal_low",
+      "color": "white"
+    },
+    "headwear": null,
+    "glasses": null,
+    "accessories": []
+  },
+  "variant_e_glasses": {
+    "version": 1,
+    "rig": "front_idle_v1",
+    "skin": "skin_04",
+    "eyes": "eyes.neutral",
+    "brows": "brows.straight",
+    "mouth": "mouth.small_smile",
+    "hair": "hair.fluffy_middle",
+    "hairColor": "dark_brown",
+    "facialHair": null,
+    "top": {
+      "id": "top.quarter_zip_fleece",
+      "color": "cream"
+    },
+    "outerwear": null,
+    "bottom": {
+      "id": "bottom.straight_trousers",
+      "color": "black"
+    },
+    "shoes": {
+      "id": "shoe.minimal_low",
+      "color": "white"
+    },
+    "headwear": null,
+    "glasses": {
+      "id": "glasses.round",
+      "color": "glasses_graphite"
+    },
+    "accessories": []
+  },
+  "variant_f_track_pants": {
+    "version": 1,
+    "rig": "front_idle_v1",
+    "skin": "skin_04",
+    "eyes": "eyes.neutral",
+    "brows": "brows.straight",
+    "mouth": "mouth.small_smile",
+    "hair": "hair.fluffy_middle",
+    "hairColor": "dark_brown",
+    "facialHair": null,
+    "top": {
+      "id": "top.quarter_zip_fleece",
+      "color": "cream"
+    },
+    "outerwear": null,
+    "bottom": {
+      "id": "bottom.track_tapered",
+      "color": "black"
+    },
+    "shoes": {
+      "id": "shoe.minimal_low",
+      "color": "white"
+    },
+    "headwear": null,
+    "glasses": null,
+    "accessories": []
+  }
+}

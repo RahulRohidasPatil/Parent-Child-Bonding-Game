@@ -1,0 +1,47 @@
+{
+  "name": "diff-avatar-checkpoint",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "assets": "tsx scripts/avatar/buildCheckpoint.ts",
+    "validate": "tsx scripts/avatar/validateAssets.ts",
+    "test": "tsx --test --test-concurrency=1 tests/avatar/*.test.ts",
+    "check": "npm run build && npm run validate && npm test && npm run atelier:validate && npm run portrait:validate && npm run exact:validate && npm run collection:validate",
+    "portrait:assets": "tsx scripts/avatar/buildPortraits.ts",
+    "portrait:previews": "tsx scripts/avatar/previewPortraits.ts",
+    "portrait:validate": "tsx scripts/avatar/validatePortraits.ts",
+    "atelier:assets": "tsx scripts/avatar/buildAtelier.ts",
+    "atelier:previews": "tsx scripts/avatar/previewAtelier.ts",
+    "atelier:validate": "tsx scripts/avatar/validateAtelier.ts",
+    "studio:assets": "tsx scripts/avatar/buildStudioAssets.ts",
+    "preview": "tsx scripts/avatar/previewServer.ts",
+    "exact:assets": "tsx scripts/avatar/recoverReference.ts && tsx scripts/avatar/buildExact.ts",
+    "exact:previews": "tsx scripts/avatar/previewExact.ts",
+    "exact:validate": "tsx scripts/avatar/validateExact.ts",
+    "collection:assets": "tsx scripts/avatar/buildCollection.ts",
+    "collection:previews": "tsx scripts/avatar/previewCollection.ts",
+    "collection:validate": "tsx scripts/avatar/validateCollection.ts",
+    "hair:previews": "tsx scripts/avatar/previewHairExpansion.ts assets/avatar/atelier-r6/previews/hair-expansion",
+    "wear:previews": "tsx scripts/avatar/previewWardrobeExpansion.ts assets/avatar/atelier-r6/previews/wardrobe-expansion",
+    "selfie:assets": "tsx scripts/selfie/setupAssets.ts",
+    "hair:library": "tsx scripts/avatar/buildHairLibrary.ts",
+    "hair:library:publish": "tsx scripts/avatar/buildHairLibrary.ts --publish",
+    "hair:library:previews": "tsx scripts/avatar/previewHairExpansion.ts assets/avatar/atelier-r6/previews/hair-library",
+    "wear:next": "tsx scripts/avatar/buildWardrobeTwo.ts",
+    "wear:next:publish": "tsx scripts/avatar/buildWardrobeTwo.ts --publish",
+    "wear:next:previews": "tsx scripts/avatar/previewWardrobeTwo.ts"
+  },
+  "dependencies": {
+    "@mediapipe/tasks-vision": "1.0.1",
+    "pngjs": "^7.0.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.14",
+    "@types/pngjs": "^6.0.5",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
+  }
+}

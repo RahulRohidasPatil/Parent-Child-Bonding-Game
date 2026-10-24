@@ -1,0 +1,10 @@
+{
+  "id": "hair.curly_shoulder",
+  "source": "/Users/vlad/.codex/generated_images/01a07a71-8c9e-7292-bd75-a2688e8698a6/exec-7d2102a3-95fd-49e3-9e00-1556234b42ad.png",
+  "output": "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-hair-library/curly_shoulder.png",
+  "prompt": "Use case: stylized-concept. Asset type: ONE modular DIFF pixel-avatar hairstyle, source artwork for a locked 128x128 layer. The input is a BLANK HEAD used only for skull proportions and pixel-art style. Design the requested new haircut with its own unmistakable silhouette; do not add a generic fluffy center-part. Never draw the reference head or body. Produce ONLY shoulder-length broad ringlets, central part and rounded ends, hair falling on both sides of an empty face opening. Front-facing, upright, ONE hairstyle. Match the reference's deliberate coarse square pixel clusters, compact head proportions, dark contour and restrained shading. Brown hair ONLY: outline #211414, shadows #38241d, base #654333, highlights #8b6148. No peach, beige, flesh or skin-colored marks. Fade regions must be sparse/darker brown hair or transparent, never skin. Entire hair silhouette centered on a square canvas with generous transparent padding, complete crown and tips visible. Empty genuinely transparent face opening. Keep all bangs above eyebrows; no eyes, brows, nose, mouth, ears, head, skin, neck, body, clothing, hats, jewelry, text, borders or backdrop. True RGBA transparency, not a painted checkerboard. No fine realistic strands, blurry shading, gradients or antialiasing. Keep the head opening compatible with the reference; do not draw a complete character.",
+  "refs": [
+    "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+  ],
+  "mode": "built-in image_gen"
+}

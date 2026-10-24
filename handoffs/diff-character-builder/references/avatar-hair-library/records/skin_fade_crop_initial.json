@@ -1,0 +1,11 @@
+{
+  "id": "hair.skin_fade_crop",
+  "prompt": "Use case: stylized-concept. Asset type: ONE modular DIFF pixel-avatar hairstyle, source artwork for a locked 128x128 layer. Input 1 is the approved style reference; input 2 is head-proportion reference only. Produce ONLY a short sharp crop with tightly faded sides, straight shallow fringe; fade shown by sparse brown hair pixels, not skin. Front-facing, upright, ONE hairstyle. Match the reference's deliberate coarse square pixel clusters, compact head proportions, dark contour and restrained shading. Brown hair ONLY: outline #211414, shadows #38241d, base #654333, highlights #8b6148. No peach, beige, flesh or skin-colored marks. Fade regions must be sparse/darker brown hair or transparent, never skin. Entire hair silhouette centered on a square canvas with generous transparent padding, complete crown and tips visible. Empty genuinely transparent face opening. Keep all bangs above eyebrows; no eyes, brows, nose, mouth, ears, head, skin, neck, body, clothing, hats, jewelry, text, borders or backdrop. True RGBA transparency, not a painted checkerboard. No fine realistic strands, blurry shading, gradients or antialiasing. Keep the head opening compatible with the reference; do not draw a complete character.",
+  "refs": [
+    "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png",
+    "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png"
+  ],
+  "source": "skin_fade_crop.png",
+  "origin": "/Users/vlad/.codex/generated_images/01a07a71-8c9e-7292-bd75-a2688e8698a6/exec-5cc03a91-0444-4f4e-97c4-3794408d1997.png",
+  "mode": "built-in image_gen"
+}

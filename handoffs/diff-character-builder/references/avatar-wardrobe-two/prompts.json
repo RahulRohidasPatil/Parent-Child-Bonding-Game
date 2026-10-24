@@ -1,0 +1,293 @@
+{
+  "mode": "built-in image_gen",
+  "jobs": [
+    {
+      "id": "top.fine_turtleneck",
+      "name": "Fine-knit turtleneck",
+      "kind": "top",
+      "description": "fine-knit sweater with tall folded turtleneck, fitted rib cuffs and hem",
+      "collection": "Casual",
+      "color": "Slate blue",
+      "source": "top_fine_turtleneck.png",
+      "closed": true,
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE separate modular pixel-avatar top layer. The input image is the approved style and pose reference. Generate ONLY this garment: fine-knit sweater with tall folded turtleneck, fitted rib cuffs and hem. Match the reference torso proportions: front-facing, narrow shoulders, arms relaxed almost vertically alongside the torso with wrists inward close to hips. Narrow relaxed sleeves, not a wide T pose. Garment only, empty transparent neck opening and sleeve openings. No head, hands, body or skin. Long sleeves end at the same hip-level wrist line. Closed garment torso, transparent neck opening. Deliberately coarse modern pixel art matching the reference: dark one-logical-pixel outline, crisp stair-step edges, broad readable clusters and 3\u20135 tonal values per material. Main fabric is medium slate BLUE; lighter blue highlights and dark navy shadows. Secondary material details use neutral cream or gray so they can be recolored separately. No text, branding, logos, symbols, hangers, labels, mannequins or scene. Genuine transparent RGBA background, not a painted checkerboard. Square image with clear margins around the entire isolated garment; no cropping. This is source artwork to be normalized to a locked 128\u00d7128 layer."
+    },
+    {
+      "id": "top.shawl_sweater",
+      "name": "Shawl-collar sweater",
+      "kind": "top",
+      "description": "thick knit sweater with overlapping shawl collar, one small collar button and rib cuffs",
+      "collection": "Casual",
+      "color": "Slate blue",
+      "source": "top_shawl_sweater.png",
+      "closed": true,
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE separate modular pixel-avatar top layer. The input image is the approved style and pose reference. Generate ONLY this garment: thick knit sweater with overlapping shawl collar, one small collar button and rib cuffs. Match the reference torso proportions: front-facing, narrow shoulders, arms relaxed almost vertically alongside the torso with wrists inward close to hips. Narrow relaxed sleeves, not a wide T pose. Garment only, empty transparent neck opening and sleeve openings. No head, hands, body or skin. Long sleeves end at the same hip-level wrist line. Closed garment torso, transparent neck opening. Deliberately coarse modern pixel art matching the reference: dark one-logical-pixel outline, crisp stair-step edges, broad readable clusters and 3\u20135 tonal values per material. Main fabric is medium slate BLUE; lighter blue highlights and dark navy shadows. Secondary material details use neutral cream or gray so they can be recolored separately. No text, branding, logos, symbols, hangers, labels, mannequins or scene. Genuine transparent RGBA background, not a painted checkerboard. Square image with clear margins around the entire isolated garment; no cropping. This is source artwork to be normalized to a locked 128\u00d7128 layer."
+    },
+    {
+      "id": "top.raglan_baseball",
+      "name": "Raglan baseball T-shirt",
+      "kind": "top",
+      "description": "long-sleeve raglan baseball T-shirt with neutral cream torso and slate blue sleeves, curved raglan seams and crew neck",
+      "collection": "Casual",
+      "color": "Slate blue",
+      "source": "top_raglan_baseball.png",
+      "closed": true,
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE separate modular pixel-avatar top layer. The input image is the approved style and pose reference. Generate ONLY this garment: long-sleeve raglan baseball T-shirt with neutral cream torso and slate blue sleeves, curved raglan seams and crew neck. Match the reference torso proportions: front-facing, narrow shoulders, arms relaxed almost vertically alongside the torso with wrists inward close to hips. Narrow relaxed sleeves, not a wide T pose. Garment only, empty transparent neck opening and sleeve openings. No head, hands, body or skin. Long sleeves end at the same hip-level wrist line. Closed garment torso, transparent neck opening. Deliberately coarse modern pixel art matching the reference: dark one-logical-pixel outline, crisp stair-step edges, broad readable clusters and 3\u20135 tonal values per material. Main fabric is medium slate BLUE; lighter blue highlights and dark navy shadows. Secondary material details use neutral cream or gray so they can be recolored separately. No text, branding, logos, symbols, hangers, labels, mannequins or scene. Genuine transparent RGBA background, not a painted checkerboard. Square image with clear margins around the entire isolated garment; no cropping. This is source artwork to be normalized to a locked 128\u00d7128 layer."
+    },
+    {
+      "id": "top.camp_collar",
+      "name": "Camp-collar shirt",
+      "kind": "top",
+      "description": "short-sleeve camp-collar shirt with open notched collar, five small cream buttons and square hem",
+      "collection": "Casual",
+      "color": "Slate blue",
+      "source": "top_camp_collar.png",
+      "sleeve": "short",
+      "closed": true,
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE separate modular pixel-avatar top layer. The input image is the approved style and pose reference. Generate ONLY this garment: short-sleeve camp-collar shirt with open notched collar, five small cream buttons and square hem. Match the reference torso proportions: front-facing, narrow shoulders, arms relaxed almost vertically alongside the torso with wrists inward close to hips. Narrow relaxed sleeves, not a wide T pose. Garment only, empty transparent neck opening and sleeve openings. No head, hands, body or skin. Short sleeves end above elbows. Closed garment torso, transparent neck opening. Deliberately coarse modern pixel art matching the reference: dark one-logical-pixel outline, crisp stair-step edges, broad readable clusters and 3\u20135 tonal values per material. Main fabric is medium slate BLUE; lighter blue highlights and dark navy shadows. Secondary material details use neutral cream or gray so they can be recolored separately. No text, branding, logos, symbols, hangers, labels, mannequins or scene. Genuine transparent RGBA background, not a painted checkerboard. Square image with clear margins around the entire isolated garment; no cropping. This is source artwork to be normalized to a locked 128\u00d7128 layer."
+    },
+    {
+      "id": "top.training_panel",
+      "name": "Panelled training top",
+      "kind": "top",
+      "description": "long-sleeve athletic training top with crew neck, contrasting cream curved side panels and wrist cuffs",
+      "collection": "Casual",
+      "color": "Slate blue",
+      "source": "top_training_panel.png",
+      "closed": true,
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE separate modular pixel-avatar top layer. The input image is the approved style and pose reference. Generate ONLY this garment: long-sleeve athletic training top with crew neck, contrasting cream curved side panels and wrist cuffs. Match the reference torso proportions: front-facing, narrow shoulders, arms relaxed almost vertically alongside the torso with wrists inward close to hips. Narrow relaxed sleeves, not a wide T pose. Garment only, empty transparent neck opening and sleeve openings. No head, hands, body or skin. Long sleeves end at the same hip-level wrist line. Closed garment torso, transparent neck opening. Deliberately coarse modern pixel art matching the reference: dark one-logical-pixel outline, crisp stair-step edges, broad readable clusters and 3\u20135 tonal values per material. Main fabric is medium slate BLUE; lighter blue highlights and dark navy shadows. Secondary material details use neutral cream or gray so they can be recolored separately. No text, branding, logos, symbols, hangers, labels, mannequins or scene. Genuine transparent RGBA background, not a painted checkerboard. Square image with clear margins around the entire isolated garment; no cropping. This is source artwork to be normalized to a locked 128\u00d7128 layer."
+    },
+    {
+      "id": "top.check_flannel",
+      "name": "Checked flannel shirt",
+      "kind": "top",
+      "description": "long-sleeve flannel shirt with restrained large slate-blue and charcoal checks, classic collar and two chest pockets",
+      "collection": "Casual",
+      "color": "Slate blue",
+      "source": "top_check_flannel.png",
+      "closed": true,
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE separate modular pixel-avatar top layer. The input image is the approved style and pose reference. Generate ONLY this garment: long-sleeve flannel shirt with restrained large slate-blue and charcoal checks, classic collar and two chest pockets. Match the reference torso proportions: front-facing, narrow shoulders, arms relaxed almost vertically alongside the torso with wrists inward close to hips. Narrow relaxed sleeves, not a wide T pose. Garment only, empty transparent neck opening and sleeve openings. No head, hands, body or skin. Long sleeves end at the same hip-level wrist line. Closed garment torso, transparent neck opening. Deliberately coarse modern pixel art matching the reference: dark one-logical-pixel outline, crisp stair-step edges, broad readable clusters and 3\u20135 tonal values per material. Main fabric is medium slate BLUE; lighter blue highlights and dark navy shadows. Secondary material details use neutral cream or gray so they can be recolored separately. No text, branding, logos, symbols, hangers, labels, mannequins or scene. Genuine transparent RGBA background, not a painted checkerboard. Square image with clear margins around the entire isolated garment; no cropping. This is source artwork to be normalized to a locked 128\u00d7128 layer."
+    },
+    {
+      "id": "top.utility_pocket_tee",
+      "name": "Utility pocket T-shirt",
+      "kind": "top",
+      "description": "short-sleeve cotton crewneck T-shirt with a large stitched rectangular chest pocket and a small neutral gray pocket tab",
+      "collection": "Casual",
+      "color": "Slate blue",
+      "source": "top_utility_pocket_tee.png",
+      "sleeve": "short",
+      "closed": true,
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE separate modular pixel-avatar top layer. The input image is the approved style and pose reference. Generate ONLY this garment: short-sleeve cotton crewneck T-shirt with a large stitched rectangular chest pocket and a small neutral gray pocket tab. Match the reference torso proportions: front-facing, narrow shoulders, arms relaxed almost vertically alongside the torso with wrists inward close to hips. Narrow relaxed sleeves, not a wide T pose. Garment only, empty transparent neck opening and sleeve openings. No head, hands, body or skin. Short sleeves end above elbows. Closed garment torso, transparent neck opening. Deliberately coarse modern pixel art matching the reference: dark one-logical-pixel outline, crisp stair-step edges, broad readable clusters and 3\u20135 tonal values per material. Main fabric is medium slate BLUE; lighter blue highlights and dark navy shadows. Secondary material details use neutral cream or gray so they can be recolored separately. No text, branding, logos, symbols, hangers, labels, mannequins or scene. Genuine transparent RGBA background, not a painted checkerboard. Square image with clear margins around the entire isolated garment; no cropping. This is source artwork to be normalized to a locked 128\u00d7128 layer."
+    },
+    {
+      "id": "top.fisherman_knit",
+      "name": "Fisherman rib sweater",
+      "kind": "top",
+      "description": "chunky fisherman sweater with broad vertical rib knitting, round collar and deep rib cuffs",
+      "collection": "Casual",
+      "color": "Slate blue",
+      "source": "top_fisherman_knit.png",
+      "closed": true,
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE separate modular pixel-avatar top layer. The input image is the approved style and pose reference. Generate ONLY this garment: chunky fisherman sweater with broad vertical rib knitting, round collar and deep rib cuffs. Match the reference torso proportions: front-facing, narrow shoulders, arms relaxed almost vertically alongside the torso with wrists inward close to hips. Narrow relaxed sleeves, not a wide T pose. Garment only, empty transparent neck opening and sleeve openings. No head, hands, body or skin. Long sleeves end at the same hip-level wrist line. Closed garment torso, transparent neck opening. Deliberately coarse modern pixel art matching the reference: dark one-logical-pixel outline, crisp stair-step edges, broad readable clusters and 3\u20135 tonal values per material. Main fabric is medium slate BLUE; lighter blue highlights and dark navy shadows. Secondary material details use neutral cream or gray so they can be recolored separately. No text, branding, logos, symbols, hangers, labels, mannequins or scene. Genuine transparent RGBA background, not a painted checkerboard. Square image with clear margins around the entire isolated garment; no cropping. This is source artwork to be normalized to a locked 128\u00d7128 layer."
+    },
+    {
+      "id": "jacket.corduroy",
+      "name": "Corduroy jacket",
+      "kind": "jacket",
+      "description": "hip-length corduroy jacket with broad vertical cord texture, turn-down collar, two flap chest pockets, open front",
+      "collection": "Layers",
+      "color": "Slate blue",
+      "source": "jacket_corduroy.png",
+      "closed": false,
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE separate modular pixel-avatar jacket layer. The input image is the approved style and pose reference. Generate ONLY this garment: hip-length corduroy jacket with broad vertical cord texture, turn-down collar, two flap chest pockets, open front. Match the reference torso proportions: front-facing, narrow shoulders, arms relaxed almost vertically alongside the torso with wrists inward close to hips. Narrow relaxed sleeves, not a wide T pose. Garment only, empty transparent neck opening and sleeve openings. No head, hands, body or skin. Long sleeves end at the same hip-level wrist line. Open front must be fully transparent through the central opening; no inner shirt or body. Deliberately coarse modern pixel art matching the reference: dark one-logical-pixel outline, crisp stair-step edges, broad readable clusters and 3\u20135 tonal values per material. Main fabric is medium slate BLUE; lighter blue highlights and dark navy shadows. Secondary material details use neutral cream or gray so they can be recolored separately. No text, branding, logos, symbols, hangers, labels, mannequins or scene. Genuine transparent RGBA background, not a painted checkerboard. Square image with clear margins around the entire isolated garment; no cropping. This is source artwork to be normalized to a locked 128\u00d7128 layer."
+    },
+    {
+      "id": "jacket.cafe_racer",
+      "name": "Stand-collar leather jacket",
+      "kind": "jacket",
+      "description": "fitted hip-length leather jacket with short stand collar, center zipper closed, two slim chest zip pockets and neat cuffs",
+      "collection": "Layers",
+      "color": "Slate blue",
+      "source": "jacket_cafe_racer.png",
+      "closed": true,
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE separate modular pixel-avatar jacket layer. The input image is the approved style and pose reference. Generate ONLY this garment: fitted hip-length leather jacket with short stand collar, center zipper closed, two slim chest zip pockets and neat cuffs. Match the reference torso proportions: front-facing, narrow shoulders, arms relaxed almost vertically alongside the torso with wrists inward close to hips. Narrow relaxed sleeves, not a wide T pose. Garment only, empty transparent neck opening and sleeve openings. No head, hands, body or skin. Long sleeves end at the same hip-level wrist line. Closed garment torso, transparent neck opening. Deliberately coarse modern pixel art matching the reference: dark one-logical-pixel outline, crisp stair-step edges, broad readable clusters and 3\u20135 tonal values per material. Main fabric is medium slate BLUE; lighter blue highlights and dark navy shadows. Secondary material details use neutral cream or gray so they can be recolored separately. No text, branding, logos, symbols, hangers, labels, mannequins or scene. Genuine transparent RGBA background, not a painted checkerboard. Square image with clear margins around the entire isolated garment; no cropping. This is source artwork to be normalized to a locked 128\u00d7128 layer."
+    },
+    {
+      "id": "jacket.hood_anorak",
+      "name": "Hooded anorak",
+      "kind": "jacket",
+      "description": "hip-length hooded anorak with hood down, short half-zip at neck, large horizontal chest pouch and elastic cuffs",
+      "collection": "Layers",
+      "color": "Slate blue",
+      "source": "jacket_hood_anorak.png",
+      "closed": true,
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE separate modular pixel-avatar jacket layer. The input image is the approved style and pose reference. Generate ONLY this garment: hip-length hooded anorak with hood down, short half-zip at neck, large horizontal chest pouch and elastic cuffs. Match the reference torso proportions: front-facing, narrow shoulders, arms relaxed almost vertically alongside the torso with wrists inward close to hips. Narrow relaxed sleeves, not a wide T pose. Garment only, empty transparent neck opening and sleeve openings. No head, hands, body or skin. Long sleeves end at the same hip-level wrist line. Closed garment torso, transparent neck opening. Deliberately coarse modern pixel art matching the reference: dark one-logical-pixel outline, crisp stair-step edges, broad readable clusters and 3\u20135 tonal values per material. Main fabric is medium slate BLUE; lighter blue highlights and dark navy shadows. Secondary material details use neutral cream or gray so they can be recolored separately. No text, branding, logos, symbols, hangers, labels, mannequins or scene. Genuine transparent RGBA background, not a painted checkerboard. Square image with clear margins around the entire isolated garment; no cropping. This is source artwork to be normalized to a locked 128\u00d7128 layer."
+    },
+    {
+      "id": "jacket.double_blazer",
+      "name": "Double-breasted blazer",
+      "kind": "jacket",
+      "description": "tailored hip-length double-breasted blazer with peak lapels, six small neutral gray buttons and front closed",
+      "collection": "Layers",
+      "color": "Slate blue",
+      "source": "jacket_double_blazer.png",
+      "closed": true,
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE separate modular pixel-avatar jacket layer. The input image is the approved style and pose reference. Generate ONLY this garment: tailored hip-length double-breasted blazer with peak lapels, six small neutral gray buttons and front closed. Match the reference torso proportions: front-facing, narrow shoulders, arms relaxed almost vertically alongside the torso with wrists inward close to hips. Narrow relaxed sleeves, not a wide T pose. Garment only, empty transparent neck opening and sleeve openings. No head, hands, body or skin. Long sleeves end at the same hip-level wrist line. Closed garment torso, transparent neck opening. Deliberately coarse modern pixel art matching the reference: dark one-logical-pixel outline, crisp stair-step edges, broad readable clusters and 3\u20135 tonal values per material. Main fabric is medium slate BLUE; lighter blue highlights and dark navy shadows. Secondary material details use neutral cream or gray so they can be recolored separately. No text, branding, logos, symbols, hangers, labels, mannequins or scene. Genuine transparent RGBA background, not a painted checkerboard. Square image with clear margins around the entire isolated garment; no cropping. This is source artwork to be normalized to a locked 128\u00d7128 layer."
+    },
+    {
+      "id": "jacket.herringbone",
+      "name": "Herringbone overshirt",
+      "kind": "jacket",
+      "description": "hip-length wool overshirt with subtle broad herringbone texture, pointed collar, two flap pockets and open front",
+      "collection": "Layers",
+      "color": "Slate blue",
+      "source": "jacket_herringbone.png",
+      "closed": false,
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE separate modular pixel-avatar jacket layer. The input image is the approved style and pose reference. Generate ONLY this garment: hip-length wool overshirt with subtle broad herringbone texture, pointed collar, two flap pockets and open front. Match the reference torso proportions: front-facing, narrow shoulders, arms relaxed almost vertically alongside the torso with wrists inward close to hips. Narrow relaxed sleeves, not a wide T pose. Garment only, empty transparent neck opening and sleeve openings. No head, hands, body or skin. Long sleeves end at the same hip-level wrist line. Open front must be fully transparent through the central opening; no inner shirt or body. Deliberately coarse modern pixel art matching the reference: dark one-logical-pixel outline, crisp stair-step edges, broad readable clusters and 3\u20135 tonal values per material. Main fabric is medium slate BLUE; lighter blue highlights and dark navy shadows. Secondary material details use neutral cream or gray so they can be recolored separately. No text, branding, logos, symbols, hangers, labels, mannequins or scene. Genuine transparent RGBA background, not a painted checkerboard. Square image with clear margins around the entire isolated garment; no cropping. This is source artwork to be normalized to a locked 128\u00d7128 layer."
+    },
+    {
+      "id": "jacket.utility_field",
+      "name": "Utility field jacket",
+      "kind": "jacket",
+      "description": "hip-length field jacket with stand collar, four flap pockets, closed center placket and adjustable waist tabs",
+      "collection": "Layers",
+      "color": "Slate blue",
+      "source": "jacket_utility_field.png",
+      "closed": true,
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE separate modular pixel-avatar jacket layer. The input image is the approved style and pose reference. Generate ONLY this garment: hip-length field jacket with stand collar, four flap pockets, closed center placket and adjustable waist tabs. Match the reference torso proportions: front-facing, narrow shoulders, arms relaxed almost vertically alongside the torso with wrists inward close to hips. Narrow relaxed sleeves, not a wide T pose. Garment only, empty transparent neck opening and sleeve openings. No head, hands, body or skin. Long sleeves end at the same hip-level wrist line. Closed garment torso, transparent neck opening. Deliberately coarse modern pixel art matching the reference: dark one-logical-pixel outline, crisp stair-step edges, broad readable clusters and 3\u20135 tonal values per material. Main fabric is medium slate BLUE; lighter blue highlights and dark navy shadows. Secondary material details use neutral cream or gray so they can be recolored separately. No text, branding, logos, symbols, hangers, labels, mannequins or scene. Genuine transparent RGBA background, not a painted checkerboard. Square image with clear margins around the entire isolated garment; no cropping. This is source artwork to be normalized to a locked 128\u00d7128 layer."
+    },
+    {
+      "id": "bottom.corduroy_straight",
+      "name": "Straight corduroy trousers",
+      "kind": "bottom",
+      "description": "full-length straight-leg corduroy trousers, subtle broad vertical ridges, belt loops and straight hems",
+      "collection": "Everyday",
+      "color": "Slate blue",
+      "source": "bottom_corduroy_straight.png",
+      "width": 28,
+      "closed": true,
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE separate modular pixel-avatar bottom layer. The input image is the approved style and pose reference. Generate ONLY this garment: full-length straight-leg corduroy trousers, subtle broad vertical ridges, belt loops and straight hems. Two trouser legs on a front-facing standing wearer, equal length on the same baseline, narrow central gap, hips at top, both legs fully visible. No shoes, skin, belt accessories or torso. Deliberately coarse modern pixel art matching the reference: dark one-logical-pixel outline, crisp stair-step edges, broad readable clusters and 3\u20135 tonal values per material. Main fabric is medium slate BLUE; lighter blue highlights and dark navy shadows. Secondary material details use neutral cream or gray so they can be recolored separately. No text, branding, logos, symbols, hangers, labels, mannequins or scene. Genuine transparent RGBA background, not a painted checkerboard. Square image with clear margins around the entire isolated garment; no cropping. This is source artwork to be normalized to a locked 128\u00d7128 layer."
+    },
+    {
+      "id": "bottom.pinstripe",
+      "name": "Pinstripe trousers",
+      "kind": "bottom",
+      "description": "full-length tailored straight trousers with sparse thin neutral cream vertical pinstripes, pressed creases and belt loops",
+      "collection": "Everyday",
+      "color": "Slate blue",
+      "source": "bottom_pinstripe.png",
+      "width": 28,
+      "closed": true,
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE separate modular pixel-avatar bottom layer. The input image is the approved style and pose reference. Generate ONLY this garment: full-length tailored straight trousers with sparse thin neutral cream vertical pinstripes, pressed creases and belt loops. Two trouser legs on a front-facing standing wearer, equal length on the same baseline, narrow central gap, hips at top, both legs fully visible. No shoes, skin, belt accessories or torso. Deliberately coarse modern pixel art matching the reference: dark one-logical-pixel outline, crisp stair-step edges, broad readable clusters and 3\u20135 tonal values per material. Main fabric is medium slate BLUE; lighter blue highlights and dark navy shadows. Secondary material details use neutral cream or gray so they can be recolored separately. No text, branding, logos, symbols, hangers, labels, mannequins or scene. Genuine transparent RGBA background, not a painted checkerboard. Square image with clear margins around the entire isolated garment; no cropping. This is source artwork to be normalized to a locked 128\u00d7128 layer."
+    },
+    {
+      "id": "bottom.cuffed_joggers",
+      "name": "Cuffed joggers",
+      "kind": "bottom",
+      "description": "full-length tapered cotton joggers, elastic waistband with short cream drawstrings, side pockets and snug ribbed ankle cuffs",
+      "collection": "Everyday",
+      "color": "Slate blue",
+      "source": "bottom_cuffed_joggers.png",
+      "width": 28,
+      "closed": true,
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE separate modular pixel-avatar bottom layer. The input image is the approved style and pose reference. Generate ONLY this garment: full-length tapered cotton joggers, elastic waistband with short cream drawstrings, side pockets and snug ribbed ankle cuffs. Two trouser legs on a front-facing standing wearer, equal length on the same baseline, narrow central gap, hips at top, both legs fully visible. No shoes, skin, belt accessories or torso. Deliberately coarse modern pixel art matching the reference: dark one-logical-pixel outline, crisp stair-step edges, broad readable clusters and 3\u20135 tonal values per material. Main fabric is medium slate BLUE; lighter blue highlights and dark navy shadows. Secondary material details use neutral cream or gray so they can be recolored separately. No text, branding, logos, symbols, hangers, labels, mannequins or scene. Genuine transparent RGBA background, not a painted checkerboard. Square image with clear margins around the entire isolated garment; no cropping. This is source artwork to be normalized to a locked 128\u00d7128 layer."
+    },
+    {
+      "id": "bottom.double_knee",
+      "name": "Double-knee work trousers",
+      "kind": "bottom",
+      "description": "full-length relaxed work trousers with rectangular reinforced double-knee panels, utility seams and broad straight hems",
+      "collection": "Everyday",
+      "color": "Slate blue",
+      "source": "bottom_double_knee.png",
+      "width": 30,
+      "closed": true,
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE separate modular pixel-avatar bottom layer. The input image is the approved style and pose reference. Generate ONLY this garment: full-length relaxed work trousers with rectangular reinforced double-knee panels, utility seams and broad straight hems. Two trouser legs on a front-facing standing wearer, equal length on the same baseline, narrow central gap, hips at top, both legs fully visible. No shoes, skin, belt accessories or torso. Deliberately coarse modern pixel art matching the reference: dark one-logical-pixel outline, crisp stair-step edges, broad readable clusters and 3\u20135 tonal values per material. Main fabric is medium slate BLUE; lighter blue highlights and dark navy shadows. Secondary material details use neutral cream or gray so they can be recolored separately. No text, branding, logos, symbols, hangers, labels, mannequins or scene. Genuine transparent RGBA background, not a painted checkerboard. Square image with clear margins around the entire isolated garment; no cropping. This is source artwork to be normalized to a locked 128\u00d7128 layer."
+    },
+    {
+      "id": "bottom.patchwork_denim",
+      "name": "Patchwork jeans",
+      "kind": "bottom",
+      "description": "full-length relaxed jeans with four large contrasting neutral gray and slate blue denim repair patches, visible simple seams and straight hems",
+      "collection": "Everyday",
+      "color": "Slate blue",
+      "source": "bottom_patchwork_denim.png",
+      "width": 30,
+      "closed": true,
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE separate modular pixel-avatar bottom layer. The input image is the approved style and pose reference. Generate ONLY this garment: full-length relaxed jeans with four large contrasting neutral gray and slate blue denim repair patches, visible simple seams and straight hems. Two trouser legs on a front-facing standing wearer, equal length on the same baseline, narrow central gap, hips at top, both legs fully visible. No shoes, skin, belt accessories or torso. Deliberately coarse modern pixel art matching the reference: dark one-logical-pixel outline, crisp stair-step edges, broad readable clusters and 3\u20135 tonal values per material. Main fabric is medium slate BLUE; lighter blue highlights and dark navy shadows. Secondary material details use neutral cream or gray so they can be recolored separately. No text, branding, logos, symbols, hangers, labels, mannequins or scene. Genuine transparent RGBA background, not a painted checkerboard. Square image with clear margins around the entire isolated garment; no cropping. This is source artwork to be normalized to a locked 128\u00d7128 layer."
+    },
+    {
+      "id": "bottom.bootcut_denim",
+      "name": "Bootcut jeans",
+      "kind": "bottom",
+      "description": "full-length bootcut denim jeans, fitted thighs and subtly flared lower legs with wide hems, belt loops and clean seams",
+      "collection": "Everyday",
+      "color": "Slate blue",
+      "source": "bottom_bootcut_denim.png",
+      "width": 30,
+      "closed": true,
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: ONE separate modular pixel-avatar bottom layer. The input image is the approved style and pose reference. Generate ONLY this garment: full-length bootcut denim jeans, fitted thighs and subtly flared lower legs with wide hems, belt loops and clean seams. Two trouser legs on a front-facing standing wearer, equal length on the same baseline, narrow central gap, hips at top, both legs fully visible. No shoes, skin, belt accessories or torso. Deliberately coarse modern pixel art matching the reference: dark one-logical-pixel outline, crisp stair-step edges, broad readable clusters and 3\u20135 tonal values per material. Main fabric is medium slate BLUE; lighter blue highlights and dark navy shadows. Secondary material details use neutral cream or gray so they can be recolored separately. No text, branding, logos, symbols, hangers, labels, mannequins or scene. Genuine transparent RGBA background, not a painted checkerboard. Square image with clear margins around the entire isolated garment; no cropping. This is source artwork to be normalized to a locked 128\u00d7128 layer."
+    }
+  ]
+}

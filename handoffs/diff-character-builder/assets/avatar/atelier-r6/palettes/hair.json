@@ -1,0 +1,146 @@
+[
+  {
+    "id": "hair.original",
+    "name": "Original",
+    "color": "#6c4935",
+    "tones": [
+      "#211414",
+      "#38241d",
+      "#654333",
+      "#8b6148",
+      "#b58a65"
+    ]
+  },
+  {
+    "id": "hair.black",
+    "name": "Black",
+    "color": "#25252b",
+    "tones": [
+      "#151419",
+      "#202026",
+      "#303037",
+      "#41424b",
+      "#62656e"
+    ]
+  },
+  {
+    "id": "hair.espresso",
+    "name": "Espresso",
+    "color": "#39251e",
+    "tones": [
+      "#211714",
+      "#2d1e19",
+      "#402b22",
+      "#5a3e30",
+      "#78583f"
+    ]
+  },
+  {
+    "id": "hair.dark_brown",
+    "name": "Dark brown",
+    "color": "#513528",
+    "tones": [
+      "#261912",
+      "#3a251b",
+      "#55382a",
+      "#76523a",
+      "#a07852"
+    ]
+  },
+  {
+    "id": "hair.chestnut",
+    "name": "Chestnut",
+    "color": "#854b32",
+    "tones": [
+      "#342017",
+      "#563024",
+      "#824b32",
+      "#ad7148",
+      "#d09965"
+    ]
+  },
+  {
+    "id": "hair.light_brown",
+    "name": "Light brown",
+    "color": "#ab7d52",
+    "tones": [
+      "#403025",
+      "#6b4c32",
+      "#9b7049",
+      "#c29769",
+      "#ddbb8d"
+    ]
+  },
+  {
+    "id": "hair.honey",
+    "name": "Honey blonde",
+    "color": "#c39850",
+    "tones": [
+      "#4c3821",
+      "#83602e",
+      "#b78d45",
+      "#d7b565",
+      "#efdaa0"
+    ]
+  },
+  {
+    "id": "hair.blonde",
+    "name": "Blonde",
+    "color": "#d9bd7d",
+    "tones": [
+      "#514532",
+      "#88734c",
+      "#bba169",
+      "#dcc486",
+      "#f3e6b4"
+    ]
+  },
+  {
+    "id": "hair.platinum",
+    "name": "Platinum",
+    "color": "#e2dfca",
+    "tones": [
+      "#55524b",
+      "#8e8976",
+      "#c1bdA5",
+      "#e1dfcc",
+      "#f4f2e8"
+    ]
+  },
+  {
+    "id": "hair.copper",
+    "name": "Copper",
+    "color": "#bc6c38",
+    "tones": [
+      "#44251c",
+      "#773c25",
+      "#ab5b30",
+      "#d88b47",
+      "#efba76"
+    ]
+  },
+  {
+    "id": "hair.auburn",
+    "name": "Auburn",
+    "color": "#8d4030",
+    "tones": [
+      "#341c1c",
+      "#592920",
+      "#873f2c",
+      "#b66443",
+      "#d69267"
+    ]
+  },
+  {
+    "id": "hair.silver",
+    "name": "Silver",
+    "color": "#b7bdc5",
+    "tones": [
+      "#34383f",
+      "#626975",
+      "#919aa8",
+      "#bac2cc",
+      "#e5e8ec"
+    ]
+  }
+]

@@ -1,0 +1,297 @@
+{
+  "mode": "built-in image_gen",
+  "jobs": [
+    {
+      "id": "top.oat_quarter",
+      "name": "Oat fleece quarter zip",
+      "color": "Oat",
+      "collection": "Smart",
+      "kind": "top",
+      "description": "oatmeal fleece quarter-zip sweater, clearly visible short dark zipper, upright collar with an open neck, ribbed cuffs",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: precise-object-edit. Asset type: modular pixel-avatar top source PNG. The supplied character is the locked pose, scale and rendering-style reference. Create ONLY the oatmeal fleece quarter-zip sweater, clearly visible short dark zipper, upright collar with an open neck, ribbed cuffs. Match the reference character's front-facing standing pose and modest pixel-art detail, adult compact proportions, one-logical-pixel dark outline, 3–4 material tones and simple folds. Sleeves follow the same relaxed arm angles and wrist positions as the reference. Full-length sleeves end at the wrists. Neck opening is transparent; no skin or head. No body, hands, head, face or pants. Use an entire square canvas with the garment centered, large enough to inspect. True transparent RGBA background including openings; no checkerboard, solid matte, labels, text other than the explicitly requested tiny terminal glyph, realistic textures, glow or brand logos. This is the actual artwork to be isolated and normalized against the rig, not a presentation board."
+    },
+    {
+      "id": "top.tech_quarter",
+      "name": "Tech quarter zip",
+      "color": "Graphite",
+      "collection": "Sport",
+      "kind": "top",
+      "description": "graphite technical quarter-zip with a short silver zipper, clean stand collar, one restrained reflective seam",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: precise-object-edit. Asset type: modular pixel-avatar top source PNG. The supplied character is the locked pose, scale and rendering-style reference. Create ONLY the graphite technical quarter-zip with a short silver zipper, clean stand collar, one restrained reflective seam. Match the reference character's front-facing standing pose and modest pixel-art detail, adult compact proportions, one-logical-pixel dark outline, 3–4 material tones and simple folds. Sleeves follow the same relaxed arm angles and wrist positions as the reference. Full-length sleeves end at the wrists. Neck opening is transparent; no skin or head. No body, hands, head, face or pants. Use an entire square canvas with the garment centered, large enough to inspect. True transparent RGBA background including openings; no checkerboard, solid matte, labels, text other than the explicitly requested tiny terminal glyph, realistic textures, glow or brand logos. This is the actual artwork to be isolated and normalized against the rig, not a presentation board."
+    },
+    {
+      "id": "top.burgundy_hoodie",
+      "name": "Burgundy hoodie",
+      "color": "Burgundy",
+      "collection": "Casual",
+      "kind": "top",
+      "description": "burgundy pullover hoodie with a kangaroo pocket, visible hood behind the neck and open throat, restrained drawstrings",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: precise-object-edit. Asset type: modular pixel-avatar top source PNG. The supplied character is the locked pose, scale and rendering-style reference. Create ONLY the burgundy pullover hoodie with a kangaroo pocket, visible hood behind the neck and open throat, restrained drawstrings. Match the reference character's front-facing standing pose and modest pixel-art detail, adult compact proportions, one-logical-pixel dark outline, 3–4 material tones and simple folds. Sleeves follow the same relaxed arm angles and wrist positions as the reference. Full-length sleeves end at the wrists. Neck opening is transparent; no skin or head. No body, hands, head, face or pants. Use an entire square canvas with the garment centered, large enough to inspect. True transparent RGBA background including openings; no checkerboard, solid matte, labels, text other than the explicitly requested tiny terminal glyph, realistic textures, glow or brand logos. This is the actual artwork to be isolated and normalized against the rig, not a presentation board."
+    },
+    {
+      "id": "top.gray_crew",
+      "name": "Everyday crew",
+      "color": "Heather gray",
+      "collection": "Basic",
+      "kind": "top",
+      "description": "heather-gray cotton crewneck sweatshirt with broad ribbed collar, cuffs and hem, subtle clean folds",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: precise-object-edit. Asset type: modular pixel-avatar top source PNG. The supplied character is the locked pose, scale and rendering-style reference. Create ONLY the heather-gray cotton crewneck sweatshirt with broad ribbed collar, cuffs and hem, subtle clean folds. Match the reference character's front-facing standing pose and modest pixel-art detail, adult compact proportions, one-logical-pixel dark outline, 3–4 material tones and simple folds. Sleeves follow the same relaxed arm angles and wrist positions as the reference. Full-length sleeves end at the wrists. Neck opening is transparent; no skin or head. No body, hands, head, face or pants. Use an entire square canvas with the garment centered, large enough to inspect. True transparent RGBA background including openings; no checkerboard, solid matte, labels, text other than the explicitly requested tiny terminal glyph, realistic textures, glow or brand logos. This is the actual artwork to be isolated and normalized against the rig, not a presentation board."
+    },
+    {
+      "id": "top.breton",
+      "name": "Striped long sleeve",
+      "color": "Cream / navy",
+      "collection": "Casual",
+      "kind": "top",
+      "description": "cream long sleeve shirt with four broad navy horizontal bands, simple crew neck, no noisy narrow stripes",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: precise-object-edit. Asset type: modular pixel-avatar top source PNG. The supplied character is the locked pose, scale and rendering-style reference. Create ONLY the cream long sleeve shirt with four broad navy horizontal bands, simple crew neck, no noisy narrow stripes. Match the reference character's front-facing standing pose and modest pixel-art detail, adult compact proportions, one-logical-pixel dark outline, 3–4 material tones and simple folds. Sleeves follow the same relaxed arm angles and wrist positions as the reference. Full-length sleeves end at the wrists. Neck opening is transparent; no skin or head. No body, hands, head, face or pants. Use an entire square canvas with the garment centered, large enough to inspect. True transparent RGBA background including openings; no checkerboard, solid matte, labels, text other than the explicitly requested tiny terminal glyph, realistic textures, glow or brand logos. This is the actual artwork to be isolated and normalized against the rig, not a presentation board."
+    },
+    {
+      "id": "top.cable_knit",
+      "name": "Cable knit",
+      "color": "Cream",
+      "collection": "Smart",
+      "kind": "top",
+      "description": "cream cable-knit sweater with two restrained vertical cable columns, ribbed crew neck and cuffs",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: precise-object-edit. Asset type: modular pixel-avatar top source PNG. The supplied character is the locked pose, scale and rendering-style reference. Create ONLY the cream cable-knit sweater with two restrained vertical cable columns, ribbed crew neck and cuffs. Match the reference character's front-facing standing pose and modest pixel-art detail, adult compact proportions, one-logical-pixel dark outline, 3–4 material tones and simple folds. Sleeves follow the same relaxed arm angles and wrist positions as the reference. Full-length sleeves end at the wrists. Neck opening is transparent; no skin or head. No body, hands, head, face or pants. Use an entire square canvas with the garment centered, large enough to inspect. True transparent RGBA background including openings; no checkerboard, solid matte, labels, text other than the explicitly requested tiny terminal glyph, realistic textures, glow or brand logos. This is the actual artwork to be isolated and normalized against the rig, not a presentation board."
+    },
+    {
+      "id": "top.work_shirt",
+      "name": "Work shirt",
+      "color": "Tobacco",
+      "collection": "Street",
+      "kind": "top",
+      "description": "tobacco tan long-sleeve work shirt, two square chest pockets, small dark buttons and an open point collar",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: precise-object-edit. Asset type: modular pixel-avatar top source PNG. The supplied character is the locked pose, scale and rendering-style reference. Create ONLY the tobacco tan long-sleeve work shirt, two square chest pockets, small dark buttons and an open point collar. Match the reference character's front-facing standing pose and modest pixel-art detail, adult compact proportions, one-logical-pixel dark outline, 3–4 material tones and simple folds. Sleeves follow the same relaxed arm angles and wrist positions as the reference. Full-length sleeves end at the wrists. Neck opening is transparent; no skin or head. No body, hands, head, face or pants. Use an entire square canvas with the garment centered, large enough to inspect. True transparent RGBA background including openings; no checkerboard, solid matte, labels, text other than the explicitly requested tiny terminal glyph, realistic textures, glow or brand logos. This is the actual artwork to be isolated and normalized against the rig, not a presentation board."
+    },
+    {
+      "id": "top.olive_polo",
+      "name": "Knit polo",
+      "color": "Olive",
+      "collection": "Smart",
+      "kind": "top",
+      "description": "olive knitted long-sleeve polo with soft point collar and a short three-button placket",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: precise-object-edit. Asset type: modular pixel-avatar top source PNG. The supplied character is the locked pose, scale and rendering-style reference. Create ONLY the olive knitted long-sleeve polo with soft point collar and a short three-button placket. Match the reference character's front-facing standing pose and modest pixel-art detail, adult compact proportions, one-logical-pixel dark outline, 3–4 material tones and simple folds. Sleeves follow the same relaxed arm angles and wrist positions as the reference. Full-length sleeves end at the wrists. Neck opening is transparent; no skin or head. No body, hands, head, face or pants. Use an entire square canvas with the garment centered, large enough to inspect. True transparent RGBA background including openings; no checkerboard, solid matte, labels, text other than the explicitly requested tiny terminal glyph, realistic textures, glow or brand logos. This is the actual artwork to be isolated and normalized against the rig, not a presentation board."
+    },
+    {
+      "id": "top.terminal_tee",
+      "name": "Terminal tee",
+      "color": "Black / mint",
+      "collection": "DIFF",
+      "kind": "top",
+      "sleeve": "short",
+      "description": "black relaxed short-sleeve T-shirt, one tiny original mint-green >_ terminal glyph centered on chest, no other lettering or branding",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: precise-object-edit. Asset type: modular pixel-avatar top source PNG. The supplied character is the locked pose, scale and rendering-style reference. Create ONLY the black relaxed short-sleeve T-shirt, one tiny original mint-green >_ terminal glyph centered on chest, no other lettering or branding. Match the reference character's front-facing standing pose and modest pixel-art detail, adult compact proportions, one-logical-pixel dark outline, 3–4 material tones and simple folds. Sleeves follow the same relaxed arm angles and wrist positions as the reference. Short sleeves end above the elbows. Neck opening is transparent; no skin or head. No body, hands, head, face or pants. Use an entire square canvas with the garment centered, large enough to inspect. True transparent RGBA background including openings; no checkerboard, solid matte, labels, text other than the explicitly requested tiny terminal glyph, realistic textures, glow or brand logos. This is the actual artwork to be isolated and normalized against the rig, not a presentation board."
+    },
+    {
+      "id": "top.sky_tee",
+      "name": "Washed sky tee",
+      "color": "Washed blue",
+      "collection": "Basic",
+      "kind": "top",
+      "sleeve": "short",
+      "description": "washed sky-blue relaxed short-sleeve T-shirt with a small breast pocket and clean crew collar",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: precise-object-edit. Asset type: modular pixel-avatar top source PNG. The supplied character is the locked pose, scale and rendering-style reference. Create ONLY the washed sky-blue relaxed short-sleeve T-shirt with a small breast pocket and clean crew collar. Match the reference character's front-facing standing pose and modest pixel-art detail, adult compact proportions, one-logical-pixel dark outline, 3–4 material tones and simple folds. Sleeves follow the same relaxed arm angles and wrist positions as the reference. Short sleeves end above the elbows. Neck opening is transparent; no skin or head. No body, hands, head, face or pants. Use an entire square canvas with the garment centered, large enough to inspect. True transparent RGBA background including openings; no checkerboard, solid matte, labels, text other than the explicitly requested tiny terminal glyph, realistic textures, glow or brand logos. This is the actual artwork to be isolated and normalized against the rig, not a presentation board."
+    },
+    {
+      "id": "jacket.studio_bomber",
+      "name": "Studio bomber",
+      "color": "Black",
+      "collection": "Street",
+      "kind": "jacket",
+      "description": "black nylon bomber jacket, open front, ribbed collar and cuffs, diagonal welt pockets",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: precise-object-edit. Asset type: modular pixel-avatar jacket source PNG. The supplied character is the locked pose, scale and rendering-style reference. Create ONLY the black nylon bomber jacket, open front, ribbed collar and cuffs, diagonal welt pockets. Match the reference character's front-facing standing pose and modest pixel-art detail, adult compact proportions, one-logical-pixel dark outline, 3–4 material tones and simple folds. Sleeves follow the same relaxed arm angles and wrist positions as the reference. Full-length sleeves end at the wrists. The open center must be genuinely transparent, showing no built-in shirt or body. No body, hands, head, face or pants. Use an entire square canvas with the garment centered, large enough to inspect. True transparent RGBA background including openings; no checkerboard, solid matte, labels, text other than the explicitly requested tiny terminal glyph, realistic textures, glow or brand logos. This is the actual artwork to be isolated and normalized against the rig, not a presentation board."
+    },
+    {
+      "id": "jacket.light_denim",
+      "name": "Washed denim jacket",
+      "color": "Light blue",
+      "collection": "Casual",
+      "kind": "jacket",
+      "description": "light-blue washed denim trucker jacket, open front, two chest pockets and deliberate seams",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: precise-object-edit. Asset type: modular pixel-avatar jacket source PNG. The supplied character is the locked pose, scale and rendering-style reference. Create ONLY the light-blue washed denim trucker jacket, open front, two chest pockets and deliberate seams. Match the reference character's front-facing standing pose and modest pixel-art detail, adult compact proportions, one-logical-pixel dark outline, 3–4 material tones and simple folds. Sleeves follow the same relaxed arm angles and wrist positions as the reference. Full-length sleeves end at the wrists. The open center must be genuinely transparent, showing no built-in shirt or body. No body, hands, head, face or pants. Use an entire square canvas with the garment centered, large enough to inspect. True transparent RGBA background including openings; no checkerboard, solid matte, labels, text other than the explicitly requested tiny terminal glyph, realistic textures, glow or brand logos. This is the actual artwork to be isolated and normalized against the rig, not a presentation board."
+    },
+    {
+      "id": "jacket.fleece",
+      "name": "Fleece jacket",
+      "color": "Cream",
+      "collection": "Casual",
+      "kind": "jacket",
+      "description": "cream fleece jacket with charcoal zipper edge, open front, soft stand collar, no fluffy noisy texture",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: precise-object-edit. Asset type: modular pixel-avatar jacket source PNG. The supplied character is the locked pose, scale and rendering-style reference. Create ONLY the cream fleece jacket with charcoal zipper edge, open front, soft stand collar, no fluffy noisy texture. Match the reference character's front-facing standing pose and modest pixel-art detail, adult compact proportions, one-logical-pixel dark outline, 3–4 material tones and simple folds. Sleeves follow the same relaxed arm angles and wrist positions as the reference. Full-length sleeves end at the wrists. The open center must be genuinely transparent, showing no built-in shirt or body. No body, hands, head, face or pants. Use an entire square canvas with the garment centered, large enough to inspect. True transparent RGBA background including openings; no checkerboard, solid matte, labels, text other than the explicitly requested tiny terminal glyph, realistic textures, glow or brand logos. This is the actual artwork to be isolated and normalized against the rig, not a presentation board."
+    },
+    {
+      "id": "jacket.chore",
+      "name": "Chore jacket",
+      "color": "Rust",
+      "collection": "Street",
+      "kind": "jacket",
+      "description": "rust-colored canvas chore jacket, open front, point collar, big rectangular patch pockets",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: precise-object-edit. Asset type: modular pixel-avatar jacket source PNG. The supplied character is the locked pose, scale and rendering-style reference. Create ONLY the rust-colored canvas chore jacket, open front, point collar, big rectangular patch pockets. Match the reference character's front-facing standing pose and modest pixel-art detail, adult compact proportions, one-logical-pixel dark outline, 3–4 material tones and simple folds. Sleeves follow the same relaxed arm angles and wrist positions as the reference. Full-length sleeves end at the wrists. The open center must be genuinely transparent, showing no built-in shirt or body. No body, hands, head, face or pants. Use an entire square canvas with the garment centered, large enough to inspect. True transparent RGBA background including openings; no checkerboard, solid matte, labels, text other than the explicitly requested tiny terminal glyph, realistic textures, glow or brand logos. This is the actual artwork to be isolated and normalized against the rig, not a presentation board."
+    },
+    {
+      "id": "jacket.navy_track",
+      "name": "Piped track jacket",
+      "color": "Navy / cream",
+      "collection": "Training",
+      "kind": "jacket",
+      "closed": true,
+      "description": "navy track jacket with ONE cream curved piping seam across shoulders and short sleeve detail, zipped front with visible neck opening, generic original sportswear with no brand stripes",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: precise-object-edit. Asset type: modular pixel-avatar jacket source PNG. The supplied character is the locked pose, scale and rendering-style reference. Create ONLY the navy track jacket with ONE cream curved piping seam across shoulders and short sleeve detail, zipped front with visible neck opening, generic original sportswear with no brand stripes. Match the reference character's front-facing standing pose and modest pixel-art detail, adult compact proportions, one-logical-pixel dark outline, 3–4 material tones and simple folds. Sleeves follow the same relaxed arm angles and wrist positions as the reference. Full-length sleeves end at the wrists. Neck opening is transparent; no skin or head. No body, hands, head, face or pants. Use an entire square canvas with the garment centered, large enough to inspect. True transparent RGBA background including openings; no checkerboard, solid matte, labels, text other than the explicitly requested tiny terminal glyph, realistic textures, glow or brand logos. This is the actual artwork to be isolated and normalized against the rig, not a presentation board."
+    },
+    {
+      "id": "jacket.diff_track",
+      "name": "DIFF track jacket",
+      "color": "Black / green",
+      "collection": "DIFF",
+      "kind": "jacket",
+      "closed": true,
+      "description": "black track jacket with mint-green side panels and a tiny >_ terminal mark, zipped front with visible neck opening, one original green shoulder seam, no brand logos",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: precise-object-edit. Asset type: modular pixel-avatar jacket source PNG. The supplied character is the locked pose, scale and rendering-style reference. Create ONLY the black track jacket with mint-green side panels and a tiny >_ terminal mark, zipped front with visible neck opening, one original green shoulder seam, no brand logos. Match the reference character's front-facing standing pose and modest pixel-art detail, adult compact proportions, one-logical-pixel dark outline, 3–4 material tones and simple folds. Sleeves follow the same relaxed arm angles and wrist positions as the reference. Full-length sleeves end at the wrists. Neck opening is transparent; no skin or head. No body, hands, head, face or pants. Use an entire square canvas with the garment centered, large enough to inspect. True transparent RGBA background including openings; no checkerboard, solid matte, labels, text other than the explicitly requested tiny terminal glyph, realistic textures, glow or brand logos. This is the actual artwork to be isolated and normalized against the rig, not a presentation board."
+    },
+    {
+      "id": "bottom.cream_chinos",
+      "name": "Cream chinos",
+      "color": "Cream",
+      "collection": "Smart",
+      "kind": "bottom",
+      "description": "cream straight-leg chinos, clean waistband, angled pockets, subtle knee folds",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: precise-object-edit. Asset type: modular pixel-avatar bottom source PNG. The supplied character is the locked pose, scale and rendering-style reference. Create ONLY the cream straight-leg chinos, clean waistband, angled pockets, subtle knee folds. Match the reference character's front-facing standing pose and modest pixel-art detail, adult compact proportions, one-logical-pixel dark outline, 3–4 material tones and simple folds. Both legs separate with the same stance and relaxed pocket-hand space as the reference. No shoes, torso, hands or skin. Use an entire square canvas with the garment centered, large enough to inspect. True transparent RGBA background including openings; no checkerboard, solid matte, labels, text other than the explicitly requested tiny terminal glyph, realistic textures, glow or brand logos. This is the actual artwork to be isolated and normalized against the rig, not a presentation board."
+    },
+    {
+      "id": "bottom.slate_pleats",
+      "name": "Pleated trousers",
+      "color": "Slate",
+      "collection": "Smart",
+      "kind": "bottom",
+      "description": "slate-gray tailored trousers with subtle pleats and a straight relaxed leg",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: precise-object-edit. Asset type: modular pixel-avatar bottom source PNG. The supplied character is the locked pose, scale and rendering-style reference. Create ONLY the slate-gray tailored trousers with subtle pleats and a straight relaxed leg. Match the reference character's front-facing standing pose and modest pixel-art detail, adult compact proportions, one-logical-pixel dark outline, 3–4 material tones and simple folds. Both legs separate with the same stance and relaxed pocket-hand space as the reference. No shoes, torso, hands or skin. Use an entire square canvas with the garment centered, large enough to inspect. True transparent RGBA background including openings; no checkerboard, solid matte, labels, text other than the explicitly requested tiny terminal glyph, realistic textures, glow or brand logos. This is the actual artwork to be isolated and normalized against the rig, not a presentation board."
+    },
+    {
+      "id": "bottom.washed_jeans",
+      "name": "Washed jeans",
+      "color": "Washed blue",
+      "collection": "Casual",
+      "kind": "bottom",
+      "description": "light washed-blue straight jeans, restrained whiskering, visible five-pocket seams, no rips",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: precise-object-edit. Asset type: modular pixel-avatar bottom source PNG. The supplied character is the locked pose, scale and rendering-style reference. Create ONLY the light washed-blue straight jeans, restrained whiskering, visible five-pocket seams, no rips. Match the reference character's front-facing standing pose and modest pixel-art detail, adult compact proportions, one-logical-pixel dark outline, 3–4 material tones and simple folds. Both legs separate with the same stance and relaxed pocket-hand space as the reference. No shoes, torso, hands or skin. Use an entire square canvas with the garment centered, large enough to inspect. True transparent RGBA background including openings; no checkerboard, solid matte, labels, text other than the explicitly requested tiny terminal glyph, realistic textures, glow or brand logos. This is the actual artwork to be isolated and normalized against the rig, not a presentation board."
+    },
+    {
+      "id": "bottom.olive_cargo",
+      "name": "Field cargos",
+      "color": "Olive",
+      "collection": "Street",
+      "kind": "bottom",
+      "description": "olive straight cargo trousers with one clean rectangular thigh pocket on each side and restrained folds",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: precise-object-edit. Asset type: modular pixel-avatar bottom source PNG. The supplied character is the locked pose, scale and rendering-style reference. Create ONLY the olive straight cargo trousers with one clean rectangular thigh pocket on each side and restrained folds. Match the reference character's front-facing standing pose and modest pixel-art detail, adult compact proportions, one-logical-pixel dark outline, 3–4 material tones and simple folds. Both legs separate with the same stance and relaxed pocket-hand space as the reference. No shoes, torso, hands or skin. Use an entire square canvas with the garment centered, large enough to inspect. True transparent RGBA background including openings; no checkerboard, solid matte, labels, text other than the explicitly requested tiny terminal glyph, realistic textures, glow or brand logos. This is the actual artwork to be isolated and normalized against the rig, not a presentation board."
+    },
+    {
+      "id": "bottom.diff_track",
+      "name": "DIFF track pants",
+      "color": "Black / green",
+      "collection": "DIFF",
+      "kind": "bottom",
+      "description": "black tapered track pants with mint-green side panels and subtle cuff hems, no stripes or logos",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: precise-object-edit. Asset type: modular pixel-avatar bottom source PNG. The supplied character is the locked pose, scale and rendering-style reference. Create ONLY the black tapered track pants with mint-green side panels and subtle cuff hems, no stripes or logos. Match the reference character's front-facing standing pose and modest pixel-art detail, adult compact proportions, one-logical-pixel dark outline, 3–4 material tones and simple folds. Both legs separate with the same stance and relaxed pocket-hand space as the reference. No shoes, torso, hands or skin. Use an entire square canvas with the garment centered, large enough to inspect. True transparent RGBA background including openings; no checkerboard, solid matte, labels, text other than the explicitly requested tiny terminal glyph, realistic textures, glow or brand logos. This is the actual artwork to be isolated and normalized against the rig, not a presentation board."
+    },
+    {
+      "id": "bottom.burgundy_sweats",
+      "name": "Relaxed sweats",
+      "color": "Burgundy",
+      "collection": "Casual",
+      "kind": "bottom",
+      "description": "burgundy relaxed sweatpants with narrow elastic cuffs and understated pocket seams",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: precise-object-edit. Asset type: modular pixel-avatar bottom source PNG. The supplied character is the locked pose, scale and rendering-style reference. Create ONLY the burgundy relaxed sweatpants with narrow elastic cuffs and understated pocket seams. Match the reference character's front-facing standing pose and modest pixel-art detail, adult compact proportions, one-logical-pixel dark outline, 3–4 material tones and simple folds. Both legs separate with the same stance and relaxed pocket-hand space as the reference. No shoes, torso, hands or skin. Use an entire square canvas with the garment centered, large enough to inspect. True transparent RGBA background including openings; no checkerboard, solid matte, labels, text other than the explicitly requested tiny terminal glyph, realistic textures, glow or brand logos. This is the actual artwork to be isolated and normalized against the rig, not a presentation board."
+    },
+    {
+      "id": "shoes.brown_boots",
+      "name": "Work boots",
+      "color": "Brown",
+      "collection": "Street",
+      "kind": "shoes",
+      "description": "a matching pair of warm brown leather work boots, simple dark sole, only two small lace details",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: precise-object-edit. Asset type: modular pixel-avatar shoes source PNG. The supplied character is the locked pose, scale and rendering-style reference. Create ONLY the a matching pair of warm brown leather work boots, simple dark sole, only two small lace details. Match the reference character's front-facing standing pose and modest pixel-art detail, adult compact proportions, one-logical-pixel dark outline, 3–4 material tones and simple folds. Both shoes share a flat ground line and turn outward slightly exactly as in the reference. No feet, ankles, legs or pants. Use an entire square canvas with the garment centered, large enough to inspect. True transparent RGBA background including openings; no checkerboard, solid matte, labels, text other than the explicitly requested tiny terminal glyph, realistic textures, glow or brand logos. This is the actual artwork to be isolated and normalized against the rig, not a presentation board."
+    },
+    {
+      "id": "shoes.cream_runner",
+      "name": "Retro runners",
+      "color": "Cream / gray",
+      "collection": "Sport",
+      "kind": "shoes",
+      "description": "a matching pair of cream retro running sneakers with gray side panels and charcoal outsole, two restrained lace details, no logos",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: precise-object-edit. Asset type: modular pixel-avatar shoes source PNG. The supplied character is the locked pose, scale and rendering-style reference. Create ONLY the a matching pair of cream retro running sneakers with gray side panels and charcoal outsole, two restrained lace details, no logos. Match the reference character's front-facing standing pose and modest pixel-art detail, adult compact proportions, one-logical-pixel dark outline, 3–4 material tones and simple folds. Both shoes share a flat ground line and turn outward slightly exactly as in the reference. No feet, ankles, legs or pants. Use an entire square canvas with the garment centered, large enough to inspect. True transparent RGBA background including openings; no checkerboard, solid matte, labels, text other than the explicitly requested tiny terminal glyph, realistic textures, glow or brand logos. This is the actual artwork to be isolated and normalized against the rig, not a presentation board."
+    }
+  ]
+}

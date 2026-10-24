@@ -1,0 +1,45 @@
+{
+  "mode": "built-in image_gen",
+  "jobs": [
+    {
+      "id": "head-round",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png",
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: precise-object-edit. Input 1 is the edit target: an adult pixel-art mannequin with a blank head. Input 2 shows the approved face style, color and proportions. Change ONLY the blank head's contour into a soft round head with fuller cheeks and a gently rounded chin. Keep the head width very close to the original, retain the exact scalp top, ear height, bottom of chin and visible neck attachment. Keep the neck, body, clothing, pose, image framing and feet unchanged. The head must remain completely blank: no eyes, eyebrows, nose, mouth, facial hair or hair. Maintain the same warm skin palette, restrained cheek shading, dark outer outline and warm under-chin shadow. Avoid a dark line cutting across the neck. It will receive separate eye and mouth layers, so do not change any facial feature positions or add features. Deliberate pixel blocks with crisp edges; no smooth realistic portrait. One full-body character, same view and framing as input 1. No labels, text or added background graphics."
+    },
+    {
+      "id": "head-soft-square",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png",
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: precise-object-edit. Input 1 is the edit target: an adult pixel-art mannequin with a blank head. Input 2 shows the approved face style, color and proportions. Change ONLY the blank head's contour into a soft square head with gentle jaw corners, a modest chin and no sharp model-like jaw. Keep the head width very close to the original, retain the exact scalp top, ear height, bottom of chin and visible neck attachment. Keep the neck, body, clothing, pose, image framing and feet unchanged. The head must remain completely blank: no eyes, eyebrows, nose, mouth, facial hair or hair. Maintain the same warm skin palette, restrained cheek shading, dark outer outline and warm under-chin shadow. Avoid a dark line cutting across the neck. It will receive separate eye and mouth layers, so do not change any facial feature positions or add features. Deliberate pixel blocks with crisp edges; no smooth realistic portrait. One full-body character, same view and framing as input 1. No labels, text or added background graphics."
+    },
+    {
+      "id": "head-full-round",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png",
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: precise-object-edit. Input 1 is the edit target: an adult pixel-art mannequin with a blank head. Input 2 shows the approved face style, color and proportions. Change ONLY the blank head's contour into a full round head, visibly fuller lower cheeks, a soft curved jaw, a short rounded chin. Keep the head width very close to the original, retain the exact scalp top, ear height, bottom of chin and visible neck attachment. Keep the neck, body, clothing, pose, image framing and feet unchanged. The head must remain completely blank: no eyes, eyebrows, nose, mouth, facial hair or hair. Maintain the same warm skin palette, restrained cheek shading, dark outer outline and warm under-chin shadow. Avoid a dark line cutting across the neck. It will receive separate eye and mouth layers, so do not change any facial feature positions or add features. Deliberate pixel blocks with crisp edges; no smooth realistic portrait. One full-body character, same view and framing as input 1. No labels, text or added background graphics."
+    },
+    {
+      "id": "head-narrow",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png",
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: precise-object-edit. Input 1 is the edit target: an adult pixel-art mannequin with a blank head. Input 2 shows the approved face style, color and proportions. Change ONLY the blank head's contour into a slightly narrow oval head, soft tapered cheeks and a small rounded chin, not a long pointed jaw. Keep the head width very close to the original, retain the exact scalp top, ear height, bottom of chin and visible neck attachment. Keep the neck, body, clothing, pose, image framing and feet unchanged. The head must remain completely blank: no eyes, eyebrows, nose, mouth, facial hair or hair. Maintain the same warm skin palette, restrained cheek shading, dark outer outline and warm under-chin shadow. Avoid a dark line cutting across the neck. It will receive separate eye and mouth layers, so do not change any facial feature positions or add features. Deliberate pixel blocks with crisp edges; no smooth realistic portrait. One full-body character, same view and framing as input 1. No labels, text or added background graphics."
+    },
+    {
+      "id": "head-angular",
+      "refs": [
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/blank-head-support.png",
+        "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+      ],
+      "prompt": "Use case: precise-object-edit. Input 1 is the edit target: an adult pixel-art mannequin with a blank head. Input 2 shows the approved face style, color and proportions. Change ONLY the blank head's contour into a gently angular head with mild cheek definition and a short broad chin; natural and friendly, not an exaggerated jaw. Keep the head width very close to the original, retain the exact scalp top, ear height, bottom of chin and visible neck attachment. Keep the neck, body, clothing, pose, image framing and feet unchanged. The head must remain completely blank: no eyes, eyebrows, nose, mouth, facial hair or hair. Maintain the same warm skin palette, restrained cheek shading, dark outer outline and warm under-chin shadow. Avoid a dark line cutting across the neck. It will receive separate eye and mouth layers, so do not change any facial feature positions or add features. Deliberate pixel blocks with crisp edges; no smooth realistic portrait. One full-body character, same view and framing as input 1. No labels, text or added background graphics."
+    }
+  ]
+}

@@ -1,0 +1,202 @@
+{
+  "version": 1,
+  "rig": "front_idle_v1",
+  "assets": [
+    {
+      "id": "body.skin",
+      "label": "Universal Body",
+      "slot": "body_skin",
+      "file": "body/body_skin_{color}_v1.png",
+      "colors": [
+        "skin_01",
+        "skin_02",
+        "skin_03",
+        "skin_04",
+        "skin_05",
+        "skin_06",
+        "skin_07",
+        "skin_08",
+        "skin_09",
+        "skin_10",
+        "skin_11",
+        "skin_12"
+      ],
+      "z": 20,
+      "mask": "mask_body_skin_v1",
+      "imagegenSource": "master-body-imagegen.png"
+    },
+    {
+      "id": "eyes.neutral",
+      "label": "Neutral Eyes",
+      "slot": "eyes",
+      "file": "face/eyes_neutral_v1.png",
+      "colors": [
+        "fixed"
+      ],
+      "z": 60,
+      "mask": "mask_eyes_v1",
+      "imagegenSource": "01_checkpoint_base.png"
+    },
+    {
+      "id": "brows.straight",
+      "label": "Straight Brows",
+      "slot": "brows",
+      "file": "face/brows_straight_v1.png",
+      "colors": [
+        "fixed"
+      ],
+      "z": 62,
+      "mask": "mask_brows_v1",
+      "imagegenSource": "01_checkpoint_base.png"
+    },
+    {
+      "id": "mouth.small_smile",
+      "label": "Small Smile",
+      "slot": "mouth",
+      "file": "face/mouth_small_smile_v1.png",
+      "colors": [
+        "fixed"
+      ],
+      "z": 64,
+      "mask": "mask_mouth_v1",
+      "imagegenSource": "01_checkpoint_base.png"
+    },
+    {
+      "id": "hair.fluffy_middle.front",
+      "label": "Fluffy Middle Hair",
+      "slot": "hair_front",
+      "file": "hair/front/hair_front_fluffy_middle_{color}_v1.png",
+      "colors": [
+        "dark_brown"
+      ],
+      "z": 70,
+      "mask": "mask_hair_front_v1",
+      "hairPart": "front",
+      "imagegenSource": "01_checkpoint_base.png"
+    },
+    {
+      "id": "hair.long_wavy.back",
+      "label": "Long Wavy Back",
+      "slot": "hair_back",
+      "file": "hair/back/hair_back_long_wavy_{color}_v1.png",
+      "colors": [
+        "dark_brown"
+      ],
+      "z": 10,
+      "mask": "mask_hair_back_v1",
+      "hairPart": "back",
+      "imagegenSource": "05_variant_d_long_wavy.png"
+    },
+    {
+      "id": "hair.long_wavy.front",
+      "label": "Long Wavy Front",
+      "slot": "hair_front",
+      "file": "hair/front/hair_front_long_wavy_{color}_v1.png",
+      "colors": [
+        "dark_brown"
+      ],
+      "z": 70,
+      "mask": "mask_hair_front_v1",
+      "hairPart": "front",
+      "imagegenSource": "05_variant_d_long_wavy.png"
+    },
+    {
+      "id": "top.quarter_zip_fleece",
+      "label": "Fleece Quarter Zip",
+      "slot": "top",
+      "file": "tops/top_quarter_zip_fleece_{color}_v1.png",
+      "colors": [
+        "cream"
+      ],
+      "z": 50,
+      "mask": "mask_top_v1",
+      "imagegenSource": "01_checkpoint_base.png"
+    },
+    {
+      "id": "outer.track_classic",
+      "label": "Classic Track Jacket",
+      "slot": "outerwear",
+      "file": "outerwear/outer_track_classic_{color}_v1.png",
+      "colors": [
+        "diff_track"
+      ],
+      "z": 55,
+      "mask": "mask_outerwear_v1",
+      "imagegenSource": "04_variant_c_track_jacket.png"
+    },
+    {
+      "id": "bottom.straight_trousers",
+      "label": "Straight Trousers",
+      "slot": "bottoms",
+      "file": "bottoms/bottom_straight_trousers_{color}_v1.png",
+      "colors": [
+        "black"
+      ],
+      "z": 30,
+      "mask": "mask_bottoms_v1",
+      "imagegenSource": "01_checkpoint_base.png"
+    },
+    {
+      "id": "bottom.track_tapered",
+      "label": "Tapered Track Pants",
+      "slot": "bottoms",
+      "file": "bottoms/bottom_track_tapered_{color}_v1.png",
+      "colors": [
+        "black"
+      ],
+      "z": 30,
+      "mask": "mask_bottoms_v1",
+      "imagegenSource": "07_variant_f_track_pants.png"
+    },
+    {
+      "id": "shoe.minimal_low",
+      "label": "Minimal Low Sneakers",
+      "slot": "shoes",
+      "file": "shoes/shoe_minimal_low_{color}_v1.png",
+      "colors": [
+        "white"
+      ],
+      "z": 40,
+      "mask": "mask_shoes_v1",
+      "imagegenSource": "01_checkpoint_base.png"
+    },
+    {
+      "id": "headwear.cap_forward",
+      "label": "Black Cap",
+      "slot": "headwear",
+      "file": "headwear/headwear_cap_forward_{color}_v1.png",
+      "colors": [
+        "black"
+      ],
+      "z": 90,
+      "mask": "mask_headwear_v1",
+      "hairMask": "hair_mask_cap_v1",
+      "imagegenSource": "02_variant_a_cap.png"
+    },
+    {
+      "id": "headwear.beanie_folded",
+      "label": "Folded Beanie",
+      "slot": "headwear",
+      "file": "headwear/headwear_beanie_folded_{color}_v1.png",
+      "colors": [
+        "black"
+      ],
+      "z": 90,
+      "mask": "mask_headwear_v1",
+      "hairMask": "hair_mask_beanie_v1",
+      "imagegenSource": "03_variant_b_beanie.png"
+    },
+    {
+      "id": "glasses.round",
+      "label": "Round Glasses",
+      "slot": "glasses",
+      "file": "glasses/glasses_round_{color}_v1.png",
+      "colors": [
+        "glasses_graphite"
+      ],
+      "z": 82,
+      "mask": "mask_glasses_v1",
+      "imagegenSource": "06_variant_e_glasses.png"
+    }
+  ]
+}

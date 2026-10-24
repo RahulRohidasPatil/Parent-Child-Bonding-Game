@@ -1,0 +1,24 @@
+[
+  {
+    "id": "blank-head-support",
+    "refs": [
+      "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+    ],
+    "prompt": "Use case: identity-preserve. Make a support image for modular layer extraction. Keep this exact adult pixel character, body pose, proportions, head/jaw/ear/neck contours, hands, clothing, feet and original canvas framing. On the head ONLY, remove hair, eyebrows, eyes, nose and mouth and fill those areas with natural blank skin matching the reference. Keep a natural bald scalp and preserve the jaw and neck connection. Do not alter the clothing, body or pose. This is an inpainting support layer, not a new character design. Keep the original pixel-art density and skin shading."
+  },
+  {
+    "id": "body-support",
+    "refs": [
+      "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png"
+    ],
+    "prompt": "Use case: identity-preserve. Create a modular adult avatar body support using this exact character as the master. Preserve the exact head position, neutral front-facing stance, arm angles, hand positions next to the hips, leg lengths and feet positions. Replace only the clothing with a simple skin-coloured adult body wearing neutral gray boxer shorts. Keep the existing face and hair unchanged for registration. Retain the relaxed hand pose even without pockets. No extra accessories or props. Preserve the full portrait framing and pixel-art style. This is a nonsexual avatar mannequin base with ordinary underwear."
+  },
+  {
+    "id": "forest-reference",
+    "refs": [
+      "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-exact-v5/body-reference.png",
+      "/Users/vlad/Documents/ChatGPT/DIFF/references/avatar-atelier/top-forest-hoodie.png"
+    ],
+    "prompt": "Use case: identity-preserve. Image 1 is the exact master character. Replace ONLY its navy sweater with the forest-green zip hoodie from image 2, tailored to the same pose. Preserve the original face, hair, eyes, ears, visible neck, shoulders, arm angles, hands at the hips, pants, shoes, proportions and framing. The hoodie must have an open throat area with visible skin connecting the jaw to the collar, as in image 1. Keep the hood behind the neck and front folded edges at its sides. No floating neck, no skin slivers outside the shoulders, no new logo. Use image 1's pixel-art density. Do not reinterpret the character."
+  }
+]
