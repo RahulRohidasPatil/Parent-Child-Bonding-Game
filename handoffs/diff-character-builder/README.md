@@ -80,7 +80,8 @@ gültigen Konfiguration ohne Fallback-Warnung gerendert. Das prüft nicht alle K
 Die originalen Testquellen sind enthalten. Einige historische Tests und `/dev/selfie-*`-Ansichten
 benötigen Foto-/Analyse-Fixtures aus dem ursprünglichen `artifacts/selfie`-Verzeichnis; diese gehören
 nicht zum Item-/Builder-Handoff und sind bewusst nicht enthalten. Der volle historische Testsatz
-ist deshalb nicht als vollständig bestanden zugesagt. Nicht fehlende Fotos durch fremde private
+ergab **130 bestandene Tests und 2 Fehler**, beide ausschließlich wegen der fehlenden
+`artifacts/selfie/refinement/iteration-single.json`. Nicht fehlende Fotos durch fremde private
 Daten ersetzen. Die normalen Avatar-Assets und ihre Quellen sind vollständig enthalten.
 
 Einzelne historische Authoring-/Report-Skripte enthalten absolute DIFF-Pfade oder Verweise auf alte

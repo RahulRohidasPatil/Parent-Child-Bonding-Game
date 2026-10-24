@@ -1,0 +1,22 @@
+{
+  "typeScriptBuild": "passed",
+  "sourceFilesVerified": 3250,
+  "portableUnpacker": "passed; restored all 3250 files independently",
+  "activePackValidation": {
+    "modules": 270,
+    "clothing": 113,
+    "layers": 732,
+    "heads": 6
+  },
+  "individualCosmeticRenders": {
+    "passed": 270,
+    "fallbackWarnings": 0
+  },
+  "upstreamTests": {
+    "total": 132,
+    "passed": 130,
+    "failed": 2,
+    "reason": "Both failures require deliberately omitted artifacts/selfie/refinement/iteration-single.json photo-analysis fixture."
+  },
+  "liveLearningAppChanges": false
+}
