@@ -1,6 +1,10 @@
 # Authentication backend
 
-FastAPI API backed by Supabase Auth. The existing Next.js frontend is unchanged.
+- [AI handoff and delivery status](../docs/AI_HANDOFF.md)
+- [AI contributor instructions](AGENTS.md)
+- [Detailed API contract and mode differences](API.md)
+
+FastAPI authentication API with Supabase and isolated offline demo modes. This backend work does not change the Next.js frontend.
 No custom user table, database password, service-role key, or FastAPI password database is needed:
 Supabase owns password hashing, users, email confirmation, sessions, and recovery.
 
@@ -15,7 +19,7 @@ uv run uvicorn app.main:create_app --factory --host 127.0.0.1 --port 8000 --no-a
 ```
 
 Use one worker. Demo sessions live in memory and reset when the process restarts or reloads;
-multiple workers/replicas do not share them. Open http://localhost:8000/docs to try the API.
+multiple workers/replicas do not share them. Open http://localhost:8000/docs to try the API. If port 8000 is in use, choose another port (for example 8001) and use that port in requests.
 `GET /health` reports `auth_mode: demo`, and demo identities carry `user_metadata.demo: true`.
 `GET /auth/demo-accounts` lists the two synthetic accounts without their passwords.
 
@@ -55,7 +59,7 @@ uv sync --locked
 uv run uvicorn app.main:create_app --factory --reload --host 127.0.0.1 --port 8000 --no-access-log
 ```
 
-The configured local `.env` is ignored by Git; teammates must create their own.
+The configured local `.env` is ignored by Git; teammates must create their own. Copy the chosen template only when creating a new configuration; preserve an existing `.env` unless deliberately switching modes.
 Use Python 3.12 or later. Open http://localhost:8000/docs for the interactive API contract.
 `GET /health` checks process health, not Supabase availability. Missing/invalid Supabase configuration fails startup when demo mode is disabled.
 `uv run pytest -q` runs the mocked integration suite. `uv run ruff check app tests` and
@@ -96,6 +100,9 @@ or email-link query strings. The example server command disables access logging.
 
 ## Supabase project setup and email limitation
 
+**Current decision:** SMTP and real email delivery are intentionally deferred for the hackathon. Use offline demo mode; no Resend or other sender setup is required for it. The following notes apply only if real email delivery is requested later.
+
+Project observations below were made during setup and must be rechecked before deployment.
 Inspected project: **Partygame for ed**. Email provider and new signups are enabled;
 email confirmation is required. No security setting was disabled to make testing easier.
 The project uses Supabase's default mailer; no custom SMTP credentials were supplied.
@@ -135,5 +142,6 @@ for API connectivity; setting up that integration would grant separate repositor
 The test suite mocks Supabase to exercise session isolation, login and refresh grants, registration,
 verification methods, token enforcement, logout, password updates, validation redaction, error handling,
 and CORS. Live smoke checks validate configuration against Supabase and reject missing/invalid tokens.
+The offline demo login/identity/refresh/logout flow was also smoke-tested locally.
 No real signup, mailbox confirmation, or successful password reset has been claimed without a test
 mailbox/sender. No frontend, game engine, OAuth, family linking, or application tables are implemented.
