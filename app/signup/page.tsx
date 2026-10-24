@@ -2,12 +2,14 @@
 
 import { FormEvent, useMemo, useState } from "react";
 import Link from "next/link";
-import { ArrowLeft, Check, Eye, EyeOff, Info, Mail } from "lucide-react";
+import { Check, Eye, EyeOff, Info, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { createClient } from "@/lib/supabase/client";
 import type { Role, Screen } from "@/lib/types";
 import { ageFromDate, emailPattern, getSignupMode } from "@/lib/utils";
+import { SignupField as Field } from "@/components/signup/signup-field";
+import { SignupHeader } from "@/components/signup/signup-header";
 
 export default function SignupPage() {
   const [screen, setScreen] = useState<Screen>("form");
@@ -109,7 +111,7 @@ export default function SignupPage() {
     const minor = isMinor;
     return <main className="flex min-h-dvh items-center justify-center bg-[#faf9f5] px-4 py-6 text-[#1f2d3a]">
       <section className="flex min-h-[min(844px,calc(100dvh-3rem))] w-full max-w-[390px] flex-col overflow-hidden rounded-[28px] bg-white shadow-[0_20px_70px_rgba(31,45,58,.12)]">
-        <Header step={step} title={screen === "active" ? "Account activated" : minor ? "Ask a parent to approve" : "Verify your email"} subtitle={screen === "active" ? minor ? "Your parent approved your account. You’re all set." : "Your email is verified. You’re all set." : minor ? "Your account switches on as soon as your parent taps the link." : "Tap the link we sent to activate your account."} />
+        <SignupHeader step={step} title={screen === "active" ? "Account activated" : minor ? "Ask a parent to approve" : "Verify your email"} subtitle={screen === "active" ? minor ? "Your parent approved your account. You’re all set." : "Your email is verified. You’re all set." : minor ? "Your account switches on as soon as your parent taps the link." : "Tap the link we sent to activate your account."} />
         <div className="flex flex-1 flex-col gap-4 overflow-y-auto px-5 py-3">
           <div className="flex h-44 items-center justify-center rounded-[22px] bg-[#e6f4ee]">{screen === "active" ? <span className="grid size-24 place-items-center rounded-full bg-[#2e8a69]"><Check className="size-14 text-white" strokeWidth={3} /></span> : <Mail className="size-20 text-[#2e8a69]" strokeWidth={1.5} />}</div>
           <div className="rounded-[18px] border-[1.5px] border-[#d5dde2] p-3.5"><p className="text-[13px] font-extrabold text-[#51606d]">{screen === "active" ? "Username" : minor ? "Approval link sent to your parent" : "Verification link sent to"}</p><p className="mt-1 break-all text-[17px] font-black">{screen === "active" ? username : minor ? parentEmail : email}</p></div>
@@ -122,7 +124,7 @@ export default function SignupPage() {
     </main>;
   }
 
-  return <main className="flex min-h-dvh items-center justify-center bg-[#faf9f5] px-4 py-6 text-[#1f2d3a]"><section className="flex min-h-[min(844px,calc(100dvh-3rem))] w-full max-w-[390px] flex-col overflow-hidden rounded-[28px] bg-white shadow-[0_20px_70px_rgba(31,45,58,.12)]"><Header step={step} title={formStep === 1 ? "Create your account" : "Secure your account"} subtitle={formStep === 1 ? "Tell us a little about yourself to get started." : "Set your login details. You’ll use these to come back to QuestNest."} /><form id="signup-form" onSubmit={submit} className="flex flex-1 flex-col gap-3 overflow-y-auto px-5 py-3">
+  return <main className="flex min-h-dvh items-center justify-center bg-[#faf9f5] px-4 py-6 text-[#1f2d3a]"><section className="flex min-h-[min(844px,calc(100dvh-3rem))] w-full max-w-[390px] flex-col overflow-hidden rounded-[28px] bg-white shadow-[0_20px_70px_rgba(31,45,58,.12)]"><SignupHeader step={step} title={formStep === 1 ? "Create your account" : "Secure your account"} subtitle={formStep === 1 ? "Tell us a little about yourself to get started." : "Set your login details. You’ll use these to come back to QuestNest."} /><form id="signup-form" onSubmit={submit} className="flex flex-1 flex-col gap-3 overflow-y-auto px-5 py-3">
     {formStep === 1 && <><Field label="Your name" error={tried ? errors.name : undefined}><Input value={name} onChange={(e) => setName(e.target.value)} placeholder="e.g. Alex Morgan" autoComplete="name" className={fieldClass("name")} /></Field>
     <Field label="I’m signing up as" error={tried ? errors.role : undefined}><div className="grid grid-cols-2 gap-2">{(["student", "parent"] as Role[]).map((item) => <button type="button" key={item} onClick={() => setRole(item)} className={`h-12 rounded-xl border-[1.5px] text-sm font-black ${role === item ? "border-[#23303a] bg-[#23303a] text-white" : "border-[#d5dde2] bg-white"}`}>{item === "student" ? "Student" : "Parent"}</button>)}</div></Field>
     <Field label="Date of birth" error={tried ? errors.dob : undefined}><Input type="date" value={dob} onChange={(e) => setDob(e.target.value)} className={fieldClass("dob")} /></Field>
@@ -137,10 +139,3 @@ export default function SignupPage() {
   </form><footer className="flex flex-col gap-3 border-t border-[#eef2f4] bg-white p-5"><div className="flex gap-2"><Button type="button" variant="glass" className="h-14 flex-1 rounded-2xl border-[#d5dde2]" disabled={formStep === 1} onClick={() => { setFormStep(1); setTried(false); }}>Back</Button><Button form="signup-form" type="submit" disabled={!canContinue} className="h-14 flex-[2] rounded-2xl bg-[#2e8a69] text-[17px] font-black text-white shadow-[0_4px_0_#226e52] hover:bg-[#277a5d]">{formStep === 1 ? "Continue" : "Create account"}</Button></div><p className="text-center text-sm font-bold text-[#51606d]">Have an account? <Link href="/register/parent" className="font-black text-[#1f7a57] underline">Log in</Link></p></footer></section></main>;
 }
 
-function Header({ step, title, subtitle }: { step: number; title: string; subtitle: string }) {
-  return <header className="border-b border-[#eef2f4] px-5 pb-4 pt-5"><div className="mb-4 flex items-center gap-2"><Link href="/" aria-label="Back" className="grid size-8 place-items-center rounded-full text-[#51606d] hover:bg-[#f2f5f6]"><ArrowLeft className="size-5" /></Link><span className="text-xs font-black uppercase tracking-[.14em] text-[#51606d]">Step {step} of 3</span><div className="ml-auto flex gap-1.5">{[1, 2, 3].map((item) => <span key={item} className={`h-1.5 w-9 rounded-full ${item <= step ? "bg-[#2e8a69]" : "bg-[#e3e8ec]"}`} />)}</div></div><h1 className="text-2xl font-black tracking-tight">{title}</h1><p className="mt-1 text-sm font-bold leading-5 text-[#51606d]">{subtitle}</p></header>;
-}
-
-function Field({ label, hint, error, children }: { label: React.ReactNode; hint?: string; error?: string; children: React.ReactNode }) {
-  return <label className="flex flex-col gap-1.5"><span className="text-[13px] font-extrabold text-[#51606d]">{label}</span>{children}{error ? <span className="text-[13px] font-extrabold text-[#b42318]">{error}</span> : hint ? <span className="text-[13px] font-bold text-[#51606d]">{hint}</span> : null}</label>;
-}
