@@ -1,0 +1,219 @@
+"use client";
+
+import { useState } from "react";
+import { useClientValue } from "@/lib/use-client-value";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { Info } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Field, Notice, Spinner } from "@/components/qn/ui";
+import { cn } from "@/lib/utils";
+import { setState } from "@/lib/store";
+import { type FieldKey, type RegistrationInput, ADULT_AGE, ageFrom, emailMode, validate } from "@/lib/registration";
+
+const EMPTY: RegistrationInput = { name: "", role: "", dob: "", email: "", parentEmail: "", username: "", password: "", confirm: "" };
+
+function todayISO() {
+  const t = new Date();
+  return `${t.getFullYear()}-${String(t.getMonth() + 1).padStart(2, "0")}-${String(t.getDate()).padStart(2, "0")}`;
+}
+
+export function RegisterForm() {
+  const router = useRouter();
+  const [f, setF] = useState<RegistrationInput>(EMPTY);
+  const [tried, setTried] = useState(false);
+  const [showPw, setShowPw] = useState(false);
+  const [busy, setBusy] = useState(false);
+  const [serverError, setServerError] = useState<{ text: string; demo?: boolean } | null>(null);
+  const [serverFields, setServerFields] = useState<Partial<Record<FieldKey, string>>>({});
+  const maxDate = useClientValue<string | undefined>(todayISO, undefined); // read the clock in the browser, not at prerender
+
+  // Server-side messages only count while set; typing in a field clears its message.
+  const errors: Partial<Record<FieldKey, string>> = { ...validate(f) };
+  for (const [k, v] of Object.entries(serverFields)) if (v) errors[k as FieldKey] = v;
+  const age = ageFrom(f.dob);
+  const hasAge = age !== null && age >= 0;
+  const mode = emailMode(f);
+  const count = Object.keys(errors).length;
+
+  // Show an error once the field has a value (format problems) or after the first submit.
+  const show = (k: FieldKey) => (errors[k] && (tried || (k !== "role" && !!f[k])) ? errors[k] : undefined);
+  const set = (k: FieldKey) => (e: React.ChangeEvent<HTMLInputElement>) => {
+    setF((p) => ({ ...p, [k]: e.target.value }));
+    setServerFields((s) => ({ ...s, [k]: undefined }));
+  };
+
+  async function submit(e: React.FormEvent) {
+    e.preventDefault();
+    setTried(true);
+    setServerError(null);
+    if (count) return;
+    setBusy(true);
+    try {
+      const res = await fetch("/api/auth/register", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(f) });
+      const body = await res.json().catch(() => ({}));
+      if (res.status === 202) {
+        // Age drives lesson reading level; the backend doesn't store date of birth, so keep it locally.
+        setState({ age: hasAge ? age : null });
+        const q = new URLSearchParams({ email: body.sentTo, minor: body.minor ? "1" : "0", name: f.name.trim() });
+        router.push(`/verify?${q}`);
+        return;
+      }
+      if (body.errors) setServerFields(body.errors);
+      setServerError({ text: body.detail || "Couldn’t create the account. Try again.", demo: body.demo });
+    } catch {
+      setServerError({ text: "You seem to be offline. Check your connection and try again." });
+    } finally {
+      setBusy(false);
+    }
+  }
+
+  return (
+    <form onSubmit={submit} noValidate className="flex flex-col gap-4">
+      <div className="flex flex-col gap-1">
+        <h1 className="text-[26px] font-black md:text-[30px]">Create your account</h1>
+        <p className="text-[15px] font-bold text-muted-foreground">Fill in your details. We verify your email before you can log in.</p>
+      </div>
+
+      <Field label="Name" autoComplete="name" placeholder="First and last name" value={f.name} onChange={set("name")} error={show("name")} />
+
+      <div role="group" aria-labelledby="role-label" className="flex flex-col gap-1.5">
+        <span id="role-label" className="text-[13px] font-extrabold text-muted-foreground">Role</span>
+        <div className="grid grid-cols-2 gap-2">
+          {(["student", "parent"] as const).map((r) => {
+            const on = f.role === r;
+            return (
+              <button
+                key={r}
+                type="button"
+                aria-pressed={on}
+                onClick={() => setF((p) => ({ ...p, role: r }))}
+                className={cn(
+                  "h-12 rounded-2xl border-[1.5px] text-[15px] font-black",
+                  on ? "border-night bg-night text-white" : show("role") ? "border-destructive bg-card" : "border-input bg-card hover:bg-muted",
+                )}
+              >
+                {r === "student" ? "Student" : "Parent"}
+              </button>
+            );
+          })}
+        </div>
+        {show("role") && <span className="text-[13px] font-extrabold text-destructive">{show("role")}</span>}
+      </div>
+
+      <Field
+        label="Date of birth"
+        type="date"
+        max={maxDate}
+        value={f.dob}
+        onChange={set("dob")}
+        error={show("dob")}
+        labelExtra={
+          hasAge ? (
+            <span className={cn("rounded-full px-2.5 py-0.5 text-xs font-black", mode === "minor" ? "bg-warn text-warn-ink" : "bg-brand-soft text-[#1a6b4c]")}>
+              Age {age}
+              {mode === "minor" ? " · parent approval" : ""}
+            </span>
+          ) : null
+        }
+      />
+
+      {mode === "none" && (
+        <div className="rounded-2xl border-[1.5px] border-dashed border-[#c9d3d9] px-3.5 py-3 text-sm font-bold text-muted-foreground">
+          Add your date of birth and we’ll show the right email field.
+        </div>
+      )}
+      {mode === "self" && (
+        <Field
+          label="Enter your email"
+          type="email"
+          autoComplete="email"
+          placeholder="you@example.com"
+          value={f.email}
+          onChange={set("email")}
+          error={show("email")}
+          hint="We’ll send your verification code here."
+        />
+      )}
+      {mode === "minor" && (
+        <div className="flex flex-col gap-3.5">
+          <div className="flex items-start gap-2.5 rounded-2xl bg-warn px-3.5 py-3">
+            <Info className="mt-0.5 size-5 shrink-0 text-[#8a5300]" strokeWidth={2.4} />
+            <span className="text-sm leading-snug font-bold text-warn-ink">
+              You’re under {ADULT_AGE}, so a parent has to approve your account. We’ll email them a code.
+            </span>
+          </div>
+          <Field label="Enter parent’s email" type="email" placeholder="parent@example.com" value={f.parentEmail} onChange={set("parentEmail")} error={show("parentEmail")} />
+          <Field
+            label={
+              <>
+                Your own email <span className="font-bold">(optional)</span>
+              </>
+            }
+            type="email"
+            autoComplete="email"
+            placeholder="you@example.com"
+            value={f.email}
+            onChange={set("email")}
+            error={show("email")}
+          />
+        </div>
+      )}
+
+      <hr className="my-0.5 border-line" />
+
+      <Field label="Set username" autoComplete="username" placeholder="e.g. nova_reads" value={f.username} onChange={set("username")} error={show("username")} />
+      <Field
+        label="Set password"
+        type={showPw ? "text" : "password"}
+        autoComplete="new-password"
+        placeholder="At least 8 characters"
+        value={f.password}
+        onChange={set("password")}
+        error={show("password")}
+        labelExtra={
+          <button type="button" onClick={() => setShowPw((v) => !v)} aria-pressed={showPw} className="h-7 px-1 text-[13px] font-black text-brand-ink">
+            {showPw ? "Hide" : "Show"}
+          </button>
+        }
+      />
+      <Field
+        label="Confirm password"
+        type={showPw ? "text" : "password"}
+        autoComplete="new-password"
+        placeholder="Type it again"
+        value={f.confirm}
+        onChange={set("confirm")}
+        error={show("confirm")}
+        hint={f.confirm && f.confirm === f.password && !errors.password ? <span className="font-extrabold text-brand-ink">Passwords match</span> : undefined}
+      />
+
+      {serverError && (
+        <Notice tone={serverError.demo ? "info" : "error"}>
+          {serverError.text}{" "}
+          {serverError.demo && (
+            <Link href="/login" className="font-black underline">
+              Go to log in
+            </Link>
+          )}
+        </Notice>
+      )}
+      {tried && count > 0 && (
+        <p role="alert" className="text-center text-sm font-extrabold text-destructive">
+          {count === 1 ? "Fix the highlighted field to continue." : `Fix the ${count} highlighted fields to continue.`}
+        </p>
+      )}
+
+      <Button type="submit" variant="brand" size="cta" disabled={busy}>
+        {busy && <Spinner />}
+        Verify account
+      </Button>
+      <p className="text-center text-sm font-bold text-muted-foreground">
+        Have an account?{" "}
+        <Link href="/login" className="font-black text-brand-ink">
+          Log in
+        </Link>
+      </p>
+    </form>
+  );
+}
