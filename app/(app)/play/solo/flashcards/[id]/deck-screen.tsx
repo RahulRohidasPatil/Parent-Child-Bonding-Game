@@ -1,8 +1,8 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import Link from "next/link";
-import { PartyPopper, RotateCw, X } from "lucide-react";
+import { Flame, PartyPopper, RotateCw, Volume2, X } from "lucide-react";
 import { Page } from "@/components/qn/app-shell";
 import { Sprite } from "@/components/qn/sprite";
 import { VisualFrame } from "@/components/qn/visual-frame";
@@ -12,6 +12,25 @@ import { ApiError, type DeckState, type PublicDeck, learnApi } from "@/lib/learn
 import { bump, markStudiedToday } from "@/lib/store";
 import { cn } from "@/lib/utils";
 
+type CachedDeck = { deck: PublicDeck; state: DeckState };
+const cacheKey = (id: string) => `qn.flashcards.${id}`;
+function readCachedDeck(id: string): CachedDeck | null {
+  if (typeof window === "undefined") return null;
+  try {
+    const value = JSON.parse(localStorage.getItem(cacheKey(id)) || "null") as CachedDeck | null;
+    return value?.deck && value.state ? value : null;
+  } catch {
+    return null;
+  }
+}
+function writeCachedDeck(deck: PublicDeck, state: DeckState) {
+  try {
+    localStorage.setItem(cacheKey(deck.id), JSON.stringify({ deck, state } satisfies CachedDeck));
+  } catch {
+    /* best effort */
+  }
+}
+
 /** Flashcards with the server-side review loop: `know` retires a card, `again` brings it back later. */
 export function DeckScreen({ id }: { id: string }) {
   const [deck, setDeck] = useState<PublicDeck | null>(null);
@@ -20,25 +39,55 @@ export function DeckScreen({ id }: { id: string }) {
   const [sending, setSending] = useState<null | "know" | "again">(null);
   const [loadError, setLoadError] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const [streak, setStreak] = useState(0);
+  const [localOnly, setLocalOnly] = useState(false);
 
-  useEffect(() => {
+  const loadDeck = useCallback(() => {
+    const cached = readCachedDeck(id);
+    if (cached) {
+      setDeck(cached.deck);
+      setDeckState(cached.state);
+      setLocalOnly(true);
+      return;
+    }
     learnApi
       .getDeck(id)
       .then((d) => {
         setDeck(d);
         setDeckState(d.state);
+        writeCachedDeck(d, d.state);
       })
       .catch((e) => setLoadError(e instanceof ApiError ? e.message : "Couldn’t load the flashcards."));
   }, [id]);
+
+  useEffect(() => {
+    const timer = window.setTimeout(loadDeck, 0);
+    return () => window.clearTimeout(timer);
+  }, [loadDeck]);
+
+  function retryLoad() {
+    setLoadError(null);
+    loadDeck();
+  }
 
   async function review(result: "know" | "again") {
     if (!deck || !state || state.next === null) return;
     setSending(result);
     setError(null);
     try {
-      const s = await learnApi.review(deck.id, state.next, result);
+      const s = localOnly
+        ? {
+            next: result === "know" && state.known + 1 >= state.total ? null : (state.next + 1) % state.total,
+            known: result === "know" ? state.known + 1 : state.known,
+            total: state.total,
+            reviews: state.reviews + 1,
+            hard: result === "again" && !state.hard.includes(state.next) ? [...state.hard, state.next] : state.hard,
+          }
+        : await learnApi.review(deck.id, state.next, result);
       setDeckState(s);
+      writeCachedDeck(deck, s);
       setFlipped(false);
+      setStreak((current) => (result === "know" ? current + 1 : 0));
       bump(["d-cards"]);
       markStudiedToday();
     } catch (e) {
@@ -48,11 +97,24 @@ export function DeckScreen({ id }: { id: string }) {
     }
   }
 
+  async function restart() {
+    if (!deck) return;
+    const reset: DeckState = { next: deck.cards[0]?.index ?? null, known: 0, total: deck.cards.length, reviews: 0, hard: [] };
+    setLocalOnly(true);
+    setDeckState(reset);
+    setFlipped(false);
+    setStreak(0);
+    writeCachedDeck(deck, reset);
+  }
+
   if (loadError)
     return (
       <Page className="max-w-[760px]">
         <PageHeader title="Flashcards" back={{ href: "/learn", label: "Back to Learn" }} />
         <Notice>{loadError}</Notice>
+        <Button variant="brand" size="cta" onClick={retryLoad}>
+          Try again
+        </Button>
       </Page>
     );
   if (!deck || !state)
@@ -93,24 +155,32 @@ export function DeckScreen({ id }: { id: string }) {
         <Link href={back} className={cn(buttonVariants({ variant: "brand", size: "cta" }))}>
           Back to the lesson
         </Link>
+        <Button variant="outline" size="cta" onClick={restart}>Restart flashcards</Button>
       </Page>
     );
   }
 
   const card = deck.cards.find((c) => c.index === state.next)!;
   const visual = flipped ? card.back_visual_html : card.front_visual_html;
+  const speak = () => {
+    if (typeof window === "undefined" || !("speechSynthesis" in window)) return;
+    window.speechSynthesis.cancel();
+    window.speechSynthesis.speak(new SpeechSynthesisUtterance(flipped ? card.back : card.front));
+  };
+  const explain = () => setError("Ask Mom to explain this card in your own words, then flip it to check.");
   return (
-    <Page className="max-w-[760px]">
+    <Page className="max-w-[760px] md:max-w-[620px]">
       <div className="flex items-center gap-3">
         <Link href={back} aria-label="Close flashcards" className="flex size-11 shrink-0 items-center justify-center rounded-full border border-line bg-card hover:bg-muted">
           <X className="size-5" strokeWidth={2.6} />
         </Link>
         <ProgressBar value={(state.known / state.total) * 100} className="h-3 flex-1" />
-        <span className="text-sm font-black whitespace-nowrap">
-          {state.known}/{state.total} known
+        <span className="flex h-8 items-center gap-1 rounded-full bg-flame px-2.5 text-sm font-black text-flame-ink whitespace-nowrap" aria-label={`${streak} card streak`}>
+          <Flame className="size-4 fill-flame-ink text-flame-ink" /> {streak}
         </span>
+        <Button variant="outline" size="sm" onClick={restart}>Restart</Button>
       </div>
-      <span className="text-sm font-extrabold text-muted-foreground">{deck.title}</span>
+      <span className="text-sm font-extrabold text-muted-foreground">{deck.title} · card {Math.min(state.known + 1, state.total)} of {state.total}</span>
 
       <button
         type="button"
@@ -135,7 +205,7 @@ export function DeckScreen({ id }: { id: string }) {
 
       <div className="flex items-end gap-2">
         <Sprite id="cat" className="w-12" />
-        <span className="mb-6 rounded-[14px_14px_14px_4px] border border-line bg-card px-3 py-2 text-sm font-extrabold">Say it out loud before you flip!</span>
+        <span className="mb-6 rounded-[14px_14px_14px_4px] border border-line bg-card px-3 py-2 text-sm font-extrabold">Say it out loud first!</span>
       </div>
 
       {error && <Notice onClose={() => setError(null)}>{error}</Notice>}
@@ -147,6 +217,13 @@ export function DeckScreen({ id }: { id: string }) {
           {sending === "know" && <Spinner />} Got it
         </Button>
       </div>
+      <div className="flex gap-2.5">
+        <Button variant="outline" size="lg" onClick={speak} className="flex-1"><Volume2 className="size-4" /> Read aloud</Button>
+        <Button variant="outline" size="lg" onClick={explain} className="flex-1">Explain to Mom</Button>
+      </div>
+      <Link href="/play/duel" className="flex h-12 items-center justify-center rounded-2xl bg-night text-[15px] font-black text-white shadow-[0_4px_0_#18232b]">
+        Skip to module quiz
+      </Link>
     </Page>
   );
 }

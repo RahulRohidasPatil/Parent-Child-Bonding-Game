@@ -32,9 +32,7 @@ export function PlayHub() {
       <Link href="/play/duel" className="relative flex min-h-[160px] flex-col justify-center gap-2 overflow-hidden rounded-3xl bg-rose p-5 md:min-h-[200px] md:p-7">
         <span className="text-[13px] font-black tracking-[.04em] text-rose-ink">FAMILY DUEL · ONE PHONE</span>
         <span className="max-w-[200px] text-[22px] leading-tight font-black md:max-w-none md:text-[28px]">Quiz duel from your lesson</span>
-        <span className="hidden max-w-[300px] text-[15px] font-bold text-[#7a3a52] md:block lg:max-w-[420px]">
-          Same questions for both players. Answer in secret, pass the phone, then see who knew more and why.
-        </span>
+        <span className="hidden max-w-[300px] text-[15px] font-bold text-[#7a3a52] md:block lg:max-w-[420px]">Same questions for both players. Answer in secret, pass the phone, then see who knew more and why.</span>
         <span className="mt-1 flex h-10 items-center self-start rounded-xl bg-rose-strong px-4 text-[15px] font-black text-white">Start a duel</span>
         <Sprite id={look} className="absolute right-[70px] -bottom-3 w-[140px] md:right-[150px] md:w-[200px]" />
         <Sprite id="mom" flip className="absolute -right-2 -bottom-3 w-[140px] md:right-0 md:w-[200px]" />
@@ -47,22 +45,26 @@ export function PlayHub() {
         </div>
         <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2 xl:grid-cols-3">
           {PARTY_GAMES.map((g) => {
-            const ok = players >= g.min;
+            const soloOnly = g.id === "race";
+            const ok = soloOnly ? mode === "solo" : players >= g.min;
             const isOpen = open === g.id;
             return (
               <li key={g.id}>
                 <Card className={cn("flex flex-col gap-2 p-3.5", !ok && "opacity-60")}>
-                  <button type="button" onClick={() => setOpen(isOpen ? null : g.id)} aria-expanded={isOpen} className="flex items-center gap-3 text-left">
-                    <span className="flex size-11 shrink-0 items-center justify-center rounded-xl text-lg font-black" style={{ background: g.tile, color: g.ink }} aria-hidden="true">
-                      {g.glyph}
-                    </span>
+                  <button type="button" onClick={() => setOpen(isOpen ? null : g.id)} disabled={!ok} aria-expanded={isOpen} aria-disabled={!ok} className="flex items-center gap-3 text-left disabled:cursor-not-allowed">
+                    <span className="flex size-11 shrink-0 items-center justify-center rounded-xl text-lg font-black" style={{ background: g.tile, color: g.ink }} aria-hidden="true">{g.glyph}</span>
                     <span className="flex min-w-0 flex-1 flex-col leading-tight">
                       <span className="text-[16px] font-black">{g.name}</span>
-                      <span className={cn("text-[13px] font-bold", ok ? "text-muted-foreground" : "text-rose-ink")}>{ok ? `${g.players} players` : `Needs ${g.min}+ players`}</span>
+                      <span className={cn("text-[13px] font-bold", ok ? "text-muted-foreground" : "text-rose-ink")}>{ok ? `${g.players} players` : soloOnly ? "Solo mode only" : `Needs ${g.min}+ players`}</span>
                     </span>
                     <ChevronDown className={cn("size-5 text-muted-foreground transition-transform", isOpen && "rotate-180")} />
                   </button>
-                  {isOpen && <p className="pl-14 text-sm leading-snug font-bold text-muted-foreground">{g.how}</p>}
+                  {isOpen && (
+                    <div className="flex flex-col gap-2 pl-14">
+                      <p className="text-sm leading-snug font-bold text-muted-foreground">{g.how}</p>
+                      {soloOnly && <Link href="/learn" className="self-start rounded-xl bg-brand px-3 py-2 text-sm font-black text-white">Make flashcards</Link>}
+                    </div>
+                  )}
                 </Card>
               </li>
             );
@@ -72,15 +74,9 @@ export function PlayHub() {
       </section>
 
       <Card className="flex items-center gap-3 p-4">
-        <span className="flex" aria-hidden="true">
-          <Face id="zara" size={40} tint="#e6f0fc" ring="#fff" />
-          <Face id="leo" size={40} tint="#fff6dc" ring="#fff" className="-ml-2.5" />
-          <Face id="mia" size={40} tint="#fde9f0" ring="#fff" className="-ml-2.5" />
-        </span>
+        <span className="flex" aria-hidden="true"><Face id="zara" size={40} tint="#e6f0fc" ring="#fff" /><Face id="leo" size={40} tint="#fff6dc" ring="#fff" className="-ml-2.5" /><Face id="mia" size={40} tint="#fde9f0" ring="#fff" className="-ml-2.5" /></span>
         <span className="flex-1 text-[15px] font-extrabold">Play with friends and family</span>
-        <Link href="/friends" className="text-sm font-black text-brand-ink">
-          See all
-        </Link>
+        <Link href="/friends" className="text-sm font-black text-brand-ink">See all</Link>
       </Card>
     </Page>
   );
