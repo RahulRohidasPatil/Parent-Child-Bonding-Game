@@ -9,7 +9,7 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-nunito);
   --font-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
-  --font-heading: var(--font-fredoka);
+  --font-heading: var(--font-nunito);
   --color-ring: var(--ring);
   --color-input: var(--input);
   --color-border: var(--border);
@@ -37,6 +37,29 @@
   --color-imposter: var(--imposter);
   --color-ink: var(--ink);
   --color-success: var(--success);
+
+  /* QuestNest */
+  --color-brand: var(--brand);
+  --color-brand-dark: var(--brand-dark);
+  --color-brand-ink: var(--brand-ink);
+  --color-brand-soft: var(--brand-soft);
+  --color-stage: var(--stage);
+  --color-stage-floor: var(--stage-floor);
+  --color-night: var(--night);
+  --color-line: var(--line);
+  --color-field: var(--field);
+  --color-coin: var(--coin);
+  --color-coin-ink: var(--coin-ink);
+  --color-flame: var(--flame);
+  --color-flame-ink: var(--flame-ink);
+  --color-rose: var(--rose);
+  --color-rose-ink: var(--rose-ink);
+  --color-rose-strong: var(--rose-strong);
+  --color-sky-soft: var(--sky-soft);
+  --color-sky-ink: var(--sky-ink);
+  --color-warn: var(--warn);
+  --color-warn-ink: var(--warn-ink);
+  --color-mint-line: var(--mint-line);
 
   --radius-sm: calc(var(--radius) * 0.6);
   --radius-md: calc(var(--radius) * 0.8);
@@ -119,46 +142,69 @@
 }
 
 /*
- * Kay — a warm, light reading theme by default (lots of text, learning by day),
- * with a dark mode. Brand colours (sun, coral, mint, sky, grape, pink) are shared
- * by every theme so avatars and badges look the same everywhere.
+ * QuestNest — calm sky-and-mint learning theme (from the App Screens v2 mockups).
+ * Brand tokens below are shared by every screen; the older Kay/Splash tokens keep
+ * their names so the legacy components in components/kay and components/splash still compile.
  */
 :root {
   color-scheme: light;
 
-  --ink: oklch(0.24 0.05 300);
-  --background: oklch(0.985 0.012 85);
-  --foreground: oklch(0.24 0.045 300);
-  --card: oklch(1 0 0);
+  --ink: #1f2d3a;
+  --background: #f3f8f9;
+  --foreground: #1f2d3a;
+  --card: #ffffff;
   --card-foreground: var(--foreground);
-  --popover: oklch(1 0 0);
+  --popover: #ffffff;
   --popover-foreground: var(--foreground);
-  --primary: oklch(0.52 0.2 293);
-  --primary-foreground: oklch(0.99 0.01 300);
-  --secondary: oklch(0.95 0.025 300);
+  --primary: #2e8a69;
+  --primary-foreground: #ffffff;
+  --secondary: #eef3f5;
   --secondary-foreground: var(--foreground);
-  --muted: oklch(0.955 0.015 85);
-  --muted-foreground: oklch(0.47 0.035 300);
-  --accent: oklch(0.94 0.035 300);
-  --accent-foreground: var(--foreground);
-  --destructive: oklch(0.56 0.21 25);
-  --success: oklch(0.55 0.14 155);
-  --border: oklch(0.9 0.018 300);
-  --input: oklch(0.87 0.02 300);
-  --ring: oklch(0.52 0.2 293);
+  --muted: #eef3f5;
+  --muted-foreground: #51606d;
+  --accent: #e2f3eb;
+  --accent-foreground: #1f2d3a;
+  --destructive: #b42318;
+  --success: #1f7a57;
+  --border: #e3e8ec;
+  --input: #d5dde2;
+  --ring: #2e8a69;
   --radius: 1rem;
 
-  --sun: oklch(0.86 0.16 88);
-  --coral: oklch(0.73 0.16 35);
-  --mint: oklch(0.82 0.13 168);
-  --sky: oklch(0.76 0.12 240);
-  --grape: oklch(0.7 0.16 300);
-  --pink: oklch(0.79 0.13 355);
-  --imposter: oklch(0.66 0.22 15);
+  /* QuestNest palette */
+  --brand: #2e8a69;
+  --brand-dark: #226e52;
+  --brand-ink: #1f7a57;
+  --brand-soft: #e2f3eb;
+  --stage: #cdeff5;
+  --stage-floor: #b3e2ea;
+  --night: #23303a;
+  --line: #e3e8ec;
+  --field: #f8fafb;
+  --coin: #fff6dc;
+  --coin-ink: #6e4a00;
+  --flame: #ffeee2;
+  --flame-ink: #9a3d0a;
+  --rose: #fde9f0;
+  --rose-ink: #a83a60;
+  --rose-strong: #e46f97;
+  --sky-soft: #e6f0fc;
+  --sky-ink: #245ea8;
+  --warn: #fff4e0;
+  --warn-ink: #6b4100;
+  --mint-line: #7fe0bf;
 
-  --glow-1: oklch(0.86 0.16 88 / 22%);
-  --glow-2: oklch(0.7 0.16 300 / 14%);
-  --glow-3: oklch(0.82 0.13 168 / 14%);
+  --sun: #f5b93a;
+  --coral: #f2742e;
+  --mint: #7fe0bf;
+  --sky: #8ec5f0;
+  --grape: #9b87e6;
+  --pink: #e46f97;
+  --imposter: #d24d4d;
+
+  --glow-1: transparent;
+  --glow-2: transparent;
+  --glow-3: transparent;
 }
 
 :root[data-theme="dark"],
@@ -226,14 +272,18 @@
   body,
   .theme-splash {
     @apply bg-background text-foreground;
-    background-image:
-      radial-gradient(60rem 40rem at 10% -10%, var(--glow-1), transparent 60%),
-      radial-gradient(50rem 40rem at 110% 10%, var(--glow-2), transparent 60%),
-      radial-gradient(40rem 30rem at 50% 120%, var(--glow-3), transparent 60%);
-    background-attachment: fixed;
   }
   html {
     @apply font-sans;
+    -webkit-tap-highlight-color: transparent;
+  }
+  img.px,
+  .pixelated {
+    image-rendering: pixelated;
+  }
+  :focus-visible {
+    outline: 3px solid #9fd8c3;
+    outline-offset: 2px;
   }
   h1,
   h2,

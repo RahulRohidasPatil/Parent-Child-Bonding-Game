@@ -25,6 +25,12 @@ const buttonVariants = cva(
         mint: "bg-mint text-ink hover:brightness-105 [--btn-depth:color-mix(in_oklch,var(--mint),black_40%)]",
         glass:
           "border-border bg-card text-foreground hover:bg-accent [--btn-depth:color-mix(in_oklch,var(--foreground)_18%,transparent)]",
+        // QuestNest
+        brand:
+          "bg-brand text-white shadow-[0_4px_0_0_var(--brand-dark)] hover:brightness-105 active:not-aria-[haspopup]:translate-y-[2px] active:shadow-[0_2px_0_0_var(--brand-dark)] disabled:shadow-none",
+        soft: "border-[1.5px] border-input bg-card text-foreground hover:bg-muted",
+        night: "bg-night text-white hover:brightness-110",
+        brandSoft: "bg-brand-soft text-brand-dark hover:brightness-[0.98]",
       },
       size: {
         default:
@@ -38,6 +44,10 @@ const buttonVariants = cva(
         "icon-sm":
           "size-7 rounded-[min(var(--radius-md),12px)] in-data-[slot=button-group]:rounded-lg",
         "icon-lg": "size-9",
+        cta: "h-14 gap-2 rounded-2xl px-6 text-[17px] font-black [&_svg:not([class*='size-'])]:size-5",
+        pill: "h-11 gap-1.5 rounded-xl px-4 text-[15px] font-extrabold [&_svg:not([class*='size-'])]:size-[18px]",
+        chip: "h-9 gap-1.5 rounded-full px-3.5 text-sm font-extrabold",
+        round: "size-11 rounded-full [&_svg:not([class*='size-'])]:size-5",
         game: "h-14 gap-2 rounded-2xl px-6 font-heading text-lg font-semibold tracking-wide shadow-[0_5px_0_0_var(--btn-depth,oklch(0_0_0/35%))] active:not-aria-[haspopup]:translate-y-[3px] active:shadow-[0_2px_0_0_var(--btn-depth,oklch(0_0_0/35%))] disabled:opacity-40 [&_svg:not([class*='size-'])]:size-5",
       },
     },
