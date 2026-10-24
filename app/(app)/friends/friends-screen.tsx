@@ -2,11 +2,12 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { Copy, Swords } from "lucide-react";
+import { Copy, House, Swords } from "lucide-react";
 import { Page } from "@/components/qn/app-shell";
 import { Face } from "@/components/qn/sprite";
 import { Card, Notice, PageHeader, Segmented } from "@/components/qn/ui";
 import { Button } from "@/components/ui/button";
+import { homeIdOf } from "@/lib/home-data";
 import { AVATARS, FAMILY, FRIENDS } from "@/lib/qn-data";
 
 const DOT = { on: "#3fbf7f", away: "#f5b93a", off: "#b9c6ce" } as const;
@@ -47,6 +48,11 @@ export function FriendsScreen() {
                     <span className="truncate text-[13px] font-bold text-muted-foreground">{p.status}</span>
                     <span className="text-xs font-extrabold text-brand-ink">{p.base}</span>
                   </span>
+                  {homeIdOf(p.name) && (
+                    <Link href={`/base/visit/${homeIdOf(p.name)}`} aria-label={`Visit ${p.name}’s home`} className="flex size-11 items-center justify-center rounded-xl border border-line bg-card hover:bg-muted">
+                      <House className="size-[18px]" strokeWidth={2.4} />
+                    </Link>
+                  )}
                   <Link href="/play/duel" aria-label={`Duel ${p.name}`} className="flex size-11 items-center justify-center rounded-xl bg-night text-white">
                     <Swords className="size-[18px]" strokeWidth={2.4} />
                   </Link>
