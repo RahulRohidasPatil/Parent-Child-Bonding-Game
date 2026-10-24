@@ -7,7 +7,8 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary/80",
+        default:
+          "bg-primary text-primary-foreground hover:bg-primary/90 [--btn-depth:color-mix(in_oklch,var(--primary),black_35%)]",
         outline:
           "border-border bg-background hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:border-input dark:bg-input/30 dark:hover:bg-input/50",
         secondary:
@@ -17,6 +18,13 @@ const buttonVariants = cva(
         destructive:
           "bg-destructive/10 text-destructive hover:bg-destructive/20 focus-visible:border-destructive/40 focus-visible:ring-destructive/20 dark:bg-destructive/20 dark:hover:bg-destructive/30 dark:focus-visible:ring-destructive/40",
         link: "text-primary underline-offset-4 hover:underline",
+        // Splash game buttons — pair with size="game" for the chunky 3D press.
+        sun: "bg-sun text-ink hover:brightness-105 [--btn-depth:color-mix(in_oklch,var(--sun),black_40%)]",
+        coral:
+          "bg-coral text-ink hover:brightness-105 [--btn-depth:color-mix(in_oklch,var(--coral),black_40%)]",
+        mint: "bg-mint text-ink hover:brightness-105 [--btn-depth:color-mix(in_oklch,var(--mint),black_40%)]",
+        glass:
+          "border-border bg-card text-foreground hover:bg-accent [--btn-depth:color-mix(in_oklch,var(--foreground)_18%,transparent)]",
       },
       size: {
         default:
@@ -30,6 +38,7 @@ const buttonVariants = cva(
         "icon-sm":
           "size-7 rounded-[min(var(--radius-md),12px)] in-data-[slot=button-group]:rounded-lg",
         "icon-lg": "size-9",
+        game: "h-14 gap-2 rounded-2xl px-6 font-heading text-lg font-semibold tracking-wide shadow-[0_5px_0_0_var(--btn-depth,oklch(0_0_0/35%))] active:not-aria-[haspopup]:translate-y-[3px] active:shadow-[0_2px_0_0_var(--btn-depth,oklch(0_0_0/35%))] disabled:opacity-40 [&_svg:not([class*='size-'])]:size-5",
       },
     },
     defaultVariants: {
