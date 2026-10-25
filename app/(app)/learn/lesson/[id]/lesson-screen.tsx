@@ -1,7 +1,8 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { BookMarked, Layers, ListChecks, Swords } from "lucide-react";
 import { Page } from "@/components/qn/app-shell";
 import { LearnSteps } from "@/components/qn/learn-bits";
@@ -47,10 +48,30 @@ async function drawPlannedOnce(l: PublicLesson): Promise<PublicVisual[] | null> 
 }
 
 export function LessonScreen({ id }: { id: string }) {
+  const router = useRouter();
   const [lesson, setLesson] = useState<PublicLesson | null>(null);
   const [loadError, setLoadError] = useState<string | null>(null);
   const [drawing, setDrawing] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [creatingDeck, setCreatingDeck] = useState(false);
+  const deckRequestPending = useRef(false);
+
+  async function startFlashcards() {
+    if (!lesson || deckRequestPending.current) return;
+    deckRequestPending.current = true;
+    setCreatingDeck(true);
+    setError(null);
+    try {
+      const deck = await learnApi.createDeck(lesson.id, 4);
+      const subject = getState().recent.find((item) => item.kind === "lesson" && item.id === lesson.id)?.subject;
+      remember({ kind: "deck", id: deck.id, title: deck.title || lesson.title, lessonId: lesson.id, subject, detail: `${deck.cards.length} cards` });
+      router.push(`/play/solo/flashcards/${deck.id}`);
+    } catch (e) {
+      setError(e instanceof ApiError ? e.message : "Could not create flashcards. Try again.");
+      deckRequestPending.current = false;
+      setCreatingDeck(false);
+    }
+  }
 
   useEffect(() => {
     let live = true;
@@ -96,7 +117,7 @@ export function LessonScreen({ id }: { id: string }) {
     return (
       <Page className="max-w-[720px]">
         <div className="flex items-center gap-2.5 p-8 font-extrabold text-muted-foreground" role="status">
-          <Spinner className="text-brand" /> Loading the lesson…
+          <Spinner className="text-brand-ink" /> Loading the lesson…
         </div>
       </Page>
     );
@@ -118,12 +139,11 @@ export function LessonScreen({ id }: { id: string }) {
       <LessonChat key={lesson.id} lesson={lesson} />
 
       {/* ---------- practise ---------- */}
-      {/* Placeholders: quizzes and flashcards open the team's game UI once it is wired in (learnApi.createQuiz / createDeck). */}
       <Card className="flex flex-col gap-4 p-4 md:p-5">
         <span className="text-[19px] font-black">Practise it</span>
         <div className="grid grid-cols-1 gap-2.5 sm:grid-cols-2">
-          <Button type="button" variant="soft" size="cta">
-            <Layers /> Flashcards
+          <Button type="button" variant="soft" size="cta" onClick={startFlashcards} disabled={creatingDeck} aria-busy={creatingDeck}>
+            {creatingDeck ? <Spinner /> : <Layers />} {creatingDeck ? "Making flashcards…" : "Flashcards"}
           </Button>
           <Button type="button" variant="brand" size="cta">
             <ListChecks /> Create quiz
@@ -150,14 +170,14 @@ function LessonBody({ lesson, drawing }: { lesson: PublicLesson; drawing: boolea
   return (
     <>
       <Card className="bg-brand-soft p-4 md:p-5">
-        <p className="text-[16px] leading-relaxed font-bold text-[#1d4d3b] md:text-[17px]">{lesson.summary}</p>
+        <p className="text-[16px] leading-relaxed font-bold text-brand-ink md:text-[17px]">{lesson.summary}</p>
       </Card>
 
       {lesson.sections.map((s, i) => (
         <Card key={i} className="flex flex-col gap-3 p-4 md:p-5">
           <h2 className="text-[19px] font-black md:text-[21px]">{s.heading}</h2>
           {paragraphs(s.body).map((para, j) => (
-            <p key={j} className="text-[16px] leading-relaxed font-semibold text-[#2b3a47]">
+            <p key={j} className="text-[16px] leading-relaxed font-semibold text-foreground">
               {para}
             </p>
           ))}
@@ -173,7 +193,7 @@ function LessonBody({ lesson, drawing }: { lesson: PublicLesson; drawing: boolea
 
       <Card className="flex flex-col gap-3 p-4 md:p-5">
         <h2 className="flex items-center gap-2 text-[19px] font-black">
-          <BookMarked className="size-5 text-brand" /> Key points
+          <BookMarked className="size-5 text-brand-ink" /> Key points
         </h2>
         <ul className="flex flex-col gap-2">
           {lesson.key_points.map((p, i) => (
@@ -190,8 +210,8 @@ function LessonBody({ lesson, drawing }: { lesson: PublicLesson; drawing: boolea
 
 function DrawingNote({ kind, purpose }: { kind: string; purpose: string }) {
   return (
-    <div className="flex items-center gap-2.5 rounded-2xl border border-dashed border-[#c9d3d9] px-3.5 py-3 text-sm font-bold text-muted-foreground" role="status">
-      <Spinner className="text-brand" />
+    <div className="flex items-center gap-2.5 rounded-2xl border border-dashed border-input px-3.5 py-3 text-sm font-bold text-muted-foreground" role="status">
+      <Spinner className="text-brand-ink" />
       Drawing a {kind}: {purpose}
     </div>
   );

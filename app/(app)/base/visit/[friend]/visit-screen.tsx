@@ -60,7 +60,7 @@ export function VisitScreen({ id }: { id: string }) {
 
       <div className="grid grid-cols-1 gap-4 lg:grid-cols-[minmax(0,1fr)_340px] lg:items-start">
         <Card className="overflow-hidden">
-          <div className="relative isolate h-[min(62dvh,560px)] min-h-[380px] bg-[#c3eef5]">
+          <div className="relative isolate h-[min(62dvh,560px)] min-h-[380px] bg-stage">
             <IsoHouse
               rooms={built.map((r) => ({ room: r, levels: levelsOf(r, home.rooms[r.id]), layout: home.layout?.[r.id], grid: ROOM_GRID[r.id] }))}
               focus={room ? built.indexOf(room) : null}
@@ -68,7 +68,7 @@ export function VisitScreen({ id }: { id: string }) {
               className="absolute inset-0 h-full"
               priority
             />
-            <span className="absolute top-3 left-3 z-10 flex h-8 items-center gap-1.5 rounded-full bg-white/95 px-3.5 text-sm font-black whitespace-nowrap">
+            <span className="absolute top-3 left-3 z-10 flex h-8 items-center gap-1.5 rounded-full bg-card/95 px-3.5 text-sm font-black whitespace-nowrap">
               <Sparkles className="size-4 text-[#f5b93a]" />
               {room ? `${room.name} · ${placed} of ${room.items.length} placed` : `${built.length} ${built.length === 1 ? "room" : "rooms"}`}
             </span>
@@ -81,7 +81,7 @@ export function VisitScreen({ id }: { id: string }) {
             >
               {room ? <ZoomOut /> : <ZoomIn />}
             </Button>
-            {!room && <span className="absolute bottom-3 left-1/2 z-10 -translate-x-1/2 rounded-full bg-white/90 px-3.5 py-1.5 text-[13px] font-extrabold whitespace-nowrap">Tap a room to look inside</span>}
+            {!room && <span className="absolute bottom-3 left-1/2 z-10 -translate-x-1/2 rounded-full bg-card/90 px-3.5 py-1.5 text-[13px] font-extrabold whitespace-nowrap">Tap a room to look inside</span>}
           </div>
           <div className="flex flex-wrap items-center gap-2.5 p-4">
             <Button variant={cheered.includes(cheerKey) ? "brandSoft" : "brand"} size="pill" onClick={() => setCheered((c) => (c.includes(cheerKey) ? c : [...c, cheerKey]))} disabled={cheered.includes(cheerKey)}>

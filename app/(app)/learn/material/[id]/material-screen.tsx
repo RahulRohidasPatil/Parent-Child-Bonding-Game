@@ -97,7 +97,7 @@ export function MaterialScreen({ id }: { id: string }) {
     return (
       <Page className="max-w-[720px]">
         <div className="flex items-center gap-2.5 p-8 font-extrabold text-muted-foreground" role="status">
-          <Spinner className="text-brand" /> Loading your upload…
+          <Spinner className="text-brand-ink" /> Loading your upload…
         </div>
       </Page>
     );

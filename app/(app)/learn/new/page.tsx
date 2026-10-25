@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { NewLesson } from "./new-lesson";
+import { LearnChat } from "./learn-chat";
 
-export const metadata: Metadata = { title: "New lesson" };
+export const metadata: Metadata = { title: "Ask anything" };
 
-export default function NewLessonPage() {
-  return <NewLesson />;
+export default function AskPage() {
+  return <LearnChat />;
 }

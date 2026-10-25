@@ -2,7 +2,7 @@ import type { NextRequest } from "next/server";
 import { LEARNING_API_URL, UpstreamError, currentUser } from "@/lib/server/session";
 
 /** Same-origin proxy for the learning service's documented `/api/*` endpoints. */
-const ALLOWED = /^(materials|lessons|quiz|flashcards|tournament)(\/|$)/;
+const ALLOWED = /^(materials|lessons|quiz|flashcards|tournament|chat)(\/|$)/;
 
 async function forward(req: NextRequest, ctx: RouteContext<"/api/[...path]">) {
   const { path } = await ctx.params;

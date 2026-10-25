@@ -93,7 +93,7 @@ export function HomeScreen() {
             <span className="h-2.5 flex-1 rounded-full bg-white/25">
               <span className="block h-full rounded-full bg-[#ffd36b]" style={{ width: `${Math.round((doneDaily / daily.length) * 100)}%` }} />
             </span>
-            <span className="flex h-11 items-center rounded-xl bg-white px-5 text-base font-black text-brand-dark">{latest ? "Continue" : "Start"}</span>
+            <span className="flex h-11 items-center rounded-xl bg-card px-5 text-base font-black text-brand-dark">{latest ? "Continue" : "Start"}</span>
           </span>
         </Link>
 
@@ -114,7 +114,7 @@ export function HomeScreen() {
             </span>
             <span className="mt-auto grid grid-cols-4 gap-1.5">
               {daily.map((q, i) => (
-                <span key={q.id} className={i < doneDaily ? "h-2 rounded-full bg-brand" : "h-2 rounded-full bg-[#e9eef1]"} />
+                <span key={q.id} className={i < doneDaily ? "h-2 rounded-full bg-brand" : "h-2 rounded-full bg-track"} />
               ))}
             </span>
           </Link>
@@ -122,7 +122,7 @@ export function HomeScreen() {
 
         {/* right column */}
         <Link href="/base" className="flex flex-col overflow-hidden rounded-3xl border border-line bg-card md:col-span-2 md:row-start-3 md:flex-row xl:col-span-1 xl:col-start-3 xl:row-span-2 xl:row-start-1 xl:flex-col">
-          <span className="flex items-center justify-center bg-[#c3eef5] p-3 md:w-[260px] xl:w-full xl:flex-1">
+          <span className="flex items-center justify-center bg-stage p-3 md:w-[260px] xl:w-full xl:flex-1">
             <IsoHouse rooms={built.map((r) => ({ room: r, levels: levelsOf(r, homeRooms[r.id]), layout: homeLayout[r.id], grid: ROOM_GRID[r.id] }))} focus={null} aspect={1.25} className="max-w-[320px]" />
           </span>
           <span className="flex flex-1 flex-col justify-center gap-1.5 p-4 xl:flex-none">

@@ -121,7 +121,7 @@ export function DeckScreen({ id }: { id: string }) {
     return (
       <Page className="max-w-[760px]">
         <div className="flex items-center gap-2.5 p-8 font-extrabold text-muted-foreground" role="status">
-          <Spinner className="text-brand" /> Loading the cards…
+          <Spinner className="text-brand-ink" /> Loading the cards…
         </div>
       </Page>
     );
@@ -134,7 +134,7 @@ export function DeckScreen({ id }: { id: string }) {
       <Page className="max-w-[760px]">
         <PageHeader title="Deck done!" sub={deck.title} back={{ href: back, label: "Back to the lesson" }} />
         <Card className="flex flex-col items-center gap-2 p-6 text-center">
-          <PartyPopper className="size-10 text-brand" />
+          <PartyPopper className="size-10 text-brand-ink" />
           <span className="text-[22px] font-black">
             You know all {state.total} cards
           </span>
@@ -188,7 +188,7 @@ export function DeckScreen({ id }: { id: string }) {
         aria-label={flipped ? "Show the question side" : "Show the answer"}
         className={cn(
           "flex min-h-[320px] flex-col items-center justify-between gap-4 rounded-[28px] p-5 text-center md:min-h-[380px] md:p-8",
-          flipped ? "bg-[#f7fbff] shadow-[0_6px_0_#cfe0f2,0_14px_30px_rgba(31,45,58,.08)]" : "bg-card shadow-[0_6px_0_#dde5ea,0_14px_30px_rgba(31,45,58,.08)]",
+          flipped ? "bg-sky-soft shadow-[0_6px_0_var(--line),0_14px_30px_rgba(31,45,58,.08)]" : "bg-card shadow-[0_6px_0_var(--line),0_14px_30px_rgba(31,45,58,.08)]",
         )}
       >
         <span className={cn("rounded-full px-3 py-1 text-[13px] font-black", flipped ? "bg-sky-soft text-sky-ink" : "bg-brand-soft text-brand-dark")}>
@@ -210,7 +210,7 @@ export function DeckScreen({ id }: { id: string }) {
 
       {error && <Notice onClose={() => setError(null)}>{error}</Notice>}
       <div className="grid grid-cols-2 gap-3">
-        <Button variant="ghost" size="cta" onClick={() => review("again")} disabled={!!sending} className="bg-[#fff0e3] text-flame-ink shadow-[0_4px_0_#f2c9a6] hover:bg-[#ffe6d2]">
+        <Button variant="ghost" size="cta" onClick={() => review("again")} disabled={!!sending} className="bg-flame text-flame-ink shadow-[0_4px_0_var(--flame)] hover:bg-flame/80">
           {sending === "again" && <Spinner />} Again
         </Button>
         <Button variant="brand" size="cta" onClick={() => review("know")} disabled={!!sending}>

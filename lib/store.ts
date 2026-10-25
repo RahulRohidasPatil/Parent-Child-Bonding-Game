@@ -3,6 +3,8 @@
 import { useSyncExternalStore } from "react";
 import type { AvatarId, PetId, Subject } from "./qn-data";
 import { ROOMS, freshLevels, type RoomId, type RoomLayout } from "./home-data";
+import { EMPTY_CHAT, titleOf, type ChatState, type Conversation } from "./learn-chat";
+import type { StudyPlan } from "./study-plan";
 
 /**
  * Local prototype state for features the backend doesn't store yet (coins, looks, home,
@@ -30,6 +32,8 @@ export type QNState = {
   prefersVisuals: boolean;
   recent: RecentItem[];
   plans: StudyPlan[]; // the learning server doesn't keep chat answers, so plans live here
+  chats: Conversation[]; // chat history, newest first
+  chatId: string | null; // the open chat; null = a new, empty one
   progress: Record<string, number>; // quest id -> count
   claimed: string[];
   /** Test tools: keep coins topped up so the base can be tried out freely. */
@@ -58,6 +62,8 @@ export const DEFAULT_STATE: QNState = {
   prefersVisuals: false,
   recent: [],
   plans: [],
+  chats: [],
+  chatId: null,
   progress: {},
   claimed: [],
   unlimitedCoins: false,
@@ -77,8 +83,17 @@ function load() {
   try {
     const raw = localStorage.getItem(KEY);
     if (raw) {
-      const saved = JSON.parse(raw) as Partial<QNState> & { base?: unknown };
+      const saved = JSON.parse(raw) as Partial<QNState> & { base?: unknown; chat?: ChatState };
       delete saved.base; // per-subject rooms from before the shared home
+      // The single chat from before chat history becomes the first saved chat.
+      if (saved.chat) {
+        if (saved.chat.messages?.length && !saved.chats?.length) {
+          const id = crypto.randomUUID();
+          saved.chats = [{ ...saved.chat, id, title: titleOf(saved.chat), updatedAt: Date.now() }];
+          saved.chatId = id;
+        }
+        delete saved.chat;
+      }
       state = {
         ...DEFAULT_STATE,
         ...saved,
@@ -161,6 +176,40 @@ export function setSubtopicLesson(planId: string, index: number, lessonId: strin
       p.id === planId ? { ...p, subtopics: p.subtopics.map((t, i) => (i === index ? { ...t, lessonId } : t)) } : p,
     ),
   }));
+}
+
+const CHAT_KEEP = 80; // messages per chat
+const CHATS_KEEP = 30; // chats in the history
+
+/**
+ * Change one chat. Answers can arrive after the learner has switched chats, so callers pass the id
+ * of the chat they started in. A chat is only saved to the history once it has a message.
+ */
+export function updateChat(id: string, fn: (c: ChatState) => ChatState) {
+  setState((s) => {
+    const cur = s.chats.find((c) => c.id === id) ?? { ...EMPTY_CHAT, id, title: "New chat", updatedAt: Date.now() };
+    const next = fn(cur);
+    if (next.messages.length === 0 && !s.chats.some((c) => c.id === id)) return {};
+    const chat: Conversation = { ...cur, ...next, messages: next.messages.slice(-CHAT_KEEP), title: titleOf(next), updatedAt: Date.now() };
+    return { chats: [chat, ...s.chats.filter((c) => c.id !== id)].slice(0, CHATS_KEEP) };
+  });
+}
+
+/** The open chat's id, making one up for a new chat. */
+export function ensureChatId() {
+  const open = getState().chatId;
+  if (open) return open;
+  const id = crypto.randomUUID();
+  setState({ chatId: id });
+  return id;
+}
+
+export function openChat(id: string | null) {
+  setState({ chatId: id });
+}
+
+export function deleteChat(id: string) {
+  setState((s) => ({ chats: s.chats.filter((c) => c.id !== id), chatId: s.chatId === id ? null : s.chatId }));
 }
 
 export function forgetPlan(id: string) {
