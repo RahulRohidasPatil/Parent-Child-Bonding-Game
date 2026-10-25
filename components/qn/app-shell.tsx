@@ -10,6 +10,7 @@ import { useUser } from "@/lib/use-user";
 import { AVATARS } from "@/lib/qn-data";
 import { StarTile } from "./brand";
 import { Face } from "./sprite";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 type NavItem = { href: string; label: string; icon: typeof Home; match?: string[] };
 
@@ -51,6 +52,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
       <PathAware render={(path) => <Rail path={path} />} />
       <PathAware render={(path) => <Sidebar path={path} />} />
       <main id="content" className="flex min-w-0 flex-1 flex-col pb-28 md:pb-8">
+        <div className="flex justify-end px-4 pt-3 md:hidden"><ThemeToggle /></div>
         {children}
       </main>
       <PathAware render={(path) => <TabBar path={path} />} />
@@ -97,6 +99,7 @@ function Rail({ path }: { path: string }) {
           )}
         </nav>
         <span className="flex-1" />
+        <ThemeToggle className="mb-2" />
         <Link
           href="/profile"
           aria-label="Profile"
@@ -148,14 +151,15 @@ function Sidebar({ path }: { path: string }) {
           href="/learn/new"
           aria-current={isActive(path, SCAN) ? "page" : undefined}
           className={cn(
-            "mt-3.5 flex h-[52px] items-center justify-center gap-2.5 rounded-2xl bg-brand text-base font-black text-white shadow-[0_4px_0_0_var(--brand-dark)]",
-            isActive(path, SCAN) && "ring-3 ring-[#9fd8c3]",
+            "mt-3.5 flex h-[52px] items-center justify-center gap-2.5 rounded-2xl bg-brand text-base font-black text-white shadow-[0_4px_0_0_var(--brand-depth)]",
+            isActive(path, SCAN) && "ring-3 ring-ring",
           )}
         >
           <Camera className="size-[22px]" strokeWidth={2.2} />
           Upload notes
         </Link>
         <span className="flex-1" />
+        <ThemeToggle expanded className="mb-3" />
         <Link
           href="/settings"
           aria-current={path.startsWith("/settings") ? "page" : undefined}
@@ -201,7 +205,7 @@ function TabBar({ path }: { path: string }) {
                 key={item.href}
                 href={item.href}
                 aria-current={on ? "page" : undefined}
-                className={cn("flex flex-col items-center gap-0.5 text-xs", on ? "font-black text-brand" : "font-extrabold text-muted-foreground")}
+                className={cn("flex flex-col items-center gap-0.5 text-xs", on ? "font-black text-brand-ink" : "font-extrabold text-muted-foreground")}
               >
                 <Icon className={cn("size-[26px]", on && "fill-brand-soft")} strokeWidth={2} />
                 {item.label}

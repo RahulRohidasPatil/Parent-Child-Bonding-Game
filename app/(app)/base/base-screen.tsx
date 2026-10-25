@@ -186,7 +186,7 @@ export function BaseScreen() {
         }
       />
 
-      <div className="relative isolate h-[min(70dvh,620px)] min-h-[440px] overflow-hidden rounded-[28px] bg-[#c3eef5] lg:h-[min(76dvh,760px)]">
+      <div className="relative isolate h-[min(70dvh,620px)] min-h-[440px] overflow-hidden rounded-[28px] bg-stage lg:h-[min(76dvh,760px)]">
         <IsoHouse
           rooms={houseRooms}
           focus={focusIndex}
@@ -207,16 +207,16 @@ export function BaseScreen() {
         {/* top bar */}
         <div className="pointer-events-none absolute inset-x-3 top-3 z-10 flex items-start gap-2">
           <div className="pointer-events-auto mr-auto flex min-w-0 flex-col gap-1.5">
-            <span className="w-fit rounded-full bg-white/95 px-3.5 py-1.5 text-sm font-black whitespace-nowrap">
+            <span className="w-fit rounded-full bg-card/95 px-3.5 py-1.5 text-sm font-black whitespace-nowrap">
               {zoomedOut ? `Your home · ${built.length} ${built.length === 1 ? "room" : "rooms"}` : `${room.name} · ${placed}/${room.items.length}`}
             </span>
             {next && !editing && (
               <button
                 type="button"
                 onClick={() => setSheet("room")}
-                className="flex w-fit items-center gap-2 rounded-full bg-white/80 py-1 pr-2.5 pl-1.5 text-[12px] font-extrabold whitespace-nowrap hover:bg-white"
+                className="flex w-fit items-center gap-2 rounded-full bg-card/80 py-1 pr-2.5 pl-1.5 text-[12px] font-extrabold whitespace-nowrap hover:bg-card"
               >
-                <span className={cn("flex size-5 items-center justify-center rounded-full", canBuy ? "bg-brand text-white" : "bg-[#e9eef1] text-muted-foreground")}>
+                <span className={cn("flex size-5 items-center justify-center rounded-full", canBuy ? "bg-brand text-white" : "bg-track text-muted-foreground")}>
                   {canBuy ? <Plus className="size-3.5" strokeWidth={3} /> : <Lock className="size-3" strokeWidth={3} />}
                 </span>
                 {canBuy ? `${next.name} ready to buy` : `${next.name}: ${unlock.have}/${unlock.need} at Lv ${UNLOCK_LEVEL}`}
@@ -254,10 +254,10 @@ export function BaseScreen() {
             </span>
           )}
           {zoomedOut ? (
-            <span className="rounded-full bg-white/90 px-3.5 py-1.5 text-[13px] font-extrabold">Tap a room to look inside</span>
+            <span className="rounded-full bg-card/90 px-3.5 py-1.5 text-[13px] font-extrabold">Tap a room to look inside</span>
           ) : editing ? (
             <>
-              {!toast && <span className="rounded-full bg-white/90 px-3.5 py-1.5 text-center text-[13px] font-extrabold">Drag furniture to move it · tap ⟳ on it to rotate</span>}
+              {!toast && <span className="rounded-full bg-card/90 px-3.5 py-1.5 text-center text-[13px] font-extrabold">Drag furniture to move it · tap ⟳ on it to rotate</span>}
               <span className="pointer-events-auto flex gap-2">
                 <Button
                   variant="soft"
@@ -341,7 +341,7 @@ export function BaseScreen() {
       >
         {next && (
           <>
-            <span className="rounded-3xl bg-[#c3eef5] p-2">
+            <span className="rounded-3xl bg-stage p-2">
               <IsoRoom room={next} levels={freshLevels(next)} className={cn(!canBuy && "opacity-60 grayscale-[.4]")} />
             </span>
             {canBuy ? (
@@ -374,7 +374,7 @@ export function BaseScreen() {
                     return (
                       <li
                         key={it.id}
-                        className={cn("flex items-center gap-1 rounded-full px-2.5 py-1 text-[12px] font-extrabold", ok ? "bg-brand-soft text-brand-dark" : "bg-[#f0f4f6] text-muted-foreground")}
+                        className={cn("flex items-center gap-1 rounded-full px-2.5 py-1 text-[12px] font-extrabold", ok ? "bg-brand-soft text-brand-dark" : "bg-muted text-muted-foreground")}
                       >
                         {ok && <Check className="size-3.5" strokeWidth={3} />}
                         {it.name} · {lv > 0 ? `Lv ${lv}` : "not added"}
@@ -413,7 +413,7 @@ export function BaseScreen() {
             <span className="text-[15px] font-black">Unlimited coins</span>
             <span className="text-[13px] font-bold text-muted-foreground">{unlimited ? "On: coins stay topped up" : "Off: coins work as normal"}</span>
           </span>
-          <span className={cn("relative h-7 w-12 rounded-full transition-colors", unlimited ? "bg-brand" : "bg-[#d5dde2]")}>
+          <span className={cn("relative h-7 w-12 rounded-full transition-colors", unlimited ? "bg-brand" : "bg-input")}>
             <span className={cn("absolute top-1 size-5 rounded-full bg-white transition-all", unlimited ? "left-6" : "left-1")} />
           </span>
         </button>
@@ -515,13 +515,13 @@ function UpgradePanel({
     <>
       <div className="grid grid-cols-[minmax(0,1fr)_28px_minmax(0,1fr)] items-center">
         <div className="flex flex-col items-center gap-1.5">
-          <Thumb item={item} level={level} className="h-28 w-full rounded-[18px] bg-[#eaf7fa] p-3" />
+          <Thumb item={item} level={level} className="h-28 w-full rounded-[18px] bg-stage p-3" />
           <span className="text-[13px] font-black text-muted-foreground">Now · Lv {level}</span>
         </div>
-        <ArrowRight className="size-[22px] justify-self-center text-brand" strokeWidth={3} />
+        <ArrowRight className="size-[22px] justify-self-center text-brand-ink" strokeWidth={3} />
         <div className="flex flex-col items-center gap-1.5">
           <Thumb item={item} level={next} className="h-28 w-full rounded-[18px] border-2 border-brand bg-brand-soft p-3" />
-          <span className="text-[13px] font-black text-brand">{max ? "Maxed" : `Next · Lv ${next}${looks.includes(next) ? " · new look" : ""}`}</span>
+          <span className="text-[13px] font-black text-brand-ink">{max ? "Maxed" : `Next · Lv ${next}${looks.includes(next) ? " · new look" : ""}`}</span>
         </div>
       </div>
 
@@ -537,7 +537,7 @@ function UpgradePanel({
                 key={n}
                 className={cn(
                   "relative flex h-[66px] flex-col items-center justify-end overflow-hidden rounded-xl pb-1",
-                  own ? "bg-brand-soft" : "bg-[#f6f8f9]",
+                  own ? "bg-brand-soft" : "bg-muted",
                   isNext ? "border-2 border-brand" : n === level ? "border-2 border-night" : "border border-line",
                 )}
               >
@@ -554,7 +554,7 @@ function UpgradePanel({
       </div>
 
       {nextRoom && (
-        <span className={cn("flex items-center gap-2 rounded-2xl px-3 py-2.5 text-sm font-bold", level >= UNLOCK_LEVEL ? "bg-brand-soft text-brand-dark" : "bg-[#f6f8f9]")}>
+        <span className={cn("flex items-center gap-2 rounded-2xl px-3 py-2.5 text-sm font-bold", level >= UNLOCK_LEVEL ? "bg-brand-soft text-brand-dark" : "bg-muted")}>
           {level >= UNLOCK_LEVEL ? <Check className="size-4 shrink-0" strokeWidth={3} /> : <Lock className="size-4 shrink-0 text-muted-foreground" />}
           {level >= UNLOCK_LEVEL ? `Counts toward the ${nextRoom.toLowerCase()}` : `Reach Lv ${UNLOCK_LEVEL} to count toward the ${nextRoom.toLowerCase()}`}
         </span>

@@ -31,13 +31,13 @@ export function Sheet({
             className,
           )}
         >
-          <span className="h-[5px] w-11 shrink-0 self-center rounded-full bg-[#d5dde2] md:hidden" aria-hidden="true" />
+          <span className="h-[5px] w-11 shrink-0 self-center rounded-full bg-input md:hidden" aria-hidden="true" />
           <div className="flex items-center gap-2.5">
             <div className="flex min-w-0 flex-1 flex-col leading-tight">
               <DialogPrimitive.Title className="text-[21px] font-black">{title}</DialogPrimitive.Title>
               {sub && <DialogPrimitive.Description className="text-[13px] font-bold text-muted-foreground">{sub}</DialogPrimitive.Description>}
             </div>
-            <DialogPrimitive.Close aria-label="Close" className="flex size-10 shrink-0 items-center justify-center rounded-full bg-[#f0f4f6] hover:bg-muted">
+            <DialogPrimitive.Close aria-label="Close" className="flex size-10 shrink-0 items-center justify-center rounded-full bg-muted hover:bg-muted">
               <X className="size-[18px]" strokeWidth={2.6} />
             </DialogPrimitive.Close>
           </div>

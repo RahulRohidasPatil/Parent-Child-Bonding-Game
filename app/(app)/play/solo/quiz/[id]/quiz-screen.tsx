@@ -133,7 +133,7 @@ export function QuizScreen({ id }: { id: string }) {
     return (
       <Page className="max-w-[760px]">
         <div className="flex items-center gap-2.5 p-8 font-extrabold text-muted-foreground" role="status">
-          <Spinner className="text-brand" /> Loading the quiz…
+          <Spinner className="text-brand-ink" /> Loading the quiz…
         </div>
       </Page>
     );
@@ -163,7 +163,7 @@ export function QuizScreen({ id }: { id: string }) {
         {wrong > 0 && (
           <Card className="flex flex-col gap-3 border-[#f2a46a] p-4">
             <span className="flex items-center gap-2 text-[17px] font-black">
-              <Target className="size-5 text-[#c25a12]" /> Practise your weak spots
+              <Target className="size-5 text-flame-ink" /> Practise your weak spots
             </span>
             <span className="text-[15px] font-bold text-muted-foreground">You missed {wrong}. Try different questions on the same ideas, or turn your mistakes into flashcards.</span>
             <div className="grid grid-cols-1 gap-2.5 sm:grid-cols-2">
@@ -259,16 +259,16 @@ export function QuizScreen({ id }: { id: string }) {
                 className={cn(
                   "flex min-h-[60px] items-center gap-3 rounded-2xl border p-3 text-left text-[16px] font-extrabold transition-colors disabled:cursor-default",
                   isAnswer
-                    ? "border-2 border-brand bg-brand-soft shadow-[0_3px_0_#b9e0cf]"
+                    ? "border-2 border-brand bg-brand-soft shadow-[0_3px_0_var(--mint-line)]"
                     : isWrongPick
-                      ? "border-2 border-[#d24d4d] bg-[#fdecec] shadow-[0_3px_0_#f3c4c4]"
-                      : "border-line bg-card shadow-[0_3px_0_#dde5ea] enabled:hover:bg-muted",
+                      ? "border-2 border-[#d24d4d] bg-danger-soft shadow-[0_3px_0_var(--danger-soft)]"
+                      : "border-line bg-card shadow-[0_3px_0_var(--line)] enabled:hover:bg-muted",
                 )}
               >
                 <span
                   className={cn(
                     "flex size-8 shrink-0 items-center justify-center rounded-[10px] text-sm font-black",
-                    isAnswer ? "bg-brand text-white" : isWrongPick ? "bg-[#d24d4d] text-white" : "bg-[#eef2f4]",
+                    isAnswer ? "bg-brand text-white" : isWrongPick ? "bg-[#d24d4d] text-white" : "bg-muted",
                   )}
                 >
                   {checking === i ? <Spinner className="size-4" /> : KEYS[i]}
@@ -281,7 +281,7 @@ export function QuizScreen({ id }: { id: string }) {
       )}
 
       {a && (
-        <Card className={cn("flex flex-col gap-1 p-4", a.result.correct ? "bg-brand-soft" : "bg-[#fff0e3]")} role="status">
+        <Card className={cn("flex flex-col gap-1 p-4", a.result.correct ? "bg-brand-soft" : "bg-flame")} role="status">
           <span className={cn("text-[15px] font-black", a.result.correct ? "text-brand-dark" : "text-flame-ink")}>{a.result.correct ? "Correct!" : "Not quite"}</span>
           <span className="text-[15px] leading-relaxed font-bold">{a.result.explanation}</span>
         </Card>

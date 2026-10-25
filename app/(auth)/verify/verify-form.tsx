@@ -90,7 +90,7 @@ export function VerifyForm() {
 
       <div className="flex items-center gap-3 rounded-3xl border border-line p-4">
         <span className="flex size-12 shrink-0 items-center justify-center rounded-2xl bg-brand-soft">
-          <Mail className="size-6 text-brand" strokeWidth={2.2} />
+          <Mail className="size-6 text-brand-ink" strokeWidth={2.2} />
         </span>
         <span className="flex min-w-0 flex-col">
           <span className="text-[13px] font-extrabold text-muted-foreground">{minor ? "Link sent to your parent" : "Link sent to"}</span>

@@ -2,6 +2,7 @@ import { ClerkProvider } from "@clerk/nextjs";
 import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
 import { PREFS_BOOT_SCRIPT } from "@/lib/prefs";
+import { ThemeProvider } from "@/components/theme-provider";
 import "./globals.css";
 
 // Bundled locally (SIL OFL, see app/fonts/OFL.txt) so builds work without network access.
@@ -22,7 +23,10 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#cdeff5",
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#cdeff5" },
+    { media: "(prefers-color-scheme: dark)", color: "#101e24" },
+  ],
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
@@ -32,9 +36,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <script dangerouslySetInnerHTML={{ __html: PREFS_BOOT_SCRIPT }} />
       </head>
       <body className="min-h-full flex flex-col">
-        <ClerkProvider>
-          {children}
-        </ClerkProvider>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+          <ClerkProvider>{children}</ClerkProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

@@ -177,7 +177,7 @@ export function NewLesson() {
         </div>
         {file ? (
           <div className="flex items-center gap-3 rounded-2xl border border-line bg-background px-3.5 py-3">
-            <span className="flex size-10 shrink-0 items-center justify-center rounded-xl bg-brand-soft text-brand">
+            <span className="flex size-10 shrink-0 items-center justify-center rounded-xl bg-brand-soft text-brand-ink">
               <FileText className="size-5" />
             </span>
             <span className="flex min-w-0 flex-1 flex-col leading-tight">
@@ -210,7 +210,7 @@ export function NewLesson() {
             }}
             className={cn(
               "flex min-h-[180px] flex-col items-center justify-center gap-2.5 rounded-3xl border-2 border-dashed p-5 text-center transition-colors",
-              drag ? "border-brand bg-brand-soft" : "border-[#9fd8c3] bg-[#f4fbf8]",
+              drag ? "border-brand bg-brand-soft" : "border-mint-line bg-brand-soft",
             )}
           >
             <span className="flex size-12 items-center justify-center rounded-full bg-brand text-white">
@@ -254,7 +254,7 @@ export function NewLesson() {
             aria-invalid={promptError ? true : undefined}
             aria-describedby={`${promptId}-hint`}
             className={cn(
-              "min-h-[120px] w-full resize-y rounded-2xl border-[1.5px] bg-field px-3.5 py-3 text-base leading-relaxed font-bold text-foreground outline-none placeholder:font-semibold placeholder:text-[#7b8994] focus-visible:border-brand",
+              "min-h-[120px] w-full resize-y rounded-2xl border-[1.5px] bg-field px-3.5 py-3 text-base leading-relaxed font-bold text-foreground outline-none placeholder:font-semibold placeholder:text-muted-foreground focus-visible:border-brand",
               promptError ? "border-destructive" : "border-input",
             )}
           />

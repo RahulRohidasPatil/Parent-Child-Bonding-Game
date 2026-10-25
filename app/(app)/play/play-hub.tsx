@@ -32,7 +32,7 @@ export function PlayHub() {
       <Link href="/play/duel" className="relative flex min-h-[160px] flex-col justify-center gap-2 overflow-hidden rounded-3xl bg-rose p-5 md:min-h-[200px] md:p-7">
         <span className="text-[13px] font-black tracking-[.04em] text-rose-ink">FAMILY DUEL · ONE PHONE</span>
         <span className="max-w-[200px] text-[22px] leading-tight font-black md:max-w-none md:text-[28px]">Quiz duel from your lesson</span>
-        <span className="hidden max-w-[300px] text-[15px] font-bold text-[#7a3a52] md:block lg:max-w-[420px]">Same questions for both players. Answer in secret, pass the phone, then see who knew more and why.</span>
+        <span className="hidden max-w-[300px] text-[15px] font-bold text-rose-ink md:block lg:max-w-[420px]">Same questions for both players. Answer in secret, pass the phone, then see who knew more and why.</span>
         <span className="mt-1 flex h-10 items-center self-start rounded-xl bg-rose-strong px-4 text-[15px] font-black text-white">Start a duel</span>
         <Sprite id={look} className="absolute right-[70px] -bottom-3 w-[140px] md:right-[150px] md:w-[200px]" />
         <Sprite id="mom" flip className="absolute -right-2 -bottom-3 w-[140px] md:right-0 md:w-[200px]" />

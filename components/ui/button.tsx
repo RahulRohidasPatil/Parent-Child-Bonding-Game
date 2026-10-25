@@ -27,7 +27,7 @@ const buttonVariants = cva(
           "border-border bg-card text-foreground hover:bg-accent [--btn-depth:color-mix(in_oklch,var(--foreground)_18%,transparent)]",
         // QuestNest
         brand:
-          "bg-brand text-white shadow-[0_4px_0_0_var(--brand-dark)] hover:brightness-105 active:not-aria-[haspopup]:translate-y-[2px] active:shadow-[0_2px_0_0_var(--brand-dark)] disabled:shadow-none",
+          "bg-brand text-white shadow-[0_4px_0_0_var(--brand-depth)] hover:brightness-105 active:not-aria-[haspopup]:translate-y-[2px] active:shadow-[0_2px_0_0_var(--brand-depth)] disabled:shadow-none",
         soft: "border-[1.5px] border-input bg-card text-foreground hover:bg-muted",
         night: "bg-night text-white hover:brightness-110",
         brandSoft: "bg-brand-soft text-brand-dark hover:brightness-[0.98]",
