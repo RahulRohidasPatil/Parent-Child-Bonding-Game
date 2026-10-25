@@ -1,10 +1,11 @@
 import Link from "next/link";
-import Image from "next/image";
 import { BadgeCheck, Camera, Check, Layers, ShieldCheck, Swords, TimerOff, Users } from "lucide-react";
 import { Logo } from "@/components/qn/brand";
+import { IsoRoom } from "@/components/qn/iso-house";
 import { Face, Sprite } from "@/components/qn/sprite";
 import { buttonVariants } from "@/components/ui/button";
-import { PARTY_GAMES, SUBJECTS } from "@/lib/qn-data";
+import { PARTY_GAMES } from "@/lib/qn-data";
+import { roomOf, type RoomId } from "@/lib/home-data";
 import { cn } from "@/lib/utils";
 
 const STEPS = [
@@ -18,6 +19,13 @@ const PARENT = [
   { icon: Check, text: "Lessons from your book use only what those pages say" },
   { icon: Users, text: "Approve every new friend before visits" },
   { icon: TimerOff, text: "No timers unless your family turns them on" },
+];
+
+const HOME_PREVIEW: { room: RoomId; level: number; label: string; sub: string }[] = [
+  { room: "living", level: 0, label: "Day one", sub: "An old TV and a basic sofa" },
+  { room: "living", level: 7, label: "Living room", sub: "Levelled up with coins" },
+  { room: "kitchen", level: 4, label: "Kitchen", sub: "The next room to unlock" },
+  { room: "bedroom", level: 10, label: "Bedroom", sub: "Fully upgraded" },
 ];
 
 const cta = cn(buttonVariants({ variant: "brand", size: "cta" }));
@@ -101,18 +109,20 @@ export default function Landing() {
         {/* ---------- base ---------- */}
         <section id="base" className="mx-auto flex w-full max-w-[1200px] scroll-mt-6 flex-col gap-3.5 px-4 pt-10 md:px-10 md:pt-16 xl:px-6">
           <span className="text-[13px] font-black tracking-[.06em] text-brand-ink">GROW YOUR BASE</span>
-          <h2 className="text-[26px] leading-tight font-black md:text-[34px]">Every subject is a room you build up</h2>
+          <h2 className="text-[26px] leading-tight font-black md:text-[34px]">One cosy home you build up, room by room</h2>
           <p className="max-w-[680px] text-[15px] leading-relaxed font-bold text-muted-foreground md:text-[17px]">
-            Spend coins to level up items from Lv 1 to Lv 10. Max a room to unlock its next tier. It’s looks only, so it never changes quiz scores.
+            Start with an old TV and a basic sofa. Spend coins on furniture, level it up from Lv 1 to Lv 10 and drag it wherever you like. Get every item in a room to Lv 3 to buy the next room, then visit friends to see how their homes are coming along. It’s looks only, so it never changes quiz scores.
           </p>
-          <div className="hidden overflow-hidden rounded-[28px] bg-[#c3eef5] md:block">
-            <Image src="/qn/rooms/house.jpg" alt="Five connected rooms: science, maths, history, geography and reading" width={2400} height={386} className="h-auto w-full" priority={false} />
-          </div>
-          <ul className="grid grid-cols-2 gap-2.5 md:grid-cols-5 md:gap-3.5">
-            {SUBJECTS.map((s, i) => (
-              <li key={s.id} className={cn("overflow-hidden rounded-2xl border border-line bg-card", i === 0 && "col-span-2 md:col-span-1")}>
-                <Image src={`/qn/rooms/${s.id}.jpg`} alt="" width={1252} height={1026} className={cn("w-full bg-[#c3eef5] object-cover", i === 0 ? "h-[200px] md:h-[150px]" : "h-[120px] md:h-[150px]")} />
-                <span className="block px-3 py-2.5 text-[15px] font-black">{s.room}</span>
+          <ul className="grid grid-cols-2 gap-2.5 md:grid-cols-4 md:gap-3.5">
+            {HOME_PREVIEW.map((p) => (
+              <li key={p.label} className="overflow-hidden rounded-2xl border border-line bg-card">
+                <span className="block bg-[#c3eef5] p-2">
+                  <IsoRoom room={roomOf(p.room)} levels={roomOf(p.room).items.map((it) => (p.level === 0 ? (it.starter ? 1 : 0) : p.level))} />
+                </span>
+                <span className="flex flex-col px-3 py-2.5 leading-tight">
+                  <span className="text-[15px] font-black">{p.label}</span>
+                  <span className="text-[13px] font-bold text-muted-foreground">{p.sub}</span>
+                </span>
               </li>
             ))}
           </ul>

@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { BookOpen, ChevronRight, FileText, Layers, ListChecks, Plus, Swords, X } from "lucide-react";
+import { BookOpen, ChevronRight, FileText, ListChecks, Plus, Swords, X } from "lucide-react";
 import { Page } from "@/components/qn/app-shell";
 import { Card, EmptyState, PageHeader } from "@/components/qn/ui";
 import { buttonVariants } from "@/components/ui/button";
@@ -13,7 +13,6 @@ import { StudyPlans } from "./study-plans";
 const KIND = {
   lesson: { icon: BookOpen, label: "Lesson", href: (r: RecentItem) => `/learn/lesson/${r.id}` },
   quiz: { icon: ListChecks, label: "Quiz", href: (r: RecentItem) => `/play/solo/quiz/${r.id}` },
-  deck: { icon: Layers, label: "Flashcards", href: (r: RecentItem) => `/play/solo/flashcards/${r.id}` },
   material: { icon: FileText, label: "Upload", href: (r: RecentItem) => `/learn/material/${r.id}` },
   duel: { icon: Swords, label: "Duel", href: (r: RecentItem) => (r.lessonId ? `/play/duel?lesson=${r.lessonId}` : "/play/duel") },
 } as const;
@@ -21,7 +20,7 @@ const KIND = {
 export function LearnHub() {
   const recent = useQN((s) => s.recent);
   const lessons = recent.filter((r) => r.kind === "lesson");
-  const practice = recent.filter((r) => r.kind === "quiz" || r.kind === "deck");
+  const practice = recent.filter((r) => r.kind === "quiz");
   const uploads = recent.filter((r) => r.kind === "material");
   const hasPlans = useQN((s) => s.plans.length > 0);
 
@@ -29,7 +28,7 @@ export function LearnHub() {
     <Page>
       <PageHeader
         title="Learn"
-        sub="Your lessons, quizzes and flashcards"
+        sub="Your lessons and quizzes"
         right={
           <Link href="/learn/new" className={cn(buttonVariants({ variant: "brand", size: "pill" }))}>
             <Plus strokeWidth={2.6} /> New lesson
@@ -84,7 +83,7 @@ export function LearnHub() {
       )}
 
       <p className="text-[13px] font-bold text-muted-foreground">
-        Lessons, quizzes and decks live on the learning server and disappear when it restarts. This list is kept in this browser.
+        Lessons and quizzes live on the learning server and disappear when it restarts. This list is kept in this browser.
       </p>
     </Page>
   );

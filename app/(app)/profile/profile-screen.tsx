@@ -22,7 +22,7 @@ export function ProfileScreen() {
     <Page>
       <PageHeader
         title="My look"
-        sub={user ? `${user.name} · ${user.accountType === "parent" ? "Parent" : "Learner"}` : undefined}
+        sub={user ? `${user.name} · ${user.accountType === "parent" ? "Parent" : "Student"}` : undefined}
         right={
           <Link href="/settings" aria-label="Settings" className="flex size-11 items-center justify-center rounded-full border border-line bg-card hover:bg-muted">
             <Settings className="size-5" />

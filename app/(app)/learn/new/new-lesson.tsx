@@ -328,7 +328,19 @@ export function NewLesson() {
         </Button>
       </Card>
 
-      {error && <Notice onClose={() => setError(null)}>{error}</Notice>}
+      {error && (
+        <Notice onClose={() => setError(null)}>
+          {error}
+          {error.includes("don’t know your age") && (
+            <>
+              {" "}
+              <Link href="/settings" className="font-black underline">
+                Add your age in Settings
+              </Link>
+            </>
+          )}
+        </Notice>
+      )}
     </Page>
   );
 }

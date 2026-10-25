@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useClerk } from "@clerk/nextjs";
 import { useClientValue } from "@/lib/use-client-value";
 import Link from "next/link";
 import { LogOut } from "lucide-react";
@@ -33,6 +34,7 @@ function Section({ title, children }: { title: string; children: React.ReactNode
 
 export function SettingsScreen() {
   const { user } = useUser();
+  const { signOut } = useClerk();
   const look = useQN((s) => s.look);
   const settings = useQN((s) => s.settings);
   const stored = useClientValue(() => {
@@ -60,7 +62,7 @@ export function SettingsScreen() {
         <span className="flex min-w-0 flex-1 flex-col leading-tight">
           <span className="text-[17px] font-black">{user?.name ?? "…"}</span>
           <span className="truncate text-[13px] font-bold text-muted-foreground">
-            {user?.accountType === "parent" ? "Parent account" : "Learner account"}
+            {user?.accountType === "parent" ? "Parent account" : "Student account"}
             {user?.email ? ` · ${user.email}` : ""}
           </span>
         </span>
@@ -118,7 +120,12 @@ export function SettingsScreen() {
             <SwitchRow label="More contrast" checked={prefs.contrast === "more"} onChange={(v) => setPref({ contrast: v ? "more" : "normal" })} />
             <SwitchRow label="Reduce motion" checked={prefs.motion === "reduce"} onChange={(v) => setPref({ motion: v ? "reduce" : "full" })} />
           </Section>
-          <Button variant="soft" size="cta" onClick={logout} className="text-destructive">
+          <Button
+            variant="soft"
+            size="cta"
+            onClick={() => logout(signOut)}
+            className="text-destructive"
+          >
             <LogOut /> Log out
           </Button>
         </div>
