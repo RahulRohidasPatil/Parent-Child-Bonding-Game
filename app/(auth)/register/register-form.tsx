@@ -1,6 +1,9 @@
 "use client";
 
 import { useState } from "react";
+import { useClerk } from "@clerk/nextjs";
+import { useSignUp } from "@clerk/nextjs/legacy";
+import { isClerkAPIResponseError } from "@clerk/nextjs/errors";
 import { useClientValue } from "@/lib/use-client-value";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
@@ -18,8 +21,17 @@ function todayISO() {
   return `${t.getFullYear()}-${String(t.getMonth() + 1).padStart(2, "0")}-${String(t.getDate()).padStart(2, "0")}`;
 }
 
+function clerkMessage(error: unknown, fallback: string) {
+  if (isClerkAPIResponseError(error)) {
+    return error.errors.map((item) => item.longMessage || item.message).join(" ");
+  }
+  return fallback;
+}
+
 export function RegisterForm() {
   const router = useRouter();
+  const clerk = useClerk();
+  const { isLoaded, signUp } = useSignUp();
   const [f, setF] = useState<RegistrationInput>(EMPTY);
   const [tried, setTried] = useState(false);
   const [showPw, setShowPw] = useState(false);
@@ -48,21 +60,39 @@ export function RegisterForm() {
     setTried(true);
     setServerError(null);
     if (count) return;
+    if (!isLoaded || !signUp) {
+      setServerError({ text: "Clerk is still loading. Refresh the page and try again." });
+      return;
+    }
     setBusy(true);
     try {
-      const res = await fetch("/api/auth/register", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(f) });
-      const body = await res.json().catch(() => ({}));
-      if (res.status === 202) {
-        // Age drives lesson reading level; the backend doesn't store date of birth, so keep it locally.
-        setState({ age: hasAge ? age : null });
-        const q = new URLSearchParams({ email: body.sentTo, minor: body.minor ? "1" : "0", name: f.name.trim() });
-        router.push(`/verify?${q}`);
+      const accountEmail = emailMode(f) === "minor" ? f.parentEmail : f.email;
+      const result = await signUp.create({
+        emailAddress: accountEmail.trim().toLowerCase(),
+        password: f.password,
+        username: f.username.trim(),
+        unsafeMetadata: {
+          display_name: f.name.trim(),
+          account_type: f.role === "parent" ? "parent" : "learner",
+          birth_date: f.dob,
+          parent_email: f.parentEmail.trim().toLowerCase() || null,
+        },
+      });
+      if (result.status === "complete") {
+        await clerk.setActive({ session: result.createdSessionId });
+        router.push("/home?welcome=1");
         return;
       }
-      if (body.errors) setServerFields(body.errors);
-      setServerError({ text: body.detail || "Couldn’t create the account. Try again.", demo: body.demo });
-    } catch {
-      setServerError({ text: "You seem to be offline. Check your connection and try again." });
+      setState({ age: hasAge ? age : null });
+      const q = new URLSearchParams({ email: accountEmail.trim().toLowerCase(), minor: emailMode(f) === "minor" ? "1" : "0", name: f.name.trim() });
+      const { startEmailLinkFlow } = signUp.createEmailLinkFlow();
+      const emailLinkFlow = startEmailLinkFlow({ redirectUrl: `${window.location.origin}/verify/callback?${q.toString()}` });
+      void emailLinkFlow.catch((flowError: unknown) => {
+        setServerError({ text: clerkMessage(flowError, "We could not send the verification link. Request a new one from the verification page.") });
+      });
+      router.push(`/verify?${q}`);
+    } catch (error) {
+      setServerError({ text: clerkMessage(error, "We could not create that account. Check your details and try again.") });
     } finally {
       setBusy(false);
     }
@@ -132,7 +162,7 @@ export function RegisterForm() {
           value={f.email}
           onChange={set("email")}
           error={show("email")}
-          hint="We’ll send your verification code here."
+          hint="We’ll send your verification link here."
         />
       )}
       {mode === "minor" && (
@@ -140,7 +170,7 @@ export function RegisterForm() {
           <div className="flex items-start gap-2.5 rounded-2xl bg-warn px-3.5 py-3">
             <Info className="mt-0.5 size-5 shrink-0 text-[#8a5300]" strokeWidth={2.4} />
             <span className="text-sm leading-snug font-bold text-warn-ink">
-              You’re under {ADULT_AGE}, so a parent has to approve your account. We’ll email them a code.
+              You’re under {ADULT_AGE}, so a parent has to approve your account. We’ll email them a verification link.
             </span>
           </div>
           <Field label="Enter parent’s email" type="email" placeholder="parent@example.com" value={f.parentEmail} onChange={set("parentEmail")} error={show("parentEmail")} />
@@ -206,7 +236,7 @@ export function RegisterForm() {
 
       <Button type="submit" variant="brand" size="cta" disabled={busy}>
         {busy && <Spinner />}
-        Verify account
+        Create account
       </Button>
       <p className="text-center text-sm font-bold text-muted-foreground">
         Have an account?{" "}

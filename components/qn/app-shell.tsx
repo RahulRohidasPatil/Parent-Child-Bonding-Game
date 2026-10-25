@@ -164,7 +164,7 @@ function Sidebar({ path }: { path: string }) {
           <Face id={look} size={40} tint={tint} />
           <span className="flex min-w-0 flex-1 flex-col leading-tight">
             <span className="truncate text-sm font-black">{user?.name ?? "…"}</span>
-            <span className="text-xs font-bold text-muted-foreground">{user?.accountType === "parent" ? "Parent" : "Learner"}</span>
+            <span className="text-xs font-bold text-muted-foreground">{user?.accountType === "parent" ? "Parent" : "Student"}</span>
           </span>
           <Settings className="size-[18px] text-muted-foreground" />
         </Link>

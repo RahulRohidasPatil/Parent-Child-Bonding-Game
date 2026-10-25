@@ -46,8 +46,10 @@ export function useUser() {
   return { user, loading };
 }
 
-export async function logout() {
-  await fetch("/api/auth/logout", { method: "POST" }).catch(() => null);
+export async function logout(signOut?: () => Promise<void>) {
+  if (signOut) {
+    await signOut();
+  }
   resetUserCache();
   try {
     sessionStorage.clear();

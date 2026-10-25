@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useClerk } from "@clerk/nextjs";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { Button } from "@/components/ui/button";
@@ -13,6 +14,7 @@ type DemoAccount = { email: string; account_type?: string };
 export function LoginForm() {
   const router = useRouter();
   const params = useSearchParams();
+  const clerk = useClerk();
   const [role, setRole] = useState<"parent" | "student">("parent");
   const [login, setLogin] = useState("");
   const [password, setPassword] = useState("");
@@ -44,19 +46,37 @@ export function LoginForm() {
     setTried(true);
     setError(null);
     if (!login.trim() || !password) return;
+    const signIn = clerk.client?.signIn;
+    if (!clerk.loaded || !signIn) {
+      setError("Clerk is still loading. Refresh the page and try again.");
+      return;
+    }
     setBusy(true);
     try {
-      const res = await fetch("/api/auth/login", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ login, password }) });
-      const body = await res.json().catch(() => ({}));
-      if (res.ok) {
-        resetUserCache();
-        const next = params.get("next");
-        router.push(next && next.startsWith("/") && !next.startsWith("//") ? next : "/home");
+      const result = await signIn.create({ identifier: login, password });
+      if (result.status !== "complete") {
+        setError("Additional sign-in verification is required. Check your Clerk account settings.");
         return;
       }
-      setError(body.detail || "Couldn’t sign in. Try again.");
-    } catch {
-      setError("You seem to be offline. Check your connection and try again.");
+      await clerk.setActive({ session: result.createdSessionId });
+      const response = await fetch("/api/auth/me", { cache: "no-store" });
+      const body = response.ok ? (await response.json()) as { user?: { accountType?: string | null } } : null;
+      const accountType = body?.user?.accountType;
+      const expectedType = role === "parent" ? "parent" : "learner";
+      if (accountType !== expectedType) {
+        await clerk.signOut();
+        setError(`This account is registered as a ${accountType === "parent" ? "parent" : "student"}. Choose the matching login option.`);
+        return;
+      }
+      resetUserCache();
+      const next = params.get("next");
+      router.push(next && next.startsWith("/") && !next.startsWith("//") ? next : "/home");
+    } catch (error) {
+      if (error instanceof Error && error.message) {
+        setError(error.message);
+      } else {
+        setError("That username or password isn’t right.");
+      }
     } finally {
       setBusy(false);
     }
