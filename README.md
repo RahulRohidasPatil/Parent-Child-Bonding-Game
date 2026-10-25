@@ -1,5 +1,13 @@
 # Parent–Child Bonding Game — Features / Frontend
 
+### Install on iPhone or iPad
+
+Open the deployed HTTPS site in Safari, choose **Share → Add to Home Screen**, keep
+**Open as Web App** enabled when shown, and tap **Add**. QuestNest has a dedicated
+Home Screen icon and opens in its own window. An internet connection is required for
+sign-in, learning content and multiplayer. The app manifest starts at `/home`; signed-out
+visitors follow the normal sign-in flow.
+
 Learning and party games for friends, parents, and children. This repository owns the Next.js
 frontend, UI assets, and product feature plan.
 

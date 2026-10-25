@@ -14,12 +14,22 @@ const nunito = localFont({
 });
 
 export const metadata: Metadata = {
+  applicationName: "QuestNest",
   title: {
     default: "QuestNest · Learn together, play together",
     template: "%s · QuestNest",
   },
   description:
     "Turn schoolwork into family game night: scan your notes, get a lesson, flashcards and quizzes, then duel your family.",
+  appleWebApp: {
+    capable: true,
+    title: "QuestNest",
+    statusBarStyle: "default",
+  },
+  icons: {
+    icon: [{ url: "/icons/icon-192.png", sizes: "192x192", type: "image/png" }],
+    apple: [{ url: "/icons/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
+  },
 };
 
 export const viewport: Viewport = {
