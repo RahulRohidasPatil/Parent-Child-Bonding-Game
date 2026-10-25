@@ -12,6 +12,7 @@ import { Button } from "@/components/ui/button";
 import { Field, Notice, Spinner } from "@/components/qn/ui";
 import { cn } from "@/lib/utils";
 import { setState } from "@/lib/store";
+import { startSession } from "@/lib/use-user";
 import { type FieldKey, type RegistrationInput, ADULT_AGE, ageFrom, emailMode, validate } from "@/lib/registration";
 
 const EMPTY: RegistrationInput = { name: "", role: "", dob: "", email: "", parentEmail: "", username: "", password: "", confirm: "" };
@@ -87,6 +88,7 @@ export function RegisterForm() {
       });
       if (result.status === "complete") {
         await clerk.setActive({ session: result.createdSessionId });
+        await startSession();
         router.push("/home?welcome=1");
         return;
       }

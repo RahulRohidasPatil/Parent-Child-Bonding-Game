@@ -71,17 +71,29 @@ export const DEFAULT_STATE: QNState = {
   settings: { goal: 15, timers: false, aloud: false, remind: true, duelInvites: true, cheers: false, visit: "friends" },
 };
 
-const KEY = "qn.state.v1";
+const BASE_KEY = "qn.state.v1";
+const ACCOUNT_KEY = "qn.account"; // which signed-in account this browser's state belongs to
+const LEGACY_CLAIMED = "qn.legacy-claimed";
 export const UNLIMITED_COINS = 999_999;
 let state: QNState = DEFAULT_STATE;
 let loaded = false;
 const listeners = new Set<() => void>();
 
+/** Each account on this browser keeps its own state; the key follows the last account to log in. */
+function stateKey(): string {
+  try {
+    const account = localStorage.getItem(ACCOUNT_KEY);
+    return account ? `${BASE_KEY}.${account}` : BASE_KEY;
+  } catch {
+    return BASE_KEY;
+  }
+}
+
 function load() {
   if (loaded || typeof window === "undefined") return;
   loaded = true;
   try {
-    const raw = localStorage.getItem(KEY);
+    const raw = localStorage.getItem(stateKey());
     if (raw) {
       const saved = JSON.parse(raw) as Partial<QNState> & { base?: unknown; chat?: ChatState };
       delete saved.base; // per-subject rooms from before the shared home
@@ -98,7 +110,7 @@ function load() {
         ...DEFAULT_STATE,
         ...saved,
         settings: { ...DEFAULT_STATE.settings, ...saved.settings },
-        home: saved.home?.rooms?.living ? { layout: {}, ...saved.home } : DEFAULT_STATE.home,
+        home: saved.home?.rooms?.living ? { ...saved.home, layout: saved.home.layout ?? {} } : DEFAULT_STATE.home,
       };
     }
   } catch {
@@ -108,7 +120,7 @@ function load() {
 
 function persist() {
   try {
-    localStorage.setItem(KEY, JSON.stringify(state));
+    localStorage.setItem(stateKey(), JSON.stringify(state));
   } catch {
     /* best effort */
   }
@@ -131,7 +143,7 @@ export function setState(update: Partial<QNState> | ((s: QNState) => Partial<QNS
 function subscribe(l: () => void) {
   listeners.add(l);
   const onStorage = (e: StorageEvent) => {
-    if (e.key === KEY) {
+    if (e.key === stateKey()) {
       loaded = false;
       load();
       l();
@@ -151,6 +163,32 @@ export function useQN<T>(select: (s: QNState) => T): T {
     () => select(getState()),
     () => select(DEFAULT_STATE),
   );
+}
+
+/**
+ * Switch the local state to this signed-in account (called when a session starts). The first
+ * account after the move to per-account storage keeps the older shared state, minus lessons and
+ * plans: those belonged to the learning service's shared player, which accounts no longer use.
+ */
+export function setAccount(userId: string) {
+  if (typeof window === "undefined") return;
+  try {
+    if (localStorage.getItem(ACCOUNT_KEY) === userId) return;
+    const target = `${BASE_KEY}.${userId}`;
+    const legacy = localStorage.getItem(BASE_KEY);
+    if (legacy && !localStorage.getItem(target) && !localStorage.getItem(LEGACY_CLAIMED)) {
+      const saved = JSON.parse(legacy) as Partial<QNState>;
+      localStorage.setItem(target, JSON.stringify({ ...saved, recent: [], plans: [] }));
+      localStorage.setItem(LEGACY_CLAIMED, userId);
+    }
+    localStorage.setItem(ACCOUNT_KEY, userId);
+  } catch {
+    return; // storage blocked: keep using what is in memory
+  }
+  state = DEFAULT_STATE;
+  loaded = false;
+  load();
+  listeners.forEach((l) => l());
 }
 
 // ---------- actions ----------
