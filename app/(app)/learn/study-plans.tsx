@@ -95,7 +95,7 @@ function SubtopicItem({ planId, index, sub }: { planId: string; index: number; s
       >
         <span className="flex h-8 min-w-8 shrink-0 items-center justify-center rounded-lg bg-night px-1.5 text-sm font-black text-white">{index + 1}</span>
         <span className="min-w-0 flex-1 text-[15px] font-extrabold">{sub.title}</span>
-        <span className="shrink-0 text-xs font-black text-brand">{sub.lessonId ? "Open lesson" : "Start lesson"}</span>
+        <span className="shrink-0 text-xs font-black text-brand-ink">{sub.lessonId ? "Open lesson" : "Start lesson"}</span>
         <ChevronRight className="size-4 shrink-0 text-muted-foreground" aria-hidden="true" />
       </Link>
     </li>

@@ -14,6 +14,7 @@ import { AVATARS } from "@/lib/qn-data";
 import { type Prefs, DEFAULT_PREFS, PREFS_KEY, applyPrefs } from "@/lib/prefs";
 import { type QNState, setState, useQN } from "@/lib/store";
 import { logout, useUser } from "@/lib/use-user";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 function parsePrefs(raw: string): Prefs {
   try {
@@ -27,7 +28,7 @@ function Section({ title, children }: { title: string; children: React.ReactNode
   return (
     <section className="flex flex-col gap-2">
       <h2 className="pl-1.5 text-xs font-black tracking-[.06em] text-muted-foreground uppercase">{title}</h2>
-      <Card className="divide-y divide-[#eef2f4] overflow-hidden">{children}</Card>
+      <Card className="divide-y divide-line overflow-hidden">{children}</Card>
     </section>
   );
 }
@@ -108,6 +109,10 @@ export function SettingsScreen() {
             </div>
           </Section>
           <Section title="Accessibility">
+            <div className="flex flex-col gap-2.5 p-3.5">
+              <span className="text-[15px] font-extrabold">Appearance</span>
+              <ThemeToggle expanded />
+            </div>
             <div className="flex flex-col gap-2.5 p-3.5">
               <span className="text-[15px] font-extrabold">Text size</span>
               <Segmented

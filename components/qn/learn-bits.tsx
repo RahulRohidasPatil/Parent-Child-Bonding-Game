@@ -97,7 +97,7 @@ export function SwitchRow({ label, note, checked, onChange }: { label: string; n
         aria-checked={checked}
         aria-label={label}
         onClick={() => onChange(!checked)}
-        className={cn("relative h-[30px] w-[50px] shrink-0 rounded-full transition-colors", checked ? "bg-brand" : "bg-[#c9d3d9]")}
+        className={cn("relative h-[30px] w-[50px] shrink-0 rounded-full transition-colors", checked ? "bg-brand" : "bg-input")}
       >
         <span className={cn("absolute top-[3px] size-6 rounded-full bg-white shadow-[0_1px_3px_rgba(31,45,58,.25)] transition-[left]", checked ? "left-[23px]" : "left-[3px]")} />
       </button>

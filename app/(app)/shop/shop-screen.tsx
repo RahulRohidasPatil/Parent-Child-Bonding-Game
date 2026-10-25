@@ -44,7 +44,7 @@ export function ShopScreen() {
                   <div className="flex flex-col gap-2 p-3">
                     <span className="text-sm leading-snug font-extrabold">{a.label}</span>
                     {wearing ? (
-                      <span className="flex h-11 items-center justify-center gap-1.5 text-sm font-black text-brand">
+                      <span className="flex h-11 items-center justify-center gap-1.5 text-sm font-black text-brand-ink">
                         <Check className="size-4" strokeWidth={3} /> Wearing
                       </span>
                     ) : has ? (
@@ -69,7 +69,7 @@ export function ShopScreen() {
           <span className="text-[16px] font-black">Mochi the cat</span>
           <span className="text-sm font-bold text-muted-foreground">Your study buddy. More pets are on the way.</span>
         </span>
-        <span className="flex items-center gap-1.5 text-sm font-black text-brand">
+        <span className="flex items-center gap-1.5 text-sm font-black text-brand-ink">
           <Check className="size-4" strokeWidth={3} /> Owned
         </span>
       </Card>

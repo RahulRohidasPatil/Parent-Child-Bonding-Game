@@ -7,9 +7,10 @@ import { buttonVariants } from "@/components/ui/button";
 import { PARTY_GAMES } from "@/lib/qn-data";
 import { roomOf, type RoomId } from "@/lib/home-data";
 import { cn } from "@/lib/utils";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 const STEPS = [
-  { icon: Camera, tint: "bg-brand-soft text-brand", ink: "text-brand-ink", title: "Scan your notes", body: "Snap pages or upload a PDF. QuestNest finds the topics, chapters and pages to study." },
+  { icon: Camera, tint: "bg-brand-soft text-brand-ink", ink: "text-brand-ink", title: "Scan your notes", body: "Snap pages or upload a PDF. QuestNest finds the topics, chapters and pages to study." },
   { icon: Layers, tint: "bg-sky-soft text-sky-ink", ink: "text-sky-ink", title: "Study your way", body: "Get a lesson pitched at your age, with diagrams, flashcards and a quiz built from your own pages." },
   { icon: Swords, tint: "bg-rose text-rose-ink", ink: "text-rose-ink", title: "Play together", body: "Duel Mom or Dad on one phone, or play party games with friends. Earn coins for your base." },
 ];
@@ -38,13 +39,14 @@ export default function Landing() {
       <header className="bg-stage">
         <div className="mx-auto flex w-full max-w-[1200px] flex-wrap items-center gap-x-6 gap-y-2 px-4 py-3.5 md:px-10 xl:px-6">
           <Logo className="mr-auto" />
-          <nav aria-label="Sections" className="hidden items-center gap-6 text-base font-extrabold text-[#33505b] lg:flex">
+          <nav aria-label="Sections" className="hidden items-center gap-6 text-base font-extrabold text-stage-ink lg:flex">
             <a href="#how" className="py-2 hover:text-foreground">How it works</a>
             <a href="#base" className="py-2 hover:text-foreground">Your base</a>
             <a href="#games" className="py-2 hover:text-foreground">Games</a>
             <a href="#parents" className="py-2 hover:text-foreground">For parents</a>
           </nav>
           <div className="flex gap-2.5">
+            <ThemeToggle />
             <Link href="/login" className={cn(buttonVariants({ variant: "soft", size: "pill" }), "border-white")}>Log in</Link>
             <Link href="/register" className={cn(buttonVariants({ variant: "brand", size: "pill" }), "hidden sm:inline-flex")}>Get started</Link>
           </div>
@@ -58,7 +60,7 @@ export default function Landing() {
             <div className="flex flex-col gap-3 lg:flex-1 lg:pb-12">
               <span className="text-[13px] font-black tracking-[.06em] text-brand-dark">FOR KIDS 10–18 AND THEIR FAMILIES</span>
               <h1 className="text-[36px] leading-[1.06] font-black md:text-[50px] xl:text-[60px]">Turn schoolwork into family game night.</h1>
-              <p className="max-w-[520px] text-base font-bold text-[#3f6470] md:text-lg">
+              <p className="max-w-[520px] text-base font-bold text-stage-ink md:text-lg">
                 Snap your notes, get a study plan, then duel Mom and Dad. Earn coins to grow your own base.
               </p>
               <div className="mt-2 hidden flex-wrap gap-3 md:flex">
@@ -116,7 +118,7 @@ export default function Landing() {
           <ul className="grid grid-cols-2 gap-2.5 md:grid-cols-4 md:gap-3.5">
             {HOME_PREVIEW.map((p) => (
               <li key={p.label} className="overflow-hidden rounded-2xl border border-line bg-card">
-                <span className="block bg-[#c3eef5] p-2">
+                <span className="block bg-stage p-2">
                   <IsoRoom room={roomOf(p.room)} levels={roomOf(p.room).items.map((it) => (p.level === 0 ? (it.starter ? 1 : 0) : p.level))} />
                 </span>
                 <span className="flex flex-col px-3 py-2.5 leading-tight">
@@ -199,7 +201,7 @@ export default function Landing() {
             <Link href="/register" className="py-2">Create an account</Link>
           </nav>
           <span className="flex w-full items-center gap-1.5 text-[13px] font-bold text-muted-foreground">
-            <BadgeCheck className="size-4 text-brand" /> Lessons and flashcards are always free.
+            <BadgeCheck className="size-4 text-brand-ink" /> Lessons and flashcards are always free.
           </span>
         </div>
       </footer>

@@ -29,7 +29,7 @@ export function QuestsScreen() {
             <span className="text-[32px] font-black text-flame-ink">
               {streak} {streak === 1 ? "day" : "days"}
             </span>
-            <span className="text-sm font-extrabold text-[#7a4a2a]">{streak ? "Learn something today to keep it going" : "Finish a quiz or some flashcards to start a streak"}</span>
+            <span className="text-sm font-extrabold text-flame-ink">{streak ? "Learn something today to keep it going" : "Finish a quiz or some flashcards to start a streak"}</span>
           </span>
         </Card>
         <div className="flex flex-col gap-3">
@@ -52,7 +52,7 @@ export function QuestsScreen() {
                       </span>
                     </span>
                     {got ? (
-                      <span className="flex h-10 items-center gap-1 px-2 text-sm font-black text-brand">
+                      <span className="flex h-10 items-center gap-1 px-2 text-sm font-black text-brand-ink">
                         <Check className="size-4" strokeWidth={3} /> Done
                       </span>
                     ) : done ? (

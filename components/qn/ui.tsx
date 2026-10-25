@@ -126,7 +126,7 @@ export function Field({
         aria-invalid={error ? true : undefined}
         aria-describedby={error ? errId : undefined}
         className={cn(
-          "h-[52px] w-full rounded-2xl border-[1.5px] bg-field px-3.5 text-base font-bold text-foreground outline-none placeholder:font-semibold placeholder:text-[#7b8994] focus-visible:border-brand",
+          "h-[52px] w-full rounded-2xl border-[1.5px] bg-field px-3.5 text-base font-bold text-foreground outline-none placeholder:font-semibold placeholder:text-muted-foreground focus-visible:border-brand",
           error ? "border-destructive" : "border-input",
         )}
         {...input}
@@ -161,7 +161,7 @@ export function Segmented<T extends string>({
     <div
       role="tablist"
       aria-label={label}
-      className={cn("grid gap-1 rounded-2xl bg-[#e6edf0] p-1", className)}
+      className={cn("grid gap-1 rounded-2xl bg-muted p-1", className)}
       style={{ gridTemplateColumns: `repeat(${options.length}, minmax(0, 1fr))` }}
     >
       {options.map((o) => {
@@ -176,7 +176,7 @@ export function Segmented<T extends string>({
             className={cn(
               "rounded-xl px-1 text-[13px] leading-tight font-black transition-colors sm:text-[14px]",
               size === "lg" ? "h-11" : "h-10",
-              on ? "bg-card shadow-[0_1px_3px_rgba(31,45,58,.14)]" : "text-[#33424f] hover:bg-white/50",
+              on ? "bg-card shadow-[0_1px_3px_rgba(31,45,58,.14)]" : "text-muted-foreground hover:bg-card/50",
             )}
           >
             {o.label}
@@ -199,7 +199,7 @@ export function Notice({
   className?: string;
 }) {
   const styles = {
-    error: "bg-[#fdecec] text-[#8f1d14]",
+    error: "bg-danger-soft text-danger-ink",
     info: "bg-sky-soft text-sky-ink",
     warn: "bg-warn text-warn-ink",
     ok: "bg-brand-soft text-brand-dark",
@@ -228,7 +228,7 @@ export function Working({ title, steps, className }: { title: string; steps?: st
   const step = steps?.length ? steps[Math.min(steps.length - 1, Math.floor(secs / 8))] : null;
   return (
     <Card className={cn("flex flex-col items-center gap-3 px-6 py-10 text-center", className)} role="status" aria-live="polite">
-      <Loader2 className="size-9 animate-spin text-brand motion-reduce:animate-none" strokeWidth={2.6} />
+      <Loader2 className="size-9 animate-spin text-brand-ink motion-reduce:animate-none" strokeWidth={2.6} />
       <span className="text-[18px] font-black">{title}</span>
       {step && <span className="text-[15px] font-bold text-muted-foreground">{step}</span>}
       <span className="text-[13px] font-bold text-muted-foreground">
@@ -245,7 +245,7 @@ export function Spinner({ className }: { className?: string }) {
 export function ProgressBar({ value, className, tone = "brand" }: { value: number; className?: string; tone?: "brand" | "sun" }) {
   const pct = Math.max(0, Math.min(100, value));
   return (
-    <span className={cn("block h-2.5 overflow-hidden rounded-full bg-[#e9eef1]", className)} role="progressbar" aria-valuenow={Math.round(pct)} aria-valuemin={0} aria-valuemax={100}>
+    <span className={cn("block h-2.5 overflow-hidden rounded-full bg-track", className)} role="progressbar" aria-valuenow={Math.round(pct)} aria-valuemin={0} aria-valuemax={100}>
       <span className={cn("block h-full rounded-full transition-[width]", tone === "brand" ? "bg-brand" : "bg-[#ffd36b]")} style={{ width: `${pct}%` }} />
     </span>
   );
