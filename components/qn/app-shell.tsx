@@ -11,7 +11,6 @@ import { AVATARS } from "@/lib/qn-data";
 import { StarTile } from "./brand";
 import { Presence } from "./presence";
 import { Face } from "./sprite";
-import { ThemeToggle } from "@/components/theme-toggle";
 
 type NavItem = { href: string; label: string; icon: typeof Home; match?: string[] };
 
@@ -54,7 +53,6 @@ export function AppShell({ children }: { children: React.ReactNode }) {
       <PathAware render={(path) => <Rail path={path} />} />
       <PathAware render={(path) => <Sidebar path={path} />} />
       <main key={user?.id ?? "signed-out"} id="content" className="flex min-w-0 flex-1 flex-col pb-28 md:pb-8">
-        <div className="flex justify-end px-4 pt-3 md:hidden"><ThemeToggle /></div>
         {children}
       </main>
       <PathAware render={(path) => <TabBar path={path} />} />
@@ -102,7 +100,6 @@ function Rail({ path }: { path: string }) {
           )}
         </nav>
         <span className="flex-1" />
-        <ThemeToggle className="mb-2" />
         <Link
           href="/profile"
           aria-label="Profile"
@@ -162,7 +159,6 @@ function Sidebar({ path }: { path: string }) {
           Chat
         </Link>
         <span className="flex-1" />
-        <ThemeToggle expanded className="mb-3" />
         <Link
           href="/settings"
           aria-current={path.startsWith("/settings") ? "page" : undefined}

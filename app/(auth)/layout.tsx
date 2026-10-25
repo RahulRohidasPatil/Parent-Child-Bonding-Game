@@ -1,7 +1,6 @@
 import { Camera, Swords } from "lucide-react";
 import { Logo } from "@/components/qn/brand";
 import { Sprite } from "@/components/qn/sprite";
-import { ThemeToggle } from "@/components/theme-toggle";
 
 /** Phone/tablet: sky band with the family on top of the form. Desktop: story panel on the left. */
 export default function AuthLayout({ children }: LayoutProps<"/">) {
@@ -10,7 +9,6 @@ export default function AuthLayout({ children }: LayoutProps<"/">) {
       <section className="relative overflow-hidden bg-stage lg:sticky lg:top-0 lg:h-dvh lg:w-[52%] lg:max-w-[760px] lg:shrink-0">
         <div className="relative z-10 flex items-center px-4 pt-4 md:px-10 md:pt-8 lg:px-14 lg:pt-11">
           <Logo size={44} />
-          <ThemeToggle className="ml-auto" />
         </div>
         <div className="relative hidden flex-col gap-3 px-14 pt-10 lg:flex">
           <span className="max-w-[560px] text-[46px] leading-[1.05] font-black">Turn schoolwork into family game night.</span>
