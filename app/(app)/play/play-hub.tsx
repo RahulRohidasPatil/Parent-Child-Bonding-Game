@@ -38,6 +38,14 @@ export function PlayHub() {
         <Sprite id="mom" flip className="absolute -right-2 -bottom-3 w-[140px] md:right-0 md:w-[200px]" />
       </Link>
 
+      <Link href="/play/diagram-assembly" className="relative flex min-h-[160px] flex-col justify-center gap-2 overflow-hidden rounded-3xl bg-brand-soft p-5 md:min-h-[190px] md:p-7">
+        <span className="text-[13px] font-black tracking-[.04em] text-brand-ink">DIAGRAM ASSEMBLY · 2–8 PLAYERS</span>
+        <span className="max-w-[300px] text-[22px] leading-tight font-black md:text-[28px]">Race to rebuild how it works</span>
+        <span className="max-w-[460px] text-[15px] font-bold text-brand-dark">Study a saved lesson diagram, then place the shuffled labels into the right spots.</span>
+        <span className="mt-1 flex h-10 items-center self-start rounded-xl bg-brand px-4 text-[15px] font-black text-white">Open game</span>
+        <span className="absolute right-8 bottom-4 text-7xl opacity-40 md:right-20 md:text-8xl" aria-hidden="true">🧩</span>
+      </Link>
+
       <section className="flex flex-col gap-3" aria-labelledby="party-h">
         <div className="flex items-center justify-between gap-3">
           <h2 id="party-h" className="text-[17px] font-black">Party games</h2>
