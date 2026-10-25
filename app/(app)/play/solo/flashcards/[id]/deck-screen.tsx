@@ -167,7 +167,6 @@ export function DeckScreen({ id }: { id: string }) {
     window.speechSynthesis.cancel();
     window.speechSynthesis.speak(new SpeechSynthesisUtterance(flipped ? card.back : card.front));
   };
-  const explain = () => setError("Ask Mom to explain this card in your own words, then flip it to check.");
   return (
     <Page className="max-w-[760px] md:max-w-[620px]">
       <div className="flex items-center gap-3">
@@ -217,10 +216,7 @@ export function DeckScreen({ id }: { id: string }) {
           {sending === "know" && <Spinner />} Got it
         </Button>
       </div>
-      <div className="flex gap-2.5">
-        <Button variant="outline" size="lg" onClick={speak} className="flex-1"><Volume2 className="size-4" /> Read aloud</Button>
-        <Button variant="outline" size="lg" onClick={explain} className="flex-1">Explain to Mom</Button>
-      </div>
+      <Button variant="outline" size="lg" onClick={speak} className="w-full"><Volume2 className="size-4" /> Read aloud</Button>
       <Link href="/play/duel" className="flex h-12 items-center justify-center rounded-2xl bg-night text-[15px] font-black text-white shadow-[0_4px_0_#18232b]">
         Skip to module quiz
       </Link>
