@@ -65,3 +65,11 @@ sidebar from 1280 px.
 FastAPI authentication integration, environment templates, Python dependencies, backend tests,
 CI, and backend setup documentation are maintained in the separate backend repository.
 Follow its README to run the API locally. Implement new endpoints and persistence there.
+
+## FastAPI social connection
+
+Friends, presence and live duels now use the FastAPI backend through the authenticated `/api/social/*`
+proxy. Configure `LEARNING_API_URL`, the backend's Clerk issuer/origins, and signed session claims as
+shown in [docs/SOCIAL_API.md](docs/SOCIAL_API.md). The local social JSON stand-in is no longer used.
+Completed duel balances are read from the backend wallet. Run `npm test`, `npm run typecheck` and
+`npm run build` to validate the frontend connection.

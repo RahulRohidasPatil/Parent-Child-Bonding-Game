@@ -1,0 +1,23 @@
+name: Frontend checks
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  test-build:
+    runs-on: ubuntu-latest
+    env:
+      # Synthetic public key for static compilation only. No real account or secret is used.
+      NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY: pk_test_dGVzdC5jbGVyay5hY2NvdW50cy5kZXYk
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci --ignore-scripts --no-fund --no-audit
+      - run: npx eslint app components lib tests vitest.config.mts
+      - run: npm test
+      - run: npm run typecheck
+      - run: npm run build

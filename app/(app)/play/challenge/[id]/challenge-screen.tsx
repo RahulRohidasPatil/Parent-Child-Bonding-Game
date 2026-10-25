@@ -1,33 +1,19 @@
 "use client";
 
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import Link from "next/link";
 import { Hourglass, Swords, Timer, Trophy } from "lucide-react";
 import { Page } from "@/components/qn/app-shell";
 import { DuelQuestion, DuelReview, tintOf } from "@/components/qn/duel";
 import { Face, Sprite, Stage } from "@/components/qn/sprite";
-import { Card, Coin, Notice, PageHeader, ProgressBar, Working } from "@/components/qn/ui";
+import { Card, Coin, Notice, PageHeader, ProgressBar, StatChips, Working } from "@/components/qn/ui";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { type Duel, SocialError, msUntil, socialApi } from "@/lib/social-api";
-import { addCoins, bump, markStudiedToday } from "@/lib/store";
+import { duelReward, refreshWallet } from "@/lib/wallet-api";
 import { cn } from "@/lib/utils";
 
 const POLL_MS = 2_000;
-const coinsFor = (score: number) => score * 10 + 20;
 const back = { href: "/friends", label: "Back to Friends" };
-
-function rewardOnce(duel: Duel) {
-  const key = `qn.duel.rewarded.${duel.id}`;
-  try {
-    if (localStorage.getItem(key)) return;
-    localStorage.setItem(key, "1");
-  } catch {
-    /* storage blocked: reward anyway */
-  }
-  addCoins(coinsFor(duel.results!.me.score));
-  bump(["d-duel", "w-duels"]);
-  markStudiedToday();
-}
 
 /** A live duel with a friend: invite, countdown, timed questions on both phones, then results. */
 export function ChallengeScreen({ id }: { id: string }) {
@@ -37,7 +23,6 @@ export function ChallengeScreen({ id }: { id: string }) {
   const [busy, setBusy] = useState(false);
   const [sending, setSending] = useState<number | null>(null);
   const [, setTick] = useState(0);
-  const rewarded = useRef(false);
 
   const load = useCallback(async () => {
     try {
@@ -63,11 +48,19 @@ export function ChallengeScreen({ id }: { id: string }) {
   }, [load, live]);
 
   useEffect(() => {
-    if (state?.duel.status === "finished" && state.duel.results && !rewarded.current) {
-      rewarded.current = true;
-      rewardOnce(state.duel);
-    }
-  }, [state]);
+    if (status !== "finished") return;
+    let live = true;
+    let timer: ReturnType<typeof setTimeout> | undefined;
+    const sync = async () => {
+      try {
+        await refreshWallet();
+      } catch {
+        if (live) timer = setTimeout(sync, 5000);
+      }
+    };
+    void sync();
+    return () => { live = false; clearTimeout(timer); };
+  }, [status, id]);
 
   async function act(run: () => Promise<Duel>, fallback: string) {
     setBusy(true);
@@ -109,7 +102,7 @@ export function ChallengeScreen({ id }: { id: string }) {
   const me = duel.my_role === "challenger" ? duel.challenger : duel.opponent;
   const them = duel.my_role === "challenger" ? duel.opponent : duel.challenger;
   const secs = (t: string | null) => Math.max(0, Math.ceil(msUntil(t, duel, at) / 1000));
-  const header = <PageHeader title="Live duel" sub={`${duel.num_questions} questions on ${duel.lesson_title}`} back={back} />;
+  const header = <PageHeader title="Live duel" sub={`${duel.num_questions} questions on ${duel.lesson_title}`} back={back} right={<StatChips home />} />;
   const versus = (
     <Stage className="h-[240px] md:h-[280px]">
       <div className="absolute bottom-4 left-1/2 h-6 w-[280px] -translate-x-1/2 rounded-[50%] bg-stage-floor" />
@@ -250,7 +243,7 @@ export function ChallengeScreen({ id }: { id: string }) {
       <Card className="flex items-center gap-3 p-4">
         <Coin size={28} />
         <span className="flex-1 text-[15px] font-extrabold">
-          You earned <b>+{coinsFor(mine.score)} coins</b> ({mine.score} right + 20 for playing)
+          You earned <b>+{duelReward(mine)} coins for your base</b> ({mine.score} right{duelReward(mine) ? " + 20 for playing" : "; no answers submitted"})
         </span>
       </Card>
       {duel.questions && <DuelReview questions={duel.questions} names={["You", them.display_name]} sheets={[mine.results, theirs.results]} />}

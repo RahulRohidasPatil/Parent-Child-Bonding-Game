@@ -28,6 +28,8 @@ export type QNState = {
   owned: string[]; // looks and pets bought in the shop
   /** Shop coins: kept in this browser (shop, duels, quests). Home coins live on the server, in `homeMeta`. */
   coins: number;
+  /** Cached backend wallet balance, also used by the base. */
+  serverCoins: number | null;
   streakDays: number;
   age: number | null;
   subject: Subject;
@@ -63,6 +65,7 @@ export const DEFAULT_STATE: QNState = {
   pet: "cat",
   owned: ["nova", "cat"],
   coins: 240,
+  serverCoins: null,
   streakDays: 0,
   age: null,
   subject: "science",
@@ -132,6 +135,11 @@ function persist() {
   } catch {
     /* best effort */
   }
+}
+
+/** Identifies the account whose browser cache is currently active. */
+export function getAccountKey(): string {
+  return stateKey();
 }
 
 export function getState(): QNState {

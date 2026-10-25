@@ -50,7 +50,7 @@ export function Flame({ size = 16 }: { size?: number }) {
  */
 export function StatChips({ className, home }: { className?: string; home?: boolean }) {
   const shopCoins = useQN((s) => s.coins);
-  const homeCoins = useQN((s) => s.homeMeta?.coins ?? null);
+  const homeCoins = useQN((s) => s.serverCoins ?? s.homeMeta?.coins ?? null);
   const streak = useQN((s) => s.streakDays);
   const coins = home ? homeCoins : shopCoins;
   return (

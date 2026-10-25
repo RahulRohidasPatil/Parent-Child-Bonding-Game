@@ -131,8 +131,13 @@ const post = <T>(path: string, body: unknown) =>
 const put = <T>(path: string, body: unknown) =>
   call<T>(path, { method: "PUT", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) });
 
-/** The same requests and errors, for the other clients of the learning service (home, coins). */
-export const http = { get: <T>(path: string) => call<T>(path), post, put, del: (path: string) => call<void>(path, { method: "DELETE" }) };
+/** Shared JSON transport for the server-owned home, wallet and other app resources. */
+export const http = {
+  get: <T>(path: string) => call<T>(path),
+  post,
+  put,
+  del: <T>(path: string) => call<T>(path, { method: "DELETE" }),
+};
 
 export const learnApi = {
   uploadMaterial(files: File[]) {
