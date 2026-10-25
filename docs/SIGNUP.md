@@ -23,7 +23,7 @@ the existing display name, account type, date of birth, and parent email as user
 email verification remains required.
 
 Learners under 16 use the parent's email as the Clerk verification address, so the parent receives
-the verification code. The learner's username and the existing profile fields are stored as Clerk
+the verification link. The learner's username and the existing profile fields are stored as Clerk
 user metadata.
 
 Required public environment variables:

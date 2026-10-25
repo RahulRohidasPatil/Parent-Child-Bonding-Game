@@ -33,7 +33,7 @@ setup is needed and Clerk manages the browser session:
 | Route | Screen | Data |
 | --- | --- | --- |
 | `/` | Landing | static |
-| `/register` → `/verify` | Create account (role, date of birth, age-based email rules), then the Clerk verification code | Clerk |
+| `/register` → `/verify` | Create account (role, date of birth, age-based email rules), then the Clerk verification link | Clerk |
 | `/login` | Username/email + password, parent or student tab | Clerk |
 | `/home` | Dashboard | local + recent lessons |
 | `/learn/new` | Choose subject, upload pages or type a topic | learning API |
@@ -52,7 +52,7 @@ sidebar from 1280 px.
 
 - **Backend token validation:** the frontend now uses Clerk for username/email login, verification,
   and sessions. The backend must validate Clerk JWTs before accepting protected API requests.
-- **Under-16 accounts** are registered to the parent's email, so the parent receives the code.
+- **Under-16 accounts** are registered to the parent's email, so the parent receives the verification link.
   A parent can't also use that email for their own account; guardian links need an API.
 - Date of birth and username are stored in Clerk user metadata; age is also kept in the browser
   for lesson reading level.

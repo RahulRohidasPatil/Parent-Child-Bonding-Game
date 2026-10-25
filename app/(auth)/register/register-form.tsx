@@ -86,7 +86,10 @@ export function RegisterForm() {
       setState({ age: hasAge ? age : null });
       const q = new URLSearchParams({ email: accountEmail.trim().toLowerCase(), minor: emailMode(f) === "minor" ? "1" : "0", name: f.name.trim() });
       const { startEmailLinkFlow } = signUp.createEmailLinkFlow();
-      await startEmailLinkFlow({ redirectUrl: `${window.location.origin}/verify?${q.toString()}` });
+      const emailLinkFlow = startEmailLinkFlow({ redirectUrl: `${window.location.origin}/verify/callback?${q.toString()}` });
+      void emailLinkFlow.catch((flowError: unknown) => {
+        setServerError({ text: clerkMessage(flowError, "We could not send the verification link. Request a new one from the verification page.") });
+      });
       router.push(`/verify?${q}`);
     } catch (error) {
       setServerError({ text: clerkMessage(error, "We could not create that account. Check your details and try again.") });
@@ -159,7 +162,7 @@ export function RegisterForm() {
           value={f.email}
           onChange={set("email")}
           error={show("email")}
-          hint="We’ll send your verification code here."
+          hint="We’ll send your verification link here."
         />
       )}
       {mode === "minor" && (
@@ -167,7 +170,7 @@ export function RegisterForm() {
           <div className="flex items-start gap-2.5 rounded-2xl bg-warn px-3.5 py-3">
             <Info className="mt-0.5 size-5 shrink-0 text-[#8a5300]" strokeWidth={2.4} />
             <span className="text-sm leading-snug font-bold text-warn-ink">
-              You’re under {ADULT_AGE}, so a parent has to approve your account. We’ll email them a code.
+              You’re under {ADULT_AGE}, so a parent has to approve your account. We’ll email them a verification link.
             </span>
           </div>
           <Field label="Enter parent’s email" type="email" placeholder="parent@example.com" value={f.parentEmail} onChange={set("parentEmail")} error={show("parentEmail")} />
