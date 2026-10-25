@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Check, ChevronRight, Lock, Move, Plus, RotateCw, Sofa, Undo2, Users, ZoomIn, ZoomOut } from "lucide-react";
+import { ArrowRight, Check, ChevronRight, Lock, Move, Plus, Sofa, Undo2, Users, Wrench, ZoomIn, ZoomOut } from "lucide-react";
 import { Page } from "@/components/qn/app-shell";
 import { IsoHouse, IsoRoom, type HouseSlot } from "@/components/qn/iso-house";
 import { Sheet } from "@/components/qn/sheet";
@@ -20,7 +20,9 @@ import {
   ROOM_GRID,
   UNLOCK_LEVEL,
   UPGRADE_COST,
-  clampItem,
+  arrangeRoom,
+  fits,
+  freeSpot,
   freshLevels,
   homeIdOf,
   homeSummary,
@@ -36,9 +38,22 @@ import {
 } from "@/lib/home-data";
 import { AVATARS, FRIENDS } from "@/lib/qn-data";
 import { setState, useQN } from "@/lib/store";
+import { useClientValue } from "@/lib/use-client-value";
 import { cn } from "@/lib/utils";
 
-type SheetKind = "add" | "item" | "room" | "friends" | null;
+type SheetKind = "add" | "item" | "room" | "friends" | "test" | null;
+
+/** Test tools show on localhost, or anywhere after opening /base?test=1 once (?test=0 hides them). */
+function readTestTools() {
+  try {
+    const q = new URLSearchParams(window.location.search).get("test");
+    if (q === "1") localStorage.setItem("qn.test", "1");
+    if (q === "0") localStorage.removeItem("qn.test");
+    return window.location.hostname === "localhost" || localStorage.getItem("qn.test") === "1";
+  } catch {
+    return false;
+  }
+}
 
 /**
  * One shared home, shown as a single house you can zoom in and out of. Tap furniture to upgrade
@@ -48,6 +63,8 @@ type SheetKind = "add" | "item" | "room" | "friends" | null;
 export function BaseScreen() {
   const home = useQN((s) => s.home);
   const coins = useQN((s) => s.coins);
+  const unlimited = useQN((s) => s.unlimitedCoins);
+  const testTools = useClientValue(readTestTools, false);
   const built = ROOMS.filter((r) => home.rooms[r.id]);
   const newest = built[built.length - 1] ?? ROOMS[0];
   const next = ROOMS[built.length] ?? null;
@@ -82,7 +99,7 @@ export function BaseScreen() {
     ? { grid: ROOM_GRID[next.id], near: ROOM_GRID[newest.id], ready: canBuy, label: next.name, progress: `${unlock.have}/${unlock.need}`, onClick: () => setSheet("room") }
     : null;
 
-  function look(id: RoomId | null) {
+  function look(id: RoomId | null | undefined) {
     setFocusId(id);
     setSelected(null);
     setEditing(false);
@@ -102,10 +119,15 @@ export function BaseScreen() {
   function place(i: number) {
     const it = room.items[i];
     if (coins < PLACE_COST) return setToast(`You need ${PLACE_COST} coins. Earn more with quizzes, flashcards and duels.`);
-    setLevels((l) => l.map((v, j) => (j === i ? 1 : v)), PLACE_COST);
+    // Put it on a free spot near its usual place, then let the kid drag it where they want.
+    const after = levels.map((v, j) => (j === i ? 1 : v));
+    const spot = arrangeRoom(room, after, layout).places[i] ?? { at: it.at, rot: 0 };
+    setLevels(() => after, PLACE_COST);
+    setLayout((l) => ({ ...l, [it.id]: spot }));
     setSheet(null);
     setSelected(i);
-    setToast(`${it.name} added! Tap Move to put it where you like.`);
+    setEditing(true);
+    setToast(`Drag the ${it.name.toLowerCase()} where you want it, then tap Done.`);
   }
 
   function levelUp(i: number) {
@@ -125,11 +147,13 @@ export function BaseScreen() {
 
   function rotate(i: number) {
     const it = room.items[i];
-    setLayout((l) => {
-      const p = placementOf(it, l);
-      const rot = (p.rot + 1) % 4;
-      return { ...l, [it.id]: { at: clampItem(it, levels[i], rot, p.at), rot } };
-    });
+    const { places, blockers } = arrangeRoom(room, levels, layout);
+    const now = places[i] ?? placementOf(it, layout);
+    const rot = (now.rot + 1) % 4;
+    // Turn in place if it fits, otherwise slide to the nearest spot where it does.
+    const at = freeSpot(it, levels[i], rot, now.at, blockers, i);
+    if (!fits(it, levels[i], rot, at, blockers, i)) return setToast(`There’s no room to turn the ${it.name.toLowerCase()} here. Move it somewhere roomier first.`);
+    setLayout((l) => ({ ...l, [it.id]: { at, rot } }));
   }
 
   function buyRoom() {
@@ -148,7 +172,12 @@ export function BaseScreen() {
         title="My base"
         sub="One home you build up, room by room"
         right={
-          <div className="flex items-center gap-2">
+          <div className="flex w-full items-center justify-end gap-2 sm:w-auto">
+            {testTools && (
+              <Button variant="soft" size="pill" onClick={() => setSheet("test")} aria-label="Test tools" className="h-10 px-3">
+                <Wrench /> <span className="hidden sm:inline">Test</span>
+              </Button>
+            )}
             <Button variant="soft" size="pill" onClick={() => setSheet("friends")} aria-label="Visit friends’ homes" className="h-10 px-3">
               <Users /> <span className="hidden sm:inline">Friends</span>
             </Button>
@@ -195,27 +224,7 @@ export function BaseScreen() {
             )}
           </div>
           <div className="pointer-events-auto flex flex-wrap justify-end gap-2">
-            {editing ? (
-              <>
-                <Button variant="soft" size="chip" onClick={() => selected !== null && levels[selected] > 0 && rotate(selected)} disabled={selected === null || levels[selected] <= 0}>
-                  <RotateCw /> Rotate
-                </Button>
-                <Button
-                  variant="soft"
-                  size="chip"
-                  onClick={() => {
-                    setLayout(() => undefined);
-                    setToast(`The ${room.name.toLowerCase()} is back to its starting layout.`);
-                  }}
-                  disabled={!layout}
-                >
-                  <Undo2 /> Reset
-                </Button>
-                <Button variant="night" size="chip" onClick={() => setEditing(false)}>
-                  <Check /> Done
-                </Button>
-              </>
-            ) : (
+            {!editing && (
               <>
                 {!zoomedOut && placed > 0 && (
                   <Button variant="soft" size="chip" onClick={() => setEditing(true)}>
@@ -247,7 +256,26 @@ export function BaseScreen() {
           {zoomedOut ? (
             <span className="rounded-full bg-white/90 px-3.5 py-1.5 text-[13px] font-extrabold">Tap a room to look inside</span>
           ) : editing ? (
-            <span className="rounded-full bg-white/90 px-3.5 py-1.5 text-[13px] font-extrabold">Drag furniture to move it · tap ⟳ to rotate</span>
+            <>
+              {!toast && <span className="rounded-full bg-white/90 px-3.5 py-1.5 text-center text-[13px] font-extrabold">Drag furniture to move it · tap ⟳ on it to rotate</span>}
+              <span className="pointer-events-auto flex gap-2">
+                <Button
+                  variant="soft"
+                  size="pill"
+                  className="h-12"
+                  onClick={() => {
+                    setLayout(() => undefined);
+                    setToast(`The ${room.name.toLowerCase()} is back to its starting layout.`);
+                  }}
+                  disabled={!layout}
+                >
+                  <Undo2 /> Reset
+                </Button>
+                <Button variant="night" size="pill" className="h-12 px-6 text-[16px]" onClick={() => setEditing(false)}>
+                  <Check /> Done
+                </Button>
+              </span>
+            </>
           ) : (
             unplaced > 0 && (
               <Button variant="brand" size="pill" className="pointer-events-auto h-12 px-5 text-[16px]" onClick={() => setSheet("add")}>
@@ -369,6 +397,57 @@ export function BaseScreen() {
             <span className="text-center text-[13px] font-bold text-muted-foreground">You have {coins.toLocaleString("en-US")} coins</span>
           </>
         )}
+      </Sheet>
+
+      {/* test tools */}
+      <Sheet open={sheet === "test"} onClose={() => setSheet(null)} title="Test tools" sub="For trying out the base. Saved in this browser only.">
+        <button
+          type="button"
+          role="switch"
+          aria-checked={unlimited}
+          onClick={() => setState((s) => ({ unlimitedCoins: !s.unlimitedCoins, coins: s.unlimitedCoins ? s.coins : 999_999 }))}
+          className="flex items-center gap-3 rounded-2xl border border-line p-3 text-left"
+        >
+          <Coin size={28} />
+          <span className="flex flex-1 flex-col leading-tight">
+            <span className="text-[15px] font-black">Unlimited coins</span>
+            <span className="text-[13px] font-bold text-muted-foreground">{unlimited ? "On: coins stay topped up" : "Off: coins work as normal"}</span>
+          </span>
+          <span className={cn("relative h-7 w-12 rounded-full transition-colors", unlimited ? "bg-brand" : "bg-[#d5dde2]")}>
+            <span className={cn("absolute top-1 size-5 rounded-full bg-white transition-all", unlimited ? "left-6" : "left-1")} />
+          </span>
+        </button>
+        <span className="text-[13px] font-black tracking-[.03em] text-muted-foreground">{room.name.toUpperCase()}</span>
+        <div className="grid grid-cols-2 gap-2">
+          <Button variant="soft" size="pill" onClick={() => setLevels((l) => l.map((v) => Math.max(v, UNLOCK_LEVEL)), 0)}>
+            All items Lv {UNLOCK_LEVEL}
+          </Button>
+          <Button variant="soft" size="pill" onClick={() => setLevels((l) => l.map(() => MAX_LEVEL), 0)}>
+            Max out (Lv {MAX_LEVEL})
+          </Button>
+        </div>
+        <span className="text-[13px] font-black tracking-[.03em] text-muted-foreground">WHOLE HOME</span>
+        <div className="grid grid-cols-2 gap-2">
+          <Button
+            variant="soft"
+            size="pill"
+            onClick={() => setState((s) => ({ home: { ...s.home, rooms: Object.fromEntries(ROOMS.map((r) => [r.id, levelsOf(r, s.home.rooms[r.id])])) } }))}
+          >
+            Build every room
+          </Button>
+          <Button
+            variant="soft"
+            size="pill"
+            onClick={() => {
+              setState({ home: { rooms: { living: freshLevels(ROOMS[0]) }, layout: {} } });
+              look(undefined);
+              setSheet(null);
+              setToast("Back to day one: an old TV and a basic sofa.");
+            }}
+          >
+            Reset to day one
+          </Button>
+        </div>
       </Sheet>
 
       {/* friends */}

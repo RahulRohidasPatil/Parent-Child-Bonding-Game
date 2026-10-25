@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { BookOpenCheck, FileText, Search, Sparkles, Trash2 } from "lucide-react";
@@ -23,6 +23,10 @@ export function MaterialScreen({ id }: { id: string }) {
   const [making, setMaking] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const { age } = useLearnerAge();
+
+  // Cache Components keeps this page alive (hidden) after we open the lesson; clear the
+  // "writing" screen when it hides so coming back shows the page again.
+  useLayoutEffect(() => () => setMaking(false), []);
 
   useEffect(() => {
     learnApi
@@ -53,6 +57,7 @@ export function MaterialScreen({ id }: { id: string }) {
     setError(null);
     setMaking(true);
     try {
+      await learnApi.ensureConfirmed(id);
       const lesson = await learnApi.createLesson({ topic: q, age, material_id: id });
       remember({ kind: "lesson", id: lesson.id, title: lesson.title, detail: lesson.source ? `From ${lesson.source.title} · ${lesson.source.label}` : lesson.summary });
       bump(["d-lesson", "w-lessons"]);

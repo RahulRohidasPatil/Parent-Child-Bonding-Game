@@ -29,8 +29,11 @@ export type QNState = {
   subject: Subject;
   prefersVisuals: boolean;
   recent: RecentItem[];
+  plans: StudyPlan[]; // the learning server doesn't keep chat answers, so plans live here
   progress: Record<string, number>; // quest id -> count
   claimed: string[];
+  /** Test tools: keep coins topped up so the base can be tried out freely. */
+  unlimitedCoins: boolean;
   /** Built rooms, in build order: each item's level (0 = not placed yet) and where it was moved. */
   home: { rooms: Partial<Record<RoomId, number[]>>; layout: Partial<Record<RoomId, RoomLayout>> };
   settings: {
@@ -54,13 +57,16 @@ export const DEFAULT_STATE: QNState = {
   subject: "science",
   prefersVisuals: false,
   recent: [],
+  plans: [],
   progress: {},
   claimed: [],
+  unlimitedCoins: false,
   home: { rooms: { living: freshLevels(ROOMS[0]) }, layout: {} },
   settings: { goal: 15, timers: false, aloud: false, remind: true, duelInvites: true, cheers: false, visit: "friends" },
 };
 
 const KEY = "qn.state.v1";
+export const UNLIMITED_COINS = 999_999;
 let state: QNState = DEFAULT_STATE;
 let loaded = false;
 const listeners = new Set<() => void>();
@@ -102,6 +108,7 @@ export function setState(update: Partial<QNState> | ((s: QNState) => Partial<QNS
   load();
   const patch = typeof update === "function" ? update(state) : update;
   state = { ...state, ...patch };
+  if (state.unlimitedCoins && state.coins < UNLIMITED_COINS) state = { ...state, coins: UNLIMITED_COINS };
   persist();
   listeners.forEach((l) => l());
 }
@@ -141,6 +148,23 @@ export function remember(item: Omit<RecentItem, "at">) {
 
 export function forget(kind: RecentItem["kind"], id: string) {
   setState((s) => ({ recent: s.recent.filter((r) => !(r.kind === kind && r.id === id)) }));
+}
+
+export function savePlan(plan: StudyPlan) {
+  setState((s) => ({ plans: [plan, ...s.plans.filter((p) => p.id !== plan.id)].slice(0, 30) }));
+}
+
+/** Remember the lesson made for a subtopic so it opens straight away next time. */
+export function setSubtopicLesson(planId: string, index: number, lessonId: string) {
+  setState((s) => ({
+    plans: s.plans.map((p) =>
+      p.id === planId ? { ...p, subtopics: p.subtopics.map((t, i) => (i === index ? { ...t, lessonId } : t)) } : p,
+    ),
+  }));
+}
+
+export function forgetPlan(id: string) {
+  setState((s) => ({ plans: s.plans.filter((p) => p.id !== id) }));
 }
 
 export function addCoins(n: number) {

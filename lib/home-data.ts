@@ -384,14 +384,25 @@ export function rotateOffset([dx, dy]: [number, number], rot: number): [number, 
 }
 
 /**
- * A sprite's floor footprint, measured from the image: the x of its lowest pixel (`fx`) splits
- * the width into how far it reaches along x (`dx`) and along y (`dy`). The footprint's centre is at
- * (w/2, `cy`) in the image, and `height` is how tall the object stands (px).
+ * A sprite's floor footprint, measured from the image. Two estimates of how far it reaches along x
+ * (`dx`) and y (`dy`): from the x of its lowest pixel (`fx`), and from where its left and right
+ * corners touch the floor (`yl`, `yr`), which catches L-shapes like corner sofas. The larger of
+ * each wins, so furniture never pokes into walls or other furniture. The footprint's centre is
+ * at (w/2, `cy`) in the image, and `height` is how tall the object stands (px).
  */
 export function spriteBox(s: SpriteName) {
-  const [w, h, fx] = SPRITE_SIZE[s];
+  const [w, h, fx, yl, yr] = SPRITE_SIZE[s];
   const floorH = (w * TILE_HH) / TILE_HW;
-  return { w, h, dx: fx / TILE_HW, dy: (w - fx) / TILE_HW, cy: h - floorH / 2, height: h - floorH };
+  const span = w / TILE_HW;
+  const tilt = (yr - yl) / TILE_HH;
+  return {
+    w,
+    h,
+    dx: Math.max(fx / TILE_HW, (span + tilt) / 2),
+    dy: Math.max((w - fx) / TILE_HW, (span - tilt) / 2),
+    cy: h - floorH / 2,
+    height: h - floorH,
+  };
 }
 
 /** How high a part is lifted (px, in sprite pixels): onto another part, or by a fixed amount. */
@@ -437,6 +448,67 @@ export type RoomLayout = Record<string, Placement>;
 
 export function placementOf(item: HomeItem, layout?: RoomLayout): Placement {
   return layout?.[item.id] ?? { at: item.at, rot: 0 };
+}
+
+type Rect = { x0: number; x1: number; y0: number; y1: number };
+/** An item's floor area at a spot (tiles, in room coordinates). */
+export function rectAt(item: HomeItem, level: number, rot: number, [x, y]: [number, number]): Rect {
+  const f = footprint(item, level, rot);
+  return { x0: x + f.x0, x1: x + f.x1, y0: y + f.y0, y1: y + f.y1 };
+}
+const GAP = 0.02;
+const hit = (a: Rect, b: Rect) => a.x0 < b.x1 - GAP && b.x0 < a.x1 - GAP && a.y0 < b.y1 - GAP && b.y0 < a.y1 - GAP;
+
+/** Something already on the floor: rugs only block rugs, furniture only blocks furniture. */
+export type Blocker = { i: number; rect: Rect; flat: boolean };
+
+export function fits(item: HomeItem, level: number, rot: number, at: [number, number], blockers: Blocker[], self?: number) {
+  const r = rectAt(item, level, rot, at);
+  return !blockers.some((b) => b.i !== self && b.flat === !!item.flat && hit(r, b.rect));
+}
+
+/** The free spot closest to `near` (searching outward in small steps), or `near` if the room is full. */
+export function freeSpot(item: HomeItem, level: number, rot: number, near: [number, number], blockers: Blocker[], self?: number): [number, number] {
+  const start = clampItem(item, level, rot, near);
+  if (fits(item, level, rot, start, blockers, self)) return start;
+  for (let ring = 1; ring <= 30; ring++) {
+    const d = ring * 0.1;
+    let best: [number, number] | null = null;
+    let bestDist = Infinity;
+    for (let k = -ring; k <= ring; k++) {
+      for (const [ox, oy] of [[k * 0.1, -d], [k * 0.1, d], [-d, k * 0.1], [d, k * 0.1]] as [number, number][]) {
+        const c = clampItem(item, level, rot, [start[0] + ox, start[1] + oy]);
+        const dist = Math.hypot(c[0] - start[0], c[1] - start[1]);
+        if (dist < bestDist && fits(item, level, rot, c, blockers, self)) {
+          best = c;
+          bestDist = dist;
+        }
+      }
+    }
+    if (best) return best;
+  }
+  return start;
+}
+
+/**
+ * Where every placed item in a room actually stands: items the kid moved keep their spot first,
+ * then the rest. Anything that would overlap (say, after an upgrade made something bigger) slides
+ * to the nearest free spot, and nothing leaves the floor.
+ */
+export function arrangeRoom(room: RoomDef, levels: number[], layout?: RoomLayout) {
+  const out: (Placement | null)[] = room.items.map(() => null);
+  const blockers: Blocker[] = [];
+  const order = room.items.map((_, i) => i).sort((a, b) => Number(!layout?.[room.items[a].id]) - Number(!layout?.[room.items[b].id]) || a - b);
+  for (const i of order) {
+    const lv = levels[i] ?? 0;
+    if (lv <= 0) continue;
+    const item = room.items[i];
+    const p = placementOf(item, layout);
+    const at = freeSpot(item, lv, p.rot, p.at, blockers);
+    out[i] = { at, rot: p.rot };
+    blockers.push({ i, rect: rectAt(item, lv, p.rot, at), flat: !!item.flat });
+  }
+  return { places: out, blockers };
 }
 
 // ---------- friends' homes (examples until the backend stores homes) ----------

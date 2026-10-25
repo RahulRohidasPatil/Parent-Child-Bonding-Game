@@ -9,37 +9,36 @@ The presentation is separated into reusable components:
 
 - `components/signup/signup-header.tsx` — step indicator and page header.
 - `components/signup/signup-field.tsx` — labelled field wrapper, hints, and errors.
-- `app/signup/page.tsx` — form state, Supabase submission, and flow-specific rendering.
+- `app/(auth)/register/register-form.tsx` — form state, Clerk submission, and flow-specific rendering.
 
 Shared signup types and helpers are kept in the root shared modules:
 
 - `lib/types.ts` — reusable application types.
 - `lib/utils.ts` — shared utilities, including date-of-birth and signup-mode helpers.
 
-## Supabase behavior
+## Clerk behavior
 
-Parent registration calls `supabase.auth.signUp()` from the browser client with the parent email,
-password, display name, username, and `account_type: "parent"` metadata. Supabase email confirmation
-must remain enabled.
+Parent registration calls Clerk's `signUp.create()` with the parent email, password, username, and
+the existing display name, account type, date of birth, and parent email as user metadata. Clerk
+email verification remains required.
 
-Learners under 18 do not create an Auth user. Their submission calls `/api/registration/learner`,
-which creates a pending request and sends the parent notification through the server-only email path.
-The learner account must be provisioned only after the server-side approval and authority checks.
+Learners under 16 use the parent's email as the Clerk verification address, so the parent receives
+the verification link. The learner's username and the existing profile fields are stored as Clerk
+user metadata.
 
 Required public environment variables:
 
 ```env
-NEXT_PUBLIC_SUPABASE_URL=...
-NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=...
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=...
 ```
 
 ## Testing locally
 
-Run the app with `npm run dev`, then open `/signup`.
+Run the app with `npm run dev`, then open `/register`.
 
 Test these cases:
 
-- Parent with valid details: the button advances to credentials, then Supabase sends confirmation.
+- Parent with valid details: the button advances to credentials, then Clerk sends confirmation.
 - Under-18 student: the parent email is required and the request goes to the pending flow.
 - Invalid or incomplete fields: Continue/Create account remains disabled or displays validation errors.
 - Matching learner and parent emails: the request is rejected by client validation.
