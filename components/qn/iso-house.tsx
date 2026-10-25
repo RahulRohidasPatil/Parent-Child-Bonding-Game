@@ -7,13 +7,15 @@ import {
   FLOOR_TILES,
   TILE_HH,
   TILE_HW,
+  arrangeRoom,
   clampItem,
+  fits,
   partLift,
-  placementOf,
   rotateOffset,
   rotateSprite,
   spriteBox,
   stageFor,
+  type Blocker,
   type HomeItem,
   type RoomDef,
   type RoomLayout,
@@ -140,9 +142,15 @@ export function IsoHouse({
     return [(sx / HW + sy / HH) / 2, (sy / HH - sx / HW) / 2];
   }
 
-  function editHandlers(i: number, item: HomeItem, lv: number, rot: number, from: [number, number]) {
+  function editHandlers(i: number, item: HomeItem, lv: number, rot: number, from: [number, number], blockers: Blocker[]) {
     if (!editing) return { onClick: () => onSelect?.(i) };
-    const clamp = (at: [number, number]) => clampItem(item, lv, rot, at);
+    const ok = (at: [number, number]) => fits(item, lv, rot, at, blockers, i);
+    /** Follow the pointer, sliding along other furniture instead of going through it. */
+    const step = (want: [number, number], last: [number, number]): [number, number] => {
+      const c = clampItem(item, lv, rot, want);
+      for (const t of [c, clampItem(item, lv, rot, [c[0], last[1]]), clampItem(item, lv, rot, [last[0], c[1]])]) if (ok(t)) return t;
+      return last;
+    };
     return {
       onPointerDown: (e: React.PointerEvent<HTMLElement>) => {
         e.preventDefault();
@@ -154,7 +162,7 @@ export function IsoHouse({
         const d = drag.current;
         if (!d) return;
         const [x, y] = toFloor(e);
-        setLive({ i, at: clamp([d.from[0] + x - d.start[0], d.from[1] + y - d.start[1]]) });
+        setLive({ i, at: step([d.from[0] + x - d.start[0], d.from[1] + y - d.start[1]], live?.i === i ? live.at : d.from) });
       },
       onPointerUp: () => {
         if (drag.current && live) onMove?.(live.i, live.at);
@@ -170,7 +178,8 @@ export function IsoHouse({
         if (n) {
           e.preventDefault();
           onSelect?.(i);
-          onMove?.(i, clamp([from[0] + n[0], from[1] + n[1]]));
+          const to = clampItem(item, lv, rot, [from[0] + n[0], from[1] + n[1]]);
+          if (ok(to)) onMove?.(i, to);
         } else if (e.key === "r" || e.key === "R") {
           e.preventDefault();
           onSelect?.(i);
@@ -187,11 +196,12 @@ export function IsoHouse({
     const ox = hr.grid[0] * SIZE;
     const oy = hr.grid[1] * SIZE;
     const active = r === focus && !!onSelect;
+    const { places, blockers } = arrangeRoom(hr.room, hr.levels, hr.layout);
     hr.room.items.forEach((item, i) => {
       const lv = hr.levels[i] ?? 0;
-      if (lv <= 0) return;
-      const place = placementOf(item, hr.layout);
-      const at = active && live?.i === i ? live.at : clampItem(item, lv, place.rot, place.at);
+      const place = places[i];
+      if (lv <= 0 || !place) return;
+      const at = active && live?.i === i ? live.at : place.at;
       const stage = stageFor(item, lv);
       const on = active && selected === i;
       // Parts resting on another part (or hung on the wall) share that part's depth.
@@ -240,7 +250,7 @@ export function IsoHouse({
             <button
               key={key}
               type="button"
-              {...editHandlers(i, item, lv, place.rot, at)}
+              {...editHandlers(i, item, lv, place.rot, place.at, blockers)}
               aria-label={j === 0 ? `${item.name}, level ${lv}${editing ? ". Drag or use the arrow keys to move, R to rotate" : ""}` : undefined}
               aria-hidden={j === 0 ? undefined : true}
               tabIndex={j === 0 ? 0 : -1}

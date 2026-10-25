@@ -31,6 +31,8 @@ export type QNState = {
   recent: RecentItem[];
   progress: Record<string, number>; // quest id -> count
   claimed: string[];
+  /** Test tools: keep coins topped up so the base can be tried out freely. */
+  unlimitedCoins: boolean;
   /** Built rooms, in build order: each item's level (0 = not placed yet) and where it was moved. */
   home: { rooms: Partial<Record<RoomId, number[]>>; layout: Partial<Record<RoomId, RoomLayout>> };
   settings: {
@@ -56,11 +58,13 @@ export const DEFAULT_STATE: QNState = {
   recent: [],
   progress: {},
   claimed: [],
+  unlimitedCoins: false,
   home: { rooms: { living: freshLevels(ROOMS[0]) }, layout: {} },
   settings: { goal: 15, timers: false, aloud: false, remind: true, duelInvites: true, cheers: false, visit: "friends" },
 };
 
 const KEY = "qn.state.v1";
+export const UNLIMITED_COINS = 999_999;
 let state: QNState = DEFAULT_STATE;
 let loaded = false;
 const listeners = new Set<() => void>();
@@ -102,6 +106,7 @@ export function setState(update: Partial<QNState> | ((s: QNState) => Partial<QNS
   load();
   const patch = typeof update === "function" ? update(state) : update;
   state = { ...state, ...patch };
+  if (state.unlimitedCoins && state.coins < UNLIMITED_COINS) state = { ...state, coins: UNLIMITED_COINS };
   persist();
   listeners.forEach((l) => l());
 }
