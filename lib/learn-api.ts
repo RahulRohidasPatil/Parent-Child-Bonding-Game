@@ -15,6 +15,9 @@ export type MaterialInfo = {
   chapters: Chapter[];
   warnings: string[];
 };
+export type MaterialPage = { number: number; text: string; via: "text" | "vision" | "none" };
+export type MaterialPages = { id: string; revision: number; confirmed: boolean; pages: MaterialPage[] };
+export type MaterialStatus = { revision: number; confirmed: boolean };
 export type FoundPages = {
   pages: number[];
   how: "pages" | "chapter" | "search";
@@ -73,6 +76,7 @@ export type PublicCard = {
   back_visual_html?: string | null;
 };
 export type PublicDeck = { id: string; lesson_id: string; title: string; cards: PublicCard[]; state: DeckState };
+export type ChatOut = { answer: string; used_pdf: boolean; pages: number[]; label: string | null; mode: "auto" | "pdf_only" };
 export type TournamentResult = CheckOut & { index: number; choice: number };
 export type SubmitOut = { score: number; total: number; results: TournamentResult[] };
 
@@ -132,13 +136,36 @@ export const learnApi = {
     return call<MaterialInfo>("materials", { method: "POST", body: fd });
   },
   getMaterial: (id: string) => call<MaterialInfo>(`materials/${id}`),
+  getPages: (id: string) => call<MaterialPages>(`materials/${id}/pages`),
+  /** Lessons can only use an upload after its current text revision is confirmed. */
+  confirmMaterial: (id: string, expected_revision: number) =>
+    post<MaterialStatus>(`materials/${id}/confirm`, { expected_revision, confirmed: true }),
+  /** Confirm the latest extracted text if it isn't already, so `createLesson` can use the upload. */
+  async ensureConfirmed(id: string): Promise<MaterialStatus> {
+    const p = await call<MaterialPages>(`materials/${id}/pages`);
+    if (p.confirmed) return { revision: p.revision, confirmed: true };
+    return post<MaterialStatus>(`materials/${id}/confirm`, { expected_revision: p.revision, confirmed: true });
+  },
   findPages: (id: string, topic: string) => call<FoundPages>(`materials/${id}/find?topic=${encodeURIComponent(topic)}`),
   deleteMaterial: (id: string) => call<void>(`materials/${id}`, { method: "DELETE" }),
 
-  createLesson: (body: { topic: string; age: number; material_id?: string | null }) =>
+  /**
+   * `topic` + `age` explains any topic. With `material_id`, `topic` picks the part of the upload:
+   * a topic, "chapter 3" or "pages 40-55". `prefers_visuals` asks for a picture in nearly every section.
+   */
+  createLesson: (body: { topic: string; age: number; material_id?: string | null; prefers_visuals?: boolean }) =>
     post<PublicLesson>("lessons", body),
   getLesson: (id: string) => call<PublicLesson>(`lessons/${id}`),
   drawVisuals: (id: string, ask?: string) => post<{ visuals: PublicVisual[] }>(`lessons/${id}/visuals`, ask ? { ask } : {}),
+
+  /** Free-text answer (message up to 1000 characters). With `material_id` the upload must be confirmed. */
+  chat: (body: {
+    message: string;
+    age: number;
+    material_id?: string | null;
+    mode?: "auto" | "pdf_only";
+    history?: { role: "user" | "assistant"; content: string }[]; // stateless: send recent turns, oldest first
+  }) => post<ChatOut>("chat", body),
 
   createQuiz: (lessonId: string, num_questions = 5) => post<PublicQuiz>(`lessons/${lessonId}/quiz`, { num_questions }),
   getQuiz: (id: string) => call<PublicQuiz>(`quiz/${id}`),

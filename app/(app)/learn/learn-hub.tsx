@@ -8,6 +8,7 @@ import { buttonVariants } from "@/components/ui/button";
 import { forget, useQN, type RecentItem } from "@/lib/store";
 import { subjectOf } from "@/lib/qn-data";
 import { cn } from "@/lib/utils";
+import { StudyPlans } from "./study-plans";
 
 const KIND = {
   lesson: { icon: BookOpen, label: "Lesson", href: (r: RecentItem) => `/learn/lesson/${r.id}` },
@@ -21,6 +22,7 @@ export function LearnHub() {
   const lessons = recent.filter((r) => r.kind === "lesson");
   const practice = recent.filter((r) => r.kind === "quiz");
   const uploads = recent.filter((r) => r.kind === "material");
+  const hasPlans = useQN((s) => s.plans.length > 0);
 
   return (
     <Page>
@@ -34,7 +36,9 @@ export function LearnHub() {
         }
       />
 
-      {lessons.length === 0 ? (
+      <StudyPlans />
+
+      {lessons.length === 0 && !hasPlans ? (
         <EmptyState
           title="No lessons yet"
           action={
@@ -45,7 +49,7 @@ export function LearnHub() {
         >
           Upload photos of your notes or a PDF, or just type a topic. We’ll write a lesson for your age, then quiz you on it.
         </EmptyState>
-      ) : (
+      ) : lessons.length === 0 ? null : (
         <section className="flex flex-col gap-3" aria-labelledby="lessons-h">
           <h2 id="lessons-h" className="text-[17px] font-black">Lessons</h2>
           <ul className="grid grid-cols-1 gap-3 md:grid-cols-2 xl:grid-cols-3">

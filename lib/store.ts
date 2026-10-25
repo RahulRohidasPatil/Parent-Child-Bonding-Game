@@ -29,6 +29,7 @@ export type QNState = {
   subject: Subject;
   prefersVisuals: boolean;
   recent: RecentItem[];
+  plans: StudyPlan[]; // the learning server doesn't keep chat answers, so plans live here
   progress: Record<string, number>; // quest id -> count
   claimed: string[];
   /** Test tools: keep coins topped up so the base can be tried out freely. */
@@ -56,6 +57,7 @@ export const DEFAULT_STATE: QNState = {
   subject: "science",
   prefersVisuals: false,
   recent: [],
+  plans: [],
   progress: {},
   claimed: [],
   unlimitedCoins: false,
@@ -146,6 +148,23 @@ export function remember(item: Omit<RecentItem, "at">) {
 
 export function forget(kind: RecentItem["kind"], id: string) {
   setState((s) => ({ recent: s.recent.filter((r) => !(r.kind === kind && r.id === id)) }));
+}
+
+export function savePlan(plan: StudyPlan) {
+  setState((s) => ({ plans: [plan, ...s.plans.filter((p) => p.id !== plan.id)].slice(0, 30) }));
+}
+
+/** Remember the lesson made for a subtopic so it opens straight away next time. */
+export function setSubtopicLesson(planId: string, index: number, lessonId: string) {
+  setState((s) => ({
+    plans: s.plans.map((p) =>
+      p.id === planId ? { ...p, subtopics: p.subtopics.map((t, i) => (i === index ? { ...t, lessonId } : t)) } : p,
+    ),
+  }));
+}
+
+export function forgetPlan(id: string) {
+  setState((s) => ({ plans: s.plans.filter((p) => p.id !== id) }));
 }
 
 export function addCoins(n: number) {
