@@ -32,13 +32,20 @@ async function lessonFor(plan: StudyPlan, index: number, age: number) {
   const cached = plan.subtopics[index].lessonId;
   // Lessons live in the learning server's memory, so a cached one can be gone after a restart.
   if (cached && (await learnApi.getLesson(cached).then(() => true, () => false))) return cached;
-  if (plan.material) await learnApi.ensureConfirmed(plan.material.id);
-  const lesson = await learnApi.createLesson({
-    topic: await lessonTopic(plan, index),
-    age,
-    prefers_visuals: true,
-    ...(plan.material ? { material_id: plan.material.id } : {}),
-  });
+  let lesson;
+  try {
+    if (plan.material) await learnApi.ensureConfirmed(plan.material.id);
+    lesson = await learnApi.createLesson({
+      topic: await lessonTopic(plan, index),
+      age,
+      prefers_visuals: true,
+      ...(plan.material ? { material_id: plan.material.id } : {}),
+    });
+  } catch (e) {
+    // The file doesn't cover this subtopic (or is gone after a restart): teach it from general knowledge.
+    if (!plan.material || !(e instanceof ApiError) || ![404, 409, 422].includes(e.status)) throw e;
+    lesson = await learnApi.createLesson({ topic: subtopicTopic({ ...plan, material: null }, plan.subtopics[index]), age, prefers_visuals: true });
+  }
   setSubtopicLesson(plan.id, index, lesson.id);
   bump(["d-lesson", "w-lessons"]);
   markStudiedToday();
