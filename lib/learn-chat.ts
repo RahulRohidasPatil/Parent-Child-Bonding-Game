@@ -31,7 +31,7 @@ export type ChatMessage = {
   deckId?: string;
 };
 
-export type ChatState = { messages: ChatMessage[]; material: ChatFile | null };
+export type ChatState = { serverId?: string; serverMaterialId?: string | null; messageCount?: number; messages: ChatMessage[]; material: ChatFile | null };
 export const EMPTY_CHAT: ChatState = { messages: [], material: null };
 /** One saved conversation in the chat history. */
 export type Conversation = ChatState & { id: string; title: string; updatedAt: number };

@@ -9,7 +9,7 @@ import { LearnSteps, useLearnerAge } from "@/components/qn/learn-bits";
 import { Card, Field, Notice, PageHeader, Spinner, Working } from "@/components/qn/ui";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { ApiError, type FoundPages, type MaterialInfo, learnApi } from "@/lib/learn-api";
-import { bump, forget, markStudiedToday, remember } from "@/lib/store";
+import { forget, markStudiedToday, remember } from "@/lib/store";
 import { cn } from "@/lib/utils";
 
 /** Step 2: confirm what was read from the upload and choose the part to study. */
@@ -60,7 +60,7 @@ export function MaterialScreen({ id }: { id: string }) {
       await learnApi.ensureConfirmed(id);
       const lesson = await learnApi.createLesson({ topic: q, age, material_id: id });
       remember({ kind: "lesson", id: lesson.id, title: lesson.title, detail: lesson.source ? `From ${lesson.source.title} · ${lesson.source.label}` : lesson.summary });
-      bump(["d-lesson", "w-lessons"]);
+
       markStudiedToday();
       router.push(`/learn/lesson/${lesson.id}`);
     } catch (e) {
@@ -105,6 +105,7 @@ export function MaterialScreen({ id }: { id: string }) {
   return (
     <Page className="max-w-[1080px]">
       <LearnSteps step={2} />
+      <Link href={`/learn/material/${id}/review`} className="font-bold text-brand-ink">Review and correct extracted text</Link>
       <PageHeader
         title="Check your notes"
         sub="Make sure we read your pages right, then pick what to study."

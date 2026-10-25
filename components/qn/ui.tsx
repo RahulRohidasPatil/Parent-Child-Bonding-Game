@@ -45,20 +45,18 @@ export function Flame({ size = 16 }: { size?: number }) {
 }
 
 /**
- * Coins + streak chips. Shows the shop coins kept in this browser, unless `home` is set: then the
- * home coins from the server (the base spends those), or a dash until they've loaded.
+ * Coins + streak chips. The wallet balance comes from the backend for every screen.
  */
 export function StatChips({ className, home }: { className?: string; home?: boolean }) {
-  const shopCoins = useQN((s) => s.coins);
   const homeCoins = useQN((s) => s.serverCoins ?? s.homeMeta?.coins ?? null);
   const streak = useQN((s) => s.streakDays);
-  const coins = home ? homeCoins : shopCoins;
+  const coins = homeCoins;
   return (
     <div className={cn("flex items-center gap-2", className)}>
       <Link href={home ? "/base" : "/shop"} className="flex h-10 items-center gap-1.5 rounded-full bg-coin pr-3 pl-2 text-[15px] font-black text-coin-ink">
         <Coin />
         {coins === null ? "–" : coins.toLocaleString("en-US")}
-        <span className="sr-only">{home ? " home coins" : " shop coins"}</span>
+        <span className="sr-only">{" coins"}</span>
       </Link>
       <Link href="/quests" className="flex h-10 items-center gap-1.5 rounded-full bg-flame pr-3 pl-2.5 text-[15px] font-black text-flame-ink">
         <Flame />

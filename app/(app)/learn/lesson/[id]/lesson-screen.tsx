@@ -10,8 +10,8 @@ import { VisualFrame } from "@/components/qn/visual-frame";
 import { Card, Notice, PageHeader, Spinner } from "@/components/qn/ui";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { LessonChat } from "./lesson-chat";
-import { ApiError, type PublicLesson, type PublicVisual, learnApi } from "@/lib/learn-api";
-import { getState, remember } from "@/lib/store";
+import { ApiError, http, type PublicLesson, type PublicVisual, learnApi } from "@/lib/learn-api";
+import { getState, markStudiedToday, remember } from "@/lib/store";
 import { cn } from "@/lib/utils";
 
 // Planned diagrams are drawn once per lesson. Guard against double calls (e.g. React's dev double effects).
@@ -55,6 +55,21 @@ export function LessonScreen({ id }: { id: string }) {
   const [error, setError] = useState<string | null>(null);
   const [creatingDeck, setCreatingDeck] = useState(false);
   const deckRequestPending = useRef(false);
+  const [draft, setDraft] = useState<Pick<PublicLesson, "title" | "summary" | "sections" | "key_points"> | null>(null);
+  const [saving, setSaving] = useState(false);
+  const [completed, setCompleted] = useState(false);
+  const [creatingQuiz, setCreatingQuiz] = useState(false);
+  async function complete() {
+    try { await learnApi.completeLesson(id); markStudiedToday(); setCompleted(true); }
+    catch (e) { setError(e instanceof Error ? e.message : "Couldn’t save completion."); }
+  }
+  async function startQuiz() {
+    if (!lesson || creatingQuiz) return;
+    setCreatingQuiz(true);
+    try { const quiz = await learnApi.createQuiz(lesson.id); remember({ kind: "quiz", id: quiz.id, title: quiz.title, lessonId: lesson.id }); router.push(`/play/solo/quiz/${quiz.id}`); }
+    catch (e) { setError(e instanceof Error ? e.message : "Couldn’t create the quiz."); setCreatingQuiz(false); }
+  }
+
 
   async function startFlashcards() {
     if (!lesson || deckRequestPending.current) return;
@@ -131,10 +146,21 @@ export function LessonScreen({ id }: { id: string }) {
         back={{ href: "/learn", label: "Back to Learn" }}
       />
 
+      {lesson.visuals.filter((v) => v.kind === "diagram").map((v) => <Link key={v.id} className="font-bold text-brand-ink" href={`/play/rebuild?lesson=${lesson.id}&visual=${v.id}`}>Rebuild {v.title} with friends</Link>)}
+      <Button variant="soft" size="pill" onClick={() => setDraft({ title: lesson.title, summary: lesson.summary, sections: structuredClone(lesson.sections), key_points: [...lesson.key_points] })}>Edit a copy of this lesson</Button>
+      {draft && <Card className="flex flex-col gap-3 p-5"><h2 className="font-black">Corrected lesson version</h2>
+        <input aria-label="Lesson title" className="rounded-xl border border-line bg-card p-3" value={draft.title} onChange={(e) => setDraft({ ...draft, title: e.target.value })} />
+        <textarea aria-label="Summary" className="rounded-xl border border-line bg-card p-3" value={draft.summary} onChange={(e) => setDraft({ ...draft, summary: e.target.value })} />
+        {draft.sections.map((section, index) => <div key={index} className="flex flex-col gap-2"><input aria-label={`Section ${index + 1} heading`} className="rounded-xl border border-line bg-card p-2" value={section.heading} onChange={(e) => setDraft({ ...draft, sections: draft.sections.map((x, i) => i === index ? { ...x, heading: e.target.value } : x) })} /><textarea aria-label={`Section ${index + 1} text`} className="min-h-32 rounded-xl border border-line bg-card p-3" value={section.body} onChange={(e) => setDraft({ ...draft, sections: draft.sections.map((x, i) => i === index ? { ...x, body: e.target.value } : x) })} /></div>)}
+        <textarea aria-label="Key points, one per line" className="rounded-xl border border-line bg-card p-3" value={draft.key_points.join("\n")} onChange={(e) => setDraft({ ...draft, key_points: e.target.value.split("\n").filter(Boolean) })} />
+        <Button variant="brand" disabled={saving} onClick={async () => { setSaving(true); try { const revision = await http.post<{ id: string }>(`lessons/${id}/revisions`, { lesson: draft }); setDraft(null); router.push(`/learn/lesson/${revision.id}`); } catch (e) { setError(e instanceof Error ? e.message : "Couldn’t save the lesson."); } finally { setSaving(false); } }}>Save new version</Button>
+        <Button variant="ghost" disabled={saving} onClick={() => setDraft(null)}>Discard changes</Button><p className="text-sm text-muted-foreground">Earlier versions and attempts stay unchanged.</p>
+      </Card>}
       <article className="flex min-w-0 flex-col gap-4">
         <LessonBody lesson={lesson} drawing={drawing} />
       </article>
 
+      <Button variant={completed ? "soft" : "brand"} disabled={completed} onClick={complete}>{completed ? "Lesson completed" : "I’ve finished this lesson"}</Button>
       {/* ---------- follow-up questions ---------- */}
       <LessonChat key={lesson.id} lesson={lesson} />
 
@@ -145,9 +171,10 @@ export function LessonScreen({ id }: { id: string }) {
           <Button type="button" variant="soft" size="cta" onClick={startFlashcards} disabled={creatingDeck} aria-busy={creatingDeck}>
             {creatingDeck ? <Spinner /> : <Layers />} {creatingDeck ? "Making flashcards…" : "Flashcards"}
           </Button>
-          <Button type="button" variant="brand" size="cta">
-            <ListChecks /> Create quiz
+          <Button type="button" variant="brand" size="cta" disabled={creatingQuiz} onClick={startQuiz}>
+            <ListChecks /> {creatingQuiz ? "Creating quiz…" : "Create quiz"}
           </Button>
+          <Button variant="soft" size="cta" disabled={creatingDeck} onClick={startFlashcards}><Layers /> {creatingDeck ? "Creating cards…" : "Flashcards"}</Button>
         </div>
       </Card>
 

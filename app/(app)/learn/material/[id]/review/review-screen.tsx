@@ -1,0 +1,14 @@
+"use client";
+import { useEffect,useState } from "react";
+import { Page } from "@/components/qn/app-shell";
+import { Card,Notice,PageHeader,Spinner } from "@/components/qn/ui";
+import { Button } from "@/components/ui/button";
+import { http,learnApi,type MaterialPages,type MaterialStatus } from "@/lib/learn-api";
+export function MaterialReview({id}:{id:string}){
+ const [data,setData]=useState<MaterialPages|null>(null),[page,setPage]=useState(0),[error,setError]=useState<string|null>(null),[busy,setBusy]=useState(false),[revision,setRevision]=useState(1),[history,setHistory]=useState<MaterialPages|null>(null);
+ useEffect(()=>{void learnApi.getPages(id).then(setData).catch((e)=>setError(e.message));},[id]);
+ async function run(fn:()=>Promise<void>){setBusy(true);setError(null);try{await fn();}catch(e){setError(e instanceof Error?e.message:"Couldn’t update the notes.");}finally{setBusy(false);}}
+ return <Page><PageHeader title="Check extracted notes" sub="Correct the text before learning from it" back={{href:`/learn/material/${id}`,label:"Back to notes"}}/>{error&&<Notice>{error}</Notice>}{!data?<Spinner/>:<Card className="flex flex-col gap-3 p-5"><label>Page <select className="rounded-xl border border-line bg-card p-2" value={page} onChange={(e)=>setPage(Number(e.target.value))}>{data.pages.map((p,i)=><option key={p.number} value={i}>{p.number}</option>)}</select></label><textarea aria-label="Extracted text" className="min-h-80 rounded-xl border border-line bg-card p-4" value={data.pages[page]?.text??""} onChange={(e)=>setData({...data,pages:data.pages.map((p,i)=>i===page?{...p,text:e.target.value}:p)})}/><span>Revision {data.revision} · {data.confirmed?"Confirmed":"Needs your confirmation"}</span><div className="flex flex-wrap gap-2"><Button variant="soft" disabled={busy} onClick={()=>run(async()=>{await http.put<MaterialStatus>(`materials/${id}/pages`,{expected_revision:data.revision,pages:data.pages});setData(await learnApi.getPages(id));})}>Save corrections</Button><Button variant="brand" disabled={busy||data.confirmed} onClick={()=>run(async()=>{await learnApi.confirmMaterial(id,data.revision);setData(await learnApi.getPages(id));})}>Confirm these notes</Button></div></Card>}
+ <Card className="flex flex-col gap-3 p-5"><h2 className="font-black">Earlier revision</h2><div className="flex gap-2"><input aria-label="Revision number" type="number" min={1} className="w-24 rounded-xl border border-line bg-card p-2" value={revision} onChange={(e)=>setRevision(Number(e.target.value))}/><Button variant="soft" disabled={busy} onClick={()=>run(async()=>setHistory(await http.get<MaterialPages>(`materials/${id}/revisions/${revision}`)))}>View</Button></div>{history&&history.pages.map((p)=><p key={p.number} className="whitespace-pre-wrap text-sm"><b>Page {p.number}</b>{"\n"}{p.text}</p>)}</Card>
+ </Page>;
+}

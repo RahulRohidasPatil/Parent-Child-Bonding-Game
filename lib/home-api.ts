@@ -68,6 +68,8 @@ export function applyHome(h: MyHome) {
   setState({
     home: toSnapshot(h.rooms),
     serverCoins: h.coins,
+    coins: h.coins,
+    unlimitedCoins: false,
     homeMeta: { coins: h.coins, version: h.version, visibility: h.visibility, cheers: h.cheers ?? {}, owner: h.owner },
   });
   return h;
@@ -104,6 +106,6 @@ export const homeApi = {
 };
 
 function setCoins(c: CoinsOut) {
-  setState((s) => ({ serverCoins: c.coins, ...(s.homeMeta ? { homeMeta: { ...s.homeMeta, coins: c.coins } } : {}) }));
+  setState((s) => ({ coins: c.coins, serverCoins: c.coins, unlimitedCoins: false, ...(s.homeMeta ? { homeMeta: { ...s.homeMeta, coins: c.coins } } : {}) }));
   return c;
 }

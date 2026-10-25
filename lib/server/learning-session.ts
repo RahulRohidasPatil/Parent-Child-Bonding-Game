@@ -130,8 +130,20 @@ export async function forwardToLearning(req: Request, sub: string, search: strin
   if (!session) return Response.json({ detail: "Please log in again." }, { status: 401, headers: NO_STORE });
   if (sub.startsWith("social/") && !session.token) return SIGN_IN_DOWN();
 
+  // Guardian filters are bound to the signed-in user's verified mailbox, never a browser query.
+  if (sub.startsWith("guardian/")) {
+    try {
+      const user = await (await clerkClient()).users.getUser(session.userId);
+      const email = user.emailAddresses.find((value) => value.id === user.primaryEmailAddressId);
+      if (!email || email.verification?.status !== "verified") return Response.json({ detail: "Verify your email before reviewing approval requests." }, { status: 403, headers: NO_STORE });
+      const query = new URLSearchParams(search);
+      query.set("guardian_email", email.emailAddress);
+      search = `?${query.toString()}`;
+    } catch { return SIGN_IN_DOWN(); }
+  }
+
   const headers = new Headers();
-  for (const header of ["content-type", "content-length", "accept", "idempotency-key"]) {
+  for (const header of ["content-type", "content-length", "accept", "idempotency-key", "x-registration-receipt"]) {
     const value = req.headers.get(header);
     if (value) headers.set(header, value);
   }

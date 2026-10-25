@@ -43,7 +43,8 @@ import {
   type ChatModes,
   type Conversation,
 } from "@/lib/learn-chat";
-import { bump, deleteChat, ensureChatId, getState, markStudiedToday, openChat, remember, savePlan, updateChat, useQN } from "@/lib/store";
+import { ensureChatId, getAccountKey, getState, markStudiedToday, openChat, remember, savePlan, updateChat, useQN } from "@/lib/store";
+import { ensureSavedChat, refreshChatHistory, openSavedChat, deleteSavedChat, renameSavedChat } from "@/lib/memory-api";
 import { parseStudyPlan, planMessage, type StudyPlan } from "@/lib/study-plan";
 import { cn } from "@/lib/utils";
 
@@ -74,6 +75,7 @@ const BUSY_TEXT: Record<Busy["kind"], string> = {
 /** Ask anything, attach notes, or make a study plan, with every chat kept in the history (POST /api/chat). */
 export function LearnChat() {
   const router = useRouter();
+  useEffect(() => { void refreshChatHistory().catch(() => undefined); }, []);
   const id = useId();
   const chatId = useQN((s) => s.chatId);
   const chats = useQN((s) => s.chats);
@@ -162,6 +164,7 @@ export function LearnChat() {
   /** `again` resends an earlier question (Try again), with its own text, modes and hidden prompt. */
   async function send(typed: string, sendModes: ChatModes, sendFile: File | null, again?: ChatMessage) {
     if (busy) return;
+    const account = getAccountKey();
     const t = again ? again.text : typed.trim();
     if (!t && !sendFile && !again) return;
     if (!age) return setError("We don’t know your age yet, so we can’t pitch answers right. Add it once in Settings.");
@@ -196,13 +199,14 @@ export function LearnChat() {
     append(cid, mine);
 
     try {
-      if (sendFile) {
+      if (sendFile && !isImage(sendFile)) {
         setBusy({ kind: "upload", chatId: cid });
         const m = await learnApi.uploadMaterial([sendFile]);
+        if (getAccountKey() !== account) return;
         remember({ kind: "material", id: m.id, title: m.name, detail: `${m.page_count} page${m.page_count === 1 ? "" : "s"}` });
-        bump(["w-upload"]);
         // The chat only reads uploads whose extracted text is confirmed.
         await learnApi.ensureConfirmed(m.id);
+        if (getAccountKey() !== account) return;
         material = { id: m.id, name: m.name, kind: m.kind, pages: m.page_count };
         const attached = material;
         updateChat(cid, (c) => ({ ...c, material: attached }));
@@ -219,12 +223,17 @@ export function LearnChat() {
 
     try {
       setBusy({ kind: sendModes.plan ? "plan" : "answer", chatId: cid });
-      const out = await learnApi.chat({
+      const conversation_id = await ensureSavedChat(cid, material);
+      const out = sendFile && isImage(sendFile)
+        ? await learnApi.imageChat(sendFile, sendModes.plan ? planMessage(question) : question, age, conversation_id)
+        : await learnApi.chat({
+        conversation_id,
         message: sendModes.plan ? planMessage(question) : question,
         age,
         history: past,
         ...(material ? { material_id: material.id, mode: sendModes.pdfOnly ? ("pdf_only" as const) : ("auto" as const) } : {}),
       });
+      if (getAccountKey() !== account) return;
       const reply: ChatMessage = { id: uid(), role: "assistant", text: out.answer, at: now(), ask, material, usedFile: out.used_pdf, pages: out.pages, label: out.label };
       if (sendModes.plan) {
         reply.planId = uid();
@@ -237,11 +246,11 @@ export function LearnChat() {
           material: material && out.used_pdf ? { id: material.id, pages: material.pages } : null,
           at: now(),
         });
-        bump(["d-lesson", "w-lessons"]);
       }
       markStudiedToday();
       append(cid, reply);
     } catch (e) {
+      if (getAccountKey() !== account) return;
       const msg = e instanceof ApiError ? e.message : "Couldn’t answer that. Try again.";
       append(cid, { id: uid(), role: "assistant", text: msg, at: now(), ask, error: true });
     } finally {
@@ -514,7 +523,7 @@ export function LearnChat() {
           chats={chats}
           activeId={chatId}
           onOpen={(c) => {
-            openChat(c);
+            void openSavedChat(c).then(() => openChat(c)).catch((e) => setError(e.message));
             resetComposer();
             setHistory(false);
           }}
@@ -544,7 +553,7 @@ function ChatHistory({ chats, activeId, onOpen, onNew }: { chats: Conversation[]
       </Button>
       <ul className="flex flex-col gap-1.5">
         {chats.map((c) => {
-          const n = c.messages.filter((m) => m.role === "user").length;
+          const n = c.messageCount !== undefined ? Math.ceil(c.messageCount / 2) : c.messages.filter((m) => m.role === "user").length;
           const on = c.id === activeId;
           return (
             <li key={c.id} className={cn("flex items-center gap-2 rounded-2xl border px-2 py-1.5", on ? "border-brand bg-brand-soft" : "border-line bg-background")}>
@@ -559,9 +568,10 @@ function ChatHistory({ chats, activeId, onOpen, onNew }: { chats: Conversation[]
                   </span>
                 </span>
               </button>
+              <Button variant="ghost" size="pill" onClick={() => { const title = window.prompt("Chat title", c.title); if (title?.trim()) void renameSavedChat(c.id, title.trim().slice(0, 80)); }}>Rename</Button>
               {confirm === c.id ? (
                 <span className="flex shrink-0 items-center gap-1">
-                  <Button variant="soft" size="pill" className="h-8 px-3 text-destructive" onClick={() => deleteChat(c.id)}>
+                  <Button variant="soft" size="pill" className="h-8 px-3 text-destructive" onClick={() => { void deleteSavedChat(c.id).catch(() => setConfirm(null)); }}>
                     Delete
                   </Button>
                   <Button variant="ghost" size="pill" className="h-8 px-2.5" onClick={() => setConfirm(null)}>

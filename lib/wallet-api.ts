@@ -15,7 +15,7 @@ export async function refreshWallet(): Promise<number> {
   const accountAtRequest = getAccountKey();
   const wallet = await http.get<{ coins: number }>("me/wallet?limit=1");
   if (request === latestWalletRequest && accountAtRequest === getAccountKey()) {
-    setState((s) => ({ serverCoins: wallet.coins, ...(s.homeMeta ? { homeMeta: { ...s.homeMeta, coins: wallet.coins } } : {}) }));
+    setState((s) => ({ coins: wallet.coins, serverCoins: wallet.coins, unlimitedCoins: false, ...(s.homeMeta ? { homeMeta: { ...s.homeMeta, coins: wallet.coins } } : {}) }));
   }
   return wallet.coins;
 }

@@ -1,25 +1,31 @@
 "use client";
 
 import Link from "next/link";
+import { useEffect, useState } from "react";
+import { economyApi } from "@/lib/economy-api";
 import { Lock, Settings } from "lucide-react";
 import { Page } from "@/components/qn/app-shell";
 import { Sprite, Stage } from "@/components/qn/sprite";
-import { Card, PageHeader, StatChips } from "@/components/qn/ui";
+import { Card, Notice, PageHeader, StatChips } from "@/components/qn/ui";
 import { SwitchRow } from "@/components/qn/learn-bits";
 import { buttonVariants } from "@/components/ui/button";
 import { AVATARS } from "@/lib/qn-data";
-import { setState, useQN } from "@/lib/store";
+import { useQN } from "@/lib/store";
 import { useUser } from "@/lib/use-user";
 import { cn } from "@/lib/utils";
 
 export function ProfileScreen() {
   const { user } = useUser();
+  const [error, setError] = useState<string | null>(null);
+  useEffect(() => { void economyApi.inventory().catch((e) => setError(e.message)); }, []);
+  const equip = (slot: string, item: string | null) => economyApi.equip(slot, item).catch((e) => setError(e.message));
   const look = useQN((s) => s.look);
   const pet = useQN((s) => s.pet);
   const owned = useQN((s) => s.owned);
 
   return (
     <Page>
+      {error && <Notice onClose={() => setError(null)}>{error}</Notice>}
       <PageHeader
         title="My look"
         sub={user ? `${user.name} · ${user.accountType === "parent" ? "Parent" : "Student"}` : undefined}
@@ -51,7 +57,7 @@ export function ProfileScreen() {
                     aria-checked={on}
                     aria-label={has ? a.label : `${a.label} (in the shop)`}
                     disabled={!has}
-                    onClick={() => setState({ look: a.id })}
+                    onClick={() => equip("look", a.id)}
                     className={cn("relative flex h-[104px] items-end justify-center overflow-hidden rounded-2xl", on ? "ring-3 ring-brand" : "ring-1 ring-line", !has && "opacity-50")}
                     style={{ background: a.tint }}
                   >
@@ -66,7 +72,7 @@ export function ProfileScreen() {
             </Link>
           </Card>
           <Card className="overflow-hidden">
-            <SwitchRow label="Bring Mochi along" note="Your cat shows up next to you" checked={!!pet} onChange={(v) => setState({ pet: v ? "cat" : null })} />
+            <SwitchRow label="Bring Mochi along" note="Your cat shows up next to you" checked={!!pet} onChange={(v) => equip("pet", v ? "cat" : null)} />
           </Card>
           <Link href="/home" className={cn(buttonVariants({ variant: "brand", size: "cta" }))}>
             Save my look

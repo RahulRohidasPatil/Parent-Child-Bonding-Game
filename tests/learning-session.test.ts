@@ -93,3 +93,15 @@ describe("authenticated proxy", () => {
     expect(await response.text()).toBe("");
   });
 });
+
+it("binds guardian filters to the verified mailbox and forwards the private receipt", async () => {
+  clerk.user.mockResolvedValue({ primaryEmailAddressId: "email-1", emailAddresses: [{ id: "email-1", emailAddress: "parent@example.test", verification: { status: "verified" } }] });
+  const upstream = vi.fn().mockResolvedValue(Response.json({ items: [] }));
+  vi.stubGlobal("fetch", upstream);
+  const response = await forwardToLearning(new Request("http://app.test/api/guardian/registration-requests", { headers: { "X-Registration-Receipt": "synthetic-receipt-123" } }), "guardian/registration-requests", "?guardian_email=someone-else%40example.test&limit=20");
+  expect(response.status).toBe(200);
+  const url = new URL(upstream.mock.calls[0][0]);
+  expect(url.searchParams.get("guardian_email")).toBe("parent@example.test");
+  expect(url.searchParams.get("limit")).toBe("20");
+  expect(upstream.mock.calls[0][1].headers.get("X-Registration-Receipt")).toBe("synthetic-receipt-123");
+});

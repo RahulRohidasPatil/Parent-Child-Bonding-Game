@@ -1,3 +1,4 @@
+import { http } from "./learn-api";
 import { socialApi } from "./social-api";
 import type { AvatarId } from "./qn-data";
 
@@ -11,6 +12,7 @@ export function createSocialHeartbeat(profile: SocialProfile, isActive: () => bo
     pending ??= (async () => {
       if (!registered) {
         await socialApi.saveMe(profile);
+        await http.put("memory/profile", { role: profile.role, display_name: profile.display_name.slice(0, 40) });
         registered = true;
       }
       if (!isActive()) throw new DOMException("Presence stopped", "AbortError");

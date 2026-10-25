@@ -8,7 +8,7 @@ import { useLearnerAge } from "@/components/qn/learn-bits";
 import { Notice, PageHeader, Working } from "@/components/qn/ui";
 import { buttonVariants } from "@/components/ui/button";
 import { ApiError, learnApi } from "@/lib/learn-api";
-import { bump, markStudiedToday, setSubtopicLesson, useQN } from "@/lib/store";
+import { markStudiedToday, setSubtopicLesson, useQN } from "@/lib/store";
 import { subtopicTopic, type StudyPlan } from "@/lib/study-plan";
 import { cn } from "@/lib/utils";
 
@@ -47,7 +47,7 @@ async function lessonFor(plan: StudyPlan, index: number, age: number) {
     lesson = await learnApi.createLesson({ topic: subtopicTopic({ ...plan, material: null }, plan.subtopics[index]), age, prefers_visuals: true });
   }
   setSubtopicLesson(plan.id, index, lesson.id);
-  bump(["d-lesson", "w-lessons"]);
+
   markStudiedToday();
   return lesson.id;
 }

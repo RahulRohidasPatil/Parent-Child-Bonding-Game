@@ -38,13 +38,20 @@ export function PlayHub() {
         <Sprite id="mom" flip className="absolute -right-2 -bottom-3 w-[140px] md:right-0 md:w-[200px]" />
       </Link>
 
+      <div className="grid grid-cols-1 gap-3 md:grid-cols-3">
+        <Link href={`/play/rooms?game=mcq&mode=${mode === "family" ? "parent_child" : mode}`} className="rounded-2xl bg-brand-soft p-5 font-black text-brand-ink">Quiz race · solo or together</Link>
+        <Link href={`/play/rooms?game=heads_up&mode=${mode === "solo" ? "friends" : mode === "family" ? "parent_child" : mode}`} className="rounded-2xl bg-rose p-5 font-black text-rose-ink">Forbidden clues · heads-up</Link>
+        <Link href={`/play/rooms?game=diagram&mode=${mode === "duo" ? "friends" : mode === "family" ? "parent_child" : mode}`} className="rounded-2xl bg-coin p-5 font-black text-coin-ink">Diagram race</Link>
+      </div>
+      <Link href="/play/rebuild" className="font-bold text-brand-ink">Rebuild a saved lesson diagram together</Link>
+      <Link href="/play/weekly" className="font-bold text-brand-ink">See the weekly challenge preview</Link>
       <section className="flex flex-col gap-3" aria-labelledby="party-h">
         <div className="flex items-center justify-between gap-3">
           <h2 id="party-h" className="text-[17px] font-black">Party games</h2>
           <Pill className="bg-warn text-warn-ink">Coming soon</Pill>
         </div>
         <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2 xl:grid-cols-3">
-          {PARTY_GAMES.map((g) => {
+          {PARTY_GAMES.filter((g) => !["factcheck", "forbidden", "forehead"].includes(g.id)).map((g) => {
             const soloOnly = g.id === "race";
             const ok = soloOnly ? mode === "solo" : players >= g.min;
             const isOpen = open === g.id;
@@ -70,7 +77,7 @@ export function PlayHub() {
             );
           })}
         </ul>
-        <p className="text-[13px] font-bold text-muted-foreground">Party games aren’t playable yet. The family duel works today with any lesson.</p>
+        <p className="text-[13px] font-bold text-muted-foreground">Quiz, heads-up and diagram games are available above. The other party activities are coming later.</p>
       </section>
 
       <Card className="flex items-center gap-3 p-4">
