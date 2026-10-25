@@ -2,6 +2,7 @@ import "server-only";
 
 import { auth, currentUser as clerkCurrentUser } from "@clerk/nextjs/server";
 import { ageFrom } from "@/lib/registration";
+import { playerIdForAccount } from "./player-id";
 
 export const LEARNING_API_URL = (process.env.LEARNING_API_URL || "http://127.0.0.1:8001").replace(/\/$/, "");
 
@@ -14,6 +15,7 @@ export type AuthUser = {
 
 export type PublicUser = {
   id: string;
+  playerId: string;
   email: string | null;
   username: string | null;
   name: string;
@@ -31,6 +33,7 @@ export function toPublicUser(u: AuthUser): PublicUser {
   const accountType = meta.account_type;
   return {
     id: u.id,
+    playerId: playerIdForAccount(u.id),
     email: u.email,
     username: typeof meta.username === "string" && meta.username.trim() ? meta.username : null,
     name,

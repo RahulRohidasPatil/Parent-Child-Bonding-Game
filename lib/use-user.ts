@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 
 export type User = {
   id: string;
+  playerId: string;
   email: string | null;
   name: string;
   accountType: "parent" | "learner" | null;

@@ -58,7 +58,7 @@ const SOURCE_REASONS: Record<string, string> = {
 
 export function DiagramAssemblyScreen() {
   const { user, loading } = useUser();
-  const game = useDiagramAssembly(user?.id);
+  const game = useDiagramAssembly(user?.playerId);
   const [choice, setChoice] = useState<Choice | null>(null);
   const [displayName, setDisplayName] = useState("");
   const [enteredCode, setCode] = useState<string | null>(null);
@@ -103,7 +103,7 @@ export function DiagramAssemblyScreen() {
       </Page>
     );
 
-  const host = game.room?.host_id === user.id;
+  const host = game.room?.host_id === user.playerId;
   const race = game.race;
   const done = isTerminal(race?.status);
   const currentAttempt = game.attempt;
@@ -629,7 +629,7 @@ export function DiagramAssemblyScreen() {
 
               {host && (!race || done) && <HostDiagramPicker game={game} />}
             </div>
-            <RoomPanel game={game} playerId={user.id} />
+            <RoomPanel game={game} playerId={user.playerId} />
           </div>
         </>
       )}

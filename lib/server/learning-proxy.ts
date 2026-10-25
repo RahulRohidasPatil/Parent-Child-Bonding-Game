@@ -1,10 +1,10 @@
 import "server-only";
 import type { NextRequest } from "next/server";
 import { LEARNING_API_URL, UpstreamError, currentUser } from "./session";
+import { resolveLearningPlayerId } from "./player-id";
 
 const ALLOWED =
   /^(materials|lessons|quiz|flashcards|tournament|rooms|diagram-assembly)(\/|$)|^resources\/lessons$/;
-const UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
 
 /** Frontend sessions stay required; the learning backend uses UUID selectors, not Bearer auth. */
 export async function forwardLearningRequest(req: NextRequest, path: string[]) {
@@ -25,8 +25,8 @@ export async function forwardLearningRequest(req: NextRequest, path: string[]) {
     );
   }
   // Never omit this: omission selects the backend's shared default player partition.
-  const playerId = req.headers.get("x-player-id") ?? session.user.id;
-  if (!UUID.test(playerId))
+  const playerId = resolveLearningPlayerId(session.user.id, req.headers.get("x-player-id"));
+  if (!playerId)
     return Response.json(
       { detail: "X-Player-ID must be a UUID." },
       { status: 422 },

@@ -6,7 +6,9 @@ Backend contracts and deployment prerequisites remain in the [backend diagram gu
 
 ## Identity and forwarding
 
-Both same-origin learning proxy routes use lib/server/learning-proxy.ts. They retain the app's sign-in guard. Upstream calls forward X-Player-ID (explicit request header, otherwise the signed-in user's stable UUID), Idempotency-Key, JSON bodies, PUT, error status, and Retry-After. Bearer credentials are not forwarded to the learning backend.
+Both same-origin learning proxy routes retain the app's sign-in guard and use lib/server/player-id.ts for player selection. Existing UUID account IDs are preserved. Opaque account IDs, including Clerk user IDs, map deterministically to a UUIDv5 using a fixed namespace and the immutable account ID. This mapping must remain stable across deployments. /api/auth/me exposes this UUID as playerId while keeping id as the original authentication ID. Diagram Assembly uses playerId for requests, room membership, host checks, and room resumption.
+
+An explicit UUID selector is forwarded as before. Old clients sending their own raw authentication ID are normalized to their account's player UUID; unrelated malformed selectors are rejected. Neither proxy omits the player header for Clerk accounts. The primary proxy also forwards Idempotency-Key, JSON, PUT, status, and Retry-After.
 
 Learning, room, and race calls must select the same UUID. Separate accounts naturally supply different player IDs. Two phones selecting the same UUID are one participant. The backend header is a selector, not backend authentication or verified family/account isolation.
 
