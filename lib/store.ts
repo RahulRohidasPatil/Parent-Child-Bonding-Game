@@ -4,8 +4,8 @@ import { useSyncExternalStore } from "react";
 import type { AvatarId, PetId, Subject } from "./qn-data";
 import { ROOMS, freshLevels, type RoomId, type RoomLayout } from "./home-data";
 import { EMPTY_CHAT, titleOf, type ChatState, type Conversation } from "./learn-chat";
-import type { StudyPlan } from "./study-plan";
 import type { HomeMeta } from "./home-api";
+import type { StudyPlan } from "./study-plan";
 
 /**
  * Local prototype state for features the backend doesn't store yet (coins, looks, home,
@@ -26,8 +26,10 @@ export type QNState = {
   look: AvatarId;
   pet: PetId | null;
   owned: string[]; // looks and pets bought in the shop
+  /** Shop coins: kept in this browser (shop, duels, quests). Home coins live on the server, in `homeMeta`. */
   coins: number;
-  homeMeta: HomeMeta | null;
+  /** Cached backend wallet balance, also used by the base. */
+  serverCoins: number | null;
   streakDays: number;
   age: number | null;
   subject: Subject;
@@ -40,8 +42,13 @@ export type QNState = {
   claimed: string[];
   /** Test tools: keep coins topped up so the base can be tried out freely. */
   unlimitedCoins: boolean;
-  /** Built rooms, in build order: each item's level (0 = not placed yet) and where it was moved. */
+  /**
+   * Built rooms, in build order: each item's level (0 = not placed yet) and where it was moved.
+   * A copy of the server's home (`lib/home-api.ts`), refreshed from every home response.
+   */
   home: { rooms: Partial<Record<RoomId, number[]>>; layout: Partial<Record<RoomId, RoomLayout>> };
+  /** The server home's coins, version, privacy and cheers; null until it has loaded once. */
+  homeMeta: HomeMeta | null;
   settings: {
     goal: 10 | 15 | 20;
     timers: boolean;
@@ -58,7 +65,7 @@ export const DEFAULT_STATE: QNState = {
   pet: "cat",
   owned: ["nova", "cat"],
   coins: 240,
-  homeMeta: null,
+  serverCoins: null,
   streakDays: 0,
   age: null,
   subject: "science",
@@ -71,6 +78,7 @@ export const DEFAULT_STATE: QNState = {
   claimed: [],
   unlimitedCoins: false,
   home: { rooms: { living: freshLevels(ROOMS[0]) }, layout: {} },
+  homeMeta: null,
   settings: { goal: 15, timers: false, aloud: false, remind: true, duelInvites: true, cheers: false, visit: "friends" },
 };
 

@@ -13,6 +13,6 @@ async function forward(req: NextRequest, ctx: RouteContext<"/api/[...path]">) {
 
 export const GET = forward;
 export const POST = forward;
-export const DELETE = forward;
 export const PUT = forward;
+export const DELETE = forward;
 export const PATCH = forward;

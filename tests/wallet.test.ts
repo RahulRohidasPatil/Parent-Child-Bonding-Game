@@ -16,8 +16,8 @@ it("replaces the cached balance from the server and never awards it twice", asyn
   const { refreshWallet } = await import("../lib/wallet-api");
   await refreshWallet();
   await refreshWallet();
-  expect(store.getState().coins).toBe(290);
-  expect(store.getState().unlimitedCoins).toBe(false);
+  expect(store.getState().serverCoins).toBe(290);
+  expect(store.getState().coins).toBe(999999); // unrelated prototype shop state is not rewritten
 });
 
 it("discards the old account's response after switching accounts", async () => {
@@ -30,7 +30,7 @@ it("discards the old account's response after switching accounts", async () => {
   store.setAccount("bob");
   resolve(Response.json({ coins: 700 }));
   await pending;
-  expect(store.getState().coins).toBe(240);
+  expect(store.getState().serverCoins).toBeNull();
 });
 
 it("shows zero participation coins for idle players and 20 for a zero-score participant", async () => {
@@ -52,5 +52,5 @@ it("does not let a slower old refresh overwrite a newer paid balance", async () 
   await current;
   replies[0](Response.json({ coins: 240 }));
   await old;
-  expect(store.getState().coins).toBe(290);
+  expect(store.getState().serverCoins).toBe(290);
 });

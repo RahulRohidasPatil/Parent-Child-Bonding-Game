@@ -67,8 +67,7 @@ export function toPlacements(roomId: RoomId, levels: number[], layout: RoomLayou
 export function applyHome(h: MyHome) {
   setState({
     home: toSnapshot(h.rooms),
-    coins: h.coins,
-    unlimitedCoins: false,
+    serverCoins: h.coins,
     homeMeta: { coins: h.coins, version: h.version, visibility: h.visibility, cheers: h.cheers ?? {}, owner: h.owner },
   });
   return h;
@@ -105,6 +104,6 @@ export const homeApi = {
 };
 
 function setCoins(c: CoinsOut) {
-  setState((s) => ({ coins: c.coins, unlimitedCoins: false, ...(s.homeMeta ? { homeMeta: { ...s.homeMeta, coins: c.coins } } : {}) }));
+  setState((s) => ({ serverCoins: c.coins, ...(s.homeMeta ? { homeMeta: { ...s.homeMeta, coins: c.coins } } : {}) }));
   return c;
 }
