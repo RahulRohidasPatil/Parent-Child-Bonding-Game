@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { ChevronDown } from "lucide-react";
 import { Page } from "@/components/qn/app-shell";
 import { Face, Sprite } from "@/components/qn/sprite";
@@ -19,6 +20,7 @@ const MODES = [
 type Mode = (typeof MODES)[number]["value"];
 
 export function PlayHub() {
+  const router = useRouter();
   const [mode, setMode] = useState<Mode>("family");
   const [open, setOpen] = useState<string | null>(null);
   const look = useQN((s) => s.look);
@@ -29,13 +31,13 @@ export function PlayHub() {
       <PageHeader title="Play" sub="Games built from what you’re learning" right={<StatChips className="hidden sm:flex" />} />
       <Segmented label="Who is playing" value={mode} onChange={setMode} options={MODES.map((m) => ({ value: m.value, label: m.label }))} size="lg" />
 
-      <Link href="/play/duel" className="relative flex min-h-[160px] flex-col justify-center gap-2 overflow-hidden rounded-3xl bg-rose p-5 md:min-h-[200px] md:p-7">
-        <span className="text-[13px] font-black tracking-[.04em] text-rose-ink">FAMILY DUEL · ONE PHONE</span>
-        <span className="max-w-[200px] text-[22px] leading-tight font-black md:max-w-none md:text-[28px]">Quiz duel from your lesson</span>
+      <Link href={`/play/duel?mode=${mode === "solo" ? "family" : mode}`} className="relative flex min-h-[160px] flex-col justify-center gap-2 overflow-hidden rounded-3xl bg-rose p-5 md:min-h-[200px] md:p-7">
+        <span className="text-[13px] font-black tracking-[.04em] text-rose-ink">{mode === "duo" ? "DUO VS DUO" : mode === "friends" ? "FRIENDS QUIZ" : "FAMILY DUEL"} · ONE PHONE</span>
+        <span className="max-w-[200px] text-[22px] leading-tight font-black md:max-w-none md:text-[28px]">MCQ quiz from your lesson</span>
         <span className="hidden max-w-[300px] text-[15px] font-bold text-[#7a3a52] md:block lg:max-w-[420px]">
-          Same questions for both players. Answer in secret, pass the phone, then see who knew more and why.
+          Multiple choice and true or false from your lesson. Answer in secret, pass the phone, then see who knew more and why.
         </span>
-        <span className="mt-1 flex h-10 items-center self-start rounded-xl bg-rose-strong px-4 text-[15px] font-black text-white">Start a duel</span>
+        <span className="mt-1 flex h-10 items-center self-start rounded-xl bg-rose-strong px-4 text-[15px] font-black text-white">Start a quiz</span>
         <Sprite id={look} className="absolute right-[70px] -bottom-3 w-[140px] md:right-[150px] md:w-[200px]" />
         <Sprite id="mom" flip className="absolute -right-2 -bottom-3 w-[140px] md:right-0 md:w-[200px]" />
       </Link>
@@ -43,7 +45,7 @@ export function PlayHub() {
       <section className="flex flex-col gap-3" aria-labelledby="party-h">
         <div className="flex items-center justify-between gap-3">
           <h2 id="party-h" className="text-[17px] font-black">Party games</h2>
-          <Pill className="bg-warn text-warn-ink">Coming soon</Pill>
+          <Pill className="bg-warn text-warn-ink">More coming soon</Pill>
         </div>
         <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2 xl:grid-cols-3">
           {PARTY_GAMES.map((g) => {
@@ -52,7 +54,7 @@ export function PlayHub() {
             return (
               <li key={g.id}>
                 <Card className={cn("flex flex-col gap-2 p-3.5", !ok && "opacity-60")}>
-                  <button type="button" onClick={() => setOpen(isOpen ? null : g.id)} aria-expanded={isOpen} className="flex items-center gap-3 text-left">
+                  <button type="button" onClick={() => g.id === "race" && mode !== "solo" ? router.push(`/play/duel?mode=${mode}`) : setOpen(isOpen ? null : g.id)} aria-expanded={g.id === "race" && mode !== "solo" ? undefined : isOpen} className="flex items-center gap-3 text-left">
                     <span className="flex size-11 shrink-0 items-center justify-center rounded-xl text-lg font-black" style={{ background: g.tile, color: g.ink }} aria-hidden="true">
                       {g.glyph}
                     </span>
@@ -68,7 +70,7 @@ export function PlayHub() {
             );
           })}
         </ul>
-        <p className="text-[13px] font-bold text-muted-foreground">Party games aren’t playable yet. The family duel works today with any lesson.</p>
+        <p className="text-[13px] font-bold text-muted-foreground">MCQ quiz works with any lesson. Other party games are coming soon.</p>
       </section>
 
       <Card className="flex items-center gap-3 p-4">

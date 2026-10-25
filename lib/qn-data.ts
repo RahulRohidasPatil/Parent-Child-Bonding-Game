@@ -39,7 +39,7 @@ export const PARTY_GAMES: PartyGame[] = [
   { id: "forehead", name: "Forehead guess", glyph: "?", tile: "#e6f0fc", ink: "#245ea8", min: 2, players: "2–8", how: "Hold the phone to your forehead. Friends give clues until you guess the term." },
   { id: "relay", name: "Knowledge relay", glyph: "→", tile: "#e2f3eb", ink: "#226e52", min: 2, players: "2–8", how: "Name a valid example, then pass the phone. No repeats." },
   { id: "factcheck", name: "Fact check", glyph: "✓", tile: "#eeeafd", ink: "#5a43b8", min: 1, players: "1–8", how: "Vote fake or fact, explain why, then see the answer." },
-  { id: "race", name: "Flashcard race", glyph: "≡", tile: "#fde9f0", ink: "#a83a60", min: 1, players: "1–4", how: "Most cards right wins." },
+  { id: "race", name: "MCQ quiz", glyph: "?", tile: "#fde9f0", ink: "#a83a60", min: 2, players: "2–6", how: "Answer multiple choice and true or false questions. Most right wins." },
   { id: "sketch", name: "Sketch it", glyph: "✎", tile: "#fff6dc", ink: "#8a5b00", min: 3, players: "3–8", how: "Draw the term while your team guesses." },
 ];
 
