@@ -128,6 +128,11 @@ async function call<T>(path: string, init?: RequestInit): Promise<T> {
 
 const post = <T>(path: string, body: unknown) =>
   call<T>(path, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) });
+const put = <T>(path: string, body: unknown) =>
+  call<T>(path, { method: "PUT", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) });
+
+/** The same requests and errors, for the other clients of the learning service (home, coins). */
+export const http = { get: <T>(path: string) => call<T>(path), post, put, del: (path: string) => call<void>(path, { method: "DELETE" }) };
 
 export const learnApi = {
   uploadMaterial(files: File[]) {

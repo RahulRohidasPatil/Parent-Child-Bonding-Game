@@ -73,7 +73,9 @@ export function ShopScreen() {
           <Check className="size-4" strokeWidth={3} /> Owned
         </span>
       </Card>
-      <p className="text-[13px] font-bold text-muted-foreground">Coins and items are saved in this browser for now.</p>
+      <p className="text-[13px] font-bold text-muted-foreground">
+        Shop coins and looks are saved in this browser for now. Coins for your base are separate: you earn them with quizzes and spend them on My base.
+      </p>
     </Page>
   );
 }
