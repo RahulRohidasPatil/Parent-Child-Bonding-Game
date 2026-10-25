@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Check, ChevronRight, Lock, Move, Plus, Sofa, Undo2, Users, Wrench, ZoomIn, ZoomOut } from "lucide-react";
@@ -8,12 +8,11 @@ import { Page } from "@/components/qn/app-shell";
 import { IsoHouse, IsoRoom, type HouseSlot } from "@/components/qn/iso-house";
 import { Sheet } from "@/components/qn/sheet";
 import { Face } from "@/components/qn/sprite";
-import { Coin, PageHeader, ProgressBar, StatChips } from "@/components/qn/ui";
+import { Card, Coin, Notice, PageHeader, ProgressBar, Spinner, StatChips } from "@/components/qn/ui";
 import { Button } from "@/components/ui/button";
 import { SPRITE_SIZE } from "@/lib/furniture-sizes";
 import {
   BUILD_COST,
-  FRIEND_HOMES,
   MAX_LEVEL,
   PLACE_COST,
   ROOMS,
@@ -24,8 +23,6 @@ import {
   fits,
   freeSpot,
   freshLevels,
-  homeIdOf,
-  homeSummary,
   levelsOf,
   nextLook,
   placementOf,
@@ -36,10 +33,22 @@ import {
   type RoomId,
   type RoomLayout,
 } from "@/lib/home-data";
-import { AVATARS, FRIENDS } from "@/lib/qn-data";
-import { setState, useQN } from "@/lib/store";
+import { avatarOf, homeApi, toPlacements, type HomeCard } from "@/lib/home-api";
+import { ApiError } from "@/lib/learn-api";
+import { AVATARS } from "@/lib/qn-data";
+import { getState, setState, useQN } from "@/lib/store";
 import { useClientValue } from "@/lib/use-client-value";
+import { useLiveHome } from "@/lib/use-live-home";
+import { useUser } from "@/lib/use-user";
 import { cn } from "@/lib/utils";
+
+/** A friendly line for a failed home action. */
+function homeError(e: unknown) {
+  if (!(e instanceof ApiError)) return "Couldn’t save that. Try again.";
+  if (e.status === 402) return "Not enough coins. Earn more with quizzes.";
+  if (e.status === 409) return "Your home changed somewhere else, so here’s the latest. Try again.";
+  return e.message;
+}
 
 type SheetKind = "add" | "item" | "room" | "friends" | "test" | null;
 
@@ -62,9 +71,22 @@ function readTestTools() {
  */
 export function BaseScreen() {
   const home = useQN((s) => s.home);
-  const coins = useQN((s) => s.coins);
-  const unlimited = useQN((s) => s.unlimitedCoins);
+  const meta = useQN((s) => s.homeMeta);
+  const myLook = useQN((s) => s.look);
+  const coins = meta?.coins ?? 0;
   const testTools = useClientValue(readTestTools, false);
+  const { user } = useUser();
+  const [loadError, setLoadError] = useState<string | null>(null);
+  const [pending, setPending] = useState(false);
+  const [cards, setCards] = useState<HomeCard[] | null>(null);
+  const saveTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+
+  // Friends see the name and look on my home card: keep them in step with my account.
+  useEffect(() => {
+    if (!user || !meta) return;
+    if (meta.owner.display_name !== user.name || meta.owner.avatar !== myLook) homeApi.card(user.name, myLook).catch(() => null);
+  }, [user, meta, myLook]);
   const built = ROOMS.filter((r) => home.rooms[r.id]);
   const newest = built[built.length - 1] ?? ROOMS[0];
   const next = ROOMS[built.length] ?? null;
@@ -75,6 +97,9 @@ export function BaseScreen() {
   const [editing, setEditing] = useState(false);
   const [sheet, setSheet] = useState<SheetKind>(null);
   const [toast, setToast] = useState<string | null>(null);
+
+  // The server owns the home: show changes from other windows too, but never mid-move or mid-purchase.
+  useLiveHome(editing || pending, 5000, (e) => setLoadError(e instanceof ApiError ? e.message : "Couldn’t load your home."));
 
   useEffect(() => {
     if (!toast) return;
@@ -105,29 +130,64 @@ export function BaseScreen() {
     setEditing(false);
   }
 
-  function setLevels(fn: (lv: number[]) => number[], cost: number) {
-    setState((s) => ({
-      coins: s.coins - cost,
-      home: { ...s.home, rooms: { ...s.home.rooms, [room.id]: fn(levelsOf(room, s.home.rooms[room.id])) } },
-    }));
+  /** Run one paid action on the server; the response replaces the home and coins in the store. */
+  async function run(action: () => Promise<unknown>, then?: () => void) {
+    if (pending) return;
+    setPending(true);
+    try {
+      await flushLayout();
+      await action();
+      then?.();
+    } catch (e) {
+      setToast(homeError(e));
+      if (e instanceof ApiError && e.status === 409) homeApi.mine().catch(() => null);
+    } finally {
+      setPending(false);
+    }
   }
 
-  function setLayout(fn: (l: RoomLayout) => RoomLayout | undefined) {
-    setState((s) => ({ home: { ...s.home, layout: { ...s.home.layout, [room.id]: fn(s.home.layout[room.id] ?? {}) } } }));
+  // Moving furniture is free: show it at once, then save the room's layout once the dragging stops.
+  function setLayout(fn: (l: RoomLayout) => RoomLayout | undefined, saveNow = false) {
+    const id = room.id;
+    setState((s) => ({ home: { ...s.home, layout: { ...s.home.layout, [id]: fn(s.home.layout[id] ?? {}) } } }));
+    if (saveTimer.current) clearTimeout(saveTimer.current);
+    saveTimer.current = setTimeout(() => saveLayout(id), saveNow ? 0 : 700);
+  }
+
+  async function saveLayout(id: RoomId) {
+    saveTimer.current = null;
+    const { home: h } = getState();
+    const def = roomOf(id);
+    try {
+      await homeApi.layout(id, toPlacements(id, levelsOf(def, h.rooms[id]), h.layout[id]));
+    } catch (e) {
+      setToast(homeError(e));
+      homeApi.mine().catch(() => null);
+    }
+  }
+
+  /** Save a waiting layout change first, so a paid action doesn't undo a move. */
+  async function flushLayout() {
+    if (!saveTimer.current) return;
+    clearTimeout(saveTimer.current);
+    await saveLayout(room.id);
   }
 
   function place(i: number) {
     const it = room.items[i];
-    if (coins < PLACE_COST) return setToast(`You need ${PLACE_COST} coins. Earn more with quizzes, flashcards and duels.`);
+    if (coins < PLACE_COST) return setToast(`You need ${PLACE_COST} coins. Earn more with quizzes.`);
     // Put it on a free spot near its usual place, then let the kid drag it where they want.
     const after = levels.map((v, j) => (j === i ? 1 : v));
     const spot = arrangeRoom(room, after, layout).places[i] ?? { at: it.at, rot: 0 };
-    setLevels(() => after, PLACE_COST);
-    setLayout((l) => ({ ...l, [it.id]: spot }));
-    setSheet(null);
-    setSelected(i);
-    setEditing(true);
-    setToast(`Drag the ${it.name.toLowerCase()} where you want it, then tap Done.`);
+    run(
+      () => homeApi.place(room.id, it.id, spot),
+      () => {
+        setSheet(null);
+        setSelected(i);
+        setEditing(true);
+        setToast(`Drag the ${it.name.toLowerCase()} where you want it, then tap Done.`);
+      },
+    );
   }
 
   function levelUp(i: number) {
@@ -135,9 +195,11 @@ export function BaseScreen() {
     const lv = levels[i];
     if (lv >= MAX_LEVEL) return;
     const cost = UPGRADE_COST(lv + 1);
-    if (coins < cost) return setToast(`You need ${cost} coins. Earn more with quizzes, flashcards and duels.`);
-    setLevels((l) => l.map((v, j) => (j === i ? v + 1 : v)), cost);
-    if (it.stages.some((s) => s.from === lv + 1)) setToast(`New look! Your ${it.name.toLowerCase()} reached Lv ${lv + 1}.`);
+    if (coins < cost) return setToast(`You need ${cost} coins. Earn more with quizzes.`);
+    run(
+      () => homeApi.upgrade(room.id, it.id),
+      () => it.stages.some((s) => s.from === lv + 1) && setToast(`New look! Your ${it.name.toLowerCase()} reached Lv ${lv + 1}.`),
+    );
   }
 
   function move(i: number, at: [number, number]) {
@@ -160,11 +222,38 @@ export function BaseScreen() {
     if (!next) return;
     const cost = BUILD_COST(built.length);
     if (coins < cost) return setToast(`The ${next.name.toLowerCase()} costs ${cost} coins.`);
-    setState((s) => ({ coins: s.coins - cost, home: { ...s.home, rooms: { ...s.home.rooms, [next.id]: freshLevels(next) } } }));
-    setSheet(null);
-    look(next.id);
-    setToast(`Welcome to your new ${next.name.toLowerCase()}! Add furniture to make it yours.`);
+    run(homeApi.buildRoom, () => {
+      setSheet(null);
+      look(next.id);
+      setToast(`Welcome to your new ${next.name.toLowerCase()}! Add furniture to make it yours.`);
+    });
   }
+
+  function openFriends() {
+    setSheet("friends");
+    homeApi.homes("friends").then(setCards, () => setCards([]));
+  }
+
+  function topUp() {
+    homeApi.demoTopup(500).then(
+      (c) => setToast(`Added ${c.credited} coins.`),
+      (e) => setToast(e instanceof ApiError && e.status === 404 ? "Demo top-up is off on the server (it needs DEMO_MODE=true)." : homeError(e)),
+    );
+  }
+
+  if (!meta)
+    return (
+      <Page wide>
+        <PageHeader title="My base" sub="One home you build up, room by room" />
+        {loadError ? (
+          <Notice>{loadError}</Notice>
+        ) : (
+          <Card className="flex items-center gap-2.5 p-6 font-extrabold text-muted-foreground" role="status">
+            <Spinner className="text-brand" /> Opening your home…
+          </Card>
+        )}
+      </Page>
+    );
 
   return (
     <Page wide>
@@ -178,10 +267,10 @@ export function BaseScreen() {
                 <Wrench /> <span className="hidden sm:inline">Test</span>
               </Button>
             )}
-            <Button variant="soft" size="pill" onClick={() => setSheet("friends")} aria-label="Visit friends’ homes" className="h-10 px-3">
+            <Button variant="soft" size="pill" onClick={openFriends} aria-label="Visit friends’ homes" className="h-10 px-3">
               <Users /> <span className="hidden sm:inline">Friends</span>
             </Button>
-            <StatChips />
+            <StatChips home />
           </div>
         }
       />
@@ -264,14 +353,22 @@ export function BaseScreen() {
                   size="pill"
                   className="h-12"
                   onClick={() => {
-                    setLayout(() => undefined);
+                    setLayout(() => undefined, true);
                     setToast(`The ${room.name.toLowerCase()} is back to its starting layout.`);
                   }}
                   disabled={!layout}
                 >
                   <Undo2 /> Reset
                 </Button>
-                <Button variant="night" size="pill" className="h-12 px-6 text-[16px]" onClick={() => setEditing(false)}>
+                <Button
+                  variant="night"
+                  size="pill"
+                  className="h-12 px-6 text-[16px]"
+                  onClick={() => {
+                    setEditing(false);
+                    flushLayout();
+                  }}
+                >
                   <Check /> Done
                 </Button>
               </span>
@@ -299,7 +396,7 @@ export function BaseScreen() {
                 <li key={it.id} className="flex flex-col items-center gap-2 rounded-2xl border border-line p-3">
                   <Thumb item={it} level={1} className="h-20 w-full" />
                   <span className="text-[15px] font-black">{it.name}</span>
-                  <Button variant="brand" size="pill" className="h-10 w-full" onClick={() => place(i)} aria-label={`Add ${it.name} for ${PLACE_COST} coins`}>
+                  <Button variant="brand" size="pill" className="h-10 w-full" onClick={() => place(i)} disabled={pending} aria-label={`Add ${it.name} for ${PLACE_COST} coins`}>
                     <Coin size={18} /> {PLACE_COST}
                   </Button>
                 </li>
@@ -350,7 +447,7 @@ export function BaseScreen() {
                   It comes with a {next.items.filter((i) => i.starter).map((i) => i.name.toLowerCase()).join(" and a ")}. Then add up to {next.items.length} pieces of
                   furniture.
                 </span>
-                <Button variant="brand" size="cta" onClick={buyRoom}>
+                <Button variant="brand" size="cta" onClick={buyRoom} disabled={pending}>
                   <Coin /> Buy {next.name.toLowerCase()} · {BUILD_COST(built.length).toLocaleString("en-US")}
                 </Button>
               </>
@@ -400,78 +497,50 @@ export function BaseScreen() {
       </Sheet>
 
       {/* test tools */}
-      <Sheet open={sheet === "test"} onClose={() => setSheet(null)} title="Test tools" sub="For trying out the base. Saved in this browser only.">
-        <button
-          type="button"
-          role="switch"
-          aria-checked={unlimited}
-          onClick={() => setState((s) => ({ unlimitedCoins: !s.unlimitedCoins, coins: s.unlimitedCoins ? s.coins : 999_999 }))}
-          className="flex items-center gap-3 rounded-2xl border border-line p-3 text-left"
-        >
+      <Sheet open={sheet === "test"} onClose={() => setSheet(null)} title="Test tools" sub="Coins come from the server, so these work only when it runs in demo mode.">
+        <button type="button" onClick={topUp} className="flex items-center gap-3 rounded-2xl border border-line p-3 text-left hover:bg-muted">
           <Coin size={28} />
           <span className="flex flex-1 flex-col leading-tight">
-            <span className="text-[15px] font-black">Unlimited coins</span>
-            <span className="text-[13px] font-bold text-muted-foreground">{unlimited ? "On: coins stay topped up" : "Off: coins work as normal"}</span>
-          </span>
-          <span className={cn("relative h-7 w-12 rounded-full transition-colors", unlimited ? "bg-brand" : "bg-input")}>
-            <span className={cn("absolute top-1 size-5 rounded-full bg-white transition-all", unlimited ? "left-6" : "left-1")} />
+            <span className="text-[15px] font-black">Add 500 coins</span>
+            <span className="text-[13px] font-bold text-muted-foreground">Needs DEMO_MODE=true on the learning server</span>
           </span>
         </button>
-        <span className="text-[13px] font-black tracking-[.03em] text-muted-foreground">{room.name.toUpperCase()}</span>
-        <div className="grid grid-cols-2 gap-2">
-          <Button variant="soft" size="pill" onClick={() => setLevels((l) => l.map((v) => Math.max(v, UNLOCK_LEVEL)), 0)}>
-            All items Lv {UNLOCK_LEVEL}
-          </Button>
-          <Button variant="soft" size="pill" onClick={() => setLevels((l) => l.map(() => MAX_LEVEL), 0)}>
-            Max out (Lv {MAX_LEVEL})
-          </Button>
-        </div>
-        <span className="text-[13px] font-black tracking-[.03em] text-muted-foreground">WHOLE HOME</span>
-        <div className="grid grid-cols-2 gap-2">
-          <Button
-            variant="soft"
-            size="pill"
-            onClick={() => setState((s) => ({ home: { ...s.home, rooms: Object.fromEntries(ROOMS.map((r) => [r.id, levelsOf(r, s.home.rooms[r.id])])) } }))}
-          >
-            Build every room
-          </Button>
-          <Button
-            variant="soft"
-            size="pill"
-            onClick={() => {
-              setState({ home: { rooms: { living: freshLevels(ROOMS[0]) }, layout: {} } });
-              look(undefined);
-              setSheet(null);
-              setToast("Back to day one: an old TV and a basic sofa.");
-            }}
-          >
-            Reset to day one
-          </Button>
-        </div>
       </Sheet>
 
       {/* friends */}
       <Sheet open={sheet === "friends"} onClose={() => setSheet(null)} title="Visit friends’ homes" sub="See how their homes are coming along">
-        <ul className="flex flex-col gap-1">
-          {FRIENDS.filter((f) => homeIdOf(f.name)).map((f) => {
-            const id = homeIdOf(f.name)!;
-            const { built: theirs } = homeSummary(FRIEND_HOMES[id]);
-            return (
-              <li key={f.name}>
-                <Link href={`/base/visit/${id}`} className="flex items-center gap-3 rounded-2xl p-2 hover:bg-muted">
-                  <Face id={f.avatar} size={44} tint={AVATARS.find((a) => a.id === f.avatar)?.tint} />
-                  <span className="flex min-w-0 flex-1 flex-col leading-tight">
-                    <span className="text-[16px] font-black">{f.name}</span>
-                    <span className="truncate text-[13px] font-bold text-muted-foreground">
-                      {theirs.length} {theirs.length === 1 ? "room" : "rooms"} · {theirs.map((r) => r.name.toLowerCase()).join(", ")}
+        {cards === null ? (
+          <span className="flex items-center gap-2.5 py-4 font-extrabold text-muted-foreground" role="status">
+            <Spinner className="text-brand" /> Finding your friends’ homes…
+          </span>
+        ) : cards.length === 0 ? (
+          <span className="flex flex-col gap-3 py-2 text-[15px] font-bold text-muted-foreground">
+            No homes to visit yet. Add friends with their friend code, and once they accept you can look around.
+            <Link href="/friends" className="font-black text-brand-ink underline">
+              Go to Friends
+            </Link>
+          </span>
+        ) : (
+          <ul className="flex flex-col gap-1">
+            {cards.map((c) => {
+              const avatar = avatarOf(c.owner.avatar);
+              return (
+                <li key={c.owner.id}>
+                  <Link href={`/base/visit/${c.owner.id}`} className="flex items-center gap-3 rounded-2xl p-2 hover:bg-muted">
+                    <Face id={avatar} size={44} tint={AVATARS.find((a) => a.id === avatar)?.tint} />
+                    <span className="flex min-w-0 flex-1 flex-col leading-tight">
+                      <span className="text-[16px] font-black">{c.owner.display_name}</span>
+                      <span className="truncate text-[13px] font-bold text-muted-foreground">
+                        {c.rooms} {c.rooms === 1 ? "room" : "rooms"} · {c.levels} of {c.max_levels} levels
+                      </span>
                     </span>
-                  </span>
-                  <ChevronRight className="size-5 text-muted-foreground" />
-                </Link>
-              </li>
-            );
-          })}
-        </ul>
+                    <ChevronRight className="size-5 text-muted-foreground" />
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+        )}
       </Sheet>
     </Page>
   );
