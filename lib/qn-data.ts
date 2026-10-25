@@ -24,15 +24,6 @@ export const SUBJECTS: { id: Subject; label: string; room: string; tile: string;
 ];
 export const subjectOf = (id: string) => SUBJECTS.find((s) => s.id === id) ?? SUBJECTS[0];
 
-/** Six levelling items per room (cosmetic only: never affects scores). */
-export const ROOM_ITEMS: Record<Subject, string[]> = {
-  science: ["Robot desk", "Microscope", "Plant shelf", "Solar model", "Chem bench", "Star lamp"],
-  maths: ["Chalkboard", "Abacus", "Shape rug", "Clock", "Bookcase", "Desk"],
-  english: ["Reading sofa", "Bookcase", "Typewriter", "Poster wall", "Rug", "Lamp"],
-  history: ["Knight hall", "Castle model", "Steam train", "Timeline wall", "Display case", "Ship"],
-  geography: ["Globe", "Map table", "Rock collection", "Weather station", "Palm corner", "Compass"],
-};
-
 export type PartyGame = { id: string; name: string; glyph: string; tile: string; ink: string; min: number; players: string; how: string };
 export const PARTY_GAMES: PartyGame[] = [
   { id: "forbidden", name: "Forbidden clues", glyph: "!?", tile: "#fff0e3", ink: "#c25a12", min: 4, players: "4–8", how: "Explain the term without saying the banned words. Your team guesses." },
@@ -45,15 +36,15 @@ export const PARTY_GAMES: PartyGame[] = [
 
 export type Person = { name: string; avatar: AvatarId; status: string; base: string; online: "on" | "away" | "off" };
 export const FRIENDS: Person[] = [
-  { name: "Zara", avatar: "zara", status: "Playing Fact check", base: "History museum · Tier 2", online: "on" },
-  { name: "Mia", avatar: "mia", status: "Studying fractions", base: "Maths workshop · Tier 1", online: "away" },
-  { name: "Leo", avatar: "leo", status: "Just scanned English notes", base: "Reading nook · Tier 1", online: "on" },
-  { name: "Sam", avatar: "sam", status: "Seen 2 hours ago", base: "Explorer’s den · Tier 1", online: "off" },
+  { name: "Zara", avatar: "zara", status: "Playing Fact check", base: "Living room, kitchen, bedroom", online: "on" },
+  { name: "Mia", avatar: "mia", status: "Studying fractions", base: "Living room, kitchen", online: "away" },
+  { name: "Leo", avatar: "leo", status: "Just scanned English notes", base: "Living room", online: "on" },
+  { name: "Sam", avatar: "sam", status: "Seen 2 hours ago", base: "Living room", online: "off" },
 ];
 export const FAMILY: Person[] = [
   { name: "Mom", avatar: "mom", status: "Checking your notes", base: "Parent", online: "on" },
   { name: "Dad", avatar: "dad", status: "Wants a duel after dinner", base: "Parent", online: "away" },
-  { name: "Sam", avatar: "sam", status: "Little brother", base: "Explorer’s den · Tier 1", online: "off" },
+  { name: "Sam", avatar: "sam", status: "Little brother", base: "Living room", online: "off" },
 ];
 
 export type Quest = { id: string; title: string; of: number; reward: number; kind: "daily" | "weekly" };
@@ -67,6 +58,3 @@ export const QUESTS: Quest[] = [
   { id: "w-weak", title: "Practise your weak spots twice", of: 2, reward: 150, kind: "weekly" },
   { id: "w-upload", title: "Learn from 3 uploads", of: 3, reward: 120, kind: "weekly" },
 ];
-
-export const UPGRADE_COST = (nextLevel: number) => 20 * nextLevel;
-export const TIER_UP_COST = 2000;

@@ -49,7 +49,8 @@ export function PlayHub() {
         </div>
         <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2 xl:grid-cols-3">
           {PARTY_GAMES.map((g) => {
-            const ok = players >= g.min;
+            const soloOnly = g.id === "race";
+            const ok = soloOnly ? mode === "solo" : players >= g.min;
             const isOpen = open === g.id;
             return (
               <li key={g.id}>
@@ -60,11 +61,16 @@ export function PlayHub() {
                     </span>
                     <span className="flex min-w-0 flex-1 flex-col leading-tight">
                       <span className="text-[16px] font-black">{g.name}</span>
-                      <span className={cn("text-[13px] font-bold", ok ? "text-muted-foreground" : "text-rose-ink")}>{ok ? `${g.players} players` : `Needs ${g.min}+ players`}</span>
+                      <span className={cn("text-[13px] font-bold", ok ? "text-muted-foreground" : "text-rose-ink")}>{ok ? `${g.players} players` : soloOnly ? "Solo mode only" : `Needs ${g.min}+ players`}</span>
                     </span>
                     <ChevronDown className={cn("size-5 text-muted-foreground transition-transform", isOpen && "rotate-180")} />
                   </button>
-                  {isOpen && <p className="pl-14 text-sm leading-snug font-bold text-muted-foreground">{g.how}</p>}
+                  {isOpen && (
+                    <div className="flex flex-col gap-2 pl-14">
+                      <p className="text-sm leading-snug font-bold text-muted-foreground">{g.how}</p>
+                      {soloOnly && <Link href="/learn" className="self-start rounded-xl bg-brand px-3 py-2 text-sm font-black text-white">Make flashcards</Link>}
+                    </div>
+                  )}
                 </Card>
               </li>
             );
@@ -74,15 +80,9 @@ export function PlayHub() {
       </section>
 
       <Card className="flex items-center gap-3 p-4">
-        <span className="flex" aria-hidden="true">
-          <Face id="zara" size={40} tint="#e6f0fc" ring="#fff" />
-          <Face id="leo" size={40} tint="#fff6dc" ring="#fff" className="-ml-2.5" />
-          <Face id="mia" size={40} tint="#fde9f0" ring="#fff" className="-ml-2.5" />
-        </span>
+        <span className="flex" aria-hidden="true"><Face id="zara" size={40} tint="#e6f0fc" ring="#fff" /><Face id="leo" size={40} tint="#fff6dc" ring="#fff" className="-ml-2.5" /><Face id="mia" size={40} tint="#fde9f0" ring="#fff" className="-ml-2.5" /></span>
         <span className="flex-1 text-[15px] font-extrabold">Play with friends and family</span>
-        <Link href="/friends" className="text-sm font-black text-brand-ink">
-          See all
-        </Link>
+        <Link href="/friends" className="text-sm font-black text-brand-ink">See all</Link>
       </Card>
     </Page>
   );
