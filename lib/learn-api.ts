@@ -1,6 +1,6 @@
 /**
  * Typed browser client for the learning service (OpenAPI "Learning Quiz Agent" 0.1.0),
- * called through the same-origin proxy at /api/learn/*.
+ * called through the same-origin proxy at /api/*.
  */
 
 export type Chapter = { title: string; start: number; end: number };
@@ -98,7 +98,7 @@ const FRIENDLY: Record<number, string> = {
 async function call<T>(path: string, init?: RequestInit): Promise<T> {
   let res: Response;
   try {
-    res = await fetch(`/api/learn/${path}`, { ...init, cache: "no-store" });
+    res = await fetch(`/api/${path}`, { ...init, cache: "no-store" });
   } catch {
     throw new ApiError(0, "You seem to be offline. Check your connection and try again.");
   }
