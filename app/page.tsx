@@ -7,7 +7,6 @@ import { buttonVariants } from "@/components/ui/button";
 import { PARTY_GAMES } from "@/lib/qn-data";
 import { roomOf, type RoomId } from "@/lib/home-data";
 import { cn } from "@/lib/utils";
-import { ThemeToggle } from "@/components/theme-toggle";
 
 const STEPS = [
   { icon: Camera, tint: "bg-brand-soft text-brand-ink", ink: "text-brand-ink", title: "Scan your notes", body: "Snap pages or upload a PDF. QuestNest finds the topics, chapters and pages to study." },
@@ -46,7 +45,6 @@ export default function Landing() {
             <a href="#parents" className="py-2 hover:text-foreground">For parents</a>
           </nav>
           <div className="flex gap-2.5">
-            <ThemeToggle />
             <Link href="/login" className={cn(buttonVariants({ variant: "soft", size: "pill" }), "border-white")}>Log in</Link>
             <Link href="/register" className={cn(buttonVariants({ variant: "brand", size: "pill" }), "hidden sm:inline-flex")}>Get started</Link>
           </div>

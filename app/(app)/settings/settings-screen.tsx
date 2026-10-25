@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { useTheme } from "next-themes";
 import { useClerk } from "@clerk/nextjs";
 import { useClientValue } from "@/lib/use-client-value";
 import Link from "next/link";
@@ -17,7 +16,6 @@ import { homeApi } from "@/lib/home-api";
 import { type QNState, setState, useQN } from "@/lib/store";
 import { logout, useUser } from "@/lib/use-user";
 import { settingsApi, type SocialSettings } from "@/lib/settings-api";
-import { ThemeToggle } from "@/components/theme-toggle";
 
 function parsePrefs(raw: string): Prefs {
   try {
@@ -38,7 +36,6 @@ function Section({ title, children }: { title: string; children: React.ReactNode
 
 export function SettingsScreen() {
   const { user } = useUser();
-  const { setTheme } = useTheme();
   const [error, setError] = useState<string | null>(null);
   const [social, setSocial] = useState<SocialSettings>({ share_presence: true, allow_game_invites: true });
   const saveSocial = (patch: Partial<SocialSettings>) => {
@@ -58,7 +55,7 @@ export function SettingsScreen() {
     }
   }, "");
   const [edited, setEdited] = useState<Prefs | null>(null);
-  useEffect(() => { void settingsApi.load().then((r) => { setSocial(r.social); setEdited(r.profile.preferences); setTheme(r.profile.preferences.theme); }).catch((e) => setError(e.message)); }, [setTheme]);
+  useEffect(() => { void settingsApi.load().then((r) => { setSocial(r.social); setEdited(r.profile.preferences); }).catch((e) => setError(e.message)); }, []);
   const prefs: Prefs = edited ?? parsePrefs(stored);
 
   const set = (patch: Partial<QNState["settings"]>) => {
@@ -138,10 +135,6 @@ export function SettingsScreen() {
             </div>
           </Section>
           <Section title="Accessibility">
-            <div className="flex flex-col gap-2.5 p-3.5">
-              <span className="text-[15px] font-extrabold">Appearance</span>
-              <ThemeToggle expanded />
-            </div>
             <div className="flex flex-col gap-2.5 p-3.5">
               <span className="text-[15px] font-extrabold">Text size</span>
               <Segmented
