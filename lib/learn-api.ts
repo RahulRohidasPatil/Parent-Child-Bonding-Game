@@ -156,6 +156,8 @@ export const learnApi = {
   createLesson: (body: { topic: string; age: number; material_id?: string | null; prefers_visuals?: boolean }) =>
     post<PublicLesson>("lessons", body),
   getLesson: (id: string) => call<PublicLesson>(`lessons/${id}`),
+  /** Scored quizzes (tournaments) need the owner to confirm the lesson first. Lessons made here are revision 1. */
+  approveLesson: (id: string, expected_revision = 1) => post<unknown>(`lessons/${id}/approve`, { expected_revision, confirmed: true }),
   drawVisuals: (id: string, ask?: string) => post<{ visuals: PublicVisual[] }>(`lessons/${id}/visuals`, ask ? { ask } : {}),
 
   /** Free-text answer (message up to 1000 characters). With `material_id` the upload must be confirmed. */

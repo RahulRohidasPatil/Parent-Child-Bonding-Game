@@ -6,7 +6,7 @@ import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Field, Notice, Segmented, Spinner } from "@/components/qn/ui";
-import { resetUserCache } from "@/lib/use-user";
+import { resetUserCache, startSession } from "@/lib/use-user";
 
 type DemoAccount = { email: string; account_type?: string };
 
@@ -69,6 +69,8 @@ export function LoginForm() {
         return;
       }
       resetUserCache();
+      // Gives the account its own learning data; if the learning server is down, pages retry later.
+      await startSession();
       const next = params.get("next");
       router.push(next && next.startsWith("/") && !next.startsWith("//") ? next : "/home");
     } catch (error) {

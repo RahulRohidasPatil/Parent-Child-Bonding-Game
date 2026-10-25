@@ -75,8 +75,11 @@ export function PlayHub() {
 
       <Card className="flex items-center gap-3 p-4">
         <span className="flex" aria-hidden="true"><Face id="zara" size={40} tint="#e6f0fc" ring="#fff" /><Face id="leo" size={40} tint="#fff6dc" ring="#fff" className="-ml-2.5" /><Face id="mia" size={40} tint="#fde9f0" ring="#fff" className="-ml-2.5" /></span>
-        <span className="flex-1 text-[15px] font-extrabold">Play with friends and family</span>
-        <Link href="/friends" className="text-sm font-black text-brand-ink">See all</Link>
+        <span className="flex flex-1 flex-col leading-tight">
+          <span className="text-[15px] font-extrabold">Challenge a friend</span>
+          <span className="text-[13px] font-bold text-muted-foreground">Same quiz, each on your own phone</span>
+        </span>
+        <Link href="/friends" className="text-sm font-black text-brand-ink">Friends</Link>
       </Card>
     </Page>
   );
