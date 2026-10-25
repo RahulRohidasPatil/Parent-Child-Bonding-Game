@@ -1,7 +1,7 @@
 import type { NextRequest } from "next/server";
 import { forwardToLearning } from "@/lib/server/learning-session";
 
-/** Same-origin proxy for the learning service's documented `/api/*` endpoints, as the signed-in player. */
+/** Same-origin proxy for the learning service's documented `/api/*` endpoints. */
 const ALLOWED = /^(materials|lessons|quiz|flashcards|tournament|chat)(\/|$)/;
 
 async function forward(req: NextRequest, ctx: RouteContext<"/api/[...path]">) {
