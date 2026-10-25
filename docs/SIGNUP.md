@@ -1,46 +1,21 @@
-# Signup flow
+# Signup and verification
 
-The signup experience lives at `/signup` and is split into two client-side form steps:
+The active form is `app/(auth)/register/register-form.tsx`; validation is in `lib/registration.ts`. `/signup` leads to registration. Clerk manages credentials and email verification.
 
-1. Personal details, role, date of birth, and email information.
-2. Username, password, and password confirmation.
+The form collects personal details/role/date of birth/email, then username/password/confirmation. Student is stored as `learner`. Profile fields are user-provided Clerk unsafe metadata, not verified age or authority.
 
-The presentation is separated into reusable components:
+| Case | Account/verification email |
+| --- | --- |
+| Learner under 16 | Parent email; own email optional and different if supplied |
+| Learner 16+ | Own email |
+| Parent | Own email; form requires age 16+ |
 
-- `components/signup/signup-header.tsx` — step indicator and page header.
-- `components/signup/signup-field.tsx` — labelled field wrapper, hints, and errors.
-- `app/(auth)/register/register-form.tsx` — form state, Clerk submission, and flow-specific rendering.
+The cutoff is 16. An older under-18 pending-flow description did not match the active form. Validation rejects ages below 5 although the message says ages 10 and up; reconcile that before claiming one enforced minimum.
 
-Shared signup types and helpers are kept in the root shared modules:
+The form calls Clerk `signUp.create`. Complete signup activates the session and initializes learning. Otherwise it starts an email-link flow, opens `/verify` and returns through `/verify/callback`.
 
-- `lib/types.ts` — reusable application types.
-- `lib/utils.ts` — shared utilities, including date-of-birth and signup-mode helpers.
+Using a parent email does not create a parent account or link accounts. Clerk uniqueness can prevent using that address again. Verification and a selected parent label do not establish guardianship or legal consent.
 
-## Clerk behavior
+Family settings expose a separate optional backend approval-request workflow. It records decisions, not Clerk activation or mandatory app-wide consent. Its flags, secret and explicit mail worker belong to the backend.
 
-Parent registration calls Clerk's `signUp.create()` with the parent email, password, username, and
-the existing display name, account type, date of birth, and parent email as user metadata. Clerk
-email verification remains required.
-
-Learners under 16 use the parent's email as the Clerk verification address, so the parent receives
-the verification link. The learner's username and the existing profile fields are stored as Clerk
-user metadata.
-
-Required public environment variables:
-
-```env
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=...
-```
-
-## Testing locally
-
-Run the app with `npm run dev`, then open `/register`.
-
-Test these cases:
-
-- Parent with valid details: the button advances to credentials, then Clerk sends confirmation.
-- Under-18 student: the parent email is required and the request goes to the pending flow.
-- Invalid or incomplete fields: Continue/Create account remains disabled or displays validation errors.
-- Matching learner and parent emails: the request is rejected by client validation.
-
-Do not add service-role keys, SMTP credentials, approval tokens, or learner passwords to client code.
+Check both sides of age 16, invalid dates/emails, duplicate accounts, password mismatch, callback and provider failures when changing this flow. Never log passwords or verification proofs.

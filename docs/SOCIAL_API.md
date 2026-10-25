@@ -59,8 +59,9 @@ Retries replace the cached balance instead of minting another reward. An in-flig
 an old account cannot overwrite the newly selected account's cache.
 The general proxy now supports `/me`, `/homes`, `/shop`, `/rooms`, `/matches`, and `/challenges`,
 including PUT/PATCH and idempotency headers, for existing backend clients.
-Other prototype screens that still modify local learning/home/shop state are separate migrations;
-this change connects the social/live-duel flow and its wallet display.
+Learning, home, shop, quests and supported room-game screens are also connected in this snapshot.
+See [the project guide](PROJECT_GUIDE.md) for current ownership and limits. Study plans and streaks
+still have device-level state.
 
 ## Verification
 

@@ -1,83 +1,70 @@
-# Parent–Child Bonding Game — Features / Frontend
+# QuestNest frontend
 
-### Install on iPhone or iPad
+QuestNest turns schoolwork into lessons, visual explanations, quizzes, flashcards and games with friends or family. Learners earn coins for a personal base and character items.
 
-Open the deployed HTTPS site in Safari, choose **Share → Add to Home Screen**, keep
-**Open as Web App** enabled when shown, and tap **Add**. QuestNest has a dedicated
-Home Screen icon and opens in its own window. An internet connection is required for
-sign-in, learning content and multiplayer. The app manifest starts at `/home`; signed-out
-visitors follow the normal sign-in flow.
+**Start with the [project guide](docs/PROJECT_GUIDE.md)** for the whole system, main journeys, data ownership and current limits.
 
-Learning and party games for friends, parents, and children. This repository owns the Next.js
-frontend, UI assets, and product feature plan.
+## Run locally
 
-- [Product and feature plan](docs/PRODUCT_PLAN.md)
-- [Backend repository](https://github.com/Vl4dC/Parent-Child-Bonding-Game-Backend)
-- [API documentation](https://github.com/Vl4dC/Parent-Child-Bonding-Game-Backend/blob/main/API.md)
-
-## Run the frontend
+Use Node.js 22 (as in CI) and npm:
 
 ```sh
 npm ci
-cp .env.example .env.local   # add the Clerk keys from the Clerk Dashboard
-npm run dev
+cp .env.example .env.local
 ```
 
-Open http://localhost:3000. Start the learning service from the
-[backend repository](https://github.com/Vl4dC/Parent-Child-Bonding-Game-Backend) first:
+Set real Clerk keys and the backend origin in `.env.local`:
 
-| Service | Default URL | Start (from the backend repo) |
-| --- | --- | --- |
-| Learning service (`learning-service/`) | `http://127.0.0.1:8001` | `uv run serve.py --local --port 8001` (it defaults to 8000, so move it) |
+```dotenv
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=pk_test_...
+CLERK_SECRET_KEY=sk_test_...
+LEARNING_API_URL=http://127.0.0.1:8001
+```
 
-The browser only talks to this Next.js app. Route handlers proxy to the services, so no CORS
-setup is needed and Clerk manages the browser session:
+Start FastAPI from the [backend repository](https://github.com/Vl4dC/Parent-Child-Bonding-Game-Backend), following its README, then run `npm run dev`. Open [localhost:3000](http://localhost:3000). Browser calls go through Next.js server proxies. Never put server secrets in public variables.
 
-- `/api/auth/me` → current Clerk user data for the app
-- `/api/learn/*` → learning service `/api/*` (materials, lessons, quiz, flashcards, tournament); signed-in users only
+Friends/live duels additionally need the backend Clerk issuer and authorized origins, plus these custom Clerk session claims:
 
-### Pages, in flow order
+```json
+{
+  "player_id": "{{user.public_metadata.player_id}}",
+  "username": "{{user.username}}"
+}
+```
 
-| Route | Screen | Data |
-| --- | --- | --- |
-| `/` | Landing | static |
-| `/register` → `/verify` | Create account (role, date of birth, age-based email rules), then the Clerk verification link | Clerk |
-| `/login` | Username/email + password, parent or student tab | Clerk |
-| `/home` | Dashboard | local + recent lessons |
-| `/learn/new` | Choose subject, upload pages or type a topic | learning API |
-| `/learn/material/[id]` | Check what was read, pick chapter/pages, preview | learning API |
-| `/learn/lesson/[id]` | Lesson, diagrams, key points | learning API |
-| `/learn/quiz/[id]` | Practice quiz, weak-spot follow-up and mistake cards | learning API |
-| `/learn/flashcards/[id]` | Flashcard review loop | learning API |
-| `/learn` | My lessons, practice and uploads | local list of server ids |
-| `/play`, `/play/duel` | Games; pass-the-phone duel on the tournament API | learning API |
-| `/base`, `/shop`, `/quests`, `/friends`, `/profile`, `/settings` | Rewards, looks, quests, people, preferences | local prototype state |
+The frontend assigns a player UUID on first use. Refresh the session after changing token configuration.
 
-Layouts are responsive: phone tab bar below 768 px, tablet side rail from 768 px, desktop
-sidebar from 1280 px.
+## Documentation
 
-### Known gaps (need backend work)
+| Guide | Covers |
+| --- | --- |
+| [Project guide](docs/PROJECT_GUIDE.md) | Product, full architecture, journeys, status and limits |
+| [Frontend architecture](docs/FRONTEND_ARCHITECTURE.md) | Routes, state, proxies and rendering |
+| [Development](docs/DEVELOPMENT.md) | Setup, checks and troubleshooting |
+| [Decisions](docs/DECISIONS.md) | Reasons, tradeoffs and when to revisit choices |
+| [Sessions](docs/SESSION.md) | Accounts, player UUIDs and trust |
+| [Signup](docs/SIGNUP.md) | Registration and verification |
+| [Social integration](docs/SOCIAL_API.md) | Friends, presence and live duels |
+| [Acceptance journeys](docs/INTEGRATION_TESTING.md) | Manual and optional integration checks |
+| [Product plan](docs/PRODUCT_PLAN.md) | Backlog and direction |
 
-- **Backend token validation:** the frontend now uses Clerk for username/email login, verification,
-  and sessions. The backend must validate Clerk JWTs before accepting protected API requests.
-- **Under-16 accounts** are registered to the parent's email, so the parent receives the verification link.
-  A parent can't also use that email for their own account; guardian links need an API.
-- Date of birth and username are stored in Clerk user metadata; age is also kept in the browser
-  for lesson reading level.
-- Coins, base, quests, looks, friends and settings live in `localStorage` until there are APIs.
-  Lessons, quizzes and decks live in the learning service's memory and vanish when it restarts.
-- Party games other than the family duel are listed as "coming soon".
+## Checks
 
-## Backend ownership
+```sh
+npx eslint app components lib tests vitest.config.mts
+npm test
+npm run typecheck
+npm run build
+```
 
-FastAPI authentication integration, environment templates, Python dependencies, backend tests,
-CI, and backend setup documentation are maintained in the separate backend repository.
-Follow its README to run the API locally. Implement new endpoints and persistence there.
+Optional real-FastAPI fixture tests skip unless configured. Ordinary checks do not verify real accounts, paid model quality or deployment configuration.
 
-## FastAPI social connection
+## Current boundaries
 
-Friends, presence and live duels now use the FastAPI backend through the authenticated `/api/social/*`
-proxy. Configure `LEARNING_API_URL`, the backend's Clerk issuer/origins, and signed session claims as
-shown in [docs/SOCIAL_API.md](docs/SOCIAL_API.md). The local social JSON stand-in is no longer used.
-Completed duel balances are read from the backend wallet. Run `npm test`, `npm run typecheck` and
-`npm run build` to validate the frontend connection.
+The frontend requires sign-in. FastAPI verifies Clerk tokens only on `/api/social`; other endpoints use an unverified player selector. Wallet, shop, quests, home, saved learning and supported room games are connected. Study plans and streaks retain device-level state. Weekly standings are examples. Optional diagram races and approval requests need backend flags/dependencies; approval does not establish family access. Modular clothes are saved, but the preview still renders whole looks.
+
+## Install on iPhone or iPad
+
+Open the HTTPS site in Safari → **Share → Add to Home Screen**, keep **Open as Web App** enabled when offered, and tap **Add**. The manifest opens `/home`. Internet is required for sign-in, server content and multiplayer; installation does not provide offline synchronization.
+
+Documentation snapshot: frontend `67b663f`, backend `a85ec74`, 25 October 2026. Frontend remote fetch failed; the project guide identifies the local launch snapshot.
