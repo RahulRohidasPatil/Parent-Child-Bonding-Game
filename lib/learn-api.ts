@@ -48,6 +48,8 @@ export type PublicLesson = {
   age: number;
   source?: LessonSource | null;
   visuals: PublicVisual[];
+  revision?: number;
+  status?: string;
 };
 export type PublicQuestion = {
   index: number;
@@ -119,7 +121,7 @@ async function call<T>(path: string, init?: RequestInit): Promise<T> {
       /* not JSON */
     }
     // 422 carries the useful reason (e.g. "the book doesn't cover that"); others get a friendly line.
-    const msg = res.status === 422 && detail ? detail : FRIENDLY[res.status] || detail || "Something went wrong. Try again.";
+    const msg = detail || FRIENDLY[res.status] || "Something went wrong. Try again.";
     throw new ApiError(res.status, msg);
   }
   if (res.status === 204) return undefined as T;
@@ -133,9 +135,12 @@ const put = <T>(path: string, body: unknown) =>
 
 /** Shared JSON transport for the server-owned home, wallet and other app resources. */
 export const http = {
+  request: call,
   get: <T>(path: string) => call<T>(path),
   post,
+  postKey: <T>(path: string, body: unknown, key: string) => call<T>(path, { method: "POST", headers: { "Content-Type": "application/json", "Idempotency-Key": key }, body: JSON.stringify(body) }),
   put,
+  patch: <T>(path: string, body: unknown) => call<T>(path, { method: "PATCH", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) }),
   del: <T>(path: string) => call<T>(path, { method: "DELETE" }),
 };
 
@@ -176,10 +181,20 @@ export const learnApi = {
     age: number;
     material_id?: string | null;
     mode?: "auto" | "pdf_only";
+    conversation_id?: string;
     history?: { role: "user" | "assistant"; content: string }[]; // stateless: send recent turns, oldest first
   }) => post<ChatOut>("chat", body),
 
+  imageChat: async (file: File, message: string, age: number, conversation_id: string) => {
+    const body = new FormData(); body.append("images", file); body.append("message", message); body.append("age", String(age)); body.append("conversation_id", conversation_id);
+    const result = await call<{ answer: string }>("chat/image", { method: "POST", body });
+    return { answer: result.answer, used_pdf: false, pages: [], label: "Picture", mode: "auto" as const };
+  },
   createQuiz: (lessonId: string, num_questions = 5) => post<PublicQuiz>(`lessons/${lessonId}/quiz`, { num_questions }),
+  quizProgress: (id: string) => call<{ answered: number; total: number; status: string; next_index: number | null; answers: { index: number; choice: number; correct: boolean }[] }>(`quiz/${id}/progress`),
+  answerQuiz: (id: string, index: number, choice: number, expected_answered: number) => call<{ feedback: CheckOut }>(`quiz/${id}/answers`, { method: "POST", headers: { "Content-Type": "application/json", "Idempotency-Key": `answer-${id}-${index}` }, body: JSON.stringify({ index, choice, expected_answered }) }),
+  finishQuiz: (id: string, expected_answered: number) => post(`quiz/${id}/finish`, { expected_answered }),
+  retryQuiz: (id: string, which: "all" | "missed", key: string) => call<PublicQuiz>(`quiz/${id}/retry`, { method: "POST", headers: { "Content-Type": "application/json", "Idempotency-Key": key }, body: JSON.stringify({ which }) }),
   getQuiz: (id: string) => call<PublicQuiz>(`quiz/${id}`),
   check: (quizId: string, index: number, choice: number) => post<CheckOut>(`quiz/${quizId}/check`, { index, choice }),
   followup: (quizId: string, num_questions?: number) =>
@@ -188,9 +203,19 @@ export const learnApi = {
 
   createDeck: (lessonId: string, num_cards = 8) => post<PublicDeck>(`lessons/${lessonId}/flashcards`, { num_cards }),
   getDeck: (id: string) => call<PublicDeck>(`flashcards/${id}`),
-  review: (deckId: string, card: number, result: "know" | "again") =>
-    post<DeckState>(`flashcards/${deckId}/review`, { card, result }),
+  review: (deckId: string, card: number, result: "know" | "again", expected_reviews?: number) =>
+    call<DeckState>(`flashcards/${deckId}/review`, { method: "POST", headers: { "Content-Type": "application/json", "Idempotency-Key": `review-${deckId}-${expected_reviews ?? 0}-${card}` }, body: JSON.stringify({ card, result, ...(expected_reviews !== undefined ? { expected_reviews } : {}) }) }),
 
+  completeLesson: (id: string) => post<{ lesson_id: string; completed_at: string }>(`lessons/${id}/complete`, {}),
+  async prepareTournament(lessonId: string, count: number) {
+    const lesson = await learnApi.getLesson(lessonId);
+    await learnApi.approveLesson(lessonId, lesson.revision ?? 1);
+    const quiz = await learnApi.createTournament(lessonId, count);
+    await post(`tournament/${quiz.id}/approve`, { expected_revision: 1, confirmed: true });
+    return quiz;
+  },
+  submitDuel: (id: string, answers: [number[], number[]]) => post<{ players: [SubmitOut, SubmitOut]; reward_coins: number }>(`tournament/${id}/duel`, { answers }),
+  restartDeck: (id: string, expected_reviews: number, key: string) => call<PublicDeck>(`flashcards/${id}/restart`, { method: "POST", headers: { "Content-Type": "application/json", "Idempotency-Key": key }, body: JSON.stringify({ expected_reviews }) }),
   createTournament: (lesson_id: string, num_questions = 5) => post<PublicQuiz>("tournament", { lesson_id, num_questions }),
   getTournament: (id: string) => call<PublicQuiz>(`tournament/${id}`),
   submitTournament: (id: string, answers: number[]) => post<SubmitOut>(`tournament/${id}/submit`, { answers }),

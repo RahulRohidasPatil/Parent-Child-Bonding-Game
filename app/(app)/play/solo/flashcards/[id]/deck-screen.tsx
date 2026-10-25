@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { Flame, PartyPopper, RotateCw, Volume2, X } from "lucide-react";
 import { Page } from "@/components/qn/app-shell";
 import { Sprite } from "@/components/qn/sprite";
@@ -9,30 +10,12 @@ import { VisualFrame } from "@/components/qn/visual-frame";
 import { Card, Notice, PageHeader, ProgressBar, Spinner } from "@/components/qn/ui";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { ApiError, type DeckState, type PublicDeck, learnApi } from "@/lib/learn-api";
-import { bump, markStudiedToday } from "@/lib/store";
+import { markStudiedToday } from "@/lib/store";
 import { cn } from "@/lib/utils";
-
-type CachedDeck = { deck: PublicDeck; state: DeckState };
-const cacheKey = (id: string) => `qn.flashcards.${id}`;
-function readCachedDeck(id: string): CachedDeck | null {
-  if (typeof window === "undefined") return null;
-  try {
-    const value = JSON.parse(localStorage.getItem(cacheKey(id)) || "null") as CachedDeck | null;
-    return value?.deck && value.state ? value : null;
-  } catch {
-    return null;
-  }
-}
-function writeCachedDeck(deck: PublicDeck, state: DeckState) {
-  try {
-    localStorage.setItem(cacheKey(deck.id), JSON.stringify({ deck, state } satisfies CachedDeck));
-  } catch {
-    /* best effort */
-  }
-}
 
 /** Flashcards with the server-side review loop: `know` retires a card, `again` brings it back later. */
 export function DeckScreen({ id }: { id: string }) {
+  const router = useRouter();
   const [deck, setDeck] = useState<PublicDeck | null>(null);
   const [state, setDeckState] = useState<DeckState | null>(null);
   const [flipped, setFlipped] = useState(false);
@@ -40,22 +23,13 @@ export function DeckScreen({ id }: { id: string }) {
   const [loadError, setLoadError] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [streak, setStreak] = useState(0);
-  const [localOnly, setLocalOnly] = useState(false);
 
   const loadDeck = useCallback(() => {
-    const cached = readCachedDeck(id);
-    if (cached) {
-      setDeck(cached.deck);
-      setDeckState(cached.state);
-      setLocalOnly(true);
-      return;
-    }
     learnApi
       .getDeck(id)
       .then((d) => {
         setDeck(d);
         setDeckState(d.state);
-        writeCachedDeck(d, d.state);
       })
       .catch((e) => setLoadError(e instanceof ApiError ? e.message : "Couldn’t load the flashcards."));
   }, [id]);
@@ -75,20 +49,10 @@ export function DeckScreen({ id }: { id: string }) {
     setSending(result);
     setError(null);
     try {
-      const s = localOnly
-        ? {
-            next: result === "know" && state.known + 1 >= state.total ? null : (state.next + 1) % state.total,
-            known: result === "know" ? state.known + 1 : state.known,
-            total: state.total,
-            reviews: state.reviews + 1,
-            hard: result === "again" && !state.hard.includes(state.next) ? [...state.hard, state.next] : state.hard,
-          }
-        : await learnApi.review(deck.id, state.next, result);
+      const s = await learnApi.review(deck.id, state.next, result, state.reviews);
       setDeckState(s);
-      writeCachedDeck(deck, s);
       setFlipped(false);
       setStreak((current) => (result === "know" ? current + 1 : 0));
-      bump(["d-cards"]);
       markStudiedToday();
     } catch (e) {
       setError(e instanceof ApiError ? e.message : "Couldn’t save that. Try again.");
@@ -99,12 +63,12 @@ export function DeckScreen({ id }: { id: string }) {
 
   async function restart() {
     if (!deck) return;
-    const reset: DeckState = { next: deck.cards[0]?.index ?? null, known: 0, total: deck.cards.length, reviews: 0, hard: [] };
-    setLocalOnly(true);
-    setDeckState(reset);
-    setFlipped(false);
-    setStreak(0);
-    writeCachedDeck(deck, reset);
+    setError(null);
+    try {
+      const fresh = await learnApi.restartDeck(deck.id, state?.reviews ?? 0, `restart-${deck.id}-${state?.reviews ?? 0}`);
+      router.replace(`/play/solo/flashcards/${fresh.id}`);
+    } catch (e) { setError(e instanceof Error ? e.message : "Couldn’t restart the cards."); }
+
   }
 
   if (loadError)

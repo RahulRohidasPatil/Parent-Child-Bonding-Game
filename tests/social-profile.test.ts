@@ -1,9 +1,10 @@
 import { beforeEach, expect, it, vi } from "vitest";
-const calls = vi.hoisted(() => ({ saveMe: vi.fn(), presence: vi.fn() }));
+const calls = vi.hoisted(() => ({ saveMe: vi.fn(), presence: vi.fn(), put: vi.fn() }));
+vi.mock("../lib/learn-api", () => ({ http: { put: calls.put } }));
 vi.mock("../lib/social-api", () => ({ socialApi: calls }));
 import { createSocialHeartbeat } from "../lib/social-profile";
 const profile = { display_name: "Alice", avatar: "nova" as const, role: "learner" as const };
-beforeEach(() => { vi.clearAllMocks(); calls.saveMe.mockResolvedValue({}); calls.presence.mockResolvedValue({ heartbeat_s: 20, online_window_s: 45, invites: [] }); });
+beforeEach(() => { vi.clearAllMocks(); calls.saveMe.mockResolvedValue({}); calls.put.mockResolvedValue({}); calls.presence.mockResolvedValue({ heartbeat_s: 20, online_window_s: 45, invites: [] }); });
 
 it("retries failed registration before sending any presence", async () => {
   calls.saveMe.mockRejectedValueOnce(new Error("temporarily unavailable"));

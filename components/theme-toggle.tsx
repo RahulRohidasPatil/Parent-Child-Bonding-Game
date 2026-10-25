@@ -1,5 +1,8 @@
 "use client";
 
+import { useState } from "react";
+import { settingsApi } from "@/lib/settings-api";
+import { useUser } from "@/lib/use-user";
 import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 import { useClientValue } from "@/lib/use-client-value";
@@ -8,6 +11,8 @@ import { cn } from "@/lib/utils";
 /** Uses the resolved device theme until the user saves a light/dark preference. */
 export function ThemeToggle({ expanded = false, className }: { expanded?: boolean; className?: string }) {
   const { resolvedTheme, setTheme } = useTheme();
+  const { user } = useUser();
+  const [error, setError] = useState<string | null>(null);
   const mounted = useClientValue(() => true, false);
   const isDark = mounted && resolvedTheme === "dark";
 
@@ -18,7 +23,12 @@ export function ThemeToggle({ expanded = false, className }: { expanded?: boolea
       aria-label="Dark mode"
       aria-checked={isDark}
       disabled={!mounted}
-      onClick={() => setTheme(isDark ? "light" : "dark")}
+      title={error ?? undefined}
+      onClick={() => {
+        const theme = isDark ? "light" : "dark";
+        setTheme(theme); setError(null);
+        if (user) void settingsApi.save({ preferences: { theme } }).catch(() => setError("Changed on this device; could not save to your account yet."));
+      }}
       className={cn("flex h-11 shrink-0 cursor-pointer items-center rounded-xl text-foreground focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring disabled:cursor-wait", expanded ? "w-full justify-between gap-3 border border-input bg-card px-3 hover:bg-muted" : "w-[50px] justify-center", className)}
     >
       {expanded && <span className="text-sm font-extrabold">Dark mode</span>}

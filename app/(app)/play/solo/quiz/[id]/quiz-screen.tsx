@@ -10,20 +10,14 @@ import { Card, Coin, Notice, PageHeader, ProgressBar, Spinner, Working } from "@
 import { Button, buttonVariants } from "@/components/ui/button";
 import { ApiError, type CheckOut, type PublicQuiz, learnApi } from "@/lib/learn-api";
 import { homeApi } from "@/lib/home-api";
-import { bump, getState, markStudiedToday, remember } from "@/lib/store";
+import { getState, markStudiedToday, remember } from "@/lib/store";
+import { economyApi } from "@/lib/economy-api";
+import { refreshWallet } from "@/lib/wallet-api";
 import { cn } from "@/lib/utils";
 
 type Answer = { choice: number; result: CheckOut };
 const KEYS = "ABCDEFGH";
 const COINS_PER_RIGHT = 10; // what the server pays per first-try-correct answer
-
-function loadAnswers(id: string): Record<number, Answer> {
-  try {
-    return JSON.parse(sessionStorage.getItem(`qn.quiz.${id}`) || "{}");
-  } catch {
-    return {};
-  }
-}
 
 /** Practice quiz: one question at a time; the server reveals each answer after you commit. */
 export function QuizScreen({ id }: { id: string }) {
@@ -39,17 +33,15 @@ export function QuizScreen({ id }: { id: string }) {
   const [paid, setPaid] = useState<number | null>(null); // home coins credited; -1 if the claim failed
 
   useEffect(() => {
-    learnApi
-      .getQuiz(id)
-      .then((q) => {
-        const saved = loadAnswers(id);
-        setQuiz(q);
-        setAnswers(saved);
-        const firstOpen = q.questions.findIndex((x) => !saved[x.index]);
-        if (firstOpen === -1) setDone(true);
-        else setIdx(firstOpen);
-      })
-      .catch((e) => setLoadError(e instanceof ApiError ? e.message : "Couldn’t load the quiz."));
+    let live = true;
+    Promise.all([learnApi.getQuiz(id), learnApi.quizProgress(id)]).then(async ([q, progress]) => {
+      const saved: Record<number, Answer> = {};
+      await Promise.all(progress.answers.map(async (a) => { saved[a.index] = { choice: a.choice, result: await learnApi.check(id, a.index, a.choice) }; }));
+      if (!live) return;
+      setQuiz(q); setAnswers(saved); setDone(progress.answered === progress.total);
+      setIdx(progress.next_index ?? 0);
+    }).catch((e) => live && setLoadError(e instanceof Error ? e.message : "Couldn’t load the quiz."));
+    return () => { live = false; };
   }, [id]);
 
   const total = quiz?.questions.length ?? 0;
@@ -57,18 +49,18 @@ export function QuizScreen({ id }: { id: string }) {
   const right = Object.values(answers).filter((a) => a.result.correct).length;
   const wrong = answered - right;
 
-  // Home coins come from the server, which pays each first-try-correct answer once, however often this runs.
+  // Completion and both reward components are persisted and idempotent on the backend.
   useEffect(() => {
     if (!done || !quiz) return;
     let live = true;
-    homeApi.claimQuiz(quiz.id).then(
-      (c) => live && setPaid(c.credited),
-      () => live && setPaid(-1),
-    );
-    return () => {
-      live = false;
-    };
-  }, [done, quiz]);
+    (async () => {
+      await learnApi.finishQuiz(quiz.id, answered);
+      const [correct, participation] = await Promise.all([homeApi.claimQuiz(quiz.id), economyApi.participation("quiz", quiz.id)]);
+      await refreshWallet();
+      if (live) setPaid(correct.credited + participation.credited);
+    })().catch(() => live && setPaid(-1));
+    return () => { live = false; };
+  }, [done, quiz, answered]);
 
   // Quest progress and the recent list, once per quiz, when it is finished.
   useEffect(() => {
@@ -79,7 +71,6 @@ export function QuizScreen({ id }: { id: string }) {
     } catch {
       /* without storage, quest progress may repeat after reload; acceptable for a prototype */
     }
-    bump(["d-quiz"], answered);
     markStudiedToday();
     const r = getState().recent.find((x) => x.kind === "quiz" && x.id === id);
     remember({ kind: "quiz", id, title: quiz.title, lessonId: quiz.lesson_id, subject: r?.subject, detail: `Scored ${right}/${total}` });
@@ -92,7 +83,7 @@ export function QuizScreen({ id }: { id: string }) {
     setChecking(choice);
     setError(null);
     try {
-      const result = await learnApi.check(quiz.id, q.index, choice);
+      const { feedback: result } = await learnApi.answerQuiz(quiz.id, q.index, choice, answered);
       const next = { ...answers, [q.index]: { choice, result } };
       setAnswers(next);
       try {
@@ -123,7 +114,6 @@ export function QuizScreen({ id }: { id: string }) {
       if (kind === "followup") {
         const f = await learnApi.followup(quiz.id);
         remember({ kind: "quiz", id: f.id, title: `Weak spots: ${quiz.title}`, lessonId: quiz.lesson_id, subject, detail: f.focus?.join(", ") });
-        bump(["w-weak"]);
         router.push(`/play/solo/quiz/${f.id}`);
       } else {
         const d = await learnApi.mistakesDeck(quiz.id, "missed");
@@ -139,7 +129,8 @@ export function QuizScreen({ id }: { id: string }) {
   if (loadError)
     return (
       <Page className="max-w-[760px]">
-        <PageHeader title="Quiz" back={{ href: "/learn", label: "Back to Learn" }} />
+        <Link href={`/play/solo/quiz/${id}/review`} className="font-bold text-brand-ink">Review questions and attempt history</Link>
+      <PageHeader title="Quiz" back={{ href: "/learn", label: "Back to Learn" }} />
         <Notice>{loadError}</Notice>
       </Page>
     );
@@ -163,7 +154,8 @@ export function QuizScreen({ id }: { id: string }) {
     const pct = total ? Math.round((right / total) * 100) : 0;
     return (
       <Page className="max-w-[860px]">
-        <PageHeader title="Quiz complete" sub={quiz.title} back={{ href: `/learn/lesson/${quiz.lesson_id}`, label: "Back to the lesson" }} />
+        <Link href={`/play/solo/quiz/${id}/review`} className="font-bold text-brand-ink">Review questions and attempt history</Link>
+      <PageHeader title="Quiz complete" sub={quiz.title} back={{ href: `/learn/lesson/${quiz.lesson_id}`, label: "Back to the lesson" }} />
         <Card className="flex flex-col items-center gap-2 p-6 text-center">
           <span className="text-[44px] leading-none font-black">
             {right}/{total}

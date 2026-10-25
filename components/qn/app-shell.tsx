@@ -45,6 +45,7 @@ function PathAware({ render }: { render: (path: string) => React.ReactNode }) {
 }
 
 export function AppShell({ children }: { children: React.ReactNode }) {
+  const { user } = useUser();
   return (
     <div className="flex min-h-dvh w-full">
       <a href="#content" className="sr-only z-50 rounded-xl bg-card px-4 py-2 font-black focus:not-sr-only focus:fixed focus:top-3 focus:left-3">
@@ -52,7 +53,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
       </a>
       <PathAware render={(path) => <Rail path={path} />} />
       <PathAware render={(path) => <Sidebar path={path} />} />
-      <main id="content" className="flex min-w-0 flex-1 flex-col pb-28 md:pb-8">
+      <main key={user?.id ?? "signed-out"} id="content" className="flex min-w-0 flex-1 flex-col pb-28 md:pb-8">
         <div className="flex justify-end px-4 pt-3 md:hidden"><ThemeToggle /></div>
         {children}
       </main>

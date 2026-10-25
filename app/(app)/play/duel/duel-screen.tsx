@@ -10,9 +10,10 @@ import { Face, Sprite, Stage } from "@/components/qn/sprite";
 import { Card, Coin, EmptyState, Field, Notice, PageHeader, Segmented, Working } from "@/components/qn/ui";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { ApiError, type PublicQuiz, type SubmitOut, learnApi } from "@/lib/learn-api";
-import { addCoins, bump, markStudiedToday, remember, useQN } from "@/lib/store";
+import { markStudiedToday, remember, useQN } from "@/lib/store";
 import { useUser } from "@/lib/use-user";
 import { AVATARS, type AvatarId } from "@/lib/qn-data";
+import { economyApi } from "@/lib/economy-api";
 import { cn } from "@/lib/utils";
 
 type Player = { name: string; avatar: AvatarId };
@@ -56,7 +57,7 @@ export function DuelScreen() {
     setError(null);
     setPhase("creating");
     try {
-      const t = await learnApi.createTournament(lessonId, Number(count));
+      const t = await learnApi.prepareTournament(lessonId, Number(count));
       setQuiz(t);
       setSheets([[], []]);
       setTurn(0);
@@ -90,11 +91,11 @@ export function DuelScreen() {
     if (!quiz) return;
     setPhase("scoring");
     try {
-      const [a, b] = await Promise.all([learnApi.submitTournament(quiz.id, s[0]), learnApi.submitTournament(quiz.id, s[1])]);
+      const { players: [a, b] } = await learnApi.submitDuel(quiz.id, s);
+      await economyApi.claimDuel(quiz.id);
       setResults([a, b]);
       setPhase("results");
-      addCoins(a.score * 10 + 20);
-      bump(["d-duel", "w-duels"]);
+
       markStudiedToday();
       remember({ kind: "duel", id: quiz.id, title: `Duel: ${lessonTitle}`, lessonId, detail: `${players[0].name} ${a.score} · ${players[1].name} ${b.score}` });
     } catch (e) {

@@ -25,6 +25,7 @@ export type RecentItem = {
 export type QNState = {
   look: AvatarId;
   pet: PetId | null;
+  equipped: Record<string, string | null>;
   owned: string[]; // looks and pets bought in the shop
   /** Shop coins: kept in this browser (shop, duels, quests). Home coins live on the server, in `homeMeta`. */
   coins: number;
@@ -64,6 +65,7 @@ export const DEFAULT_STATE: QNState = {
   look: "nova",
   pet: "cat",
   owned: ["nova", "cat"],
+  equipped: { look: "nova", pet: "cat" },
   coins: 240,
   serverCoins: null,
   streakDays: 0,
@@ -244,7 +246,7 @@ export function updateChat(id: string, fn: (c: ChatState) => ChatState) {
     const cur = s.chats.find((c) => c.id === id) ?? { ...EMPTY_CHAT, id, title: "New chat", updatedAt: Date.now() };
     const next = fn(cur);
     if (next.messages.length === 0 && !s.chats.some((c) => c.id === id)) return {};
-    const chat: Conversation = { ...cur, ...next, messages: next.messages.slice(-CHAT_KEEP), title: titleOf(next), updatedAt: Date.now() };
+    const chat: Conversation = { ...cur, ...next, messages: next.messages.slice(-CHAT_KEEP), title: cur.serverId && cur.title ? cur.title : titleOf(next), updatedAt: Date.now() };
     return { chats: [chat, ...s.chats.filter((c) => c.id !== id)].slice(0, CHATS_KEEP) };
   });
 }

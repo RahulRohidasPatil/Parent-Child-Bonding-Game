@@ -10,6 +10,7 @@ import { Notice } from "@/components/qn/ui";
 import { Button } from "@/components/ui/button";
 import { type Duel, SocialError, msUntil, socialApi } from "@/lib/social-api";
 import { createSocialHeartbeat } from "@/lib/social-profile";
+import { economyApi } from "@/lib/economy-api";
 import { refreshWallet } from "@/lib/wallet-api";
 import { useQN } from "@/lib/store";
 import { useUser } from "@/lib/use-user";
@@ -62,6 +63,7 @@ export function Presence() {
     };
     void beat();
     void refreshWallet().catch(() => undefined);
+    void economyApi.inventory().catch(() => undefined);
     document.addEventListener("visibilitychange", onVisible);
     window.addEventListener("pagehide", socialApi.leave);
     return () => {

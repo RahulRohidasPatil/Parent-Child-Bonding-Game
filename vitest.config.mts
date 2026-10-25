@@ -3,5 +3,5 @@ import { defineConfig } from "vitest/config";
 
 export default defineConfig({
   resolve: { alias: { "@": fileURLToPath(new URL("./", import.meta.url)), "server-only": fileURLToPath(new URL("./tests/server-only.ts", import.meta.url)) } },
-  test: { environment: "node", include: ["tests/**/*.test.ts"], clearMocks: true, restoreMocks: true, unstubGlobals: true },
+  test: { environment: "node", include: ["tests/**/*.test.{ts,tsx}"], clearMocks: true, restoreMocks: true, unstubGlobals: true },
 });

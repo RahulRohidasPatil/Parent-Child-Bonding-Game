@@ -1,9 +1,11 @@
 "use client";
 
 import Link from "next/link";
+import { useEffect, useState } from "react";
+import { refreshLibrary } from "@/lib/library-api";
 import { BookOpen, ChevronRight, FileText, Layers, ListChecks, Plus, Swords, X } from "lucide-react";
 import { Page } from "@/components/qn/app-shell";
-import { Card, EmptyState, PageHeader } from "@/components/qn/ui";
+import { Card, EmptyState, Notice, PageHeader } from "@/components/qn/ui";
 import { buttonVariants } from "@/components/ui/button";
 import { forget, useQN, type RecentItem } from "@/lib/store";
 import { subjectOf } from "@/lib/qn-data";
@@ -19,6 +21,8 @@ const KIND = {
 } as const;
 
 export function LearnHub() {
+  const [error, setError] = useState<string | null>(null);
+  useEffect(() => { void refreshLibrary().catch((e) => setError(e.message)); }, []);
   const recent = useQN((s) => s.recent);
   const lessons = recent.filter((r) => r.kind === "lesson");
   const practice = recent.filter((r) => r.kind === "quiz");
@@ -37,6 +41,8 @@ export function LearnHub() {
         }
       />
 
+      {error && <Notice>{error}</Notice>}
+      <Link href="/learn/queue" className="font-bold text-brand-ink">Prepare material in the background</Link>
       <StudyPlans />
 
       {lessons.length === 0 && !hasPlans ? (

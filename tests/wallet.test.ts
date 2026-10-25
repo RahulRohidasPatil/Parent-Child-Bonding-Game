@@ -17,7 +17,8 @@ it("replaces the cached balance from the server and never awards it twice", asyn
   await refreshWallet();
   await refreshWallet();
   expect(store.getState().serverCoins).toBe(290);
-  expect(store.getState().coins).toBe(999999); // unrelated prototype shop state is not rewritten
+  expect(store.getState().coins).toBe(290);
+  expect(store.getState().unlimitedCoins).toBe(false);
 });
 
 it("discards the old account's response after switching accounts", async () => {

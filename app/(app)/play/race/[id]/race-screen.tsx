@@ -1,0 +1,30 @@
+"use client";
+import { useCallback,useEffect,useState } from "react";
+import Link from "next/link";
+import { Page } from "@/components/qn/app-shell";
+import { Card,Notice,PageHeader,Spinner,StatChips } from "@/components/qn/ui";
+import { Button } from "@/components/ui/button";
+import { diagramApi,svgDocument,type Race,type Board,type RaceResults } from "@/lib/diagram-api";
+import { economyApi } from "@/lib/economy-api";
+import { ApiError } from "@/lib/learn-api";
+export function RaceScreen({id}:{id:string}){
+ const [race,setRace]=useState<Race|null>(null),[board,setBoard]=useState<Board|null>(null),[study,setStudy]=useState<string|null>(null),[results,setResults]=useState<RaceResults|null>(null);
+ const [host,setHost]=useState(false),[busy,setBusy]=useState(false),[error,setError]=useState<string|null>(null),[feedback,setFeedback]=useState<string|null>(null);
+ const [time,setTime]=useState({now:0,skew:0});
+ const load=useCallback(async()=>{try{const r=await diagramApi.race(id);setRace(r);setTime({now:Date.now(),skew:r.server_now-Date.now()});if(r.status==="running")setBoard(await diagramApi.board(id));}catch(e){setError(e instanceof Error?e.message:"Couldn’t load the race.");}},[id]);
+ useEffect(()=>{const initial=setTimeout(load,0);const t=setInterval(load,1500);const clock=setInterval(()=>setTime((s)=>({...s,now:Date.now()})),250);return()=>{clearTimeout(initial);clearInterval(t);clearInterval(clock);};},[load]);
+ useEffect(()=>{if(!race)return;void diagramApi.management(race.room_id).then(()=>setHost(true)).catch(()=>setHost(false));if(race.status==="waiting")void diagramApi.study(id).then((r)=>setStudy(r.reference_svg)).catch((e)=>setError(e.message));if(["finished","expired"].includes(race.status)){void diagramApi.results(id).then(setResults).catch((e)=>setError(e.message));void economyApi.participation("diagram_race",id).catch((e)=>{if(!(e instanceof ApiError&&e.status===409))setError(e.message);});}},[id,race?.status,race?.room_id]); // eslint-disable-line react-hooks/exhaustive-deps
+ async function run(fn:()=>Promise<unknown>){setBusy(true);setError(null);try{await fn();await load();}catch(e){setError(e instanceof Error?e.message:"Please try again.");await load();}finally{setBusy(false);}}
+ if(!race)return <Page><PageHeader title="Diagram race"/><Spinner/>{error&&<Notice>{error}</Notice>}</Page>;
+ const me=race.players.find((p)=>p.id===race.my_player_id);const now=time.now+time.skew;const left=(at:number|null)=>Math.max(0,Math.ceil(((at??now)-now)/1000));
+ const view=board?.view_box.split(/\s+/).map(Number)??[0,0,800,600];const [x,y,w,h]=view;
+ return <Page wide><PageHeader title="Rebuild the diagram" sub={race.status} right={<StatChips/>} back={{href:"/play",label:"Back to Play"}}/>{error&&<Notice>{error}</Notice>}
+ {race.status==="waiting"&&<Card className="flex flex-col gap-3 p-5">{study&&<iframe title="Study the diagram" sandbox="" srcDoc={svgDocument(study)} className="h-[420px] w-full border-0"/>}<p className="font-bold">Study how the ideas connect. The labels disappear when the race starts.</p>{host&&<Button variant="brand" disabled={busy} onClick={()=>run(()=>diagramApi.start(race))}>Start shared countdown</Button>}</Card>}
+ {race.status==="countdown"&&<Card className="p-10 text-center text-4xl font-black">Starts in {left(race.started_at)}</Card>}
+ {race.status==="running"&&board&&<Card className="flex flex-col gap-4 p-4"><p className="font-black">{left(race.deadline_at)}s remaining {me?.completed?"· You finished":me?.forfeited?"· You left this round":""}</p><div className="relative w-full" style={{aspectRatio:`${w}/${h}`}}><iframe title="Restore the diagram labels" sandbox="" srcDoc={svgDocument(board.puzzle_svg)} className="absolute inset-0 size-full border-0"/>{board.slots.map((slot)=><select key={slot.id} aria-label={`Label ${slot.id}`} className="absolute min-h-8 rounded border border-brand bg-card text-xs font-bold" style={{left:`${(slot.x-x)/w*100}%`,top:`${(slot.y-y)/h*100}%`,width:`${Math.max(slot.width/w*100,12)}%`}} value={board.placements[slot.id]??""} disabled={busy||me?.completed||me?.forfeited} onChange={(e)=>run(()=>diagramApi.place(id,board,{...board.placements,[slot.id]:e.target.value}))}><option value="" disabled>Choose…</option>{board.cards.map((c)=><option key={c.id} value={c.id} disabled={Object.entries(board.placements).some(([s,v])=>s!==slot.id&&v===c.id)}>{c.text}</option>)}</select>)}</div>
+ <Button variant="brand" disabled={busy||me?.completed||me?.forfeited||Object.keys(board.placements).length!==board.slots.length} onClick={()=>run(async()=>{const r=await diagramApi.finish(id,board.version);setFeedback(r.completed?"Correct! Waiting for everyone else.":`${r.correct_count} labels are correct. Try the others again.`);})}>Check my diagram</Button>{feedback&&<p>{feedback}</p>}<Button variant="ghost" disabled={busy||me?.completed||me?.forfeited} onClick={()=>{if(window.confirm("Leave this round without a participation reward?"))void run(()=>diagramApi.forfeit(id,board.version));}}>Leave this round</Button></Card>}
+ <Card className="flex flex-wrap gap-4 p-4">{race.players.map((p)=><span key={p.id} className="font-bold">{p.display_name}: {p.completed?"Finished":p.forfeited?"Left":`${p.placed} labels placed`}</span>)}</Card>
+ {results&&<Card className="flex flex-col gap-3 p-5"><h2 className="text-xl font-black">Results</h2>{results.players.map((p)=><p key={p.id}>{p.rank??"–"}. {p.display_name} · {p.elapsed_ms!==null?`${(p.elapsed_ms/1000).toFixed(1)}s`:p.forfeited?"Left":"Not finished"}</p>)}<Button variant="soft" onClick={()=>run(async()=>setResults(await diagramApi.review(id)))}>Show the complete diagram</Button>{results.reference_svg&&<iframe title="Complete diagram" sandbox="" srcDoc={svgDocument(results.reference_svg)} className="h-[420px] w-full border-0"/>}<Link href="/play/rebuild" className="font-bold text-brand-ink">Play another diagram</Link></Card>}
+ {host&&["waiting","countdown","running"].includes(race.status)&&<Button variant="ghost" disabled={busy} onClick={()=>run(()=>diagramApi.cancel(race))}>Cancel this race</Button>}
+ </Page>;
+}

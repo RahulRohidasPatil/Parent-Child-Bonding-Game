@@ -9,7 +9,7 @@ import { LearnSteps, useLearnerAge } from "@/components/qn/learn-bits";
 import { Card, Notice, PageHeader, Working } from "@/components/qn/ui";
 import { Button } from "@/components/ui/button";
 import { ApiError, learnApi } from "@/lib/learn-api";
-import { bump, markStudiedToday, remember, savePlan } from "@/lib/store";
+import { markStudiedToday, remember, savePlan } from "@/lib/store";
 import { DEFAULT_UPLOAD_PROMPT, parseStudyPlan, planMessage } from "@/lib/study-plan";
 import { cn } from "@/lib/utils";
 
@@ -108,7 +108,7 @@ export function NewLesson() {
           setBusy("upload");
           const m = await learnApi.uploadMaterial([file]);
           remember({ kind: "material", id: m.id, title: m.name, detail: `${m.page_count} page${m.page_count === 1 ? "" : "s"}` });
-          bump(["w-upload"]);
+
           material = { id: m.id, pages: m.page_count };
           setUploaded({ key, ...material });
         }
@@ -124,7 +124,7 @@ export function NewLesson() {
         });
         const id = crypto.randomUUID();
         savePlan({ id, ...parseStudyPlan(out.answer, file?.name ?? topic), prompt: topic, source: out.used_pdf ? out.label : null, material, at: Date.now() });
-        bump(["d-lesson", "w-lessons"]);
+
         markStudiedToday();
         finished.current = true;
         router.push(`/learn#plan-${id}`);
@@ -135,7 +135,7 @@ export function NewLesson() {
         material ? { topic: await topicFor(topic, material), age, material_id: material.id } : { topic, age },
       );
       remember({ kind: "lesson", id: lesson.id, title: lesson.title, detail: lesson.source ? `From ${lesson.source.title} · ${lesson.source.label}` : lesson.summary });
-      bump(["d-lesson", "w-lessons"]);
+
       markStudiedToday();
       finished.current = true;
       router.push(`/learn/lesson/${lesson.id}`);
