@@ -1,7 +1,8 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { BookMarked, Layers, ListChecks, Swords } from "lucide-react";
 import { Page } from "@/components/qn/app-shell";
 import { LearnSteps } from "@/components/qn/learn-bits";
@@ -47,10 +48,30 @@ async function drawPlannedOnce(l: PublicLesson): Promise<PublicVisual[] | null> 
 }
 
 export function LessonScreen({ id }: { id: string }) {
+  const router = useRouter();
   const [lesson, setLesson] = useState<PublicLesson | null>(null);
   const [loadError, setLoadError] = useState<string | null>(null);
   const [drawing, setDrawing] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [creatingDeck, setCreatingDeck] = useState(false);
+  const deckRequestPending = useRef(false);
+
+  async function startFlashcards() {
+    if (!lesson || deckRequestPending.current) return;
+    deckRequestPending.current = true;
+    setCreatingDeck(true);
+    setError(null);
+    try {
+      const deck = await learnApi.createDeck(lesson.id, 4);
+      const subject = getState().recent.find((item) => item.kind === "lesson" && item.id === lesson.id)?.subject;
+      remember({ kind: "deck", id: deck.id, title: deck.title || lesson.title, lessonId: lesson.id, subject, detail: `${deck.cards.length} cards` });
+      router.push(`/play/solo/flashcards/${deck.id}`);
+    } catch (e) {
+      setError(e instanceof ApiError ? e.message : "Could not create flashcards. Try again.");
+      deckRequestPending.current = false;
+      setCreatingDeck(false);
+    }
+  }
 
   useEffect(() => {
     let live = true;
@@ -118,12 +139,11 @@ export function LessonScreen({ id }: { id: string }) {
       <LessonChat key={lesson.id} lesson={lesson} />
 
       {/* ---------- practise ---------- */}
-      {/* Placeholders: quizzes and flashcards open the team's game UI once it is wired in (learnApi.createQuiz / createDeck). */}
       <Card className="flex flex-col gap-4 p-4 md:p-5">
         <span className="text-[19px] font-black">Practise it</span>
         <div className="grid grid-cols-1 gap-2.5 sm:grid-cols-2">
-          <Button type="button" variant="soft" size="cta">
-            <Layers /> Flashcards
+          <Button type="button" variant="soft" size="cta" onClick={startFlashcards} disabled={creatingDeck} aria-busy={creatingDeck}>
+            {creatingDeck ? <Spinner /> : <Layers />} {creatingDeck ? "Making flashcards…" : "Flashcards"}
           </Button>
           <Button type="button" variant="brand" size="cta">
             <ListChecks /> Create quiz
