@@ -9,6 +9,7 @@ import { useQN } from "@/lib/store";
 import { useUser } from "@/lib/use-user";
 import { AVATARS } from "@/lib/qn-data";
 import { StarTile } from "./brand";
+import { Presence } from "./presence";
 import { Face } from "./sprite";
 import { ThemeToggle } from "@/components/theme-toggle";
 
@@ -56,6 +57,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
         {children}
       </main>
       <PathAware render={(path) => <TabBar path={path} />} />
+      <Presence />
     </div>
   );
 }

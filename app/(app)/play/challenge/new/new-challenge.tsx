@@ -9,20 +9,20 @@ import { tintOf } from "@/components/qn/duel";
 import { Face } from "@/components/qn/sprite";
 import { Card, EmptyState, Notice, PageHeader, Segmented, Spinner, Working } from "@/components/qn/ui";
 import { Button, buttonVariants } from "@/components/ui/button";
-import { FriendsError, type FriendsSnapshot, friendsApi } from "@/lib/friends-api";
-import { ApiError, learnApi } from "@/lib/learn-api";
+import { type Friends, SocialError, socialApi } from "@/lib/social-api";
 import { useQN } from "@/lib/store";
 import { cn } from "@/lib/utils";
 
+const POLL_MS = 10_000;
 const choiceClass = (on: boolean) => cn("rounded-2xl border px-3.5 py-3 text-left text-[15px] font-extrabold", on ? "border-brand bg-brand-soft" : "border-line bg-card hover:bg-muted");
 
-/** Pick a friend and a lesson; the questions are written once and both of you answer them on your own phones. */
+/** Pick an online friend and a lesson; the friend gets an invite and you both play at the same time. */
 export function NewChallenge() {
   const router = useRouter();
   const params = useSearchParams();
   const recent = useQN((s) => s.recent);
   const lessons = recent.filter((r) => r.kind === "lesson");
-  const [snap, setSnap] = useState<FriendsSnapshot | null>(null);
+  const [data, setData] = useState<Friends | null>(null);
   const [loadError, setLoadError] = useState<string | null>(null);
   const [friendChoice, setFriend] = useState<string | null>(null);
   const [lessonChoice, setLesson] = useState<string | null>(null);
@@ -30,32 +30,36 @@ export function NewChallenge() {
   const [creating, setCreating] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
+  // Only online friends can be challenged, and that changes while the page is open.
   useEffect(() => {
-    friendsApi
-      .snapshot()
-      .then(setSnap)
-      .catch((e) => setLoadError(e instanceof FriendsError ? e.message : "Couldn’t load your friends."));
+    const load = () =>
+      socialApi
+        .friends(true)
+        .then((d) => {
+          setData(d);
+          setLoadError(null);
+        })
+        .catch((e) => setLoadError(e instanceof SocialError ? e.message : "Couldn’t load your friends."));
+    load();
+    const t = setInterval(() => document.visibilityState === "visible" && load(), POLL_MS);
+    return () => clearInterval(t);
   }, []);
 
-  const friends = snap?.friends ?? [];
-  const friendId = friendChoice ?? (friends.some((f) => f.id === params.get("friend")) ? params.get("friend")! : friends[0]?.id ?? "");
+  const friends = (data?.friends ?? []).filter((f) => !f.busy);
+  const wanted = friendChoice ?? params.get("friend");
+  const friend = friends.find((f) => f.id === wanted) ?? friends[0];
   const lessonId = lessonChoice ?? params.get("lesson") ?? lessons[0]?.id ?? "";
-  const friend = friends.find((f) => f.id === friendId);
-  const lessonTitle = lessons.find((l) => l.id === lessonId)?.title ?? "your lesson";
 
   async function start() {
-    if (!friend) return setError("Pick a friend first.");
+    if (!friend) return setError("Pick a friend who is online.");
     if (!lessonId) return setError("Pick a lesson first.");
     setError(null);
     setCreating(true);
     try {
-      // Scored question sets need a confirmed lesson; if this fails, creating the tournament says why.
-      await learnApi.approveLesson(lessonId).catch(() => undefined);
-      const t = await learnApi.createTournament(lessonId, Number(count));
-      const { id } = await friendsApi.challenge(friend.id, t.id, lessonTitle);
-      router.replace(`/play/challenge/${id}`);
+      const duel = await socialApi.createDuel(friend.id, lessonId, Number(count));
+      router.replace(`/play/challenge/${duel.id}`);
     } catch (e) {
-      setError(e instanceof ApiError || e instanceof FriendsError ? e.message : "Couldn’t set up the duel. Try again.");
+      setError(e instanceof SocialError ? e.message : "Couldn’t set up the duel. Try again.");
       setCreating(false);
     }
   }
@@ -63,32 +67,32 @@ export function NewChallenge() {
   if (creating)
     return (
       <Page className="max-w-[720px]">
-        <Working title={`Setting up your duel with ${friend?.name ?? "your friend"}…`} steps={["Reading the lesson", "Writing questions", "Checking the answers"]} />
+        <Working title={`Setting up your duel with ${friend?.display_name ?? "your friend"}…`} steps={["Reading the lesson", "Writing questions", "Checking the answers", "Sending the invite"]} />
       </Page>
     );
 
   return (
     <Page className="max-w-[880px]">
-      <PageHeader title="Challenge a friend" sub="Same questions, each on your own phone" back={{ href: "/friends", label: "Back to Friends" }} />
+      <PageHeader title="Challenge a friend" sub="Live duel: same questions, same time, each on your own phone" back={{ href: "/friends", label: "Back to Friends" }} />
       {loadError && <Notice>{loadError}</Notice>}
-      {!snap && !loadError && (
+      {!data && !loadError && (
         <Card className="flex items-center justify-center gap-2.5 p-8 text-[15px] font-extrabold text-muted-foreground" role="status">
-          <Spinner className="text-brand" /> Loading your friends…
+          <Spinner className="text-brand" /> Checking who’s online…
         </Card>
       )}
-      {snap && friends.length === 0 && (
+      {data && friends.length === 0 && (
         <EmptyState
-          title="Add a friend first"
+          title="No friends online"
           action={
             <Link href="/friends" className={cn(buttonVariants({ variant: "brand", size: "cta" }))}>
               Go to Friends
             </Link>
           }
         >
-          You can challenge anyone who has accepted your friend request.
+          You can challenge a friend while they have the app open. This page updates by itself when someone comes online.
         </EmptyState>
       )}
-      {snap && friends.length > 0 && lessons.length === 0 && (
+      {data && friends.length > 0 && lessons.length === 0 && (
         <EmptyState
           title="Make a lesson first"
           action={
@@ -100,17 +104,21 @@ export function NewChallenge() {
           Duel questions come from one of your lessons.
         </EmptyState>
       )}
-      {snap && friends.length > 0 && lessons.length > 0 && (
+      {data && friends.length > 0 && lessons.length > 0 && (
         <>
+          {wanted && friend?.id !== wanted && <Notice tone="warn">That friend isn’t free right now. Pick someone who’s online.</Notice>}
           <Card className="flex flex-col gap-3 p-4">
-            <span className="text-[15px] font-black">Friend</span>
+            <span className="text-[15px] font-black">Online friends</span>
             <div role="radiogroup" aria-label="Friend" className="grid grid-cols-1 gap-2 sm:grid-cols-2">
               {friends.map((f) => (
-                <button key={f.id} type="button" role="radio" aria-checked={f.id === friendId} onClick={() => setFriend(f.id)} className={cn(choiceClass(f.id === friendId), "flex items-center gap-3")}>
-                  <Face id={f.avatar} size={40} tint={tintOf(f.avatar)} />
+                <button key={f.id} type="button" role="radio" aria-checked={f.id === friend?.id} onClick={() => setFriend(f.id)} className={cn(choiceClass(f.id === friend?.id), "flex items-center gap-3")}>
+                  <span className="relative">
+                    <Face id={f.avatar} size={40} tint={tintOf(f.avatar)} />
+                    <span className="absolute right-0 bottom-0 size-3 rounded-full border-2 border-card bg-[#3fbf7f]" aria-hidden="true" />
+                  </span>
                   <span className="flex min-w-0 flex-col leading-tight">
-                    <span className="truncate">{f.name}</span>
-                    {f.username && <span className="truncate text-[13px] font-bold text-muted-foreground">@{f.username}</span>}
+                    <span className="truncate">{f.display_name}</span>
+                    <span className="truncate text-[13px] font-bold text-muted-foreground">@{f.username}</span>
                   </span>
                 </button>
               ))}
@@ -129,11 +137,13 @@ export function NewChallenge() {
           <Card className="flex flex-col gap-3 p-4">
             <span className="text-[15px] font-black">Questions</span>
             <Segmented label="Number of questions" value={count} onChange={setCount} options={[{ value: "3", label: "3" }, { value: "5", label: "5" }, { value: "8", label: "8" }]} />
-            <span className="text-[13px] font-bold text-muted-foreground">You play first. {friend?.name ?? "Your friend"} gets the duel on their Friends page, and you both see who won once they’ve played.</span>
+            <span className="text-[13px] font-bold text-muted-foreground">
+              {friend?.display_name ?? "Your friend"} gets an invite to accept straight away. Then you both answer against the same clock.
+            </span>
           </Card>
           {error && <Notice onClose={() => setError(null)}>{error}</Notice>}
           <Button variant="brand" size="cta" onClick={start}>
-            <Swords /> Challenge {friend?.name ?? "friend"}
+            <Swords /> Challenge {friend?.display_name ?? "friend"}
           </Button>
         </>
       )}

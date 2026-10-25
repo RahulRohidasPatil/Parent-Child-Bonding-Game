@@ -72,5 +72,5 @@ Local browser state (coins, looks, home, recent lessons) is kept per account
 
 - Lessons made before per-account players existed live in the shared default player, so
   accounts don't see them.
-- Friends and friend duels are stored by this app's server, not the learning service
-  (`lib/server/social.ts`). They use Clerk user ids, never player ids.
+- Friends, presence and live duels follow [SOCIAL_API.md](SOCIAL_API.md). They identify users by
+  the token's `sub` (Clerk user id), never by player id.

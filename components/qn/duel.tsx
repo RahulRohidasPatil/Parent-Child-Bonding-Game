@@ -9,7 +9,7 @@ import { AVATARS, type AvatarId } from "@/lib/qn-data";
 import { cn } from "@/lib/utils";
 
 const KEYS = "ABCDEFGH";
-type Result = { correct: boolean; choice: number; answer_index: number; explanation: string };
+type Result = { correct: boolean; choice: number | null; answer_index: number; explanation: string }; // null: ran out of time
 
 export const tintOf = (id: AvatarId) => AVATARS.find((a) => a.id === id)?.tint;
 
@@ -79,7 +79,7 @@ export function DuelReview({ questions, names, sheets }: { questions: PublicQues
                   return (
                     <span key={p} className={cn("flex items-center gap-2 rounded-xl px-3 py-2 text-sm font-extrabold", r.correct ? "bg-brand-soft" : "bg-[#fdecec]")}>
                       {r.correct ? <Check className="size-4 text-brand" strokeWidth={3} /> : <X className="size-4 text-[#d24d4d]" strokeWidth={3} />}
-                      {names[p]}: {q.options[r.choice]}
+                      {names[p]}: {r.choice === null ? "no answer" : q.options[r.choice]}
                     </span>
                   );
                 })}

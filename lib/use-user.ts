@@ -6,6 +6,7 @@ import { setAccount } from "./store";
 export type User = {
   id: string;
   email: string | null;
+  username: string | null;
   name: string;
   accountType: "parent" | "learner" | null;
   age: number | null;
