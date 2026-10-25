@@ -12,6 +12,7 @@ import { Card, PageHeader, Segmented } from "@/components/qn/ui";
 import { Button } from "@/components/ui/button";
 import { AVATARS } from "@/lib/qn-data";
 import { type Prefs, DEFAULT_PREFS, PREFS_KEY, applyPrefs } from "@/lib/prefs";
+import { homeApi } from "@/lib/home-api";
 import { type QNState, setState, useQN } from "@/lib/store";
 import { logout, useUser } from "@/lib/use-user";
 import { ThemeToggle } from "@/components/theme-toggle";
@@ -38,6 +39,8 @@ export function SettingsScreen() {
   const { signOut } = useClerk();
   const look = useQN((s) => s.look);
   const settings = useQN((s) => s.settings);
+  const visibility = useQN((s) => s.homeMeta?.visibility ?? s.settings.visit);
+  const [visitError, setVisitError] = useState<string | null>(null);
   const stored = useClientValue(() => {
     try {
       return localStorage.getItem(PREFS_KEY) ?? "";
@@ -101,11 +104,20 @@ export function SettingsScreen() {
               <span className="text-[15px] font-extrabold">Who can visit my base</span>
               <Segmented
                 label="Who can visit my base"
-                value={settings.visit}
-                onChange={(v) => set({ visit: v })}
+                value={visibility}
+                onChange={(v) => {
+                  set({ visit: v });
+                  // The server decides who can open my home; it answers with the saved setting.
+                  homeApi.visibility(v).then(
+                    () => setVisitError(null),
+                    () => setVisitError("Couldn’t save that on the server. Try again."),
+                  );
+                }}
                 options={[{ value: "family", label: "Family" }, { value: "friends", label: "Friends" }, { value: "nobody", label: "Nobody" }]}
               />
-              <span className="text-[13px] font-bold text-muted-foreground">Visitors can look and cheer. Only you can change things. New friends need a parent’s OK.</span>
+              <span className="text-[13px] font-bold text-muted-foreground">
+                {visitError ?? "Visitors can look and cheer. Only you can change things. Family links are coming soon, so Family means only you for now."}
+              </span>
             </div>
           </Section>
           <Section title="Accessibility">

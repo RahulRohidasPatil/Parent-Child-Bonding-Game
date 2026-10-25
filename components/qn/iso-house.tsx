@@ -190,7 +190,7 @@ export function IsoHouse({
   }
 
   const sprites: React.ReactNode[] = [];
-  let handle: { x: number; y: number; i: number; name: string } | null = null;
+  let handle = null as { x: number; y: number; i: number; name: string } | null; // set inside the map below
 
   rooms.forEach((hr, r) => {
     const ox = hr.grid[0] * SIZE;

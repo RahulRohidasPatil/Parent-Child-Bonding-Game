@@ -12,9 +12,11 @@ import { Button } from "@/components/ui/button";
 import { Field, Notice, Spinner } from "@/components/qn/ui";
 import { cn } from "@/lib/utils";
 import { setState } from "@/lib/store";
+import { startSession } from "@/lib/use-user";
 import { type FieldKey, type RegistrationInput, ADULT_AGE, ageFrom, emailMode, validate } from "@/lib/registration";
 
 const EMPTY: RegistrationInput = { name: "", role: "", dob: "", email: "", parentEmail: "", username: "", password: "", confirm: "" };
+const DETAILS_FIELDS: FieldKey[] = ["name", "role", "dob", "email", "parentEmail"];
 
 function todayISO() {
   const t = new Date();
@@ -33,6 +35,7 @@ export function RegisterForm() {
   const clerk = useClerk();
   const { isLoaded, signUp } = useSignUp();
   const [f, setF] = useState<RegistrationInput>(EMPTY);
+  const [step, setStep] = useState<"details" | "credentials">("details");
   const [tried, setTried] = useState(false);
   const [showPw, setShowPw] = useState(false);
   const [busy, setBusy] = useState(false);
@@ -46,7 +49,7 @@ export function RegisterForm() {
   const age = ageFrom(f.dob);
   const hasAge = age !== null && age >= 0;
   const mode = emailMode(f);
-  const count = Object.keys(errors).length;
+  const count = Object.keys(errors).filter((key) => step === "credentials" || DETAILS_FIELDS.includes(key as FieldKey)).length;
 
   // Show an error once the field has a value (format problems) or after the first submit.
   const show = (k: FieldKey) => (errors[k] && (tried || (k !== "role" && !!f[k])) ? errors[k] : undefined);
@@ -60,6 +63,11 @@ export function RegisterForm() {
     setTried(true);
     setServerError(null);
     if (count) return;
+    if (step === "details") {
+      setStep("credentials");
+      setTried(false);
+      return;
+    }
     if (!isLoaded || !signUp) {
       setServerError({ text: "Clerk is still loading. Refresh the page and try again." });
       return;
@@ -80,6 +88,7 @@ export function RegisterForm() {
       });
       if (result.status === "complete") {
         await clerk.setActive({ session: result.createdSessionId });
+        await startSession();
         router.push("/home?welcome=1");
         return;
       }
@@ -101,122 +110,131 @@ export function RegisterForm() {
   return (
     <form onSubmit={submit} noValidate className="flex flex-col gap-4">
       <div className="flex flex-col gap-1">
+        <p className="text-[13px] font-extrabold text-muted-foreground" role="status">Step {step === "details" ? 1 : 2} of 2</p>
         <h1 className="text-[26px] font-black md:text-[30px]">Create your account</h1>
-        <p className="text-[15px] font-bold text-muted-foreground">Fill in your details. We verify your email before you can log in.</p>
+        <p className="text-[15px] font-bold text-muted-foreground">
+          {step === "details" ? "Fill in your details. We verify your email before you can log in." : "Choose a username and password to finish creating your account."}
+        </p>
       </div>
 
-      <Field label="Name" autoComplete="name" placeholder="First and last name" value={f.name} onChange={set("name")} error={show("name")} />
+      {step === "details" && (
+        <>
+          <Field label="Name" autoComplete="name" placeholder="First and last name" value={f.name} onChange={set("name")} error={show("name")} />
 
-      <div role="group" aria-labelledby="role-label" className="flex flex-col gap-1.5">
-        <span id="role-label" className="text-[13px] font-extrabold text-muted-foreground">Role</span>
-        <div className="grid grid-cols-2 gap-2">
-          {(["student", "parent"] as const).map((r) => {
-            const on = f.role === r;
-            return (
-              <button
-                key={r}
-                type="button"
-                aria-pressed={on}
-                onClick={() => setF((p) => ({ ...p, role: r }))}
-                className={cn(
-                  "h-12 rounded-2xl border-[1.5px] text-[15px] font-black",
-                  on ? "border-night bg-night text-white" : show("role") ? "border-destructive bg-card" : "border-input bg-card hover:bg-muted",
-                )}
-              >
-                {r === "student" ? "Student" : "Parent"}
-              </button>
-            );
-          })}
-        </div>
-        {show("role") && <span className="text-[13px] font-extrabold text-destructive">{show("role")}</span>}
-      </div>
-
-      <Field
-        label="Date of birth"
-        type="date"
-        max={maxDate}
-        value={f.dob}
-        onChange={set("dob")}
-        error={show("dob")}
-        labelExtra={
-          hasAge ? (
-            <span className={cn("rounded-full px-2.5 py-0.5 text-xs font-black", mode === "minor" ? "bg-warn text-warn-ink" : "bg-brand-soft text-brand-ink")}>
-              Age {age}
-              {mode === "minor" ? " · parent approval" : ""}
-            </span>
-          ) : null
-        }
-      />
-
-      {mode === "none" && (
-        <div className="rounded-2xl border-[1.5px] border-dashed border-input px-3.5 py-3 text-sm font-bold text-muted-foreground">
-          Add your date of birth and we’ll show the right email field.
-        </div>
-      )}
-      {mode === "self" && (
-        <Field
-          label="Enter your email"
-          type="email"
-          autoComplete="email"
-          placeholder="you@example.com"
-          value={f.email}
-          onChange={set("email")}
-          error={show("email")}
-          hint="We’ll send your verification link here."
-        />
-      )}
-      {mode === "minor" && (
-        <div className="flex flex-col gap-3.5">
-          <div className="flex items-start gap-2.5 rounded-2xl bg-warn px-3.5 py-3">
-            <Info className="mt-0.5 size-5 shrink-0 text-warn-ink" strokeWidth={2.4} />
-            <span className="text-sm leading-snug font-bold text-warn-ink">
-              You’re under {ADULT_AGE}, so a parent has to approve your account. We’ll email them a verification link.
-            </span>
+          <div role="group" aria-labelledby="role-label" className="flex flex-col gap-1.5">
+            <span id="role-label" className="text-[13px] font-extrabold text-muted-foreground">Role</span>
+            <div className="grid grid-cols-2 gap-2">
+              {(["student", "parent"] as const).map((r) => {
+                const on = f.role === r;
+                return (
+                  <button
+                    key={r}
+                    type="button"
+                    aria-pressed={on}
+                    onClick={() => setF((p) => ({ ...p, role: r }))}
+                    className={cn(
+                      "h-12 rounded-2xl border-[1.5px] text-[15px] font-black",
+                      on ? "border-night bg-night text-white" : show("role") ? "border-destructive bg-card" : "border-input bg-card hover:bg-muted",
+                    )}
+                  >
+                    {r === "student" ? "Student" : "Parent"}
+                  </button>
+                );
+              })}
+            </div>
+            {show("role") && <span className="text-[13px] font-extrabold text-destructive">{show("role")}</span>}
           </div>
-          <Field label="Enter parent’s email" type="email" placeholder="parent@example.com" value={f.parentEmail} onChange={set("parentEmail")} error={show("parentEmail")} />
+
           <Field
-            label={
-              <>
-                Your own email <span className="font-bold">(optional)</span>
-              </>
+            label="Date of birth"
+            type="date"
+            max={maxDate}
+            value={f.dob}
+            onChange={set("dob")}
+            error={show("dob")}
+            labelExtra={
+              hasAge ? (
+                <span className={cn("rounded-full px-2.5 py-0.5 text-xs font-black", mode === "minor" ? "bg-warn text-warn-ink" : "bg-brand-soft text-brand-ink")}>
+                  Age {age}
+                  {mode === "minor" ? " · parent approval" : ""}
+                </span>
+              ) : null
             }
-            type="email"
-            autoComplete="email"
-            placeholder="you@example.com"
-            value={f.email}
-            onChange={set("email")}
-            error={show("email")}
           />
-        </div>
+
+          {mode === "none" && (
+            <div className="rounded-2xl border-[1.5px] border-dashed border-input px-3.5 py-3 text-sm font-bold text-muted-foreground">
+              Add your date of birth and we’ll show the right email field.
+            </div>
+          )}
+          {mode === "self" && (
+            <Field
+              label="Enter your email"
+              type="email"
+              autoComplete="email"
+              placeholder="you@example.com"
+              value={f.email}
+              onChange={set("email")}
+              error={show("email")}
+              hint="We’ll send your verification link here."
+            />
+          )}
+          {mode === "minor" && (
+            <div className="flex flex-col gap-3.5">
+              <div className="flex items-start gap-2.5 rounded-2xl bg-warn px-3.5 py-3">
+                <Info className="mt-0.5 size-5 shrink-0 text-warn-ink" strokeWidth={2.4} />
+                <span className="text-sm leading-snug font-bold text-warn-ink">
+                  You’re under {ADULT_AGE}, so a parent has to approve your account. We’ll email them a verification link.
+                </span>
+              </div>
+              <Field label="Enter parent’s email" type="email" placeholder="parent@example.com" value={f.parentEmail} onChange={set("parentEmail")} error={show("parentEmail")} />
+              <Field
+                label={
+                  <>
+                    Your own email <span className="font-bold">(optional)</span>
+                  </>
+                }
+                type="email"
+                autoComplete="email"
+                placeholder="you@example.com"
+                value={f.email}
+                onChange={set("email")}
+                error={show("email")}
+              />
+            </div>
+          )}
+        </>
       )}
 
-      <hr className="my-0.5 border-line" />
-
-      <Field label="Set username" autoComplete="username" placeholder="e.g. nova_reads" value={f.username} onChange={set("username")} error={show("username")} />
-      <Field
-        label="Set password"
-        type={showPw ? "text" : "password"}
-        autoComplete="new-password"
-        placeholder="At least 8 characters"
-        value={f.password}
-        onChange={set("password")}
-        error={show("password")}
-        labelExtra={
-          <button type="button" onClick={() => setShowPw((v) => !v)} aria-pressed={showPw} className="h-7 px-1 text-[13px] font-black text-brand-ink">
-            {showPw ? "Hide" : "Show"}
-          </button>
-        }
-      />
-      <Field
-        label="Confirm password"
-        type={showPw ? "text" : "password"}
-        autoComplete="new-password"
-        placeholder="Type it again"
-        value={f.confirm}
-        onChange={set("confirm")}
-        error={show("confirm")}
-        hint={f.confirm && f.confirm === f.password && !errors.password ? <span className="font-extrabold text-brand-ink">Passwords match</span> : undefined}
-      />
+      {step === "credentials" && (
+        <>
+          <Field label="Set username" autoComplete="username" placeholder="e.g. nova_reads" value={f.username} onChange={set("username")} error={show("username")} />
+          <Field
+            label="Set password"
+            type={showPw ? "text" : "password"}
+            autoComplete="new-password"
+            placeholder="At least 8 characters"
+            value={f.password}
+            onChange={set("password")}
+            error={show("password")}
+            labelExtra={
+              <button type="button" onClick={() => setShowPw((v) => !v)} aria-pressed={showPw} className="h-7 px-1 text-[13px] font-black text-brand-ink">
+                {showPw ? "Hide" : "Show"}
+              </button>
+            }
+          />
+          <Field
+            label="Confirm password"
+            type={showPw ? "text" : "password"}
+            autoComplete="new-password"
+            placeholder="Type it again"
+            value={f.confirm}
+            onChange={set("confirm")}
+            error={show("confirm")}
+            hint={f.confirm && f.confirm === f.password && !errors.password ? <span className="font-extrabold text-brand-ink">Passwords match</span> : undefined}
+          />
+        </>
+      )}
 
       {serverError && (
         <Notice tone={serverError.demo ? "info" : "error"}>
@@ -234,9 +252,24 @@ export function RegisterForm() {
         </p>
       )}
 
+      {step === "credentials" && (
+        <Button
+          type="button"
+          variant="soft"
+          size="cta"
+          disabled={busy}
+          onClick={() => {
+            setStep("details");
+            setTried(false);
+            setServerError(null);
+          }}
+        >
+          Back
+        </Button>
+      )}
       <Button type="submit" variant="brand" size="cta" disabled={busy}>
         {busy && <Spinner />}
-        Create account
+        {step === "details" ? "Next" : "Create account"}
       </Button>
       <p className="text-center text-sm font-bold text-muted-foreground">
         Have an account?{" "}

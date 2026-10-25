@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useLiveHome } from "@/lib/use-live-home";
 import { useClientValue } from "@/lib/use-client-value";
 import Link from "next/link";
 import { ChevronRight, Pencil } from "lucide-react";
@@ -21,6 +22,8 @@ export function HomeScreen() {
   const progress = useQN((s) => s.progress);
   const claimed = useQN((s) => s.claimed);
   const homeRooms = useQN((s) => s.home.rooms);
+  // The home lives on the server: keep the copy this screen draws up to date.
+  useLiveHome(false, 15000);
   const homeLayout = useQN((s) => s.home.layout);
   const streak = useQN((s) => s.streakDays);
   const day = useClientValue(() => new Date().toLocaleDateString("en-GB", { weekday: "long" }), "");

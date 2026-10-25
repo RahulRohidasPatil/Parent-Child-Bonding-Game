@@ -9,12 +9,13 @@ import { VisualFrame } from "@/components/qn/visual-frame";
 import { Card, Coin, Notice, PageHeader, ProgressBar, Spinner, Working } from "@/components/qn/ui";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { ApiError, type CheckOut, type PublicQuiz, learnApi } from "@/lib/learn-api";
-import { addCoins, bump, getState, markStudiedToday, remember } from "@/lib/store";
+import { homeApi } from "@/lib/home-api";
+import { bump, getState, markStudiedToday, remember } from "@/lib/store";
 import { cn } from "@/lib/utils";
 
 type Answer = { choice: number; result: CheckOut };
 const KEYS = "ABCDEFGH";
-const COINS_PER_RIGHT = 10;
+const COINS_PER_RIGHT = 10; // what the server pays per first-try-correct answer
 
 function loadAnswers(id: string): Record<number, Answer> {
   try {
@@ -35,6 +36,7 @@ export function QuizScreen({ id }: { id: string }) {
   const [error, setError] = useState<string | null>(null);
   const [busy, setBusy] = useState<null | "followup" | "deck">(null);
   const [done, setDone] = useState(false);
+  const [paid, setPaid] = useState<number | null>(null); // home coins credited; -1 if the claim failed
 
   useEffect(() => {
     learnApi
@@ -55,16 +57,28 @@ export function QuizScreen({ id }: { id: string }) {
   const right = Object.values(answers).filter((a) => a.result.correct).length;
   const wrong = answered - right;
 
-  // Rewards once per quiz, when it is finished.
+  // Home coins come from the server, which pays each first-try-correct answer once, however often this runs.
+  useEffect(() => {
+    if (!done || !quiz) return;
+    let live = true;
+    homeApi.claimQuiz(quiz.id).then(
+      (c) => live && setPaid(c.credited),
+      () => live && setPaid(-1),
+    );
+    return () => {
+      live = false;
+    };
+  }, [done, quiz]);
+
+  // Quest progress and the recent list, once per quiz, when it is finished.
   useEffect(() => {
     if (!done || !quiz) return;
     try {
       if (sessionStorage.getItem(`qn.quizpaid.${id}`)) return;
       sessionStorage.setItem(`qn.quizpaid.${id}`, "1");
     } catch {
-      /* without storage, rewards may repeat after reload; acceptable for a prototype */
+      /* without storage, quest progress may repeat after reload; acceptable for a prototype */
     }
-    addCoins(right * COINS_PER_RIGHT);
     bump(["d-quiz"], answered);
     markStudiedToday();
     const r = getState().recent.find((x) => x.kind === "quiz" && x.id === id);
@@ -155,8 +169,17 @@ export function QuizScreen({ id }: { id: string }) {
             {right}/{total}
           </span>
           <span className="text-[15px] font-bold text-muted-foreground">{pct >= 80 ? "Brilliant work!" : pct >= 50 ? "Good going. A little more practice and you’ve got it." : "That was a tough one. Let’s practise the tricky parts."}</span>
-          <span className="mt-2 flex items-center gap-2 rounded-full bg-coin px-3.5 py-1.5 text-[15px] font-black text-coin-ink">
-            <Coin /> +{right * COINS_PER_RIGHT} coins
+          <span className="mt-2 flex items-center gap-2 rounded-full bg-coin px-3.5 py-1.5 text-[15px] font-black text-coin-ink" role="status">
+            <Coin />
+            {paid === null
+              ? "Adding your coins…"
+              : paid > 0
+                ? `+${paid} coins for your base`
+                : paid === 0
+                  ? right > 0
+                    ? "Coins already added for these answers"
+                    : `Get answers right first time for ${COINS_PER_RIGHT} coins each`
+                  : "Couldn’t add coins right now"}
           </span>
         </Card>
 

@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { BookOpen, ChevronRight, FileText, ListChecks, Plus, Swords, X } from "lucide-react";
+import { BookOpen, ChevronRight, FileText, Layers, ListChecks, Plus, Swords, X } from "lucide-react";
 import { Page } from "@/components/qn/app-shell";
 import { Card, EmptyState, PageHeader } from "@/components/qn/ui";
 import { buttonVariants } from "@/components/ui/button";
@@ -14,6 +14,7 @@ const KIND = {
   lesson: { icon: BookOpen, label: "Lesson", href: (r: RecentItem) => `/learn/lesson/${r.id}` },
   quiz: { icon: ListChecks, label: "Quiz", href: (r: RecentItem) => `/play/solo/quiz/${r.id}` },
   material: { icon: FileText, label: "Upload", href: (r: RecentItem) => `/learn/material/${r.id}` },
+  deck: { icon: Layers, label: "Flashcards", href: (r: RecentItem) => `/play/solo/flashcards/${r.id}` },
   duel: { icon: Swords, label: "Duel", href: (r: RecentItem) => (r.lessonId ? `/play/duel?lesson=${r.lessonId}` : "/play/duel") },
 } as const;
 

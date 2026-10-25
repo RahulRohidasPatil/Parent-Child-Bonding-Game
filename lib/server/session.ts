@@ -3,8 +3,6 @@ import "server-only";
 import { auth, currentUser as clerkCurrentUser } from "@clerk/nextjs/server";
 import { ageFrom } from "@/lib/registration";
 
-export const LEARNING_API_URL = (process.env.LEARNING_API_URL || "http://127.0.0.1:8001").replace(/\/$/, "");
-
 export type AuthUser = {
   id: string;
   email: string | null;
@@ -27,7 +25,9 @@ export function toPublicUser(u: AuthUser): PublicUser {
   const name =
     typeof meta.display_name === "string" && meta.display_name.trim()
       ? meta.display_name
-      : (u.email?.split("@")[0] ?? "Friend");
+      : typeof meta.username === "string" && meta.username.trim()
+        ? meta.username
+        : (u.email?.split("@")[0] ?? "Friend");
   const accountType = meta.account_type;
   return {
     id: u.id,
@@ -45,14 +45,14 @@ function accountAge(birthDate: unknown): number | null {
   return age !== null && age >= 0 ? age : null;
 }
 
-export async function currentUser(): Promise<{ user: AuthUser; access: string } | null> {
-  const { userId, getToken } = await auth();
+/** The signed-in Clerk user (display data). Learning-service access goes through lib/server/learning-session.ts. */
+export async function currentUser(): Promise<{ user: AuthUser } | null> {
+  const { userId } = await auth();
   if (!userId) return null;
   const user = await clerkCurrentUser();
   if (!user) return null;
   const primary = user.emailAddresses.find((email) => email.id === user.primaryEmailAddressId);
   return {
-    access: (await getToken()) ?? "",
     user: {
       id: user.id,
       email: primary?.emailAddress ?? null,

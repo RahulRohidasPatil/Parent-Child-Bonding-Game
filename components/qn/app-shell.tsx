@@ -3,12 +3,13 @@
 import { Suspense } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { BookOpen, Camera, Gamepad2, Home, Settings, ShoppingBag, Users, Box, CircleCheck } from "lucide-react";
+import { BookOpen, MessagesSquare, Gamepad2, Home, Settings, ShoppingBag, Users, Box, CircleCheck } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useQN } from "@/lib/store";
 import { useUser } from "@/lib/use-user";
 import { AVATARS } from "@/lib/qn-data";
 import { StarTile } from "./brand";
+import { Presence } from "./presence";
 import { Face } from "./sprite";
 import { ThemeToggle } from "@/components/theme-toggle";
 
@@ -16,7 +17,7 @@ type NavItem = { href: string; label: string; icon: typeof Home; match?: string[
 
 const HOME: NavItem = { href: "/home", label: "Home", icon: Home };
 const LEARN: NavItem = { href: "/learn", label: "Learn", icon: BookOpen, match: ["/learn"] };
-const SCAN: NavItem = { href: "/learn/new", label: "Scan", icon: Camera };
+const SCAN: NavItem = { href: "/learn/new", label: "Chat", icon: MessagesSquare };
 const PLAY: NavItem = { href: "/play", label: "Play", icon: Gamepad2 };
 const BASE: NavItem = { href: "/base", label: "Base", icon: Box };
 const SHOP: NavItem = { href: "/shop", label: "Shop", icon: ShoppingBag };
@@ -56,6 +57,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
         {children}
       </main>
       <PathAware render={(path) => <TabBar path={path} />} />
+      <Presence />
     </div>
   );
 }
@@ -89,9 +91,9 @@ function Rail({ path }: { path: string }) {
                     isActive(path, item) && "ring-4 ring-brand-soft",
                   )}
                 >
-                  <Camera className="size-6" strokeWidth={2.2} />
+                  <MessagesSquare className="size-6" strokeWidth={2.2} />
                 </span>
-                Scan
+                Chat
               </Link>
             ) : (
               <RailLink key={item.href} item={item} active={isActive(path, item)} />
@@ -155,8 +157,8 @@ function Sidebar({ path }: { path: string }) {
             isActive(path, SCAN) && "ring-3 ring-ring",
           )}
         >
-          <Camera className="size-[22px]" strokeWidth={2.2} />
-          Upload notes
+          <MessagesSquare className="size-[22px]" strokeWidth={2.2} />
+          Chat
         </Link>
         <span className="flex-1" />
         <ThemeToggle expanded className="mb-3" />
@@ -193,11 +195,11 @@ function TabBar({ path }: { path: string }) {
             const Icon = item.icon;
             if (item === SCAN)
               return (
-                <Link key={item.href} href={item.href} aria-label="Scan notes" aria-current={on ? "page" : undefined} className="flex flex-col items-center gap-0.5 text-xs font-black">
+                <Link key={item.href} href={item.href} aria-label="Chat" aria-current={on ? "page" : undefined} className="flex flex-col items-center gap-0.5 text-xs font-black">
                   <span className="-mt-8 flex size-[62px] items-center justify-center rounded-full border-4 border-card bg-brand text-white shadow-[0_4px_12px_rgba(46,138,105,.35)]">
-                    <Camera className="size-7" strokeWidth={2.2} />
+                    <MessagesSquare className="size-7" strokeWidth={2.2} />
                   </span>
-                  Scan
+                  Chat
                 </Link>
               );
             return (

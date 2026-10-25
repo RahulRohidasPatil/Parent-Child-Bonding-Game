@@ -3,10 +3,11 @@
 import { useState } from "react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
-import { Check, EyeOff, Swords, Trophy, X } from "lucide-react";
+import { EyeOff, Swords, Trophy } from "lucide-react";
 import { Page } from "@/components/qn/app-shell";
+import { DuelQuestion, DuelReview } from "@/components/qn/duel";
 import { Face, Sprite, Stage } from "@/components/qn/sprite";
-import { Card, Coin, EmptyState, Field, Notice, PageHeader, ProgressBar, Segmented, Working } from "@/components/qn/ui";
+import { Card, Coin, EmptyState, Field, Notice, PageHeader, Segmented, Working } from "@/components/qn/ui";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { ApiError, type PublicQuiz, type SubmitOut, learnApi } from "@/lib/learn-api";
 import { addCoins, bump, markStudiedToday, remember, useQN } from "@/lib/store";
@@ -16,7 +17,6 @@ import { cn } from "@/lib/utils";
 
 type Player = { name: string; avatar: AvatarId };
 type Phase = "setup" | "creating" | "handoff" | "answer" | "scoring" | "results";
-const KEYS = "ABCDEFGH";
 
 /**
  * Pass-the-phone duel on the tournament API: one tournament (same questions), each player
@@ -217,41 +217,14 @@ export function DuelScreen() {
     );
 
   // ---------- answering ----------
-  if (phase === "answer") {
-    const q = quiz.questions[qi];
+  if (phase === "answer")
     return (
       <Page className="max-w-[860px]">
-        <div className="flex items-center gap-3">
-          <Face id={player.avatar} size={44} tint={AVATARS.find((a) => a.id === player.avatar)?.tint} />
-          <span className="flex min-w-0 flex-1 flex-col gap-1.5">
-            <span className="text-sm font-black">
-              {player.name}’s turn · {qi + 1} of {quiz.questions.length}
-            </span>
-            <ProgressBar value={(qi / quiz.questions.length) * 100} className="h-2.5" />
-          </span>
-        </div>
-        <Card className="flex flex-col gap-2 p-4 md:p-6">
-          <span className="text-xs font-black tracking-[.06em] text-brand-ink uppercase">{q.type === "true_false" ? "True or false" : "Question"}</span>
-          <h1 className="text-[20px] leading-snug font-black md:text-[24px]">{q.question}</h1>
-        </Card>
-        <div className={cn("grid gap-2.5", q.options.length === 2 ? "grid-cols-2" : "md:grid-cols-2")}>
-          {q.options.map((o, i) => (
-            <button
-              key={i}
-              type="button"
-              onClick={() => answer(i)}
-              className="flex min-h-[60px] items-center gap-3 rounded-2xl border border-line bg-card p-3 text-left text-[16px] font-extrabold shadow-[0_3px_0_var(--line)] hover:bg-muted"
-            >
-              <span className="flex size-8 shrink-0 items-center justify-center rounded-[10px] bg-muted text-sm font-black">{KEYS[i]}</span>
-              {o}
-            </button>
-          ))}
-        </div>
+        <DuelQuestion player={player} q={quiz.questions[qi]} n={qi} total={quiz.questions.length} onAnswer={answer} />
         {error && <Notice onClose={() => setError(null)}>{error}</Notice>}
         <p className="text-center text-[13px] font-bold text-muted-foreground">Your answer is saved as soon as you tap it.</p>
       </Page>
     );
-  }
 
   // ---------- results ----------
   if (!results) return null;
@@ -275,31 +248,7 @@ export function DuelScreen() {
           {players[0].name} earned <b>+{a.score * 10 + 20} coins</b> ({a.score} right + 20 for playing together)
         </span>
       </Card>
-      <ol className="flex flex-col gap-3">
-        {quiz.questions.map((q, i) => {
-          const ra = a.results[i];
-          const rb = b.results[i];
-          return (
-            <li key={q.index}>
-              <Card className="flex flex-col gap-2.5 p-4">
-                <span className="text-[16px] font-black">
-                  {i + 1}. {q.question}
-                </span>
-                <span className="text-sm font-extrabold text-brand-dark">Answer: {q.options[ra.answer_index]}</span>
-                <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
-                  {[ra, rb].map((r, p) => (
-                    <span key={p} className={cn("flex items-center gap-2 rounded-xl px-3 py-2 text-sm font-extrabold", r.correct ? "bg-brand-soft" : "bg-danger-soft")}>
-                      {r.correct ? <Check className="size-4 text-brand-ink" strokeWidth={3} /> : <X className="size-4 text-danger-ink" strokeWidth={3} />}
-                      {players[p].name}: {q.options[r.choice]}
-                    </span>
-                  ))}
-                </div>
-                <span className="text-sm leading-relaxed font-bold text-muted-foreground">{ra.explanation}</span>
-              </Card>
-            </li>
-          );
-        })}
-      </ol>
+      <DuelReview questions={quiz.questions} names={players.map((p) => p.name)} sheets={[a.results, b.results]} />
       <div className="grid grid-cols-1 gap-2.5 sm:grid-cols-2">
         <Button variant="brand" size="cta" onClick={() => setPhase("setup")}>
           New duel

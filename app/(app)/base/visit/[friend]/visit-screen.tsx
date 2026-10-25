@@ -1,26 +1,76 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { Heart, Sparkles, Swords, ZoomIn, ZoomOut } from "lucide-react";
 import { Page } from "@/components/qn/app-shell";
 import { IsoHouse } from "@/components/qn/iso-house";
 import { Face } from "@/components/qn/sprite";
-import { Card, EmptyState, Notice, PageHeader, ProgressBar } from "@/components/qn/ui";
+import { Card, EmptyState, Notice, PageHeader, ProgressBar, Spinner } from "@/components/qn/ui";
 import { Button, buttonVariants } from "@/components/ui/button";
-import { FRIEND_HOMES, MAX_LEVEL, ROOMS, ROOM_GRID, UNLOCK_LEVEL, homeSummary, levelsOf, unlockProgress, type RoomId } from "@/lib/home-data";
-import { AVATARS, FAMILY, FRIENDS } from "@/lib/qn-data";
+import { avatarOf, homeApi, toSnapshot, type PublicHome } from "@/lib/home-api";
+import { MAX_LEVEL, ROOMS, ROOM_GRID, UNLOCK_LEVEL, homeSummary, levelsOf, unlockProgress, type RoomId } from "@/lib/home-data";
+import { ApiError } from "@/lib/learn-api";
+import { AVATARS } from "@/lib/qn-data";
 import { cn } from "@/lib/utils";
 
-/** Look around a friend's home (read-only) and see how far they've got. Example data for now. */
+/** Look around a friend's home (read-only) and see how far they've got. */
 export function VisitScreen({ id }: { id: string }) {
-  const key = decodeURIComponent(id).toLowerCase();
-  const home = FRIEND_HOMES[key];
-  const person = [...FRIENDS, ...FAMILY].find((p) => p.name.toLowerCase() === key);
+  const playerId = decodeURIComponent(id);
+  const [data, setData] = useState<PublicHome | null>(null);
+  const [missing, setMissing] = useState(false);
+  const [loadError, setLoadError] = useState<string | null>(null);
   const [view, setView] = useState<RoomId | null>(null);
   const [cheered, setCheered] = useState<string[]>([]);
+  const [cheerNote, setCheerNote] = useState<string | null>(null);
 
-  if (!home || !person) {
+  useEffect(() => {
+    let live = true;
+    homeApi.visit(playerId).then(
+      (h) => live && setData(h),
+      (e) => {
+        if (!live) return;
+        // A stranger's, a private and a missing home all answer 404, on purpose.
+        if (e instanceof ApiError && e.status === 404) setMissing(true);
+        else setLoadError(e instanceof ApiError ? e.message : "Couldn’t open that home.");
+      },
+    );
+    return () => {
+      live = false;
+    };
+  }, [playerId]);
+
+  async function cheer(key: string) {
+    setCheerNote(null);
+    try {
+      await homeApi.cheer(playerId, key);
+      setCheered((c) => [...c, key]);
+    } catch (e) {
+      if (e instanceof ApiError && e.status === 409) {
+        setCheered((c) => [...c, key]);
+        setCheerNote("You’ve already cheered this today. Come back tomorrow!");
+      } else setCheerNote(e instanceof ApiError ? e.message : "Couldn’t send that cheer. Try again.");
+    }
+  }
+
+  if (!data && !missing)
+    return (
+      <Page>
+        <PageHeader title="Visiting…" back={{ href: "/base", label: "Back to my base" }} />
+        {loadError ? (
+          <Notice>{loadError}</Notice>
+        ) : (
+          <Card className="flex items-center gap-2.5 p-6 font-extrabold text-muted-foreground" role="status">
+            <Spinner className="text-brand" /> Opening their home…
+          </Card>
+        )}
+      </Page>
+    );
+
+  const home = data ? toSnapshot(data.rooms) : null;
+  const person = data ? { name: data.owner.display_name, avatar: avatarOf(data.owner.avatar) } : null;
+
+  if (!home || !person || !ROOMS.some((r) => home.rooms[r.id])) {
     return (
       <Page>
         <PageHeader title="Home not found" back={{ href: "/base", label: "Back to my base" }} />
@@ -56,7 +106,6 @@ export function VisitScreen({ id }: { id: string }) {
         back={{ href: "/base", label: "Back to my base" }}
         right={<Face id={person.avatar} size={52} tint={tint} alt={person.name} />}
       />
-      <Notice tone="info">Preview: friends’ homes need backend support, so this home is an example.</Notice>
 
       <div className="grid grid-cols-1 gap-4 lg:grid-cols-[minmax(0,1fr)_340px] lg:items-start">
         <Card className="overflow-hidden">
@@ -84,15 +133,15 @@ export function VisitScreen({ id }: { id: string }) {
             {!room && <span className="absolute bottom-3 left-1/2 z-10 -translate-x-1/2 rounded-full bg-card/90 px-3.5 py-1.5 text-[13px] font-extrabold whitespace-nowrap">Tap a room to look inside</span>}
           </div>
           <div className="flex flex-wrap items-center gap-2.5 p-4">
-            <Button variant={cheered.includes(cheerKey) ? "brandSoft" : "brand"} size="pill" onClick={() => setCheered((c) => (c.includes(cheerKey) ? c : [...c, cheerKey]))} disabled={cheered.includes(cheerKey)}>
+            <Button variant={cheered.includes(cheerKey) ? "brandSoft" : "brand"} size="pill" onClick={() => cheer(cheerKey)} disabled={cheered.includes(cheerKey)}>
               <Heart className={cn(cheered.includes(cheerKey) && "fill-current")} /> {cheered.includes(cheerKey) ? "Cheer sent" : "Send a cheer"}
             </Button>
             <Link href="/play/duel" className={cn(buttonVariants({ variant: "soft", size: "pill" }))}>
               <Swords /> Duel {person.name}
             </Link>
-            {cheered.includes(cheerKey) && (
+            {(cheerNote || cheered.includes(cheerKey)) && (
               <span className="text-[13px] font-bold text-muted-foreground" role="status">
-                {person.name} will see your cheer on their {room ? room.name.toLowerCase() : "home"}.
+                {cheerNote ?? `${person.name} will see your cheer on their ${room ? room.name.toLowerCase() : "home"}.`}
               </span>
             )}
           </div>

@@ -128,6 +128,11 @@ async function call<T>(path: string, init?: RequestInit): Promise<T> {
 
 const post = <T>(path: string, body: unknown) =>
   call<T>(path, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) });
+const put = <T>(path: string, body: unknown) =>
+  call<T>(path, { method: "PUT", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) });
+
+/** The same requests and errors, for the other clients of the learning service (home, coins). */
+export const http = { get: <T>(path: string) => call<T>(path), post, put, del: (path: string) => call<void>(path, { method: "DELETE" }) };
 
 export const learnApi = {
   uploadMaterial(files: File[]) {
@@ -156,6 +161,8 @@ export const learnApi = {
   createLesson: (body: { topic: string; age: number; material_id?: string | null; prefers_visuals?: boolean }) =>
     post<PublicLesson>("lessons", body),
   getLesson: (id: string) => call<PublicLesson>(`lessons/${id}`),
+  /** Scored quizzes (tournaments) need the owner to confirm the lesson first. Lessons made here are revision 1. */
+  approveLesson: (id: string, expected_revision = 1) => post<unknown>(`lessons/${id}/approve`, { expected_revision, confirmed: true }),
   drawVisuals: (id: string, ask?: string) => post<{ visuals: PublicVisual[] }>(`lessons/${id}/visuals`, ask ? { ask } : {}),
 
   /** Free-text answer (message up to 1000 characters). With `material_id` the upload must be confirmed. */

@@ -3,6 +3,9 @@
 import { useSyncExternalStore } from "react";
 import type { AvatarId, PetId, Subject } from "./qn-data";
 import { ROOMS, freshLevels, type RoomId, type RoomLayout } from "./home-data";
+import { EMPTY_CHAT, titleOf, type ChatState, type Conversation } from "./learn-chat";
+import type { HomeMeta } from "./home-api";
+import type { StudyPlan } from "./study-plan";
 
 /**
  * Local prototype state for features the backend doesn't store yet (coins, looks, home,
@@ -23,6 +26,7 @@ export type QNState = {
   look: AvatarId;
   pet: PetId | null;
   owned: string[]; // looks and pets bought in the shop
+  /** Shop coins: kept in this browser (shop, duels, quests). Home coins live on the server, in `homeMeta`. */
   coins: number;
   streakDays: number;
   age: number | null;
@@ -30,12 +34,19 @@ export type QNState = {
   prefersVisuals: boolean;
   recent: RecentItem[];
   plans: StudyPlan[]; // the learning server doesn't keep chat answers, so plans live here
+  chats: Conversation[]; // chat history, newest first
+  chatId: string | null; // the open chat; null = a new, empty one
   progress: Record<string, number>; // quest id -> count
   claimed: string[];
   /** Test tools: keep coins topped up so the base can be tried out freely. */
   unlimitedCoins: boolean;
-  /** Built rooms, in build order: each item's level (0 = not placed yet) and where it was moved. */
+  /**
+   * Built rooms, in build order: each item's level (0 = not placed yet) and where it was moved.
+   * A copy of the server's home (`lib/home-api.ts`), refreshed from every home response.
+   */
   home: { rooms: Partial<Record<RoomId, number[]>>; layout: Partial<Record<RoomId, RoomLayout>> };
+  /** The server home's coins, version, privacy and cheers; null until it has loaded once. */
+  homeMeta: HomeMeta | null;
   settings: {
     goal: 10 | 15 | 20;
     timers: boolean;
@@ -58,32 +69,56 @@ export const DEFAULT_STATE: QNState = {
   prefersVisuals: false,
   recent: [],
   plans: [],
+  chats: [],
+  chatId: null,
   progress: {},
   claimed: [],
   unlimitedCoins: false,
   home: { rooms: { living: freshLevels(ROOMS[0]) }, layout: {} },
+  homeMeta: null,
   settings: { goal: 15, timers: false, aloud: false, remind: true, duelInvites: true, cheers: false, visit: "friends" },
 };
 
-const KEY = "qn.state.v1";
+const BASE_KEY = "qn.state.v1";
+const ACCOUNT_KEY = "qn.account"; // which signed-in account this browser's state belongs to
+const LEGACY_CLAIMED = "qn.legacy-claimed";
 export const UNLIMITED_COINS = 999_999;
 let state: QNState = DEFAULT_STATE;
 let loaded = false;
 const listeners = new Set<() => void>();
 
+/** Each account on this browser keeps its own state; the key follows the last account to log in. */
+function stateKey(): string {
+  try {
+    const account = localStorage.getItem(ACCOUNT_KEY);
+    return account ? `${BASE_KEY}.${account}` : BASE_KEY;
+  } catch {
+    return BASE_KEY;
+  }
+}
+
 function load() {
   if (loaded || typeof window === "undefined") return;
   loaded = true;
   try {
-    const raw = localStorage.getItem(KEY);
+    const raw = localStorage.getItem(stateKey());
     if (raw) {
-      const saved = JSON.parse(raw) as Partial<QNState> & { base?: unknown };
+      const saved = JSON.parse(raw) as Partial<QNState> & { base?: unknown; chat?: ChatState };
       delete saved.base; // per-subject rooms from before the shared home
+      // The single chat from before chat history becomes the first saved chat.
+      if (saved.chat) {
+        if (saved.chat.messages?.length && !saved.chats?.length) {
+          const id = crypto.randomUUID();
+          saved.chats = [{ ...saved.chat, id, title: titleOf(saved.chat), updatedAt: Date.now() }];
+          saved.chatId = id;
+        }
+        delete saved.chat;
+      }
       state = {
         ...DEFAULT_STATE,
         ...saved,
         settings: { ...DEFAULT_STATE.settings, ...saved.settings },
-        home: saved.home?.rooms?.living ? { layout: {}, ...saved.home } : DEFAULT_STATE.home,
+        home: saved.home?.rooms?.living ? { ...saved.home, layout: saved.home.layout ?? {} } : DEFAULT_STATE.home,
       };
     }
   } catch {
@@ -93,7 +128,7 @@ function load() {
 
 function persist() {
   try {
-    localStorage.setItem(KEY, JSON.stringify(state));
+    localStorage.setItem(stateKey(), JSON.stringify(state));
   } catch {
     /* best effort */
   }
@@ -116,7 +151,7 @@ export function setState(update: Partial<QNState> | ((s: QNState) => Partial<QNS
 function subscribe(l: () => void) {
   listeners.add(l);
   const onStorage = (e: StorageEvent) => {
-    if (e.key === KEY) {
+    if (e.key === stateKey()) {
       loaded = false;
       load();
       l();
@@ -136,6 +171,32 @@ export function useQN<T>(select: (s: QNState) => T): T {
     () => select(getState()),
     () => select(DEFAULT_STATE),
   );
+}
+
+/**
+ * Switch the local state to this signed-in account (called when a session starts). The first
+ * account after the move to per-account storage keeps the older shared state, minus lessons and
+ * plans: those belonged to the learning service's shared player, which accounts no longer use.
+ */
+export function setAccount(userId: string) {
+  if (typeof window === "undefined") return;
+  try {
+    if (localStorage.getItem(ACCOUNT_KEY) === userId) return;
+    const target = `${BASE_KEY}.${userId}`;
+    const legacy = localStorage.getItem(BASE_KEY);
+    if (legacy && !localStorage.getItem(target) && !localStorage.getItem(LEGACY_CLAIMED)) {
+      const saved = JSON.parse(legacy) as Partial<QNState>;
+      localStorage.setItem(target, JSON.stringify({ ...saved, recent: [], plans: [] }));
+      localStorage.setItem(LEGACY_CLAIMED, userId);
+    }
+    localStorage.setItem(ACCOUNT_KEY, userId);
+  } catch {
+    return; // storage blocked: keep using what is in memory
+  }
+  state = DEFAULT_STATE;
+  loaded = false;
+  load();
+  listeners.forEach((l) => l());
 }
 
 // ---------- actions ----------
@@ -161,6 +222,40 @@ export function setSubtopicLesson(planId: string, index: number, lessonId: strin
       p.id === planId ? { ...p, subtopics: p.subtopics.map((t, i) => (i === index ? { ...t, lessonId } : t)) } : p,
     ),
   }));
+}
+
+const CHAT_KEEP = 80; // messages per chat
+const CHATS_KEEP = 30; // chats in the history
+
+/**
+ * Change one chat. Answers can arrive after the learner has switched chats, so callers pass the id
+ * of the chat they started in. A chat is only saved to the history once it has a message.
+ */
+export function updateChat(id: string, fn: (c: ChatState) => ChatState) {
+  setState((s) => {
+    const cur = s.chats.find((c) => c.id === id) ?? { ...EMPTY_CHAT, id, title: "New chat", updatedAt: Date.now() };
+    const next = fn(cur);
+    if (next.messages.length === 0 && !s.chats.some((c) => c.id === id)) return {};
+    const chat: Conversation = { ...cur, ...next, messages: next.messages.slice(-CHAT_KEEP), title: titleOf(next), updatedAt: Date.now() };
+    return { chats: [chat, ...s.chats.filter((c) => c.id !== id)].slice(0, CHATS_KEEP) };
+  });
+}
+
+/** The open chat's id, making one up for a new chat. */
+export function ensureChatId() {
+  const open = getState().chatId;
+  if (open) return open;
+  const id = crypto.randomUUID();
+  setState({ chatId: id });
+  return id;
+}
+
+export function openChat(id: string | null) {
+  setState({ chatId: id });
+}
+
+export function deleteChat(id: string) {
+  setState((s) => ({ chats: s.chats.filter((c) => c.id !== id), chatId: s.chatId === id ? null : s.chatId }));
 }
 
 export function forgetPlan(id: string) {
