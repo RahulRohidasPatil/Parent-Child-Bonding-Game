@@ -9,7 +9,7 @@ import type { PublicUser } from "@/lib/server/session";
  *
  * Every call carries both:
  *   - `Authorization: Bearer <Clerk session JWT>`, so the service can verify who is calling
- *     (Clerk's JWKS) once it checks logins; today it ignores the header;
+ *     (Clerk’s JWKS) on /api/social; legacy routes retain their player-selector contract;
  *   - `X-Player-ID: <uuid>`, the account's player, which is what the service partitions data by today.
  *
  * The player id is a random UUID in the account's Clerk public metadata (`player_id`). Add it to
@@ -28,13 +28,20 @@ const asPlayerId = (v: unknown) => (typeof v === "string" && UUID.test(v) ? v : 
 const creating = new Map<string, Promise<{ playerId: string; created: boolean }>>();
 
 /** The signed-in account's learning session, or null when signed out. Creates the player id on first use. */
-export async function learningSession(): Promise<(LearningSession & { created: boolean }) | null> {
-  const { userId, sessionClaims, getToken } = await auth();
+export async function learningSession(options: { social?: boolean } = {}): Promise<(LearningSession & { created: boolean }) | null> {
+  const { userId, sessionId, sessionClaims, getToken } = await auth();
   if (!userId) return null;
   // With the customised session token, the id comes from the verified JWT and no Clerk API call is needed.
   const claimed = asPlayerId((sessionClaims as Record<string, unknown> | null)?.player_id);
   const { playerId, created } = claimed ? { playerId: claimed, created: false } : await ensurePlayerId(userId);
-  return { userId, playerId, created, token: await getToken() };
+  // auth().getToken() returns the request's token. After metadata changes, mint a fresh
+  // session token so FastAPI receives the newly signed player_id/username claims now.
+  const claims = sessionClaims as Record<string, unknown> | null;
+  const refresh = created || !claimed || (options.social && !claims?.username);
+  const token = refresh && sessionId
+    ? (await (await clerkClient()).sessions.getToken(sessionId)).jwt
+    : await getToken();
+  return { userId, playerId, created, token };
 }
 
 function savedPlayerId(u: ClerkUser) {
@@ -106,7 +113,8 @@ export async function startLearningSession(session: LearningSession, user: Publi
   }
 }
 
-const SIGN_IN_DOWN = () => Response.json({ detail: "Can’t reach the sign-in server right now." }, { status: 503 });
+const NO_STORE = { "Cache-Control": "no-store" };
+const SIGN_IN_DOWN = () => Response.json({ detail: "Can’t reach the sign-in server right now. Please try again." }, { status: 503, headers: NO_STORE });
 
 /**
  * Same-origin proxy body for `/api/<sub>` routes: forwards the request as the signed-in session.
@@ -115,14 +123,15 @@ const SIGN_IN_DOWN = () => Response.json({ detail: "Can’t reach the sign-in se
 export async function forwardToLearning(req: Request, sub: string, search: string): Promise<Response> {
   let session: LearningSession | null;
   try {
-    session = await learningSession();
+    session = await learningSession({ social: sub.startsWith("social/") });
   } catch {
     return SIGN_IN_DOWN();
   }
-  if (!session) return Response.json({ detail: "Please log in again." }, { status: 401 });
+  if (!session) return Response.json({ detail: "Please log in again." }, { status: 401, headers: NO_STORE });
+  if (sub.startsWith("social/") && !session.token) return SIGN_IN_DOWN();
 
   const headers = new Headers();
-  for (const header of ["content-type", "content-length", "accept"]) {
+  for (const header of ["content-type", "content-length", "accept", "idempotency-key"]) {
     const value = req.headers.get(header);
     if (value) headers.set(header, value);
   }
@@ -137,15 +146,19 @@ export async function forwardToLearning(req: Request, sub: string, search: strin
       ...(hasBody ? { duplex: "half" } : {}),
     } as RequestInit);
   } catch {
-    return Response.json({ detail: "Can’t reach the learning server. Check that it is running, then try again." }, { status: 503 });
+    return Response.json({ detail: "Can’t reach the learning server. Check that it is running, then try again." }, { status: 503, headers: NO_STORE });
   }
   // Our session was valid a moment ago, so a 401 here means the service rejected the token. Don't pass it
   // on as 401: the browser would bounce to /login and straight back.
   if (upstream.status === 401) {
-    return Response.json({ detail: "The learning server didn’t accept your sign-in. Check it trusts this app’s Clerk instance." }, { status: 403 });
+    return Response.json({ detail: "Your session could not be verified. Refresh the page or sign in again.", code: "session_rejected" }, { status: 403, headers: NO_STORE });
   }
   const out = new Headers({ "Cache-Control": "no-store" });
   const contentType = upstream.headers.get("content-type");
   if (contentType) out.set("content-type", contentType);
+  for (const name of ["x-request-id", "retry-after"]) {
+    const value = upstream.headers.get(name);
+    if (value) out.set(name, value);
+  }
   return new Response(upstream.status === 204 ? null : upstream.body, { status: upstream.status, headers: out });
 }

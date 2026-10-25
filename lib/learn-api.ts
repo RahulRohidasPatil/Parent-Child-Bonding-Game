@@ -129,6 +129,14 @@ async function call<T>(path: string, init?: RequestInit): Promise<T> {
 const post = <T>(path: string, body: unknown) =>
   call<T>(path, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) });
 
+/** Shared JSON transport for the server-owned home, wallet and other app resources. */
+export const http = {
+  get: <T>(path: string) => call<T>(path),
+  post,
+  put: <T>(path: string, body: unknown) => call<T>(path, { method: "PUT", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) }),
+  del: <T>(path: string) => call<T>(path, { method: "DELETE" }),
+};
+
 export const learnApi = {
   uploadMaterial(files: File[]) {
     const fd = new FormData();

@@ -74,3 +74,11 @@ Local browser state (coins, looks, home, recent lessons) is kept per account
   accounts don't see them.
 - Friends, presence and live duels follow [SOCIAL_API.md](SOCIAL_API.md). They identify users by
   the token's `sub` (Clerk user id), never by player id.
+
+
+## Social backend connection
+
+`/api/social/*` is always forwarded to FastAPI. The session helper mints a fresh signed token
+after allocating player metadata or when required social claims are missing. Presence retries
+profile registration before going online. See [SOCIAL_API.md](SOCIAL_API.md) for configuration
+and verification; usernames come from signed claims, never a caller-provided identity header.

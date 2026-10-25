@@ -9,6 +9,8 @@ import { Face } from "@/components/qn/sprite";
 import { Notice } from "@/components/qn/ui";
 import { Button } from "@/components/ui/button";
 import { type Duel, SocialError, msUntil, socialApi } from "@/lib/social-api";
+import { createSocialHeartbeat } from "@/lib/social-profile";
+import { refreshWallet } from "@/lib/wallet-api";
 import { useQN } from "@/lib/store";
 import { useUser } from "@/lib/use-user";
 
@@ -31,12 +33,15 @@ export function Presence() {
     if (!user) return;
     let live = true;
     let timer: ReturnType<typeof setTimeout> | undefined;
+    const heartbeat = createSocialHeartbeat({ display_name: user.name, avatar: look, role: user.accountType === "parent" ? "parent" : "learner" }, () => live);
+    let running = false;
     const beat = async () => {
-      if (!live) return;
+      if (!live || running) return;
+      running = true;
       let every = 20;
       if (document.visibilityState === "visible") {
         try {
-          const p = await socialApi.presence();
+          const p = await heartbeat();
           every = p.heartbeat_s;
           const next = p.invites.find((d) => !dismissed.current.has(d.id));
           if (live) setInvite((cur) => (next ? (cur?.duel.id === next.id ? cur : { duel: next, at: Date.now() }) : null));
@@ -44,17 +49,19 @@ export function Presence() {
           /* try again on the next beat */
         }
       }
-      if (live) timer = setTimeout(beat, every * 1000);
+      running = false;
+      if (live) {
+        clearTimeout(timer);
+        timer = setTimeout(beat, every * 1000);
+      }
     };
     const onVisible = () => {
       if (document.visibilityState !== "visible") return;
       clearTimeout(timer);
       beat();
     };
-    socialApi
-      .saveMe({ display_name: user.name, avatar: look, role: user.accountType === "parent" ? "parent" : "learner" })
-      .catch(() => undefined)
-      .finally(beat);
+    void beat();
+    void refreshWallet().catch(() => undefined);
     document.addEventListener("visibilitychange", onVisible);
     window.addEventListener("pagehide", socialApi.leave);
     return () => {

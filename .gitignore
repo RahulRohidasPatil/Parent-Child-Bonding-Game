@@ -41,5 +41,5 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# friends and duels (lib/server/social.ts)
+# Archived local social demo data (no longer used at runtime)
 /.data/

@@ -5,6 +5,7 @@ import type { AvatarId, PetId, Subject } from "./qn-data";
 import { ROOMS, freshLevels, type RoomId, type RoomLayout } from "./home-data";
 import { EMPTY_CHAT, titleOf, type ChatState, type Conversation } from "./learn-chat";
 import type { StudyPlan } from "./study-plan";
+import type { HomeMeta } from "./home-api";
 
 /**
  * Local prototype state for features the backend doesn't store yet (coins, looks, home,
@@ -26,6 +27,7 @@ export type QNState = {
   pet: PetId | null;
   owned: string[]; // looks and pets bought in the shop
   coins: number;
+  homeMeta: HomeMeta | null;
   streakDays: number;
   age: number | null;
   subject: Subject;
@@ -56,6 +58,7 @@ export const DEFAULT_STATE: QNState = {
   pet: "cat",
   owned: ["nova", "cat"],
   coins: 240,
+  homeMeta: null,
   streakDays: 0,
   age: null,
   subject: "science",
@@ -124,6 +127,11 @@ function persist() {
   } catch {
     /* best effort */
   }
+}
+
+/** Identifies the account whose browser cache is currently active. */
+export function getAccountKey(): string {
+  return stateKey();
 }
 
 export function getState(): QNState {
