@@ -85,7 +85,7 @@ export function LessonChat({ lesson }: { lesson: PublicLesson }) {
   return (
     <Card className="flex flex-col gap-3 p-4 md:p-5" aria-labelledby={`${id}-h`} role="region">
       <h2 id={`${id}-h`} className="flex items-center gap-2 text-[19px] font-black">
-        <MessageCircleQuestion className="size-5 text-brand" /> Ask a follow-up question
+        <MessageCircleQuestion className="size-5 text-brand-ink" /> Ask a follow-up question
       </h2>
 
       {turns.length > 0 && (
@@ -100,7 +100,7 @@ export function LessonChat({ lesson }: { lesson: PublicLesson }) {
                 <p
                   className={cn(
                     "rounded-[18px_18px_18px_4px] px-3.5 py-2.5 text-[15px] leading-relaxed font-semibold whitespace-pre-line",
-                    t.error ? "bg-destructive/10 text-destructive" : "bg-card text-[#2b3a47]",
+                    t.error ? "bg-destructive/10 text-destructive" : "bg-card text-foreground",
                   )}
                 >
                   {plain(t.content)}
@@ -111,7 +111,7 @@ export function LessonChat({ lesson }: { lesson: PublicLesson }) {
           )}
           {asking && (
             <span className="flex items-center gap-2 self-start rounded-[18px_18px_18px_4px] bg-card px-3.5 py-2.5 text-sm font-extrabold text-muted-foreground" role="status">
-              <Spinner className="text-brand" /> Thinking…
+              <Spinner className="text-brand-ink" /> Thinking…
             </span>
           )}
           <div ref={end} />
@@ -150,7 +150,7 @@ export function LessonChat({ lesson }: { lesson: PublicLesson }) {
           value={ask}
           onChange={(e) => setAsk(e.target.value)}
           placeholder="e.g. Why are leaves green?"
-          className="h-[52px] w-full min-w-0 shrink-0 rounded-2xl border-[1.5px] border-input bg-field px-3.5 text-base font-bold text-foreground outline-none placeholder:font-semibold placeholder:text-[#7b8994] focus-visible:border-brand sm:flex-1 sm:shrink"
+          className="h-[52px] w-full min-w-0 shrink-0 rounded-2xl border-[1.5px] border-input bg-field px-3.5 text-base font-bold text-foreground outline-none placeholder:font-semibold placeholder:text-muted-foreground focus-visible:border-brand sm:flex-1 sm:shrink"
         />
         <Button type="submit" variant="brand" size="pill" className="h-[52px]" disabled={asking || !ask.trim()}>
           {asking ? <Spinner /> : <Send />} Ask

@@ -240,9 +240,9 @@ export function DuelScreen() {
               key={i}
               type="button"
               onClick={() => answer(i)}
-              className="flex min-h-[60px] items-center gap-3 rounded-2xl border border-line bg-card p-3 text-left text-[16px] font-extrabold shadow-[0_3px_0_#dde5ea] hover:bg-muted"
+              className="flex min-h-[60px] items-center gap-3 rounded-2xl border border-line bg-card p-3 text-left text-[16px] font-extrabold shadow-[0_3px_0_var(--line)] hover:bg-muted"
             >
-              <span className="flex size-8 shrink-0 items-center justify-center rounded-[10px] bg-[#eef2f4] text-sm font-black">{KEYS[i]}</span>
+              <span className="flex size-8 shrink-0 items-center justify-center rounded-[10px] bg-muted text-sm font-black">{KEYS[i]}</span>
               {o}
             </button>
           ))}
@@ -261,7 +261,7 @@ export function DuelScreen() {
     <Page className="max-w-[960px]">
       <Stage className="h-[280px] md:h-[320px]">
         <span className="absolute inset-x-0 top-5 text-center text-[26px] font-black md:text-[30px]">{winner === null ? "It’s a draw!" : `${players[winner].name} wins!`}</span>
-        <span className="absolute inset-x-0 top-[62px] text-center text-[15px] font-extrabold text-[#3f6470]">
+        <span className="absolute inset-x-0 top-[62px] text-center text-[15px] font-extrabold text-stage-ink">
           {players[0].name} {a.score} · {players[1].name} {b.score} · out of {a.total}
         </span>
         <div className="absolute bottom-4 left-1/2 h-6 w-[280px] -translate-x-1/2 rounded-[50%] bg-stage-floor" />
@@ -288,8 +288,8 @@ export function DuelScreen() {
                 <span className="text-sm font-extrabold text-brand-dark">Answer: {q.options[ra.answer_index]}</span>
                 <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
                   {[ra, rb].map((r, p) => (
-                    <span key={p} className={cn("flex items-center gap-2 rounded-xl px-3 py-2 text-sm font-extrabold", r.correct ? "bg-brand-soft" : "bg-[#fdecec]")}>
-                      {r.correct ? <Check className="size-4 text-brand" strokeWidth={3} /> : <X className="size-4 text-[#d24d4d]" strokeWidth={3} />}
+                    <span key={p} className={cn("flex items-center gap-2 rounded-xl px-3 py-2 text-sm font-extrabold", r.correct ? "bg-brand-soft" : "bg-danger-soft")}>
+                      {r.correct ? <Check className="size-4 text-brand-ink" strokeWidth={3} /> : <X className="size-4 text-danger-ink" strokeWidth={3} />}
                       {players[p].name}: {q.options[r.choice]}
                     </span>
                   ))}

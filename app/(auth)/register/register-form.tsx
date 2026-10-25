@@ -140,7 +140,7 @@ export function RegisterForm() {
         error={show("dob")}
         labelExtra={
           hasAge ? (
-            <span className={cn("rounded-full px-2.5 py-0.5 text-xs font-black", mode === "minor" ? "bg-warn text-warn-ink" : "bg-brand-soft text-[#1a6b4c]")}>
+            <span className={cn("rounded-full px-2.5 py-0.5 text-xs font-black", mode === "minor" ? "bg-warn text-warn-ink" : "bg-brand-soft text-brand-ink")}>
               Age {age}
               {mode === "minor" ? " · parent approval" : ""}
             </span>
@@ -149,7 +149,7 @@ export function RegisterForm() {
       />
 
       {mode === "none" && (
-        <div className="rounded-2xl border-[1.5px] border-dashed border-[#c9d3d9] px-3.5 py-3 text-sm font-bold text-muted-foreground">
+        <div className="rounded-2xl border-[1.5px] border-dashed border-input px-3.5 py-3 text-sm font-bold text-muted-foreground">
           Add your date of birth and we’ll show the right email field.
         </div>
       )}
@@ -168,7 +168,7 @@ export function RegisterForm() {
       {mode === "minor" && (
         <div className="flex flex-col gap-3.5">
           <div className="flex items-start gap-2.5 rounded-2xl bg-warn px-3.5 py-3">
-            <Info className="mt-0.5 size-5 shrink-0 text-[#8a5300]" strokeWidth={2.4} />
+            <Info className="mt-0.5 size-5 shrink-0 text-warn-ink" strokeWidth={2.4} />
             <span className="text-sm leading-snug font-bold text-warn-ink">
               You’re under {ADULT_AGE}, so a parent has to approve your account. We’ll email them a verification link.
             </span>

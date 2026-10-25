@@ -1,6 +1,7 @@
 import { Camera, Swords } from "lucide-react";
 import { Logo } from "@/components/qn/brand";
 import { Sprite } from "@/components/qn/sprite";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 /** Phone/tablet: sky band with the family on top of the form. Desktop: story panel on the left. */
 export default function AuthLayout({ children }: LayoutProps<"/">) {
@@ -9,13 +10,14 @@ export default function AuthLayout({ children }: LayoutProps<"/">) {
       <section className="relative overflow-hidden bg-stage lg:sticky lg:top-0 lg:h-dvh lg:w-[52%] lg:max-w-[760px] lg:shrink-0">
         <div className="relative z-10 flex items-center px-4 pt-4 md:px-10 md:pt-8 lg:px-14 lg:pt-11">
           <Logo size={44} />
+          <ThemeToggle className="ml-auto" />
         </div>
         <div className="relative hidden flex-col gap-3 px-14 pt-10 lg:flex">
           <span className="max-w-[560px] text-[46px] leading-[1.05] font-black">Turn schoolwork into family game night.</span>
-          <span className="max-w-[540px] text-lg font-bold text-[#3f6470]">Snap your notes, get a study plan, then duel Mom and Dad. Earn coins to grow your own base.</span>
+          <span className="max-w-[540px] text-lg font-bold text-stage-ink">Snap your notes, get a study plan, then duel Mom and Dad. Earn coins to grow your own base.</span>
           <span className="mt-3 flex flex-col items-start gap-2.5">
             <span className="flex h-10 items-center gap-2.5 rounded-full bg-card pr-4 pl-2.5 text-[15px] font-extrabold">
-              <span className="flex size-[26px] items-center justify-center rounded-full bg-brand-soft"><Camera className="size-[15px] text-brand" strokeWidth={2.6} /></span>
+              <span className="flex size-[26px] items-center justify-center rounded-full bg-brand-soft"><Camera className="size-[15px] text-brand-ink" strokeWidth={2.6} /></span>
               Scan notes, get flashcards and quizzes
             </span>
             <span className="flex h-10 items-center gap-2.5 rounded-full bg-card pr-4 pl-2.5 text-[15px] font-extrabold">

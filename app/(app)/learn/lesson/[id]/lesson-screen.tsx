@@ -96,7 +96,7 @@ export function LessonScreen({ id }: { id: string }) {
     return (
       <Page className="max-w-[720px]">
         <div className="flex items-center gap-2.5 p-8 font-extrabold text-muted-foreground" role="status">
-          <Spinner className="text-brand" /> Loading the lesson…
+          <Spinner className="text-brand-ink" /> Loading the lesson…
         </div>
       </Page>
     );
@@ -150,14 +150,14 @@ function LessonBody({ lesson, drawing }: { lesson: PublicLesson; drawing: boolea
   return (
     <>
       <Card className="bg-brand-soft p-4 md:p-5">
-        <p className="text-[16px] leading-relaxed font-bold text-[#1d4d3b] md:text-[17px]">{lesson.summary}</p>
+        <p className="text-[16px] leading-relaxed font-bold text-brand-ink md:text-[17px]">{lesson.summary}</p>
       </Card>
 
       {lesson.sections.map((s, i) => (
         <Card key={i} className="flex flex-col gap-3 p-4 md:p-5">
           <h2 className="text-[19px] font-black md:text-[21px]">{s.heading}</h2>
           {paragraphs(s.body).map((para, j) => (
-            <p key={j} className="text-[16px] leading-relaxed font-semibold text-[#2b3a47]">
+            <p key={j} className="text-[16px] leading-relaxed font-semibold text-foreground">
               {para}
             </p>
           ))}
@@ -173,7 +173,7 @@ function LessonBody({ lesson, drawing }: { lesson: PublicLesson; drawing: boolea
 
       <Card className="flex flex-col gap-3 p-4 md:p-5">
         <h2 className="flex items-center gap-2 text-[19px] font-black">
-          <BookMarked className="size-5 text-brand" /> Key points
+          <BookMarked className="size-5 text-brand-ink" /> Key points
         </h2>
         <ul className="flex flex-col gap-2">
           {lesson.key_points.map((p, i) => (
@@ -190,8 +190,8 @@ function LessonBody({ lesson, drawing }: { lesson: PublicLesson; drawing: boolea
 
 function DrawingNote({ kind, purpose }: { kind: string; purpose: string }) {
   return (
-    <div className="flex items-center gap-2.5 rounded-2xl border border-dashed border-[#c9d3d9] px-3.5 py-3 text-sm font-bold text-muted-foreground" role="status">
-      <Spinner className="text-brand" />
+    <div className="flex items-center gap-2.5 rounded-2xl border border-dashed border-input px-3.5 py-3 text-sm font-bold text-muted-foreground" role="status">
+      <Spinner className="text-brand-ink" />
       Drawing a {kind}: {purpose}
     </div>
   );

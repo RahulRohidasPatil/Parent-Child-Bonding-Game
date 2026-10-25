@@ -60,6 +60,10 @@
   --color-warn: var(--warn);
   --color-warn-ink: var(--warn-ink);
   --color-mint-line: var(--mint-line);
+  --color-stage-ink: var(--stage-ink);
+  --color-danger-soft: var(--danger-soft);
+  --color-danger-ink: var(--danger-ink);
+  --color-track: var(--track);
 
   --radius-sm: calc(var(--radius) * 0.6);
   --radius-md: calc(var(--radius) * 0.8);
@@ -174,10 +178,12 @@
   /* QuestNest palette */
   --brand: #2e8a69;
   --brand-dark: #226e52;
+  --brand-depth: #226e52;
   --brand-ink: #1f7a57;
   --brand-soft: #e2f3eb;
   --stage: #cdeff5;
   --stage-floor: #b3e2ea;
+  --stage-ink: #3f6470;
   --night: #23303a;
   --line: #e3e8ec;
   --field: #f8fafb;
@@ -193,6 +199,9 @@
   --warn: #fff4e0;
   --warn-ink: #6b4100;
   --mint-line: #7fe0bf;
+  --danger-soft: #fdecec;
+  --danger-ink: #8f1d14;
+  --track: #e9eef1;
 
   --sun: #f5b93a;
   --coral: #f2742e;
@@ -207,7 +216,58 @@
   --glow-3: transparent;
 }
 
-:root[data-theme="dark"],
+/* Keep the sky-and-mint identity in a calm, blue-green night palette. */
+:root.dark {
+  color-scheme: dark;
+
+  --background: #101e24;
+  --foreground: #e5f1f2;
+  --card: #192b32;
+  --card-foreground: var(--foreground);
+  --popover: #20353d;
+  --popover-foreground: var(--foreground);
+  --primary: #7fe0bf;
+  --primary-foreground: #102c24;
+  --secondary: #243940;
+  --secondary-foreground: var(--foreground);
+  --muted: #21363e;
+  --muted-foreground: #a8bec5;
+  --accent: #203f36;
+  --accent-foreground: #b1f0d8;
+  --destructive: #ffaaa1;
+  --success: #7fe0bf;
+  --border: #354c55;
+  --input: #49616a;
+  --ring: #7fe0bf;
+
+  --brand: #2e8060;
+  --brand-dark: #9ae8ca;
+  --brand-depth: #174d3a;
+  --brand-ink: #9ae8ca;
+  --brand-soft: #203f36;
+  --stage: #193b48;
+  --stage-floor: #265363;
+  --stage-ink: #b3d9e4;
+  --night: #0b171d;
+  --line: #354c55;
+  --field: #13252c;
+  --coin: #40351d;
+  --coin-ink: #ffdc8d;
+  --flame: #422d24;
+  --flame-ink: #ffc097;
+  --rose: #3d2937;
+  --rose-ink: #f5b1cd;
+  --rose-strong: #a83a60;
+  --sky-soft: #20394e;
+  --sky-ink: #a4d2ff;
+  --warn: #3d321f;
+  --warn-ink: #ffdc9d;
+  --mint-line: #487d68;
+  --danger-soft: #442d30;
+  --danger-ink: #ffb6ae;
+  --track: #30464f;
+}
+
 .theme-splash {
   color-scheme: dark;
 

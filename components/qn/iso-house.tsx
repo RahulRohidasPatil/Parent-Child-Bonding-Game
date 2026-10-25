@@ -345,12 +345,12 @@ export function IsoHouse({
             <span
               className={cn(
                 "flex size-12 items-center justify-center rounded-full border-[3px] border-white shadow-[0_4px_0_rgba(0,0,0,.18)] transition hover:scale-105 md:size-14",
-                slot.ready ? "bg-brand text-white" : "bg-white/90 text-muted-foreground",
+                slot.ready ? "bg-brand text-white" : "bg-card/90 text-muted-foreground",
               )}
             >
               {slot.ready ? <Plus className="size-7" strokeWidth={3} /> : <Lock className="size-5" strokeWidth={2.6} />}
             </span>
-            <span className="rounded-full bg-white/95 px-2.5 py-0.5 text-[12px] font-black whitespace-nowrap shadow-sm">
+            <span className="rounded-full bg-card/95 px-2.5 py-0.5 text-[12px] font-black whitespace-nowrap shadow-sm">
               {slot.label}
               {!slot.ready && <span className="text-muted-foreground"> · {slot.progress}</span>}
             </span>
